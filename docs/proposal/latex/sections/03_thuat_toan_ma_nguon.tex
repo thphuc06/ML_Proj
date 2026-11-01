@@ -1,0 +1,64 @@
+% ==============================================================================
+% 3. EXECUTION METHODOLOGY
+% ==============================================================================
+\section{Execution Methodology}
+
+The seven stages below describe planned work rather than completed experiments. Each stage produces a versioned artefact and must pass its gate before dependent work proceeds.
+
+\subsection{Step 1: Define and analyse the problem}
+
+The team will finalize the survey question, annotation guide, and candidate streets. Two annotators will label a 100--200 image pilot and revise unclear boundary rules through documented adjudication.
+
+\textbf{Output:} problem specification, survey scope, and annotation guide version 1.
+
+\textbf{Gate:} recurring pilot disagreements have explicit rules before full collection begins.
+
+\subsection{Step 2: Collect and prepare data}
+
+Images will be sampled by source and street toward the planned scale in Section~2. For each item, the manifest will record source or URL, parent-image ID, street, capture session where applicable, available capture time and location, usage conditions, annotator, and review state; preliminary labels will follow the common guide.
+
+Cropping and duplicate detection will be automated, but every label will be assigned manually: validation and test images blind by two annotators without model suggestions, and training images by one annotator with a cross-checked sample. The pilot will observe the share of eligible images and the labelling time per image to size the screening effort.
+
+\textbf{Output:} traceable image repository, manifest, collection log, and preliminary labels.
+
+\textbf{Gate:} actual counts by source, class, and street are inventoried and ineligible or unknown-location items are separated.
+
+\subsection{Step 3: Preprocess and explore data}
+
+The team will remove corrupt or unusable files, detect exact and near duplicates, keep related crops together, and review privacy-sensitive content. Independent annotation of the validation and test sets and a training subset will be summarized with raw agreement and Cohen's $\kappa$ before adjudication; EDA will then describe class, street, source, capture-time, and quality distributions. Images removed by any automatic pre-filter will be spot-checked so that blocked cases are not disproportionately lost. Splits will be grouped by street, keeping parent images, team capture sessions, and near-duplicate clusters together.
+
+\textbf{Output:} cleaned data, final guide, EDA notebook, and fixed split lists.
+
+\textbf{Gate:} both test classes are represented; no street, team capture session, parent image, or near-duplicate group spans multiple splits; and the test set is frozen.
+
+\subsection{Step 4: Select and train models}
+
+Using identical splits, the team will compare at least three model families against a majority-class baseline, each chosen to answer a different question: a classical classifier on hand-crafted features (e.g., HOG with an SVM) tests how far simple visual cues go; a fine-tuned CNN (e.g., ResNet-18) tests end-to-end learning on local data; and frozen pretrained embeddings with a linear classifier (e.g., CLIP) test transfer from large-scale pre-training. Specific architectures and configurations will be fixed after the pilot according to compute resources. Each model's hyperparameters, class weighting, and decision threshold will be selected on validation data and frozen before test evaluation; learning curves will be inspected for overfitting, and seeds, preprocessing, versions, configurations, and logs will be retained.
+
+\textbf{Output:} trained candidates, frozen configurations and thresholds, and a validation comparison.
+
+\textbf{Gate:} every candidate is reproducible and frozen before the common test set is opened.
+
+\subsection{Step 5: Evaluate and report}
+
+All frozen candidate models and the majority-class baseline will be evaluated once on the same held-out test set using the metrics in Section~2; test results will not trigger further selection or tuning. Recall for the blocked class will receive particular attention, because a missed blocked image is a location that escapes review. Error analysis will examine cases such as vehicles beside a remaining path, narrow gaps, occlusion, and difficult viewpoints. Source- and street-specific results will be reported only with adequate samples, and conditional confidence intervals or ranking metrics will be clearly marked.
+
+\textbf{Output:} shared-test comparison, error analysis, and validation-selected deployment model.
+
+\textbf{Gate:} no test-driven refinement is reported as final; any such result requires a new test set or an exploratory label.
+
+\subsection{Step 6: Build the application}
+
+A FastAPI service and web interface will support image upload, score and label display, manual-review status, and an observation list or map using genuine metadata. Users can also classify a permitted Mapillary image retrieved with its capture metadata through the Mapillary API. API credentials will remain on the backend, and source failures will produce a clear status message; the flow will not crawl the city or imply real-time monitoring.
+
+\textbf{Output:} web interface, prediction API, Mapillary selection flow, and user guide.
+
+\textbf{Gate:} valid inputs match offline predictions, invalid inputs fail clearly, and missing locations create no map points.
+
+\subsection{Step 7: Deploy and demonstrate}
+
+The team will deploy the web/API publicly with pinned dependencies, environment settings, and a visible model version. The demonstration will include new images, errors, review-required cases, latency, and an offline fallback.
+
+\textbf{Output:} public deployment and complete submission package.
+
+\textbf{Completion criterion:} an independent user can open the URL, run the main flow, and verify the deployed model version.

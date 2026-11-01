@@ -1,0 +1,28 @@
+# Street list and street-level split, v1 (2026-10-23). Splits are by whole street (RQ: unseen streets).
+# r_crops = estimated right crops
+# to label after 25 m thinning, <= 2 passes per position, cap 420 per street.
+# Pilot streets (Pasteur, Lê Văn Sỹ, Phan Đăng Lưu) are train streets: pilot labels join train after adjudication.
+version: 1
+crop_rule: right side only (see docs/collection_log.md 2026-10-23)
+cap_r_crops_per_street: 420
+streets:
+  # ---- test (4): four different areas
+  - {id: "Nơ Trang Long",        split: test,  area: Bình Thạnh,   r_crops: 110}
+  - {id: "Trần Phú",             split: test,  area: Q5,           r_crops: 137}
+  - {id: "Hai Bà Trưng",         split: test,  area: Q1–Q3,        r_crops: 204}
+  - {id: "Lý Thường Kiệt",       split: test,  area: Q10–Q11,      r_crops: 340}
+  # ---- val (3)
+  - {id: "Võ Văn Tần",           split: val,   area: Q3,           r_crops: 129}
+  - {id: "Hồng Bàng",            split: val,   area: Q5–Q6,        r_crops: 204}
+  - {id: "Nguyễn Đình Chiểu#0",  split: val,   area: Q1–Q3,        r_crops: 296}
+  # ---- train (10)
+  - {id: "Hải Thượng Lãn Ông",   split: train, area: Q5 Chợ Lớn,   r_crops: 121}
+  - {id: "Nguyễn Kiệm#0",        split: train, area: Phú Nhuận–Gò Vấp, r_crops: 122}
+  - {id: "Cách Mạng Tháng Tám#0", split: train, area: Q1–Q3–Q10,   r_crops: 270}
+  - {id: "Nguyễn Thị Minh Khai", split: train, area: Q1–Q3,        r_crops: 308}
+  - {id: "Nguyễn Trãi",          split: train, area: Q1–Q5,        r_crops: 368}
+  - {id: "Trần Hưng Đạo",        split: train, area: Q1–Q5,        r_crops: 418}
+  - {id: "Điện Biên Phủ#1",      split: train, area: Q3–Bình Thạnh, r_crops: 326}
+  - {id: "Pasteur",              split: train, area: Q1–Q3,        r_crops: 196, pilot: true}
+  - {id: "Lê Văn Sỹ",            split: train, area: Q3–Phú Nhuận, r_crops: 199, pilot: true}
+  - {id: "Phan Đăng Lưu",        split: train, area: Bình Thạnh–Phú Nhuận, r_crops: 174, pilot: true}

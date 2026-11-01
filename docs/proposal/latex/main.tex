@@ -1,0 +1,72 @@
+% ==============================================================================
+% MACHINE LEARNING PROJECT PROPOSAL -- FIT HCMUS
+% Compile with XeLaTeX (recommended) or LuaLaTeX.
+% ==============================================================================
+\documentclass[12pt,a4paper]{article}
+\usepackage{scrextend}
+\changefontsizes{13pt}
+
+\usepackage{fit_hcmus}
+\setlength{\emergencystretch}{2em}
+
+% PROJECT INFORMATION
+\courseid{CSC14005}
+\coursename{Introduction to Machine Learning}
+\reportsubtitle{MACHINE LEARNING PROJECT PROPOSAL}
+\title{CLASSIFYING SIDEWALK PASSAGE OBSTRUCTION IN HO CHI MINH CITY FROM STREET-LEVEL IMAGERY}
+\instructor{PhD. Bùi Tiến Lên}
+\classid{24KHMT02}
+\academicyear{Semester I, Academic Year 2026 - 2027}
+\groupid{11}
+
+\author{
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{cc}
+        \textbf{Full name} & \textbf{Student ID} \\
+        Lê Nguyễn Quốc Học & 24127044 \\
+        Bùi Thị Bích Loan & 24127072 \\
+        Nguyễn Hữu Gia Minh & 24127078 \\
+        Nguyễn Lê Hoàng Khải & 24127408 \\
+        Trần Hoàng Phúc & 24127505
+    \end{tabular}
+}
+
+\newif\ifisprojectreport
+\isprojectreporttrue
+
+\begin{document}
+
+\ifisprojectreport
+    \makecoverpage
+    \pagestyle{plain}
+    \pagenumbering{roman}
+    \begingroup
+        \setstretch{1.0}
+        \setlength{\parskip}{0pt}
+        \small
+        \tableofcontents
+        \vspace{1.5em}
+        \listoftables
+    \endgroup
+    \newpage
+    \pagestyle{fancy}
+    \pagenumbering{arabic}
+\else
+    \pagestyle{fancy}
+    \makeassignmentheader
+    \pagenumbering{arabic}
+\fi
+
+% Keep body text, table text, and captions at the same small font size.
+\small
+
+\input{sections/01_gioithieu}
+\input{sections/02_kientruc_thietke}
+\input{sections/03_thuat_toan_ma_nguon}
+\input{sections/04_danhgia_phancong}
+
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

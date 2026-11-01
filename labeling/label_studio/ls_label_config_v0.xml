@@ -1,0 +1,36 @@
+<View style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap">
+  <View style="flex:0 0 560px; max-width:100%">
+    <Image name="image" value="$image" zoom="true" zoomControl="true" maxWidth="560px"/>
+  </View>
+  <View style="flex:1; min-width:300px">
+    <Header value="Người đi bộ có phải bước xuống lòng đường để đi tiếp dọc vỉa hè gần (phía ảnh nhìn tới) không?" size="5"/>
+    <Choices name="label" toName="image" choice="single-radio" required="true" showInline="false">
+      <Choice value="0 – Còn lối đi" hotkey="a"/>
+      <Choice value="1 – Bị chặn" hotkey="s"/>
+      <Choice value="Không đủ thông tin" hotkey="d"/>
+    </Choices>
+    <View visibleWhen="choice-selected" whenTagName="label" whenChoiceValue="Không đủ thông tin">
+      <Header value="Lý do (bắt buộc khi chọn Không đủ thông tin)" size="6"/>
+      <Choices name="reason" toName="image" choice="single-radio" showInline="false">
+        <Choice value="Không thấy vỉa hè gần" hotkey="f"/>
+        <Choice value="Ảnh mờ / tối / khung lệch" hotkey="g"/>
+        <Choice value="Phần quyết định bị che" hotkey="h"/>
+        <Choice value="Phía này không có vỉa hè" hotkey="j"/>
+        <Choice value="Lý do khác" hotkey="k"/>
+      </Choices>
+    </View>
+    <Header value="Vật cản thấy được (không bắt buộc)" size="6"/>
+    <Choices name="obstacles" toName="image" choice="multiple" showInline="true">
+      <Choice value="Xe máy đậu" hotkey="q"/>
+      <Choice value="Ô tô đậu" hotkey="w"/>
+      <Choice value="Hàng hóa / quầy hàng" hotkey="e"/>
+      <Choice value="Bàn ghế quán" hotkey="r"/>
+      <Choice value="Rào chắn / công trình" hotkey="t"/>
+      <Choice value="Khác" hotkey="y"/>
+    </Choices>
+    <Choices name="difficult" toName="image" choice="multiple" showInline="true">
+      <Choice value="Khó / không chắc" hotkey="l"/>
+    </Choices>
+    <TextArea name="note" toName="image" placeholder="Ghi chú (nếu có)" rows="1" maxSubmissions="1"/>
+  </View>
+</View>

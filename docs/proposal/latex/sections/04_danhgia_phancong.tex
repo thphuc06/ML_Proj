@@ -1,0 +1,73 @@
+% ==============================================================================
+% 4. SCHEDULE, TEAM ORGANIZATION, AND RISK CONTROL
+% ==============================================================================
+\newpage
+\section{Schedule, Team Organization, and Risk Control}
+
+\subsection{Planned schedule}
+
+\begin{table}[H]
+\centering
+\caption{Project milestones and required evidence}
+\label{tab:schedule}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.18\linewidth}>{\raggedright\arraybackslash}p{0.36\linewidth}L}
+\toprule
+\textbf{Milestone} & \textbf{Primary work} & \textbf{Required evidence} \\
+\midrule
+Week 3 &
+Finalize the problem, scope, and annotation guide; conduct the Steps 1--2 pilot; initialize the web/API scaffold with sample records. &
+Proposal; pilot and feasibility logs; interface skeleton; unresolved-item list. \\
+By Week 6 &
+Complete collection, annotation, preprocessing, EDA, and data splitting. &
+Image manifest; annotation guide; EDA; frozen split lists. \\
+Weeks 7--10 &
+Train and tune at least three model families; select the deployment model on validation; freeze all candidates; evaluate all models and the majority baseline once on the same test; integrate the selected model into the API. &
+Logs and frozen configurations; shared-test metric table; confusion matrices; selected model; offline/API parity check. \\
+Reporting week &
+Complete cloud deployment, demonstration, report, and slides. &
+PDF report; source-code archive; saved model; slides; public URL. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Team organization}
+
+Each member will lead one workstream:
+\begin{enumerate}
+  \item Problem definition and source verification
+  \item Annotation, EDA, and data splitting
+  \item Baseline and model development
+  \item Web and API development
+  \item Integration, deployment, and reporting
+\end{enumerate}
+
+All members will cross-check outputs, and at least two will annotate independently. The model lead cannot change test labels after viewing predictions. Final assignments will be agreed by the team.
+
+\newpage
+\subsection{Risk register}
+
+\begin{table}[H]
+\centering
+\caption{Principal risks and planned responses}
+\label{tab:risks}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.30\linewidth}J}
+\toprule
+\textbf{Risk} & \textbf{Planned response} \\
+\midrule
+Too few valid images or severe class imbalance &
+Test feasibility in the pilot; add streets, self-captured images, and minority-class cases where needed. Report the actual achieved scale and never substitute near duplicates for independent observations. \\
+Ambiguous labels or data leakage &
+Revise the guide, use independent adjudication, and group by street, keeping team capture sessions, parent images, and near-duplicate clusters together. Use only verified-street images in the main experiment and keep the test set sealed. \\
+External API access or usage restrictions &
+Verify access, licence conditions, and attribution during the pilot. Prefer team-captured images when an external source is unsuitable; review personal information and keep a compliant offline demonstration set. \\
+Model overfitting or weak street transfer &
+Monitor validation learning curves, keep street-disjoint splits, limit tuning to validation data, and report subgroup and error analyses. \\
+Deployment or external-service outage &
+Pin dependencies, record the model version, validate the offline/API parity, and prepare a fallback demonstration that does not fabricate live data. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Expected deliverables and conclusion}
+
+The final submission is expected to contain a verified image manifest, annotation guide, EDA and experiment notebooks, reproducible configurations, trained-model artefacts, a report and presentation, source code for the web interface and API, and a working deployment URL. Claims will remain proportional to the evidence: the map will describe recorded observations, evaluation will describe the sampled streets and conditions, and the classifier will be presented as a survey-support tool rather than a legal or accessibility certification system. Observations will be reported at street level, without identifying individual vendors or people.

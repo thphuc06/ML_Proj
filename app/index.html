@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sidewalk Screening</title>
+<style>
+  :root { --bg: #fbfbf9; --fg: #1f2328; --muted: #5f6670; --line: #dcdfe3; --accent: #1f5f8b; }
+  body { margin: 0; padding: 24px 16px; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  p { color: var(--muted); margin: 0 0 20px; }
+  .wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sàng lọc lối đi trên vỉa hè</h1>
+  <p id="status">Đang kiểm tra dịch vụ…</p>
+  <div class="wrap">
+    <table>
+      <thead><tr><th>Mã</th><th>Đường</th><th>Ngày chụp</th><th>Tọa độ</th><th>Trạng thái</th><th>Ảnh gốc</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+</main>
+<script>
+  fetch('/api/health').then(r => r.json()).then(h => {
+    document.getElementById('status').textContent = h.model_version
+      ? 'Model: ' + h.model_version
+      : 'Khung giao diện: chưa có model, các dòng dưới là quan sát mẫu với metadata thật.';
+  });
+  fetch('/api/observations').then(r => r.json()).then(rows => {
+    const body = document.getElementById('rows');
+    for (const r of rows) {
+      const tr = document.createElement('tr');
+      for (const v of [r.item, r.street, r.capture_date, r.lat.toFixed(5) + ', ' + r.lon.toFixed(5), r.review_state]) {
+        const td = document.createElement('td'); td.textContent = v; tr.append(td);
+      }
+      const td = document.createElement('td'); const a = document.createElement('a');
+      a.href = r.source_url; a.textContent = 'Mapillary'; a.target = '_blank'; a.rel = 'noopener';
+      td.append(a); tr.append(td); body.append(tr);
+    }
+  });
+</script>
+</body>
+</html>

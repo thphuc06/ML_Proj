@@ -1,0 +1,44 @@
+% ==============================================================================
+% 1. PROBLEM CONTEXT AND MOTIVATION
+% ==============================================================================
+\section{Problem Context and Motivation}
+
+\subsection{Practical problem}
+
+A sidewalk can exist physically yet fail as a walking route when parked vehicles, goods, tables and chairs, or temporary barriers break its continuous path. Pedestrians may then have to enter the roadway; a March 2026 report documented this situation for pupils near schools in HCMC~\cite{thanhnien2026students}. Because encroachment can recur after enforcement, a single inspection cannot describe later conditions. This project therefore proposes an image-screening tool that records time-stamped observations and flags visible blocked paths for review.
+
+The primary users are survey teams. During a route survey, the team collects street-level images; the system predicts whether the visible path is blocked; and a reviewer checks the image and metadata before selecting locations for field inspection. The initial evaluation focuses on classification quality; the effect on survey efficiency will be examined in future work.
+
+\subsection{Evidence and local relevance}
+
+Table~\ref{tab:evidence} presents three directly relevant sources. Their measurements have different units and must be interpreted within their stated scopes.
+
+\begin{table}[H]
+\centering
+\caption{Published evidence motivating the project}
+\label{tab:evidence}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.23\linewidth}J}
+\toprule
+\textbf{Scope and date} & \textbf{Published evidence and interpretation} \\
+\midrule
+HCMC, reported 26 March 2026 &
+An enforcement campaign processed 19,630 cases concerning roads, road margins, and sidewalks; the report also described re-encroachment after enforcement teams left~\cite{congly2026sidewalk}. The case count is neither a count of unique obstructed locations nor a sidewalk-obstruction rate. \\
+HCMC school areas, reported 26 March 2026 &
+A news report documented pupils entering the roadway where occupied sidewalks left no walking space~\cite{thanhnien2026students}. This provides a concrete consequence, but it does not estimate how often the situation occurs citywide. \\
+Central HCMC study, published online 11 July 2025 &
+A study involving 381 child--parent pairs and audits of 88 walking routes found child-friendly walkability to be average or below~\cite{le2025walkability}. It provides local context but does not directly measure the prevalence of sidewalk obstruction. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Gap to be addressed}
+
+The available evidence establishes a recurring local concern but does not identify which photographed segments have a usable path at a later survey time. The specific gap is a method for screening images for blocked passage, retaining reviewable evidence with capture metadata, and testing whether classification transfers to streets excluded from training. The proposed system supports prioritization; it does not replace field inspection or make legal or accessibility determinations. The closest prior resource is the Vietnamese Sidewalk Violation VQA dataset~\cite{dao2026viahevqa}, whose question Q10 asks whether pedestrians still have a clear path. Because it lacks location and capture-time metadata, it cannot test transfer to unseen streets; this project adds geolocated, time-stamped imagery and a street-held-out evaluation. Comparable work exists elsewhere, such as Project Sidewalk~\cite{weld2019sidewalk}; this project targets a motorbike-dominated city.
+
+The expected contributions are:
+\begin{itemize}
+  \item \textbf{Dataset:} a locally verified, provenance-documented image set and annotation guide.
+  \item \textbf{Model comparison:} at least three model families against a majority baseline.
+  \item \textbf{Evaluation:} results on streets excluded from model training.
+  \item \textbf{Application:} a web demonstration with a prediction API and reviewable observations.
+\end{itemize}

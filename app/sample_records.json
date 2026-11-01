@@ -1,0 +1,102 @@
+[
+ {
+  "item": "4c386490",
+  "street": "Cách Mạng Tháng Tám",
+  "capture_date": "2023-11-16",
+  "lat": 10.788592,
+  "lon": 106.661418,
+  "source_url": "https://www.mapillary.com/app/?pKey=2851426015009072",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "d364992e",
+  "street": "Hải Thượng Lãn Ông",
+  "capture_date": "2024-04-16",
+  "lat": 10.750651,
+  "lon": 106.658983,
+  "source_url": "https://www.mapillary.com/app/?pKey=961440948415670",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "f488edea",
+  "street": "Lê Văn Sỹ",
+  "capture_date": "2023-08-17",
+  "lat": 10.797343,
+  "lon": 106.664146,
+  "source_url": "https://www.mapillary.com/app/?pKey=1374344439878590",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "5c6531a1",
+  "street": "Nguyễn Kiệm",
+  "capture_date": "2023-10-04",
+  "lat": 10.801143,
+  "lon": 106.679534,
+  "source_url": "https://www.mapillary.com/app/?pKey=1383108545751968",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "c5528976",
+  "street": "Nguyễn Thị Minh Khai",
+  "capture_date": "2024-01-30",
+  "lat": 10.769481,
+  "lon": 106.685492,
+  "source_url": "https://www.mapillary.com/app/?pKey=379582501359483",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "1e8233bf",
+  "street": "Nguyễn Trãi",
+  "capture_date": "2023-08-19",
+  "lat": 10.752861,
+  "lon": 106.652543,
+  "source_url": "https://www.mapillary.com/app/?pKey=836609544445284",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "eeeee7bc",
+  "street": "Pasteur",
+  "capture_date": "2023-05-01",
+  "lat": 10.771759,
+  "lon": 106.702123,
+  "source_url": "https://www.mapillary.com/app/?pKey=624144639618661",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "f81ec996",
+  "street": "Phan Đăng Lưu",
+  "capture_date": "2023-10-31",
+  "lat": 10.803659,
+  "lon": 106.687839,
+  "source_url": "https://www.mapillary.com/app/?pKey=1014429699829082",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "a043b72f",
+  "street": "Trần Hưng Đạo",
+  "capture_date": "2023-04-30",
+  "lat": 10.763945,
+  "lon": 106.691639,
+  "source_url": "https://www.mapillary.com/app/?pKey=552419877037749",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ },
+ {
+  "item": "75e207b9",
+  "street": "Điện Biên Phủ",
+  "capture_date": "2023-12-20",
+  "lat": 10.787844,
+  "lon": 106.695069,
+  "source_url": "https://www.mapillary.com/app/?pKey=288981840338319",
+  "licence": "CC BY-SA 4.0",
+  "review_state": "unlabelled"
+ }
+]

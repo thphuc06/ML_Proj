@@ -1,0 +1,25 @@
+# Secrets and private server details
+.env
+infra/.env.server
+infra/aws_resources.txt
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Heavy or regenerable data (images come from Mapillary, CC BY-SA)
+data/raw/
+data/crops/
+data/external/
+data/**/*.jpg
+data/**/*.parquet
+models/
+
+# Raw Label Studio exports contain account emails
+data/labels/raw/
+
+# Run logs and build output
+logs/
+docs/proposal/latex/build/

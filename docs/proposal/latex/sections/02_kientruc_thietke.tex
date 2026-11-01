@@ -1,0 +1,92 @@
+% ==============================================================================
+% 2. MACHINE-LEARNING TASK AND PROJECT SCOPE
+% ==============================================================================
+\section{Machine-Learning Task and Project Scope}
+
+\subsection{Task formulation}
+
+The core task is supervised binary image classification. Each sample is one RGB image showing one side of a sidewalk; Mapillary panoramas will be converted into perspective views facing each sidewalk, oriented by the direction of travel, and other images showing both sides will be cropped by a documented rule before annotation. The label applies only to the visible segment at capture time. Location and time are retained as metadata for splitting and review, not used as prediction features.
+
+Let $x_i$ be an image and $y_i \in \{0,1\}$ its verified label. The model returns a decision score, and the validation set determines the threshold:
+\begin{equation}
+  s_i = f_\theta(x_i), \qquad \hat{y}_i = \mathbf{1}[s_i \ge \tau].
+\end{equation}
+
+This notation does not assume that a decision score is a calibrated probability. Annotators apply one decision test: would a pedestrian have to step into the roadway to continue along the visible segment? Table~\ref{tab:labels} defines the resulting labels and the separate screening state.
+
+\begin{table}[H]
+\centering
+\caption{Label definitions and screening rules}
+\label{tab:labels}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.25\linewidth}J}
+\toprule
+\textbf{Label or state} & \textbf{Observable rule and examples} \\
+\midrule
+0: Visible path remains &
+A continuous strip of unobstructed sidewalk surface is visible through the photographed segment. A motorcycle parked near the edge while a continuous path remains is label 0. This label does not certify a compliant width or universal accessibility. \\
+1: Blocked &
+An obstacle cuts across the walking path and no continuous clear strip remains in the visible segment. A row of vehicles or goods occupying the full path is label 1; merely seeing a vehicle or stall is insufficient. \\
+Insufficient information &
+Used only when the image lacks the evidence to answer the decision test: the sidewalk area is not in view, the image is blurred or badly framed, or the decisive part is occluded. A sidewalk fully covered by obstacles is labelled blocked, and difficult but visible cases still receive 0 or 1. Unresolved items are excluded with a recorded reason; this is not a third model class. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Data and application boundaries}
+
+\begin{table}[H]
+\centering
+\caption{Project scope}
+\label{tab:scope}
+\begin{tabularx}{\textwidth}{JJ}
+\toprule
+\textbf{In scope} & \textbf{Out of scope} \\
+\midrule
+Approximately ten HCMC streets; dry daytime images; passage blocked by parked vehicles, goods, tables and chairs, or barriers; binary image classification; and stored observations with genuine source, place, and time metadata when available. &
+Measuring clearance in metres; producing a 0--100 score; counting or localizing individual obstacles; comprehensive assessment of surface quality or accessibility; real-time monitoring; citywide prevalence estimates; and legal conclusions. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The final street list will be fixed after the pilot and will not be presented as representative of HCMC. In the application, reviewers can mark an upload as insufficient information before or after viewing a prediction and exclude it from the observation list. The binary classifier is not presumed to recognize every out-of-scope input, so input guidance, validation, and human review remain necessary. A map shows recorded observations rather than live conditions, and missing coordinates never receive fabricated locations.
+
+\subsection{Planned data sources}
+
+\begin{table}[H]
+\centering
+\caption{Planned roles and limitations of image sources}
+\label{tab:sources}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.18\linewidth}>{\raggedright\arraybackslash}p{0.37\linewidth}J}
+\toprule
+\textbf{Source} & \textbf{Planned role, metadata, and labels} & \textbf{Key limitation} \\
+\midrule
+Mapillary~\cite{mapillary2024intro} &
+Planned primary source for street-grouped training, validation, and testing, and for mapping observations if the pilot confirms usable imagery, coordinates, capture dates, attribution, and access. All selected images will be annotated under this project's guidelines. &
+Availability and sidewalk visibility may vary by street; usage conditions must be checked before collection or release. \\
+Team-captured images &
+At least 100 planned images for new-source evaluation and demonstration, with street, capture session, time, and coordinates recorded when safe and available. Labels will be independently reviewed. &
+Images from a street used in training test only new images on a known street; they are not evidence of unseen-street transfer. \\
+VQA Q10~\cite{dao2026viahevqa} &
+Optional out-of-domain check on a relabelled subset; not used for training. Before use, the team will verify files, provenance, licence, and any usable metadata. &
+No location or capture-time metadata, so these images cannot enter the map or the main street-based experiment. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The planned target is 1,500--3,000 non-duplicate images, including at least 100 team-captured images, subject to revision after a 100--200 image pilot. These are targets, not collected-data counts. Original images or panoramas will be distinguished from derived crops, and all crops from one parent image will remain in the same split.
+
+\subsection{Experimental questions and evaluation}
+
+The primary question is: \textit{Which planned model best classifies sidewalk passage obstruction on streets excluded from training?} A secondary analysis will examine performance on a new image source. A team-captured image from a training street will be reported as a known-street result, while an image from a held-out street may contribute to unseen-street evaluation if its provenance is verified. VQA Q10 images, if used, will be reported only as a separate out-of-domain check.
+
+Training, validation, and test sets will be grouped by street; all crops from one panorama, each team capture session, and each near-duplicate group will stay within one split. The street list will be chosen so that the held-out test contains several streets. The report will give image counts by class and street, plus per-street results when sample sizes permit.
+
+Each candidate model will be trained and tuned using only the training and validation sets. After validation-based tuning, each candidate's configuration and decision threshold will be frozen. All candidate models and the majority-class baseline will then be evaluated once on the same held-out test set. The deployment model will be selected using validation results; test results will support final comparative reporting rather than further model selection or tuning.
+
+Macro-F1 is the primary metric:
+\begin{equation}
+  F_{1,\mathrm{macro}} = \frac{1}{2}\sum_{c\in\{0,1\}}
+  \frac{2\,\mathrm{Precision}_c\,\mathrm{Recall}_c}{\mathrm{Precision}_c+\mathrm{Recall}_c}.
+\end{equation}
+
+Per-class precision and recall, confusion matrix, sample counts, and a majority-class baseline will also be reported, together with the share of collected images that are eligible and the reasons for exclusion. Street-level bootstrap confidence intervals and PR-AUC or Average Precision are conditional additions if enough independent streets and positive cases are available. No performance target is guaranteed before the pilot and final test.

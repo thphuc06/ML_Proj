@@ -1,0 +1,188 @@
+% ==============================================================================
+% fit_hcmus.sty -- FIT HCMUS report style (rebuilt to match the proposal PDF)
+% Compile with XeLaTeX.
+% ==============================================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fit_hcmus}[2026/10/18 FIT HCMUS report style]
+
+% ---------------------------------------------------------------- packages
+\RequirePackage[a4paper,left=3cm,right=2cm,top=57.6bp,bottom=60.9bp,
+  headheight=16pt,headsep=12pt,footskip=35.2pt]{geometry}
+\RequirePackage{fontspec}
+\setmainfont{Times New Roman}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{bm}
+\RequirePackage{graphicx}
+\RequirePackage[table]{xcolor}
+\RequirePackage{setspace}
+\RequirePackage{titlesec}
+\RequirePackage{titletoc}
+\RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+\RequirePackage{ragged2e}
+\RequirePackage{enumitem}
+\RequirePackage[skins]{tcolorbox}
+\RequirePackage[font=small,labelfont={bf,color=fitprimary},labelsep=colon,
+  skip=6pt]{caption}
+\RequirePackage{url}
+\RequirePackage{indentfirst}
+\RequirePackage{etoolbox}
+\RequirePackage{float}
+\RequirePackage{changepage}
+\RequirePackage{hyperref}
+
+% ---------------------------------------------------------------- colours
+\definecolor{fitprimary}{rgb}{0,0.2,0.4}        % dark blue
+\definecolor{fitaccent}{rgb}{0,0.361,0.663}     % faculty blue
+\definecolor{fitdark}{rgb}{0.102,0.169,0.298}   % navy (subsections, header)
+\definecolor{fitgray}{gray}{0.5}
+
+\hypersetup{colorlinks=true,linkcolor=fitprimary,citecolor=fitaccent,
+  urlcolor=fitaccent,pdfborder={0 0 0}}
+
+% ---------------------------------------------------------------- text layout
+\setstretch{1.35}
+\setlength{\parindent}{1.27cm}
+\setlength{\parskip}{6pt}
+\urlstyle{same}
+
+% ---------------------------------------------------------------- metadata
+\newcommand{\@courseid}{}
+\newcommand{\@coursename}{}
+\newcommand{\@reportsubtitle}{}
+\newcommand{\@instructor}{}
+\newcommand{\@classid}{}
+\newcommand{\@academicyear}{}
+\newcommand{\courseid}[1]{\renewcommand{\@courseid}{#1}}
+\newcommand{\coursename}[1]{\renewcommand{\@coursename}{#1}}
+\newcommand{\reportsubtitle}[1]{\renewcommand{\@reportsubtitle}{#1}}
+\newcommand{\instructor}[1]{\renewcommand{\@instructor}{#1}}
+\newcommand{\classid}[1]{\renewcommand{\@classid}{#1}}
+\newcommand{\academicyear}[1]{\renewcommand{\@academicyear}{#1}}
+\newcommand{\@groupid}{}
+\newcommand{\groupid}[1]{\renewcommand{\@groupid}{#1}}
+
+% ---------------------------------------------------------------- headings
+\titleformat{\section}
+  {\fontsize{15pt}{18pt}\selectfont\bfseries\color{fitprimary}}
+  {\thesection.}{0.6em}{}
+  [\vspace{20.2pt}{\color{fitprimary}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{13pt}{14.8pt}
+
+\titleformat{\subsection}
+  {\fontsize{13.5pt}{16pt}\selectfont\bfseries\color{fitdark}}
+  {\thesubsection.}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{5pt}
+
+% Table of contents and list of tables
+\setcounter{tocdepth}{2}
+\titlecontents{section}[1.5em]{\addvspace{12pt}\bfseries}
+  {\contentslabel{1.5em}}{}{\hfill\contentspage}
+\titlecontents{subsection}[3.8em]{}
+  {\contentslabel{2.3em}}{}{\titlerule*[0.75em]{.}\contentspage}
+\titlecontents{table}[3.8em]{}
+  {\contentslabel{2.3em}}{}{\titlerule*[0.75em]{.}\contentspage}
+
+\newcommand{\fit@listheading}[1]{%
+  {\noindent\fontsize{15pt}{18pt}\selectfont\bfseries\color{fitprimary}#1\par}
+  \vspace{14.6pt}{\color{fitprimary}\hrule height 0.8pt}\vspace{10.4pt}}
+\renewcommand{\tableofcontents}{%
+  \fit@listheading{Table of Contents}\@starttoc{toc}}
+\renewcommand{\listoftables}{%
+  \vspace{14pt}\fit@listheading{List of Tables}\@starttoc{lot}}
+
+% Bibliography heading uses the section style
+\renewcommand{\refname}{References}
+\renewenvironment{thebibliography}[1]
+  {\section*{\refname}\vspace{3pt}%
+   \list{\@biblabel{\@arabic\c@enumiv}}%
+     {\settowidth\labelwidth{\@biblabel{#1}}%
+      \leftmargin\labelwidth\advance\leftmargin\labelsep
+      \setlength{\itemsep}{5pt}\setlength{\parsep}{0pt}%
+      \usecounter{enumiv}\let\p@enumiv\@empty
+      \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+   \sloppy\clubpenalty4000\widowpenalty4000\sfcode`\.\@m}
+  {\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+
+% ---------------------------------------------------------------- tables
+\AtBeginEnvironment{tabularx}{\setstretch{1.35}\small}
+\g@addto@macro\small{\setlength{\abovedisplayskip}{19pt plus 2pt minus 2pt}%
+  \setlength{\belowdisplayskip}{6pt plus 2pt minus 2pt}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{J}{X}
+
+% ---------------------------------------------------------------- lists
+\setlist[itemize]{topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{topsep=2pt,itemsep=-3.6pt,parsep=0pt,before={\vspace{-4pt}},after={\vspace{-3pt}},
+  leftmargin=36.1pt,labelsep=9.9pt}
+
+% ---------------------------------------------------------------- page styles
+\fancypagestyle{fancy}{%
+  \fancyhf{}%
+  \fancyhead[L]{\small\bfseries\color{fitdark}\@courseid: \@coursename}%
+  \fancyhead[R]{\small\bfseries\color{fitprimary}Faculty of IT, HCMUS}%
+  \fancyfoot[L]{\small\itshape\color{fitgray}\@reportsubtitle}%
+  \fancyfoot[R]{\small\bfseries\color{fitdark}Page \thepage/\pageref{LastPage}}%
+  \renewcommand{\headrulewidth}{0.6pt}%
+  \renewcommand{\footrulewidth}{0.5pt}%
+  \renewcommand{\footruleskip}{12.4pt}%
+}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[R]{\raisebox{8pt}[0pt][0pt]{\small\bfseries\color{fitdark}Page \thepage}}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+% ---------------------------------------------------------------- cover page
+\newcommand{\makecoverpage}{%
+  \begin{titlepage}
+  \setstretch{1.0}%
+  \centering
+  \vspace*{\dimexpr-0.9cm+3bp\relax}
+  % The body margins are asymmetric (3 cm left, 2 cm right); shift the cover
+  % 0.5 cm left so that everything is centred on the physical page.
+  \begin{adjustwidth}{-0.5cm}{0.5cm}
+  \centering
+  {\fontsize{13pt}{16pt}\selectfont\bfseries VIETNAM NATIONAL UNIVERSITY HO CHI MINH CITY\par}
+  \vspace{4.2pt}
+  {\fontsize{14pt}{16pt}\selectfont\bfseries\color{fitprimary} UNIVERSITY OF SCIENCE\par}
+  \vspace{1.9pt}
+  {\fontsize{13pt}{16pt}\selectfont\bfseries\color{fitaccent} FACULTY OF INFORMATION TECHNOLOGY\par}
+  \vspace{8.3pt}
+  {\color{fitaccent}\rule{10.4cm}{1.5pt}\par}
+  \vspace{16.9pt}
+  \includegraphics[width=4.4cm]{images/logo_hcmus.png}\par
+  \vspace{22.8pt}
+  {\fontsize{13pt}{16pt}\selectfont\bfseries COURSE: \@coursename\ (\@courseid)\par}
+  \vspace{5pt}
+  {\fontsize{14pt}{16pt}\selectfont\bfseries\color{fitdark}\@reportsubtitle\par}
+  \vspace{8.1pt}
+  \begin{tcolorbox}[enhanced,width=\linewidth,arc=5.5pt,boxrule=1.5pt,
+      colframe=fitprimary,colback=white,halign=center,valign=center,
+      top=12pt,bottom=12pt,left=8pt,right=8pt]
+    \fontsize{18pt}{21pt}\selectfont\bfseries\color{fitprimary}\@title
+  \end{tcolorbox}
+  \vspace{-2.1pt}
+  % Course information as one centred block
+  {\fontsize{13pt}{16pt}\selectfont
+   \renewcommand{\arraystretch}{1.7}%
+   \begin{tabular}{@{}l@{\hspace{1.2em}}l@{}}
+     \textbf{Instructor:} & \@instructor \\
+     \textbf{Class:} & \@classid \\
+     \textbf{Academic year:} & \@academicyear \\
+     \ifx\@groupid\@empty\else\textbf{Group:} & \@groupid \\\fi
+     \textbf{Students:} &
+   \end{tabular}\par}
+  \vspace{2pt}
+  {\fontsize{13pt}{16pt}\selectfont\setstretch{1.35}\@author\par}
+  \end{adjustwidth}
+  \vfill
+  \end{titlepage}%
+}
+
+\endinput

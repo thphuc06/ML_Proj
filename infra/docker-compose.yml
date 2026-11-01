@@ -1,0 +1,46 @@
+# Label Studio + Postgres + Caddy (HTTPS via Let's Encrypt on <ip>.sslip.io).
+# On the server: /srv/sidewalk/infra, secrets in .env (copied from .env.server).
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ls
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_DB: labelstudio
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+
+  app:
+    image: heartexlabs/label-studio:1.23.2
+    restart: unless-stopped
+    depends_on: [db]
+    environment:
+      DJANGO_DB: default
+      SECRET_KEY: ${SECRET_KEY}
+      POSTGRE_NAME: labelstudio
+      POSTGRE_USER: ls
+      POSTGRE_PASSWORD: ${PG_PASSWORD}
+      POSTGRE_HOST: db
+      POSTGRE_PORT: 5432
+      LABEL_STUDIO_HOST: https://${DOMAIN}
+      CSRF_TRUSTED_ORIGINS: https://${DOMAIN}
+      LABEL_STUDIO_DISABLE_SIGNUP_WITHOUT_LINK: "true"
+      LABEL_STUDIO_USERNAME: ${ADMIN_EMAIL}
+      LABEL_STUDIO_PASSWORD: ${ADMIN_PASSWORD}
+      LOCAL_FILES_SERVING_ENABLED: "true"
+      LOCAL_FILES_DOCUMENT_ROOT: /label-studio/files
+    volumes:
+      - ./ls-data:/label-studio/data
+      - /srv/sidewalk/data/crops:/label-studio/files/crops:ro
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on: [app]
+    ports: ["80:80", "443:443"]
+    environment:
+      DOMAIN: ${DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./caddy-data:/data

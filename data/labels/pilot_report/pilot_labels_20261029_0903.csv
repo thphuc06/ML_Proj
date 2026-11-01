@@ -1,0 +1,751 @@
+﻿annotator,crop_id,label,reason,obstacles,difficult,note,seconds,by,side,street_id,sampling_stratum
+Khai,838d2e79,0,,Xe máy đậu,False,,36.79,7,R,Phan Đăng Lưu,mid
+Khai,956412a6,0,,,False,,11.383,7,R,Pasteur,mid
+Khai,4e1287be,I,Phía này không có vỉa hè,,False,,112.512,7,R,Lê Văn Sỹ,mid
+Khai,2456dabe,0,,,False,,4.199,7,R,Phan Đăng Lưu,low
+Khai,0e6b9fee,I,Phần quyết định bị che,,False,,17.248,7,R,Lê Văn Sỹ,high
+Khai,2fb2e53d,I,Phần quyết định bị che,Ô tô đậu,False,,3.851,7,R,Pasteur,high
+Khai,b2ba0241,0,,,False,,5.912,7,R,Phan Đăng Lưu,mid
+Khai,96466651,0,,,False,,24.036,7,R,Lê Văn Sỹ,low
+Khai,7531a6c7,0,,Xe máy đậu,False,,4.034,7,R,Phan Đăng Lưu,low
+Khai,13b07f1d,0,,,False,,4.251,7,R,Lê Văn Sỹ,low
+Khai,990ba148,I,,Hàng hóa / quầy hàng|Bàn ghế quán,False,,62.259,7,R,Phan Đăng Lưu,high
+Khai,e63ceaf3,0,,,False,,71.752,7,R,Pasteur,low
+Khai,681f2af6,0,,,False,,30.637,7,R,Lê Văn Sỹ,low
+Khai,0ad92dd7,0,,Xe máy đậu,False,,18.911,7,R,Phan Đăng Lưu,low
+Khai,ef51a330,I,Không thấy vỉa hè gần,Ô tô đậu,False,,3.224,7,R,Lê Văn Sỹ,mid
+Khai,99fdee25,0,,,False,,36.463,7,R,Lê Văn Sỹ,mid
+Khai,450feb53,I,Phía này không có vỉa hè,,False,,6.738,7,R,Pasteur,high
+Khai,e807e08e,0,,,False,,28.118,7,R,Phan Đăng Lưu,low
+Khai,98187ec5,1,,Xe máy đậu,False,,7.297,7,R,Lê Văn Sỹ,low
+Khai,39b922fa,1,,Xe máy đậu,False,,13.719,7,R,Lê Văn Sỹ,mid
+Khai,bce03561,0,,,False,,25.821,7,R,Pasteur,low
+Khai,f1f35c05,0,,Xe máy đậu,False,,53.938,7,R,Lê Văn Sỹ,high
+Khai,152e2bd1,I,Phần quyết định bị che,Xe máy đậu,False,,11.053,7,R,Phan Đăng Lưu,mid
+Khai,496db837,0,,,False,,50.951,7,R,Phan Đăng Lưu,low
+Khai,44639e4c,0,,,False,,39.977,7,R,Lê Văn Sỹ,mid
+Khai,42e674ce,0,,Xe máy đậu,False,,7.949,7,R,Lê Văn Sỹ,high
+Khai,e2a778af,0,,,False,,19.901,7,R,Phan Đăng Lưu,low
+Khai,66f49fff,I,Phía này không có vỉa hè,,False,,5.856,7,R,Pasteur,high
+Khai,c291774e,0,,,False,,4.864,7,R,Lê Văn Sỹ,mid
+Khai,d60a9792,0,,,False,,7.575,7,R,Pasteur,high
+Khai,6a3b6f3d,1,,Xe máy đậu|Khác,False,,9.864,7,R,Phan Đăng Lưu,high
+Khai,4920586c,0,,,False,,7.297,7,R,Lê Văn Sỹ,low
+Khai,3cd64f1c,1,,Khác,True,,54.212,7,R,Lê Văn Sỹ,mid
+Khai,e78781c2,0,,,False,,18.179,7,R,Phan Đăng Lưu,low
+Khai,ae20684c,0,,,False,,9.134,7,R,Phan Đăng Lưu,high
+Khai,f187a8e0,0,,,False,,4.587,7,R,Lê Văn Sỹ,low
+Khai,96bdc487,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,10.608,7,R,Pasteur,mid
+Khai,a285a7e0,1,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,False,,13.411,7,R,Pasteur,mid
+Khai,b04c2f9a,I,Phần quyết định bị che,,False,,13.169,7,R,Pasteur,mid
+Khai,2949503b,0,,Xe máy đậu,False,,17.53,7,R,Phan Đăng Lưu,high
+Khai,609b86be,I,Lý do khác,,False,,139.77700000000002,7,R,Phan Đăng Lưu,mid
+Khai,250c8597,1,,Xe máy đậu|Khác,False,,14.934,7,R,Lê Văn Sỹ,mid
+Khai,4b4c8a0f,I,Phần quyết định bị che,Xe máy đậu|Bàn ghế quán,False,,6.287,7,R,Pasteur,high
+Khai,ea6eabb1,1,,Xe máy đậu,False,,9.015,7,R,Phan Đăng Lưu,high
+Khai,ee71b1aa,0,,,False,,19.406,7,R,Phan Đăng Lưu,low
+Khai,8663c5a3,0,,Xe máy đậu,False,,133.593,7,R,Lê Văn Sỹ,high
+Khai,3d7488a1,I,Phần quyết định bị che,Bàn ghế quán,False,,22.672,7,R,Pasteur,low
+Khai,120945ae,0,,,False,,8.292,7,R,Phan Đăng Lưu,low
+Khai,0a98d3d9,I,Phần quyết định bị che,Xe máy đậu,False,,30.135,7,R,Pasteur,mid
+Khai,4274a64f,1,,Xe máy đậu,False,,10.782,7,R,Phan Đăng Lưu,mid
+Khai,8714c32d,0,,Xe máy đậu,False,,5.985,7,R,Lê Văn Sỹ,mid
+Khai,de516d94,I,Không thấy vỉa hè gần,,False,,66.398,7,R,Phan Đăng Lưu,mid
+Khai,0b0bdb09,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,12.617,7,R,Lê Văn Sỹ,high
+Khai,e2ca3e06,0,,Xe máy đậu,False,,20.053,7,R,Phan Đăng Lưu,mid
+Khai,49058265,I,Không thấy vỉa hè gần,,False,,6.398,7,R,Pasteur,high
+Khai,c95d8c4d,I,Không thấy vỉa hè gần,,False,,11.948,7,R,Pasteur,high
+Khai,61cb8d8d,I,Phía này không có vỉa hè,,False,,5.654,7,R,Pasteur,high
+Khai,1619a0a0,1,,Xe máy đậu|Bàn ghế quán,False,,8.399,7,R,Lê Văn Sỹ,mid
+Khai,183c61d9,0,,,False,,4.8,7,R,Lê Văn Sỹ,high
+Khai,eaab10cf,0,,Xe máy đậu,False,,12.725,7,R,Lê Văn Sỹ,mid
+Khai,344f12f3,0,,,False,,6.082,7,R,Lê Văn Sỹ,mid
+Khai,3fc0d408,0,,,False,,21.622,7,R,Lê Văn Sỹ,low
+Khai,206d2b46,0,,Xe máy đậu,False,,14.608,7,R,Phan Đăng Lưu,high
+Khai,afb61f86,1,,Xe máy đậu,False,,5.272,7,R,Phan Đăng Lưu,high
+Khai,ab4dd749,0,,,False,,42.701,7,R,Phan Đăng Lưu,mid
+Khai,9c3496db,0,,,False,,3.862,7,R,Lê Văn Sỹ,low
+Khai,2668b2e7,0,,Khác,False,,9.201,7,R,Phan Đăng Lưu,mid
+Khai,ff3a65de,I,Không thấy vỉa hè gần,,False,,6.303,7,R,Phan Đăng Lưu,high
+Khai,42e531e0,I,Không thấy vỉa hè gần,,False,,9.889,7,R,Pasteur,high
+Khai,2e657501,1,,Xe máy đậu|Khác,False,,13.73,7,R,Lê Văn Sỹ,high
+Khai,54b6abd1,0,,Khác,False,,24.826,7,R,Lê Văn Sỹ,high
+Khai,aa08aaa2,I,Không thấy vỉa hè gần,,False,,47.891,7,R,Pasteur,high
+Khai,0c3864ab,0,,,False,,15.314,7,R,Pasteur,mid
+Khai,8f072af6,I,Không thấy vỉa hè gần,Xe máy đậu,False,,22.05,7,R,Pasteur,mid
+Khai,4e67f300,1,,Xe máy đậu|Khác,False,,6.92,7,R,Pasteur,low
+Khai,ee4d2ee9,0,,Xe máy đậu,False,,7.647,7,R,Pasteur,high
+Khai,1fcff60e,0,,,False,,27.995,7,R,Pasteur,mid
+Khai,f9c2e862,0,,Xe máy đậu,False,,6.169,7,R,Lê Văn Sỹ,high
+Khai,e42f7a83,0,,,False,,3.618,7,R,Lê Văn Sỹ,low
+Khai,8f4c4a2a,0,,,False,,4.538,7,R,Pasteur,low
+Khai,2aa2bf1f,I,Không thấy vỉa hè gần,Ô tô đậu,False,,2.959,7,R,Pasteur,high
+Khai,456c8315,0,,Xe máy đậu,False,,6.304,7,R,Pasteur,high
+Khai,b41bcffe,0,,Bàn ghế quán,False,,10.723,7,R,Phan Đăng Lưu,low
+Khai,9749eadf,0,,,False,,5.337,7,R,Pasteur,high
+Khai,f20c492e,0,,Xe máy đậu,False,,4.66,7,R,Phan Đăng Lưu,high
+Khai,aa9c26e2,0,,Xe máy đậu,False,,8.179,7,R,Phan Đăng Lưu,low
+Khai,0ee2dd95,0,,Hàng hóa / quầy hàng,False,,9.293,7,R,Lê Văn Sỹ,high
+Khai,f1c58a00,I,Phía này không có vỉa hè,,False,,6.607,7,R,Phan Đăng Lưu,high
+Khai,f00b309a,0,,,False,,10.466000000000001,7,R,Phan Đăng Lưu,mid
+Khai,fc09b177,I,Phần quyết định bị che,Xe máy đậu,False,,47.17,7,R,Pasteur,mid
+Khai,dc58ca61,0,,Xe máy đậu,False,,22.478,7,R,Pasteur,low
+Khai,f3213b41,0,,Xe máy đậu,False,,5.369,7,R,Pasteur,mid
+Khai,e79a6b19,I,Phía này không có vỉa hè,,False,,19.075,7,R,Phan Đăng Lưu,low
+Khai,5e1a8459,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,17.981,7,R,Phan Đăng Lưu,high
+Khai,8cf5eda9,I,Phía này không có vỉa hè,,False,,5.008,7,R,Pasteur,high
+Khai,6e904c1f,0,,Xe máy đậu,False,,3.625,7,R,Pasteur,low
+Khai,a4ad5a8a,0,,,False,,2.888,7,R,Lê Văn Sỹ,mid
+Khai,22472570,0,,,False,,6.335,7,R,Phan Đăng Lưu,mid
+Khai,073ef87f,I,Phần quyết định bị che,Ô tô đậu,False,,6.052,7,R,Phan Đăng Lưu,high
+Khai,e6a23a1c,0,,,False,,4.521,7,R,Lê Văn Sỹ,low
+Khai,ca2d406b,1,,Xe máy đậu,False,,5.811,7,R,Phan Đăng Lưu,high
+Khai,425c8595,0,,Xe máy đậu,False,,5.435,7,R,Pasteur,low
+Khai,4e9f8016,0,,Xe máy đậu,False,,5.739,7,R,Phan Đăng Lưu,high
+Khai,4bc86986,0,,Xe máy đậu,False,,5.959,7,R,Phan Đăng Lưu,mid
+Khai,d3172b5b,0,,,False,,4.003,7,R,Phan Đăng Lưu,low
+Khai,4debcdcf,I,Phía này không có vỉa hè,,False,,10.175,7,R,Pasteur,low
+Khai,bdc7cc3c,0,,Ô tô đậu,False,,4.662,7,R,Lê Văn Sỹ,mid
+Khai,ab222362,0,,,False,,3.645,7,R,Lê Văn Sỹ,low
+Khai,67ed6c26,1,,Xe máy đậu,False,,6.15,7,R,Pasteur,high
+Khai,95f0ffff,I,Không thấy vỉa hè gần,,False,,8.622,7,R,Phan Đăng Lưu,mid
+Khai,9ad42c40,I,Không thấy vỉa hè gần,,False,,8.077,7,R,Pasteur,high
+Khai,29552f42,I,Phía này không có vỉa hè,,False,,7.95,7,R,Pasteur,mid
+Khai,0d6b50e9,I,Không thấy vỉa hè gần,,False,,6.816,7,R,Pasteur,mid
+Khai,79e4e524,0,,,False,,3.634,7,R,Phan Đăng Lưu,mid
+Khai,7cf2bfc5,0,,,False,,2.129,7,R,Lê Văn Sỹ,low
+Khai,efe0e9a3,1,,Ô tô đậu,False,,9.185,7,R,Phan Đăng Lưu,low
+Khai,69efc658,1,,Xe máy đậu|Ô tô đậu|Hàng hóa / quầy hàng|Bàn ghế quán,False,,9.614,7,R,Phan Đăng Lưu,high
+Khai,4f2179d4,I,Không thấy vỉa hè gần,,False,,10.46,7,R,Lê Văn Sỹ,low
+Khai,b43ea928,I,Ảnh mờ / tối / khung lệch,Xe máy đậu,False,,13.465,7,R,Phan Đăng Lưu,low
+Khai,fb8bf1f2,0,,Xe máy đậu|Bàn ghế quán,False,,14.271,7,R,Pasteur,low
+Khai,28dba3eb,I,Phần quyết định bị che,,False,,10.311,7,R,Pasteur,mid
+Khai,0d6a8e4c,I,Không thấy vỉa hè gần,,False,,7.326,7,R,Phan Đăng Lưu,mid
+Khai,3637ae1c,0,,,False,,46.185,7,R,Pasteur,low
+Khai,306c280d,0,,Ô tô đậu,False,,5.461,7,R,Lê Văn Sỹ,low
+Khai,7f4a3a49,0,,,False,,2.927,7,R,Pasteur,low
+Khai,f0153487,0,,Xe máy đậu,False,,10.239,7,R,Lê Văn Sỹ,high
+Khai,f7515b5e,0,,Xe máy đậu|Bàn ghế quán,False,,5.442,7,R,Lê Văn Sỹ,high
+Khai,6a7042fd,0,,Xe máy đậu|Bàn ghế quán,False,,10.256,7,R,Lê Văn Sỹ,high
+Khai,fd63be71,0,,,False,,3.231,7,R,Lê Văn Sỹ,mid
+Khai,deb834a4,I,Không thấy vỉa hè gần,,False,,5.723,7,R,Lê Văn Sỹ,mid
+Khai,3a574a17,I,Phần quyết định bị che,,False,,5.213,7,R,Lê Văn Sỹ,high
+Khai,df503ad7,I,Phần quyết định bị che,Xe máy đậu|Bàn ghế quán,False,,12.669,7,R,Pasteur,mid
+Khai,4d6d830a,I,Không thấy vỉa hè gần,Xe máy đậu,False,,12.883,7,R,Pasteur,mid
+Khai,35148331,I,Không thấy vỉa hè gần,,False,,21.073,7,R,Phan Đăng Lưu,high
+Khai,f31ce459,I,Phần quyết định bị che,,False,,9.492,7,R,Pasteur,mid
+Khai,c74364ae,I,Không thấy vỉa hè gần,,False,,12.082,7,R,Phan Đăng Lưu,mid
+Khai,d685271b,0,,Xe máy đậu,False,,10.369,7,R,Pasteur,low
+Khai,69b4d211,0,,,False,,3.426,7,R,Lê Văn Sỹ,low
+Khai,8a596c31,I,Phía này không có vỉa hè,,False,,11.077,7,R,Pasteur,mid
+Khai,22663366,0,,Xe máy đậu,False,,8.426,7,R,Lê Văn Sỹ,mid
+Khai,611a8038,0,,,False,,5.515,7,R,Lê Văn Sỹ,high
+Khai,449ec8f8,0,,,False,,9.094,7,R,Pasteur,low
+Khai,83401c43,0,,,False,,5.362,7,R,Phan Đăng Lưu,mid
+Khai,096e1fe5,I,Không thấy vỉa hè gần,Xe máy đậu,False,,22.096,7,R,Phan Đăng Lưu,high
+Khai,b0c458b8,I,Không thấy vỉa hè gần,Xe máy đậu,False,,8.719,7,R,Lê Văn Sỹ,high
+Khai,bdd65e70,I,Không thấy vỉa hè gần,,False,,9.338,7,R,Pasteur,low
+Khai,4b316272,0,,,False,,4.859,7,R,Pasteur,low
+Khai,1a29fe88,1,,Bàn ghế quán|Khác,False,,6.611,7,R,Lê Văn Sỹ,high
+Khai,53a8403e,0,,,False,,3.278,7,R,Phan Đăng Lưu,low
+Khai,08b16f9a,0,,,False,,2.834,7,R,Lê Văn Sỹ,low
+Phuc,e79a6b19,0,,,False,,27.193,5,R,Phan Đăng Lưu,low
+Phuc,183c61d9,I,Phần quyết định bị che,,False,,13.072,5,R,Lê Văn Sỹ,high
+Phuc,f187a8e0,0,,,False,,3.739,5,R,Lê Văn Sỹ,low
+Phuc,496db837,0,,,False,,1.9740000000000002,5,R,Phan Đăng Lưu,low
+Phuc,e42f7a83,0,,,False,,8.75,5,R,Lê Văn Sỹ,low
+Phuc,96466651,0,,,False,,4.1579999999999995,5,R,Lê Văn Sỹ,low
+Phuc,f9c2e862,1,,Xe máy đậu,False,,4.176,5,R,Lê Văn Sỹ,high
+Phuc,d3172b5b,0,,,False,,5.272,5,R,Phan Đăng Lưu,low
+Phuc,13b07f1d,0,,,False,,2.59,5,R,Lê Văn Sỹ,low
+Phuc,fc09b177,I,Phần quyết định bị che,,False,,7.207,5,R,Pasteur,mid
+Phuc,306c280d,0,,,False,,4.0280000000000005,5,R,Lê Văn Sỹ,low
+Phuc,0e6b9fee,I,Phần quyết định bị che,,False,,13.292,5,R,Lê Văn Sỹ,high
+Phuc,99fdee25,0,,,False,,63.518,5,R,Lê Văn Sỹ,mid
+Phuc,9c3496db,0,,,False,,12.177,5,R,Lê Văn Sỹ,low
+Phuc,aa08aaa2,I,Không thấy vỉa hè gần,,False,,29.106,5,R,Pasteur,high
+Phuc,ae20684c,0,,,False,,7.912,5,R,Phan Đăng Lưu,high
+Phuc,e78781c2,0,,,False,,6.781,5,R,Phan Đăng Lưu,low
+Phuc,a285a7e0,I,Phía này không có vỉa hè,,False,,23.986,5,R,Pasteur,mid
+Phuc,3cd64f1c,0,,,False,,4.99,5,R,Lê Văn Sỹ,mid
+Phuc,2aa2bf1f,I,Phần quyết định bị che,,False,,67.584,5,R,Pasteur,high
+Phuc,0d6b50e9,I,Phía này không có vỉa hè,,False,,47.86,5,R,Pasteur,mid
+Phuc,7f4a3a49,0,,,False,,5.77,5,R,Pasteur,low
+Phuc,4debcdcf,I,Không thấy vỉa hè gần,,False,,16.6,5,R,Pasteur,low
+Phuc,073ef87f,1,,Xe máy đậu|Ô tô đậu,False,,20.751,5,R,Phan Đăng Lưu,high
+Phuc,0ee2dd95,0,,,False,,13.065,5,R,Lê Văn Sỹ,high
+Phuc,95f0ffff,I,Không thấy vỉa hè gần,,False,,25.368,5,R,Phan Đăng Lưu,mid
+Phuc,449ec8f8,0,,,False,,4.121,5,R,Pasteur,low
+Phuc,2668b2e7,0,,,False,,29.583,5,R,Phan Đăng Lưu,mid
+Phuc,b04c2f9a,I,Phần quyết định bị che,,False,,15.441,5,R,Pasteur,mid
+Phuc,de516d94,I,Không thấy vỉa hè gần,,False,,66.004,5,R,Phan Đăng Lưu,mid
+Phuc,ab222362,0,,,False,,3.576,5,R,Lê Văn Sỹ,low
+Phuc,29552f42,I,Không thấy vỉa hè gần,,False,,128.11,5,R,Pasteur,mid
+Phuc,eaab10cf,0,,,False,,8.86,5,R,Lê Văn Sỹ,mid
+Phuc,dc58ca61,1,,Xe máy đậu,False,,21.152,5,R,Pasteur,low
+Phuc,2e657501,1,,Xe máy đậu|Rào chắn / công trình,False,,18.103,5,R,Lê Văn Sỹ,high
+Phuc,fd63be71,0,,,False,,5.096,5,R,Lê Văn Sỹ,mid
+Phuc,8f072af6,I,Không thấy vỉa hè gần,,False,,19.614,5,R,Pasteur,mid
+Phuc,b0c458b8,I,Không thấy vỉa hè gần,,False,,5.064,5,R,Lê Văn Sỹ,high
+Phuc,22472570,0,,,False,,6.037,5,R,Phan Đăng Lưu,mid
+Phuc,8cf5eda9,I,Không thấy vỉa hè gần,,False,,8.774,5,R,Pasteur,high
+Phuc,39b922fa,0,,,False,,19.289,5,R,Lê Văn Sỹ,mid
+Phuc,ee71b1aa,0,,,False,,3.668,5,R,Phan Đăng Lưu,low
+Phuc,69efc658,0,,,False,,18.435,5,R,Phan Đăng Lưu,high
+Phuc,7531a6c7,0,,,False,,2.883,5,R,Phan Đăng Lưu,low
+Phuc,120945ae,0,,,False,,7.222,5,R,Phan Đăng Lưu,low
+Phuc,aa9c26e2,0,,,False,,5.341,5,R,Phan Đăng Lưu,low
+Phuc,bdd65e70,I,Không thấy vỉa hè gần,,False,,9.972,5,R,Pasteur,low
+Phuc,611a8038,1,,Hàng hóa / quầy hàng,False,,14.348,5,R,Lê Văn Sỹ,high
+Phuc,7cf2bfc5,0,,,False,,3.037,5,R,Lê Văn Sỹ,low
+Phuc,b2ba0241,0,,,False,,2.742,5,R,Phan Đăng Lưu,mid
+Phuc,425c8595,0,,,False,,2.731,5,R,Pasteur,low
+Phuc,42e531e0,I,Phía này không có vỉa hè,,False,,21.949,5,R,Pasteur,high
+Phuc,b43ea928,0,,,False,,7.798,5,R,Phan Đăng Lưu,low
+Phuc,67ed6c26,I,Không thấy vỉa hè gần,,False,,57.969,5,R,Pasteur,high
+Phuc,2949503b,0,,,False,,37.545,5,R,Phan Đăng Lưu,high
+Phuc,f00b309a,0,,,False,,3.987,5,R,Phan Đăng Lưu,mid
+Phuc,4920586c,0,,,False,,8.038,5,R,Lê Văn Sỹ,low
+Phuc,6a7042fd,1,,Xe máy đậu,False,,27.567,5,R,Lê Văn Sỹ,high
+Phuc,9749eadf,I,Không thấy vỉa hè gần,,False,,43.632,5,R,Pasteur,high
+Phuc,6a3b6f3d,1,,Xe máy đậu,False,,12.341,5,R,Phan Đăng Lưu,high
+Phuc,f20c492e,1,,Xe máy đậu,False,,19.572,5,R,Phan Đăng Lưu,high
+Phuc,c95d8c4d,I,Không thấy vỉa hè gần,,False,,19.7,5,R,Pasteur,high
+Phuc,838d2e79,0,,,False,,12.04,5,R,Phan Đăng Lưu,mid
+Phuc,956412a6,0,,,False,,9.491,5,R,Pasteur,mid
+Phuc,609b86be,I,Ảnh mờ / tối / khung lệch,,False,,11.782,5,R,Phan Đăng Lưu,mid
+Phuc,ef51a330,I,Phần quyết định bị che,,False,,28.756,5,R,Lê Văn Sỹ,mid
+Phuc,344f12f3,0,,,False,,9.982,5,R,Lê Văn Sỹ,mid
+Phuc,152e2bd1,1,,Xe máy đậu,False,,8.915,5,R,Phan Đăng Lưu,mid
+Phuc,f3213b41,I,Phần quyết định bị che,,False,,11.209,5,R,Pasteur,mid
+Phuc,681f2af6,0,,,False,,3.957,5,R,Lê Văn Sỹ,low
+Phuc,4e1287be,0,,,False,,10.464,5,R,Lê Văn Sỹ,mid
+Phuc,a4ad5a8a,0,,,False,,3.332,5,R,Lê Văn Sỹ,mid
+Phuc,e807e08e,0,,,False,,5.442,5,R,Phan Đăng Lưu,low
+Phuc,206d2b46,0,,,False,,11.19,5,R,Phan Đăng Lưu,high
+Phuc,1fcff60e,0,,,False,,4.676,5,R,Pasteur,mid
+Phuc,54b6abd1,0,,,False,,7.334,5,R,Lê Văn Sỹ,high
+Phuc,0ad92dd7,0,,,False,,1.991,5,R,Phan Đăng Lưu,low
+Phuc,5e1a8459,0,,,False,,18.388,5,R,Phan Đăng Lưu,high
+Phuc,3fc0d408,0,,,False,,2.422,5,R,Lê Văn Sỹ,low
+Phuc,0c3864ab,I,Phần quyết định bị che,,False,,11.277,5,R,Pasteur,mid
+Phuc,d685271b,0,,,False,,4.69,5,R,Pasteur,low
+Phuc,4b316272,0,,,False,,2.006,5,R,Pasteur,low
+Phuc,42e674ce,0,,,False,,3.32,5,R,Lê Văn Sỹ,high
+Phuc,efe0e9a3,1,,Ô tô đậu,False,,4.746,5,R,Phan Đăng Lưu,low
+Phuc,4274a64f,1,,Xe máy đậu,False,,14.968,5,R,Phan Đăng Lưu,mid
+Phuc,61cb8d8d,I,Không thấy vỉa hè gần,,False,,5.391,5,R,Pasteur,high
+Phuc,e2a778af,0,,,False,,6.266,5,R,Phan Đăng Lưu,low
+Phuc,990ba148,1,,Bàn ghế quán,False,,10.733,5,R,Phan Đăng Lưu,high
+Phuc,8a596c31,I,Không thấy vỉa hè gần,,False,,9.185,5,R,Pasteur,mid
+Phuc,deb834a4,I,Phía này không có vỉa hè,,False,,9.622,5,R,Lê Văn Sỹ,mid
+Phuc,2456dabe,0,,,False,,4.345,5,R,Phan Đăng Lưu,low
+Phuc,96bdc487,0,,,False,,2.704,5,R,Pasteur,mid
+Phuc,28dba3eb,I,Phần quyết định bị che,,False,,14.17,5,R,Pasteur,mid
+Phuc,e2ca3e06,0,,,False,,7.27,5,R,Phan Đăng Lưu,mid
+Phuc,08b16f9a,0,,,False,,3.312,5,R,Lê Văn Sỹ,low
+Phuc,4e67f300,1,,Xe máy đậu,False,,9.126,5,R,Pasteur,low
+Phuc,1a29fe88,1,,Hàng hóa / quầy hàng,False,,10.863,5,R,Lê Văn Sỹ,high
+Phuc,ca2d406b,1,,Xe máy đậu,False,,8.37,5,R,Phan Đăng Lưu,high
+Phuc,f7515b5e,1,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,False,,16.026,5,R,Lê Văn Sỹ,high
+Phuc,53a8403e,0,,,False,,1.624,5,R,Phan Đăng Lưu,low
+Phuc,4f2179d4,I,Không thấy vỉa hè gần,,False,,4.1,5,R,Lê Văn Sỹ,low
+Phuc,096e1fe5,I,Không thấy vỉa hè gần,,False,,7.442,5,R,Phan Đăng Lưu,high
+Phuc,bdc7cc3c,1,,Ô tô đậu,False,,12.048,5,R,Lê Văn Sỹ,mid
+Phuc,3a574a17,I,Phần quyết định bị che,,False,,18.738,5,R,Lê Văn Sỹ,high
+Phuc,4b4c8a0f,0,,,False,,16.146,5,R,Pasteur,high
+Phuc,bce03561,0,,,False,,6.755,5,R,Pasteur,low
+Phuc,8714c32d,0,,,False,,3.788,5,R,Lê Văn Sỹ,mid
+Phuc,ee4d2ee9,0,,,False,,19.243,5,R,Pasteur,high
+Phuc,2fb2e53d,I,Không thấy vỉa hè gần,,False,,9.312,5,R,Pasteur,high
+Phuc,fb8bf1f2,0,,,False,,10.041,5,R,Pasteur,low
+Phuc,44639e4c,0,,,False,,3.209,5,R,Lê Văn Sỹ,mid
+Phuc,0a98d3d9,I,Không thấy vỉa hè gần,,False,,21.635,5,R,Pasteur,mid
+Phuc,ff3a65de,I,Phần quyết định bị che,,False,,12.574,5,R,Phan Đăng Lưu,high
+Phuc,4e9f8016,0,,,False,,8.263,5,R,Phan Đăng Lưu,high
+Phuc,df503ad7,I,Phần quyết định bị che,,False,,20.159,5,R,Pasteur,mid
+Phuc,456c8315,1,,Xe máy đậu,False,,19.991,5,R,Pasteur,high
+Phuc,69b4d211,0,,,False,,4.961,5,R,Lê Văn Sỹ,low
+Phuc,f0153487,I,Phần quyết định bị che,,False,,21.867,5,R,Lê Văn Sỹ,high
+Phuc,35148331,I,Không thấy vỉa hè gần,,False,,8.419,5,R,Phan Đăng Lưu,high
+Phuc,0d6a8e4c,I,Ảnh mờ / tối / khung lệch,,False,,6.4,5,R,Phan Đăng Lưu,mid
+Phuc,8663c5a3,0,,,False,,8.784,5,R,Lê Văn Sỹ,high
+Phuc,e6a23a1c,0,,,False,,3.759,5,R,Lê Văn Sỹ,low
+Phuc,250c8597,1,,Xe máy đậu|Rào chắn / công trình,False,,7.791,5,R,Lê Văn Sỹ,mid
+Phuc,6e904c1f,0,,,False,,5.525,5,R,Pasteur,low
+Phuc,afb61f86,1,,Xe máy đậu,False,,7.386,5,R,Phan Đăng Lưu,high
+Phuc,c291774e,0,,,False,,3.647,5,R,Lê Văn Sỹ,mid
+Phuc,66f49fff,I,Không thấy vỉa hè gần,,False,,6.017,5,R,Pasteur,high
+Phuc,8f4c4a2a,0,,,False,,12.11,5,R,Pasteur,low
+Phuc,f31ce459,0,,,False,,10.634,5,R,Pasteur,mid
+Phuc,450feb53,I,Không thấy vỉa hè gần,,False,,5.966,5,R,Pasteur,high
+Phuc,1619a0a0,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,18.844,5,R,Lê Văn Sỹ,mid
+Phuc,f1c58a00,I,Không thấy vỉa hè gần,,False,,4.168,5,R,Phan Đăng Lưu,high
+Phuc,b41bcffe,0,,,False,,6.274,5,R,Phan Đăng Lưu,low
+Phuc,9ad42c40,0,,,False,,15.401,5,R,Pasteur,high
+Phuc,ab4dd749,0,,,False,,6.139,5,R,Phan Đăng Lưu,mid
+Phuc,79e4e524,0,,,False,,3.835,5,R,Phan Đăng Lưu,mid
+Phuc,0b0bdb09,1,,Xe máy đậu,False,,6.187,5,R,Lê Văn Sỹ,high
+Phuc,3d7488a1,0,,,False,,7.243,5,R,Pasteur,low
+Phuc,22663366,0,,,False,,2.387,5,R,Lê Văn Sỹ,mid
+Phuc,ea6eabb1,1,,Xe máy đậu,False,,3.394,5,R,Phan Đăng Lưu,high
+Phuc,83401c43,0,,,False,,8.095,5,R,Phan Đăng Lưu,mid
+Phuc,e63ceaf3,0,,,False,,4.095,5,R,Pasteur,low
+Phuc,c74364ae,I,Không thấy vỉa hè gần,,False,,6.421,5,R,Phan Đăng Lưu,mid
+Phuc,4bc86986,0,,,False,,4.765,5,R,Phan Đăng Lưu,mid
+Phuc,3637ae1c,0,,,False,,5.49,5,R,Pasteur,low
+Phuc,f1f35c05,1,,Xe máy đậu,False,,7.087,5,R,Lê Văn Sỹ,high
+Phuc,4d6d830a,I,Không thấy vỉa hè gần,,False,,5.081,5,R,Pasteur,mid
+Phuc,98187ec5,0,,,False,,2.268,5,R,Lê Văn Sỹ,low
+Phuc,49058265,I,Phần quyết định bị che,,False,,10.143,5,R,Pasteur,high
+Phuc,d60a9792,I,Không thấy vỉa hè gần,,False,,8.252,5,R,Pasteur,high
+Loan,0c3864ab,I,Phần quyết định bị che,,False,,25.192999999999998,4,R,Pasteur,mid
+Loan,6a3b6f3d,1,,Xe máy đậu|Rào chắn / công trình,False,,34.361,4,R,Phan Đăng Lưu,high
+Loan,2e657501,0,,Xe máy đậu,False,,40.007000000000005,4,R,Lê Văn Sỹ,high
+Loan,de516d94,I,Phần quyết định bị che,,False,,32.612,4,R,Phan Đăng Lưu,mid
+Loan,e78781c2,0,,,False,,27.092,4,R,Phan Đăng Lưu,low
+Loan,a4ad5a8a,0,,,False,,19.965,4,R,Lê Văn Sỹ,mid
+Loan,4b316272,0,,,False,,9.558,4,R,Pasteur,low
+Loan,450feb53,I,Phía này không có vỉa hè,,False,,16.42,4,R,Pasteur,high
+Loan,ae20684c,0,,,False,,139.837,4,R,Phan Đăng Lưu,high
+Loan,fb8bf1f2,0,,Xe máy đậu|Bàn ghế quán,False,,16.48,4,R,Pasteur,low
+Loan,bdc7cc3c,0,,Xe máy đậu|Ô tô đậu,False,,52.672,4,R,Lê Văn Sỹ,mid
+Loan,096e1fe5,I,Phía này không có vỉa hè,,False,,18.21,4,R,Phan Đăng Lưu,high
+Loan,7f4a3a49,0,,,False,,12.604999999999999,4,R,Pasteur,low
+Loan,e63ceaf3,0,,,False,,12.626999999999999,4,R,Pasteur,low
+Loan,2aa2bf1f,I,Phần quyết định bị che,,False,,14.801,4,R,Pasteur,high
+Loan,6e904c1f,0,,Xe máy đậu,False,,5.304,4,R,Pasteur,low
+Loan,aa08aaa2,I,Ảnh mờ / tối / khung lệch,,False,,22.586,4,R,Pasteur,high
+Loan,13b07f1d,0,,,False,,110.709,4,R,Lê Văn Sỹ,low
+Loan,afb61f86,0,,Xe máy đậu,False,,21.2,4,R,Phan Đăng Lưu,high
+Loan,b0c458b8,1,,Xe máy đậu,False,,17.891000000000002,4,R,Lê Văn Sỹ,high
+Loan,9ad42c40,0,,Xe máy đậu,False,,9.138,4,R,Pasteur,high
+Loan,53a8403e,0,,,False,,7.122,4,R,Phan Đăng Lưu,low
+Loan,f7515b5e,0,,Xe máy đậu|Bàn ghế quán,False,,8.483,4,R,Lê Văn Sỹ,high
+Loan,f187a8e0,0,,,False,,54.866,4,R,Lê Văn Sỹ,low
+Loan,4debcdcf,I,Không thấy vỉa hè gần,,False,,57.187,4,R,Pasteur,low
+Loan,08b16f9a,0,,,False,,9.116000000000001,4,R,Lê Văn Sỹ,low
+Loan,b2ba0241,0,,,False,,4.747,4,R,Phan Đăng Lưu,mid
+Loan,eaab10cf,0,,,False,,4.875,4,R,Lê Văn Sỹ,mid
+Loan,4e9f8016,0,,Xe máy đậu,False,,6.664000000000001,4,R,Phan Đăng Lưu,high
+Loan,54b6abd1,0,,,False,,4.381,4,R,Lê Văn Sỹ,high
+Loan,f00b309a,0,,,False,,14.965,4,R,Phan Đăng Lưu,mid
+Loan,bdd65e70,0,,Xe máy đậu,False,,215.454,4,R,Pasteur,low
+Loan,79e4e524,0,,,False,,17.637,4,R,Phan Đăng Lưu,mid
+Loan,4920586c,0,,,False,,13.345,4,R,Lê Văn Sỹ,low
+Loan,bce03561,0,,,False,,9.315,4,R,Pasteur,low
+Loan,df503ad7,0,,Bàn ghế quán,False,,21.489,4,R,Pasteur,mid
+Loan,0ee2dd95,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,12.921,4,R,Lê Văn Sỹ,high
+Loan,d685271b,0,,Xe máy đậu,False,,7.997999999999999,4,R,Pasteur,low
+Loan,e2ca3e06,0,,Xe máy đậu,False,,6.928,4,R,Phan Đăng Lưu,mid
+Loan,deb834a4,I,Không thấy vỉa hè gần,,False,,20.178,4,R,Lê Văn Sỹ,mid
+Loan,4bc86986,0,,Xe máy đậu,False,,7.414,4,R,Phan Đăng Lưu,mid
+Loan,8f072af6,0,,Xe máy đậu,False,,21.135,4,R,Pasteur,mid
+Loan,5e1a8459,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,10.974,4,R,Phan Đăng Lưu,high
+Loan,8cf5eda9,I,Phía này không có vỉa hè,,False,,11.098,4,R,Pasteur,high
+Loan,f1c58a00,I,Phía này không có vỉa hè,,False,,9.458,4,R,Phan Đăng Lưu,high
+Loan,1fcff60e,0,,,False,,10.119,4,R,Pasteur,mid
+Loan,4274a64f,0,,Xe máy đậu,False,,22.634999999999998,4,R,Phan Đăng Lưu,mid
+Loan,b41bcffe,0,,Xe máy đậu|Bàn ghế quán,False,,12.843,4,R,Phan Đăng Lưu,low
+Loan,e6a23a1c,0,,Bàn ghế quán,False,,10.855,4,R,Lê Văn Sỹ,low
+Loan,fd63be71,0,,,False,,8.723,4,R,Lê Văn Sỹ,mid
+Loan,7cf2bfc5,0,,,False,,5.008,4,R,Lê Văn Sỹ,low
+Loan,3637ae1c,0,,Hàng hóa / quầy hàng,False,,11.296,4,R,Pasteur,low
+Loan,306c280d,0,,,False,,6.4719999999999995,4,R,Lê Văn Sỹ,low
+Loan,ff3a65de,1,,Hàng hóa / quầy hàng|Rào chắn / công trình,False,,16.105,4,R,Phan Đăng Lưu,high
+Loan,3d7488a1,0,,Hàng hóa / quầy hàng|Bàn ghế quán,False,,38.441,4,R,Pasteur,low
+Loan,0b0bdb09,0,,Xe máy đậu,False,,24.069,4,R,Lê Văn Sỹ,high
+Loan,344f12f3,I,Không thấy vỉa hè gần,,False,,38.384,4,R,Lê Văn Sỹ,mid
+Loan,e807e08e,0,,,False,,12.327,4,R,Phan Đăng Lưu,low
+Loan,681f2af6,0,,,False,,14.317,4,R,Lê Văn Sỹ,low
+Loan,3fc0d408,0,,Khác,False,,13.613,4,R,Lê Văn Sỹ,low
+Loan,152e2bd1,0,,Xe máy đậu,False,,18.334,4,R,Phan Đăng Lưu,mid
+Loan,42e674ce,0,,Xe máy đậu,False,,67.91499999999999,4,R,Lê Văn Sỹ,high
+Loan,fc09b177,I,Phần quyết định bị che,,False,,33.034,4,R,Pasteur,mid
+Loan,b04c2f9a,I,Không thấy vỉa hè gần,,False,,21.522,4,R,Pasteur,mid
+Loan,35148331,I,Không thấy vỉa hè gần,,False,,37.573,4,R,Phan Đăng Lưu,high
+Loan,2949503b,0,,Xe máy đậu,False,,10.057,4,R,Phan Đăng Lưu,high
+Loan,96466651,0,,,False,,9.061,4,R,Lê Văn Sỹ,low
+Loan,120945ae,0,,,False,,10.681999999999999,4,R,Phan Đăng Lưu,low
+Loan,0d6b50e9,I,Phía này không có vỉa hè,,False,,21.316,4,R,Pasteur,mid
+Loan,ca2d406b,0,,Xe máy đậu,False,,16.041,4,R,Phan Đăng Lưu,high
+Loan,99fdee25,0,,,False,,9.482,4,R,Lê Văn Sỹ,mid
+Loan,f3213b41,0,,,False,,15.424,4,R,Pasteur,mid
+Loan,e79a6b19,I,Không thấy vỉa hè gần,,False,,12.413,4,R,Phan Đăng Lưu,low
+Loan,609b86be,I,Ảnh mờ / tối / khung lệch,,False,,13.887,4,R,Phan Đăng Lưu,mid
+Loan,44639e4c,0,,,False,,12.142999999999999,4,R,Lê Văn Sỹ,mid
+Loan,67ed6c26,0,,Xe máy đậu,False,,14.408000000000001,4,R,Pasteur,high
+Loan,ee4d2ee9,0,,Xe máy đậu,False,,13.096,4,R,Pasteur,high
+Loan,29552f42,I,Không thấy vỉa hè gần,,False,,22.706,4,R,Pasteur,mid
+Loan,dc58ca61,0,,Xe máy đậu,False,,28.725,4,R,Pasteur,low
+Loan,4f2179d4,I,Không thấy vỉa hè gần,,False,,13.598,4,R,Lê Văn Sỹ,low
+Loan,66f49fff,I,Không thấy vỉa hè gần,,False,,12.668,4,R,Pasteur,high
+Loan,0e6b9fee,0,,,False,,15.057,4,R,Lê Văn Sỹ,high
+Loan,95f0ffff,I,Không thấy vỉa hè gần,,False,,14.983999999999998,4,R,Phan Đăng Lưu,mid
+Loan,69efc658,0,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,False,,15.498,4,R,Phan Đăng Lưu,high
+Loan,d3172b5b,0,,,False,,12.572,4,R,Phan Đăng Lưu,low
+Loan,611a8038,1,,Hàng hóa / quầy hàng,False,,113.24,4,R,Lê Văn Sỹ,high
+Loan,9749eadf,0,,,False,,10.175,4,R,Pasteur,high
+Loan,1a29fe88,1,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,False,,17.131999999999998,4,R,Lê Văn Sỹ,high
+Loan,496db837,0,,,False,,7.336,4,R,Phan Đăng Lưu,low
+Loan,28dba3eb,0,,,False,,12.967,4,R,Pasteur,mid
+Loan,073ef87f,0,,Xe máy đậu,False,,10.544,4,R,Phan Đăng Lưu,high
+Loan,3a574a17,I,Phần quyết định bị che,,False,,10.031,4,R,Lê Văn Sỹ,high
+Loan,69b4d211,0,,,False,,9.446,4,R,Lê Văn Sỹ,low
+Loan,e2a778af,0,,,False,,6.925,4,R,Phan Đăng Lưu,low
+Loan,8a596c31,I,Phía này không có vỉa hè,,False,,11.164,4,R,Pasteur,mid
+Loan,83401c43,0,,Xe máy đậu,False,,10.379999999999999,4,R,Phan Đăng Lưu,mid
+Loan,f20c492e,0,,Xe máy đậu,False,,6.965999999999999,4,R,Phan Đăng Lưu,high
+Loan,ea6eabb1,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,27.424000000000003,4,R,Phan Đăng Lưu,high
+Loan,22472570,0,,Hàng hóa / quầy hàng,False,,12.658,4,R,Phan Đăng Lưu,mid
+Loan,449ec8f8,0,,,False,,7.385,4,R,Pasteur,low
+Loan,0a98d3d9,0,,Hàng hóa / quầy hàng,False,,11.246,4,R,Pasteur,mid
+Loan,2668b2e7,0,,Hàng hóa / quầy hàng,False,,20.21,4,R,Phan Đăng Lưu,mid
+Loan,4e67f300,1,,Xe máy đậu,False,,16.388,4,R,Pasteur,low
+Loan,425c8595,0,,,False,,27.009,4,R,Pasteur,low
+Loan,aa9c26e2,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,11.296999999999999,4,R,Phan Đăng Lưu,low
+Loan,f1f35c05,0,,Xe máy đậu,False,,102.35600000000001,4,R,Lê Văn Sỹ,high
+Loan,ee71b1aa,0,,,False,,8.922,4,R,Phan Đăng Lưu,low
+Loan,ab222362,0,,,False,,7.632,4,R,Lê Văn Sỹ,low
+Loan,98187ec5,0,,Xe máy đậu,False,,7.245,4,R,Lê Văn Sỹ,low
+Loan,8714c32d,0,,,False,,5.965,4,R,Lê Văn Sỹ,mid
+Loan,990ba148,0,,Hàng hóa / quầy hàng,False,,9.678,4,R,Phan Đăng Lưu,high
+Loan,8f4c4a2a,0,,,False,,5.549,4,R,Pasteur,low
+Loan,a285a7e0,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,10.149000000000001,4,R,Pasteur,mid
+Loan,0ad92dd7,0,,Xe máy đậu,False,,9.714,4,R,Phan Đăng Lưu,low
+Loan,39b922fa,0,,Xe máy đậu,False,,17.698,4,R,Lê Văn Sỹ,mid
+Loan,f0153487,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,13.309,4,R,Lê Văn Sỹ,high
+Loan,c74364ae,I,Không thấy vỉa hè gần,,False,,16.766,4,R,Phan Đăng Lưu,mid
+Loan,49058265,I,Phần quyết định bị che,,False,,15.102,4,R,Pasteur,high
+Loan,2fb2e53d,I,Phần quyết định bị che,,False,,10.1,4,R,Pasteur,high
+Loan,61cb8d8d,I,Phần quyết định bị che,,False,,17.643,4,R,Pasteur,high
+Loan,96bdc487,0,,,False,,5.489000000000001,4,R,Pasteur,mid
+Loan,1619a0a0,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,8.963,4,R,Lê Văn Sỹ,mid
+Loan,ef51a330,I,Phần quyết định bị che,,False,,8.926,4,R,Lê Văn Sỹ,mid
+Loan,efe0e9a3,1,,Ô tô đậu,False,,25.183,4,R,Phan Đăng Lưu,low
+Loan,4d6d830a,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,10.245,4,R,Pasteur,mid
+Loan,f9c2e862,0,,Xe máy đậu,False,,8.431000000000001,4,R,Lê Văn Sỹ,high
+Loan,7531a6c7,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,9.222,4,R,Phan Đăng Lưu,low
+Loan,c291774e,0,,,False,,10.324,4,R,Lê Văn Sỹ,mid
+Loan,9c3496db,0,,,False,,6.973,4,R,Lê Văn Sỹ,low
+Loan,3cd64f1c,0,,Hàng hóa / quầy hàng,False,,16.664,4,R,Lê Văn Sỹ,mid
+Loan,183c61d9,0,,Hàng hóa / quầy hàng,False,,9.482000000000001,4,R,Lê Văn Sỹ,high
+Loan,250c8597,0,,Xe máy đậu,False,,7.729,4,R,Lê Văn Sỹ,mid
+Loan,f31ce459,I,Không thấy vỉa hè gần,,False,,11.261000000000001,4,R,Pasteur,mid
+Loan,8663c5a3,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,20.480999999999998,4,R,Lê Văn Sỹ,high
+Loan,4e1287be,I,Không thấy vỉa hè gần,,False,,18.934,4,R,Lê Văn Sỹ,mid
+Loan,2456dabe,0,,,False,,12.863,4,R,Phan Đăng Lưu,low
+Loan,c95d8c4d,I,Không thấy vỉa hè gần,,False,,14.868,4,R,Pasteur,high
+Loan,956412a6,0,,,False,,14.431,4,R,Pasteur,mid
+Loan,22663366,0,,Xe máy đậu,False,,13.591000000000001,4,R,Lê Văn Sỹ,mid
+Loan,206d2b46,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,11.036,4,R,Phan Đăng Lưu,high
+Loan,e42f7a83,0,,,False,,7.702,4,R,Lê Văn Sỹ,low
+Loan,b43ea928,0,,Xe máy đậu,False,,17.972,4,R,Phan Đăng Lưu,low
+Loan,42e531e0,I,Phía này không có vỉa hè,,False,,9.211,4,R,Pasteur,high
+Loan,456c8315,0,,Xe máy đậu,False,,8.498,4,R,Pasteur,high
+Loan,0d6a8e4c,I,Ảnh mờ / tối / khung lệch,,False,,9.821,4,R,Phan Đăng Lưu,mid
+Loan,4b4c8a0f,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,9.972999999999999,4,R,Pasteur,high
+Loan,ab4dd749,0,,,False,,12.439,4,R,Phan Đăng Lưu,mid
+Loan,d60a9792,0,,Xe máy đậu,False,,8.216999999999999,4,R,Pasteur,high
+Loan,6a7042fd,1,,Xe máy đậu|Bàn ghế quán,False,,10.232999999999999,4,R,Lê Văn Sỹ,high
+Loan,838d2e79,0,,Xe máy đậu,False,,7.894,4,R,Phan Đăng Lưu,mid
+Minh,c74364ae,0,,,False,,23.84,3,R,Phan Đăng Lưu,mid
+Minh,a285a7e0,I,Không thấy vỉa hè gần,,False,,20.0,3,R,Pasteur,mid
+Minh,42e674ce,1,,Xe máy đậu,False,,16.171,3,R,Lê Văn Sỹ,high
+Minh,0e6b9fee,0,,,False,,7.828,3,R,Lê Văn Sỹ,high
+Minh,dc58ca61,0,,,False,,5.547,3,R,Pasteur,low
+Minh,6a3b6f3d,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,19.6,3,R,Phan Đăng Lưu,high
+Minh,eaab10cf,0,,,False,,5.283,3,R,Lê Văn Sỹ,mid
+Minh,3fc0d408,0,,,False,,3.194,3,R,Lê Văn Sỹ,low
+Minh,7f4a3a49,0,,,False,,18.15,3,R,Pasteur,low
+Minh,4274a64f,0,,,False,,4.801,3,R,Phan Đăng Lưu,mid
+Minh,0d6a8e4c,I,Ảnh mờ / tối / khung lệch,,False,,3.6,3,R,Phan Đăng Lưu,mid
+Minh,d60a9792,0,,,False,,5.304,3,R,Pasteur,high
+Minh,449ec8f8,0,,,False,,2.876,3,R,Pasteur,low
+Minh,456c8315,1,,Xe máy đậu,False,,5.692,3,R,Pasteur,high
+Minh,8663c5a3,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,8.041,3,R,Lê Văn Sỹ,high
+Minh,990ba148,1,,Hàng hóa / quầy hàng|Bàn ghế quán,False,,75.872,3,R,Phan Đăng Lưu,high
+Minh,956412a6,0,,,False,,4.179,3,R,Pasteur,mid
+Minh,8714c32d,0,,,False,,33.694,3,R,Lê Văn Sỹ,mid
+Minh,69efc658,1,,Xe máy đậu|Ô tô đậu|Bàn ghế quán,False,,12.882,3,R,Phan Đăng Lưu,high
+Minh,95f0ffff,I,Không thấy vỉa hè gần,,False,,8.889,3,R,Phan Đăng Lưu,mid
+Minh,f9c2e862,1,,Xe máy đậu|Bàn ghế quán,False,,7.423,3,R,Lê Văn Sỹ,high
+Minh,99fdee25,1,,Rào chắn / công trình,False,,117.793,3,R,Lê Văn Sỹ,mid
+Minh,08b16f9a,0,,,False,,73.1,3,R,Lê Văn Sỹ,low
+Minh,9c3496db,0,,,False,,8.22,3,R,Lê Văn Sỹ,low
+Minh,838d2e79,0,,,False,,3.912,3,R,Phan Đăng Lưu,mid
+Minh,5e1a8459,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,99.661,3,R,Phan Đăng Lưu,high
+Minh,2949503b,1,,Xe máy đậu|Rào chắn / công trình,False,,73.529,3,R,Phan Đăng Lưu,high
+Minh,e807e08e,0,,,False,,3.047,3,R,Phan Đăng Lưu,low
+Minh,efe0e9a3,1,,Ô tô đậu,False,,4.577,3,R,Phan Đăng Lưu,low
+Minh,2668b2e7,1,,Hàng hóa / quầy hàng|Rào chắn / công trình,False,,10.517,3,R,Phan Đăng Lưu,mid
+Minh,0a98d3d9,I,Không thấy vỉa hè gần,,False,,3.712,3,R,Pasteur,mid
+Minh,8cf5eda9,I,Không thấy vỉa hè gần,,False,,3.221,3,R,Pasteur,high
+Minh,6a7042fd,1,,Xe máy đậu,False,,7.351,3,R,Lê Văn Sỹ,high
+Minh,2aa2bf1f,I,Phần quyết định bị che,,False,,4.952,3,R,Pasteur,high
+Minh,e79a6b19,I,Không thấy vỉa hè gần,,False,,5.073,3,R,Phan Đăng Lưu,low
+Minh,67ed6c26,I,Không thấy vỉa hè gần,,False,,3.955,3,R,Pasteur,high
+Minh,206d2b46,0,,,False,,2.463,3,R,Phan Đăng Lưu,high
+Minh,83401c43,0,,,False,,5.203,3,R,Phan Đăng Lưu,mid
+Minh,4d6d830a,I,Không thấy vỉa hè gần,,False,,3.024,3,R,Pasteur,mid
+Minh,0b0bdb09,1,,Xe máy đậu,False,,5.843,3,R,Lê Văn Sỹ,high
+Minh,e2a778af,0,,,False,,2.084,3,R,Phan Đăng Lưu,low
+Minh,3637ae1c,0,,,False,,2.272,3,R,Pasteur,low
+Minh,4debcdcf,I,Không thấy vỉa hè gần,,False,,5.283,3,R,Pasteur,low
+Minh,6e904c1f,0,,,False,,8.098,3,R,Pasteur,low
+Minh,35148331,I,Không thấy vỉa hè gần,,False,,5.761,3,R,Phan Đăng Lưu,high
+Minh,22663366,0,,,False,,2.208,3,R,Lê Văn Sỹ,mid
+Minh,bdc7cc3c,1,,,False,,13.986,3,R,Lê Văn Sỹ,mid
+Minh,8a596c31,I,Phía này không có vỉa hè,,False,,4.384,3,R,Pasteur,mid
+Minh,ee71b1aa,0,,,False,,7.878,3,R,Phan Đăng Lưu,low
+Minh,e63ceaf3,0,,,False,,3.385,3,R,Pasteur,low
+Minh,2e657501,1,,Rào chắn / công trình|Khác,False,,10.287,3,R,Lê Văn Sỹ,high
+Minh,fb8bf1f2,I,Không thấy vỉa hè gần,,False,,4.915,3,R,Pasteur,low
+Minh,f187a8e0,0,,,False,,2.086,3,R,Lê Văn Sỹ,low
+Minh,f00b309a,I,Không thấy vỉa hè gần,,False,,5.325,3,R,Phan Đăng Lưu,mid
+Minh,e78781c2,0,,,False,,2.399,3,R,Phan Đăng Lưu,low
+Minh,152e2bd1,1,,Xe máy đậu,False,,4.193,3,R,Phan Đăng Lưu,mid
+Minh,98187ec5,1,,Xe máy đậu,False,,4.156,3,R,Lê Văn Sỹ,low
+Minh,42e531e0,I,Phía này không có vỉa hè,,False,,6.904,3,R,Pasteur,high
+Minh,9ad42c40,I,Phía này không có vỉa hè,,False,,5.136,3,R,Pasteur,high
+Minh,4e1287be,I,Không thấy vỉa hè gần,,False,,10.25,3,R,Lê Văn Sỹ,mid
+Minh,d685271b,I,Không thấy vỉa hè gần,,False,,4.005,3,R,Pasteur,low
+Minh,c291774e,0,,,False,,3.449,3,R,Lê Văn Sỹ,mid
+Minh,ff3a65de,1,,Hàng hóa / quầy hàng,False,,5.854,3,R,Phan Đăng Lưu,high
+Minh,4e67f300,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,4.917,3,R,Pasteur,low
+Minh,b43ea928,I,Ảnh mờ / tối / khung lệch,,False,,4.508,3,R,Phan Đăng Lưu,low
+Minh,e42f7a83,0,,,False,,2.311,3,R,Lê Văn Sỹ,low
+Minh,120945ae,0,,,False,,3.339,3,R,Phan Đăng Lưu,low
+Minh,aa08aaa2,I,Không thấy vỉa hè gần,,False,,2.93,3,R,Pasteur,high
+Minh,450feb53,I,Không thấy vỉa hè gần,,False,,3.553,3,R,Pasteur,high
+Minh,0ad92dd7,0,,,False,,2.081,3,R,Phan Đăng Lưu,low
+Minh,54b6abd1,0,,,False,,2.064,3,R,Lê Văn Sỹ,high
+Minh,61cb8d8d,I,Không thấy vỉa hè gần,,False,,3.479,3,R,Pasteur,high
+Minh,f20c492e,1,,Xe máy đậu,False,,4.395,3,R,Phan Đăng Lưu,high
+Minh,0d6b50e9,I,Không thấy vỉa hè gần,,False,,6.31,3,R,Pasteur,mid
+Minh,609b86be,I,Ảnh mờ / tối / khung lệch,,False,,3.659,3,R,Phan Đăng Lưu,mid
+Minh,b04c2f9a,I,Không thấy vỉa hè gần,,False,,3.743,3,R,Pasteur,mid
+Minh,681f2af6,0,,,False,,1.891,3,R,Lê Văn Sỹ,low
+Minh,7cf2bfc5,0,,,False,,1.747,3,R,Lê Văn Sỹ,low
+Minh,b0c458b8,I,Phía này không có vỉa hè,,False,,4.873,3,R,Lê Văn Sỹ,high
+Minh,425c8595,I,Không thấy vỉa hè gần,,False,,10.971,3,R,Pasteur,low
+Minh,1a29fe88,I,Phía này không có vỉa hè,,False,,5.899,3,R,Lê Văn Sỹ,high
+Minh,8f072af6,I,Không thấy vỉa hè gần,,False,,4.223,3,R,Pasteur,mid
+Minh,a4ad5a8a,0,,,False,,1.786,3,R,Lê Văn Sỹ,mid
+Minh,ee4d2ee9,0,,,False,,4.803,3,R,Pasteur,high
+Minh,4f2179d4,I,Không thấy vỉa hè gần,,False,,5.599,3,R,Lê Văn Sỹ,low
+Minh,66f49fff,I,Không thấy vỉa hè gần,,False,,5.65,3,R,Pasteur,high
+Minh,e6a23a1c,0,,,False,,7.452,3,R,Lê Văn Sỹ,low
+Minh,13b07f1d,0,,,False,,1.938,3,R,Lê Văn Sỹ,low
+Minh,1619a0a0,1,,Xe máy đậu|Khác,False,,7.764,3,R,Lê Văn Sỹ,mid
+Minh,8f4c4a2a,I,Không thấy vỉa hè gần,,False,,3.278,3,R,Pasteur,low
+Minh,ab222362,0,,,False,,2.468,3,R,Lê Văn Sỹ,low
+Minh,ab4dd749,I,Lý do khác,,False,,8.281,3,R,Phan Đăng Lưu,mid
+Minh,c95d8c4d,I,Không thấy vỉa hè gần,,False,,6.027,3,R,Pasteur,high
+Minh,afb61f86,1,,Xe máy đậu|Rào chắn / công trình|Khác,False,,7.19,3,R,Phan Đăng Lưu,high
+Minh,4920586c,1,,Khác,False,,8.538,3,R,Lê Văn Sỹ,low
+Minh,b2ba0241,0,,,False,,3.082,3,R,Phan Đăng Lưu,mid
+Minh,2fb2e53d,I,Không thấy vỉa hè gần,,False,,3.211,3,R,Pasteur,high
+Minh,3d7488a1,I,Không thấy vỉa hè gần,,False,,78.899,3,R,Pasteur,low
+Minh,ca2d406b,1,,Xe máy đậu|Bàn ghế quán,False,,8.068,3,R,Phan Đăng Lưu,high
+Minh,f0153487,1,,Ô tô đậu|Khác,False,,7.54,3,R,Lê Văn Sỹ,high
+Minh,bdd65e70,I,Không thấy vỉa hè gần,,False,,3.414,3,R,Pasteur,low
+Minh,d3172b5b,0,,,False,,3.223,3,R,Phan Đăng Lưu,low
+Minh,29552f42,I,Phía này không có vỉa hè,,False,,3.589,3,R,Pasteur,mid
+Minh,496db837,0,,,False,,2.131,3,R,Phan Đăng Lưu,low
+Minh,0ee2dd95,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,6.105,3,R,Lê Văn Sỹ,high
+Minh,4b4c8a0f,1,,Xe máy đậu|Khác,False,,6.98,3,R,Pasteur,high
+Minh,f1f35c05,0,,,False,,7.132,3,R,Lê Văn Sỹ,high
+Minh,39b922fa,1,,Xe máy đậu|Khác,False,,7.523,3,R,Lê Văn Sỹ,mid
+Minh,183c61d9,I,Phần quyết định bị che,,False,,3.597,3,R,Lê Văn Sỹ,high
+Minh,96bdc487,0,,,False,,4.079,3,R,Pasteur,mid
+Minh,344f12f3,I,Không thấy vỉa hè gần,,False,,5.105,3,R,Lê Văn Sỹ,mid
+Minh,28dba3eb,I,Phần quyết định bị che,,False,,153.782,3,R,Pasteur,mid
+Minh,4bc86986,0,,,False,,4.418,3,R,Phan Đăng Lưu,mid
+Minh,4e9f8016,1,,Xe máy đậu,False,,6.574,3,R,Phan Đăng Lưu,high
+Minh,b41bcffe,0,,,False,,5.837,3,R,Phan Đăng Lưu,low
+Minh,073ef87f,1,,Ô tô đậu|Khác,False,,6.749,3,R,Phan Đăng Lưu,high
+Minh,0c3864ab,I,Không thấy vỉa hè gần,,False,,3.371,3,R,Pasteur,mid
+Minh,2456dabe,0,,,False,,2.478,3,R,Phan Đăng Lưu,low
+Minh,9749eadf,I,Không thấy vỉa hè gần,,False,,3.598,3,R,Pasteur,high
+Minh,fd63be71,0,,,False,,2.242,3,R,Lê Văn Sỹ,mid
+Minh,bce03561,I,Không thấy vỉa hè gần,,False,,2.635,3,R,Pasteur,low
+Minh,44639e4c,0,,,False,,16.763,3,R,Lê Văn Sỹ,mid
+Minh,69b4d211,0,,,False,,2.219,3,R,Lê Văn Sỹ,low
+Minh,79e4e524,0,,,False,,1.953,3,R,Phan Đăng Lưu,mid
+Minh,f7515b5e,1,,Xe máy đậu|Bàn ghế quán,False,,4.883,3,R,Lê Văn Sỹ,high
+Minh,f31ce459,I,Không thấy vỉa hè gần,,False,,3.724,3,R,Pasteur,mid
+Minh,53a8403e,0,,,False,,1.702,3,R,Phan Đăng Lưu,low
+Minh,611a8038,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,7.657,3,R,Lê Văn Sỹ,high
+Minh,22472570,0,,,False,,2.69,3,R,Phan Đăng Lưu,mid
+Minh,1fcff60e,0,,,False,,1.98,3,R,Pasteur,mid
+Minh,de516d94,I,Không thấy vỉa hè gần,,False,,3.007,3,R,Phan Đăng Lưu,mid
+Minh,ea6eabb1,1,,Xe máy đậu,False,,4.039,3,R,Phan Đăng Lưu,high
+Minh,096e1fe5,I,Phía này không có vỉa hè,,False,,3.305,3,R,Phan Đăng Lưu,high
+Minh,aa9c26e2,0,,,False,,1.815,3,R,Phan Đăng Lưu,low
+Minh,3cd64f1c,0,,,False,,2.287,3,R,Lê Văn Sỹ,mid
+Minh,7531a6c7,0,,,False,,1.508,3,R,Phan Đăng Lưu,low
+Minh,ef51a330,1,,Ô tô đậu,False,,4.916,3,R,Lê Văn Sỹ,mid
+Minh,e2ca3e06,0,,,False,,2.156,3,R,Phan Đăng Lưu,mid
+Minh,49058265,I,Phía này không có vỉa hè,,False,,32.54,3,R,Pasteur,high
+Minh,ae20684c,0,,,False,,1.952,3,R,Phan Đăng Lưu,high
+Minh,fc09b177,I,Phần quyết định bị che,,False,,6.572,3,R,Pasteur,mid
+Minh,96466651,0,,,False,,1.534,3,R,Lê Văn Sỹ,low
+Minh,4b316272,0,,,False,,3.779,3,R,Pasteur,low
+Minh,df503ad7,1,,Xe máy đậu|Ô tô đậu|Bàn ghế quán,False,,10.246,3,R,Pasteur,mid
+Minh,250c8597,1,,Xe máy đậu|Khác,False,,5.018,3,R,Lê Văn Sỹ,mid
+Minh,f3213b41,I,Không thấy vỉa hè gần,,False,,2.763,3,R,Pasteur,mid
+Minh,306c280d,0,,,False,,3.246,3,R,Lê Văn Sỹ,low
+Minh,f1c58a00,I,Không thấy vỉa hè gần,,False,,7.032,3,R,Phan Đăng Lưu,high
+Minh,deb834a4,I,Không thấy vỉa hè gần,,False,,2.917,3,R,Lê Văn Sỹ,mid
+Minh,3a574a17,I,Phần quyết định bị che,,False,,3.963,3,R,Lê Văn Sỹ,high
+Hoc,29552f42,I,Phía này không có vỉa hè,,False,,16.673,2,R,Pasteur,mid
+Hoc,b2ba0241,0,,Hàng hóa / quầy hàng,False,,16.95,2,R,Phan Đăng Lưu,mid
+Hoc,344f12f3,0,,,False,,18.337,2,R,Lê Văn Sỹ,mid
+Hoc,4e67f300,1,,Xe máy đậu,False,,10.016,2,R,Pasteur,low
+Hoc,df503ad7,1,,Xe máy đậu|Bàn ghế quán,False,,39.329,2,R,Pasteur,mid
+Hoc,ea6eabb1,1,,Xe máy đậu,False,,18.475,2,R,Phan Đăng Lưu,high
+Hoc,ee4d2ee9,0,,Xe máy đậu,False,,11.061,2,R,Pasteur,high
+Hoc,496db837,0,,,False,,6.375,2,R,Phan Đăng Lưu,low
+Hoc,f00b309a,0,,,False,,7.739,2,R,Phan Đăng Lưu,mid
+Hoc,e6a23a1c,0,,,False,,10.244,2,R,Lê Văn Sỹ,low
+Hoc,073ef87f,1,,Ô tô đậu,False,,30.517,2,R,Phan Đăng Lưu,high
+Hoc,3a574a17,I,Phần quyết định bị che,,False,,13.209,2,R,Lê Văn Sỹ,high
+Hoc,3fc0d408,0,,,False,,8.283,2,R,Lê Văn Sỹ,low
+Hoc,e79a6b19,I,Không thấy vỉa hè gần,,False,,44.948,2,R,Phan Đăng Lưu,low
+Hoc,450feb53,I,Không thấy vỉa hè gần,,False,,8.728,2,R,Pasteur,high
+Hoc,1fcff60e,0,,,False,,4.799,2,R,Pasteur,mid
+Hoc,d60a9792,0,,,False,,11.689,2,R,Pasteur,high
+Hoc,f31ce459,I,Không thấy vỉa hè gần,,False,,162.447,2,R,Pasteur,mid
+Hoc,611a8038,1,,Hàng hóa / quầy hàng,False,,12.201,2,R,Lê Văn Sỹ,high
+Hoc,c291774e,0,,,False,,17.733,2,R,Lê Văn Sỹ,mid
+Hoc,449ec8f8,0,,,False,,8.92,2,R,Pasteur,low
+Hoc,7cf2bfc5,0,,,False,,5.966,2,R,Lê Văn Sỹ,low
+Hoc,67ed6c26,I,Không thấy vỉa hè gần,,False,,44.246,2,R,Pasteur,high
+Hoc,79e4e524,0,,,False,,4.564,2,R,Phan Đăng Lưu,mid
+Hoc,e807e08e,0,,,False,,4.335,2,R,Phan Đăng Lưu,low
+Hoc,4b316272,0,,,False,,4.363,2,R,Pasteur,low
+Hoc,e78781c2,0,,,False,,2.667,2,R,Phan Đăng Lưu,low
+Hoc,c74364ae,0,,,False,,24.151,2,R,Phan Đăng Lưu,mid
+Hoc,6a3b6f3d,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,11.882,2,R,Phan Đăng Lưu,high
+Hoc,ff3a65de,I,Phần quyết định bị che,,False,,13.824,2,R,Phan Đăng Lưu,high
+Hoc,152e2bd1,0,,Xe máy đậu,False,,7.234,2,R,Phan Đăng Lưu,mid
+Hoc,13b07f1d,0,,,False,,11.367,2,R,Lê Văn Sỹ,low
+Hoc,d3172b5b,0,,,False,,3.871,2,R,Phan Đăng Lưu,low
+Hoc,1a29fe88,1,,Bàn ghế quán,False,,16.502,2,R,Lê Văn Sỹ,high
+Hoc,aa9c26e2,0,,,False,,3.847,2,R,Phan Đăng Lưu,low
+Hoc,99fdee25,0,,,False,,17.987,2,R,Lê Văn Sỹ,mid
+Hoc,96466651,0,,,False,,4.083,2,R,Lê Văn Sỹ,low
+Hoc,c95d8c4d,I,Không thấy vỉa hè gần,,False,,8.743,2,R,Pasteur,high
+Hoc,39b922fa,I,Không thấy vỉa hè gần,,False,,27.038,2,R,Lê Văn Sỹ,mid
+Hoc,120945ae,0,,,False,,10.487,2,R,Phan Đăng Lưu,low
+Hoc,2949503b,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,27.025,2,R,Phan Đăng Lưu,high
+Hoc,ee71b1aa,0,,,False,,9.775,2,R,Phan Đăng Lưu,low
+Hoc,61cb8d8d,I,Phía này không có vỉa hè,,False,,39.019,2,R,Pasteur,high
+Hoc,4274a64f,1,,Xe máy đậu,False,,10.886,2,R,Phan Đăng Lưu,mid
+Hoc,8714c32d,0,,Xe máy đậu,False,,8.631,2,R,Lê Văn Sỹ,mid
+Hoc,b41bcffe,0,,,False,,4.427,2,R,Phan Đăng Lưu,low
+Hoc,d685271b,0,,,False,,6.366,2,R,Pasteur,low
+Hoc,4bc86986,0,,Xe máy đậu,False,,23.619,2,R,Phan Đăng Lưu,mid
+Hoc,8f072af6,I,Không thấy vỉa hè gần,,False,,7.091,2,R,Pasteur,mid
+Hoc,ab4dd749,0,,,False,,19.6,2,R,Phan Đăng Lưu,mid
+Hoc,456c8315,1,,Xe máy đậu,False,,10.813,2,R,Pasteur,high
+Hoc,69b4d211,0,,,False,,3.973,2,R,Lê Văn Sỹ,low
+Hoc,aa08aaa2,I,Không thấy vỉa hè gần,,False,,6.475,2,R,Pasteur,high
+Hoc,8a596c31,I,Không thấy vỉa hè gần,,False,,6.016,2,R,Pasteur,mid
+Hoc,2aa2bf1f,I,Phần quyết định bị che,,False,,6.576,2,R,Pasteur,high
+Hoc,9c3496db,0,,,False,,4.486,2,R,Lê Văn Sỹ,low
+Hoc,8f4c4a2a,I,Không thấy vỉa hè gần,,False,,12.294,2,R,Pasteur,low
+Hoc,b04c2f9a,I,Phần quyết định bị che,,False,,15.599,2,R,Pasteur,mid
+Hoc,2668b2e7,0,,Rào chắn / công trình,False,,13.025,2,R,Phan Đăng Lưu,mid
+Hoc,206d2b46,0,,Xe máy đậu,False,,8.327,2,R,Phan Đăng Lưu,high
+Hoc,609b86be,0,,,False,,60.755,2,R,Phan Đăng Lưu,mid
+Hoc,5e1a8459,0,,Xe máy đậu|Hàng hóa / quầy hàng,False,,9.401,2,R,Phan Đăng Lưu,high
+Hoc,66f49fff,I,Không thấy vỉa hè gần,,False,,20.801,2,R,Pasteur,high
+Hoc,b0c458b8,I,Không thấy vỉa hè gần,,False,,10.275,2,R,Lê Văn Sỹ,high
+Hoc,7531a6c7,0,,,False,,3.655,2,R,Phan Đăng Lưu,low
+Hoc,8cf5eda9,I,Không thấy vỉa hè gần,,False,,5.535,2,R,Pasteur,high
+Hoc,3637ae1c,I,Không thấy vỉa hè gần,,False,,24.173,2,R,Pasteur,low
+Hoc,8663c5a3,0,,,False,,67.975,2,R,Lê Văn Sỹ,high
+Hoc,bce03561,I,Không thấy vỉa hè gần,,False,,5.082,2,R,Pasteur,low
+Hoc,53a8403e,0,,,False,,2.164,2,R,Phan Đăng Lưu,low
+Hoc,e2ca3e06,0,,,False,,4.26,2,R,Phan Đăng Lưu,mid
+Hoc,6e904c1f,0,,,False,,1.936,2,R,Pasteur,low
+Hoc,22663366,0,,,False,,1.715,2,R,Lê Văn Sỹ,mid
+Hoc,bdd65e70,I,Không thấy vỉa hè gần,,False,,5.052,2,R,Pasteur,low
+Hoc,0ad92dd7,0,,,False,,1.419,2,R,Phan Đăng Lưu,low
+Hoc,3d7488a1,0,,,False,,4.491,2,R,Pasteur,low
+Hoc,95f0ffff,I,Không thấy vỉa hè gần,,False,,18.342,2,R,Phan Đăng Lưu,mid
+Hoc,22472570,0,,,False,,4.674,2,R,Phan Đăng Lưu,mid
+Hoc,4b4c8a0f,I,Không thấy vỉa hè gần,,False,,8.998,2,R,Pasteur,high
+Hoc,2fb2e53d,I,Không thấy vỉa hè gần,,False,,5.364,2,R,Pasteur,high
+Hoc,42e531e0,I,Phía này không có vỉa hè,,False,,13.093,2,R,Pasteur,high
+Hoc,f1f35c05,0,,Xe máy đậu,False,,6.984,2,R,Lê Văn Sỹ,high
+Hoc,2456dabe,0,,,False,,3.13,2,R,Phan Đăng Lưu,low
+Hoc,990ba148,1,,Hàng hóa / quầy hàng,False,,13.98,2,R,Phan Đăng Lưu,high
+Hoc,0b0bdb09,1,,Xe máy đậu,False,,5.675,2,R,Lê Văn Sỹ,high
+Hoc,bdc7cc3c,1,,Ô tô đậu,False,,7.988,2,R,Lê Văn Sỹ,mid
+Hoc,9ad42c40,0,,,False,,7.615,2,R,Pasteur,high
+Hoc,4debcdcf,I,Không thấy vỉa hè gần,,False,,27.269,2,R,Pasteur,low
+Hoc,ae20684c,0,,,False,,3.422,2,R,Phan Đăng Lưu,high
+Hoc,35148331,I,Không thấy vỉa hè gần,,False,,8.895,2,R,Phan Đăng Lưu,high
+Hoc,f7515b5e,0,,Xe máy đậu,False,,11.117,2,R,Lê Văn Sỹ,high
+Hoc,f20c492e,0,,Xe máy đậu,False,,3.871,2,R,Phan Đăng Lưu,high
+Hoc,de516d94,I,Không thấy vỉa hè gần,,False,,4.542,2,R,Phan Đăng Lưu,mid
+Hoc,efe0e9a3,0,,Ô tô đậu,False,,5.584,2,R,Phan Đăng Lưu,low
+Hoc,0d6a8e4c,0,,,False,,6.417,2,R,Phan Đăng Lưu,mid
+Hoc,f3213b41,I,Không thấy vỉa hè gần,,False,,7.669,2,R,Pasteur,mid
+Hoc,7f4a3a49,0,,,False,,4.25,2,R,Pasteur,low
+Hoc,fc09b177,I,Phần quyết định bị che,,False,,15.008,2,R,Pasteur,mid
+Hoc,69efc658,0,,Xe máy đậu|Ô tô đậu|Hàng hóa / quầy hàng,False,,5.803,2,R,Phan Đăng Lưu,high
+Hoc,dc58ca61,0,,Xe máy đậu,False,,7.17,2,R,Pasteur,low
+Hoc,ca2d406b,1,,Xe máy đậu,False,,143.056,2,R,Phan Đăng Lưu,high
+Hoc,49058265,I,Phần quyết định bị che,,False,,9.671,2,R,Pasteur,high
+Hoc,f1c58a00,I,Phía này không có vỉa hè,,False,,7.89,2,R,Phan Đăng Lưu,high
+Hoc,4e9f8016,0,,Xe máy đậu,False,,3.685,2,R,Phan Đăng Lưu,high
+Hoc,afb61f86,I,,Xe máy đậu,False,,3.416,2,R,Phan Đăng Lưu,high
+Hoc,83401c43,0,,,False,,8.271,2,R,Phan Đăng Lưu,mid
+Hoc,956412a6,0,,,False,,1.862,2,R,Pasteur,mid
+Hoc,0e6b9fee,I,Phần quyết định bị che,,False,,4.037,2,R,Lê Văn Sỹ,high
+Hoc,0d6b50e9,I,Không thấy vỉa hè gần,,False,,7.128,2,R,Pasteur,mid
+Hoc,183c61d9,0,,,False,,4.815,2,R,Lê Văn Sỹ,high
+Hoc,54b6abd1,0,,,False,,10.209,2,R,Lê Văn Sỹ,high
+Hoc,44639e4c,0,,,False,,4.128,2,R,Lê Văn Sỹ,mid
+Hoc,e42f7a83,0,,,False,,1.652,2,R,Lê Văn Sỹ,low
+Hoc,2e657501,1,,Rào chắn / công trình,False,,7.157,2,R,Lê Văn Sỹ,high
+Hoc,425c8595,0,,,False,,1.709,2,R,Pasteur,low
+Hoc,6a7042fd,1,,Xe máy đậu,False,,4.837,2,R,Lê Văn Sỹ,high
+Hoc,4920586c,0,,,False,,2.074,2,R,Lê Văn Sỹ,low
+Hoc,b43ea928,0,,,False,,1.732,2,R,Phan Đăng Lưu,low
+Hoc,f0153487,I,Phần quyết định bị che,,False,,9.732,2,R,Lê Văn Sỹ,high
+Hoc,a285a7e0,I,Không thấy vỉa hè gần,,False,,7.198,2,R,Pasteur,mid
+Hoc,838d2e79,I,Không thấy vỉa hè gần,,False,,11.53,2,R,Phan Đăng Lưu,mid
+Hoc,e63ceaf3,0,,,False,,42.243,2,R,Pasteur,low
+Hoc,096e1fe5,I,Không thấy vỉa hè gần,,False,,32.464,2,R,Phan Đăng Lưu,high
+Hoc,a4ad5a8a,0,,,False,,3.14,2,R,Lê Văn Sỹ,mid
+Hoc,f187a8e0,0,,,False,,1.621,2,R,Lê Văn Sỹ,low
+Hoc,4d6d830a,I,Không thấy vỉa hè gần,,False,,4.251,2,R,Pasteur,mid
+Hoc,4f2179d4,I,Không thấy vỉa hè gần,,False,,3.318,2,R,Lê Văn Sỹ,low
+Hoc,1619a0a0,1,,Xe máy đậu,False,,7.096,2,R,Lê Văn Sỹ,mid
+Hoc,0ee2dd95,0,,Xe máy đậu,False,,4.674,2,R,Lê Văn Sỹ,high
+Hoc,f9c2e862,1,,Xe máy đậu,False,,4.04,2,R,Lê Văn Sỹ,high
+Hoc,fb8bf1f2,1,,Xe máy đậu|Hàng hóa / quầy hàng,False,,8.616,2,R,Pasteur,low
+Hoc,306c280d,0,,,False,,2.744,2,R,Lê Văn Sỹ,low
+Hoc,deb834a4,1,,Xe máy đậu,False,,4.451,2,R,Lê Văn Sỹ,mid
+Hoc,96bdc487,0,,,False,,1.991,2,R,Pasteur,mid
+Hoc,98187ec5,0,,,False,,2.642,2,R,Lê Văn Sỹ,low
+Hoc,eaab10cf,0,,,False,,2.571,2,R,Lê Văn Sỹ,mid
+Hoc,ef51a330,I,Phần quyết định bị che,,False,,6.278,2,R,Lê Văn Sỹ,mid
+Hoc,28dba3eb,0,,,False,,26.386,2,R,Pasteur,mid
+Hoc,681f2af6,0,,,False,,4.846,2,R,Lê Văn Sỹ,low
+Hoc,4e1287be,1,,,True,,11.273,2,R,Lê Văn Sỹ,mid
+Hoc,e2a778af,0,,,False,,1.956,2,R,Phan Đăng Lưu,low
+Hoc,250c8597,1,,Xe máy đậu,False,,11.474,2,R,Lê Văn Sỹ,mid
+Hoc,42e674ce,0,,Xe máy đậu,False,,3.541,2,R,Lê Văn Sỹ,high
+Hoc,0a98d3d9,I,Không thấy vỉa hè gần,,False,,15.548,2,R,Pasteur,mid
+Hoc,9749eadf,I,Không thấy vỉa hè gần,,False,,58.173,2,R,Pasteur,high
+Hoc,08b16f9a,0,,,False,,1.565,2,R,Lê Văn Sỹ,low
+Hoc,ab222362,0,,,False,,1.775,2,R,Lê Văn Sỹ,low
+Hoc,0c3864ab,I,Không thấy vỉa hè gần,,False,,33.586,2,R,Pasteur,mid
+Hoc,fd63be71,0,,,False,,144.412,2,R,Lê Văn Sỹ,mid
+Hoc,3cd64f1c,0,,,False,,34.818,2,R,Lê Văn Sỹ,mid
