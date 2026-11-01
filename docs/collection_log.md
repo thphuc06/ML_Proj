@@ -113,3 +113,10 @@ The pilot numbers above are unchanged. This review reads them again; the team wi
 - **Obstacle quantity versus continuity:** parked-obstacle share predicts blocked votes (AUC 0.75). Visual review shows it is not the right criterion: items #21 and #26 have occupancy 0.53–0.60 and a clear path, while #13 has 0.09 and is blocked.
 - **Theme impact (upper bound if settled):** far sidewalk 0.67, partial encroachment 0.67, foreground occlusion 0.63, intersections 0.63; the first two together 0.77.
 - Theme assignment and suggested labels are Claude's visual review, for discussion only. They are not labels.
+
+## 2026-11-01 — Insufficient-information reasons merged in the guide v1 draft
+
+- Team feedback: the reasons "no near sidewalk seen" and "no sidewalk on this side" read alike, and the shorthand tags in the review sheets were hard to follow.
+- Pilot evidence: 18 of the 19 images with a "no sidewalk on this side" vote also had a "not seen" vote; none was agreed on that reason alone. Merging raises reason agreement from 0.79 to 0.90 on the 54 images with at least 2 insufficient votes.
+- Draft v1 uses one reason, "Không thấy vỉa hè", which also covers intersections and open forecourts; the separate intersection reason proposed earlier is dropped.
+- Four reasons remain (keys F G H J), in `labeling/label_studio/ls_label_config_v1.xml`. Pilot labels stay as recorded. Label Studio projects are unchanged until the meeting closes the guide.

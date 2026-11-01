@@ -48,9 +48,9 @@ asg.to_csv(DATA / "manifest" / "main_v1_assignment.csv", index=False, encoding="
 print(asg.pivot_table(index="annotator", columns="role", values="item", aggfunc="size", fill_value=0).assign(total=lambda d: d.sum(1)).to_string())
 assert not asg.duplicated(["item", "annotator"]).any()
 
-cfg = (ROOT / "labeling" / "label_studio" / "ls_label_config_v0.xml").read_text(encoding="utf-8")
+cfg = (ROOT / "labeling" / "label_studio" / "ls_label_config_v1.xml").read_text(encoding="utf-8")
 import markdown  # noqa: E402
-instr = markdown.markdown((ROOT / "labeling" / "guide" / "annotation_guide_v0.md").read_text(encoding="utf-8"), extensions=["tables"])
+instr = markdown.markdown((ROOT / "labeling" / "guide" / "annotation_guide_v1_draft.md").read_text(encoding="utf-8"), extensions=["tables"])
 instr = instr.replace("PILOT_&lt;tên&gt;", "MAIN_&lt;tên&gt;").replace("<code>PILOT_&lt;tên&gt;</code>", "<code>MAIN_&lt;tên&gt;</code>")
 s = session()
 have = projects(s)

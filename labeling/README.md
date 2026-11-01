@@ -25,11 +25,13 @@ Chi tiết từng ảnh: [data/manifest/main_v1_assignment.csv](../data/manifest
 
 | File | Nội dung |
 |---|---|
+| [guide/bang_tra_nhanh.jpg](guide/bang_tra_nhanh.jpg) | **Bảng tra nhanh:** phím bấm, đặc điểm nhận diện, ảnh ví dụ. Xem cái này khi gán |
 | [guide/annotation_guide_v0.md](guide/annotation_guide_v0.md) | Hướng dẫn đang dùng, bảng phím tắt |
 | [pilot_review.md](pilot_review.md) | Rà soát pilot, tài liệu cho buổi họp thống nhất |
-| [guide/annotation_guide_v1_draft.md](guide/annotation_guide_v1_draft.md) | Dự thảo v1, quy tắc R1–R9 rút ra từ pilot |
+| [guide/annotation_guide_v1_draft.md](guide/annotation_guide_v1_draft.md) | Dự thảo hướng dẫn v1, đầy đủ, viết lại sau pilot |
 | [guide/examples_v1_consensus.jpg](guide/examples_v1_consensus.jpg) | Ảnh ví dụ được nhóm đồng thuận |
-| [label_studio/ls_label_config_v0.xml](label_studio/ls_label_config_v0.xml) | Giao diện gán nhãn |
+| [label_studio/ls_label_config_v0.xml](label_studio/ls_label_config_v0.xml) | Giao diện dùng cho pilot |
+| [label_studio/ls_label_config_v1.xml](label_studio/ls_label_config_v1.xml) | Giao diện v1: gộp lý do, chưa đưa lên server |
 | [label_studio/annotators.yaml](label_studio/annotators.yaml) | Tên ngắn của người gán |
 
 ## Script
