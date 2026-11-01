@@ -1,0 +1,74 @@
+﻿crop_id,0,1,I,agree,pattern,idx,Hoc,Khai,Loan,Minh,Phuc,street_id,theme,near_y,occupancy
+4274a64f,2,3,0,3,BC,0,1,1,0,0,1,Phan Đăng Lưu,F_xe_nguoi_tam_thoi,0.988,0.03
+456c8315,2,3,0,3,BC,1,1,0,0,1,1,Pasteur,E_lan_mot_phan,0.998,0.068
+bdc7cc3c,2,3,0,3,BC,2,1,0,0,1,1,Lê Văn Sỹ,E_lan_mot_phan,0.998,0.239
+f9c2e862,2,3,0,3,BC,3,1,0,0,1,1,Lê Văn Sỹ,E_lan_mot_phan,0.848,0.038
+2949503b,3,2,0,3,BC,4,1,0,0,1,0,Phan Đăng Lưu,F_xe_nguoi_tam_thoi,0.746,0.0
+69efc658,3,2,0,3,BC,5,0,1,0,1,0,Phan Đăng Lưu,G_thong_thoang_bi_cham_khac,0.998,0.131
+8663c5a3,3,2,0,3,BC,6,0,0,1,1,0,Lê Văn Sỹ,E_lan_mot_phan,0.998,0.071
+98187ec5,3,2,0,3,BC,7,0,1,0,1,0,Lê Văn Sỹ,G_thong_thoang_bi_cham_khac,0.807,0.0
+f20c492e,3,2,0,3,BC,8,0,0,0,1,1,Phan Đăng Lưu,E_lan_mot_phan,0.998,0.194
+f7515b5e,3,2,0,3,BC,9,0,0,0,1,1,Lê Văn Sỹ,E_lan_mot_phan,0.648,0.571
+0b0bdb09,1,4,0,4,BC,10,1,1,0,1,1,Lê Văn Sỹ,E_lan_mot_phan,0.961,0.125
+1619a0a0,1,4,0,4,BC,11,1,1,0,1,1,Lê Văn Sỹ,E_lan_mot_phan,0.871,0.267
+250c8597,1,4,0,4,BC,12,1,1,0,1,1,Lê Văn Sỹ,E_lan_mot_phan,0.998,0.003
+2e657501,1,4,0,4,BC,13,1,1,0,1,1,Lê Văn Sỹ,H_chan_ro,0.838,0.092
+611a8038,1,4,0,4,BC,14,1,0,1,1,1,Lê Văn Sỹ,E_lan_mot_phan,0.953,0.651
+6a7042fd,1,4,0,4,BC,15,1,0,1,1,1,Lê Văn Sỹ,H_chan_ro,0.803,0.367
+ca2d406b,1,4,0,4,BC,16,1,1,0,1,1,Phan Đăng Lưu,E_lan_mot_phan,0.998,0.268
+efe0e9a3,1,4,0,4,BC,17,0,1,1,1,1,Phan Đăng Lưu,E_lan_mot_phan,0.998,0.0
+0ee2dd95,4,1,0,4,BC,18,0,0,0,1,0,Lê Văn Sỹ,B_giao_lo_khoang_trong,0.625,0.241
+2668b2e7,4,1,0,4,BC,19,0,0,0,1,0,Phan Đăng Lưu,G_thong_thoang_bi_cham_khac,0.998,0.0
+3cd64f1c,4,1,0,4,BC,20,0,1,0,0,0,Lê Văn Sỹ,G_thong_thoang_bi_cham_khac,0.855,0.06
+42e674ce,4,1,0,4,BC,21,0,0,0,1,0,Lê Văn Sỹ,E_lan_mot_phan,0.895,0.596
+4920586c,4,1,0,4,BC,22,0,0,0,1,0,Lê Văn Sỹ,G_thong_thoang_bi_cham_khac,0.998,0.014
+4e9f8016,4,1,0,4,BC,23,0,0,0,1,0,Phan Đăng Lưu,E_lan_mot_phan,0.992,0.086
+5e1a8459,4,1,0,4,BC,24,0,0,0,1,0,Phan Đăng Lưu,G_thong_thoang_bi_cham_khac,0.98,0.072
+99fdee25,4,1,0,4,BC,25,0,0,0,1,0,Lê Văn Sỹ,G_thong_thoang_bi_cham_khac,0.918,0.0
+dc58ca61,4,1,0,4,BC,26,0,0,0,0,1,Pasteur,E_lan_mot_phan,0.723,0.525
+f1f35c05,4,1,0,4,BC,27,0,0,0,0,1,Lê Văn Sỹ,E_lan_mot_phan,0.998,0.303
+152e2bd1,2,2,1,2,BCI,28,0,I,0,1,1,Phan Đăng Lưu,E_lan_mot_phan,0.998,0.514
+39b922fa,2,2,1,2,BCI,29,I,1,0,1,0,Lê Văn Sỹ,B_giao_lo_khoang_trong,0.648,0.441
+df503ad7,1,2,2,2,BCI,30,1,I,0,1,I,Pasteur,C_bi_che_tien_canh,0.789,0.0
+4b4c8a0f,2,1,2,2,BCI,31,I,I,0,1,0,Pasteur,C_bi_che_tien_canh,0.676,0.164
+f0153487,2,1,2,2,BCI,32,I,0,0,1,I,Lê Văn Sỹ,C_bi_che_tien_canh,0.629,0.0
+073ef87f,1,3,1,3,BCI,33,1,I,0,1,1,Phan Đăng Lưu,C_bi_che_tien_canh,0.928,0.678
+990ba148,1,3,1,3,BCI,34,1,I,0,1,1,Phan Đăng Lưu,H_chan_ro,0.998,0.295
+afb61f86,1,3,1,3,BCI,35,I,1,0,1,1,Phan Đăng Lưu,H_chan_ro,0.998,0.541
+4e1287be,1,1,3,3,BCI,36,1,I,I,I,0,Lê Văn Sỹ,C_bi_che_tien_canh,0.814,0.131
+67ed6c26,1,1,3,3,BCI,37,I,1,0,I,I,Pasteur,A_vi_he_xa,0.619,0.363
+fb8bf1f2,3,1,1,3,BCI,38,1,0,0,I,0,Pasteur,A_vi_he_xa,0.619,0.0
+a285a7e0,0,2,3,3,BI,39,I,1,1,I,I,Pasteur,B_giao_lo_khoang_trong,0.58,0.396
+ff3a65de,0,2,3,3,BI,40,I,I,1,1,I,Phan Đăng Lưu,B_giao_lo_khoang_trong,0.0,0.0
+1a29fe88,0,4,1,4,BI,41,1,1,1,I,1,Lê Văn Sỹ,E_lan_mot_phan,0.637,0.053
+4d6d830a,0,1,4,4,BI,42,I,I,1,I,I,Pasteur,A_vi_he_xa,0.539,0.0
+b0c458b8,0,1,4,4,BI,43,I,I,1,I,I,Lê Văn Sỹ,B_giao_lo_khoang_trong,0.553,0.268
+deb834a4,0,1,4,4,BI,44,1,I,I,I,I,Lê Văn Sỹ,A_vi_he_xa,0.58,0.634
+ef51a330,0,1,4,4,BI,45,I,I,I,1,I,Lê Văn Sỹ,C_bi_che_tien_canh,0.0,0.976
+0e6b9fee,2,0,3,3,CI,46,I,I,0,0,I,Lê Văn Sỹ,C_bi_che_tien_canh,0.998,0.606
+183c61d9,3,0,2,3,CI,47,0,0,0,I,I,Lê Văn Sỹ,C_bi_che_tien_canh,0.693,0.0
+28dba3eb,2,0,3,3,CI,48,0,I,0,I,I,Pasteur,A_vi_he_xa,0.578,0.649
+344f12f3,3,0,2,3,CI,49,0,0,I,I,0,Lê Văn Sỹ,B_giao_lo_khoang_trong,0.891,0.0
+3d7488a1,3,0,2,3,CI,50,0,I,0,I,0,Pasteur,A_vi_he_xa,0.617,0.001
+8f4c4a2a,3,0,2,3,CI,51,I,0,0,I,0,Pasteur,A_vi_he_xa,0.643,0.0
+9749eadf,2,0,3,3,CI,52,I,0,0,I,I,Pasteur,A_vi_he_xa,0.562,0.119
+9ad42c40,3,0,2,3,CI,53,0,I,0,I,0,Pasteur,A_vi_he_xa,0.697,0.0
+b43ea928,3,0,2,3,CI,54,0,I,0,I,0,Phan Đăng Lưu,G_thong_thoang_bi_cham_khac,0.998,0.105
+bce03561,3,0,2,3,CI,55,I,0,0,I,0,Pasteur,A_vi_he_xa,0.555,0.0
+c74364ae,2,0,3,3,CI,56,0,I,I,0,I,Phan Đăng Lưu,B_giao_lo_khoang_trong,0.0,0.738
+f3213b41,2,0,3,3,CI,57,I,0,0,I,I,Pasteur,A_vi_he_xa,0.549,0.734
+0a98d3d9,1,0,4,4,CI,58,I,I,0,I,I,Pasteur,A_vi_he_xa,0.611,0.124
+0c3864ab,1,0,4,4,CI,59,I,0,I,I,I,Pasteur,A_vi_he_xa,0.0,0.0
+0d6a8e4c,1,0,4,4,CI,60,0,I,I,I,I,Phan Đăng Lưu,D_chay_sang,0.818,0.0
+3637ae1c,4,0,1,4,CI,61,I,0,0,0,0,Pasteur,A_vi_he_xa,0.621,0.175
+425c8595,4,0,1,4,CI,62,0,0,0,I,0,Pasteur,A_vi_he_xa,0.66,0.043
+609b86be,1,0,4,4,CI,63,0,I,I,I,I,Phan Đăng Lưu,D_chay_sang,0.543,0.0
+838d2e79,4,0,1,4,CI,64,I,0,0,0,0,Phan Đăng Lưu,G_thong_thoang_bi_cham_khac,0.998,0.017
+8f072af6,1,0,4,4,CI,65,I,I,0,I,I,Pasteur,A_vi_he_xa,0.531,0.137
+ab4dd749,4,0,1,4,CI,66,0,0,0,I,0,Phan Đăng Lưu,G_thong_thoang_bi_cham_khac,0.83,0.0
+bdd65e70,1,0,4,4,CI,67,I,I,0,I,I,Pasteur,B_giao_lo_khoang_trong,0.67,0.0
+d60a9792,4,0,1,4,CI,68,0,0,0,0,I,Pasteur,A_vi_he_xa,0.648,0.463
+d685271b,4,0,1,4,CI,69,0,0,0,I,0,Pasteur,A_vi_he_xa,0.695,0.0
+e79a6b19,1,0,4,4,CI,70,I,I,I,I,0,Phan Đăng Lưu,B_giao_lo_khoang_trong,0.713,0.0
+f00b309a,4,0,1,4,CI,71,0,0,0,I,0,Phan Đăng Lưu,G_thong_thoang_bi_cham_khac,0.828,0.0
+f31ce459,1,0,4,4,CI,72,I,I,I,I,0,Pasteur,B_giao_lo_khoang_trong,0.555,0.677

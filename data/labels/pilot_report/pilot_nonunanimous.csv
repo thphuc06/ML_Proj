@@ -1,0 +1,74 @@
+﻿crop_id,0,1,I,agree,pattern,idx,Hoc,Khai,Loan,Minh,Phuc,street_id
+4274a64f,2,3,0,3,BC,0,1,1,0,0,1,Phan Đăng Lưu
+456c8315,2,3,0,3,BC,1,1,0,0,1,1,Pasteur
+bdc7cc3c,2,3,0,3,BC,2,1,0,0,1,1,Lê Văn Sỹ
+f9c2e862,2,3,0,3,BC,3,1,0,0,1,1,Lê Văn Sỹ
+2949503b,3,2,0,3,BC,4,1,0,0,1,0,Phan Đăng Lưu
+69efc658,3,2,0,3,BC,5,0,1,0,1,0,Phan Đăng Lưu
+8663c5a3,3,2,0,3,BC,6,0,0,1,1,0,Lê Văn Sỹ
+98187ec5,3,2,0,3,BC,7,0,1,0,1,0,Lê Văn Sỹ
+f20c492e,3,2,0,3,BC,8,0,0,0,1,1,Phan Đăng Lưu
+f7515b5e,3,2,0,3,BC,9,0,0,0,1,1,Lê Văn Sỹ
+0b0bdb09,1,4,0,4,BC,10,1,1,0,1,1,Lê Văn Sỹ
+1619a0a0,1,4,0,4,BC,11,1,1,0,1,1,Lê Văn Sỹ
+250c8597,1,4,0,4,BC,12,1,1,0,1,1,Lê Văn Sỹ
+2e657501,1,4,0,4,BC,13,1,1,0,1,1,Lê Văn Sỹ
+611a8038,1,4,0,4,BC,14,1,0,1,1,1,Lê Văn Sỹ
+6a7042fd,1,4,0,4,BC,15,1,0,1,1,1,Lê Văn Sỹ
+ca2d406b,1,4,0,4,BC,16,1,1,0,1,1,Phan Đăng Lưu
+efe0e9a3,1,4,0,4,BC,17,0,1,1,1,1,Phan Đăng Lưu
+0ee2dd95,4,1,0,4,BC,18,0,0,0,1,0,Lê Văn Sỹ
+2668b2e7,4,1,0,4,BC,19,0,0,0,1,0,Phan Đăng Lưu
+3cd64f1c,4,1,0,4,BC,20,0,1,0,0,0,Lê Văn Sỹ
+42e674ce,4,1,0,4,BC,21,0,0,0,1,0,Lê Văn Sỹ
+4920586c,4,1,0,4,BC,22,0,0,0,1,0,Lê Văn Sỹ
+4e9f8016,4,1,0,4,BC,23,0,0,0,1,0,Phan Đăng Lưu
+5e1a8459,4,1,0,4,BC,24,0,0,0,1,0,Phan Đăng Lưu
+99fdee25,4,1,0,4,BC,25,0,0,0,1,0,Lê Văn Sỹ
+dc58ca61,4,1,0,4,BC,26,0,0,0,0,1,Pasteur
+f1f35c05,4,1,0,4,BC,27,0,0,0,0,1,Lê Văn Sỹ
+152e2bd1,2,2,1,2,BCI,28,0,I,0,1,1,Phan Đăng Lưu
+39b922fa,2,2,1,2,BCI,29,I,1,0,1,0,Lê Văn Sỹ
+df503ad7,1,2,2,2,BCI,30,1,I,0,1,I,Pasteur
+4b4c8a0f,2,1,2,2,BCI,31,I,I,0,1,0,Pasteur
+f0153487,2,1,2,2,BCI,32,I,0,0,1,I,Lê Văn Sỹ
+073ef87f,1,3,1,3,BCI,33,1,I,0,1,1,Phan Đăng Lưu
+990ba148,1,3,1,3,BCI,34,1,I,0,1,1,Phan Đăng Lưu
+afb61f86,1,3,1,3,BCI,35,I,1,0,1,1,Phan Đăng Lưu
+4e1287be,1,1,3,3,BCI,36,1,I,I,I,0,Lê Văn Sỹ
+67ed6c26,1,1,3,3,BCI,37,I,1,0,I,I,Pasteur
+fb8bf1f2,3,1,1,3,BCI,38,1,0,0,I,0,Pasteur
+a285a7e0,0,2,3,3,BI,39,I,1,1,I,I,Pasteur
+ff3a65de,0,2,3,3,BI,40,I,I,1,1,I,Phan Đăng Lưu
+1a29fe88,0,4,1,4,BI,41,1,1,1,I,1,Lê Văn Sỹ
+4d6d830a,0,1,4,4,BI,42,I,I,1,I,I,Pasteur
+b0c458b8,0,1,4,4,BI,43,I,I,1,I,I,Lê Văn Sỹ
+deb834a4,0,1,4,4,BI,44,1,I,I,I,I,Lê Văn Sỹ
+ef51a330,0,1,4,4,BI,45,I,I,I,1,I,Lê Văn Sỹ
+0e6b9fee,2,0,3,3,CI,46,I,I,0,0,I,Lê Văn Sỹ
+183c61d9,3,0,2,3,CI,47,0,0,0,I,I,Lê Văn Sỹ
+28dba3eb,2,0,3,3,CI,48,0,I,0,I,I,Pasteur
+344f12f3,3,0,2,3,CI,49,0,0,I,I,0,Lê Văn Sỹ
+3d7488a1,3,0,2,3,CI,50,0,I,0,I,0,Pasteur
+8f4c4a2a,3,0,2,3,CI,51,I,0,0,I,0,Pasteur
+9749eadf,2,0,3,3,CI,52,I,0,0,I,I,Pasteur
+9ad42c40,3,0,2,3,CI,53,0,I,0,I,0,Pasteur
+b43ea928,3,0,2,3,CI,54,0,I,0,I,0,Phan Đăng Lưu
+bce03561,3,0,2,3,CI,55,I,0,0,I,0,Pasteur
+c74364ae,2,0,3,3,CI,56,0,I,I,0,I,Phan Đăng Lưu
+f3213b41,2,0,3,3,CI,57,I,0,0,I,I,Pasteur
+0a98d3d9,1,0,4,4,CI,58,I,I,0,I,I,Pasteur
+0c3864ab,1,0,4,4,CI,59,I,0,I,I,I,Pasteur
+0d6a8e4c,1,0,4,4,CI,60,0,I,I,I,I,Phan Đăng Lưu
+3637ae1c,4,0,1,4,CI,61,I,0,0,0,0,Pasteur
+425c8595,4,0,1,4,CI,62,0,0,0,I,0,Pasteur
+609b86be,1,0,4,4,CI,63,0,I,I,I,I,Phan Đăng Lưu
+838d2e79,4,0,1,4,CI,64,I,0,0,0,0,Phan Đăng Lưu
+8f072af6,1,0,4,4,CI,65,I,I,0,I,I,Pasteur
+ab4dd749,4,0,1,4,CI,66,0,0,0,I,0,Phan Đăng Lưu
+bdd65e70,1,0,4,4,CI,67,I,I,0,I,I,Pasteur
+d60a9792,4,0,1,4,CI,68,0,0,0,0,I,Pasteur
+d685271b,4,0,1,4,CI,69,0,0,0,I,0,Pasteur
+e79a6b19,1,0,4,4,CI,70,I,I,I,I,0,Phan Đăng Lưu
+f00b309a,4,0,1,4,CI,71,0,0,0,I,0,Phan Đăng Lưu
+f31ce459,1,0,4,4,CI,72,I,I,I,I,0,Pasteur

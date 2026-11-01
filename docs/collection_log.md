@@ -100,3 +100,16 @@ Question raised while labelling: should only right-side crops be kept?
 - Removed from the earlier trial: everything after its labelling step (training, evaluation, demo app, trained model) and its documents. The trial's own collection scripts were dropped because `src/` replaces them.
 - `src/collection/04_street_preview.py` and `src/labeling/10_make_pilot_v2.py` stay as the record of how streets and the pilot were chosen. Their scoring step needs the trial model, which is not in the repository, so they do not run as they stand. Results stay frozen in `configs/streets_v1.yaml`, `data/streets/` and `data/manifest/pilot_v2.csv`.
 - Log entries above are unchanged. They record how the data were actually selected: the trial model's scores informed street choice and pilot stratification, and never produced labels.
+
+## 2026-11-01 — Pilot review before the guide v1 meeting (`src/analysis/13_pilot_review.py`, `14_rule_check.py`, `15_theme_impact.py`)
+
+The pilot numbers above are unchanged. This review reads them again; the team will meet to agree the rules.
+
+- **Correction:** the entry of 2026-10-29 treated "parked motorbike tagged 90× on items labelled 0" as evidence of the 0/1 boundary. Tagging habits differ: Minh and Phuc tagged obstacles on 0% of their 0 labels, Hoc 21%, Khai 42%, Loan 54%. The figure mostly reflects that difference.
+- **Direction of disagreement against the other four:** Loan said 0 on 14 of 21 items the others called blocked; Minh said 1 on 15 and I on 12 of the 84 items the others called 0. Hoc, Khai and Phuc sit between. This is relative to group consensus, not to a true label.
+- **Eligibility rule, measured:** whether the sidewalk reaches below 60% of image height matches the group majority on 89% of items, 86% in 5-fold check; AUC 0.92. The best threshold ranged 0.60–0.75 in bootstrap.
+- **Draft rule R2 rejected:** a sidewalk-width requirement lowered agreement to 81% or less.
+- **Rules not validated:** a free strip measured from segmentation, in motorbike widths or as a ratio, did not predict votes (AUC 0.39–0.69, intervals include 0.5). Near versus middle zone showed no difference. R1 and R5 are conventions to be agreed, not measured results.
+- **Obstacle quantity versus continuity:** parked-obstacle share predicts blocked votes (AUC 0.75). Visual review shows it is not the right criterion: items #21 and #26 have occupancy 0.53–0.60 and a clear path, while #13 has 0.09 and is blocked.
+- **Theme impact (upper bound if settled):** far sidewalk 0.67, partial encroachment 0.67, foreground occlusion 0.63, intersections 0.63; the first two together 0.77.
+- Theme assignment and suggested labels are Claude's visual review, for discussion only. They are not labels.

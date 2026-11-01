@@ -7,7 +7,7 @@ Cập nhật 01/11/2026. Mỗi mục đóng lại khi có bằng chứng tương
 | # | Vấn đề | Việc cần làm |
 |---|---|---|
 | 1 | Fleiss κ pilot 0,57, chưa đạt ngưỡng 0,6 | Chốt guide v1, gán vòng kiểm tra 50 ảnh, đạt thì mở `MAIN` |
-| 2 | Các quy tắc R1–R6 mới là dự thảo ([xem](../labeling/guide/annotation_guide_v1_draft.md)) | Nhóm họp, chốt từng quy tắc và chọn ảnh mẫu |
+| 2 | Các quy tắc R1–R9 mới là dự thảo ([xem](../labeling/guide/annotation_guide_v1_draft.md)) | Nhóm họp, chốt từng quy tắc và chọn ảnh mẫu |
 | 3 | 35 ảnh pilot có từ 3/5 phiếu trở xuống chưa có nhãn cuối ([danh sách](../data/labels/pilot_report/pilot_disagreements_20261029_0903.csv)) | Phân xử trong buổi họp, ghi lý do |
 | 4 | Mỗi người có ngưỡng "bị chặn" khác nhau: từ 8% (Loan) đến 25% (Minh) | Thống nhất bằng ảnh mẫu, kiểm tra lại ở vòng 50 ảnh |
 | 5 | Giao diện chưa cập nhật: bắt buộc chọn vật cản khi "Bị chặn", thêm lý do "Giao lộ / góc đường" | Cập nhật sau khi chốt guide v1 |
