@@ -120,3 +120,15 @@ The pilot numbers above are unchanged. This review reads them again; the team wi
 - Pilot evidence: 18 of the 19 images with a "no sidewalk on this side" vote also had a "not seen" vote; none was agreed on that reason alone. Merging raises reason agreement from 0.79 to 0.90 on the 54 images with at least 2 insufficient votes.
 - Draft v1 uses one reason, "Không thấy vỉa hè", which also covers intersections and open forecourts; the separate intersection reason proposed earlier is dropped.
 - Four reasons remain (keys F G H J), in `labeling/label_studio/ls_label_config_v1.xml`. Pilot labels stay as recorded. Label Studio projects are unchanged until the meeting closes the guide.
+
+## 2026-11-04 — Train enrichment preview (`src/analysis/16_train_extra_preview.py`, `src/seg_measures.py`)
+
+Question: the blocked class may be too small. Can more blocked crops be found for train without touching val/test? Summary for the team: `docs/data_enrichment.md`.
+
+- **Estimate, not measured on the main set:** pilot 19/101 blocked (Wilson 95% 12–28%) × usable share 55–71% → train ~200–245 blocked (range ~125–360), test ~70–90 (~45–130).
+- **Candidate pool tried:** panos ≤ 15 m from a train main_v1 pano, same travel direction (≤ 30°), on a capture day that position does not use, same creators and years as main_v1, not in main or the pilots. Metadata for the 662 cells around train positions: 109,403 panos. Pool: 1,850 (one per position and day), mostly Điện Biên Phủ#1 617, CMT8 468, Nguyễn Thị Minh Khai 350.
+- **Preview, laptop CPU:** 155 sampled → 7 night, 148 crops; then 80 → 5 night, 75 crops. No near duplicates against the main crop of the same position (dHash ≤ 10 bits). One blue-cast crop passed the night filter. SegFormer-B5 on CPU about 6.7 s per crop.
+- **Scorer:** `occ_v1` = `parked()` of `14_rule_check.py` (pilot AUC 0.75; top third with near_y ≥ 0.60 = 28% blocked vs 13% random). Its top ranks were foreground cars and vans and moving motorbikes. `occ_v2` drops blobs touching the bottom edge or > 15% of the image, blobs with more road than sidewalk under their lower third, and scores 0 when parked + sidewalk < 5% of the lower half. A person-near rule was tried and dropped (it removed a vendor cart). On 75 crops, by eye (not labels): about 6–7 of the v2 top 10 show parked rows or stalls vs 1–2 of 6 random. v2 still drops carts at the kerb; Cityscapes has no class for carts, goods or furniture.
+- **Not validated:** `src/analysis/17_check_scorer_pilot.py` (paired bootstrap of AUC v2 − v1 on the pilot votes) is written but not run. The v2 rules were set after viewing the preview sheet.
+- **Decision (team):** do not use this pool. Enrichment waits for the first labelling round and will come from new train streets (not other components of val/test streets), with a selector trained on first-round labels if it beats the occupancy scores on the pilot. Nothing was added to the manifests or Label Studio.
+- `requirements.txt`: added scipy (already needed by `14_rule_check.py`).
