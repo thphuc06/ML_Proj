@@ -12,7 +12,7 @@ Trả lời các câu hỏi mà pilot phải xác nhận theo mục 2.3 và Step
 | Tỉ lệ ảnh dùng được? | Pilot: 44/150 ảnh (29%) được đa số chọn "Không đủ thông tin". Riêng đường Pasteur 54%. | Đạt; bộ chính cần đo lại |
 | Thời gian gán nhãn? | Trung vị 4,7–12,6 giây/ảnh tùy người. | Đạt |
 | Đồng thuận giữa người gán? | Fleiss κ 3 lựa chọn 0,57; đủ thông tin hay không 0,65; còn lối đi hay bị chặn 0,49. | **Chưa đạt ngưỡng 0,6** |
-| Cân bằng lớp? | 19 trong 101 ảnh có đa số chọn 0 hoặc 1 là "bị chặn" (19%). | Lệch lớp, cần theo dõi |
+| Cân bằng lớp? | 19 trong 101 ảnh có đa số chọn 0 hoặc 1 là "bị chặn" (19%, khoảng tin cậy 12–28%). Ước lượng bộ chính: train ~200–245, test ~70–90 ảnh "bị chặn" ([chi tiết](data_enrichment.md)). | Lệch lớp, cần theo dõi. Có hướng bơm thêm cho train |
 | Hạ tầng gán nhãn? | Label Studio tự host trên AWS, khoảng 1,35 USD/ngày khi bật. Đã thử tắt/bật lại: dữ liệu giữ nguyên. | Đạt |
 
 ## Kết luận

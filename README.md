@@ -29,6 +29,7 @@ Hiện đang ở **bước gán nhãn**: pilot đã xong, gán chính thức ch�
 | Tiền xử lý | Một phần: đã cắt ảnh, lọc ảnh đêm, loại trùng tuyệt đối. Còn dò gần trùng và rà soát nội dung nhạy cảm |
 | EDA | Chưa làm |
 | Chia tập | Đã chia theo đường ([streets_v1.yaml](configs/streets_v1.yaml)), chưa khóa |
+| Bơm thêm ảnh "Bị chặn" cho train | Đã thử nghiệm, chưa bơm. Chờ đợt gán đầu, sẽ lấy từ đường train mới ([ghi chép](docs/data_enrichment.md)) |
 
 ## Cấu trúc thư mục
 
@@ -40,6 +41,7 @@ Hiện đang ở **bước gán nhãn**: pilot đã xong, gán chính thức ch�
 │   └── label_studio/   Giao diện gán nhãn, danh sách người gán
 ├── src/
 │   ├── common.py       Đường dẫn, quy tắc cắt ảnh, hàm địa lý
+│   ├── seg_measures.py Đo vỉa hè và xe đậu bằng SegFormer, chỉ để chọn mẫu
 │   ├── ls_client.py    Kết nối Label Studio
 │   ├── collection/     OSM, metadata Mapillary, xếp hạng đường, thu thập ảnh
 │   ├── labeling/       Tạo pilot và project, tính đồng thuận
@@ -50,7 +52,9 @@ Hiện đang ở **bước gán nhãn**: pilot đã xong, gán chính thức ch�
 │   └── labels/         Báo cáo và nhãn pilot
 ├── docs/
 │   ├── proposal/       Đề cương (PDF và mã LaTeX)
+│   ├── figures/        Ảnh minh họa cho tài liệu
 │   ├── collection_log.md
+│   ├── data_enrichment.md
 │   ├── feasibility_log.md
 │   └── unresolved_items.md
 ├── app/                Khung web/API (chưa có model)
@@ -83,6 +87,13 @@ python src/labeling/07_pilot_agreement.py          # tính đồng thuận pilot
 
 `04_street_preview.py` và `10_make_pilot_v2.py` được giữ làm bản ghi cách chọn đường và lấy mẫu pilot. Bước chấm điểm của hai script này cần một model từ đợt thử trước, model đó không có trong repo nên hai script không chạy nguyên trạng. Kết quả đã chốt trong `configs/streets_v1.yaml`, `data/streets/` và `data/manifest/pilot_v2.csv`.
 
+Thử nghiệm bơm thêm ảnh "Bị chặn" cho train (không bắt buộc, xem [docs/data_enrichment.md](docs/data_enrichment.md)):
+
+```bash
+python src/analysis/16_train_extra_preview.py --sample 80   # tập nhỏ, có --dry để chỉ đếm
+python src/analysis/17_check_scorer_pilot.py                # so bộ chấm điểm trên phiếu pilot, nên chạy trên GPU
+```
+
 Chạy khung giao diện:
 
 ```bash
@@ -95,3 +106,4 @@ python -m uvicorn app.main:app --port 8000     # mở http://127.0.0.1:8000
 - Cắt ảnh: chỉ lấy bên phải xe, nhìn chếch 60° so với hướng đi, chúc xuống 4°, khung 90°, 640×640.
 - Lọc: chỉ theo quy tắc (ảnh đêm theo độ sáng, ảnh trùng). Không lọc bằng model. Giờ chụp trên Mapillary không đáng tin nên không dùng để lọc.
 - Chia tập theo cả tuyến đường, nên không tuyến nào nằm ở hai tập.
+- Điểm của model (PoC, SegFormer) chỉ được dùng để chọn mẫu, có ghi tầng vào manifest, không bao giờ dùng làm nhãn. Mọi ảnh bơm thêm chỉ vào train. Val và test giữ phân phối tự nhiên.

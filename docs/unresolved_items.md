@@ -1,6 +1,6 @@
 # Danh sách việc chưa giải quyết (Week 3)
 
-Cập nhật 01/11/2026. Mỗi mục đóng lại khi có bằng chứng tương ứng.
+Cập nhật 04/11/2026. Mỗi mục đóng lại khi có bằng chứng tương ứng.
 
 ## Chặn việc gán nhãn chính thức
 
@@ -11,13 +11,17 @@ Cập nhật 01/11/2026. Mỗi mục đóng lại khi có bằng chứng tương
 | 3 | 35 ảnh pilot có từ 3/5 phiếu trở xuống chưa có nhãn cuối ([danh sách](../data/labels/pilot_report/pilot_disagreements_20261029_0903.csv)) | Phân xử trong buổi họp, ghi lý do |
 | 4 | Mỗi người có ngưỡng "bị chặn" khác nhau: từ 8% (Loan) đến 25% (Minh) | Thống nhất bằng ảnh mẫu, kiểm tra lại ở vòng 50 ảnh |
 | 5 | Label Studio chưa cập nhật giao diện v1: gộp lý do "Không thấy vỉa hè", bắt buộc chọn vật cản khi "Bị chặn" | Cập nhật sau khi chốt guide v1 |
+| 15 | Ngưỡng "lối hẹp": dải trống vừa một người có tính là còn lối đi không | Chốt ở câu 4 của buổi họp. Có thể thêm ô phụ "Lối hẹp, chỉ đủ 1 người" ([xem](data_enrichment.md#2-nguyên-tắc)) |
+| 16 | Vòng kiểm tra 50 ảnh chưa chọn ảnh | Nên bốc ngẫu nhiên từ bộ chính, chia theo train/val/test, để vừa đo κ vừa có tỉ lệ "Bị chặn" thật trên bộ chính |
 
 ## Theo dõi trong lúc gán nhãn
 
 | # | Vấn đề | Việc cần làm |
 |---|---|---|
 | 6 | Số ảnh dùng được của bộ chính chưa biết, ước tính khoảng 1.700 | Đo trong lúc gán; thiếu thì thêm đường dự phòng |
-| 7 | Lớp "bị chặn" chiếm khoảng 19% | Sau khi gán, kiểm tra tập test có đủ cả hai lớp trước khi khóa |
+| 7 | Lớp "bị chặn" chiếm khoảng 19%. Ước lượng train ~200–245, test ~70–90 ảnh ([chi tiết](data_enrichment.md)) | Sau đợt gán đầu, đếm số ảnh "Bị chặn" thực tế của từng tập. Test quá ít (dưới ~60) thì cân nhắc đổi đường test trước khi train model |
+| 17 | Có thể thiếu ảnh "Bị chặn" cho train | Sau đợt gán đầu: bơm khoảng 400 ảnh từ **đường train mới**, chọn bằng bộ chấm điểm đã kiểm tra trên pilot. Chỉ bơm vào train ([kế hoạch](data_enrichment.md#5-khi-tiến-hành)) |
+| 18 | Bộ chấm `occ_v2` chưa được kiểm chứng | Chạy `src/analysis/17_check_scorer_pilot.py` trên PC, so thêm với CLIP trước khi dùng |
 | 8 | Vỉa hè bên trái của đường một chiều ít được quan sát | Ghi vào phần giới hạn của báo cáo; ảnh nhóm tự chụp có thể bù một phần |
 
 ## Còn thiếu theo Step 2–3 của đề cương
