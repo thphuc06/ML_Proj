@@ -5,7 +5,8 @@ Each tile = one crop with its number, item id and a caption; the blue line marks
   large, so a reviewer can zoom and check by eye ("?" = the proposer was unsure). Tiles are grouped by label.
 Crops come from data/crops/main/ (download them first with --fetch, read-only from Label Studio).
 Output: data/labels/main_report/sheets/<name>_NN.jpg (gitignored)
-Usage: python src/labeling/20_review_sheets.py [--fetch] [--proposal path.csv] [--cols 6 --rows 5]"""
+Pilot items: --crops pilot_v2 --proposal data/labels/pilot_report/pilot_adjudication_proposal.csv
+Usage: python src/labeling/20_review_sheets.py [--fetch] [--proposal path.csv] [--crops main|pilot_v2] [--cols 6 --rows 5]"""
 import sys
 from pathlib import Path
 
@@ -21,11 +22,12 @@ from common import DATA
 ap = argparse.ArgumentParser()
 ap.add_argument("--proposal")
 ap.add_argument("--fetch", action="store_true")
+ap.add_argument("--crops", default="main")
 ap.add_argument("--cols", type=int, default=6)
 ap.add_argument("--rows", type=int, default=5)
 args = ap.parse_args()
 
-REP, CROPS = DATA / "labels" / "main_report", DATA / "crops" / "main"
+REP, CROPS = DATA / "labels" / "main_report", DATA / "crops" / args.crops
 OUT = REP / "sheets"
 OUT.mkdir(parents=True, exist_ok=True)
 NAME = {"0": "0 Còn lối", "1": "1 Bị chặn", "I": "I Không đủ"}
@@ -53,7 +55,7 @@ if args.fetch:
     for i in df.item:
         p = CROPS / f"{i}.jpg"
         if not p.exists():
-            r = s.get(BASE + f"/data/local-files/?d=crops/main/{i}.jpg", timeout=60)
+            r = s.get(BASE + f"/data/local-files/?d=crops/{args.crops}/{i}.jpg", timeout=60)
             r.raise_for_status()
             p.write_bytes(r.content)
 

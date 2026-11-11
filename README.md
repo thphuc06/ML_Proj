@@ -8,7 +8,7 @@ Bài toán là phân loại nhị phân: với một ảnh chụp một phía v�
 
 ## Tiến độ theo mốc của đề cương
 
-Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuối cho 2.999 ảnh, trong đó 1.746 ảnh dùng được (188 ảnh "Bị chặn"). Tổng kết ở [docs/labeling_phase1.md](docs/labeling_phase1.md). Chưa bơm thêm ảnh, chưa làm EDA.
+Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuối cho 3.149 ảnh (bộ chính và pilot), trong đó 1.833 ảnh dùng được (202 ảnh "Bị chặn"). Tổng kết ở [docs/labeling_phase1.md](docs/labeling_phase1.md). Chưa bơm thêm ảnh, chưa làm EDA.
 
 **Week 3**
 
@@ -26,11 +26,11 @@ Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuố
 | Việc | Trạng thái |
 |---|---|
 | Thu thập ảnh | Xong phần Mapillary: 2.999 ảnh chính, 150 ảnh pilot ([danh sách ảnh](data/manifest/main_v1.csv)). Chưa có ảnh nhóm tự chụp |
-| Gán nhãn | **Đợt 1 xong.** Bộ chính: 5×887 lượt, κ test 0,60, val 0,64, train gán chéo 0,61. 303 ảnh bất đồng đã phân xử, Phúc sửa 28 ảnh. Nhãn cuối ở [main_labels_v1.csv](data/labels/main_labels_v1.csv): train 106/1.045, val 35/242, test 47/459 (Bị chặn / dùng được). Còn 35 ảnh pilot chưa có nhãn cuối |
+| Gán nhãn | **Đợt 1 xong.** Bộ chính: 5×887 lượt, κ test 0,60, val 0,64, train gán chéo 0,61. 303 ảnh bất đồng đã phân xử, Phúc sửa 28 ảnh. 150 ảnh pilot được xem lại theo guide v1 và đưa vào train. Nhãn cuối ở [main_labels_v1.csv](data/labels/main_labels_v1.csv): train 120/1.132, val 35/242, test 47/459 (Bị chặn / dùng được) |
 | Tiền xử lý | Một phần: đã cắt ảnh, lọc ảnh đêm, loại trùng tuyệt đối. Còn dò gần trùng và rà soát nội dung nhạy cảm |
 | EDA | Chưa làm |
 | Chia tập | Đã chia theo đường ([streets_v1.yaml](configs/streets_v1.yaml)), chưa khóa |
-| Bơm thêm ảnh "Bị chặn" cho train | Tạm hoãn, làm sau. Số ảnh "Bị chặn" thực tế: train 106, val 35, test 47, ít hơn ước tính ([ghi chép](docs/data_enrichment.md)) |
+| Bơm thêm ảnh "Bị chặn" cho train | Tạm hoãn, làm sau. Số ảnh "Bị chặn" thực tế: train 120 (gồm 14 ảnh pilot), val 35, test 47, ít hơn ước tính ([ghi chép](docs/data_enrichment.md)) |
 
 ## Cấu trúc thư mục
 

@@ -1,0 +1,151 @@
+﻿tile,sheet,item,split,street_id,votes,pilot_majority,pilot_agreement,proposed,phuc,unsure,why
+0,pilot_adjudication_proposal_01.jpg,0b0bdb09,train,Lê Văn Sỹ,0:1 1:4 I:0,1,≥4/5,1,,True,xe máy đậu giữa và cột điện và gốc cây chắn (không chắc) [xem lại]
+1,pilot_adjudication_proposal_01.jpg,152e2bd1,train,Phan Đăng Lưu,0:2 1:2 I:1,0,≤3/5,1,,True,xe máy đậu giữa vỉa hè cạnh gốc cây và chân dù (không chắc)
+2,pilot_adjudication_proposal_01.jpg,1619a0a0,train,Lê Văn Sỹ,0:1 1:4 I:0,1,≥4/5,1,,True,xe máy đậu và người ngồi ghế chiếm dải giữa (không chắc) [xem lại]
+3,pilot_adjudication_proposal_01.jpg,2668b2e7,train,Phan Đăng Lưu,0:4 1:1 I:0,0,≥4/5,1,,True,trạm xe buýt và tủ và quầy cà phê và biển đứng chiếm bề ngang (không chắc)
+4,pilot_adjudication_proposal_01.jpg,2e657501,train,Lê Văn Sỹ,0:1 1:4 I:0,1,≥4/5,1,,False,vỉa hè đang sửa; khối bê tông và gạch vụn chắn ngang
+5,pilot_adjudication_proposal_01.jpg,456c8315,train,Pasteur,0:2 1:3 I:0,1,≤3/5,1,,True,xe máy đậu chéo ra hết bề ngang cạnh cây và cột (không chắc)
+6,pilot_adjudication_proposal_01.jpg,4e67f300,train,Pasteur,0:0 1:5 I:0,1,≥4/5,1,I,True,dãy xe máy đậu kín vỉa hè; mép vỉa hè sát vạch (không chắc) [xem lại]
+7,pilot_adjudication_proposal_01.jpg,611a8038,train,Lê Văn Sỹ,0:1 1:4 I:0,1,≥4/5,1,,True,xe đẩy và xe đạp và cột đèn chắn góc vỉa hè (không chắc) [xem lại]
+8,pilot_adjudication_proposal_01.jpg,6a3b6f3d,train,Phan Đăng Lưu,0:0 1:5 I:0,1,≥4/5,1,,False,xe máy đậu kín vỉa hè; biển hiệu chắn
+9,pilot_adjudication_proposal_01.jpg,6a7042fd,train,Lê Văn Sỹ,0:1 1:4 I:0,1,≥4/5,1,,False,xe máy đậu và cột biển chiếm hết vỉa hè hẹp
+10,pilot_adjudication_proposal_01.jpg,990ba148,train,Phan Đăng Lưu,0:1 1:3 I:1,1,≤3/5,1,,False,xe đẩy hàng và sạp chiếm vỉa hè quanh gốc cây
+11,pilot_adjudication_proposal_01.jpg,afb61f86,train,Phan Đăng Lưu,0:1 1:3 I:1,1,≤3/5,1,,False,cột điện và dãy xe đậu chắn vỉa hè
+12,pilot_adjudication_proposal_01.jpg,bdc7cc3c,train,Lê Văn Sỹ,0:2 1:3 I:0,1,≤3/5,1,,True,ô tô đậu trên vỉa hè chiếm gần hết bề ngang (không chắc)
+13,pilot_adjudication_proposal_01.jpg,ea6eabb1,train,Phan Đăng Lưu,0:0 1:5 I:0,1,≥4/5,1,,True,xe chở hàng đỗ chắn vỉa hè hẹp cạnh tường (không chắc) [xem lại]
+14,pilot_adjudication_proposal_01.jpg,08b16f9a,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống
+15,pilot_adjudication_proposal_01.jpg,0ad92dd7,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống
+16,pilot_adjudication_proposal_01.jpg,0e6b9fee,train,Lê Văn Sỹ,0:2 1:0 I:3,I,≤3/5,0,,True,ô tô đỗ dưới đường che một phần; dải gạch dọc rào trống (không chắc)
+17,pilot_adjudication_proposal_01.jpg,0ee2dd95,train,Lê Văn Sỹ,0:4 1:1 I:0,0,≥4/5,0,,True,khoảng vỉa hè bê tông rộng phía trước trống (không chắc) [xem lại]
+18,pilot_adjudication_proposal_01.jpg,120945ae,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch bên phải dưới vạch; trống [xem lại]
+19,pilot_adjudication_proposal_01.jpg,13b07f1d,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch; trụ cứu hỏa sát mép; còn lối đi
+20,pilot_adjudication_proposal_01.jpg,1fcff60e,train,Pasteur,0:5 1:0 I:0,0,≥4/5,0,,True,vỉa hè gạch rộng trống; mép xuống dưới vạch (không chắc) [xem lại]
+21,pilot_adjudication_proposal_01.jpg,206d2b46,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch trống; người đi bộ không tính
+22,pilot_adjudication_proposal_01.jpg,22472570,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,True,góc đường nhưng vỉa hè gạch rộng thấy rõ và trống (không chắc) [xem lại]
+23,pilot_adjudication_proposal_01.jpg,22663366,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,trụ cứu hỏa và tủ điện sát mép; dải giữa trống
+24,pilot_adjudication_proposal_01.jpg,2456dabe,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng; người đi bộ không tính
+25,pilot_adjudication_proposal_01.jpg,250c8597,train,Lê Văn Sỹ,0:1 1:4 I:0,1,≥4/5,0,,True,bồn cây và xe sát nhà; người đứng không tính; còn khe (không chắc) [xem lại]
+26,pilot_adjudication_proposal_01.jpg,2949503b,train,Phan Đăng Lưu,0:3 1:2 I:0,0,≤3/5,0,,False,người chạy xe trên vỉa hè và người đứng không tính; còn lối đi
+27,pilot_adjudication_proposal_01.jpg,306c280d,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,True,vỉa hè thấy dưới vạch; người chạy xe tạm thời (không chắc) [xem lại]
+28,pilot_adjudication_proposal_01.jpg,3cd64f1c,train,Lê Văn Sỹ,0:4 1:1 I:0,0,≥4/5,0,,True,góc đường; thùng rác và trụ cứu hỏa sát mép; còn lối đi (không chắc) [xem lại]
+29,pilot_adjudication_proposal_01.jpg,3fc0d408,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,xe đẩy và người sát cửa; dải gạch bên trái trống
+30,pilot_adjudication_proposal_02.jpg,4274a64f,train,Phan Đăng Lưu,0:2 1:3 I:0,1,≤3/5,0,,False,vỉa hè rộng; người dừng xe tạm thời không tính
+31,pilot_adjudication_proposal_02.jpg,42e674ce,train,Lê Văn Sỹ,0:4 1:1 I:0,0,≥4/5,0,,False,xe đậu sát mép bên trái; dải gạch bên phải trống
+32,pilot_adjudication_proposal_02.jpg,44639e4c,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống
+33,pilot_adjudication_proposal_02.jpg,449ec8f8,train,Pasteur,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè dọc rào công trình rộng và trống
+34,pilot_adjudication_proposal_02.jpg,4920586c,train,Lê Văn Sỹ,0:4 1:1 I:0,0,≥4/5,0,,False,vỉa hè gạch trống; cột điện sát mép
+35,pilot_adjudication_proposal_02.jpg,496db837,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch hỏng nhưng trống
+36,pilot_adjudication_proposal_02.jpg,4bc86986,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng; xe đậu thưa có khe
+37,pilot_adjudication_proposal_02.jpg,4e1287be,train,Lê Văn Sỹ,0:1 1:1 I:3,I,≤3/5,0,,False,vỉa hè gạch rộng; xe hàng và thùng rượu sát nhà
+38,pilot_adjudication_proposal_02.jpg,4e9f8016,train,Phan Đăng Lưu,0:4 1:1 I:0,0,≥4/5,0,,False,vỉa hè rộng; xe và người dưới mái hiên; người đứng không tính
+39,pilot_adjudication_proposal_02.jpg,53a8403e,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống
+40,pilot_adjudication_proposal_02.jpg,54b6abd1,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,True,xe đậu cạnh gốc cây phía gần camera; còn khe giữa cột và cây (không chắc)
+41,pilot_adjudication_proposal_02.jpg,5e1a8459,train,Phan Đăng Lưu,0:4 1:1 I:0,0,≥4/5,0,,True,xe hàng và người ngồi giữa vỉa hè nhưng dải gạch sát mép còn đi được (không chắc)
+42,pilot_adjudication_proposal_02.jpg,681f2af6,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống
+43,pilot_adjudication_proposal_02.jpg,69b4d211,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống
+44,pilot_adjudication_proposal_02.jpg,69efc658,train,Phan Đăng Lưu,0:3 1:2 I:0,0,≤3/5,0,1,False,xe và bàn ghế sát nhà/gốc cây; phần gạch phía ngoài trống
+45,pilot_adjudication_proposal_02.jpg,6e904c1f,train,Pasteur,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch bên phải xuống dưới vạch; trống [xem lại]
+46,pilot_adjudication_proposal_02.jpg,7531a6c7,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống
+47,pilot_adjudication_proposal_02.jpg,79e4e524,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè bê tông trước cổng trống
+48,pilot_adjudication_proposal_02.jpg,7cf2bfc5,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch trống
+49,pilot_adjudication_proposal_02.jpg,83401c43,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng; người chạy xe tạm thời không tính [xem lại]
+50,pilot_adjudication_proposal_02.jpg,838d2e79,train,Phan Đăng Lưu,0:4 1:0 I:1,0,≥4/5,0,,False,vỉa hè gạch rộng; cột đèn sát mép
+51,pilot_adjudication_proposal_02.jpg,8663c5a3,train,Lê Văn Sỹ,0:3 1:2 I:0,0,≤3/5,0,,True,góc đường; cây và xe sát mép; dải gạch giữa trống (không chắc) [xem lại]
+52,pilot_adjudication_proposal_02.jpg,8714c32d,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,True,vỉa hè bê tông rộng trống cạnh đầu hẻm (không chắc)
+53,pilot_adjudication_proposal_02.jpg,96466651,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch trống
+54,pilot_adjudication_proposal_02.jpg,96bdc487,train,Pasteur,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè lát rộng trống
+55,pilot_adjudication_proposal_02.jpg,98187ec5,train,Lê Văn Sỹ,0:3 1:2 I:0,0,≤3/5,0,,False,vỉa hè gạch trống
+56,pilot_adjudication_proposal_02.jpg,99fdee25,train,Lê Văn Sỹ,0:4 1:1 I:0,0,≥4/5,0,,False,vỉa hè gạch; cột điện sát mép; còn lối đi
+57,pilot_adjudication_proposal_02.jpg,9c3496db,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng; người đứng và xe đang chạy không tính
+58,pilot_adjudication_proposal_02.jpg,a4ad5a8a,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè bê tông rộng trống
+59,pilot_adjudication_proposal_02.jpg,aa9c26e2,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống trước cổng
+60,pilot_adjudication_proposal_03.jpg,ab222362,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,khoảng lát rộng trước trường; trống
+61,pilot_adjudication_proposal_03.jpg,ab4dd749,train,Phan Đăng Lưu,0:4 1:0 I:1,0,≥4/5,0,,False,vỉa hè bê tông trống trước cửa hàng
+62,pilot_adjudication_proposal_03.jpg,ae20684c,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,True,xe máy và người ngồi một bên; còn dải bê tông bên trái (không chắc)
+63,pilot_adjudication_proposal_03.jpg,b2ba0241,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng trống; dù sát nhà
+64,pilot_adjudication_proposal_03.jpg,b41bcffe,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè lát rộng; người đi bộ không tính
+65,pilot_adjudication_proposal_03.jpg,b43ea928,train,Phan Đăng Lưu,0:3 1:0 I:2,0,≤3/5,0,,False,vỉa hè lát rộng; cột biển sát mép; xe sát nhà
+66,pilot_adjudication_proposal_03.jpg,c291774e,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng; biển chữ A sát mép
+67,pilot_adjudication_proposal_03.jpg,ca2d406b,train,Phan Đăng Lưu,0:1 1:4 I:0,1,≥4/5,0,,True,dải gạch bên phải trống (không chắc) [xem lại]
+68,pilot_adjudication_proposal_03.jpg,d3172b5b,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,True,vỉa hè sáng rộng trống (không chắc) [xem lại]
+69,pilot_adjudication_proposal_03.jpg,d685271b,train,Pasteur,0:4 1:0 I:1,0,≥4/5,0,,True,vỉa hè lát sau gốc cây trống (không chắc) [xem lại]
+70,pilot_adjudication_proposal_03.jpg,dc58ca61,train,Pasteur,0:4 1:1 I:0,0,≥4/5,0,,True,xe đậu sát nhà; dải sát mép trống (không chắc)
+71,pilot_adjudication_proposal_03.jpg,e2a778af,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch rộng; người đứng không tính
+72,pilot_adjudication_proposal_03.jpg,e2ca3e06,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,True,trạm xe buýt chiếm một phần; còn lối đi phía sau (không chắc)
+73,pilot_adjudication_proposal_03.jpg,e63ceaf3,train,Pasteur,0:5 1:0 I:0,0,≥4/5,0,,True,lối lát cạnh trạm xe buýt trống (không chắc)
+74,pilot_adjudication_proposal_03.jpg,e6a23a1c,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch; người ngồi sát nhà không tính; còn lối đi
+75,pilot_adjudication_proposal_03.jpg,e78781c2,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch trước cổng trống
+76,pilot_adjudication_proposal_03.jpg,e807e08e,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,True,vỉa hè gạch dọc tường; người đi bộ không tính (không chắc)
+77,pilot_adjudication_proposal_03.jpg,eaab10cf,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch trống; xe buýt chỉ che phần lòng đường
+78,pilot_adjudication_proposal_03.jpg,ee4d2ee9,train,Pasteur,0:5 1:0 I:0,0,≥4/5,0,,False,xe đậu dọc mép; dải phía trong trống [xem lại]
+79,pilot_adjudication_proposal_03.jpg,ee71b1aa,train,Phan Đăng Lưu,0:5 1:0 I:0,0,≥4/5,0,,True,cột điện giữa vỉa hè hẹp nhưng còn khe bên phải (không chắc)
+80,pilot_adjudication_proposal_03.jpg,f00b309a,train,Phan Đăng Lưu,0:4 1:0 I:1,0,≥4/5,0,,False,vỉa hè bê tông rộng trước cổng; rào chắn nằm trong cổng
+81,pilot_adjudication_proposal_03.jpg,f187a8e0,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè gạch bên trái dưới vạch; trống cạnh đầu hẻm [xem lại]
+82,pilot_adjudication_proposal_03.jpg,f1f35c05,train,Lê Văn Sỹ,0:4 1:1 I:0,0,≥4/5,0,,False,xe đậu bên phải; dải gạch bên trái trống
+83,pilot_adjudication_proposal_03.jpg,f20c492e,train,Phan Đăng Lưu,0:3 1:2 I:0,0,≤3/5,0,,False,vỉa hè gạch rộng; hàng sát cửa; xe đậu sát mép
+84,pilot_adjudication_proposal_03.jpg,f7515b5e,train,Lê Văn Sỹ,0:3 1:2 I:0,0,≤3/5,0,,False,xe máy và bàn nhỏ giữa vỉa hè nhưng bên trái còn rộng
+85,pilot_adjudication_proposal_03.jpg,f9c2e862,train,Lê Văn Sỹ,0:2 1:3 I:0,1,≤3/5,0,,False,vỉa hè rộng; thùng rác và cột sát mép; xe sát nhà
+86,pilot_adjudication_proposal_03.jpg,fd63be71,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,0,,False,vỉa hè rộng trống
+87,pilot_adjudication_proposal_03.jpg,073ef87f,train,Phan Đăng Lưu,0:1 1:3 I:1,1,≤3/5,I,,False,ô tô sát camera che quá nửa
+88,pilot_adjudication_proposal_03.jpg,096e1fe5,train,Phan Đăng Lưu,0:0 1:0 I:5,I,≥4/5,I,,False,xe chở người sát camera che
+89,pilot_adjudication_proposal_03.jpg,0a98d3d9,train,Pasteur,0:1 1:0 I:4,I,≥4/5,I,,False,lòng đường; vỉa hè xa
+90,pilot_adjudication_proposal_04.jpg,0c3864ab,train,Pasteur,0:1 1:0 I:4,I,≥4/5,I,,False,xe chở người sát camera che
+91,pilot_adjudication_proposal_04.jpg,0d6a8e4c,train,Phan Đăng Lưu,0:1 1:0 I:4,I,≥4/5,I,,False,ảnh cháy sáng
+92,pilot_adjudication_proposal_04.jpg,0d6b50e9,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,dải cây; vỉa hè xa
+93,pilot_adjudication_proposal_04.jpg,183c61d9,train,Lê Văn Sỹ,0:3 1:0 I:2,0,≤3/5,I,,False,người sát camera che; đầu hẻm
+94,pilot_adjudication_proposal_04.jpg,1a29fe88,train,Lê Văn Sỹ,0:0 1:4 I:1,1,≥4/5,I,,False,khoảng bê tông rộng/góc đường
+95,pilot_adjudication_proposal_04.jpg,28dba3eb,train,Pasteur,0:2 1:0 I:3,I,≤3/5,I,,False,lòng đường; xe sát camera
+96,pilot_adjudication_proposal_04.jpg,29552f42,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,giao lộ; xe sát camera
+97,pilot_adjudication_proposal_04.jpg,2aa2bf1f,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,ô tô sát camera che
+98,pilot_adjudication_proposal_04.jpg,2fb2e53d,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,lòng đường; vỉa hè xa
+99,pilot_adjudication_proposal_04.jpg,344f12f3,train,Lê Văn Sỹ,0:3 1:0 I:2,0,≤3/5,I,,False,giao lộ; vạch qua đường
+100,pilot_adjudication_proposal_04.jpg,35148331,train,Phan Đăng Lưu,0:0 1:0 I:5,I,≥4/5,I,,False,giao lộ; nhiều xe phía trước
+101,pilot_adjudication_proposal_04.jpg,3637ae1c,train,Pasteur,0:4 1:0 I:1,0,≥4/5,I,,False,lòng đường; vỉa hè xa
+102,pilot_adjudication_proposal_04.jpg,39b922fa,train,Lê Văn Sỹ,0:2 1:2 I:1,0,≤3/5,I,,False,giao lộ; vạch qua đường
+103,pilot_adjudication_proposal_04.jpg,3a574a17,train,Lê Văn Sỹ,0:0 1:0 I:5,I,≥4/5,I,,False,taxi sát camera che
+104,pilot_adjudication_proposal_04.jpg,3d7488a1,train,Pasteur,0:3 1:0 I:2,0,≤3/5,I,,False,lòng đường; vỉa hè xa
+105,pilot_adjudication_proposal_04.jpg,425c8595,train,Pasteur,0:4 1:0 I:1,0,≥4/5,I,,False,lòng đường; vỉa hè xa
+106,pilot_adjudication_proposal_04.jpg,42e531e0,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,đảo góc/lối vào
+107,pilot_adjudication_proposal_04.jpg,450feb53,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,lòng đường; công viên phía xa
+108,pilot_adjudication_proposal_04.jpg,49058265,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,nhiều xe sát camera; lòng đường
+109,pilot_adjudication_proposal_04.jpg,4b316272,train,Pasteur,0:5 1:0 I:0,0,≥4/5,I,,False,lối vào sân trường; lòng đường
+110,pilot_adjudication_proposal_04.jpg,4b4c8a0f,train,Pasteur,0:2 1:1 I:2,0,≤3/5,I,,False,xe sát camera che
+111,pilot_adjudication_proposal_04.jpg,4d6d830a,train,Pasteur,0:0 1:1 I:4,I,≥4/5,I,,False,giao lộ; lòng đường
+112,pilot_adjudication_proposal_04.jpg,4debcdcf,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,dải cây; lòng đường; vỉa hè xa
+113,pilot_adjudication_proposal_04.jpg,4f2179d4,train,Lê Văn Sỹ,0:0 1:0 I:5,I,≥4/5,I,,False,giao lộ; vạch qua đường
+114,pilot_adjudication_proposal_04.jpg,609b86be,train,Phan Đăng Lưu,0:1 1:0 I:4,I,≥4/5,I,,False,ảnh cháy sáng
+115,pilot_adjudication_proposal_04.jpg,61cb8d8d,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,xe sát camera; lòng đường
+116,pilot_adjudication_proposal_04.jpg,66f49fff,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,đảo giao thông; giao lộ; xe sát camera
+117,pilot_adjudication_proposal_04.jpg,67ed6c26,train,Pasteur,0:1 1:1 I:3,I,≤3/5,I,,False,xe sát camera che; vỉa hè xa
+118,pilot_adjudication_proposal_04.jpg,7f4a3a49,train,Pasteur,0:5 1:0 I:0,0,≥4/5,I,,False,lòng đường; dải cây; vỉa hè xa
+119,pilot_adjudication_proposal_04.jpg,8a596c31,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,dải cây giữa; vỉa hè xa
+120,pilot_adjudication_proposal_05.jpg,8cf5eda9,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,giao lộ; xe sát camera
+121,pilot_adjudication_proposal_05.jpg,8f072af6,train,Pasteur,0:1 1:0 I:4,I,≥4/5,I,,False,giao lộ; xe sát camera
+122,pilot_adjudication_proposal_05.jpg,8f4c4a2a,train,Pasteur,0:3 1:0 I:2,0,≤3/5,I,,False,dải cỏ; vỉa hè xa
+123,pilot_adjudication_proposal_05.jpg,956412a6,train,Pasteur,0:5 1:0 I:0,0,≥4/5,I,0,False,lòng đường; ô tô; vỉa hè xa
+124,pilot_adjudication_proposal_05.jpg,95f0ffff,train,Phan Đăng Lưu,0:0 1:0 I:5,I,≥4/5,I,,False,vạch qua đường; đầu hẻm
+125,pilot_adjudication_proposal_05.jpg,9749eadf,train,Pasteur,0:2 1:0 I:3,I,≤3/5,I,,False,nhiều xe sát camera; lòng đường
+126,pilot_adjudication_proposal_05.jpg,9ad42c40,train,Pasteur,0:3 1:0 I:2,0,≤3/5,I,,False,giao lộ; xe sát camera
+127,pilot_adjudication_proposal_05.jpg,a285a7e0,train,Pasteur,0:0 1:2 I:3,I,≤3/5,I,,False,góc giao lộ
+128,pilot_adjudication_proposal_05.jpg,aa08aaa2,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,giao lộ; ô tô
+129,pilot_adjudication_proposal_05.jpg,b04c2f9a,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,lòng đường; vỉa hè xa
+130,pilot_adjudication_proposal_05.jpg,b0c458b8,train,Lê Văn Sỹ,0:0 1:1 I:4,I,≥4/5,I,,False,giao lộ; xe sát camera
+131,pilot_adjudication_proposal_05.jpg,bce03561,train,Pasteur,0:3 1:0 I:2,0,≤3/5,I,,False,lòng đường; công viên xa
+132,pilot_adjudication_proposal_05.jpg,bdd65e70,train,Pasteur,0:1 1:0 I:4,I,≥4/5,I,,False,giao lộ; vạch qua đường
+133,pilot_adjudication_proposal_05.jpg,c74364ae,train,Phan Đăng Lưu,0:2 1:0 I:3,I,≤3/5,I,,False,lối vào bãi xe/sân rộng
+134,pilot_adjudication_proposal_05.jpg,c95d8c4d,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,nhiều xe sát camera; lòng đường
+135,pilot_adjudication_proposal_05.jpg,d60a9792,train,Pasteur,0:4 1:0 I:1,0,≥4/5,I,,False,lòng đường; xe sát camera
+136,pilot_adjudication_proposal_05.jpg,de516d94,train,Phan Đăng Lưu,0:0 1:0 I:5,I,≥4/5,I,,False,giao lộ
+137,pilot_adjudication_proposal_05.jpg,deb834a4,train,Lê Văn Sỹ,0:0 1:1 I:4,I,≥4/5,I,,False,đầu hẻm; lòng đường
+138,pilot_adjudication_proposal_05.jpg,df503ad7,train,Pasteur,0:1 1:2 I:2,1,≤3/5,I,,False,ô tô sát camera che; vỉa hè xa
+139,pilot_adjudication_proposal_05.jpg,e42f7a83,train,Lê Văn Sỹ,0:5 1:0 I:0,0,≥4/5,I,,False,góc đầu hẻm
+140,pilot_adjudication_proposal_05.jpg,e79a6b19,train,Phan Đăng Lưu,0:1 1:0 I:4,I,≥4/5,I,,False,giao lộ; vạch qua đường
+141,pilot_adjudication_proposal_05.jpg,ef51a330,train,Lê Văn Sỹ,0:0 1:1 I:4,I,≥4/5,I,,False,xe khách sát camera che
+142,pilot_adjudication_proposal_05.jpg,efe0e9a3,train,Phan Đăng Lưu,0:1 1:4 I:0,1,≥4/5,I,,False,lối vào cổng có ô tô; sân bê tông
+143,pilot_adjudication_proposal_05.jpg,f0153487,train,Lê Văn Sỹ,0:2 1:1 I:2,0,≤3/5,I,,False,ô tô sát camera che
+144,pilot_adjudication_proposal_05.jpg,f1c58a00,train,Phan Đăng Lưu,0:0 1:0 I:5,I,≥4/5,I,,False,vũng nước và dải cây; lòng đường; trời tối
+145,pilot_adjudication_proposal_05.jpg,f31ce459,train,Pasteur,0:1 1:0 I:4,I,≥4/5,I,,False,cây xăng; giao lộ
+146,pilot_adjudication_proposal_05.jpg,f3213b41,train,Pasteur,0:2 1:0 I:3,I,≤3/5,I,,False,lòng đường; vỉa hè xa
+147,pilot_adjudication_proposal_05.jpg,fb8bf1f2,train,Pasteur,0:3 1:1 I:1,0,≤3/5,I,,False,lòng đường; vỉa hè xa
+148,pilot_adjudication_proposal_05.jpg,fc09b177,train,Pasteur,0:0 1:0 I:5,I,≥4/5,I,,False,ô tô sát camera che
+149,pilot_adjudication_proposal_05.jpg,ff3a65de,train,Phan Đăng Lưu,0:0 1:2 I:3,I,≤3/5,I,,False,nhiều xe và xe tải sát camera

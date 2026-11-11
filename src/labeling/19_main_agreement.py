@@ -6,6 +6,8 @@ Reads a raw export folder (default: the newest data/labels/raw/main_export_*; --
 - items to adjudicate: any double-labelled item whose two labels differ
 - provisional label per item: the agreed label, or the single label (train_single); disagreements stay open
 Outputs in data/labels/main_report/: main_labels.csv, main_items.csv, main_adjudicate.csv, main_report.md
+Final labels: data/labels/main_labels_v1.csv = main items (adjudicated) + the 150 pilot items re-reviewed under guide v1
+(data/labels/pilot_report/pilot_adjudication_proposal.csv); column `phase` tells them apart.
 Usage: python src/labeling/19_main_agreement.py [--fresh]"""
 import sys
 from pathlib import Path
@@ -92,6 +94,18 @@ if "label_final" in items and (items.label_final != "?").all():
     rs = lab.groupby("item").reason.agg(lambda x: x.iloc[0] if x.nunique() == 1 else "")
     fin = items[["item", "split", "street_id", "label_final", "source"]].rename(columns={"label_final": "label"})
     fin["reason"] = fin.item.map(rs).where(fin.label == "I", "")
+    fin.insert(1, "phase", "main")
+    fin.insert(2, "file", "main/" + fin.item + ".jpg")
+    # pilot items (train streets, labelled under guide v0): every item re-reviewed under guide v1, Phuc's label wins
+    PIL = DATA / "labels" / "pilot_report" / "pilot_adjudication_proposal.csv"
+    if PIL.exists():
+        pa = pd.read_csv(PIL, dtype=str).fillna("")
+        own = pa.phuc.isin(["0", "1", "I"])
+        pil = pd.DataFrame({"item": pa["item"], "phase": "pilot", "file": "pilot_v2/" + pa["item"] + ".jpg",
+                            "split": pa.split, "street_id": pa.street_id, "label": pa.phuc.where(own, pa.proposed),
+                            "source": np.where(own, "pilot_review_phuc", "pilot_review_proposal"), "reason": ""})
+        fin = pd.concat([fin, pil], ignore_index=True)
+    assert not fin.item.duplicated().any()
     fin.to_csv(DATA / "labels" / "main_labels_v1.csv", index=False, encoding="utf-8-sig")
 adj = items[items.status == "disagree"].copy()
 adj["pair"] = adj.label1 + "/" + adj.label2

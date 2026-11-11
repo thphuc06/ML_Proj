@@ -174,3 +174,12 @@ Question: the blocked class may be too small. Can more blocked crops be found fo
 - Usable (0/1) by split: train 1,045 (106 blocked, 10.1%), val 242 (35, 14.5%), test 459 (47, 10.2%).
 - Phuc was one of the two annotators on 43 of the 303 items; the final label equals Phuc's vote on 27 of them (the blind proposal matched 26).
 - Label Studio keeps each annotator's original votes; final labels live in the repo only. Summary for the report: `docs/labeling_phase1.md`.
+
+## 2026-11-11 — Pilot items re-reviewed under guide v1 and added to train
+
+- The 150 pilot items (train streets Pasteur, Lê Văn Sỹ, Phan Đăng Lưu; no position overlap with the main set) had 5 votes each under guide v0. All 150 were reviewed again under guide v1, not only the 35 items with ≤3/5 agreement, because v0 had no 3/5-line rule.
+- Claude looked blind (shuffled order), then compared with the votes; 34 items had 0–1 votes for the proposal and were looked at again at 640 px with votes, and 20 were changed.
+- Phuc reviewed the 5 sheets and changed 3: tile 6 (1→I: curb lies on the 3/5 line), tile 44 (0→1: motorbikes, tree and tables fill the width on the left), tile 123 (I→0).
+- Final pilot labels: 0 = 73, 1 = 14, I = 63. 29 differ from the v0 majority, mostly far sidewalks, intersections and alley mouths that v1 sends to I.
+- `data/labels/main_labels_v1.csv` now holds 3,149 items with columns `phase` (main/pilot) and `file`. Usable train 1,132 (120 blocked), val 242 (35), test 459 (47).
+- Pilot items were sampled by PoC score strata, so their blocked share (16%) is not natural; EDA must split by `phase`.

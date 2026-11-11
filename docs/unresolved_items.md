@@ -11,6 +11,7 @@ Cập nhật 11/11/2026: đợt gán nhãn 1 đã xong, đã có nhãn cuối ([
 | 5 | Label Studio chưa có giao diện v1 | Cả 5 project `MAIN_*` đã dùng giao diện v1 và không còn lý do kiểu v0 (`18_ls_update_main_v1.py`) |
 | 2, 15 | Guide v1 còn là dự thảo; ngưỡng "lối hẹp" chưa chốt | Phúc xác nhận ngày 11/11: chốt guide v1 nguyên văn, kể cả các đề xuất "(chờ họp)". Lối hẹp: không đi thẳng qua được thì là bị chặn. Không thêm ô phụ |
 | 19 | 303 ảnh có hai phiếu khác nhau | Đã phân xử: Claude đề xuất bằng mắt, Phúc duyệt và sửa 28 ảnh ([chi tiết](labeling_phase1.md#4-phân-xử-303-ảnh-bất-đồng)) |
+| 3 | Ảnh pilot chưa có nhãn cuối | Cả 150 ảnh đã được xem lại theo guide v1 (Phúc sửa 3 ảnh) và đưa vào train với `phase=pilot` ([chi tiết](labeling_phase1.md#5-đưa-150-ảnh-pilot-vào-train)) |
 | 12 | Chưa có bảng nhãn cuối | [main_labels_v1.csv](../data/labels/main_labels_v1.csv): một dòng cho mỗi ảnh, có cột nguồn nhãn |
 | 6 | Chưa biết bộ chính dùng được bao nhiêu ảnh | 1.746 ảnh dùng được (0 hoặc 1), 1.253 ảnh "Không đủ thông tin" (42%) |
 
@@ -18,9 +19,9 @@ Cập nhật 11/11/2026: đợt gán nhãn 1 đã xong, đã có nhãn cuối ([
 
 | # | Vấn đề | Việc cần làm |
 |---|---|---|
-| 7 | **Ảnh "Bị chặn" ít hơn ước tính nhiều.** Nhãn cuối: train 106/1.045 ảnh dùng được, val 35/242, test **47/459**. Tỉ lệ khoảng 10%, trong khi pilot là 19% | **Test dưới mốc khoảng 60 ảnh dương.** Nhóm cần quyết định có đổi hoặc thêm đường test **trước khi** train model |
+| 7 | **Ảnh "Bị chặn" ít hơn ước tính nhiều.** Nhãn cuối: train 120/1.132 ảnh dùng được (gồm pilot), val 35/242, test **47/459**. Tỉ lệ khoảng 10%, trong khi pilot là 19% | **Test dưới mốc khoảng 60 ảnh dương.** Nhóm cần quyết định có đổi hoặc thêm đường test **trước khi** train model |
 | 18 | Bộ chấm `occ_v2` chưa được kiểm chứng | Chạy `17_check_scorer_pilot.py` trên PC. Nay đã có khoảng 1.600 nhãn người trên bộ chính, nên có thể kiểm chứng trực tiếp trên train và train luôn bộ chọn ảnh CLIP/DINOv2 + logistic ([kế hoạch](data_enrichment.md#4-quyết-định)) |
-| 17 | Train thiếu ảnh dương: 106 ảnh so với mức ước tính 200–245 | **Tạm hoãn.** Khi làm: bơm khoảng 400 ảnh từ **đường train mới** ([các bước](data_enrichment.md#5-khi-tiến-hành)). Với tỉ lệ 10%, có thể cần chọn nhiều hơn 400 ảnh hoặc chọn mạnh tay hơn để thu thêm khoảng 100 ảnh dương |
+| 17 | Train thiếu ảnh dương: 120 ảnh (gồm 14 ảnh pilot) so với mức ước tính 200–245 | **Tạm hoãn.** Khi làm: bơm khoảng 400 ảnh từ **đường train mới** ([các bước](data_enrichment.md#5-khi-tiến-hành)). Với tỉ lệ 10%, có thể cần chọn nhiều hơn 400 ảnh hoặc chọn mạnh tay hơn để thu thêm khoảng 100 ảnh dương |
 | 20 | Ảnh "Bị chặn" không gắn vật cản: Phúc 10/52, Loan 6/53, Khải 3/74 | Chỉ ảnh hưởng thông tin phụ, không ảnh hưởng nhãn. Ghi trong EDA nếu phân tích theo loại vật cản |
 | 22 | 1.563 ảnh train chỉ có một người gán | Có thể rà riêng 88 ảnh "Bị chặn" chỉ một người gán (lớp hiếm, sai một ảnh ảnh hưởng nhiều) |
 
@@ -28,7 +29,6 @@ Cập nhật 11/11/2026: đợt gán nhãn 1 đã xong, đã có nhãn cuối ([
 
 | # | Vấn đề | Ghi chú |
 |---|---|---|
-| 3 | 35 ảnh pilot có từ 3/5 phiếu trở xuống chưa có nhãn cuối ([danh sách](../data/labels/pilot_report/pilot_disagreements_20261029_0903.csv)) | Repo chưa ghi kết quả phân xử. Ảnh pilot sẽ vào train, nên cần nhãn cuối |
 | 16 | Vòng kiểm tra 50 ảnh | Repo chưa ghi lại vòng này. Nếu đã bỏ qua thì ghi lý do. κ của bộ chính đã thay vai trò kiểm tra |
 
 ## Theo dõi

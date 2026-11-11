@@ -6,8 +6,8 @@ Ghi chép ngày 04/11/2026, cập nhật 11/11/2026. **Trạng thái: chưa bơm
 
 Đợt gán nhãn 1 đã xong, đây là đầu vào cho việc bơm ảnh:
 
-- **Nhãn chính thức:** [data/labels/main_labels_v1.csv](../data/labels/main_labels_v1.csv), mỗi ảnh một dòng, gồm các cột `item`, `split`, `street_id`, `label` (0/1/I) và `source`. Ghép với [main_v1.csv](../data/manifest/main_v1.csv) theo `item` để lấy metadata Mapillary. Quy trình gán và phân xử: [labeling_phase1.md](labeling_phase1.md).
-- **Bước 1 của mục 5 đã xong.** Số ảnh "Bị chặn" / số ảnh dùng được: train 106/1.045, val 35/242, test 47/459.
+- **Nhãn chính thức:** [data/labels/main_labels_v1.csv](../data/labels/main_labels_v1.csv), mỗi ảnh một dòng, gồm các cột `item`, `split`, `street_id`, `label` (0/1/I) và `source`. Ghép với [main_v1.csv](../data/manifest/main_v1.csv) (dòng `phase=main`) hoặc [pilot_v2.csv](../data/manifest/pilot_v2.csv) (dòng `phase=pilot`) theo `item` để lấy metadata Mapillary. Quy trình gán và phân xử: [labeling_phase1.md](labeling_phase1.md).
+- **Bước 1 của mục 5 đã xong.** Số ảnh "Bị chặn" / số ảnh dùng được: train 120/1.132 (gồm 150 ảnh pilot, trong đó 14 ảnh Bị chặn), val 35/242, test 47/459.
 - **Bắt đầu từ bước 2 của mục 5:** chọn đường train mới. Bộ chọn ảnh nên train trên nhãn train của file trên, lọc `split == "train"` và `label` thuộc {0, 1}.
 - **Test có 47 ảnh dương**, dưới mốc khoảng 60 ảnh. Nhóm chưa quyết định có đổi hay thêm đường test. Bơm ảnh chỉ vào train nên không phụ thuộc vào quyết định này. Nhưng **không được lấy đường mới từ danh sách đường val hoặc test**.
 - Ảnh bơm thêm cần gán theo [guide v1](../labeling/guide/annotation_guide_v1_draft.md), bản đã chốt nguyên văn.
@@ -16,7 +16,7 @@ Ghi chép ngày 04/11/2026, cập nhật 11/11/2026. **Trạng thái: chưa bơm
 
 Lớp "Bị chặn" hiếm, nên có thể không đủ ảnh để train và đánh giá.
 
-**Nhãn cuối của bộ chính (11/11, sau phân xử):** train 106/1.045 ảnh dùng được, val 35/242, test 47/459 ([tổng kết](labeling_phase1.md)). Số trước phân xử:
+**Nhãn cuối của bộ chính (11/11, sau phân xử):** train 106/1.045 ảnh dùng được (cộng 150 ảnh pilot thì 120/1.132), val 35/242, test 47/459 ([tổng kết](labeling_phase1.md)). Số trước phân xử:
 
 | Tập | Số ảnh | Bị chặn: đồng thuận hoặc một người gán | Thêm nếu mọi ca bất đồng có phiếu 1 đều thành 1 | Ước lượng cũ |
 |---|---|---|---|---|

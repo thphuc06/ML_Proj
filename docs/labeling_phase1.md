@@ -8,14 +8,19 @@ Tổng kết ngày 11/11/2026, dùng cho phần dữ liệu của báo cáo. Nh�
 - **5 người gán**, mỗi người 887 lượt, tổng cộng 4.435 lượt. Không thiếu lượt nào.
 - **Đồng thuận (Cohen κ, 3 nhãn):** test 0,60 · val 0,64 · train gán chéo 0,61. Cả ba đều đạt ngưỡng 0,6 của đề cương. Pilot trước đó chỉ đạt 0,57.
 - **303 ảnh bất đồng** được phân xử. Claude đề xuất nhãn bằng cách xem ảnh, Phúc duyệt và sửa 28 ảnh.
-- **Kết quả:** 1.746 ảnh dùng được, gồm 1.558 ảnh "Còn lối đi" và 188 ảnh "Bị chặn". 1.253 ảnh "Không đủ thông tin" bị loại khỏi model.
+- **150 ảnh pilot** (3 đường train) được xem lại toàn bộ theo guide v1 và đưa vào train. Phúc sửa 3 ảnh.
+- **Kết quả:** 3.149 ảnh có nhãn cuối. 1.833 ảnh dùng được, gồm 1.631 ảnh "Còn lối đi" và 202 ảnh "Bị chặn". 1.316 ảnh "Không đủ thông tin" bị loại khỏi model.
 
 | Tập | Còn lối đi (0) | Bị chặn (1) | Dùng được | Tỉ lệ Bị chặn | Không đủ thông tin |
 |---|---|---|---|---|---|
-| Train | 939 | 106 | 1.045 | 10,1% | 794 |
+| Train (bộ chính) | 939 | 106 | 1.045 | 10,1% | 794 |
+| Train (pilot) | 73 | 14 | 87 | 16,1% | 63 |
+| **Train, cộng** | **1.012** | **120** | **1.132** | **10,6%** | **857** |
 | Val | 207 | 35 | 242 | 14,5% | 244 |
 | Test | 412 | 47 | 459 | 10,2% | 215 |
-| **Tổng** | **1.558** | **188** | **1.746** | **10,8%** | **1.253** |
+| **Tổng** | **1.631** | **202** | **1.833** | **11,0%** | **1.316** |
+
+Ảnh pilot được lấy mẫu nghiêng về phía ảnh trông như bị chặn, nên tỉ lệ "Bị chặn" của pilot cao hơn. Khi làm EDA cần tách riêng theo cột `phase`.
 
 ## 2. Quy trình
 
@@ -27,6 +32,7 @@ Tổng kết ngày 11/11/2026, dùng cho phần dữ liệu của báo cáo. Nh�
 | 4. Gán chính thức | Mỗi người một project `MAIN_<tên>` trên Label Studio, gán mù, ảnh các tập trộn lẫn | 5 × 887 lượt, giao diện v1 |
 | 5. Đo đồng thuận | Script `src/labeling/19_main_agreement.py` | Mục 3 |
 | 6. Phân xử | Claude đề xuất, Phúc duyệt | Mục 4 |
+| 7. Xem lại pilot | 150 ảnh pilot gán lại theo guide v1, cùng cách phân xử | Mục 5 |
 
 ### 2.1 Quy tắc chốt (guide v1)
 
@@ -120,18 +126,38 @@ Nhãn cuối trùng với phiếu ban đầu của từng người trên các �
 
 Đây là các ảnh khó, được chọn ra chính vì có bất đồng, nên tỉ lệ này **không dùng để chấm điểm người gán**.
 
-## 5. Nhãn cuối
+## 5. Đưa 150 ảnh pilot vào train
 
-File [main_labels_v1.csv](../data/labels/main_labels_v1.csv) có một dòng cho mỗi ảnh, gồm các cột `item`, `split`, `street_id`, `label` (0/1/I), `source` và `reason`.
+Ảnh pilot thuộc 3 đường train (Pasteur, Lê Văn Sỹ, Phan Đăng Lưu), và không trùng vị trí với bộ chính. Trước đây mỗi ảnh có 5 phiếu, nhưng các phiếu này được gán theo **guide v0**, khi chưa có quy tắc vạch 3/5. Vì vậy cả 150 ảnh được xem lại theo guide v1, không chỉ 35 ảnh bất đồng.
+
+1. **Claude xem mù** cả 150 ảnh, trộn thứ tự, rồi so với phiếu pilot. Có 34 ảnh mà nhãn đề xuất chỉ được 0–1 phiếu ủng hộ. Claude xem lại 34 ảnh này ở cỡ lớn, có hiện phiếu, và sửa 20 ảnh.
+2. **Phúc duyệt** 5 tấm ảnh ghép và sửa 3 ảnh ([pilot_adjudication_proposal.csv](../data/labels/pilot_report/pilot_adjudication_proposal.csv), cột `phuc`):
+   - ô 6: Bị chặn → Không đủ thông tin (mép vỉa hè nằm trên vạch 3/5);
+   - ô 44: Còn lối đi → Bị chặn (bên trái có xe, cây và bàn ghế xếp kín bề ngang);
+   - ô 123: Không đủ thông tin → Còn lối đi.
+
+| Mức đồng thuận pilot (v0) | Còn lối đi | Bị chặn | Không đủ thông tin | Tổng |
+|---|---|---|---|---|
+| Từ 4/5 phiếu trở lên | 63 | 8 | 44 | 115 |
+| Từ 3/5 phiếu trở xuống | 10 | 6 | 19 | 35 |
+| **Tổng** | **73** | **14** | **63** | **150** |
+
+Có 29 ảnh có nhãn cuối khác đa số phiếu v0. Phần lớn là vỉa hè ở xa, giao lộ hoặc đầu hẻm: v0 gán "Còn lối đi" hoặc "Bị chặn", còn v1 xếp vào "Không đủ thông tin".
+
+## 6. Nhãn cuối
+
+File [main_labels_v1.csv](../data/labels/main_labels_v1.csv) có một dòng cho mỗi ảnh, tổng cộng 3.149 dòng. Các cột: `item`, `phase` (main/pilot), `file` (đường dẫn ảnh cắt), `split`, `street_id`, `label` (0/1/I), `source` và `reason`.
 
 | Nguồn nhãn | Số ảnh | Ý nghĩa |
 |---|---|---|
 | `agreed` | 1.133 | Hai người gán giống nhau |
 | `single` | 1.563 | Ảnh train chỉ một người gán |
-| `adjudicated_proposal` | 275 | Phúc giữ nguyên nhãn đề xuất |
-| `adjudicated_phuc` | 28 | Phúc sửa |
+| `adjudicated_proposal` | 275 | Bất đồng; Phúc giữ nguyên nhãn đề xuất |
+| `adjudicated_phuc` | 28 | Bất đồng; Phúc sửa |
+| `pilot_review_proposal` | 147 | Pilot; Phúc giữ nguyên nhãn đề xuất |
+| `pilot_review_phuc` | 3 | Pilot; Phúc sửa |
 
-### 5.1 Theo tuyến đường
+### 6.1 Theo tuyến đường (gồm cả pilot)
 
 | Tập | Đường | Còn lối đi | Bị chặn | Không đủ thông tin |
 |---|---|---|---|---|
@@ -147,15 +173,15 @@ File [main_labels_v1.csv](../data/labels/main_labels_v1.csv) có một dòng cho
 | | Nguyễn Thị Minh Khai | 136 | 8 | 109 |
 | | Nguyễn Trãi | 131 | 15 | 144 |
 | | Điện Biên Phủ#1 | 106 | 9 | 146 |
-| | Phan Đăng Lưu | 69 | 7 | 29 |
-| | Lê Văn Sỹ | 67 | 7 | 15 |
+| | Phan Đăng Lưu | 100 | 14 | 41 |
+| | Lê Văn Sỹ | 100 | 13 | 26 |
 | | Nguyễn Kiệm#0 | 38 | 8 | 52 |
 | | Hải Thượng Lãn Ông | 24 | 15 | 47 |
-| | Pasteur | 14 | 1 | 71 |
+| | Pasteur | 23 | 2 | 111 |
 
-### 5.2 Lý do "Không đủ thông tin"
+### 6.2 Lý do "Không đủ thông tin" (bộ chính)
 
-Lý do chỉ được ghi khi các người gán chọn cùng một lý do.
+Lý do chỉ được ghi khi các người gán chọn cùng một lý do. Ảnh pilot không ghi lý do.
 
 | Lý do | Số ảnh |
 |---|---|
@@ -165,11 +191,11 @@ Lý do chỉ được ghi khi các người gán chọn cùng một lý do.
 | Lý do khác | 4 |
 | Mỗi người chọn một lý do khác, hoặc có nhãn sau phân xử | 218 |
 
-## 6. Hạn chế và việc còn mở
+## 7. Hạn chế và việc còn mở
 
 - **Ít ảnh "Bị chặn".** Tỉ lệ khoảng 10%, trong khi pilot là 19%, vì pilot được lấy mẫu nghiêng về phía ảnh trông như bị chặn. Test chỉ có **47 ảnh dương**, dưới mốc khoảng 60 ảnh của [kế hoạch](data_enrichment.md). Khoảng tin cậy của F1 trên test sẽ rộng. Bơm thêm ảnh cho train đã được hoãn.
 - **1.563 ảnh train chỉ có một người gán.** Phần gán chéo 15% có κ 0,61, nên nhãn train có nhiễu nhiều hơn val và test.
 - **Phúc vừa gán vừa phân xử.** Phúc là một trong hai người gán ở 43/303 ảnh bất đồng. Nhãn cuối trùng với phiếu của Phúc ở 27 ảnh, trong khi đề xuất mù của Claude trùng ở 26 ảnh.
-- **Tỉ lệ "Không đủ thông tin" cao (42%)** do góc chụp từ xe. Riêng Pasteur là 83%.
-- **Pilot chưa có nhãn cuối.** 35 ảnh pilot có từ 3/5 phiếu trở xuống chưa được phân xử. Ảnh pilot dự kiến vào train.
+- **Tỉ lệ "Không đủ thông tin" cao (42%)** do góc chụp từ xe. Riêng Pasteur là 82% (tính cả pilot).
+- **Pilot không theo phân phối tự nhiên.** 150 ảnh pilot đã vào train nhưng được lấy mẫu theo tầng điểm của model PoC. EDA và báo cáo cần tách theo `phase`.
 - **Label Studio vẫn giữ nguyên phiếu gốc của từng người.** Nhãn cuối nằm trong repo, không ghi ngược lên server.
