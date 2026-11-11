@@ -11,9 +11,10 @@ Nothing is uploaded to Label Studio and no score here is a label. Val and test l
    (64-bit dHash, Hamming <= DUP_BITS, against the other capture day of the same position). Everything is cached.
 4. Score = P(blocked) of the selector fitted on ALL train labels of data/labels/main_labels_v1.csv (blocked vs
    everything else a person labelled), frozen --enc embeddings, C by street-grouped CV (src/enrich.py).
-5. --all: N_LABEL crops = TOP_SHARE by score (at most STREET_CAP of that part per street) + the rest at random among
-   the remaining crops -> data/manifest/train_extra_v1.csv (phase=train_extra, stratum, score, selector) and a sample
-   sheet for the team. --sample N: N panos spread over the streets, sheet only. --dry: counts only, no download.
+5. --all: --n crops (default 2,000) = TOP_SHARE by score (at most STREET_CAP of that part per street) + the rest at random among
+   the remaining crops -> data/manifest/train_extra_v1.csv (phase=train_extra, stratum, score, selector), a sample
+   sheet for the team, and data/manifest/train_extra_v1_assignment.csv: every crop to one annotator of the main round,
+   equal shares, at random (an annotator cannot tell the stratum of a crop). --sample N: N panos spread over the streets, sheet only. --dry: counts only, no download.
 Usage: python src/collection/23_collect_train_extra.py --dry | --sample 120 | --all [--enc dinov2_b14]
 Outputs: data/crops/train_extra_v1/, data/streets/train_extra_v1_scores.csv, data/crops/train_extra_v1_sheet.jpg
          (--all also data/manifest/train_extra_v1.csv and docs/figures/train_extra_v1_sheet.jpg)"""
@@ -43,10 +44,11 @@ mode.add_argument("--dry", action="store_true", help="pool counts only, no downl
 mode.add_argument("--sample", type=int, help="this many panos spread over the streets; sheet only, no manifest")
 mode.add_argument("--all", action="store_true", help="whole pool; writes the selection manifest")
 ap.add_argument("--enc", choices=list(ENCODERS), default="dinov2_b14", help="encoder of the selector (winner of script 21)")
+ap.add_argument("--n", type=int, default=2000, help="crops to select for labelling (--all)")
 A = ap.parse_args()
 
 THIN_M, PASS_M, NEAR_EVAL_M, DUP_BITS = 25, 15, 40, 10
-N_LABEL, TOP_SHARE, STREET_CAP = 400, 0.7, 0.25
+N_LABEL, TOP_SHARE, STREET_CAP = A.n, 0.7, 0.25
 MAN, OUT = DATA / "manifest", DATA / "crops" / "train_extra_v1"
 OUT.mkdir(parents=True, exist_ok=True)
 rng = np.random.RandomState(20261111)
@@ -186,7 +188,7 @@ log(f"selector {SELECTOR}: fitted on {len(L)} train crops ({(L.label == '1').sum
 log(ok.groupby("street_id").score.describe()[["count", "mean", "50%", "max"]].round(3).to_string())
 
 # ---- 5. selection: TOP_SHARE by score with a per-street cap, the rest at random
-n_label = N_LABEL if A.all else min(N_LABEL, int(round(len(ok) * 0.27)))  # --sample: same share of the pool as 400 of ~1,500
+n_label = N_LABEL if A.all else min(N_LABEL, int(round(len(ok) * 0.35)))  # --sample: about the share of the pool that --all labels
 n_top, per_street, top, cnt = int(n_label * TOP_SHARE), max(1, int(n_label * TOP_SHARE * STREET_CAP)), [], {}
 for k in ok.sort_values("score", ascending=False).index:
     if len(top) < n_top and cnt.get(ok.street_id[k], 0) < per_street:
@@ -213,6 +215,12 @@ if A.all:
         "phase": "train_extra", "stratum": pick.stratum, "score": pick.score.round(4), "selector": SELECTOR, "streets_status": STATUS,
     }).sample(frac=1, random_state=rng).to_csv(MAN / "train_extra_v1.csv", index=False, encoding="utf-8-sig")  # shuffled: row order says nothing
     log(f"manifest -> {MAN / 'train_extra_v1.csv'}")
+    who = sorted(pd.read_csv(MAN / "main_v1_assignment.csv").annotator.unique())
+    asg = pick.sample(frac=1, random_state=rng)
+    pd.DataFrame({"item": asg.item, "annotator": [who[k % len(who)] for k in range(len(asg))], "role": "train_extra_single",
+                  "file": "train_extra_v1/" + asg.item + ".jpg", "split": "train", "street_id": asg.street_id}
+                 ).to_csv(MAN / "train_extra_v1_assignment.csv", index=False, encoding="utf-8-sig")
+    log(f"assignment -> {MAN / 'train_extra_v1_assignment.csv'}: {len(asg)} crops, {len(who)} annotators")
 
 # ---- sheet for the team: highest scores, the lowest scores that still made the top stratum, random picks
 K_TOP, K_EDGE, K_RAND = 12, 6, 6

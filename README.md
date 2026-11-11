@@ -8,7 +8,7 @@ Bài toán là phân loại nhị phân: với một ảnh chụp một phía v�
 
 ## Tiến độ theo mốc của đề cương
 
-Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuối cho 3.149 ảnh (bộ chính và pilot), trong đó 1.833 ảnh dùng được (202 ảnh "Bị chặn"). Tổng kết ở [docs/labeling_phase1.md](docs/labeling_phase1.md). Chưa bơm thêm ảnh (đã có danh sách đề xuất, chờ nhóm duyệt), chưa làm EDA.
+Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuối cho 3.149 ảnh (bộ chính và pilot), trong đó 1.833 ảnh dùng được (202 ảnh "Bị chặn"). Tổng kết ở [docs/labeling_phase1.md](docs/labeling_phase1.md). Đợt bơm ảnh cho train (2.000 ảnh) đã lên Label Studio, đang chờ gán. Chưa làm EDA.
 
 **Week 3**
 
@@ -30,7 +30,7 @@ Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuố
 | Tiền xử lý | Một phần: đã cắt ảnh, lọc ảnh đêm, loại trùng tuyệt đối. Còn dò gần trùng và rà soát nội dung nhạy cảm |
 | EDA | Chưa làm |
 | Chia tập | Đã chia theo đường ([streets_v1.yaml](configs/streets_v1.yaml)), chưa khóa |
-| Bơm thêm ảnh "Bị chặn" cho train | Chưa bơm. Bộ chọn ảnh mới (embedding DINOv2 + logistic) đã thay bộ cũ `occ_v2`: trên 1.839 ảnh train, top 20% chứa 22,0% ảnh "Bị chặn" so với 13,9%, hiệu +8,2 điểm % [4,3; 11,7] ([mục 7](docs/data_enrichment.md)). Đã có 400 ảnh đề xuất từ 10 đường đề xuất ([danh sách](data/manifest/train_extra_v1.csv), [tấm ảnh mẫu](docs/figures/train_extra_v1_sheet.jpg)), chờ nhóm chốt đường; chưa có nhãn người trên đường mới. Số ảnh "Bị chặn" thực tế: train 120 (gồm 14 ảnh pilot), val 35, test 47, ít hơn ước tính ([ghi chép](docs/data_enrichment.md)) |
+| Bơm thêm ảnh "Bị chặn" cho train | Đang gán. Bộ chọn ảnh mới (embedding DINOv2 + logistic) đã thay bộ cũ `occ_v2`: trên 1.839 ảnh train, top 20% chứa 22,0% ảnh "Bị chặn" so với 13,9%, hiệu +8,2 điểm % [4,3; 11,7] ([mục 7](docs/data_enrichment.md)). Đã quét 150 đường bằng bộ chọn ảnh để chọn đường ([mục 8](docs/data_enrichment.md)) và lập danh sách **2.000 ảnh từ 75 đường**, mỗi người gán 400 ảnh ([danh sách](data/manifest/train_extra_v1.csv), [phân công](data/manifest/train_extra_v1_assignment.csv), [tấm ảnh mẫu](docs/figures/train_extra_v1_sheet.jpg), [mục 9](docs/data_enrichment.md)). **Đã đưa lên Label Studio** (5 project `MAIN2_<tên>`), đang chờ gán; chưa có nhãn người trên đường mới. Số ảnh "Bị chặn" thực tế: train 120 (gồm 14 ảnh pilot), val 35, test 47, ít hơn ước tính ([ghi chép](docs/data_enrichment.md)) |
 
 ## Cấu trúc thư mục
 
@@ -49,8 +49,8 @@ Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuố
 │   ├── labeling/       Tạo pilot và project, tính đồng thuận
 │   └── analysis/       Các phân tích thăm dò dẫn tới quyết định dữ liệu
 ├── data/
-│   ├── manifest/       Nguồn gốc từng ảnh, phân công gán nhãn, danh sách ảnh bơm đề xuất (train_extra_v1.csv)
-│   ├── streets/        Bảng xếp hạng và phân tích đường, kết quả so bộ chọn ảnh
+│   ├── manifest/       Nguồn gốc từng ảnh, phân công gán nhãn, danh sách ảnh bơm và phân công (train_extra_v1*.csv)
+│   ├── streets/        Bảng xếp hạng và phân tích đường, kết quả so bộ chọn ảnh, quét đường
 │   └── labels/         Báo cáo và nhãn pilot
 ├── docs/
 │   ├── proposal/       Đề cương (PDF và mã LaTeX)
@@ -88,6 +88,7 @@ python src/collection/11_collect_main.py --dry     # đếm số ảnh, bỏ --d
 python src/labeling/07_pilot_agreement.py          # tính đồng thuận pilot
 python src/labeling/19_main_agreement.py --fresh   # kéo nhãn bộ chính (chỉ đọc), tính κ, lập danh sách phân xử, xuất nhãn cuối
 python src/labeling/20_review_sheets.py --fetch    # tấm ảnh các ca bất đồng; --proposal file.csv để xem nhãn đề xuất
+python src/labeling/25_ls_create_train_extra.py    # project MAIN2_* cho ảnh bơm; mặc định chạy thử, --apply để tạo
 ```
 
 `04_street_preview.py` và `10_make_pilot_v2.py` được giữ làm bản ghi cách chọn đường và lấy mẫu pilot. Bước chấm điểm của hai script này cần một model từ đợt thử trước, model đó không có trong repo nên hai script không chạy nguyên trạng. Kết quả đã chốt trong `configs/streets_v1.yaml`, `data/streets/` và `data/manifest/pilot_v2.csv`.
@@ -97,8 +98,9 @@ Bơm thêm ảnh "Bị chặn" cho train (xem [docs/data_enrichment.md](docs/dat
 ```bash
 python src/analysis/21_selector_benchmark.py --seg-n -1        # so bộ chọn ảnh trên nhãn train, giữ nguyên một đường ra ngoài, không đọc val/test
 python src/analysis/22_enrichment_simulation.py --enc dinov2_b14   # chọn theo điểm có giúp bộ phân loại không
+python src/analysis/24_street_scan.py                          # quét 150 đường bằng bộ chọn ảnh để chọn đường bơm
 python src/collection/23_collect_train_extra.py --dry          # đếm kho ứng viên của configs/streets_train_extra.yaml
-python src/collection/23_collect_train_extra.py --all          # tải, chấm, chọn 400 ảnh; ghi manifest và tấm ảnh mẫu, không đưa gì lên Label Studio
+python src/collection/23_collect_train_extra.py --all          # tải, chấm, chọn 2.000 ảnh; ghi manifest, phân công và tấm ảnh mẫu, không đưa gì lên Label Studio
 ```
 
 `16_train_extra_preview.py` (`--dry`, `--sample 80`) được giữ làm bản ghi thử nghiệm ngày 04/11 với bộ chấm SegFormer; chế độ chọn ảnh của script này đã bỏ. `17_check_scorer_pilot.py` chưa từng chạy và đã được script 21 thay thế.

@@ -13,6 +13,8 @@ Công cụ: Label Studio Community, tự host (xem [infra/README.md](../infra/RE
 
 **Trạng thái 11/11/2026:** bước 5 và bước 6 đã xong, nhãn cuối (bộ chính và 150 ảnh pilot) ở [main_labels_v1.csv](../data/labels/main_labels_v1.csv), tổng kết ở [labeling_phase1.md](../docs/labeling_phase1.md). Chi tiết bước 5 (5×887 lượt, κ test 0,60, val 0,64, train gán chéo 0,61). Đang ở bước 6: 303 ảnh bất đồng. Claude đã đề xuất nhãn bằng mắt ([adjudication_proposal.csv](../data/labels/main_report/adjudication_proposal.csv)), Phúc duyệt: ảnh nào không đồng ý thì ghi nhãn vào cột `phuc`, rồi chạy lại `19_main_agreement.py` ([báo cáo](../data/labels/main_report/main_report.md), [danh sách](../data/labels/main_report/main_adjudicate.csv)). Tấm ảnh để xem: `python src/labeling/20_review_sheets.py --fetch`, lưu ở `data/labels/main_report/sheets/` (không đưa lên git).
 
+**Đợt 2 (11/11/2026), ảnh bơm cho train:** 2.000 ảnh từ 75 đường mới, mỗi người 400 ảnh, mỗi ảnh một người gán, trong project `MAIN2_<tên>` (giao diện v1, guide v1). Phân công: [train_extra_v1_assignment.csv](../data/manifest/train_extra_v1_assignment.csv). Cách chọn ảnh: [docs/data_enrichment.md](../docs/data_enrichment.md) mục 9. Chưa ai gán.
+
 ## Phân công gán chính thức
 
 | Tập | Số ảnh | Người gán |
@@ -46,4 +48,5 @@ Chi tiết từng ảnh: [data/manifest/main_v1_assignment.csv](../data/manifest
 | `src/labeling/12_ls_create_main.py` | Phân công và tạo project `MAIN_*` |
 | `src/labeling/18_ls_update_main_v1.py` | Chuyển project `MAIN_*` sang giao diện v1, đổi lý do kiểu v0 sang v1 |
 | `src/labeling/19_main_agreement.py` | Kéo nhãn bộ chính (chỉ đọc), tính κ theo cặp, lập danh sách phân xử |
+| `src/labeling/25_ls_create_train_extra.py` | Tạo project `MAIN2_*` cho 2.000 ảnh bơm của train |
 | `src/labeling/20_review_sheets.py` | Tấm ảnh các ca bất đồng, hoặc tấm ảnh nhãn đề xuất để đối chiếu bằng mắt |

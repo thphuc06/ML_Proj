@@ -214,3 +214,34 @@ Summary and tables: `docs/data_enrichment.md` section 7.
   - Timing: 1,127 panos in 246 s; DINOv2 on 1,066 crops about 16 s with model load; SegFormer-B5 on 1,839 crops 167 s.
 - **Old pipeline:** the `--all` selection of `16_train_extra_preview.py` was removed (preview kept); `17_check_scorer_pilot.py` is marked superseded and was never run.
 - **Not done / not verified:** nothing was uploaded to Label Studio; no human label exists on the new streets, so the hit rate there is unknown; the street list and the 400 crops are proposals for the team.
+
+## 2026-11-11 — Street scan with the selector (`src/analysis/24_street_scan.py`)
+
+Question: which streets should train enrichment draw from? Summary and table: `docs/data_enrichment.md` section 8.
+
+- **Check on train first:** over the 10 train streets, the mean leave-one-street-out selector score of a street against its labelled blocked share: Spearman 0.96. The old preview score (`street_preview_v1b.csv`) reaches 0.40 on the same streets.
+- **Scan:** 150 streets with >= 30 positions, not in `streets_v1.yaml`, no val/test street name; 30 random 25 m cells per street, one pano each. 4,500 panos in 871 s, 100 night, 4,400 crops scored by `lr_dinov2_b14_C0.001`.
+- **Result:** street mean scores from 0.02 to 0.67 (median 0.28). The top 20 are mostly small streets near markets (Phạm Hữu Chí#0, Nhật Tảo, Tôn Đản, Thích Quảng Đức, Hoàng Hoa Thám, ...), mean about 0.58. The 10 streets proposed on 2026-11-04 rank 34 to 103, mean 0.32.
+- **Limits:** train, val and test streets are all large roads, so the selector is unverified on small streets; ranking 150 streets on 30 crops each makes the top optimistic; the mapping from score to blocked share is a line through 10 points and an extrapolation above 0.43; no human label exists on any scanned street.
+
+## 2026-11-11 — Train enrichment list: 2,000 crops from 75 streets (`src/collection/23_collect_train_extra.py --all --n 2000`)
+
+Summary: `docs/data_enrichment.md` section 9.
+
+- **Decision (Phuc):** one labelling round only, 2,000 crops, 400 per annotator, one annotator per crop.
+- **Streets:** `configs/streets_train_extra.yaml` now holds the 75 streets with the highest scan score (>= 0.275): 10 primary, 13 secondary, 44 tertiary, 8 residential; `status: approved` (Phuc). Pool by `--dry`: 50 streets 3,137 panos, 75 streets 5,074, 100 streets 7,511.
+- **Script 23:** `--n` (default 2,000) replaces the fixed 400; it also writes `data/manifest/train_extra_v1_assignment.csv`.
+- **Run:** 5,074 panos on 3,077 positions (57 positions within 40 m of a val/test pano and 37 already used were dropped) in 911 s; 38 night, 1 near duplicate, 5,035 crops scored by `lr_dinov2_b14_C0.001` in 54 s.
+- **Selection:** 2,000 crops = 1,400 by score (score >= 0.61; at most 350 per street, largest 101) + 600 random. By road type: tertiary 1,230, secondary 374, primary 207, residential 189. Largest streets: Hoàng Sa 157, Trường Sa#0 117.
+- **Assignment:** Hoc, Khai, Loan, Minh, Phuc, 400 crops each, at random.
+- An earlier run of the same day (10 old candidate streets, 400 crops, PR #3) is replaced by this one.
+- **Not verified:** no human label on any new street; 71% of the crops come from small streets while train, val and test are large roads; no double labelling, so no agreement figure for these crops.
+
+## 2026-11-11 — Train enrichment crops on Label Studio (`src/labeling/25_ls_create_train_extra.py --apply`)
+
+- **Decision (Phuc):** upload now, without the sample-sheet meeting planned in `docs/data_enrichment.md` section 5.
+- The 2,000 selected crops were copied to the server (`/srv/sidewalk/data/crops/train_extra_v1`, 201 MB; md5 of 3 files equal to the PC copies).
+- Five new projects `MAIN2_<name>` (ids 13 to 17), 400 tasks each from `train_extra_v1_assignment.csv`, private random order, v1 interface and guide v1. A task holds the image and the item code only.
+- Separate projects, not mixed into `MAIN_*` as first planned: the `MAIN_*` projects are the closed record of round 1 and `19_main_agreement.py` reads every `MAIN_*` project.
+- Checked after the import: 400 tasks and no annotation in each project; 60 random images are served; the task list of `MAIN2_Phuc` equals the assignment; the five `MAIN_*` projects still show 887 of 887.
+- **Open:** no script pulls the `MAIN2_*` labels yet.

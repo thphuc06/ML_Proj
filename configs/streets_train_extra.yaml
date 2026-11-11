@@ -1,20 +1,88 @@
-# Extra TRAIN streets for enrichment (docs/data_enrichment.md). Read by src/collection/23_collect_train_extra.py only.
-# status: proposed = candidates from docs/data_enrichment.md section 5, NOT decided. The team picks the streets and
-# then sets status: approved. configs/streets_v1.yaml is not changed until then.
-# preview = blocked share of ~20 preview crops per street (data/streets/street_preview_v1b.csv), a hint only (about ±0.20).
+# Extra TRAIN streets for enrichment (docs/data_enrichment.md sections 7-8). Read by src/collection/23_collect_train_extra.py only.
+# 2026-11-11: the 10 candidates of 2026-11-04 were replaced by the street scan (src/analysis/24_street_scan.py):
+# the 75 streets with the highest mean selector score of 150 scanned (score >= 0.275, the upper half). Large roads are
+# in the list by their own score (23 primary or secondary), and so are 6 of the old candidates.
+# scan = mean selector score of 30 random crops (a hint for choosing streets, never a label); rank = rank among 150 streets.
+# status: approved by Phuc on 2026-11-11 (2,000 crops sent to Label Studio the same day). configs/streets_v1.yaml is unchanged:
+# these streets hold train_extra crops only.
 # Rule (checked by the script): no street here may share its name with a val or test street of streets_v1.yaml, also not
 # another component of it (e.g. "Nguyễn Đình Chiểu#1"), and none may already be in streets_v1.yaml.
-version: 1
-status: proposed
+version: 2
+status: approved
 cap_r_crops_per_street: 420
 streets:
-  - {id: "Cao Thắng",          split: train, preview: 0.53}
-  - {id: "Hưng Phú",           split: train, preview: 0.45}
-  - {id: "Lê Quang Định#0",    split: train, preview: 0.45, note: "Chợ Bà Chiểu"}
-  - {id: "Trần Xuân Soạn",     split: train, preview: 0.40}
-  - {id: "Đinh Bộ Lĩnh",       split: train, preview: 0.35}
-  - {id: "Nguyễn Chí Thanh#0", split: train, preview: 0.35}
-  - {id: "Ngô Quyền",          split: train, preview: 0.30, note: "Chợ Nhật Tảo"}
-  - {id: "Sư Vạn Hạnh",        split: train, preview: 0.30}
-  - {id: "Bình Đông",          split: train, preview: 0.30}
-  - {id: "Lê Đại Hành",        split: train, preview: 0.30}
+  - {id: "Phạm Hữu Chí#0",        split: train, scan: 0.67, rank: 1, highway: residential}
+  - {id: "Nhật Tảo",              split: train, scan: 0.66, rank: 2, highway: residential}
+  - {id: "Tôn Đản",               split: train, scan: 0.66, rank: 3, highway: tertiary}
+  - {id: "Thích Quảng Đức",       split: train, scan: 0.66, rank: 4, highway: tertiary}
+  - {id: "Hoàng Hoa Thám",        split: train, scan: 0.64, rank: 5, highway: tertiary}
+  - {id: "Phan Văn Hân",          split: train, scan: 0.63, rank: 6, highway: residential}
+  - {id: "Nguyễn Thượng Hiền#1",  split: train, scan: 0.62, rank: 7, highway: tertiary}
+  - {id: "Nguyễn Thượng Hiền#0",  split: train, scan: 0.60, rank: 8, highway: residential}
+  - {id: "Trần Quý",              split: train, scan: 0.59, rank: 9, highway: tertiary}
+  - {id: "Lạc Long Quân",         split: train, scan: 0.59, rank: 10, highway: secondary}
+  - {id: "Vạn Kiếp#0",            split: train, scan: 0.57, rank: 11, highway: tertiary}
+  - {id: "Đỗ Ngọc Thạnh",         split: train, scan: 0.55, rank: 12, highway: tertiary}
+  - {id: "Chu Văn An#0",          split: train, scan: 0.53, rank: 13, highway: tertiary}
+  - {id: "Ung Văn Khiêm",         split: train, scan: 0.53, rank: 14, highway: secondary}
+  - {id: "Vĩnh Khánh",            split: train, scan: 0.53, rank: 15, highway: tertiary}
+  - {id: "Bùi Thị Xuân#0",        split: train, scan: 0.52, rank: 16, highway: residential}
+  - {id: "Phan Văn Trị#0",        split: train, scan: 0.52, rank: 17, highway: tertiary}
+  - {id: "Nguyễn Thái Bình#0",    split: train, scan: 0.52, rank: 18, highway: tertiary}
+  - {id: "Bà Hạt",                split: train, scan: 0.51, rank: 19, highway: tertiary}
+  - {id: "Ba Đình#1",             split: train, scan: 0.51, rank: 20, highway: tertiary}
+  - {id: "Xóm Chiếu",             split: train, scan: 0.51, rank: 21, highway: tertiary}
+  - {id: "Phạm Văn Hai#0",        split: train, scan: 0.50, rank: 22, highway: tertiary}
+  - {id: "Dương Tử Giang",        split: train, scan: 0.49, rank: 23, highway: tertiary}
+  - {id: "Bùi Đình Tuý#0",        split: train, scan: 0.49, rank: 24, highway: tertiary}
+  - {id: "Đoàn Văn Bơ",           split: train, scan: 0.48, rank: 25, highway: tertiary}
+  - {id: "Bạch Đằng#0",           split: train, scan: 0.48, rank: 26, highway: primary}
+  - {id: "Nguyễn Duy Dương",      split: train, scan: 0.48, rank: 27, highway: tertiary}
+  - {id: "Lê Hồng Phong#1",       split: train, scan: 0.47, rank: 28, highway: secondary}
+  - {id: "Nguyễn Văn Đậu",        split: train, scan: 0.46, rank: 29, highway: tertiary}
+  - {id: "Phan Đình Phùng",       split: train, scan: 0.46, rank: 30, highway: primary}
+  - {id: "Nguyễn Duy#0",          split: train, scan: 0.46, rank: 31, highway: tertiary}
+  - {id: "Tùng Thiện Vương",      split: train, scan: 0.44, rank: 32, highway: primary}
+  - {id: "Hòa Hảo#0",             split: train, scan: 0.43, rank: 33, highway: residential}
+  - {id: "Nguyễn Chí Thanh#0",    split: train, scan: 0.42, rank: 34, highway: secondary}
+  - {id: "Dương Bá Trạc",         split: train, scan: 0.42, rank: 35, highway: primary}
+  - {id: "Xô Viết Nghệ Tĩnh#1",   split: train, scan: 0.41, rank: 36, highway: secondary}
+  - {id: "Cống Quỳnh#0",          split: train, scan: 0.41, rank: 37, highway: secondary}
+  - {id: "Đinh Bộ Lĩnh",          split: train, scan: 0.41, rank: 38, highway: primary}
+  - {id: "Lê Quang Định#0",       split: train, scan: 0.41, rank: 39, highway: secondary}
+  - {id: "Vĩnh Viễn#0",           split: train, scan: 0.41, rank: 40, highway: tertiary}
+  - {id: "Châu Văn Liêm",         split: train, scan: 0.41, rank: 41, highway: primary}
+  - {id: "Sư Vạn Hạnh",           split: train, scan: 0.40, rank: 42, highway: tertiary}
+  - {id: "Nguyễn Gia Trí",        split: train, scan: 0.40, rank: 43, highway: tertiary}
+  - {id: "Trần Quang Khải",       split: train, scan: 0.40, rank: 44, highway: tertiary}
+  - {id: "Lê Văn Duyệt",          split: train, scan: 0.40, rank: 45, highway: primary}
+  - {id: "Xô Viết Nghệ Tĩnh#0",   split: train, scan: 0.39, rank: 46, highway: primary}
+  - {id: "Trường Sơn#1",          split: train, scan: 0.39, rank: 47, highway: tertiary}
+  - {id: "Ba Đình#0",             split: train, scan: 0.39, rank: 48, highway: residential}
+  - {id: "Hoàng Sa",              split: train, scan: 0.39, rank: 49, highway: tertiary}
+  - {id: "Nguyễn Thông",          split: train, scan: 0.38, rank: 50, highway: tertiary}
+  - {id: "Lê Hồng Phong#0",       split: train, scan: 0.38, rank: 51, highway: secondary}
+  - {id: "Nguyễn Biểu",           split: train, scan: 0.37, rank: 52, highway: secondary}
+  - {id: "Ngô Quyền",             split: train, scan: 0.37, rank: 53, highway: tertiary}
+  - {id: "Huỳnh Văn Bánh",        split: train, scan: 0.37, rank: 54, highway: tertiary}
+  - {id: "Nguyễn Kim",            split: train, scan: 0.37, rank: 55, highway: tertiary}
+  - {id: "Trường Sa#0",           split: train, scan: 0.36, rank: 56, highway: tertiary}
+  - {id: "Phạm Ngũ Lão",          split: train, scan: 0.35, rank: 57, highway: secondary}
+  - {id: "Lý Thái Tổ#0",          split: train, scan: 0.34, rank: 58, highway: primary}
+  - {id: "Bùi Thị Xuân#1",        split: train, scan: 0.33, rank: 59, highway: tertiary}
+  - {id: "Trần Bình Trọng#0",     split: train, scan: 0.32, rank: 60, highway: tertiary}
+  - {id: "Đào Duy Từ#0",          split: train, scan: 0.32, rank: 61, highway: residential}
+  - {id: "Phạm Thế Hiển#1",       split: train, scan: 0.32, rank: 62, highway: secondary}
+  - {id: "Triệu Quang Phục",      split: train, scan: 0.32, rank: 63, highway: tertiary}
+  - {id: "Trần Huy Liệu",         split: train, scan: 0.32, rank: 64, highway: tertiary}
+  - {id: "Bành Văn Trân",         split: train, scan: 0.31, rank: 65, highway: tertiary}
+  - {id: "Phan Xích Long",        split: train, scan: 0.31, rank: 66, highway: tertiary}
+  - {id: "Trần Nhân Tôn",         split: train, scan: 0.31, rank: 67, highway: tertiary}
+  - {id: "Ngô Gia Tự#1",          split: train, scan: 0.31, rank: 68, highway: primary}
+  - {id: "Bắc Hải",               split: train, scan: 0.30, rank: 69, highway: tertiary}
+  - {id: "Nhánh Cầu Tân Thuận 2", split: train, scan: 0.30, rank: 70, highway: tertiary}
+  - {id: "Bình Đông",             split: train, scan: 0.29, rank: 71, highway: tertiary}
+  - {id: "Thành Thái",            split: train, scan: 0.29, rank: 72, highway: secondary}
+  - {id: "Nguyễn Công Trứ#0",     split: train, scan: 0.28, rank: 73, highway: tertiary}
+  - {id: "Tôn Thất Thuyết",       split: train, scan: 0.28, rank: 74, highway: secondary}
+  - {id: "Nguyễn Trọng Tuyển",    split: train, scan: 0.28, rank: 75, highway: tertiary}
