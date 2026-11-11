@@ -15,13 +15,13 @@ Cập nhật 11/11/2026: đợt gán nhãn 1 đã xong, đã có nhãn cuối ([
 | 12 | Chưa có bảng nhãn cuối | [main_labels_v1.csv](../data/labels/main_labels_v1.csv): một dòng cho mỗi ảnh, có cột nguồn nhãn |
 | 6 | Chưa biết bộ chính dùng được bao nhiêu ảnh | 1.746 ảnh dùng được (0 hoặc 1), 1.253 ảnh "Không đủ thông tin" (42%) |
 
-## Việc tiếp theo (bơm ảnh tạm hoãn)
+## Việc tiếp theo (bơm ảnh: có bản đề xuất, chờ nhóm duyệt)
 
 | # | Vấn đề | Việc cần làm |
 |---|---|---|
 | 7 | **Ảnh "Bị chặn" ít hơn ước tính nhiều.** Nhãn cuối: train 120/1.132 ảnh dùng được (gồm pilot), val 35/242, test **47/459**. Tỉ lệ khoảng 10%, trong khi pilot là 19% | **Test dưới mốc khoảng 60 ảnh dương.** Nhóm cần quyết định có đổi hoặc thêm đường test **trước khi** train model |
-| 18 | Bộ chấm `occ_v2` chưa được kiểm chứng | **Đang làm (11/11):** đã viết `21_selector_benchmark.py` để so `occ_v1`, `occ_v2`, zero-shot và embedding + logistic trên nhãn train, chưa chạy ([mục 7](data_enrichment.md)). Trước đó: chạy `17_check_scorer_pilot.py` trên PC. Nay đã có khoảng 1.600 nhãn người trên bộ chính, nên có thể kiểm chứng trực tiếp trên train và train luôn bộ chọn ảnh CLIP/DINOv2 + logistic ([kế hoạch](data_enrichment.md#4-quyết-định)) |
-| 17 | Train thiếu ảnh dương: 120 ảnh (gồm 14 ảnh pilot) so với mức ước tính 200–245 | **Tạm hoãn.** Khi làm: bơm khoảng 400 ảnh từ **đường train mới** ([các bước](data_enrichment.md#5-khi-tiến-hành)). Với tỉ lệ 10%, có thể cần chọn nhiều hơn 400 ảnh hoặc chọn mạnh tay hơn để thu thêm khoảng 100 ảnh dương |
+| 18 | Bộ chấm `occ_v2` chưa được kiểm chứng | **Đã đóng (11/11).** `21_selector_benchmark.py` đo trên 1.839 ảnh main của train (106 ảnh dương), giữ nguyên một đường ra ngoài: `occ_v2` không hơn `occ_v1` (hiệu tỉ lệ trúng top 20% của v1 so với v2: +0,014 [−0,014; +0,041]), và cả hai thua logistic trên embedding DINOv2 (0,220 so với 0,139; hiệu +0,082 [+0,043; +0,117]). Bộ mới thay `occ_v2`; script 17 không cần chạy nữa ([mục 7](data_enrichment.md)). Còn lại: chưa có nhãn người trên đường mới để kiểm chứng tỉ lệ trúng |
+| 17 | Train thiếu ảnh dương: 120 ảnh (gồm 14 ảnh pilot) so với mức ước tính 200–245 | **Có bản đề xuất (11/11), chờ nhóm.** `23_collect_train_extra.py` đã chọn 400 ảnh từ kho 1.126 ảnh của 10 đường đề xuất ([danh sách](../data/manifest/train_extra_v1.csv), [tấm ảnh mẫu](figures/train_extra_v1_sheet.jpg)); chưa đưa gì lên Label Studio. **Nhóm cần:** (1) chốt đường trong `configs/streets_train_extra.yaml`; (2) quyết định có mở rộng kho không: 400 ảnh là 36% kho, ở mức này số đo trên train cũ cho khoảng 13% ảnh dương (khoảng 53 ảnh), còn nếu kho khoảng 2.000 ảnh thì khoảng 20% (khoảng 81 ảnh). Đây là phép nhân từ đường cũ, không phải số đo trên đường mới ([bảng](data_enrichment.md#đòn-bẩy-kho-ứng-viên-lớn-hơn)); (3) duyệt tấm ảnh mẫu |
 | 20 | Ảnh "Bị chặn" không gắn vật cản: Phúc 10/52, Loan 6/53, Khải 3/74 | Chỉ ảnh hưởng thông tin phụ, không ảnh hưởng nhãn. Ghi trong EDA nếu phân tích theo loại vật cản |
 | 22 | 1.563 ảnh train chỉ có một người gán | Có thể rà riêng 88 ảnh "Bị chặn" chỉ một người gán (lớp hiếm, sai một ảnh ảnh hưởng nhiều) |
 

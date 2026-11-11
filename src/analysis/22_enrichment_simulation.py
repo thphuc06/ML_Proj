@@ -40,13 +40,13 @@ L = pd.read_csv(DATA / "labels" / "main_labels_v1.csv", dtype=str, keep_default_
 L = L[L.split == "train"].reset_index(drop=True)
 X = cached_embed(A.enc, L.item.tolist(), [DATA / "crops" / f for f in L.file])
 lab, g = L.label.to_numpy(), L.street_id.to_numpy()
-blocked, usable, streets = lab == "1", lab != "I", np.unique(L.street_id)
+blocked, usable, streets, nat = lab == "1", lab != "I", np.unique(L.street_id), (L.phase == "main").to_numpy()
 rng = np.random.RandomState(20261111)
 STRATS = ["none", "random", "top", "mix70", "uncertain", "all"]
 rows = []
 for r in range(A.rounds):
     perm = rng.permutation(streets)
-    base, pool, ev = np.isin(g, perm[:4]), np.where(np.isin(g, perm[4:7]) & (L.phase == "main"))[0], np.isin(g, perm[7:]) & usable & (L.phase == "main")
+    base, pool, ev = np.isin(g, perm[:4]), np.where(np.isin(g, perm[4:7]) & nat)[0], np.isin(g, perm[7:]) & usable & nat
     if blocked[ev].sum() < 5:
         continue
     p = fit_selector(X[base], blocked[base], C=C_SEL)[0].predict_proba(X[pool])[:, 1]

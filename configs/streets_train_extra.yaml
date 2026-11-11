@@ -1,0 +1,20 @@
+# Extra TRAIN streets for enrichment (docs/data_enrichment.md). Read by src/collection/23_collect_train_extra.py only.
+# status: proposed = candidates from docs/data_enrichment.md section 5, NOT decided. The team picks the streets and
+# then sets status: approved. configs/streets_v1.yaml is not changed until then.
+# preview = blocked share of ~20 preview crops per street (data/streets/street_preview_v1b.csv), a hint only (about ±0.20).
+# Rule (checked by the script): no street here may share its name with a val or test street of streets_v1.yaml, also not
+# another component of it (e.g. "Nguyễn Đình Chiểu#1"), and none may already be in streets_v1.yaml.
+version: 1
+status: proposed
+cap_r_crops_per_street: 420
+streets:
+  - {id: "Cao Thắng",          split: train, preview: 0.53}
+  - {id: "Hưng Phú",           split: train, preview: 0.45}
+  - {id: "Lê Quang Định#0",    split: train, preview: 0.45, note: "Chợ Bà Chiểu"}
+  - {id: "Trần Xuân Soạn",     split: train, preview: 0.40}
+  - {id: "Đinh Bộ Lĩnh",       split: train, preview: 0.35}
+  - {id: "Nguyễn Chí Thanh#0", split: train, preview: 0.35}
+  - {id: "Ngô Quyền",          split: train, preview: 0.30, note: "Chợ Nhật Tảo"}
+  - {id: "Sư Vạn Hạnh",        split: train, preview: 0.30}
+  - {id: "Bình Đông",          split: train, preview: 0.30}
+  - {id: "Lê Đại Hành",        split: train, preview: 0.30}

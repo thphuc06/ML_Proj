@@ -128,6 +128,11 @@ def table(idx, ref=None):
         B[name] = np.array([[(mm := metrics(sn[b], yn[b]))["AP"], mm["hit@20%"], mm["hit@33%"]] for b in boots])
         rows.append({"scorer": name, **m})
     R = pd.DataFrame(rows).set_index("scorer")
+    if ref:  # per street: blocked crops in the scorer's top 20% of that street, against ref's (10 streets only)
+        def found(sc):
+            return np.array([yn[gn == st][np.argsort(-S[sc][idx][gn == st])[: int(round(0.2 * (gn == st).sum()))]].sum() for st in np.unique(gn)])
+        R[f"streets_more/equal/fewer_than_{ref}@20%"] = [
+            "/".join(str(int(v)) for v in ((found(s) > found(ref)).sum(), (found(s) == found(ref)).sum(), (found(s) < found(ref)).sum())) for s in R.index]
     for k, col in enumerate(["AP", "hit@20%", "hit@33%"]):
         R[f"{col}_ci"] = [f"[{np.percentile(B[s][:, k], 2.5):.3f}, {np.percentile(B[s][:, k], 97.5):.3f}]" for s in R.index]
         if ref:
