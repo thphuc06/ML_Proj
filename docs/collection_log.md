@@ -183,3 +183,14 @@ Question: the blocked class may be too small. Can more blocked crops be found fo
 - Final pilot labels: 0 = 73, 1 = 14, I = 63. 29 differ from the v0 majority, mostly far sidewalks, intersections and alley mouths that v1 sends to I.
 - `data/labels/main_labels_v1.csv` now holds 3,149 items with columns `phase` (main/pilot) and `file`. Usable train 1,132 (120 blocked), val 242 (35), test 459 (47).
 - Pilot items were sampled by PoC score strata, so their blocked share (16%) is not natural; EDA must split by `phase`.
+
+## 2026-11-11 — Enrichment selector: benchmark written, not run (branch `enrichment-selector`)
+
+Question: is there a better way to pick train crops for labelling than SegFormer occupancy (`occ_v2`)? Summary: `docs/data_enrichment.md` section 7.
+
+- **New code:** `src/enrich.py` (pano fetch, crop rebuild from manifest yaw, frozen embeddings, logistic selector), `src/analysis/21_selector_benchmark.py` (leave-one-street-out comparison on train labels; val and test are not read), `src/analysis/22_enrichment_simulation.py` (does score-based picking help a downstream classifier). Scripts 21 and 22 are syntax-checked only. **No scorer results exist yet.**
+- **Crops:** the laptop held 303 of 2,999 main crops. All 1,839 train crops were rebuilt from the panos and the manifest yaw; 5 checked against server crops differ by 1.35–1.5 grey levels on average (JPEG re-encoding).
+- **Timing on the laptop CPU:** 1,518 panos in 890 s with 8 threads, Mapillary at times throttled to about 11 s per request. SegFormer-B5 about 11 s per crop (while downloads were running); CLIP ViT-B/16 0.19 s per crop (1,851 crops in 355 s).
+- **Stopped** because of the missing GPU; the work continues on the PC. The area-wide metadata scan (script 02) was started and stopped without output.
+- `requirements.txt`: added scikit-learn, sentencepiece, protobuf.
+- Decision rule fixed before any result: replace the old selection only if the new scorer beats `occ_v2` on the hit rate in the top 20% (paired bootstrap 95% interval above 0) and is not worse on AP.

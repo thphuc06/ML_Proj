@@ -13,3 +13,6 @@ transformers==5.20.1
 torchvision==0.26.0
 fastapi==0.143.3
 uvicorn==0.54.0
+scikit-learn==1.9.1
+sentencepiece==0.2.3
+protobuf==7.36.2
