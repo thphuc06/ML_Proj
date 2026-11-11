@@ -194,3 +194,23 @@ Question: is there a better way to pick train crops for labelling than SegFormer
 - **Stopped** because of the missing GPU; the work continues on the PC. The area-wide metadata scan (script 02) was started and stopped without output.
 - `requirements.txt`: added scikit-learn, sentencepiece, protobuf.
 - Decision rule fixed before any result: replace the old selection only if the new scorer beats `occ_v2` on the hit rate in the top 20% (paired bootstrap 95% interval above 0) and is not worse on AP.
+
+## 2026-11-11 — Enrichment selector: benchmark run, old selection replaced (branch `enrichment-selector`, PC with RTX 5060)
+
+Summary and tables: `docs/data_enrichment.md` section 7.
+
+- **Environment:** `.venv` with torch 2.11.0+cu128 (the Anaconda base has a CPU build). 1,778 missing train crops were rebuilt from the panos and the manifest yaw; all 1,989 train crops (1,839 main, 150 pilot) are present.
+- **`21_selector_benchmark.py --seg-n -1`** ran without code errors. Added one column: per street, blocked crops in the scorer's top 20% against `occ_v2`. Measured on the 1,839 main-phase train crops (106 blocked, 5.8%), leave-one-street-out, val and test not read:
+  - `occ_v2`: AP 0.138, hit rate in the top 20% 0.139. `occ_v1`: 0.136, 0.152. v1 − v2 on the top 20%: +0.014 [−0.014, +0.041].
+  - `lr_dinov2_b14`: AP 0.398, AUC 0.877, top 10% 0.321, top 20% 0.220, top 33% 0.148. Against `occ_v2`: top 20% +0.082 [+0.043, +0.117], AP +0.259 [+0.161, +0.358] (paired bootstrap, 2,000 resamples within streets). Streets with more / equal / fewer blocked crops in the top 20% than `occ_v2`: 6 / 3 / 1.
+  - The other logistic selectors (CLIP B/16, CLIP L/14, SigLIP B/16) also beat `occ_v2` with intervals above 0 (+0.059 to +0.063). No zero-shot scorer does.
+  - Inner CV chose C = 0.001 (the lower edge of the grid) in nearly every fold. The grid was not changed after the run.
+- **Decision (rule fixed before the run):** `lr_dinov2_b14` replaces `occ_v2`. DINOv2 was chosen among four encoders on the same data, so its own numbers are slightly optimistic.
+- **`22_enrichment_simulation.py --enc dinov2_b14`**, 300 rounds, 20% of the pool labelled (112 crops on average): blocked crops picked: random 6.4, 70/30 rule 19.7, top 22.3. AP of a linear probe on held-out train streets against random: 70/30 +0.014 ± 0.005, top +0.019 ± 0.005, whole pool +0.030 ± 0.005. Rounds reuse the same 10 streets, so the intervals are too narrow. Fixed two pandas-to-numpy masks before the run.
+- **Pool size:** hit rate of the 70/30 rule at 10% / 20% / 36% of the pool: 0.282 / 0.202 / 0.132.
+- **New: `src/collection/23_collect_train_extra.py`, `configs/streets_train_extra.yaml`** (10 candidate streets, `status: proposed`; `streets_v1.yaml` unchanged). Guard tested: `Nguyễn Đình Chiểu#1` is refused.
+  - `--all`: 1,127 panos on 611 positions (15 positions within 40 m of a val/test pano and 3 already used were dropped); 1 night pano, no duplicates; 1,126 crops scored by `lr_dinov2_b14_C0.001` fitted on 1,989 train crops (120 blocked).
+  - Selection: 400 crops = 280 by score (at most 70 per street; largest share 42) + 120 random. Written to `data/manifest/train_extra_v1.csv` (`phase=train_extra`, `stratum`, `score`, `selector`, `streets_status=proposed`). Sheet: `docs/figures/train_extra_v1_sheet.jpg`.
+  - Timing: 1,127 panos in 246 s; DINOv2 on 1,066 crops about 16 s with model load; SegFormer-B5 on 1,839 crops 167 s.
+- **Old pipeline:** the `--all` selection of `16_train_extra_preview.py` was removed (preview kept); `17_check_scorer_pilot.py` is marked superseded and was never run.
+- **Not done / not verified:** nothing was uploaded to Label Studio; no human label exists on the new streets, so the hit rate there is unknown; the street list and the 400 crops are proposals for the team.

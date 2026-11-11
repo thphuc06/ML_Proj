@@ -1,4 +1,6 @@
-"""Exploratory: does occ_v2 (src/seg_measures.py) rank blocked crops better than occ_v1? Reference = the five pilot votes.
+"""SUPERSEDED 2026-11-11 by src/analysis/21_selector_benchmark.py, which compares occ_v1, occ_v2 and the embedding
+selectors on all 1,839 main-phase train labels; this script was never run and is kept as a record only.
+Exploratory: does occ_v2 (src/seg_measures.py) rank blocked crops better than occ_v1? Reference = the five pilot votes.
 Rebuilds the 150 pilot_v2 crops from their panos (manifest yaw), segments them (masks cached), then on items with
 >= 3 votes 0/1: AUC of each score for majority blocked (n1 > n0) with bootstrap 95% CI, and the blocked share in the
 top third by score among crops with near_y >= 0.60. occ_v1 should reproduce 14_rule_check.py (AUC about 0.75).

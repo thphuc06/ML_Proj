@@ -1,6 +1,6 @@
 """Shared helpers for train enrichment (docs/data_enrichment.md): rebuild crops from Mapillary panos, frozen image
 embeddings, and the selector (logistic regression on embeddings). Selector scores choose which crops people label;
-they are never labels. Used by src/analysis/21_selector_benchmark.py and src/collection/22_collect_train_extra.py."""
+they are never labels. Used by src/analysis/21_selector_benchmark.py and src/collection/23_collect_train_extra.py."""
 import os
 import threading
 from collections import defaultdict
@@ -82,10 +82,11 @@ def embed(name, paths, batch=32, log=None):
     return np.concatenate(out).astype(np.float32)
 
 
-def cached_embed(name, items, paths, log=None):
-    """embed() with a per-encoder cache keyed by item code (data/raw/embeddings/<name>.npz, not in git)."""
+def cached_embed(name, items, paths, log=None, cache=""):
+    """embed() with a per-encoder cache keyed by item code (data/raw/embeddings/<name><cache>.npz, not in git).
+    cache = suffix for a separate file (e.g. "_train_extra" for unlabelled candidates)."""
     EMB.mkdir(parents=True, exist_ok=True)
-    f = EMB / f"{name}.npz"
+    f = EMB / f"{name}{cache}.npz"
     have = dict(zip(*(lambda z: (z["items"], z["emb"]))(np.load(f, allow_pickle=False)))) if f.exists() else {}
     todo = [(i, p) for i, p in zip(items, paths) if i not in have]
     if todo:

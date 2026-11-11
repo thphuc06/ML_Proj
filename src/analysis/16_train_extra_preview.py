@@ -1,8 +1,10 @@
 """Exploratory: train enrichment preview (runs locally; nothing goes to Label Studio and no score here is a label).
 Extra right crops from OTHER capture days at the train positions of main_v1, ranked by parked-vehicle occupancy so that
 labelling effort finds more blocked sidewalks. Val and test are never touched.
-Decision 2026-11-04 (docs/data_enrichment.md): this pool is not used. Enrichment waits for the first labelling round and
-will draw from NEW train streets; this script stays as the record of the preview and as the base for that script.
+Decision 2026-11-04 (docs/data_enrichment.md): this pool is not used. Enrichment draws from NEW train streets.
+2026-11-11: the occupancy ranking lost to the embedding selector on the train labels (21_selector_benchmark.py), so the
+selection mode (--all, which wrote data/manifest/train_extra_v1.csv) was removed. Selection now lives in
+src/collection/23_collect_train_extra.py; this script stays as the record of the 2026-11-04 preview only.
 1. Mapillary pano metadata only for the 0.001-deg cells within ~40 m of a train main_v1 pano (cached parquet).
 2. Travel bearing as in 03 (images 2 before / 2 after in the sequence). A pano is a candidate for a main position when
    it is <= 15 m from a main pano of that position, travels the SAME way (<= 30 deg, so it sees the same sidewalk),
@@ -12,13 +14,10 @@ will draw from NEW train streets; this script stays as the record of the preview
 3. Download -> night filter -> right_crop, plus the paired main crop rebuilt from its manifest yaw. 64-bit dHash of
    both crops: near duplicate when Hamming <= DUP_BITS. Panos, crops and SegFormer masks are cached, so a run resumes.
 4. src/seg_measures.py (SegFormer-B5 Cityscapes; GPU when available) -> near_y, occ_v1, occ_v2.
-5. Ranking = --score (occ_v2 by default) among crops with near_y >= VIS.
+5. Ranking by occ_v1 and occ_v2 among crops with near_y >= VIS.
    --sample: sheet of the v2 top, the v1 top that v2 dropped, and random crops, each beside the main crop of its position.
-   --all:    selection of N_LABEL crops = TOP_SHARE by rank (at most STREET_CAP of them per street) + the rest at random
-             among all usable crops; written to data/manifest/train_extra_v1.csv with the stratum of each crop.
-Usage: python src/analysis/16_train_extra_preview.py --dry | --sample 80 | --all
-Outputs: data/crops/train_extra/, data/streets/train_extra_preview_scores.csv, data/crops/train_extra_sheet.jpg
-         (--all also data/manifest/train_extra_v1.csv)"""
+Usage: python src/analysis/16_train_extra_preview.py --dry | --sample 80
+Outputs: data/crops/train_extra/, data/streets/train_extra_preview_scores.csv, data/crops/train_extra_sheet.jpg"""
 import sys
 from pathlib import Path
 
@@ -27,7 +26,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # src/ holds commo
 import argparse
 import concurrent.futures as cf
 import os
-import secrets
 import threading
 import time
 from collections import defaultdict
@@ -44,12 +42,9 @@ ap = argparse.ArgumentParser()
 mode = ap.add_mutually_exclusive_group(required=True)
 mode.add_argument("--dry", action="store_true", help="metadata and pool counts only")
 mode.add_argument("--sample", type=int, help="random candidates spread over streets (small preview)")
-mode.add_argument("--all", action="store_true", help="whole candidate pool, writes the selection")
-ap.add_argument("--score", choices=["occ_v1", "occ_v2"], default="occ_v2", help="ranking score (17_check_scorer_pilot.py decides)")
 A = ap.parse_args()
 
 STEP, PAD, POS_M, AXIS_DEG, DUP_BITS, VIS = 0.001, 0.0004, 15, 30, 10, 0.60
-N_LABEL, TOP_SHARE, STREET_CAP = 400, 0.7, 0.25
 FIELDS = "id,captured_at,compass_angle,computed_compass_angle,computed_geometry,sequence,creator"
 MAN, PANO, OUT = DATA / "manifest", DATA / "raw" / "pano", DATA / "crops" / "train_extra"
 for d in (PANO, OUT / "main", OUT / "seg"):
@@ -153,7 +148,7 @@ if A.dry:
     raise SystemExit
 
 # ---- 3. download, crop, near-duplicate check (all cached)
-pick = c if A.all else pd.concat([g.sample(min(len(g), A.sample // len(pool)), random_state=rng) for _, g in c.groupby("street_id")])
+pick = pd.concat([g.sample(min(len(g), A.sample // len(pool)), random_state=rng) for _, g in c.groupby("street_id")])
 locks = defaultdict(threading.Lock)  # several candidates share one main pano: never read a half-written file
 
 
@@ -225,32 +220,12 @@ ok["rank_v1"] = ok.occ_v1.where(vis).rank(ascending=False, method="first")
 print(f"near_y >= {VIS}: {vis.mean():.0%} of {len(ok)} crops | occ_v1 > 0: {(ok.occ_v1 > 0).mean():.0%},"
       f" occ_v2 > 0: {(ok.occ_v2 > 0).mean():.0%}")
 
-# ---- 5a. --all: selection for labelling (not uploaded anywhere)
-ok["stratum"] = ""
-if A.all:
-    n_top, per_street, top = int(N_LABEL * TOP_SHARE), int(N_LABEL * TOP_SHARE * STREET_CAP), []
-    for k in ok[vis].sort_values("rank_v2" if A.score == "occ_v2" else "rank_v1").index:
-        if len(top) < n_top and (ok.loc[top, "street_id"] == ok.street_id[k]).sum() < per_street:
-            top.append(k)
-    ok.loc[top, "stratum"] = f"top_{A.score}"
-    rest = ok[ok.stratum == ""]
-    ok.loc[rest.sample(min(N_LABEL - len(top), len(rest)), random_state=rng).index, "stratum"] = "random"
-    sel = ok[ok.stratum != ""].assign(
-        item=lambda d: [secrets.token_hex(4) for _ in range(len(d))], side="R", split="train", phase="train_extra",
-        source="mapillary", licence="CC BY-SA 4.0", mapillary_url=lambda d: "https://www.mapillary.com/app/?pKey=" + d.id)
-    sel.rename(columns={"id": "parent_pano_id"})[
-        ["item", "parent_pano_id", "side", "street_id", "split", "position_group", "lat", "lon", "captured", "creator",
-         "sequence", "travel_bearing", "stratum", "near_y", "occ_v1", "occ_v2", "main_item", "source", "licence", "mapillary_url", "phase"]
-    ].round(4).to_csv(MAN / "train_extra_v1.csv", index=False, encoding="utf-8-sig")
-    print("selection ->", MAN / "train_extra_v1.csv", sel.stratum.value_counts().to_dict())
-    print(sel.groupby(["street_id", "stratum"]).size().unstack(fill_value=0).to_string())
-
-pick.drop(columns=["main_k"]).merge(ok[["id", "near_y", "occ_v1", "occ_v2", "n_v2", "rank_v1", "rank_v2", "stratum"]], on="id", how="left")[
+pick.drop(columns=["main_k"]).merge(ok[["id", "near_y", "occ_v1", "occ_v2", "n_v2", "rank_v1", "rank_v2"]], on="id", how="left")[
     ["id", "street_id", "position_group", "day", "main_item", "main_day", "dist_main", "status", "brightness", "dhash_bits",
-     "near_y", "occ_v1", "occ_v2", "n_v2", "rank_v1", "rank_v2", "stratum", "creator"]
+     "near_y", "occ_v1", "occ_v2", "n_v2", "rank_v1", "rank_v2", "creator"]
 ].round(3).to_csv(DATA / "streets" / "train_extra_preview_scores.csv", index=False, encoding="utf-8-sig")
 
-# ---- 5b. sheet: v2 top, v1 top dropped by v2, random
+# ---- 5. sheet: v2 top, v1 top dropped by v2, random
 K, DROP, RAND = 10, 4, 6
 top2 = ok[ok.rank_v2 <= K].sort_values("rank_v2")
 gone = ok[(ok.rank_v1 <= K) & ~ok.index.isin(top2.index)].sort_values("rank_v1").head(DROP)
