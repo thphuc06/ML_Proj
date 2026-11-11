@@ -132,3 +132,45 @@ Question: the blocked class may be too small. Can more blocked crops be found fo
 - **Not validated:** `src/analysis/17_check_scorer_pilot.py` (paired bootstrap of AUC v2 − v1 on the pilot votes) is written but not run. The v2 rules were set after viewing the preview sheet.
 - **Decision (team):** do not use this pool. Enrichment waits for the first labelling round and will come from new train streets (not other components of val/test streets), with a selector trained on first-round labels if it beats the occupancy scores on the pilot. Nothing was added to the manifests or Label Studio.
 - `requirements.txt`: added scipy (already needed by `14_rule_check.py`).
+
+## 2026-11-11 — Main labelling done (`src/labeling/19_main_agreement.py`, report `data/labels/main_report/main_report.md`)
+
+**Data:** 5 annotators × 887 tasks = 4,435 annotations on 2,999 items, none missing. Three tasks were saved twice with the same label; the latest is kept. All MAIN projects ran the v1 interface, and no v0 reason is left.
+
+**Agreement (Cohen κ, 3-way 0/1/I)**
+- Test, Hoc–Loan, 674 items: **0.60**, raw 79%, binary κ 0.68 on 418 items.
+- Val, Minh–Khai, 486 items: **0.64**, raw 80%, binary κ 0.55 on 211 items.
+- Train cross-check, 276 items over 10 pairs: **0.61**, raw 78%. Pairs have 12–48 items, so per-pair values are noisy.
+- Disagreements by type: 0/I 193, 0/1 59, 1/I 51. Most disagreement is about eligibility, not the 0/1 boundary.
+
+**Provisional labels** (agreed or single; 303 open)
+- 0 = 1,460, 1 = 145, I = 1,091, open = 303 (test 143, val 99, train 61).
+- Blocked per split before adjudication: train 98 (at most 121 if every open item with a 1 vote went to 1), val 16 (≤ 54), test 31 (≤ 80).
+- Blocked share among usable items is about 9%, half the pilot's 19%. The pilot was stratified by PoC score towards blocked-looking items; the main set is not.
+- Insufficient share 36% overall. By street: Pasteur 81%, Hải Thượng Lãn Ông 57%, Điện Biên Phủ#1 54%, Trần Phú 53%, Lê Văn Sỹ 13%.
+
+**Labelling behaviour**
+- Median seconds per image: Hoc 2.1, Minh 2.3, Khai 3.4, Loan 5.9, Phuc 7.5. Labels under 2 s agree with the partner *more* often (test Hoc 82% vs 76%, val Minh 89% vs 73%), so fast labels mark easy images, not careless work.
+- Blocked without an obstacle tag: Phuc 10/52, Loan 6/53, Khai 3/74, Hoc 0/88, Minh 0/45.
+- Notes: 1. Difficult flag: Minh 12%, Phuc 4%, others 0%.
+
+**Next:** adjudicate the 303 open items (Phuc), recount blocked per split, decide on the test streets if test has fewer than about 60 blocked items, then enrich train (`docs/data_enrichment.md`).
+
+## 2026-11-11 — Adjudication proposal for the 303 disagreements (`data/labels/main_report/adjudication_proposal.csv`)
+
+- Phuc confirmed guide v1 as written, including the "(chờ họp)" proposals: far obstacles count only up to about mid-image; no straight path means blocked; people do not count; cars are obstacles like any other.
+- Claude looked at every item **blind** (only a number on the tile, no votes), 12 per sheet at 490 px with the 3/5 line drawn, and wrote a label and a reason. Then Claude compared the labels with the votes. On 21 items the label differed from both votes, so Claude looked again at 640 px with the votes shown, and changed 10 of them.
+- Result: 0 = 96, 1 = 29, I = 178. 17 items are marked unsure; 11 differ from both votes. Agreement with each annotator's vote on these items: Loan 96/156, Minh 82/119, Phuc 26/43, Hoc 56/165, Khai 32/123. These are hard items by construction, so the rates do not rate the annotators.
+- Most 0/I splits went to I (141 of 193): far sidewalk, intersections, alley mouths and riders next to the camera. When the curb did reach below the 3/5 line and the strip was clear, the item went to 0.
+- These are **proposals, not final labels**. Phuc reviews `sheets/adjudication_proposal_*.jpg` and writes any override in the `phuc` column; `19_main_agreement.py` then uses `phuc` where given, else `proposed`.
+- If every proposal is accepted: blocked train 102 / val 28 / test 44; usable (0/1) 1,042 / 235 / 453; blocked share about 10%. **Test is below the ~60 positives mark** set in `docs/data_enrichment.md`.
+- Train enrichment is postponed (Phuc's decision).
+
+## 2026-11-11 — Adjudication closed; final labels v1 (`data/labels/main_labels_v1.csv`)
+
+- Phuc reviewed all 303 proposal tiles and overrode 28 (9.2%): I→0 12, 0→1 11, I→1 4, 1→0 1. Every override equals one of the two original votes. Phuc overrode 1 of the 17 items Claude marked unsure. (Tile 12, goods covering the sidewalk, was first set to 0 and then returned to the proposal, 1, under guide v1.)
+- Final labels on the 303 items: 0 = 98, 1 = 43, I = 162.
+- Final table, all 2,999 items: 0 = 1,558, 1 = 188, I = 1,253. Sources: agreed 1,133, single 1,563, adjudicated (proposal kept) 275, adjudicated (Phuc's label) 28.
+- Usable (0/1) by split: train 1,045 (106 blocked, 10.1%), val 242 (35, 14.5%), test 459 (47, 10.2%).
+- Phuc was one of the two annotators on 43 of the 303 items; the final label equals Phuc's vote on 27 of them (the blind proposal matched 26).
+- Label Studio keeps each annotator's original votes; final labels live in the repo only. Summary for the report: `docs/labeling_phase1.md`.

@@ -11,6 +11,8 @@ Công cụ: Label Studio Community, tự host (xem [infra/README.md](../infra/RE
 5. **Gán chính thức** (`MAIN_<tên>`): mỗi người 887 ảnh, trộn lẫn các tập.
 6. **Phân xử** các ảnh bất đồng, rồi khóa nhãn và khóa tập test.
 
+**Trạng thái 11/11/2026:** bước 5 và bước 6 đã xong, nhãn cuối ở [main_labels_v1.csv](../data/labels/main_labels_v1.csv), tổng kết ở [labeling_phase1.md](../docs/labeling_phase1.md). Chi tiết bước 5 (5×887 lượt, κ test 0,60, val 0,64, train gán chéo 0,61). Đang ở bước 6: 303 ảnh bất đồng. Claude đã đề xuất nhãn bằng mắt ([adjudication_proposal.csv](../data/labels/main_report/adjudication_proposal.csv)), Phúc duyệt: ảnh nào không đồng ý thì ghi nhãn vào cột `phuc`, rồi chạy lại `19_main_agreement.py` ([báo cáo](../data/labels/main_report/main_report.md), [danh sách](../data/labels/main_report/main_adjudicate.csv)). Tấm ảnh để xem: `python src/labeling/20_review_sheets.py --fetch`, lưu ở `data/labels/main_report/sheets/` (không đưa lên git).
+
 ## Phân công gán chính thức
 
 | Tập | Số ảnh | Người gán |
@@ -42,3 +44,6 @@ Chi tiết từng ảnh: [data/manifest/main_v1_assignment.csv](../data/manifest
 | `src/labeling/06_ls_create_pilot.py` | Tạo project `PILOT_*` |
 | `src/labeling/07_pilot_agreement.py` | Kéo nhãn, tính κ, tạo tấm ảnh bất đồng |
 | `src/labeling/12_ls_create_main.py` | Phân công và tạo project `MAIN_*` |
+| `src/labeling/18_ls_update_main_v1.py` | Chuyển project `MAIN_*` sang giao diện v1, đổi lý do kiểu v0 sang v1 |
+| `src/labeling/19_main_agreement.py` | Kéo nhãn bộ chính (chỉ đọc), tính κ theo cặp, lập danh sách phân xử |
+| `src/labeling/20_review_sheets.py` | Tấm ảnh các ca bất đồng, hoặc tấm ảnh nhãn đề xuất để đối chiếu bằng mắt |

@@ -1,0 +1,304 @@
+﻿tile,item,split,street_id,annotator1,label1,annotator2,label2,proposed,phuc,matches,unsure,why,sheet
+0,28135893,test,Nơ Trang Long,Hoc,0,Loan,I,1,0,khác cả hai,False,xe máy đậu và biển quán phủ kín vỉa hè trước quán,adjudication_proposal_01.jpg
+1,456bb807,test,Hai Bà Trưng,Hoc,1,Loan,I,1,,Hoc,False,biển hiệu và xe đậu và quầy nước mía chiếm hết bề ngang,adjudication_proposal_01.jpg
+2,4b75c401,test,Hai Bà Trưng,Hoc,0,Loan,1,1,,Loan,False,biển quảng cáo trên khung bánh xe chắn ngang vỉa hè,adjudication_proposal_01.jpg
+3,580ebe77,test,Lý Thường Kiệt,Hoc,1,Loan,I,1,,Hoc,False,thùng và xe đẩy và hàng kim khí chiếm hết bề ngang,adjudication_proposal_01.jpg
+4,85c48d4c,test,Lý Thường Kiệt,Hoc,1,Loan,0,1,,Hoc,False,tiệm sửa xe bày đồ và xe ra hết vỉa hè,adjudication_proposal_01.jpg
+5,937b7f40,test,Lý Thường Kiệt,Hoc,0,Loan,I,1,,khác cả hai,True,xe đẩy hàng và bồn cây chiếm bề ngang (không chắc),adjudication_proposal_01.jpg
+6,96c2f86d,test,Nơ Trang Long,Hoc,1,Loan,I,1,,Hoc,False,xe máy đậu dày ra gần mép,adjudication_proposal_01.jpg
+7,a5110d34,test,Nơ Trang Long,Hoc,0,Loan,1,1,,Loan,False,xe đậu ra tới mép vỉa hè,adjudication_proposal_01.jpg
+8,b476f215,test,Trần Phú,Hoc,1,Loan,I,1,,Hoc,True,xe đẩy rác đậu trên vỉa hè chắn lối (không chắc; ảnh tối),adjudication_proposal_01.jpg
+9,be72a687,test,Hai Bà Trưng,Hoc,1,Loan,I,1,,Hoc,False,xe máy đậu kín vỉa hè,adjudication_proposal_01.jpg
+10,dc71a73b,test,Hai Bà Trưng,Hoc,0,Loan,1,1,,Loan,False,xe đậu kín tới gần mép; cột và tủ điện chắn dải còn lại,adjudication_proposal_01.jpg
+11,e622cfc8,test,Lý Thường Kiệt,Hoc,1,Loan,I,1,,Hoc,False,ghế nhựa và bàn quán xếp kín ra tới mép,adjudication_proposal_01.jpg
+12,fa45f21a,test,Lý Thường Kiệt,Hoc,0,Loan,1,1,,Loan,False,hàng (nồi xoong) bày gần hết bề ngang,adjudication_proposal_01.jpg
+13,0df092bc,train,Nguyễn Trãi,Phuc,1,Minh,I,1,,Phuc,False,xe rác và sạp và ghế nhựa chiếm vỉa hè,adjudication_proposal_01.jpg
+14,6512e65c,train,Nguyễn Kiệm#0,Khai,1,Loan,I,1,,Khai,False,xe máy đậu và bao tải và cột điện chiếm hết bề ngang,adjudication_proposal_01.jpg
+15,90b5ed5a,train,Nguyễn Kiệm#0,Phuc,1,Loan,0,1,,Phuc,True,quầy hàng ở giữa và xe đậu sát mép (không chắc),adjudication_proposal_01.jpg
+16,b25ef655,train,Trần Hưng Đạo,Hoc,1,Minh,0,1,,Hoc,True,cây vải và xe đậu chiếm bề ngang (không chắc),adjudication_proposal_01.jpg
+17,048ef1c6,val,Hồng Bàng,Minh,1,Khai,I,1,,Minh,False,xe hàng và ghế nhựa rải kín phần lát sau bồn cây,adjudication_proposal_01.jpg
+18,25b7accc,val,Hồng Bàng,Minh,1,Khai,I,1,,Minh,False,hàng lồng đèn bày kín vỉa hè,adjudication_proposal_01.jpg
+19,2aa956ef,val,Nguyễn Đình Chiểu#0,Minh,0,Khai,1,1,,Khai,False,xe máy đậu vuông góc ra tới mép và hàng bên trái,adjudication_proposal_01.jpg
+20,2cfe6acc,val,Võ Văn Tần,Minh,I,Khai,1,1,,Khai,False,ô tô đậu kín phần vỉa hè trước tòa nhà,adjudication_proposal_01.jpg
+21,4182f0b4,val,Hồng Bàng,Minh,0,Khai,1,1,,Khai,False,xe trưng bày xếp kín gần tới mép,adjudication_proposal_01.jpg
+22,5558fff8,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,1,1,,Khai,False,sạp trái cây và bồn cây và xe đậu chiếm hết bề ngang,adjudication_proposal_01.jpg
+23,63fe07fc,val,Hồng Bàng,Minh,0,Khai,1,1,,Khai,False,xe đậu và ghế ngồi và xe sát camera chiếm hết bề ngang,adjudication_proposal_01.jpg
+24,68e7ebdb,val,Võ Văn Tần,Minh,1,Khai,0,1,,Minh,False,bàn ghế quán ăn phủ kín,adjudication_proposal_01.jpg
+25,777ec20f,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,1,,khác cả hai,False,xe máy đậu kín vỉa hè,adjudication_proposal_01.jpg
+26,7d4c80f3,val,Võ Văn Tần,Minh,I,Khai,1,1,,Khai,False,sạp dừa sát mép dính liền dãy xe đậu; không còn khe đi (ảnh tối) [xem lại],adjudication_proposal_01.jpg
+27,9d673c95,val,Hồng Bàng,Minh,1,Khai,I,1,,Minh,False,rào công trình chắn hết vỉa hè,adjudication_proposal_01.jpg
+28,e32e32b1,val,Nguyễn Đình Chiểu#0,Minh,1,Khai,0,1,,Minh,True,bàn ghế quán và xe máy chiếm phần lớn vỉa hè (không chắc),adjudication_proposal_01.jpg
+29,0c6b0875,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,dải cỏ và cây gần; lối lát phía sau trống,adjudication_proposal_01.jpg
+30,1cb7e1f0,test,Trần Phú,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè trống; xe hàng sát nhà,adjudication_proposal_02.jpg
+31,20e00267,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,lối đi dọc hàng rào; người đi bộ không tính,adjudication_proposal_02.jpg
+32,2831a61e,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,gốc cây sát mép; lối lát trống; xe đạp đang chạy không tính,adjudication_proposal_02.jpg
+33,2a857540,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,True,hàng bày trên dải sát mép nhưng lối lát phía sau bồn cây vẫn đi được (không chắc) [xem lại],adjudication_proposal_02.jpg
+34,2ce0d7e9,test,Lý Thường Kiệt,Hoc,1,Loan,0,0,,Loan,False,vỉa hè rộng; bàn quán quanh gốc cây nhưng còn chỗ đi,adjudication_proposal_02.jpg
+35,2d59fc5f,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,dải cỏ gần; lối lát phía sau trống,adjudication_proposal_02.jpg
+36,2e0ebcea,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,dải cỏ gần; lối lát trống; giá hàng sát nhà,adjudication_proposal_02.jpg
+37,2e7f1216,test,Hai Bà Trưng,Hoc,1,Loan,0,0,,Loan,False,bồn cây và xe đậu sát nhà; dải sát mép trống,adjudication_proposal_02.jpg
+38,2fdddd38,test,Hai Bà Trưng,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè rộng trống; chậu cây sát mép,adjudication_proposal_02.jpg
+39,38488cfc,test,Hai Bà Trưng,Hoc,0,Loan,I,0,,Hoc,False,xe đậu thành hàng một bên; còn dải đi (ảnh hơi cháy sáng),adjudication_proposal_02.jpg
+40,3bf5a27d,test,Nơ Trang Long,Hoc,1,Loan,0,0,,Loan,False,xe đậu thành hàng sát nhà; dải gạch phía ngoài rộng,adjudication_proposal_02.jpg
+41,408fae13,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,dải cỏ gần; ghế nhựa sát nhà; lối lát trống,adjudication_proposal_02.jpg
+42,44941d16,test,Trần Phú,Hoc,0,Loan,1,0,1,Hoc,False,vỉa hè gạch rộng; tủ điện và sạp nhưng dải trước tủ điện còn đi được [xem lại],adjudication_proposal_02.jpg
+43,477f9610,test,Hai Bà Trưng,Hoc,0,Loan,1,0,,Hoc,False,xe và sạp sát mặt tiền; người đứng không tính; còn dải đi,adjudication_proposal_02.jpg
+44,4f8da0c6,test,Nơ Trang Long,Hoc,0,Loan,1,0,,Hoc,False,xe đậu sát nhà; dải sát mép trống,adjudication_proposal_02.jpg
+45,5892ecf9,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,dải cỏ gần; lối lát trống trước dãy cửa cuốn,adjudication_proposal_02.jpg
+46,5c12311d,test,Nơ Trang Long,Hoc,0,Loan,1,0,,Hoc,False,vỉa hè gạch bên phải thấy rõ dưới vạch và còn trống [xem lại],adjudication_proposal_02.jpg
+47,5fe3283d,test,Nơ Trang Long,Hoc,0,Loan,I,0,,Hoc,False,xe tải đậu dưới lòng đường; vỉa hè lát gạch còn trống,adjudication_proposal_02.jpg
+48,6967649c,test,Nơ Trang Long,Hoc,1,Loan,I,0,,khác cả hai,True,khoảng lát rộng; ô tô đậu một phía nhưng còn chỗ đi (không chắc),adjudication_proposal_02.jpg
+49,6f03de2b,test,Hai Bà Trưng,Hoc,0,Loan,I,0,,Hoc,False,dải lát gạch cạnh bồn cây còn trống,adjudication_proposal_02.jpg
+50,70faad63,test,Trần Phú,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè lát gạch rộng; xe đậu sát nhà,adjudication_proposal_02.jpg
+51,84d5c119,test,Hai Bà Trưng,Hoc,0,Loan,I,0,,Hoc,False,biển chữ A và xe nhưng vỉa hè rộng còn dải đi,adjudication_proposal_02.jpg
+52,87c47115,test,Hai Bà Trưng,Hoc,1,Loan,0,0,,Loan,False,xe đậu hai bên; người đang chạy xe lên vỉa hè không tính; còn dải giữa,adjudication_proposal_02.jpg
+53,89ff6f51,test,Lý Thường Kiệt,Hoc,1,Loan,0,0,,Loan,False,xe và cuộn ống sát nhà; dải gạch sát mép trống,adjudication_proposal_02.jpg
+54,8e79e65b,test,Nơ Trang Long,Hoc,0,Loan,1,0,,Hoc,False,vỉa hè rộng trống; xe đậu một bên,adjudication_proposal_02.jpg
+55,93c2bd64,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè rộng; xe đẩy và người ở giữa nhưng còn đi vòng phía trong,adjudication_proposal_02.jpg
+56,943ea4b7,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè rộng bê tông trống,adjudication_proposal_02.jpg
+57,98de72d8,test,Hai Bà Trưng,Hoc,0,Loan,1,0,,Hoc,True,xe đậu sát nhà; người đứng không tính; mép vỉa hè sát vạch 3/5 (không chắc),adjudication_proposal_02.jpg
+58,9b334b6d,test,Nơ Trang Long,Hoc,1,Loan,0,0,,Loan,False,vỉa hè gạch trống; sạp dù sát nhà,adjudication_proposal_02.jpg
+59,a31de43e,test,Nơ Trang Long,Hoc,0,Loan,I,0,,Hoc,True,trạm xe buýt; người đứng/ngồi không tính; còn dải đi (không chắc),adjudication_proposal_02.jpg
+60,afb751f8,test,Trần Phú,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè lát gạch rộng trống,adjudication_proposal_03.jpg
+61,b8529dc5,test,Trần Phú,Hoc,1,Loan,0,0,,Loan,False,tranh và thùng sát shop; dải gạch sát mép trống,adjudication_proposal_03.jpg
+62,b950e563,test,Hai Bà Trưng,Hoc,0,Loan,I,0,,Hoc,False,dải cây xanh gần; lối lát gạch phía sau trống,adjudication_proposal_03.jpg
+63,bba8d90a,test,Nơ Trang Long,Hoc,0,Loan,I,0,,Hoc,False,cột chắn có xích dọc mép; lối lát bên trong trống,adjudication_proposal_03.jpg
+64,bc8f49e5,test,Hai Bà Trưng,Hoc,0,Loan,1,0,1,Hoc,False,xe đậu sát nhà; dải giữa trống,adjudication_proposal_03.jpg
+65,bcc47994,test,Nơ Trang Long,Hoc,1,Loan,0,0,1,Loan,False,xe đậu kín phía trong; dải gạch sát mép còn trống,adjudication_proposal_03.jpg
+66,c16afd98,test,Hai Bà Trưng,Hoc,1,Loan,0,0,,Loan,False,vỉa hè rộng trống,adjudication_proposal_03.jpg
+67,c7f8f2ad,test,Trần Phú,Hoc,0,Loan,1,0,,Hoc,False,vỉa hè rộng; ô dù quán sát nhà; phần gần trống,adjudication_proposal_03.jpg
+68,d6e4b6ae,test,Hai Bà Trưng,Hoc,0,Loan,I,0,,Hoc,False,dải cây gần; lối lát dọc tường phía sau trống,adjudication_proposal_03.jpg
+69,d969efc4,test,Hai Bà Trưng,Hoc,1,Loan,0,0,,Loan,True,ma-nơ-canh và thùng hàng sát shop; còn dải phía ngoài (không chắc),adjudication_proposal_03.jpg
+70,dc532794,test,Lý Thường Kiệt,Hoc,1,Loan,I,0,,khác cả hai,False,gốc cây giữa vỉa hè nhưng còn chỗ đi vòng,adjudication_proposal_03.jpg
+71,e4a0f950,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè trống trước dãy cửa cuốn; mép xuống dưới vạch ở bên phải,adjudication_proposal_03.jpg
+72,e576137c,test,Lý Thường Kiệt,Hoc,0,Loan,1,0,,Hoc,False,vỉa hè rộng; dải sát mép đường trống quanh gốc cây,adjudication_proposal_03.jpg
+73,f1b61829,test,Lý Thường Kiệt,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè rộng; bồn cây sát mép; còn lối đi,adjudication_proposal_03.jpg
+74,f3cc5eb9,test,Trần Phú,Hoc,0,Loan,I,0,,Hoc,False,vỉa hè lát gạch trống; mép xuống dưới vạch ở bên phải,adjudication_proposal_03.jpg
+75,fd7735d6,test,Hai Bà Trưng,Hoc,0,Loan,I,0,,Hoc,False,lối lát dọc tường trống; dải cỏ gần,adjudication_proposal_03.jpg
+76,13edff9b,train,Lê Văn Sỹ,Hoc,0,Minh,1,0,1,Hoc,False,giá hàng chiếm một phần; dải gạch bên trái trống,adjudication_proposal_03.jpg
+77,191f49a0,train,Cách Mạng Tháng Tám#0,Minh,0,Khai,1,0,,Minh,False,vỉa hè lát gạch rộng; sạp và ghế sát phía trong,adjudication_proposal_03.jpg
+78,264cb7a5,train,Cách Mạng Tháng Tám#0,Phuc,I,Khai,0,0,,Khai,False,vỉa hè bê tông rộng hơn tưởng; khối phủ bạt sát tường; người đứng không tính [xem lại],adjudication_proposal_03.jpg
+79,399c9d69,train,Nguyễn Trãi,Loan,I,Khai,0,0,,Khai,False,vỉa hè rộng; xe nón ở giữa nhưng còn chỗ đi,adjudication_proposal_03.jpg
+80,53a4d4f9,train,Cách Mạng Tháng Tám#0,Minh,0,Hoc,1,0,,Minh,False,người đứng không tính; xe và biển sát nhà; dải sát mép trống,adjudication_proposal_03.jpg
+81,69ac2a6e,train,Trần Hưng Đạo,Phuc,0,Hoc,1,0,1,Phuc,False,xe đậu kín phía trong; còn dải gạch sát mép,adjudication_proposal_03.jpg
+82,70fd25bf,train,Nguyễn Thị Minh Khai,Phuc,1,Hoc,0,0,,Hoc,True,sạp quán quanh gốc cây; dải sát mép còn đi được (không chắc),adjudication_proposal_03.jpg
+83,74cd28a4,train,Điện Biên Phủ#1,Phuc,1,Hoc,0,0,,Hoc,False,vỉa hè rộng; giá quần áo sát gốc cây,adjudication_proposal_03.jpg
+84,7751d003,train,Lê Văn Sỹ,Khai,1,Phuc,0,0,,Phuc,False,vỉa hè gạch trống; xe đang chạy không tính,adjudication_proposal_03.jpg
+85,9130a5c1,train,Hải Thượng Lãn Ông,Minh,I,Hoc,0,0,,Hoc,True,ki-ốt hàng giữa vỉa hè nhưng còn khoảng rộng bên phải (không chắc),adjudication_proposal_03.jpg
+86,b467c19d,train,Hải Thượng Lãn Ông,Phuc,0,Hoc,1,0,,Phuc,False,giá hàng và lồng đèn chiếm một phần; dải gạch phía trái trống,adjudication_proposal_03.jpg
+87,d0ca14be,train,Cách Mạng Tháng Tám#0,Phuc,I,Khai,0,0,,Khai,False,chậu cây sát nhà; dải gạch bên trái trống,adjudication_proposal_03.jpg
+88,d110310c,train,Nguyễn Trãi,Phuc,I,Hoc,0,0,,Hoc,True,thùng rác và tủ điện sát mép; dải gạch bên phải trống (không chắc),adjudication_proposal_03.jpg
+89,e99048b2,train,Cách Mạng Tháng Tám#0,Phuc,I,Khai,0,0,,Khai,False,vỉa hè lát rộng; mặt hỏng nhưng trống,adjudication_proposal_03.jpg
+90,fd874270,train,Nguyễn Thị Minh Khai,Khai,I,Hoc,0,0,,Hoc,False,vỉa hè gạch rộng; xe đậu trước đền,adjudication_proposal_04.jpg
+91,ffd65c99,train,Phan Đăng Lưu,Phuc,I,Hoc,0,0,,Hoc,False,vỉa hè đất đang sửa nhưng rộng và trống,adjudication_proposal_04.jpg
+92,07dfa288,val,Võ Văn Tần,Minh,1,Khai,0,0,,Khai,False,vỉa hè trống; người đang đi không tính,adjudication_proposal_04.jpg
+93,09072443,val,Hồng Bàng,Minh,I,Khai,0,0,,Khai,False,vỉa hè gạch trống; cột điện sát mép,adjudication_proposal_04.jpg
+94,091287c2,val,Hồng Bàng,Minh,0,Khai,1,0,,Minh,False,xe đậu sát nhà; dải sát mép trống,adjudication_proposal_04.jpg
+95,16a5ded3,val,Hồng Bàng,Minh,I,Khai,0,0,,Khai,False,nắng chói một góc nhưng lối lát dọc hàng rào thấy rõ và trống,adjudication_proposal_04.jpg
+96,2405c398,val,Võ Văn Tần,Minh,0,Khai,I,0,,Minh,False,xe đậu và bồn cây phía trái; dải gạch bên phải trống,adjudication_proposal_04.jpg
+97,263b4f41,val,Hồng Bàng,Minh,0,Khai,1,0,1,Minh,False,ô tô đậu dưới đường; xe máy sát nhà; dải phía ngoài trống,adjudication_proposal_04.jpg
+98,2897ff35,val,Nguyễn Đình Chiểu#0,Minh,1,Khai,0,0,1,Khai,False,gốc cây và xe đậu cạnh; dải gạch bên phải còn đi được,adjudication_proposal_04.jpg
+99,33fd9360,val,Hồng Bàng,Minh,0,Khai,1,0,,Minh,False,vỉa hè rộng; xe đậu thưa,adjudication_proposal_04.jpg
+100,3b00c8ae,val,Võ Văn Tần,Minh,I,Khai,0,0,,Khai,False,ô tô dưới lòng đường; vỉa hè gạch rộng trống,adjudication_proposal_04.jpg
+101,42605362,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,0,,Khai,False,dải cỏ gần; lối lát dọc hàng rào trống,adjudication_proposal_04.jpg
+102,54eff26f,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,0,,Khai,False,dải cỏ gần; lối lát phía sau trống,adjudication_proposal_04.jpg
+103,58e4165d,val,Hồng Bàng,Minh,I,Khai,0,0,,Khai,False,vỉa hè gạch rộng; ô tô dưới lòng đường,adjudication_proposal_04.jpg
+104,5a9a27a2,val,Võ Văn Tần,Minh,0,Khai,I,0,,Minh,False,bàn ghế quán sát nhà; dải sát mép còn trống,adjudication_proposal_04.jpg
+105,63404134,val,Hồng Bàng,Minh,0,Khai,I,0,,Minh,False,vỉa hè rộng trước siêu thị trống,adjudication_proposal_04.jpg
+106,652cb19c,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,0,,Khai,False,cây và cột biển sát mép; còn khe đi; xe đạp dưới đường,adjudication_proposal_04.jpg
+107,7b636f99,val,Hồng Bàng,Minh,0,Khai,I,0,,Minh,False,vỉa hè rộng cạnh rào công trình; người đứng không tính,adjudication_proposal_04.jpg
+108,8920f0ec,val,Nguyễn Đình Chiểu#0,Minh,1,Khai,0,0,,Khai,False,ô tô đậu một phía; còn lối bên trái gốc cây,adjudication_proposal_04.jpg
+109,8df2b6a8,val,Hồng Bàng,Minh,0,Khai,1,0,1,Minh,False,tủ điện sát tường; dải gạch trống,adjudication_proposal_04.jpg
+110,984bddfa,val,Võ Văn Tần,Minh,I,Khai,0,0,,Khai,False,vỉa hè gạch dọc hàng rào trống,adjudication_proposal_04.jpg
+111,9c624b67,val,Hồng Bàng,Minh,0,Khai,1,0,,Minh,False,vỉa hè thấy dưới vạch; xe đậu sát nhà; còn lối đi [xem lại],adjudication_proposal_04.jpg
+112,b0235644,val,Võ Văn Tần,Minh,0,Khai,1,0,1,Minh,False,cột biển sát mép; xe bánh mì sát rào; giữa trống,adjudication_proposal_04.jpg
+113,b21e6744,val,Võ Văn Tần,Minh,0,Khai,1,0,,Minh,False,dải gạch bên trái tủ điện thấy rõ và trống [xem lại],adjudication_proposal_04.jpg
+114,be76d0a9,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,0,,Khai,True,xe dừng có người ngồi (đón học sinh) là tạm thời; còn lối đi (không chắc) [xem lại],adjudication_proposal_04.jpg
+115,c0090f08,val,Võ Văn Tần,Minh,0,Khai,1,0,,Minh,False,túi đồ và người ngồi sát nhà; dải giữa trống,adjudication_proposal_04.jpg
+116,c05e5617,val,Hồng Bàng,Minh,1,Khai,I,0,1,khác cả hai,False,thùng hàng sát mép; dải gạch bên phải trống,adjudication_proposal_04.jpg
+117,c374b635,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,0,,Khai,False,vỉa hè lát rộng trống,adjudication_proposal_04.jpg
+118,c96295f9,val,Hồng Bàng,Minh,1,Khai,0,0,,Khai,False,xe và ghế dưới mái hiên; dải gạch sát mép trống,adjudication_proposal_04.jpg
+119,dd98549e,val,Nguyễn Đình Chiểu#0,Minh,1,Khai,0,0,,Khai,True,ghế nhựa và xe đẩy rải rác; còn khe đi thẳng (không chắc),adjudication_proposal_04.jpg
+120,df923296,val,Hồng Bàng,Minh,0,Khai,1,0,,Minh,False,vỉa hè gạch rộng trống gần góc đường,adjudication_proposal_05.jpg
+121,eff2bcdf,val,Nguyễn Đình Chiểu#0,Minh,0,Khai,I,0,,Minh,False,vỉa hè gạch rộng trống,adjudication_proposal_05.jpg
+122,f48fc6a1,val,Võ Văn Tần,Minh,0,Khai,1,0,1,Minh,True,gốc cây lớn và bàn gỗ nhưng còn lối bên trái (không chắc),adjudication_proposal_05.jpg
+123,f7a6aa18,val,Nguyễn Đình Chiểu#0,Minh,0,Khai,1,0,,Minh,False,vỉa hè rộng; người đứng không tính,adjudication_proposal_05.jpg
+124,fb17cd15,val,Võ Văn Tần,Minh,I,Khai,1,0,,khác cả hai,False,vỉa hè gạch rộng trống,adjudication_proposal_05.jpg
+125,00d49193,test,Trần Phú,Hoc,1,Loan,I,I,,Loan,False,lòng đường; vỉa hè xa,adjudication_proposal_05.jpg
+126,0118dafe,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,lòng đường và cổng; vỉa hè xa,adjudication_proposal_05.jpg
+127,01308ebc,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,đường rộng; vỉa hè xa,adjudication_proposal_05.jpg
+128,01f40dbb,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,đầu hẻm,adjudication_proposal_05.jpg
+129,0516b586,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,xe van sát camera che; vỉa hè xa,adjudication_proposal_05.jpg
+130,05ac14ae,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,cây xăng,adjudication_proposal_05.jpg
+131,0924b20b,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,góc giao lộ,adjudication_proposal_05.jpg
+132,0dc16546,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,thảm cỏ; không có đoạn vỉa hè chạy dọc,adjudication_proposal_05.jpg
+133,0dc52c11,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,lối vào hầm xe như sân rộng; vỉa hè chỉ một đoạn nhỏ,adjudication_proposal_05.jpg
+134,1a77b87b,test,Hai Bà Trưng,Hoc,1,Loan,I,I,,Loan,False,camera sát mặt tiền; xe sát camera che; không thấy rõ đoạn vỉa hè chạy dọc [xem lại],adjudication_proposal_05.jpg
+135,1d35fa5f,test,Trần Phú,Hoc,I,Loan,0,I,,Hoc,False,xe sát camera; vỉa hè xa,adjudication_proposal_05.jpg
+136,22701503,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,giao lộ đầu khu phố,adjudication_proposal_05.jpg
+137,2ff42022,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,lòng đường; vỉa hè xa,adjudication_proposal_05.jpg
+138,34662237,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,cổng/lối vào và góc đường,adjudication_proposal_05.jpg
+139,35749762,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,góc giao lộ,adjudication_proposal_05.jpg
+140,377a9426,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,thảm cỏ công viên; không có lối lát dọc,adjudication_proposal_05.jpg
+141,3b0c3471,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,0,Loan,False,khoảng bê tông rộng; không thấy mép vỉa hè,adjudication_proposal_05.jpg
+142,3c0dc742,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,bồn cây che; không thấy rõ dải đi,adjudication_proposal_05.jpg
+143,3c2e93ca,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,cây xăng; xe chạy sát camera che,adjudication_proposal_05.jpg
+144,3e4bf966,test,Lý Thường Kiệt,Hoc,1,Loan,I,I,,Loan,False,luống hoa trên nền đất; không có lối lát,adjudication_proposal_05.jpg
+145,3e9f962f,test,Trần Phú,Hoc,0,Loan,I,I,0,Loan,False,vỉa hè nằm trên vạch 3/5,adjudication_proposal_05.jpg
+146,47b071c4,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,góc giao lộ,adjudication_proposal_05.jpg
+147,4d26ef6d,test,Trần Phú,Hoc,1,Loan,I,I,,Loan,False,lòng đường; vỉa hè xa,adjudication_proposal_05.jpg
+148,5d2e6735,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,xe sát camera; vỉa hè xa,adjudication_proposal_05.jpg
+149,5dadce76,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,dải cỏ công viên; ảnh nhòe; không thấy lối lát dọc,adjudication_proposal_05.jpg
+150,64eee134,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,góc giao lộ; bó vỉa cong,adjudication_proposal_06.jpg
+151,695fb3f6,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,đầu hẻm/góc đường,adjudication_proposal_06.jpg
+152,6b236bbb,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,vạch qua đường; góc giao lộ,adjudication_proposal_06.jpg
+153,6c5b59c0,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,dải cỏ và tủ điện; phía sau là bãi rộng,adjudication_proposal_06.jpg
+154,702010c9,test,Hai Bà Trưng,Hoc,1,Loan,I,I,,Loan,False,xe sát camera; vỉa hè xa,adjudication_proposal_06.jpg
+155,71dc2d73,test,Trần Phú,Hoc,I,Loan,0,I,,Hoc,False,giao lộ,adjudication_proposal_06.jpg
+156,73071e1a,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,khoảng bê tông rộng; không có đoạn vỉa hè chạy dọc,adjudication_proposal_06.jpg
+157,75f05f89,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,giao lộ có vạch qua đường,adjudication_proposal_06.jpg
+158,762e8da9,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,vỉa hè xa sát vạch 3/5,adjudication_proposal_06.jpg
+159,824c289f,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,cổng bệnh viện; xe sát camera che,adjudication_proposal_06.jpg
+160,827d560d,test,Trần Phú,Hoc,1,Loan,I,I,,Loan,False,lòng đường; vỉa hè xa,adjudication_proposal_06.jpg
+161,84cd8999,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,lối vào/đảo cỏ; giao lộ,adjudication_proposal_06.jpg
+162,85ad0f21,test,Trần Phú,Hoc,0,Loan,I,I,0,Loan,False,mép vỉa hè sát vạch 3/5; ô tô che bên trái,adjudication_proposal_06.jpg
+163,875caeb4,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,đầu hẻm,adjudication_proposal_06.jpg
+164,8a102610,test,Trần Phú,Hoc,1,Loan,I,I,,Loan,False,xe sát camera; vỉa hè xa,adjudication_proposal_06.jpg
+165,8c189375,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,xe chạy sát camera che quá nửa,adjudication_proposal_06.jpg
+166,8cf4dda4,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,lòng đường và đầu hẻm; vỉa hè xa,adjudication_proposal_06.jpg
+167,91b91c17,test,Lý Thường Kiệt,Hoc,1,Loan,I,I,,Loan,False,lối vào/góc đường; taxi và người đứng,adjudication_proposal_06.jpg
+168,95580a93,test,Hai Bà Trưng,Hoc,1,Loan,I,I,1,Loan,False,đám đông và xe sát camera che,adjudication_proposal_06.jpg
+169,95ef8a82,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,0,Loan,False,cây xăng,adjudication_proposal_06.jpg
+170,96a1b7f9,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,vỉa hè hẹp và xa; không xét được lối đi,adjudication_proposal_06.jpg
+171,9cb01146,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,vỉa hè xa; chỉ thấy một mẩu dưới vạch,adjudication_proposal_06.jpg
+172,9cff2c0f,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,vỉa hè xa sát vạch 3/5,adjudication_proposal_06.jpg
+173,a53850ec,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,lòng đường và bãi đỗ,adjudication_proposal_06.jpg
+174,ae556c74,test,Lý Thường Kiệt,Hoc,1,Loan,I,I,,Loan,False,đầu hẻm; khoảng bê tông,adjudication_proposal_06.jpg
+175,afdf5c0a,test,Trần Phú,Hoc,1,Loan,I,I,,Loan,False,xe sát camera; vỉa hè xa,adjudication_proposal_06.jpg
+176,b044093d,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,cổng/sân bệnh viện,adjudication_proposal_06.jpg
+177,b12d64e7,test,Trần Phú,Hoc,I,Loan,1,I,,Hoc,False,vạch qua đường; giao lộ,adjudication_proposal_06.jpg
+178,b144b0f2,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,vòng xoay/giao lộ,adjudication_proposal_06.jpg
+179,b2a8ea27,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,giao lộ; xe sát camera,adjudication_proposal_06.jpg
+180,b4b38ebb,test,Lý Thường Kiệt,Hoc,1,Loan,I,I,,Loan,False,cây xăng,adjudication_proposal_07.jpg
+181,b6dd4a12,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,đầu hẻm,adjudication_proposal_07.jpg
+182,b7c88ad1,test,Trần Phú,Hoc,1,Loan,I,I,,Loan,False,vỉa hè xa; xe van che bên trái,adjudication_proposal_07.jpg
+183,b8ae8964,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,vỉa hè xa sát vạch 3/5,adjudication_proposal_07.jpg
+184,ba1015ab,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,đảo góc giao lộ; vạch qua đường,adjudication_proposal_07.jpg
+185,ba5c2413,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,ô tô sát camera che; vỉa hè xa,adjudication_proposal_07.jpg
+186,ba8f24d6,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,góc đường; sân bê tông không thấy mép vỉa hè,adjudication_proposal_07.jpg
+187,c5ee0f72,test,Lý Thường Kiệt,Hoc,I,Loan,0,I,,Hoc,False,góc giao lộ; xe sát camera,adjudication_proposal_07.jpg
+188,c6c67f56,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,lòng đường; vỉa hè xa,adjudication_proposal_07.jpg
+189,c91b53a7,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,giao lộ; vỉa hè xa,adjudication_proposal_07.jpg
+190,d01693d0,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,xe tải và xe máy sát camera che,adjudication_proposal_07.jpg
+191,d193cfad,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,xe sát camera; vỉa hè xa,adjudication_proposal_07.jpg
+192,d19819e8,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,góc giao lộ,adjudication_proposal_07.jpg
+193,d2df8ba8,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,thảm cỏ; không có vỉa hè chạy dọc,adjudication_proposal_07.jpg
+194,d3cad16d,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,lòng đường; vỉa hè xa,adjudication_proposal_07.jpg
+195,d3f95f92,test,Lý Thường Kiệt,Hoc,I,Loan,0,I,,Hoc,False,thảm cỏ công viên,adjudication_proposal_07.jpg
+196,d6893da4,test,Trần Phú,Hoc,1,Loan,0,I,0,khác cả hai,False,lòng đường; vỉa hè xa,adjudication_proposal_07.jpg
+197,d6c9e837,test,Lý Thường Kiệt,Hoc,1,Loan,I,I,,Loan,False,xe sát camera che,adjudication_proposal_07.jpg
+198,d863983e,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,góc giao lộ,adjudication_proposal_07.jpg
+199,e1c958d9,test,Nơ Trang Long,Hoc,0,Loan,I,I,,Loan,False,đám đông và xe sát camera che,adjudication_proposal_07.jpg
+200,e2f2e83f,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,cây xăng và lòng đường,adjudication_proposal_07.jpg
+201,e6cd9909,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,xe sát camera; vỉa hè xa,adjudication_proposal_07.jpg
+202,e7604f4b,test,Nơ Trang Long,Hoc,I,Loan,0,I,,Hoc,False,góc đường; sân bê tông,adjudication_proposal_07.jpg
+203,ea01c1ee,test,Hai Bà Trưng,Hoc,0,Loan,I,I,,Loan,False,thảm cỏ gần; lối lát nằm trên vạch 3/5,adjudication_proposal_07.jpg
+204,ed5ba036,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,lòng đường; vỉa hè xa,adjudication_proposal_07.jpg
+205,f01e0e08,test,Trần Phú,Hoc,0,Loan,I,I,,Loan,False,vỉa hè xa sát vạch 3/5,adjudication_proposal_07.jpg
+206,f1b5975c,test,Nơ Trang Long,Hoc,1,Loan,I,I,,Loan,False,xe sát camera che,adjudication_proposal_07.jpg
+207,fdbab6c2,test,Lý Thường Kiệt,Hoc,0,Loan,I,I,,Loan,False,giao lộ,adjudication_proposal_07.jpg
+208,1802024f,train,Pasteur,Hoc,0,Minh,I,I,,Minh,True,vỉa hè chủ yếu trên vạch 3/5; xe đậu ở góc (không chắc),adjudication_proposal_07.jpg
+209,1c0b28df,train,Nguyễn Thị Minh Khai,Phuc,I,Hoc,1,I,,Phuc,False,vỉa hè xa sát vạch,adjudication_proposal_07.jpg
+210,20483afa,train,Cách Mạng Tháng Tám#0,Loan,I,Phuc,0,I,,Loan,False,vỉa hè xa; xe sát camera,adjudication_proposal_08.jpg
+211,223ee612,train,Điện Biên Phủ#1,Phuc,I,Khai,0,I,,Phuc,False,xe đạp sát camera che,adjudication_proposal_08.jpg
+212,258a143b,train,Trần Hưng Đạo,Khai,0,Phuc,I,I,,Phuc,False,người và xe chở đá sát camera che quá nửa,adjudication_proposal_08.jpg
+213,26467acf,train,Nguyễn Thị Minh Khai,Phuc,0,Minh,I,I,,Minh,False,đảo góc giao lộ,adjudication_proposal_08.jpg
+214,26576fd8,train,Trần Hưng Đạo,Phuc,0,Minh,I,I,,Minh,False,xe sát camera; vỉa hè xa,adjudication_proposal_08.jpg
+215,36b09bdd,train,Nguyễn Trãi,Phuc,1,Hoc,0,I,1,khác cả hai,False,đầu hẻm,adjudication_proposal_08.jpg
+216,3727aa13,train,Phan Đăng Lưu,Minh,0,Phuc,I,I,,Phuc,False,đảo cỏ góc giao lộ,adjudication_proposal_08.jpg
+217,3d26e79c,train,Nguyễn Trãi,Hoc,1,Minh,I,I,,Minh,False,góc giao lộ,adjudication_proposal_08.jpg
+218,43a051e3,train,Nguyễn Trãi,Phuc,1,Minh,I,I,,Minh,False,xe sát camera; vỉa hè xa,adjudication_proposal_08.jpg
+219,49b3d331,train,Hải Thượng Lãn Ông,Minh,I,Hoc,1,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_08.jpg
+220,50762918,train,Nguyễn Trãi,Phuc,I,Khai,0,I,,Phuc,False,vỉa hè xa sát vạch,adjudication_proposal_08.jpg
+221,55b3c389,train,Cách Mạng Tháng Tám#0,Khai,1,Minh,I,I,1,Minh,False,người và xe sát camera che,adjudication_proposal_08.jpg
+222,5e8f8be6,train,Trần Hưng Đạo,Khai,1,Phuc,I,I,,Phuc,False,lòng đường; vỉa hè xa,adjudication_proposal_08.jpg
+223,5fc7a990,train,Trần Hưng Đạo,Hoc,0,Loan,I,I,,Loan,False,mép vỉa hè sát vạch; xe sát camera,adjudication_proposal_08.jpg
+224,766cd28d,train,Nguyễn Trãi,Phuc,I,Hoc,0,I,,Phuc,False,vỉa hè xa sát vạch,adjudication_proposal_08.jpg
+225,7b026c21,train,Pasteur,Loan,I,Hoc,0,I,,Loan,False,vạch qua đường; xe sát camera,adjudication_proposal_08.jpg
+226,7c445826,train,Cách Mạng Tháng Tám#0,Phuc,0,Minh,I,I,,Minh,False,xe sát camera; vỉa hè xa,adjudication_proposal_08.jpg
+227,7d24ee92,train,Nguyễn Trãi,Hoc,0,Minh,I,I,,Minh,False,lối vào/giao lộ,adjudication_proposal_08.jpg
+228,886c1e9c,train,Điện Biên Phủ#1,Phuc,I,Khai,0,I,,Phuc,False,lòng đường; vỉa hè xa,adjudication_proposal_08.jpg
+229,945c2120,train,Điện Biên Phủ#1,Loan,1,Phuc,I,I,,Phuc,False,xe sát camera; vỉa hè xa,adjudication_proposal_08.jpg
+230,955fc8ff,train,Nguyễn Trãi,Khai,I,Phuc,0,I,,Khai,False,lòng đường; vỉa hè xa,adjudication_proposal_08.jpg
+231,9a54ea50,train,Nguyễn Trãi,Phuc,I,Hoc,0,I,,Phuc,False,lòng đường; vỉa hè xa,adjudication_proposal_08.jpg
+232,9be89c4a,train,Phan Đăng Lưu,Phuc,I,Khai,0,I,,Phuc,False,ngã ba hẻm,adjudication_proposal_08.jpg
+233,b1b06ad9,train,Phan Đăng Lưu,Phuc,1,Hoc,0,I,,khác cả hai,False,xe trái cây sát camera che,adjudication_proposal_08.jpg
+234,b72de87f,train,Hải Thượng Lãn Ông,Phuc,0,Loan,I,I,0,Loan,False,lòng đường; vỉa hè xa,adjudication_proposal_08.jpg
+235,c3993dc0,train,Phan Đăng Lưu,Phuc,0,Loan,I,I,,Loan,False,lối vào/sân rộng,adjudication_proposal_08.jpg
+236,c95021ce,train,Nguyễn Trãi,Phuc,I,Khai,0,I,,Phuc,False,xe sát camera; vỉa hè xa,adjudication_proposal_08.jpg
+237,ca73b3e2,train,Nguyễn Trãi,Minh,I,Loan,0,I,,Minh,False,xe sát camera; vỉa hè xa,adjudication_proposal_08.jpg
+238,ddbc4279,train,Nguyễn Thị Minh Khai,Loan,I,Khai,0,I,,Loan,False,góc đường; dải cỏ; lối đi phía sau trên vạch,adjudication_proposal_08.jpg
+239,ddc11c9d,train,Nguyễn Trãi,Khai,0,Phuc,I,I,,Phuc,False,lòng đường; vỉa hè xa,adjudication_proposal_08.jpg
+240,e23dc56c,train,Lê Văn Sỹ,Phuc,I,Khai,0,I,,Phuc,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+241,e2b39168,train,Trần Hưng Đạo,Minh,0,Phuc,I,I,,Phuc,False,xe sát camera; vỉa hè xa,adjudication_proposal_09.jpg
+242,e55b5cf0,train,Nguyễn Trãi,Phuc,I,Khai,0,I,,Phuc,False,vỉa hè xa sát vạch,adjudication_proposal_09.jpg
+243,e6106c90,train,Cách Mạng Tháng Tám#0,Phuc,I,Loan,0,I,,Phuc,False,đầu hẻm,adjudication_proposal_09.jpg
+244,e84c7225,train,Nguyễn Thị Minh Khai,Phuc,I,Khai,0,I,,Phuc,False,bồn cây; vỉa hè phía sau xa,adjudication_proposal_09.jpg
+245,f577befe,train,Nguyễn Trãi,Phuc,I,Minh,0,I,,Phuc,False,góc giao lộ,adjudication_proposal_09.jpg
+246,f8af7bca,train,Nguyễn Thị Minh Khai,Phuc,I,Khai,0,I,,Phuc,False,đảo góc giao lộ; xe sát camera,adjudication_proposal_09.jpg
+247,fce783e8,train,Nguyễn Trãi,Minh,1,Phuc,I,I,,Phuc,False,bồn cây có rào sát mép; vỉa hè phía sau nằm trên vạch,adjudication_proposal_09.jpg
+248,fe3878ef,train,Lê Văn Sỹ,Khai,1,Loan,0,I,,khác cả hai,False,xe chở người sát camera che,adjudication_proposal_09.jpg
+249,016df105,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,1,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+250,13472d54,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,lòng đường và dải cây; vỉa hè xa,adjudication_proposal_09.jpg
+251,1541e0fe,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,ảnh nhòe sát cổng; không thấy mặt vỉa hè,adjudication_proposal_09.jpg
+252,1ee2fd87,val,Hồng Bàng,Minh,I,Khai,0,I,,Minh,False,ảnh tối; xe buýt che; không thấy lối đi,adjudication_proposal_09.jpg
+253,243252e0,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,ô tô sát camera; vỉa hè xa,adjudication_proposal_09.jpg
+254,2a674bb2,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,xe sát camera; vỉa hè xa,adjudication_proposal_09.jpg
+255,2daaa56d,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+256,30287a87,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,1,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+257,357d5755,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,bồn cây che gần hết lối đi,adjudication_proposal_09.jpg
+258,3d61276e,val,Nguyễn Đình Chiểu#0,Minh,1,Khai,I,I,,Khai,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+259,3db86891,val,Hồng Bàng,Minh,I,Khai,0,I,,Minh,False,giao lộ; xe sát camera,adjudication_proposal_09.jpg
+260,3e5b1cc3,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+261,46c27084,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+262,4ed45db8,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+263,5432dd89,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,ảnh nhòe chuyển động,adjudication_proposal_09.jpg
+264,57e5b319,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,vạch qua đường; giao lộ,adjudication_proposal_09.jpg
+265,59a2fb57,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,1,I,,Minh,False,ô tô sát camera che,adjudication_proposal_09.jpg
+266,5b87e3fb,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,bồn cây che lối đi phía sau,adjudication_proposal_09.jpg
+267,6112e273,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+268,6445d5a1,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_09.jpg
+269,646e15b7,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,0,Minh,False,khoảng bê tông trước cổng; xe van; không có đoạn vỉa hè rõ,adjudication_proposal_09.jpg
+270,691320ef,val,Hồng Bàng,Minh,I,Khai,0,I,,Minh,False,ảnh tối; lối vào/góc đường,adjudication_proposal_10.jpg
+271,6c3de4fa,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,đầu hẻm,adjudication_proposal_10.jpg
+272,6c8ce2e8,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,1,I,1,Minh,False,ảnh nhòe chuyển động và cháy sáng [xem lại],adjudication_proposal_10.jpg
+273,6d9a273e,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,xe sát camera; vỉa hè xa,adjudication_proposal_10.jpg
+274,6e56ce19,val,Hồng Bàng,Minh,I,Khai,0,I,,Minh,False,góc quảng trường; không có đoạn vỉa hè chạy dọc rõ,adjudication_proposal_10.jpg
+275,7a02732b,val,Hồng Bàng,Minh,I,Khai,0,I,0,Minh,False,ảnh nhòe; vỉa hè xa,adjudication_proposal_10.jpg
+276,7a35d0fd,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,ảnh nhòe chuyển động,adjudication_proposal_10.jpg
+277,7f5c7c0b,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,1,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_10.jpg
+278,80be7e22,val,Hồng Bàng,Minh,I,Khai,0,I,,Minh,False,góc giao lộ; xe sát camera,adjudication_proposal_10.jpg
+279,8d5ffadc,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,bồn cây; vỉa hè xa; xe sát camera,adjudication_proposal_10.jpg
+280,8ddf90f5,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,ảnh nhòe chuyển động,adjudication_proposal_10.jpg
+281,91184ccb,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,1,I,,Minh,False,cổng/lối vào; vỉa hè xa,adjudication_proposal_10.jpg
+282,950346a4,val,Hồng Bàng,Minh,I,Khai,0,I,,Minh,False,giao lộ; xe sát camera,adjudication_proposal_10.jpg
+283,97f98b9c,val,Võ Văn Tần,Minh,0,Khai,I,I,0,Khai,False,ô tô sát camera; vỉa hè xa,adjudication_proposal_10.jpg
+284,9db46757,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,bồn cây sát mép; vỉa hè phía sau xa,adjudication_proposal_10.jpg
+285,9e180136,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_10.jpg
+286,a1b4fe9f,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,0,Minh,False,góc giao lộ; vạch qua đường,adjudication_proposal_10.jpg
+287,b21bd0ba,val,Hồng Bàng,Minh,I,Khai,0,I,,Minh,False,vạch qua đường; giao lộ,adjudication_proposal_10.jpg
+288,c79b6b62,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,vạch qua đường; giao lộ,adjudication_proposal_10.jpg
+289,c9ab8e1a,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,nhiều xe sát camera che,adjudication_proposal_10.jpg
+290,d46f332a,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,1,I,,Minh,False,vạch qua đường; vỉa hè xa,adjudication_proposal_10.jpg
+291,dabafb69,val,Võ Văn Tần,Minh,I,Khai,0,I,,Minh,False,góc giao lộ; vạch qua đường,adjudication_proposal_10.jpg
+292,dd0e5443,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,góc đường/lối vào; xe sát camera,adjudication_proposal_10.jpg
+293,e2caa2bb,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,cổng/lối vào,adjudication_proposal_10.jpg
+294,e2fa8781,val,Nguyễn Đình Chiểu#0,Minh,0,Khai,I,I,0,Khai,False,xe sát camera; lối vào; vỉa hè xa,adjudication_proposal_10.jpg
+295,e51fb0b9,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,vỉa hè xa sát vạch,adjudication_proposal_10.jpg
+296,e6d04a8a,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_10.jpg
+297,e82f2487,val,Võ Văn Tần,Minh,I,Khai,1,I,,Minh,False,taxi che bên trái; vỉa hè xa sát vạch,adjudication_proposal_10.jpg
+298,e88567b7,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,xe sát camera; vỉa hè xa,adjudication_proposal_10.jpg
+299,f52ed039,val,Hồng Bàng,Minh,I,Khai,0,I,,Minh,False,lòng đường; vỉa hè xa,adjudication_proposal_10.jpg
+300,fc17cd77,val,Võ Văn Tần,Minh,0,Khai,I,I,0,Khai,False,bãi đất trống với tủ điện; không có vỉa hè chạy dọc,adjudication_proposal_11.jpg
+301,fc520a84,val,Nguyễn Đình Chiểu#0,Minh,I,Khai,0,I,,Minh,False,xe sát camera; vỉa hè xa,adjudication_proposal_11.jpg
+302,fc806199,val,Nguyễn Đình Chiểu#0,Minh,0,Khai,I,I,,Khai,False,xe sát camera che; công viên,adjudication_proposal_11.jpg

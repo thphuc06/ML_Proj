@@ -1,0 +1,304 @@
+﻿item,annotator1,annotator2,label1,label2,reason1,reason2,obstacles1,obstacles2,role1,role2,split,street_id,status,label_prov,label_final,source,pair
+477f9610,Hoc,Loan,0,1,,,,Hàng hóa / quầy hàng,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/1
+4b75c401,Hoc,Loan,0,1,,,,Hàng hóa / quầy hàng,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_proposal,0/1
+98de72d8,Hoc,Loan,0,1,,,,Xe máy đậu,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/1
+bc8f49e5,Hoc,Loan,0,1,,,,Xe máy đậu,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_phuc,0/1
+dc71a73b,Hoc,Loan,0,1,,,,Xe máy đậu|Rào chắn / công trình,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_proposal,0/1
+e576137c,Hoc,Loan,0,1,,,,Xe máy đậu|Hàng hóa / quầy hàng,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/1
+fa45f21a,Hoc,Loan,0,1,,,,Hàng hóa / quầy hàng,test_double,test_double,test,Lý Thường Kiệt,disagree,?,1,adjudicated_proposal,0/1
+4f8da0c6,Hoc,Loan,0,1,,,,Xe máy đậu,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,0/1
+5c12311d,Hoc,Loan,0,1,,,,Xe máy đậu|Hàng hóa / quầy hàng,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,0/1
+8e79e65b,Hoc,Loan,0,1,,,,Xe máy đậu,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,0/1
+a5110d34,Hoc,Loan,0,1,,,,Xe máy đậu,test_double,test_double,test,Nơ Trang Long,disagree,?,1,adjudicated_proposal,0/1
+44941d16,Hoc,Loan,0,1,,,,,test_double,test_double,test,Trần Phú,disagree,?,1,adjudicated_phuc,0/1
+c7f8f2ad,Hoc,Loan,0,1,,,,Xe máy đậu|Hàng hóa / quầy hàng,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_proposal,0/1
+0118dafe,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+0dc52c11,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+2fdddd38,Hoc,Loan,0,I,,Ảnh mờ / tối / cháy sáng,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/I
+38488cfc,Hoc,Loan,0,I,,Ảnh mờ / tối / cháy sáng,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/I
+3c0dc742,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+6f03de2b,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/I
+75f05f89,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+84d5c119,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/I
+8c189375,Hoc,Loan,0,I,,Bị che,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+8cf4dda4,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+b950e563,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/I
+d6e4b6ae,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/I
+d863983e,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+e2f2e83f,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+ea01c1ee,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,0/I
+fd7735d6,Hoc,Loan,0,I,,Ảnh mờ / tối / cháy sáng,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,0/I
+01308ebc,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+05ac14ae,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+0c6b0875,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+0dc16546,Hoc,Loan,0,I,,,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+20e00267,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+22701503,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+2831a61e,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+2a857540,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+2d59fc5f,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+2e0ebcea,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+34662237,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+35749762,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+377a9426,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+3b0c3471,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_phuc,0/I
+3c2e93ca,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+408fae13,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+47b071c4,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+5892ecf9,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+5dadce76,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+64eee134,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+695fb3f6,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+6b236bbb,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+6c5b59c0,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+73071e1a,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+762e8da9,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+84cd8999,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+937b7f40,Hoc,Loan,0,I,,Bị che,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,1,adjudicated_proposal,0/I
+93c2bd64,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+943ea4b7,Hoc,Loan,0,I,,,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+95ef8a82,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_phuc,0/I
+a53850ec,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+ba1015ab,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+ba5c2413,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+c91b53a7,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+d01693d0,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+d19819e8,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+d2df8ba8,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+e4a0f950,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+f1b61829,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,0/I
+fdbab6c2,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,0/I
+01f40dbb,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+0924b20b,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+28135893,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_phuc,0/I
+5fe3283d,Hoc,Loan,0,I,,Bị che,,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,0/I
+824c289f,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+875caeb4,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+9cb01146,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+a31de43e,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,0/I
+b044093d,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+ba8f24d6,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+bba8d90a,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,0/I
+d193cfad,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+e1c958d9,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,0/I
+0516b586,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+1cb7e1f0,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_proposal,0/I
+2ff42022,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+3e9f962f,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_phuc,0/I
+5d2e6735,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+70faad63,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_proposal,0/I
+85ad0f21,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_phuc,0/I
+96a1b7f9,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+9cff2c0f,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+afb751f8,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_proposal,0/I
+b144b0f2,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+b2a8ea27,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+b6dd4a12,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+b8ae8964,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+c6c67f56,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+d3cad16d,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+e6cd9909,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+ed5ba036,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+f01e0e08,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,0/I
+f3cc5eb9,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_proposal,0/I
+2e7f1216,Hoc,Loan,1,0,,,Khác,Xe máy đậu,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,1/0
+87c47115,Hoc,Loan,1,0,,,Xe máy đậu,Xe máy đậu,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,1/0
+c16afd98,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,1/0
+d969efc4,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Hai Bà Trưng,disagree,?,0,adjudicated_proposal,1/0
+2ce0d7e9,Hoc,Loan,1,0,,,Khác,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,1/0
+85c48d4c,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,1,adjudicated_proposal,1/0
+89ff6f51,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,1/0
+3bf5a27d,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,1/0
+9b334b6d,Hoc,Loan,1,0,,,Hàng hóa / quầy hàng,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,1/0
+bcc47994,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Nơ Trang Long,disagree,?,1,adjudicated_phuc,1/0
+b8529dc5,Hoc,Loan,1,0,,,Khác,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_proposal,1/0
+d6893da4,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_phuc,1/0
+1a77b87b,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,1/I
+456bb807,Hoc,Loan,1,I,,Không thấy vỉa hè,Hàng hóa / quầy hàng,,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_proposal,1/I
+702010c9,Hoc,Loan,1,I,,Không thấy vỉa hè,Ô tô đậu,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal,1/I
+95580a93,Hoc,Loan,1,I,,Không thấy vỉa hè,Hàng hóa / quầy hàng,,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_phuc,1/I
+be72a687,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_proposal,1/I
+3e4bf966,Hoc,Loan,1,I,,Không thấy vỉa hè,Khác,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,1/I
+580ebe77,Hoc,Loan,1,I,,Không thấy vỉa hè,Hàng hóa / quầy hàng,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,1,adjudicated_proposal,1/I
+91b91c17,Hoc,Loan,1,I,,Không thấy vỉa hè,Ô tô đậu,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,1/I
+ae556c74,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,1/I
+b4b38ebb,Hoc,Loan,1,I,,Không thấy vỉa hè,Ô tô đậu,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,1/I
+d6c9e837,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,1/I
+dc532794,Hoc,Loan,1,I,,Không thấy vỉa hè,Khác,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal,1/I
+e622cfc8,Hoc,Loan,1,I,,Không thấy vỉa hè,Khác,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,1,adjudicated_proposal,1/I
+6967649c,Hoc,Loan,1,I,,Không thấy vỉa hè,Ô tô đậu,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_proposal,1/I
+96c2f86d,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Nơ Trang Long,disagree,?,1,adjudicated_proposal,1/I
+f1b5975c,Hoc,Loan,1,I,,Không thấy vỉa hè,Khác,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,1/I
+00d49193,Hoc,Loan,1,I,,Không thấy vỉa hè,Khác,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,1/I
+4d26ef6d,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,1/I
+827d560d,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,1/I
+8a102610,Hoc,Loan,1,I,,Không thấy vỉa hè,Khác,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,1/I
+afdf5c0a,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,1/I
+b476f215,Hoc,Loan,1,I,,Không thấy vỉa hè,Khác,,test_double,test_double,test,Trần Phú,disagree,?,1,adjudicated_proposal,1/I
+b7c88ad1,Hoc,Loan,1,I,,Bị che,Xe máy đậu,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,1/I
+c5ee0f72,Hoc,Loan,I,0,Không thấy vỉa hè,,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,I/0
+d3f95f92,Hoc,Loan,I,0,Không thấy vỉa hè,,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal,I/0
+e7604f4b,Hoc,Loan,I,0,Không thấy vỉa hè,,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal,I/0
+1d35fa5f,Hoc,Loan,I,0,Không thấy vỉa hè,,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,I/0
+71dc2d73,Hoc,Loan,I,0,Không thấy vỉa hè,,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,I/0
+b12d64e7,Hoc,Loan,I,1,Không thấy vỉa hè,,,,test_double,test_double,test,Trần Phú,disagree,?,I,adjudicated_proposal,I/1
+191f49a0,Minh,Khai,0,1,,,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,disagree,?,0,adjudicated_proposal,0/1
+53a4d4f9,Minh,Hoc,0,1,,,,Hàng hóa / quầy hàng,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,disagree,?,0,adjudicated_proposal,0/1
+b467c19d,Phuc,Hoc,0,1,,,,Hàng hóa / quầy hàng,train_cross_1st,train_cross_2nd,train,Hải Thượng Lãn Ông,disagree,?,0,adjudicated_proposal,0/1
+13edff9b,Hoc,Minh,0,1,,,,Hàng hóa / quầy hàng,train_cross_2nd,train_cross_1st,train,Lê Văn Sỹ,disagree,?,1,adjudicated_phuc,0/1
+69ac2a6e,Phuc,Hoc,0,1,,,,Xe máy đậu,train_cross_1st,train_cross_2nd,train,Trần Hưng Đạo,disagree,?,1,adjudicated_phuc,0/1
+7c445826,Phuc,Minh,0,I,,Không thấy vỉa hè,,,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,disagree,?,I,adjudicated_proposal,0/I
+b72de87f,Phuc,Loan,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Hải Thượng Lãn Ông,disagree,?,0,adjudicated_phuc,0/I
+26467acf,Phuc,Minh,0,I,,Không thấy vỉa hè,,,train_cross_2nd,train_cross_1st,train,Nguyễn Thị Minh Khai,disagree,?,I,adjudicated_proposal,0/I
+7d24ee92,Hoc,Minh,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,0/I
+ddc11c9d,Khai,Phuc,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,0/I
+1802024f,Hoc,Minh,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Pasteur,disagree,?,I,adjudicated_proposal,0/I
+3727aa13,Minh,Phuc,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Phan Đăng Lưu,disagree,?,I,adjudicated_proposal,0/I
+c3993dc0,Phuc,Loan,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Phan Đăng Lưu,disagree,?,I,adjudicated_proposal,0/I
+258a143b,Khai,Phuc,0,I,,Bị che,Xe máy đậu,,train_cross_2nd,train_cross_1st,train,Trần Hưng Đạo,disagree,?,I,adjudicated_proposal,0/I
+26576fd8,Phuc,Minh,0,I,,Không thấy vỉa hè,,,train_cross_2nd,train_cross_1st,train,Trần Hưng Đạo,disagree,?,I,adjudicated_proposal,0/I
+5fc7a990,Hoc,Loan,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Trần Hưng Đạo,disagree,?,I,adjudicated_proposal,0/I
+e2b39168,Minh,Phuc,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Trần Hưng Đạo,disagree,?,I,adjudicated_proposal,0/I
+7751d003,Khai,Phuc,1,0,,,Xe máy đậu,,train_cross_2nd,train_cross_1st,train,Lê Văn Sỹ,disagree,?,0,adjudicated_proposal,1/0
+fe3878ef,Khai,Loan,1,0,,,Hàng hóa / quầy hàng,,train_cross_1st,train_cross_2nd,train,Lê Văn Sỹ,disagree,?,I,adjudicated_proposal,1/0
+90b5ed5a,Phuc,Loan,1,0,,,Rào chắn / công trình,,train_cross_1st,train_cross_2nd,train,Nguyễn Kiệm#0,disagree,?,1,adjudicated_proposal,1/0
+70fd25bf,Phuc,Hoc,1,0,,,,,train_cross_1st,train_cross_2nd,train,Nguyễn Thị Minh Khai,disagree,?,0,adjudicated_proposal,1/0
+36b09bdd,Phuc,Hoc,1,0,,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,1,adjudicated_phuc,1/0
+b1b06ad9,Phuc,Hoc,1,0,,,Xe máy đậu|Hàng hóa / quầy hàng,,train_cross_2nd,train_cross_1st,train,Phan Đăng Lưu,disagree,?,I,adjudicated_proposal,1/0
+b25ef655,Hoc,Minh,1,0,,,Xe máy đậu,,train_cross_2nd,train_cross_1st,train,Trần Hưng Đạo,disagree,?,1,adjudicated_proposal,1/0
+74cd28a4,Phuc,Hoc,1,0,,,Rào chắn / công trình,,train_cross_1st,train_cross_2nd,train,Điện Biên Phủ#1,disagree,?,0,adjudicated_proposal,1/0
+55b3c389,Khai,Minh,1,I,,Bị che,Xe máy đậu|Hàng hóa / quầy hàng,,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,disagree,?,1,adjudicated_phuc,1/I
+6512e65c,Khai,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,train_cross_2nd,train_cross_1st,train,Nguyễn Kiệm#0,disagree,?,1,adjudicated_proposal,1/I
+0df092bc,Phuc,Minh,1,I,,Bị che,Bàn ghế quán|Khác,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,1,adjudicated_proposal,1/I
+3d26e79c,Hoc,Minh,1,I,,Không thấy vỉa hè,Xe máy đậu,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,1/I
+43a051e3,Phuc,Minh,1,I,,Không thấy vỉa hè,,,train_cross_2nd,train_cross_1st,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,1/I
+fce783e8,Minh,Phuc,1,I,,Bị che,Hàng hóa / quầy hàng,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,1/I
+5e8f8be6,Khai,Phuc,1,I,,Không thấy vỉa hè,Xe máy đậu,,train_cross_1st,train_cross_2nd,train,Trần Hưng Đạo,disagree,?,I,adjudicated_proposal,1/I
+945c2120,Loan,Phuc,1,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Điện Biên Phủ#1,disagree,?,I,adjudicated_proposal,1/I
+20483afa,Loan,Phuc,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,disagree,?,I,adjudicated_proposal,I/0
+264cb7a5,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,disagree,?,0,adjudicated_proposal,I/0
+d0ca14be,Phuc,Khai,I,0,Không thấy vỉa hè,,,Khác,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,disagree,?,0,adjudicated_proposal,I/0
+e6106c90,Phuc,Loan,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,disagree,?,I,adjudicated_proposal,I/0
+e99048b2,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,disagree,?,0,adjudicated_proposal,I/0
+9130a5c1,Minh,Hoc,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Hải Thượng Lãn Ông,disagree,?,0,adjudicated_proposal,I/0
+e23dc56c,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Lê Văn Sỹ,disagree,?,I,adjudicated_proposal,I/0
+ddbc4279,Loan,Khai,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Nguyễn Thị Minh Khai,disagree,?,I,adjudicated_proposal,I/0
+e84c7225,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Nguyễn Thị Minh Khai,disagree,?,I,adjudicated_proposal,I/0
+f8af7bca,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Nguyễn Thị Minh Khai,disagree,?,I,adjudicated_proposal,I/0
+fd874270,Khai,Hoc,I,0,Bị che,,Khác,,train_cross_1st,train_cross_2nd,train,Nguyễn Thị Minh Khai,disagree,?,0,adjudicated_proposal,I/0
+399c9d69,Loan,Khai,I,0,Không thấy vỉa hè,,,Hàng hóa / quầy hàng,train_cross_2nd,train_cross_1st,train,Nguyễn Trãi,disagree,?,0,adjudicated_proposal,I/0
+50762918,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,I/0
+766cd28d,Phuc,Hoc,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,I/0
+955fc8ff,Khai,Phuc,I,0,Không thấy vỉa hè,,,Ô tô đậu,train_cross_2nd,train_cross_1st,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,I/0
+9a54ea50,Phuc,Hoc,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,I/0
+c95021ce,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,I/0
+ca73b3e2,Minh,Loan,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,I/0
+d110310c,Phuc,Hoc,I,0,Bị che,,,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,0,adjudicated_proposal,I/0
+e55b5cf0,Phuc,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,I/0
+f577befe,Phuc,Minh,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal,I/0
+7b026c21,Loan,Hoc,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Pasteur,disagree,?,I,adjudicated_proposal,I/0
+9be89c4a,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Phan Đăng Lưu,disagree,?,I,adjudicated_proposal,I/0
+ffd65c99,Phuc,Hoc,I,0,Không thấy vỉa hè,,,,train_cross_2nd,train_cross_1st,train,Phan Đăng Lưu,disagree,?,0,adjudicated_proposal,I/0
+223ee612,Phuc,Khai,I,0,Bị che,,,Xe máy đậu,train_cross_1st,train_cross_2nd,train,Điện Biên Phủ#1,disagree,?,I,adjudicated_proposal,I/0
+886c1e9c,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Điện Biên Phủ#1,disagree,?,I,adjudicated_proposal,I/0
+49b3d331,Minh,Hoc,I,1,Không thấy vỉa hè,,,Xe máy đậu,train_cross_1st,train_cross_2nd,train,Hải Thượng Lãn Ông,disagree,?,I,adjudicated_proposal,I/1
+1c0b28df,Phuc,Hoc,I,1,Không thấy vỉa hè,,,Khác,train_cross_2nd,train_cross_1st,train,Nguyễn Thị Minh Khai,disagree,?,I,adjudicated_proposal,I/1
+091287c2,Minh,Khai,0,1,,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,0/1
+263b4f41,Minh,Khai,0,1,,,,Xe máy đậu|Ô tô đậu,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_phuc,0/1
+33fd9360,Minh,Khai,0,1,,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,0/1
+4182f0b4,Minh,Khai,0,1,,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_proposal,0/1
+63fe07fc,Minh,Khai,0,1,,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_proposal,0/1
+8df2b6a8,Minh,Khai,0,1,,,,,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_phuc,0/1
+9c624b67,Minh,Khai,0,1,,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,0/1
+df923296,Minh,Khai,0,1,,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,0/1
+2aa956ef,Minh,Khai,0,1,,,,Xe máy đậu|Khác,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_proposal,0/1
+f7a6aa18,Minh,Khai,0,1,,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,0/1
+b0235644,Minh,Khai,0,1,,,,Xe máy đậu|Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_phuc,0/1
+b21e6744,Minh,Khai,0,1,,,,Ô tô đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal,0/1
+c0090f08,Minh,Khai,0,1,,,,Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal,0/1
+f48fc6a1,Minh,Khai,0,1,,,,Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_phuc,0/1
+63404134,Minh,Khai,0,I,,Bị che,,,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,0/I
+7b636f99,Minh,Khai,0,I,,Bị che,,,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,0/I
+e2fa8781,Minh,Khai,0,I,,Bị che,,Xe máy đậu|Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_phuc,0/I
+eff2bcdf,Minh,Khai,0,I,,Bị che,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,0/I
+fc806199,Minh,Khai,0,I,,Ảnh mờ / tối / cháy sáng,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,0/I
+2405c398,Minh,Khai,0,I,,Bị che,,Xe máy đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal,0/I
+5a9a27a2,Minh,Khai,0,I,,Bị che,,Bàn ghế quán,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal,0/I
+97f98b9c,Minh,Khai,0,I,,Bị che,,,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_phuc,0/I
+fc17cd77,Minh,Khai,0,I,,Bị che,,Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_phuc,0/I
+c96295f9,Minh,Khai,1,0,,,Xe máy đậu|Bàn ghế quán,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,1/0
+2897ff35,Minh,Khai,1,0,,,Xe máy đậu,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_phuc,1/0
+8920f0ec,Minh,Khai,1,0,,,Ô tô đậu|Hàng hóa / quầy hàng,Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,1/0
+dd98549e,Minh,Khai,1,0,,,Hàng hóa / quầy hàng|Bàn ghế quán,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,1/0
+e32e32b1,Minh,Khai,1,0,,,Xe máy đậu|Bàn ghế quán,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_proposal,1/0
+07dfa288,Minh,Khai,1,0,,,Xe máy đậu|Bàn ghế quán,Xe máy đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal,1/0
+68e7ebdb,Minh,Khai,1,0,,,Hàng hóa / quầy hàng|Bàn ghế quán,Xe máy đậu|Bàn ghế quán,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_proposal,1/0
+048ef1c6,Minh,Khai,1,I,,Bị che,Hàng hóa / quầy hàng|Bàn ghế quán,Hàng hóa / quầy hàng,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_proposal,1/I
+25b7accc,Minh,Khai,1,I,,Không thấy vỉa hè,Hàng hóa / quầy hàng,,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_proposal,1/I
+9d673c95,Minh,Khai,1,I,,Lý do khác,Khác,,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_proposal,1/I
+c05e5617,Minh,Khai,1,I,,Bị che,Xe máy đậu|Bàn ghế quán,,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_phuc,1/I
+3d61276e,Minh,Khai,1,I,,Bị che,Xe máy đậu|Hàng hóa / quầy hàng,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,1/I
+09072443,Minh,Khai,I,0,,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,I/0
+16a5ded3,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,I/0
+1ee2fd87,Minh,Khai,I,0,Ảnh mờ / tối / cháy sáng,,,,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal,I/0
+3db86891,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal,I/0
+58e4165d,Minh,Khai,I,0,Bị che,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_proposal,I/0
+691320ef,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal,I/0
+6e56ce19,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal,I/0
+7a02732b,Minh,Khai,I,0,Ảnh mờ / tối / cháy sáng,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_phuc,I/0
+80be7e22,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal,I/0
+950346a4,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal,I/0
+b21bd0ba,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal,I/0
+f52ed039,Minh,Khai,I,0,Bị che,,,,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal,I/0
+13472d54,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+243252e0,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+2a674bb2,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+2daaa56d,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+3e5b1cc3,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+42605362,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,I/0
+46c27084,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu|Khác,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+4ed45db8,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu|Bàn ghế quán,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+54eff26f,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,I/0
+57e5b319,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+6112e273,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+6445d5a1,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+646e15b7,Minh,Khai,I,0,Không thấy vỉa hè,,,Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_phuc,I/0
+652cb19c,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,I/0
+6d9a273e,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+777ec20f,Minh,Khai,I,0,Bị che,,Xe máy đậu,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_proposal,I/0
+8d5ffadc,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+9db46757,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+a1b4fe9f,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_phuc,I/0
+be76d0a9,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,I/0
+c374b635,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_proposal,I/0
+c9ab8e1a,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+dd0e5443,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+e2caa2bb,Minh,Khai,I,0,Không thấy vỉa hè,,,Khác,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+e51fb0b9,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+e6d04a8a,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+e88567b7,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+fc520a84,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/0
+1541e0fe,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+357d5755,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+3b00c8ae,Minh,Khai,I,0,Bị che,,,Ô tô đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal,I/0
+5432dd89,Minh,Khai,I,0,Ảnh mờ / tối / cháy sáng,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+5b87e3fb,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+6c3de4fa,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+7a35d0fd,Minh,Khai,I,0,Ảnh mờ / tối / cháy sáng,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+8ddf90f5,Minh,Khai,I,0,Ảnh mờ / tối / cháy sáng,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+984bddfa,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal,I/0
+9e180136,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu|Ô tô đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+c79b6b62,Minh,Khai,I,0,Không thấy vỉa hè,,,Ô tô đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+dabafb69,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/0
+016df105,Minh,Khai,I,1,Không thấy vỉa hè,,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/1
+30287a87,Minh,Khai,I,1,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/1
+5558fff8,Minh,Khai,I,1,Ảnh mờ / tối / cháy sáng,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_proposal,I/1
+59a2fb57,Minh,Khai,I,1,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/1
+6c8ce2e8,Minh,Khai,I,1,Ảnh mờ / tối / cháy sáng,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_phuc,I/1
+7f5c7c0b,Minh,Khai,I,1,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/1
+91184ccb,Minh,Khai,I,1,Không thấy vỉa hè,,,Xe máy đậu|Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/1
+d46f332a,Minh,Khai,I,1,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal,I/1
+2cfe6acc,Minh,Khai,I,1,Không thấy vỉa hè,,,Ô tô đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_proposal,I/1
+7d4c80f3,Minh,Khai,I,1,Ảnh mờ / tối / cháy sáng,,,Xe máy đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_proposal,I/1
+e82f2487,Minh,Khai,I,1,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal,I/1
+fb17cd15,Minh,Khai,I,1,Ảnh mờ / tối / cháy sáng,,Xe máy đậu,Xe máy đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal,I/1

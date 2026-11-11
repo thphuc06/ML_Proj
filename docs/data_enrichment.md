@@ -1,10 +1,34 @@
 # Bơm thêm ảnh "Bị chặn" cho tập train
 
-Ghi chép ngày 04/11/2026. **Trạng thái: mới thăm dò, chưa bơm ảnh nào.** Nhóm quyết định chờ gán xong đợt đầu rồi mới xem xét bơm thêm, và lấy ảnh từ **đường train mới**. Nhật ký kỹ thuật ở [collection_log.md](collection_log.md).
+Ghi chép ngày 04/11/2026, cập nhật 11/11/2026. **Trạng thái: chưa bơm ảnh nào.** Đã gán xong bộ chính, số ảnh "Bị chặn" thật thấp hơn ước tính (xem mục 1). Nhóm quyết định chờ gán xong đợt đầu rồi mới xem xét bơm thêm, và lấy ảnh từ **đường train mới**. Nhật ký kỹ thuật ở [collection_log.md](collection_log.md).
+
+## Bàn giao (11/11/2026)
+
+Đợt gán nhãn 1 đã xong, đây là đầu vào cho việc bơm ảnh:
+
+- **Nhãn chính thức:** [data/labels/main_labels_v1.csv](../data/labels/main_labels_v1.csv), mỗi ảnh một dòng, gồm các cột `item`, `split`, `street_id`, `label` (0/1/I) và `source`. Ghép với [main_v1.csv](../data/manifest/main_v1.csv) theo `item` để lấy metadata Mapillary. Quy trình gán và phân xử: [labeling_phase1.md](labeling_phase1.md).
+- **Bước 1 của mục 5 đã xong.** Số ảnh "Bị chặn" / số ảnh dùng được: train 106/1.045, val 35/242, test 47/459.
+- **Bắt đầu từ bước 2 của mục 5:** chọn đường train mới. Bộ chọn ảnh nên train trên nhãn train của file trên, lọc `split == "train"` và `label` thuộc {0, 1}.
+- **Test có 47 ảnh dương**, dưới mốc khoảng 60 ảnh. Nhóm chưa quyết định có đổi hay thêm đường test. Bơm ảnh chỉ vào train nên không phụ thuộc vào quyết định này. Nhưng **không được lấy đường mới từ danh sách đường val hoặc test**.
+- Ảnh bơm thêm cần gán theo [guide v1](../labeling/guide/annotation_guide_v1_draft.md), bản đã chốt nguyên văn.
 
 ## 1. Vấn đề
 
-Lớp "Bị chặn" hiếm, nên có thể không đủ ảnh để train và đánh giá. Hiện **chưa ai đo trên bộ chính**. Các số dưới đây là ước lượng, nhân từ ba nguồn:
+Lớp "Bị chặn" hiếm, nên có thể không đủ ảnh để train và đánh giá.
+
+**Nhãn cuối của bộ chính (11/11, sau phân xử):** train 106/1.045 ảnh dùng được, val 35/242, test 47/459 ([tổng kết](labeling_phase1.md)). Số trước phân xử:
+
+| Tập | Số ảnh | Bị chặn: đồng thuận hoặc một người gán | Thêm nếu mọi ca bất đồng có phiếu 1 đều thành 1 | Ước lượng cũ |
+|---|---|---|---|---|
+| Train | 1.839 | 98 | +23 → tối đa 121 | ~200–245 |
+| Val | 486 | 16 | +38 → tối đa 54 | ~50–65 |
+| Test | 674 | 31 | +49 → tối đa 80 | ~70–90 |
+
+Tỉ lệ "Bị chặn" trên các ảnh dùng được là khoảng **9%**, bằng một nửa con số 19% của pilot. Pilot được lấy mẫu nghiêng về phía ảnh trông như bị chặn, còn bộ chính thì không. Hệ quả:
+- Train cần bơm, và bơm khoảng 400 ảnh có thể chưa đủ. Nếu bộ chọn ảnh đạt tỉ lệ trúng khoảng 28% như trên pilot, 400 ảnh cho thêm khoảng 110 ảnh dương.
+- Test có thể dưới mức khoảng 60 ảnh dương. Cần quyết định về đường test **trước khi** bơm.
+
+Ước lượng cũ (04/11), nhân từ ba nguồn:
 
 - tỉ lệ "Bị chặn" trong pilot: 19/101 ảnh đa số chọn 0 hoặc 1, khoảng tin cậy 95% (Wilson) là 12–28%;
 - tỉ lệ ảnh dùng được: 55% (40 ảnh xem bằng mắt, [feasibility_log.md](feasibility_log.md)) hoặc 71% (pilot);

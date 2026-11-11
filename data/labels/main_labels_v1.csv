@@ -1,0 +1,3000 @@
+﻿item,split,street_id,label,source,reason
+00160190,test,Trần Phú,1,agreed,
+0030469a,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+0062c035,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+006d7b6b,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+006de1e8,train,Nguyễn Thị Minh Khai,0,agreed,
+0096aaa7,train,Nguyễn Kiệm#0,I,single,Bị che
+00d49193,test,Trần Phú,I,adjudicated_proposal,
+00e48ac8,train,Trần Hưng Đạo,0,single,
+0118dafe,test,Hai Bà Trưng,I,adjudicated_proposal,
+01308ebc,test,Lý Thường Kiệt,I,adjudicated_proposal,
+014665ba,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+0157992a,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+016cbba2,train,Điện Biên Phủ#1,0,agreed,
+016df105,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+01741e6e,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+017de82b,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+017fcbe0,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+0187b3b1,train,Nguyễn Thị Minh Khai,0,single,
+01c33053,test,Trần Phú,I,agreed,Không thấy vỉa hè
+01f40dbb,test,Nơ Trang Long,I,adjudicated_proposal,
+027c7587,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+028de87d,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+028f82d8,val,Hồng Bàng,I,agreed,
+02970c79,val,Nguyễn Đình Chiểu#0,0,agreed,
+02d0cef7,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+02ecae9b,train,Nguyễn Trãi,0,single,
+032d1273,test,Hai Bà Trưng,0,agreed,
+03459666,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+03ab3051,train,Nguyễn Thị Minh Khai,0,single,
+03cd2806,train,Trần Hưng Đạo,0,single,
+03d9d41c,test,Lý Thường Kiệt,0,agreed,
+03ddac3b,train,Pasteur,I,single,Không thấy vỉa hè
+03e14ee8,train,Nguyễn Trãi,0,single,
+03fa780e,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+0405a3ca,train,Pasteur,0,single,
+0433a38d,train,Hải Thượng Lãn Ông,I,agreed,Không thấy vỉa hè
+043dc925,train,Trần Hưng Đạo,0,single,
+04546518,val,Võ Văn Tần,0,agreed,
+0487e014,train,Trần Hưng Đạo,0,agreed,
+048ef1c6,val,Hồng Bàng,1,adjudicated_proposal,
+0499354b,train,Phan Đăng Lưu,1,single,
+04a0561b,val,Võ Văn Tần,0,agreed,
+04a57005,test,Nơ Trang Long,0,agreed,
+04aec862,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+04b7150a,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+04d5205b,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+04e6eec2,val,Hồng Bàng,0,agreed,
+0516b586,test,Trần Phú,I,adjudicated_proposal,
+052a0637,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+052e2522,train,Nguyễn Kiệm#0,0,single,
+05330742,train,Điện Biên Phủ#1,0,single,
+053a0041,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+0547a90f,test,Lý Thường Kiệt,0,agreed,
+054cc6fd,train,Phan Đăng Lưu,0,single,
+05500952,test,Lý Thường Kiệt,0,agreed,
+055432fa,train,Nguyễn Kiệm#0,0,single,
+0566c38f,test,Trần Phú,I,agreed,Không thấy vỉa hè
+0573d1e1,train,Điện Biên Phủ#1,0,single,
+0585689f,train,Trần Hưng Đạo,0,single,
+0585939f,train,Hải Thượng Lãn Ông,1,single,
+058eff49,val,Võ Văn Tần,0,agreed,
+059c6f84,test,Trần Phú,0,agreed,
+05ac14ae,test,Lý Thường Kiệt,I,adjudicated_proposal,
+05d357af,train,Nguyễn Trãi,0,single,
+060514ca,train,Trần Hưng Đạo,0,single,
+060561d0,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+06194799,test,Trần Phú,0,agreed,
+06277689,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+062a49ab,val,Nguyễn Đình Chiểu#0,0,agreed,
+063f3308,test,Nơ Trang Long,0,agreed,
+06495f5b,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+064f0ba9,val,Hồng Bàng,0,agreed,
+066d628b,train,Nguyễn Thị Minh Khai,0,single,
+067999f4,train,Nguyễn Thị Minh Khai,0,single,
+067a2160,train,Cách Mạng Tháng Tám#0,0,single,
+069a376c,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+06ee0fb4,train,Pasteur,I,single,Không thấy vỉa hè
+06ef2e6b,train,Pasteur,I,single,Không thấy vỉa hè
+06f5f7e0,train,Điện Biên Phủ#1,0,single,
+06fe853a,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+0729c686,train,Nguyễn Trãi,0,single,
+073f213b,train,Nguyễn Kiệm#0,0,single,
+07460b1e,train,Trần Hưng Đạo,I,single,Bị che
+0784cff2,test,Lý Thường Kiệt,0,agreed,
+07b54676,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+07bf9d75,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
+07dfa288,val,Võ Văn Tần,0,adjudicated_proposal,
+08057194,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+08213f55,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+082a201c,test,Nơ Trang Long,0,agreed,
+084f87a8,train,Trần Hưng Đạo,0,single,
+084f90b8,val,Nguyễn Đình Chiểu#0,0,agreed,
+0859ee53,train,Nguyễn Thị Minh Khai,0,single,
+08802534,train,Cách Mạng Tháng Tám#0,0,single,
+08911fb3,train,Cách Mạng Tháng Tám#0,1,single,
+08a0c3a6,train,Trần Hưng Đạo,0,single,
+08b16c77,train,Nguyễn Kiệm#0,0,agreed,
+08cc90ca,val,Võ Văn Tần,I,agreed,
+08ccfe84,val,Hồng Bàng,I,agreed,Bị che
+09072443,val,Hồng Bàng,0,adjudicated_proposal,
+091287c2,val,Hồng Bàng,0,adjudicated_proposal,
+0914a6b4,train,Trần Hưng Đạo,0,single,
+0924b20b,test,Nơ Trang Long,I,adjudicated_proposal,
+09251b6f,train,Điện Biên Phủ#1,0,single,
+09423d2d,test,Lý Thường Kiệt,0,agreed,
+095adcb6,val,Võ Văn Tần,0,agreed,
+09867c7f,train,Hải Thượng Lãn Ông,0,single,
+09a6e539,train,Pasteur,I,agreed,Không thấy vỉa hè
+09a89c69,test,Nơ Trang Long,0,agreed,
+09b6365f,train,Lê Văn Sỹ,0,single,
+09c45603,val,Hồng Bàng,0,agreed,
+09e6c3f5,train,Phan Đăng Lưu,I,single,Ảnh mờ / tối / cháy sáng
+09eb524f,train,Phan Đăng Lưu,0,agreed,
+0a662807,train,Điện Biên Phủ#1,0,single,
+0a6e76c6,train,Điện Biên Phủ#1,0,agreed,
+0a7275d4,test,Lý Thường Kiệt,0,agreed,
+0a861bca,train,Lê Văn Sỹ,0,agreed,
+0b072bd1,train,Nguyễn Thị Minh Khai,0,agreed,
+0b443b45,train,Pasteur,I,single,Không thấy vỉa hè
+0b84d84e,train,Nguyễn Kiệm#0,0,single,
+0b95c469,val,Võ Văn Tần,0,agreed,
+0b9edcf9,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+0be6fed7,train,Nguyễn Trãi,0,single,
+0c219a56,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+0c5a625c,val,Võ Văn Tần,0,agreed,
+0c6b0875,test,Lý Thường Kiệt,0,adjudicated_proposal,
+0c8f96cb,train,Cách Mạng Tháng Tám#0,0,single,
+0c9d08ca,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+0cb838ef,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+0cb98d3d,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+0d0813b0,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+0d0b6f56,train,Phan Đăng Lưu,0,single,
+0d427ee0,val,Võ Văn Tần,0,agreed,
+0d9a9eda,train,Trần Hưng Đạo,0,agreed,
+0d9ef016,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+0da08b1f,train,Cách Mạng Tháng Tám#0,0,single,
+0da5b692,test,Lý Thường Kiệt,0,agreed,
+0da66f76,train,Cách Mạng Tháng Tám#0,0,single,
+0db2df5a,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+0dc16546,test,Lý Thường Kiệt,I,adjudicated_proposal,
+0dc52c11,test,Hai Bà Trưng,I,adjudicated_proposal,
+0de7c66c,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+0df092bc,train,Nguyễn Trãi,1,adjudicated_proposal,
+0df6e27d,train,Nguyễn Trãi,0,single,
+0e18afb2,test,Lý Thường Kiệt,0,agreed,
+0e2a7e6e,test,Lý Thường Kiệt,0,agreed,
+0e30888e,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+0e3347df,train,Nguyễn Kiệm#0,1,single,
+0e56264a,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+0e58ec37,val,Võ Văn Tần,I,agreed,
+0e5aa286,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+0e5c5cac,test,Hai Bà Trưng,0,agreed,
+0e7058a8,train,Điện Biên Phủ#1,0,single,
+0e9fde7b,val,Võ Văn Tần,0,agreed,
+0ec85dbc,train,Trần Hưng Đạo,0,agreed,
+0ed0b973,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+0ed4292c,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+0ef16731,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+0ef6aaed,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+0ef7087c,test,Nơ Trang Long,0,agreed,
+0f3a322a,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+0f3f6cab,train,Trần Hưng Đạo,0,single,
+0f58c34b,train,Trần Hưng Đạo,I,single,Bị che
+0f73def6,train,Trần Hưng Đạo,0,single,
+0fcfdb76,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+0fe7cc5c,train,Trần Hưng Đạo,1,single,
+0fe9e008,train,Nguyễn Thị Minh Khai,0,single,
+0ff46e8e,test,Hai Bà Trưng,0,agreed,
+0ff73f4c,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+101c6876,test,Lý Thường Kiệt,0,agreed,
+1021e9b0,val,Hồng Bàng,0,agreed,
+102bbc82,train,Trần Hưng Đạo,0,single,
+10304a66,test,Trần Phú,I,agreed,Không thấy vỉa hè
+1031f83c,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+1047c60b,train,Điện Biên Phủ#1,0,single,
+1052f1b5,train,Nguyễn Thị Minh Khai,0,agreed,
+10609c83,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+107a6c2c,train,Nguyễn Thị Minh Khai,0,single,
+109630a6,val,Võ Văn Tần,0,agreed,
+109a062b,test,Lý Thường Kiệt,0,agreed,
+10a14c21,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+10d468f8,train,Trần Hưng Đạo,0,single,
+10d515d7,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+10e2a9d7,train,Nguyễn Trãi,0,single,
+10e2ab0c,train,Trần Hưng Đạo,1,single,
+10e7e369,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+110005dc,val,Hồng Bàng,0,agreed,
+110fd2c8,test,Nơ Trang Long,0,agreed,
+1159c33a,train,Phan Đăng Lưu,0,single,
+11857ca9,train,Nguyễn Trãi,0,single,
+118b2704,train,Trần Hưng Đạo,0,single,
+1192d0d2,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+11a1d33c,val,Hồng Bàng,0,agreed,
+11a3d0dc,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+11bc768e,test,Lý Thường Kiệt,0,agreed,
+11d01a54,train,Nguyễn Thị Minh Khai,0,single,
+11d310f4,train,Nguyễn Thị Minh Khai,0,single,
+11d3d20d,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+11dbb137,train,Cách Mạng Tháng Tám#0,0,single,
+11e56da7,val,Võ Văn Tần,I,agreed,Bị che
+11ec3135,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+12062051,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+122c4bd5,train,Phan Đăng Lưu,I,single,Bị che
+123633c4,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+1269ff37,train,Nguyễn Thị Minh Khai,0,agreed,
+129045c8,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+12a9715c,train,Nguyễn Trãi,0,single,
+12b2f541,train,Trần Hưng Đạo,0,single,
+12c41813,train,Điện Biên Phủ#1,0,single,
+12caf43a,train,Cách Mạng Tháng Tám#0,0,single,
+12ff8206,val,Võ Văn Tần,0,agreed,
+131c25c6,train,Pasteur,I,single,Không thấy vỉa hè
+1329a473,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+133045ac,train,Phan Đăng Lưu,1,single,
+133a69b1,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+13472d54,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+1381812c,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+139dc338,train,Phan Đăng Lưu,I,single,Lý do khác
+13bf9f1b,train,Nguyễn Trãi,0,agreed,
+13c9e083,train,Cách Mạng Tháng Tám#0,0,single,
+13d16c88,train,Cách Mạng Tháng Tám#0,1,agreed,
+13ddb8a9,train,Nguyễn Thị Minh Khai,0,single,
+13edff9b,train,Lê Văn Sỹ,1,adjudicated_phuc,
+13eef19f,train,Cách Mạng Tháng Tám#0,0,single,
+140d1097,train,Nguyễn Kiệm#0,0,single,
+142073a4,train,Nguyễn Trãi,0,single,
+142d2d3c,test,Trần Phú,I,agreed,Bị che
+14502629,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+145632ff,train,Trần Hưng Đạo,0,single,
+14a058dd,val,Hồng Bàng,I,agreed,Bị che
+14c5d303,train,Cách Mạng Tháng Tám#0,0,single,
+14fd786e,train,Nguyễn Trãi,0,single,
+1500f1a8,train,Lê Văn Sỹ,0,single,
+1504516d,test,Nơ Trang Long,1,agreed,
+151a19df,test,Lý Thường Kiệt,0,agreed,
+1541e0fe,val,Võ Văn Tần,I,adjudicated_proposal,
+155f91ad,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+15750745,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+15814e49,train,Phan Đăng Lưu,0,single,
+1582fa52,train,Điện Biên Phủ#1,0,single,
+159a5164,test,Hai Bà Trưng,0,agreed,
+15a52e4f,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+15ae013e,test,Lý Thường Kiệt,0,agreed,
+15ba22b7,test,Nơ Trang Long,0,agreed,
+15d3957d,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+15da6091,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+15fadc3f,train,Cách Mạng Tháng Tám#0,0,single,
+1600ad6b,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+1617dc9a,train,Trần Hưng Đạo,0,single,
+161cb06f,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+16310565,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+165d72ef,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+1663a529,train,Lê Văn Sỹ,0,single,
+16717f49,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+16a5ded3,val,Hồng Bàng,0,adjudicated_proposal,
+16ea3021,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+16ff3a2c,train,Nguyễn Thị Minh Khai,0,single,
+172fc632,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+1767f100,train,Nguyễn Trãi,I,single,Bị che
+17a1bbfd,train,Trần Hưng Đạo,0,single,
+17cd9818,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+17cf2a0d,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+17d7f5c2,test,Lý Thường Kiệt,0,agreed,
+1802024f,train,Pasteur,I,adjudicated_proposal,
+180bc330,val,Nguyễn Đình Chiểu#0,0,agreed,
+184016e5,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+184340f5,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
+1863131b,train,Nguyễn Trãi,I,single,Bị che
+186e4ded,val,Hồng Bàng,0,agreed,
+1892da83,test,Trần Phú,0,agreed,
+18af8ea3,train,Nguyễn Trãi,0,single,
+18cd7918,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+18cfa85c,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+1912771d,test,Nơ Trang Long,0,agreed,
+191f49a0,train,Cách Mạng Tháng Tám#0,0,adjudicated_proposal,
+1920a698,val,Hồng Bàng,0,agreed,
+19299d4a,train,Điện Biên Phủ#1,0,single,
+192fb10d,val,Hồng Bàng,1,agreed,
+194fa6de,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+19715ae5,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+197d0314,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+1989b9b5,train,Pasteur,I,single,Không thấy vỉa hè
+198aade0,train,Pasteur,I,single,Không thấy vỉa hè
+1995625a,train,Trần Hưng Đạo,0,single,
+19977ca0,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+19b8b984,train,Nguyễn Thị Minh Khai,0,single,
+19d3159c,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+1a49681e,train,Cách Mạng Tháng Tám#0,0,single,
+1a4b3a33,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+1a54222b,val,Nguyễn Đình Chiểu#0,0,agreed,
+1a77b87b,test,Hai Bà Trưng,I,adjudicated_proposal,
+1a7d9fa7,train,Trần Hưng Đạo,0,single,
+1a85f1c2,test,Lý Thường Kiệt,0,agreed,
+1a9065b5,test,Hai Bà Trưng,0,agreed,
+1a9723f5,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+1aad760f,val,Võ Văn Tần,I,agreed,
+1adde2d6,test,Hai Bà Trưng,0,agreed,
+1aff89fe,train,Trần Hưng Đạo,0,agreed,
+1b99a5b8,test,Hai Bà Trưng,0,agreed,
+1b9d2f31,train,Pasteur,I,single,Bị che
+1b9e6162,train,Nguyễn Thị Minh Khai,0,single,
+1bb218db,train,Cách Mạng Tháng Tám#0,0,single,
+1bef50d7,train,Lê Văn Sỹ,I,single,Bị che
+1bf2c046,train,Điện Biên Phủ#1,I,agreed,
+1c0b28df,train,Nguyễn Thị Minh Khai,I,adjudicated_proposal,
+1c0c2cfc,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+1c129812,train,Lê Văn Sỹ,0,single,
+1c281c3b,test,Lý Thường Kiệt,0,agreed,
+1c2e2ab9,train,Điện Biên Phủ#1,0,agreed,
+1c488a4e,train,Điện Biên Phủ#1,0,single,
+1c50f160,test,Lý Thường Kiệt,0,agreed,
+1c71f927,train,Hải Thượng Lãn Ông,1,single,
+1c84700d,train,Pasteur,I,single,Không thấy vỉa hè
+1c8d2e3d,train,Phan Đăng Lưu,0,single,
+1c952a3e,train,Pasteur,I,single,Không thấy vỉa hè
+1cb26455,train,Nguyễn Thị Minh Khai,0,single,
+1cb607f1,train,Trần Hưng Đạo,0,single,
+1cb7e1f0,test,Trần Phú,0,adjudicated_proposal,
+1cd309e2,train,Nguyễn Thị Minh Khai,I,single,Bị che
+1ce35288,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+1d2d3368,test,Hai Bà Trưng,0,agreed,
+1d35fa5f,test,Trần Phú,I,adjudicated_proposal,
+1d379370,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+1d4a5e2f,train,Cách Mạng Tháng Tám#0,0,agreed,
+1d6c9aaa,train,Trần Hưng Đạo,0,single,
+1d92c4d1,test,Nơ Trang Long,0,agreed,
+1da4b388,test,Lý Thường Kiệt,0,agreed,
+1dc8c52e,train,Nguyễn Trãi,0,agreed,
+1dca6c7a,train,Cách Mạng Tháng Tám#0,1,single,
+1df673f8,train,Phan Đăng Lưu,I,single,Lý do khác
+1df9964d,train,Phan Đăng Lưu,1,single,
+1e0ba2e5,train,Phan Đăng Lưu,0,single,
+1e1e6c52,train,Nguyễn Trãi,0,single,
+1e292335,test,Hai Bà Trưng,1,agreed,
+1e307513,train,Nguyễn Trãi,I,single,Ảnh mờ / tối / cháy sáng
+1e4920cb,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+1e63678a,train,Trần Hưng Đạo,0,single,
+1e6a66c4,test,Lý Thường Kiệt,0,agreed,
+1e7996ea,val,Hồng Bàng,0,agreed,
+1e8233bf,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+1e8b3900,train,Nguyễn Thị Minh Khai,I,single,Bị che
+1ea9439c,train,Điện Biên Phủ#1,I,single,Bị che
+1eb4ef6d,test,Hai Bà Trưng,0,agreed,
+1ebc7797,train,Điện Biên Phủ#1,0,single,
+1edc7cab,train,Trần Hưng Đạo,0,single,
+1ee2fd87,val,Hồng Bàng,I,adjudicated_proposal,
+1f3ce1d9,train,Nguyễn Kiệm#0,I,agreed,Không thấy vỉa hè
+1f4b38ea,train,Nguyễn Thị Minh Khai,0,single,
+1f6738e0,train,Trần Hưng Đạo,0,single,
+1f79514e,train,Pasteur,I,single,Không thấy vỉa hè
+1f864a72,val,Hồng Bàng,I,agreed,Ảnh mờ / tối / cháy sáng
+1face8f4,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+1fc45a25,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+1fe56c20,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+1febcf2f,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+20003f08,train,Nguyễn Thị Minh Khai,0,single,
+200e5a20,train,Lê Văn Sỹ,0,single,
+201a8e00,train,Trần Hưng Đạo,0,single,
+201f8298,train,Nguyễn Trãi,0,single,
+2038f9b9,test,Lý Thường Kiệt,0,agreed,
+204236ac,train,Nguyễn Thị Minh Khai,0,single,
+20483afa,train,Cách Mạng Tháng Tám#0,I,adjudicated_proposal,
+2073a168,train,Lê Văn Sỹ,0,agreed,
+207ca44c,train,Điện Biên Phủ#1,0,single,
+20892ee5,train,Nguyễn Thị Minh Khai,0,single,
+20b2bd29,test,Trần Phú,0,agreed,
+20b3d1f0,train,Điện Biên Phủ#1,0,single,
+20ca9a5a,train,Trần Hưng Đạo,1,agreed,
+20d052bf,test,Trần Phú,1,agreed,
+20d78c27,test,Hai Bà Trưng,0,agreed,
+20e00267,test,Lý Thường Kiệt,0,adjudicated_proposal,
+20e7544e,train,Điện Biên Phủ#1,0,single,
+20f8b958,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+210a3569,test,Lý Thường Kiệt,0,agreed,
+210e7229,train,Phan Đăng Lưu,0,single,
+2127b1d0,train,Trần Hưng Đạo,0,single,
+212b79ab,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+212fee40,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+2131f8b8,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+2135baff,train,Nguyễn Thị Minh Khai,0,single,
+21676d75,train,Trần Hưng Đạo,0,single,
+2167c9d5,train,Nguyễn Trãi,I,single,Bị che
+21701261,train,Nguyễn Thị Minh Khai,0,single,
+21ddcdf9,train,Trần Hưng Đạo,0,single,
+21f1fcb1,train,Điện Biên Phủ#1,0,single,
+21fae87d,val,Hồng Bàng,I,agreed,Bị che
+221aaf29,train,Nguyễn Thị Minh Khai,0,single,
+223ee612,train,Điện Biên Phủ#1,I,adjudicated_proposal,
+2253e92f,test,Lý Thường Kiệt,0,agreed,
+22701503,test,Lý Thường Kiệt,I,adjudicated_proposal,
+2283591a,train,Nguyễn Trãi,0,single,
+2294ea91,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+22aa017c,train,Cách Mạng Tháng Tám#0,1,single,
+22dc41ec,test,Nơ Trang Long,1,agreed,
+22f063a2,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+22f5174b,train,Trần Hưng Đạo,0,single,
+2323ce40,train,Nguyễn Kiệm#0,1,single,
+233dc29b,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+236c4a49,train,Trần Hưng Đạo,0,single,
+237a76d2,val,Nguyễn Đình Chiểu#0,0,agreed,
+238a557b,val,Hồng Bàng,0,agreed,
+238fbcbb,train,Phan Đăng Lưu,1,agreed,
+23b1ee8a,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+23ce209d,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+23eb1403,train,Cách Mạng Tháng Tám#0,0,single,
+23f30195,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+23f811bc,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+23fb8475,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+23fd3497,train,Hải Thượng Lãn Ông,0,single,
+2405c398,val,Võ Văn Tần,0,adjudicated_proposal,
+2422ed89,test,Lý Thường Kiệt,0,agreed,
+243252e0,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+246ca785,test,Lý Thường Kiệt,0,agreed,
+24ab5ec2,test,Trần Phú,I,agreed,Không thấy vỉa hè
+24cd1f4f,train,Nguyễn Thị Minh Khai,0,single,
+24cf550e,test,Trần Phú,I,agreed,
+24ea0974,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+24f058b2,test,Lý Thường Kiệt,0,agreed,
+24f1eca0,test,Lý Thường Kiệt,0,agreed,
+251548e0,test,Trần Phú,I,agreed,Không thấy vỉa hè
+251a18d9,test,Trần Phú,I,agreed,
+2522d17b,train,Trần Hưng Đạo,0,single,
+2562b8f7,train,Nguyễn Kiệm#0,0,agreed,
+258462d0,train,Nguyễn Kiệm#0,0,single,
+258a143b,train,Trần Hưng Đạo,I,adjudicated_proposal,
+259295d2,train,Lê Văn Sỹ,0,single,
+259e97fe,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+259ed2aa,train,Nguyễn Thị Minh Khai,0,single,
+25b7accc,val,Hồng Bàng,1,adjudicated_proposal,
+25b82de5,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+25cc8d9e,val,Hồng Bàng,0,agreed,
+25d026c9,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+25ede5df,train,Cách Mạng Tháng Tám#0,0,single,
+26234bae,val,Hồng Bàng,0,agreed,
+26262c0b,test,Lý Thường Kiệt,0,agreed,
+2636b0cd,test,Trần Phú,I,agreed,
+2636ceaa,train,Trần Hưng Đạo,0,single,
+263b4f41,val,Hồng Bàng,1,adjudicated_phuc,
+26467acf,train,Nguyễn Thị Minh Khai,I,adjudicated_proposal,
+264cb7a5,train,Cách Mạng Tháng Tám#0,0,adjudicated_proposal,
+26576fd8,train,Trần Hưng Đạo,I,adjudicated_proposal,
+2662da18,train,Trần Hưng Đạo,0,single,
+26b228b1,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+26babdfd,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+26c015c1,train,Nguyễn Thị Minh Khai,0,agreed,
+26c2b432,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+26d09ebd,train,Cách Mạng Tháng Tám#0,0,single,
+26d680e4,train,Hải Thượng Lãn Ông,0,single,
+26d9622b,test,Nơ Trang Long,0,agreed,
+26fdda14,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+2700dd24,test,Lý Thường Kiệt,0,agreed,
+2703bd66,train,Trần Hưng Đạo,I,single,Bị che
+2737d38e,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+2776e9dd,train,Trần Hưng Đạo,0,single,
+2779f6b1,train,Trần Hưng Đạo,0,single,
+2796704c,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+27b7d0de,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+27e90ab0,train,Cách Mạng Tháng Tám#0,0,single,
+28135893,test,Nơ Trang Long,0,adjudicated_phuc,
+2831a61e,test,Lý Thường Kiệt,0,adjudicated_proposal,
+283fff89,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+285c0d7c,train,Trần Hưng Đạo,0,agreed,
+28808d44,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+2897ff35,val,Nguyễn Đình Chiểu#0,1,adjudicated_phuc,
+2899a9fb,train,Điện Biên Phủ#1,0,single,
+28d5620c,train,Pasteur,I,single,Không thấy vỉa hè
+28ed65ef,train,Cách Mạng Tháng Tám#0,0,single,
+293e6c3d,test,Nơ Trang Long,0,agreed,
+2942dc7e,test,Lý Thường Kiệt,0,agreed,
+2948afdd,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+294cf7b8,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+29626ac3,train,Trần Hưng Đạo,0,single,
+297aade6,val,Hồng Bàng,I,agreed,Bị che
+2981519e,train,Hải Thượng Lãn Ông,I,single,Bị che
+29e102f2,train,Điện Biên Phủ#1,0,single,
+29e59242,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+2a02df8a,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+2a13592b,train,Phan Đăng Lưu,0,single,
+2a674bb2,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+2a857540,test,Lý Thường Kiệt,0,adjudicated_proposal,
+2a9e0ce2,train,Pasteur,0,single,
+2aa735b2,train,Nguyễn Kiệm#0,0,single,
+2aa956ef,val,Nguyễn Đình Chiểu#0,1,adjudicated_proposal,
+2ac33343,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+2ac53618,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+2ada75f8,test,Lý Thường Kiệt,0,agreed,
+2af6392c,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+2b081d65,test,Trần Phú,I,agreed,Không thấy vỉa hè
+2b686f8f,train,Cách Mạng Tháng Tám#0,1,single,
+2b9e60ca,val,Hồng Bàng,0,agreed,
+2bb5874a,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+2bbda355,train,Phan Đăng Lưu,I,single,Ảnh mờ / tối / cháy sáng
+2bd2e075,train,Pasteur,I,single,Không thấy vỉa hè
+2bdd6777,test,Lý Thường Kiệt,0,agreed,
+2c1bc1bf,test,Lý Thường Kiệt,0,agreed,
+2c1f6c5c,test,Lý Thường Kiệt,0,agreed,
+2c79aec7,test,Lý Thường Kiệt,0,agreed,
+2c976422,val,Nguyễn Đình Chiểu#0,0,agreed,
+2cab2fcf,train,Điện Biên Phủ#1,I,single,Bị che
+2cbbabba,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+2cbf2715,train,Trần Hưng Đạo,0,single,
+2ce0d7e9,test,Lý Thường Kiệt,0,adjudicated_proposal,
+2cef6096,train,Nguyễn Thị Minh Khai,0,single,
+2cfdd032,test,Lý Thường Kiệt,0,agreed,
+2cfe6acc,val,Võ Văn Tần,1,adjudicated_proposal,
+2d05ead2,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+2d23031d,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+2d25281e,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+2d25fd2b,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+2d2d31bf,train,Cách Mạng Tháng Tám#0,0,single,
+2d366506,test,Hai Bà Trưng,0,agreed,
+2d3f92dc,train,Nguyễn Thị Minh Khai,0,single,
+2d59fc5f,test,Lý Thường Kiệt,0,adjudicated_proposal,
+2d5c7b33,test,Hai Bà Trưng,I,agreed,Bị che
+2d5e1a25,test,Lý Thường Kiệt,0,agreed,
+2d66eb71,test,Lý Thường Kiệt,0,agreed,
+2d84744a,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+2d893539,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+2d8dcb90,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+2d8def01,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+2d9896fb,train,Cách Mạng Tháng Tám#0,0,single,
+2da7a49a,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+2daaa56d,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+2db7ab67,train,Nguyễn Trãi,0,single,
+2dbd4220,test,Hai Bà Trưng,I,agreed,Bị che
+2dbfb9cf,train,Nguyễn Trãi,0,single,
+2dcb3efa,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+2dcb5ad9,val,Nguyễn Đình Chiểu#0,0,agreed,
+2dd0039d,train,Nguyễn Trãi,0,single,
+2e0ebcea,test,Lý Thường Kiệt,0,adjudicated_proposal,
+2e218932,test,Hai Bà Trưng,0,agreed,
+2e33b10d,test,Lý Thường Kiệt,0,agreed,
+2e7f1216,test,Hai Bà Trưng,0,adjudicated_proposal,
+2eceb5d8,train,Lê Văn Sỹ,0,single,
+2ed9cd82,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+2eec78ea,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+2f0c3e5f,val,Nguyễn Đình Chiểu#0,0,agreed,
+2fafbf5c,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+2fd99097,test,Trần Phú,I,agreed,Không thấy vỉa hè
+2fdddd38,test,Hai Bà Trưng,0,adjudicated_proposal,
+2ff42022,test,Trần Phú,I,adjudicated_proposal,
+2ffec4c2,train,Trần Hưng Đạo,0,single,
+300913e5,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+30287a87,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+303b981a,val,Hồng Bàng,0,agreed,
+30588690,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+305e285b,train,Điện Biên Phủ#1,0,single,
+3062ef09,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+308e028f,train,Nguyễn Trãi,I,single,Bị che
+3097b53a,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+309b8c15,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+30c80e48,train,Nguyễn Thị Minh Khai,0,single,
+30c9d66b,train,Trần Hưng Đạo,0,single,
+30d1ab35,train,Hải Thượng Lãn Ông,I,agreed,Không thấy vỉa hè
+30d237e5,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+30e007f2,train,Nguyễn Trãi,0,single,
+310765a4,train,Cách Mạng Tháng Tám#0,0,single,
+310a9d92,train,Cách Mạng Tháng Tám#0,1,single,
+3166c977,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+317dd5a1,train,Phan Đăng Lưu,0,single,
+31aed64d,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+31b7166d,val,Nguyễn Đình Chiểu#0,0,agreed,
+31bb5d1a,train,Điện Biên Phủ#1,0,single,
+31f7b9d4,val,Hồng Bàng,I,agreed,Bị che
+321c982f,train,Trần Hưng Đạo,I,single,Bị che
+32213f27,train,Pasteur,0,single,
+3233cc32,test,Lý Thường Kiệt,0,agreed,
+32352b8a,val,Nguyễn Đình Chiểu#0,0,agreed,
+323a873b,train,Nguyễn Trãi,0,single,
+3245779e,train,Cách Mạng Tháng Tám#0,0,agreed,
+324d72ec,val,Nguyễn Đình Chiểu#0,0,agreed,
+3255ad88,train,Trần Hưng Đạo,0,single,
+32693383,test,Hai Bà Trưng,1,agreed,
+327a90aa,train,Trần Hưng Đạo,0,single,
+327b17c1,train,Nguyễn Trãi,0,single,
+329709b0,train,Nguyễn Trãi,0,single,
+32f6f9bf,test,Lý Thường Kiệt,0,agreed,
+332ba59f,train,Cách Mạng Tháng Tám#0,0,single,
+332ca2bb,train,Pasteur,0,single,
+3348c069,train,Trần Hưng Đạo,0,single,
+334ddd4d,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+335039f1,val,Hồng Bàng,1,agreed,
+3365ac30,test,Lý Thường Kiệt,0,agreed,
+33748c2c,train,Nguyễn Kiệm#0,I,single,Bị che
+338c70df,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+339015da,train,Nguyễn Thị Minh Khai,0,single,
+339435d1,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+33a7fd9d,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+33e25433,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+33e7dbe5,test,Lý Thường Kiệt,0,agreed,
+33e7f223,train,Cách Mạng Tháng Tám#0,0,single,
+33fd9360,val,Hồng Bàng,0,adjudicated_proposal,
+34179e20,val,Võ Văn Tần,0,agreed,
+342e2ce3,val,Hồng Bàng,1,agreed,
+344edad9,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+345a3818,train,Nguyễn Thị Minh Khai,0,single,
+345a6cdf,train,Điện Biên Phủ#1,0,single,
+34662237,test,Lý Thường Kiệt,I,adjudicated_proposal,
+347763d2,val,Nguyễn Đình Chiểu#0,0,agreed,
+34857521,train,Nguyễn Thị Minh Khai,1,single,
+34abbf69,train,Nguyễn Thị Minh Khai,0,single,
+34c3395b,train,Nguyễn Trãi,0,single,
+34e2cecb,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+356ac051,train,Lê Văn Sỹ,0,single,
+35749762,test,Lý Thường Kiệt,I,adjudicated_proposal,
+357d5755,val,Võ Văn Tần,I,adjudicated_proposal,
+357ebaea,train,Nguyễn Trãi,0,single,
+358a0158,train,Lê Văn Sỹ,0,single,
+359c2902,test,Hai Bà Trưng,0,agreed,
+359e45c0,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+35da9460,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+3614e1c8,train,Hải Thượng Lãn Ông,1,single,
+361acb38,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+361ad565,train,Phan Đăng Lưu,I,single,Bị che
+3621e2e4,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+36521f27,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+365d12fb,train,Trần Hưng Đạo,0,single,
+3688b349,train,Nguyễn Trãi,0,single,
+36a782cb,train,Cách Mạng Tháng Tám#0,0,agreed,
+36aa8b96,train,Hải Thượng Lãn Ông,0,single,
+36b09bdd,train,Nguyễn Trãi,1,adjudicated_phuc,
+36b34561,train,Phan Đăng Lưu,0,agreed,
+36b60244,train,Nguyễn Trãi,0,single,
+36b78646,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+36cf3992,train,Điện Biên Phủ#1,0,single,
+36d3d3f0,val,Hồng Bàng,0,agreed,
+36d800f7,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+36e46109,train,Cách Mạng Tháng Tám#0,0,single,
+3716265d,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+371ac547,train,Trần Hưng Đạo,0,single,
+3727aa13,train,Phan Đăng Lưu,I,adjudicated_proposal,
+3745af9c,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+375550bb,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+375ecbdf,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+376f8b6b,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+377a9426,test,Lý Thường Kiệt,I,adjudicated_proposal,
+377d8307,val,Võ Văn Tần,I,agreed,Bị che
+3785c554,train,Nguyễn Trãi,0,single,
+3789c28f,train,Hải Thượng Lãn Ông,0,single,
+3792cb1f,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+37942f88,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+379e4263,val,Hồng Bàng,1,agreed,
+37b5423a,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+37b8636a,val,Hồng Bàng,0,agreed,
+37fe7ee2,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+3800812a,train,Trần Hưng Đạo,0,single,
+3816d398,train,Nguyễn Thị Minh Khai,0,single,
+3827e619,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+38297678,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+383872f6,train,Hải Thượng Lãn Ông,I,agreed,Không thấy vỉa hè
+384240cf,test,Lý Thường Kiệt,0,agreed,
+3846ec2e,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+38488cfc,test,Hai Bà Trưng,0,adjudicated_proposal,
+3877d005,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+38817527,test,Hai Bà Trưng,0,agreed,
+38841f20,train,Trần Hưng Đạo,0,single,
+3897375c,train,Hải Thượng Lãn Ông,I,agreed,Không thấy vỉa hè
+38a8fdcf,train,Cách Mạng Tháng Tám#0,0,single,
+38bcce18,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+38e2aede,train,Điện Biên Phủ#1,I,single,Bị che
+38f8836e,train,Trần Hưng Đạo,0,single,
+38fd9cb5,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+39024ee1,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+3909ddb2,train,Pasteur,I,single,Không thấy vỉa hè
+3916be33,train,Nguyễn Trãi,0,single,
+39335ac1,train,Trần Hưng Đạo,0,single,
+393833ec,train,Nguyễn Thị Minh Khai,0,single,
+3947683e,train,Nguyễn Trãi,0,single,
+394d204c,train,Nguyễn Thị Minh Khai,0,single,
+39511ab3,train,Lê Văn Sỹ,0,single,
+39659be0,train,Nguyễn Trãi,0,single,
+399b5a4c,test,Hai Bà Trưng,I,agreed,Bị che
+399c9d69,train,Nguyễn Trãi,0,adjudicated_proposal,
+399d4387,train,Điện Biên Phủ#1,1,single,
+39b07315,train,Nguyễn Trãi,0,single,
+39b50370,val,Nguyễn Đình Chiểu#0,0,agreed,
+39b7d59b,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+39cfd8fb,train,Phan Đăng Lưu,0,single,
+39fb4afb,train,Nguyễn Thị Minh Khai,1,single,
+3a173fbe,train,Trần Hưng Đạo,0,single,
+3a26b393,train,Nguyễn Kiệm#0,0,single,
+3a6a7da6,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+3a79ffd2,test,Trần Phú,I,agreed,Không thấy vỉa hè
+3a8ab3c6,train,Nguyễn Thị Minh Khai,0,agreed,
+3a9589bb,train,Phan Đăng Lưu,0,agreed,
+3ac6e151,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+3acf22ed,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+3ae8c5f3,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+3b00c8ae,val,Võ Văn Tần,0,adjudicated_proposal,
+3b0c3471,test,Lý Thường Kiệt,0,adjudicated_phuc,
+3b3bcaf9,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+3b3ddc5e,train,Trần Hưng Đạo,0,single,
+3b4a93f9,train,Lê Văn Sỹ,0,single,
+3b8e677a,val,Hồng Bàng,0,agreed,
+3b91d1ad,test,Hai Bà Trưng,0,agreed,
+3b9798fb,val,Hồng Bàng,0,agreed,
+3ba96d8d,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+3bb1d39f,train,Cách Mạng Tháng Tám#0,0,single,
+3bc6ed74,train,Cách Mạng Tháng Tám#0,0,single,
+3be0c8a5,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+3be2b33b,val,Võ Văn Tần,0,agreed,
+3bef8f2e,train,Lê Văn Sỹ,0,single,
+3bf5a27d,test,Nơ Trang Long,0,adjudicated_proposal,
+3c0dc742,test,Hai Bà Trưng,I,adjudicated_proposal,
+3c24d195,test,Lý Thường Kiệt,0,agreed,
+3c2e93ca,test,Lý Thường Kiệt,I,adjudicated_proposal,
+3c2ecfe1,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+3c3a8342,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+3c3e6f11,train,Nguyễn Thị Minh Khai,0,single,
+3c4c8275,train,Trần Hưng Đạo,0,single,
+3c5b9252,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+3c5ea1fd,train,Cách Mạng Tháng Tám#0,0,single,
+3c69f7a8,train,Hải Thượng Lãn Ông,1,single,
+3c6b256e,train,Nguyễn Trãi,0,single,
+3c6b8060,train,Phan Đăng Lưu,0,single,
+3c878ec4,test,Hai Bà Trưng,0,agreed,
+3c9e64f5,train,Trần Hưng Đạo,0,single,
+3ca3cb92,val,Hồng Bàng,0,agreed,
+3cad8ad6,test,Hai Bà Trưng,0,agreed,
+3cb12de4,train,Lê Văn Sỹ,0,single,
+3cfb45c0,val,Nguyễn Đình Chiểu#0,0,agreed,
+3d1586e3,train,Nguyễn Kiệm#0,0,single,
+3d22b7d3,test,Lý Thường Kiệt,0,agreed,
+3d26e79c,train,Nguyễn Trãi,I,adjudicated_proposal,
+3d30e413,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+3d376aa9,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+3d38494a,test,Lý Thường Kiệt,0,agreed,
+3d61276e,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+3d816005,test,Lý Thường Kiệt,0,agreed,
+3d9dd4e3,train,Nguyễn Kiệm#0,I,agreed,Không thấy vỉa hè
+3db86891,val,Hồng Bàng,I,adjudicated_proposal,
+3dc70544,train,Nguyễn Thị Minh Khai,0,single,
+3e4938e8,train,Nguyễn Thị Minh Khai,0,single,
+3e4bf966,test,Lý Thường Kiệt,I,adjudicated_proposal,
+3e5b1cc3,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+3e74b9d5,train,Nguyễn Thị Minh Khai,0,single,
+3e795f87,train,Cách Mạng Tháng Tám#0,0,single,
+3e8aedff,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+3e93ff81,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+3e9f962f,test,Trần Phú,0,adjudicated_phuc,
+3eb7f8f8,test,Hai Bà Trưng,0,agreed,
+3ec57fff,val,Nguyễn Đình Chiểu#0,0,agreed,
+3ec6a1bc,train,Trần Hưng Đạo,0,single,
+3ecb306c,train,Nguyễn Thị Minh Khai,0,single,
+3f2caf55,test,Nơ Trang Long,0,agreed,
+3f432752,train,Trần Hưng Đạo,0,single,
+3f6d96d5,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+3f898d30,val,Võ Văn Tần,0,agreed,
+3fa880a1,train,Điện Biên Phủ#1,I,single,Bị che
+3fcc094f,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+3fd4a4fd,train,Cách Mạng Tháng Tám#0,0,single,
+3fe93050,val,Hồng Bàng,I,agreed,Ảnh mờ / tối / cháy sáng
+3ff0a238,train,Hải Thượng Lãn Ông,0,single,
+40119b5a,val,Hồng Bàng,I,agreed,
+401baf99,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+401c6135,test,Hai Bà Trưng,0,agreed,
+401d3074,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+402e353a,test,Hai Bà Trưng,0,agreed,
+40408fe0,train,Nguyễn Trãi,0,single,
+408fae13,test,Lý Thường Kiệt,0,adjudicated_proposal,
+40c4cd63,train,Phan Đăng Lưu,0,single,
+40d90b61,val,Nguyễn Đình Chiểu#0,0,agreed,
+40f1e9dd,test,Hai Bà Trưng,I,agreed,
+40f7c105,train,Nguyễn Thị Minh Khai,0,single,
+40faf29d,test,Lý Thường Kiệt,0,agreed,
+41193139,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+412ff8ed,val,Nguyễn Đình Chiểu#0,0,agreed,
+414b19ae,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+4151e8f4,train,Nguyễn Thị Minh Khai,0,single,
+4167915a,train,Nguyễn Trãi,0,single,
+41761453,train,Trần Hưng Đạo,0,single,
+418027da,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+4182f0b4,val,Hồng Bàng,1,adjudicated_proposal,
+418e38c9,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+41ad0012,train,Nguyễn Kiệm#0,0,single,
+41b936f6,train,Phan Đăng Lưu,0,single,
+41be067b,train,Nguyễn Trãi,0,single,
+4213068e,train,Điện Biên Phủ#1,0,agreed,
+4228ef30,train,Phan Đăng Lưu,0,single,
+4230fc22,train,Pasteur,I,single,Không thấy vỉa hè
+4234f857,val,Hồng Bàng,0,agreed,
+423a3fed,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+4241c0a4,train,Nguyễn Kiệm#0,0,single,
+4249dc0a,train,Phan Đăng Lưu,0,single,
+42513979,val,Hồng Bàng,0,agreed,
+42597e1c,train,Điện Biên Phủ#1,0,single,
+42605362,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+426e2bde,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+427a1591,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+42a193a2,train,Nguyễn Kiệm#0,I,single,Bị che
+430bf489,train,Hải Thượng Lãn Ông,0,single,
+43103c8d,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+431c6b64,train,Cách Mạng Tháng Tám#0,0,single,
+43214df8,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+434a54e6,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+436178ef,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+4384cc1b,train,Nguyễn Thị Minh Khai,I,single,Bị che
+4387a2f0,val,Nguyễn Đình Chiểu#0,0,agreed,
+4391a711,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+43a051e3,train,Nguyễn Trãi,I,adjudicated_proposal,
+43a67994,val,Hồng Bàng,0,agreed,
+43c27a86,test,Hai Bà Trưng,0,agreed,
+440024a8,train,Nguyễn Trãi,0,single,
+440aae47,train,Cách Mạng Tháng Tám#0,0,single,
+4474a58f,train,Trần Hưng Đạo,0,single,
+44941d16,test,Trần Phú,1,adjudicated_phuc,
+44c2d832,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+44d3e093,train,Trần Hưng Đạo,0,single,
+44e02832,train,Nguyễn Thị Minh Khai,0,single,
+44e5565d,train,Nguyễn Kiệm#0,I,agreed,Không thấy vỉa hè
+4517b355,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+451eebef,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+452eeb53,train,Cách Mạng Tháng Tám#0,0,agreed,
+453fd3ac,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+4549b145,train,Lê Văn Sỹ,0,single,
+455e85bd,train,Điện Biên Phủ#1,0,agreed,
+45688fbc,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+45698ddc,train,Nguyễn Thị Minh Khai,0,single,
+456bb807,test,Hai Bà Trưng,1,adjudicated_proposal,
+4571e2e5,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+457956f3,test,Hai Bà Trưng,0,agreed,
+458d18da,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+45957094,train,Trần Hưng Đạo,0,single,
+45eb9f5a,train,Cách Mạng Tháng Tám#0,0,single,
+45ff302b,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+461c603f,val,Hồng Bàng,0,agreed,
+462b5a02,test,Lý Thường Kiệt,0,agreed,
+46606ff0,train,Lê Văn Sỹ,0,single,
+466498ee,test,Hai Bà Trưng,I,agreed,Bị che
+467abd3b,train,Trần Hưng Đạo,0,single,
+46818324,train,Điện Biên Phủ#1,I,single,Bị che
+468fdb22,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+46b8fb88,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+46c27084,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+46c84d61,train,Nguyễn Kiệm#0,1,single,
+46dc311a,train,Hải Thượng Lãn Ông,I,agreed,
+46e6e26e,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+46fcfb24,train,Điện Biên Phủ#1,0,single,
+4754ab65,val,Nguyễn Đình Chiểu#0,0,agreed,
+475ebd4b,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+475eee9a,train,Lê Văn Sỹ,1,agreed,
+477f9610,test,Hai Bà Trưng,0,adjudicated_proposal,
+47817e6e,val,Nguyễn Đình Chiểu#0,0,agreed,
+478e5bdc,val,Nguyễn Đình Chiểu#0,0,agreed,
+47909f6f,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+47ac231e,val,Nguyễn Đình Chiểu#0,0,agreed,
+47b071c4,test,Lý Thường Kiệt,I,adjudicated_proposal,
+47e61845,train,Nguyễn Thị Minh Khai,0,single,
+47f5c3af,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+47f73662,train,Lê Văn Sỹ,0,single,
+47fe4c32,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+48032fe4,train,Điện Biên Phủ#1,1,single,
+482c2d06,train,Cách Mạng Tháng Tám#0,I,single,
+48445563,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+4844a4e9,val,Nguyễn Đình Chiểu#0,I,agreed,
+48607f00,train,Phan Đăng Lưu,0,single,
+4860d7bf,test,Lý Thường Kiệt,0,agreed,
+4878e508,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+4884c673,test,Lý Thường Kiệt,0,agreed,
+4897f466,train,Phan Đăng Lưu,0,single,
+48ac8e08,train,Trần Hưng Đạo,0,single,
+48e0783b,train,Điện Biên Phủ#1,0,single,
+48f6e8b0,train,Lê Văn Sỹ,I,single,Bị che
+49296fec,train,Trần Hưng Đạo,0,single,
+494cf63c,train,Phan Đăng Lưu,0,single,
+496c6033,train,Điện Biên Phủ#1,0,agreed,
+49877fa9,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+49b3d331,train,Hải Thượng Lãn Ông,I,adjudicated_proposal,
+49b8b770,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+49fc98b3,train,Lê Văn Sỹ,0,single,
+4a024506,train,Pasteur,I,single,Không thấy vỉa hè
+4a02ccf4,train,Điện Biên Phủ#1,0,single,
+4a096fc3,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+4a0b2d61,train,Phan Đăng Lưu,0,agreed,
+4a3ff2ed,train,Nguyễn Trãi,1,single,
+4a5f5112,train,Trần Hưng Đạo,0,single,
+4a7e5392,train,Nguyễn Kiệm#0,0,single,
+4a928612,train,Nguyễn Thị Minh Khai,0,single,
+4aaf99f9,train,Cách Mạng Tháng Tám#0,0,single,
+4ab789c1,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+4ac6ce8f,val,Võ Văn Tần,I,agreed,Bị che
+4ad0790e,train,Trần Hưng Đạo,0,agreed,
+4b05117f,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+4b0ec863,train,Trần Hưng Đạo,0,single,
+4b15b9bf,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+4b160004,test,Hai Bà Trưng,I,agreed,Bị che
+4b55054b,train,Nguyễn Trãi,0,single,
+4b75c401,test,Hai Bà Trưng,1,adjudicated_proposal,
+4b76f715,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+4b7b216c,train,Trần Hưng Đạo,0,agreed,
+4bc134c9,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+4bfa993f,test,Nơ Trang Long,1,agreed,
+4c0eb396,train,Nguyễn Thị Minh Khai,0,single,
+4c19e9a7,test,Lý Thường Kiệt,0,agreed,
+4c288537,train,Nguyễn Thị Minh Khai,I,single,Bị che
+4c386490,train,Cách Mạng Tháng Tám#0,0,single,
+4c40c3a5,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+4c5434f7,train,Nguyễn Trãi,1,single,
+4c58fcb1,train,Pasteur,I,single,Không thấy vỉa hè
+4c607124,train,Trần Hưng Đạo,1,single,
+4c78949a,train,Pasteur,I,single,Không thấy vỉa hè
+4c8a2c14,train,Nguyễn Thị Minh Khai,1,single,
+4cb2bd00,train,Cách Mạng Tháng Tám#0,0,single,
+4cb5ed2b,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+4ce4b43f,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+4cf688fa,test,Lý Thường Kiệt,0,agreed,
+4cf90df9,train,Trần Hưng Đạo,0,single,
+4cf989bb,train,Phan Đăng Lưu,I,single,Bị che
+4d18f167,val,Võ Văn Tần,I,agreed,Bị che
+4d26ef6d,test,Trần Phú,I,adjudicated_proposal,
+4d3bbdd9,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+4d426ea6,train,Nguyễn Kiệm#0,I,single,Bị che
+4d691a29,train,Pasteur,I,single,Không thấy vỉa hè
+4d7467c1,test,Lý Thường Kiệt,0,agreed,
+4d8b771e,test,Lý Thường Kiệt,0,agreed,
+4dfac14e,test,Lý Thường Kiệt,0,agreed,
+4e372339,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+4e4617a7,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+4e48128b,train,Nguyễn Trãi,0,agreed,
+4e81970e,train,Lê Văn Sỹ,0,single,
+4e8a05f8,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+4eba2295,test,Lý Thường Kiệt,0,agreed,
+4ed45db8,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+4ee0e195,train,Nguyễn Trãi,0,single,
+4ef1e1f0,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+4f71296d,train,Lê Văn Sỹ,0,single,
+4f716f3c,test,Trần Phú,0,agreed,
+4f8da0c6,test,Nơ Trang Long,0,adjudicated_proposal,
+4f991f8e,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+4fbdc40d,test,Hai Bà Trưng,0,agreed,
+4fda619a,train,Cách Mạng Tháng Tám#0,0,single,
+4fed71ca,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+4fef1ea8,test,Trần Phú,0,agreed,
+4ff142ac,test,Lý Thường Kiệt,0,agreed,
+4ffc284f,train,Nguyễn Trãi,0,single,
+5034a1b4,test,Lý Thường Kiệt,1,agreed,
+50526771,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+506aaf1a,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+50762918,train,Nguyễn Trãi,I,adjudicated_proposal,
+5077d801,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+509315ae,test,Lý Thường Kiệt,0,agreed,
+50a69ae0,val,Hồng Bàng,0,agreed,
+50d75b73,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+513c7d48,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+513f9123,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+51644b8f,val,Nguyễn Đình Chiểu#0,I,agreed,
+516667cf,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+517cbdcc,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+5185808e,train,Nguyễn Thị Minh Khai,0,single,
+51929301,test,Hai Bà Trưng,I,agreed,
+519fd5e7,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+51a17af0,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+51d5d862,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+5215168c,train,Cách Mạng Tháng Tám#0,0,single,
+52220b33,train,Điện Biên Phủ#1,0,single,
+52255927,test,Nơ Trang Long,0,agreed,
+522c14d3,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+5231f08e,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+524b40da,train,Trần Hưng Đạo,0,single,
+52516478,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+52705cc2,train,Điện Biên Phủ#1,0,single,
+52763c73,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+5277a8b8,val,Nguyễn Đình Chiểu#0,0,agreed,
+5327996f,train,Nguyễn Thị Minh Khai,I,single,Bị che
+5335b832,train,Trần Hưng Đạo,1,single,
+53757afd,train,Trần Hưng Đạo,0,single,
+539344c4,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+53a4d4f9,train,Cách Mạng Tháng Tám#0,0,adjudicated_proposal,
+53a5cbad,train,Pasteur,I,single,Không thấy vỉa hè
+53afbb35,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+53b82122,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+53d078ac,train,Nguyễn Thị Minh Khai,0,single,
+53e4bd60,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+53ed4670,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+541c8b29,train,Cách Mạng Tháng Tám#0,0,single,
+541e61b9,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+5432dd89,val,Võ Văn Tần,I,adjudicated_proposal,
+5453598a,test,Trần Phú,I,agreed,Không thấy vỉa hè
+546d79fc,train,Trần Hưng Đạo,0,single,
+547e8b4b,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+54807cda,val,Nguyễn Đình Chiểu#0,0,agreed,
+54867acd,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+54a70292,train,Trần Hưng Đạo,0,single,
+54b3b557,train,Nguyễn Trãi,0,single,
+54c13fb9,train,Nguyễn Trãi,0,single,
+54d0e90a,train,Cách Mạng Tháng Tám#0,0,single,
+54d6c40c,train,Phan Đăng Lưu,0,single,
+54d9faf5,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+54e46cc2,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+54ee1aae,test,Lý Thường Kiệt,0,agreed,
+54eff26f,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+54f18110,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+54f823a8,train,Nguyễn Trãi,0,single,
+5500efe0,val,Võ Văn Tần,1,agreed,
+55174945,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+5519bba6,train,Điện Biên Phủ#1,0,single,
+55465971,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+55536511,train,Nguyễn Trãi,0,single,
+5558fff8,val,Nguyễn Đình Chiểu#0,1,adjudicated_proposal,
+555f6b1c,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+557117d5,test,Hai Bà Trưng,0,agreed,
+55900d8c,train,Điện Biên Phủ#1,0,single,
+559583a4,test,Lý Thường Kiệt,0,agreed,
+55b3c389,train,Cách Mạng Tháng Tám#0,1,adjudicated_phuc,
+56057a44,train,Nguyễn Thị Minh Khai,1,single,
+5627f23f,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+562e6900,test,Hai Bà Trưng,0,agreed,
+56485bd8,train,Trần Hưng Đạo,0,single,
+5668264c,test,Hai Bà Trưng,0,agreed,
+56700c61,val,Hồng Bàng,1,agreed,
+56751b98,test,Hai Bà Trưng,0,agreed,
+56894e4e,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+5696ec6f,val,Võ Văn Tần,I,agreed,
+56d78531,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+56f7db8b,val,Hồng Bàng,1,agreed,
+57119832,train,Trần Hưng Đạo,0,single,
+571a7f39,train,Nguyễn Kiệm#0,0,single,
+5741b24f,test,Lý Thường Kiệt,0,agreed,
+576e96a6,train,Phan Đăng Lưu,0,single,
+57805d26,train,Phan Đăng Lưu,0,agreed,
+57bbac75,train,Lê Văn Sỹ,0,single,
+57bcb0d2,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+57d3524a,train,Hải Thượng Lãn Ông,0,single,
+57e095cf,val,Hồng Bàng,I,agreed,Bị che
+57e5b319,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+57f39705,train,Nguyễn Thị Minh Khai,0,agreed,
+57fc4b7a,train,Nguyễn Thị Minh Khai,0,single,
+5803e49f,train,Cách Mạng Tháng Tám#0,0,single,
+580a1d55,test,Nơ Trang Long,0,agreed,
+580ebe77,test,Lý Thường Kiệt,1,adjudicated_proposal,
+5841a74a,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+5865263f,train,Nguyễn Trãi,0,single,
+5870515c,train,Nguyễn Thị Minh Khai,0,single,
+58768a28,test,Hai Bà Trưng,0,agreed,
+58830bef,val,Võ Văn Tần,I,agreed,Bị che
+5892ecf9,test,Lý Thường Kiệt,0,adjudicated_proposal,
+5898966e,train,Trần Hưng Đạo,0,single,
+58aa01af,train,Nguyễn Thị Minh Khai,0,single,
+58b95dd1,train,Nguyễn Thị Minh Khai,0,single,
+58bb2859,train,Pasteur,I,single,Không thấy vỉa hè
+58e4165d,val,Hồng Bàng,0,adjudicated_proposal,
+58ea4d8e,test,Lý Thường Kiệt,0,agreed,
+594550cb,train,Trần Hưng Đạo,1,single,
+59562fab,val,Nguyễn Đình Chiểu#0,0,agreed,
+5967051a,train,Pasteur,1,single,
+5977a1b8,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+59906af1,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+59a2fb57,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+59c3923c,val,Nguyễn Đình Chiểu#0,I,agreed,
+59ef1621,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+59ff681f,train,Cách Mạng Tháng Tám#0,0,single,
+5a06d0af,test,Hai Bà Trưng,1,agreed,
+5a1042d3,val,Võ Văn Tần,0,agreed,
+5a110454,train,Điện Biên Phủ#1,I,agreed,
+5a2a8307,test,Hai Bà Trưng,0,agreed,
+5a396a84,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+5a487a1c,train,Pasteur,0,single,
+5a75aa49,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+5a85fc9c,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+5a9a27a2,val,Võ Văn Tần,0,adjudicated_proposal,
+5abd8d7d,train,Phan Đăng Lưu,0,agreed,
+5af1f2d3,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+5af41400,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+5b0ac572,train,Phan Đăng Lưu,0,agreed,
+5b0ae1b8,test,Lý Thường Kiệt,0,agreed,
+5b0f2f48,val,Võ Văn Tần,0,agreed,
+5b538cc9,test,Hai Bà Trưng,0,agreed,
+5b5cf2e9,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+5b87e3fb,val,Võ Văn Tần,I,adjudicated_proposal,
+5b96b1bf,val,Nguyễn Đình Chiểu#0,0,agreed,
+5beb8e04,train,Phan Đăng Lưu,0,single,
+5c12311d,test,Nơ Trang Long,0,adjudicated_proposal,
+5c47440b,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+5c4851f5,test,Hai Bà Trưng,0,agreed,
+5c6531a1,train,Nguyễn Kiệm#0,0,single,
+5c70b786,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+5c780654,val,Nguyễn Đình Chiểu#0,0,agreed,
+5c90efbf,train,Điện Biên Phủ#1,0,single,
+5ca761d1,test,Lý Thường Kiệt,0,agreed,
+5cb34871,train,Phan Đăng Lưu,0,single,
+5cb41bb9,test,Lý Thường Kiệt,0,agreed,
+5cbfa478,train,Trần Hưng Đạo,0,single,
+5ccd02ff,train,Cách Mạng Tháng Tám#0,0,single,
+5cdbd503,train,Cách Mạng Tháng Tám#0,0,single,
+5cdf7f34,test,Hai Bà Trưng,I,agreed,Bị che
+5d04d330,train,Nguyễn Thị Minh Khai,0,single,
+5d110d0f,train,Hải Thượng Lãn Ông,1,single,
+5d2e6735,test,Trần Phú,I,adjudicated_proposal,
+5d5bfe27,train,Cách Mạng Tháng Tám#0,0,single,
+5d7b07b4,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+5d948453,test,Lý Thường Kiệt,0,agreed,
+5dadce76,test,Lý Thường Kiệt,I,adjudicated_proposal,
+5dd51de3,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+5de51d34,val,Nguyễn Đình Chiểu#0,0,agreed,
+5df44591,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+5e01964f,train,Trần Hưng Đạo,I,single,Bị che
+5e163f6a,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+5e330298,train,Phan Đăng Lưu,0,single,
+5e36c1ab,train,Nguyễn Kiệm#0,0,single,
+5e3eebc0,test,Trần Phú,I,agreed,Không thấy vỉa hè
+5e4e0979,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+5e7acad1,train,Hải Thượng Lãn Ông,0,single,
+5e8f8be6,train,Trần Hưng Đạo,I,adjudicated_proposal,
+5ebfcbbc,train,Nguyễn Trãi,0,single,
+5ed037a4,train,Nguyễn Kiệm#0,0,single,
+5ee27e5e,train,Pasteur,I,single,Không thấy vỉa hè
+5f03d8f9,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+5f0c9cc2,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+5f2d682c,val,Võ Văn Tần,0,agreed,
+5f66ce51,train,Điện Biên Phủ#1,1,agreed,
+5f7aaef0,train,Pasteur,I,single,Không thấy vỉa hè
+5f7c5474,train,Điện Biên Phủ#1,0,single,
+5fb04b7f,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+5fb0c0b6,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+5fc7a990,train,Trần Hưng Đạo,I,adjudicated_proposal,
+5fcf1c35,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+5fe3283d,test,Nơ Trang Long,0,adjudicated_proposal,
+60056107,test,Lý Thường Kiệt,0,agreed,
+6022a91e,val,Võ Văn Tần,1,agreed,
+6036dc5e,test,Lý Thường Kiệt,0,agreed,
+60465ad9,train,Nguyễn Trãi,0,single,
+6070a0da,train,Phan Đăng Lưu,0,agreed,
+6089d49b,train,Trần Hưng Đạo,0,single,
+608f4248,train,Trần Hưng Đạo,0,single,
+6092a46e,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+60b19ead,test,Trần Phú,0,agreed,
+60b9e9ec,train,Cách Mạng Tháng Tám#0,0,single,
+60d13d00,train,Nguyễn Thị Minh Khai,0,single,
+6112e273,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+613036f4,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+61425595,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+614430fa,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+614ae414,train,Điện Biên Phủ#1,0,single,
+616578e7,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+61a2d481,train,Hải Thượng Lãn Ông,1,single,
+61be5267,train,Nguyễn Trãi,I,agreed,Bị che
+61cb68ee,test,Hai Bà Trưng,0,agreed,
+61d1f8a8,train,Cách Mạng Tháng Tám#0,0,single,
+621a407d,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+62250e9a,train,Lê Văn Sỹ,0,single,
+623f6e5f,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+624eb23c,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+62611992,test,Trần Phú,0,agreed,
+626d93a1,train,Cách Mạng Tháng Tám#0,0,single,
+6288c50d,train,Cách Mạng Tháng Tám#0,0,single,
+628c70ce,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+629338b3,train,Pasteur,0,single,
+62bb1fab,test,Hai Bà Trưng,0,agreed,
+62d7509f,test,Lý Thường Kiệt,0,agreed,
+62f12c06,train,Nguyễn Kiệm#0,0,agreed,
+62fc9368,test,Lý Thường Kiệt,I,agreed,
+6302a1d2,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+6317b8c3,test,Hai Bà Trưng,I,agreed,
+6322839b,val,Hồng Bàng,I,agreed,
+63404134,val,Hồng Bàng,0,adjudicated_proposal,
+636f4ef3,train,Nguyễn Trãi,0,agreed,
+63bcb384,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+63cfc98f,train,Trần Hưng Đạo,0,agreed,
+63eb5826,train,Nguyễn Trãi,0,single,
+63fe07fc,val,Hồng Bàng,1,adjudicated_proposal,
+641503bf,train,Điện Biên Phủ#1,1,single,
+64186481,train,Nguyễn Kiệm#0,I,single,Bị che
+641aaced,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+643e7e40,train,Nguyễn Trãi,I,single,Ảnh mờ / tối / cháy sáng
+64408c7b,train,Nguyễn Thị Minh Khai,0,single,
+6445d5a1,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+6445f28b,test,Hai Bà Trưng,0,agreed,
+64513c33,train,Điện Biên Phủ#1,0,single,
+64672e39,train,Lê Văn Sỹ,0,single,
+646e15b7,val,Nguyễn Đình Chiểu#0,0,adjudicated_phuc,
+6470911e,train,Nguyễn Trãi,0,single,
+647fdae7,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
+64a56671,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+64b45f4c,train,Trần Hưng Đạo,0,single,
+64d836cb,test,Lý Thường Kiệt,1,agreed,
+64e048d2,test,Lý Thường Kiệt,0,agreed,
+64e20e39,test,Hai Bà Trưng,0,agreed,
+64e27502,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+64eee134,test,Lý Thường Kiệt,I,adjudicated_proposal,
+64fd0252,test,Trần Phú,I,agreed,Không thấy vỉa hè
+6512e65c,train,Nguyễn Kiệm#0,1,adjudicated_proposal,
+652cb19c,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+652d9e17,train,Trần Hưng Đạo,0,single,
+654fce49,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+6555b428,train,Nguyễn Trãi,0,single,
+655c5bd6,train,Điện Biên Phủ#1,0,agreed,
+6569bac8,train,Điện Biên Phủ#1,I,single,Lý do khác
+6572543e,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+657f3815,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+658c0c2d,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+658cd49a,train,Trần Hưng Đạo,0,single,
+658e684f,train,Lê Văn Sỹ,0,agreed,
+659b4e20,train,Nguyễn Kiệm#0,0,single,
+65c76efd,train,Trần Hưng Đạo,0,single,
+65c8eab6,test,Lý Thường Kiệt,0,agreed,
+65fa2b98,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+661c9558,train,Nguyễn Trãi,0,single,
+661faf5c,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+664612d0,test,Hai Bà Trưng,0,agreed,
+664d169e,train,Điện Biên Phủ#1,0,single,
+6665e807,val,Võ Văn Tần,I,agreed,Bị che
+6679c90f,train,Lê Văn Sỹ,0,single,
+66c26dce,train,Nguyễn Kiệm#0,0,single,
+66d8e000,test,Trần Phú,I,agreed,Không thấy vỉa hè
+66dedb1d,train,Điện Biên Phủ#1,1,single,
+66dfab6b,train,Cách Mạng Tháng Tám#0,1,single,
+66e47885,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+66fc5193,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+6716da7f,train,Pasteur,I,single,Không thấy vỉa hè
+671f8cf5,val,Võ Văn Tần,0,agreed,
+679265d9,train,Nguyễn Kiệm#0,I,single,Bị che
+67a82690,train,Hải Thượng Lãn Ông,0,single,
+67c0f8d0,test,Lý Thường Kiệt,0,agreed,
+67efc9d5,train,Trần Hưng Đạo,I,agreed,Bị che
+67f964b0,test,Hai Bà Trưng,0,agreed,
+67fdb35d,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+68137e01,val,Võ Văn Tần,0,agreed,
+68264add,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+683de398,train,Lê Văn Sỹ,0,agreed,
+6856cee8,train,Nguyễn Thị Minh Khai,0,agreed,
+68651e5a,train,Lê Văn Sỹ,0,single,
+68738ef6,val,Võ Văn Tần,0,agreed,
+68767447,train,Nguyễn Thị Minh Khai,0,single,
+687d261d,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+689a8b1d,val,Hồng Bàng,0,agreed,
+68c7040c,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+68cb1235,train,Trần Hưng Đạo,0,single,
+68d7ec52,train,Trần Hưng Đạo,0,single,
+68e7ebdb,val,Võ Văn Tần,1,adjudicated_proposal,
+68eb4f2e,test,Lý Thường Kiệt,0,agreed,
+6902d130,val,Nguyễn Đình Chiểu#0,0,agreed,
+691320ef,val,Hồng Bàng,I,adjudicated_proposal,
+69281ba8,train,Trần Hưng Đạo,1,single,
+693295fb,test,Lý Thường Kiệt,0,agreed,
+6947df8a,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+695fb3f6,test,Lý Thường Kiệt,I,adjudicated_proposal,
+6967649c,test,Nơ Trang Long,0,adjudicated_proposal,
+69812fa5,train,Điện Biên Phủ#1,0,single,
+698960b8,train,Trần Hưng Đạo,0,single,
+69a9be09,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+69ac2a6e,train,Trần Hưng Đạo,1,adjudicated_phuc,
+69c65adb,train,Trần Hưng Đạo,I,single,Ảnh mờ / tối / cháy sáng
+69c94a88,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+69cb9f8a,test,Lý Thường Kiệt,I,agreed,
+69ef87a4,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+69f263d9,train,Cách Mạng Tháng Tám#0,0,single,
+69fcd735,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+6a03b42b,train,Lê Văn Sỹ,0,single,
+6a0ddd3c,test,Trần Phú,I,agreed,Không thấy vỉa hè
+6a10aa6c,test,Hai Bà Trưng,0,agreed,
+6a13d375,val,Võ Văn Tần,1,agreed,
+6a21d5ec,val,Hồng Bàng,0,agreed,
+6a4bc755,test,Trần Phú,1,agreed,
+6a6dc18d,val,Nguyễn Đình Chiểu#0,0,agreed,
+6a6f2948,val,Nguyễn Đình Chiểu#0,0,agreed,
+6a720f3b,val,Nguyễn Đình Chiểu#0,0,agreed,
+6a8652e1,train,Nguyễn Trãi,0,single,
+6a971bbb,train,Trần Hưng Đạo,0,single,
+6aa15e20,train,Pasteur,I,single,Không thấy vỉa hè
+6aa6204f,train,Pasteur,I,agreed,Không thấy vỉa hè
+6abdc079,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+6ad711f1,test,Nơ Trang Long,0,agreed,
+6ae4c65b,train,Nguyễn Trãi,0,single,
+6b236bbb,test,Lý Thường Kiệt,I,adjudicated_proposal,
+6b3f9877,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+6b42a09f,train,Pasteur,I,single,Không thấy vỉa hè
+6b60b308,test,Hai Bà Trưng,0,agreed,
+6bb61549,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+6bcdae87,test,Lý Thường Kiệt,0,agreed,
+6bef4859,train,Trần Hưng Đạo,0,single,
+6c33f73e,train,Nguyễn Trãi,0,single,
+6c3de4fa,val,Võ Văn Tần,I,adjudicated_proposal,
+6c42b2d5,train,Điện Biên Phủ#1,0,agreed,
+6c5b59c0,test,Lý Thường Kiệt,I,adjudicated_proposal,
+6c676d56,train,Cách Mạng Tháng Tám#0,0,single,
+6c6bd818,test,Hai Bà Trưng,0,agreed,
+6c8ce2e8,val,Nguyễn Đình Chiểu#0,1,adjudicated_phuc,
+6cb5cea9,train,Cách Mạng Tháng Tám#0,1,single,
+6cbd39eb,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+6cc53e20,val,Nguyễn Đình Chiểu#0,0,agreed,
+6cd9eda3,train,Trần Hưng Đạo,0,single,
+6cf4cf9c,train,Trần Hưng Đạo,0,single,
+6cf8aeb0,train,Trần Hưng Đạo,0,single,
+6d09de6e,train,Lê Văn Sỹ,0,agreed,
+6d11a4fe,train,Phan Đăng Lưu,I,single,Bị che
+6d37bd1f,train,Cách Mạng Tháng Tám#0,0,single,
+6d408095,train,Nguyễn Trãi,0,single,
+6d6a1adf,train,Trần Hưng Đạo,0,single,
+6d866a79,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+6d991197,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+6d9a273e,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+6d9e90ab,test,Hai Bà Trưng,0,agreed,
+6dc96894,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+6dcbed30,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+6e0a100a,train,Phan Đăng Lưu,0,single,
+6e1335f3,train,Nguyễn Thị Minh Khai,0,agreed,
+6e1ec63b,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
+6e27fc60,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+6e4da349,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+6e51d435,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+6e553604,train,Nguyễn Kiệm#0,1,single,
+6e56ce19,val,Hồng Bàng,I,adjudicated_proposal,
+6e9b2084,test,Lý Thường Kiệt,0,agreed,
+6ea6f006,val,Võ Văn Tần,0,agreed,
+6f03de2b,test,Hai Bà Trưng,0,adjudicated_proposal,
+6f68905f,train,Nguyễn Trãi,0,single,
+6f7d529d,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+6f83dcfe,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+6f91010a,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+6f9dc115,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+6fb419e2,test,Hai Bà Trưng,0,agreed,
+6fb6c5aa,train,Nguyễn Kiệm#0,0,single,
+6fc69461,train,Điện Biên Phủ#1,1,single,
+6fdbc47b,train,Cách Mạng Tháng Tám#0,0,agreed,
+702010c9,test,Hai Bà Trưng,I,adjudicated_proposal,
+702b2727,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+70319498,train,Phan Đăng Lưu,0,single,
+703671d0,train,Nguyễn Thị Minh Khai,0,single,
+704602a9,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+7053d9db,train,Điện Biên Phủ#1,0,single,
+70583221,test,Lý Thường Kiệt,0,agreed,
+708c4f14,train,Cách Mạng Tháng Tám#0,0,single,
+70a54889,test,Hai Bà Trưng,0,agreed,
+70b08b5e,val,Võ Văn Tần,1,agreed,
+70bd31f2,val,Võ Văn Tần,0,agreed,
+70faad63,test,Trần Phú,0,adjudicated_proposal,
+70fd25bf,train,Nguyễn Thị Minh Khai,0,adjudicated_proposal,
+71129936,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+7125d2e9,test,Hai Bà Trưng,0,agreed,
+718b9535,val,Nguyễn Đình Chiểu#0,I,agreed,Ảnh mờ / tối / cháy sáng
+719c1912,train,Điện Biên Phủ#1,0,single,
+719efcb7,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+71b03e52,test,Lý Thường Kiệt,0,agreed,
+71ccfefd,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+71dc2d73,test,Trần Phú,I,adjudicated_proposal,
+71ebe587,train,Trần Hưng Đạo,0,single,
+71ec5c79,train,Cách Mạng Tháng Tám#0,0,single,
+71f6aef5,train,Phan Đăng Lưu,0,single,
+71f84f47,val,Hồng Bàng,I,agreed,
+7230014e,train,Trần Hưng Đạo,1,single,
+724e01f5,test,Lý Thường Kiệt,0,agreed,
+72640691,test,Lý Thường Kiệt,0,agreed,
+72f2bdb5,train,Lê Văn Sỹ,1,agreed,
+73071e1a,test,Lý Thường Kiệt,I,adjudicated_proposal,
+730d3a11,train,Cách Mạng Tháng Tám#0,0,single,
+73137a6d,train,Trần Hưng Đạo,0,single,
+732b6374,test,Lý Thường Kiệt,0,agreed,
+7330814d,train,Lê Văn Sỹ,0,agreed,
+733fc57a,val,Nguyễn Đình Chiểu#0,0,agreed,
+734af2d5,val,Hồng Bàng,I,agreed,
+736d8e89,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+739f726a,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+73a836ae,test,Lý Thường Kiệt,1,agreed,
+73bf2b26,test,Trần Phú,0,agreed,
+73c73314,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+73defecc,val,Nguyễn Đình Chiểu#0,I,agreed,
+73ef5a1e,train,Điện Biên Phủ#1,0,single,
+74168cbb,test,Hai Bà Trưng,0,agreed,
+74280a18,test,Nơ Trang Long,0,agreed,
+749e8e70,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+74a71107,train,Cách Mạng Tháng Tám#0,1,single,
+74aeceac,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+74cd28a4,train,Điện Biên Phủ#1,0,adjudicated_proposal,
+74d20199,val,Võ Văn Tần,0,agreed,
+750a6e90,train,Pasteur,I,agreed,Không thấy vỉa hè
+751a267f,train,Nguyễn Trãi,0,single,
+751e93d6,train,Điện Biên Phủ#1,0,single,
+7547dfad,train,Lê Văn Sỹ,0,single,
+755990e1,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+755e2095,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+7571f855,train,Nguyễn Trãi,0,single,
+7587c11a,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+7597b2ec,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+75bf566a,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+75c110ac,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+75c34137,train,Cách Mạng Tháng Tám#0,0,single,
+75cdcf93,train,Cách Mạng Tháng Tám#0,0,single,
+75df3fa0,test,Lý Thường Kiệt,0,agreed,
+75e0e8ea,val,Nguyễn Đình Chiểu#0,0,agreed,
+75e207b9,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+75e9d8ec,train,Cách Mạng Tháng Tám#0,0,single,
+75f05f89,test,Hai Bà Trưng,I,adjudicated_proposal,
+762e8da9,test,Lý Thường Kiệt,I,adjudicated_proposal,
+76568496,train,Trần Hưng Đạo,0,single,
+766cd28d,train,Nguyễn Trãi,I,adjudicated_proposal,
+767997ea,train,Điện Biên Phủ#1,0,agreed,
+768bb1fb,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+76a4cc41,val,Nguyễn Đình Chiểu#0,0,agreed,
+76b3c5ca,test,Hai Bà Trưng,1,agreed,
+76e8f36b,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+77017d7b,test,Hai Bà Trưng,I,agreed,Bị che
+77022751,test,Lý Thường Kiệt,0,agreed,
+7751d003,train,Lê Văn Sỹ,0,adjudicated_proposal,
+7754339f,test,Lý Thường Kiệt,0,agreed,
+77659a23,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+77787543,test,Nơ Trang Long,0,agreed,
+777ec20f,val,Nguyễn Đình Chiểu#0,1,adjudicated_proposal,
+7788fb59,test,Lý Thường Kiệt,0,agreed,
+778ec996,test,Lý Thường Kiệt,0,agreed,
+779a12a0,val,Hồng Bàng,0,agreed,
+77a1c86d,train,Lê Văn Sỹ,0,single,
+77c410d0,test,Hai Bà Trưng,0,agreed,
+77f846da,test,Hai Bà Trưng,0,agreed,
+7818b8d3,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+781fa660,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+784e723a,train,Lê Văn Sỹ,0,single,
+7885704e,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+788a36e5,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+78a72e15,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+78cf1425,train,Điện Biên Phủ#1,0,single,
+78d551ee,train,Trần Hưng Đạo,0,single,
+78e857ec,val,Hồng Bàng,I,agreed,
+78eb07bb,train,Trần Hưng Đạo,0,agreed,
+790986cc,train,Lê Văn Sỹ,1,single,
+79727f10,train,Pasteur,I,agreed,Không thấy vỉa hè
+797e6243,train,Phan Đăng Lưu,0,agreed,
+79a5b13f,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+79a637b7,train,Nguyễn Thị Minh Khai,0,agreed,
+79c6d789,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+79c85c64,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+79d84ee5,train,Pasteur,I,single,Không thấy vỉa hè
+79eac0cf,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+7a00d8aa,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+7a02732b,val,Hồng Bàng,0,adjudicated_phuc,
+7a064683,train,Phan Đăng Lưu,0,single,
+7a18b757,train,Nguyễn Trãi,0,single,
+7a31c763,test,Trần Phú,1,agreed,
+7a335bfa,train,Cách Mạng Tháng Tám#0,0,single,
+7a35d0fd,val,Võ Văn Tần,I,adjudicated_proposal,
+7a9919f5,test,Lý Thường Kiệt,0,agreed,
+7aa880a2,train,Nguyễn Thị Minh Khai,1,single,
+7ab22322,train,Cách Mạng Tháng Tám#0,0,single,
+7abd7bf1,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+7acbec19,train,Nguyễn Trãi,I,single,Bị che
+7b026c21,train,Pasteur,I,adjudicated_proposal,
+7b331782,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+7b357fc0,test,Trần Phú,1,agreed,
+7b6357e1,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+7b636f99,val,Hồng Bàng,0,adjudicated_proposal,
+7b71d684,test,Hai Bà Trưng,0,agreed,
+7b7e0e4e,train,Nguyễn Kiệm#0,I,agreed,Không thấy vỉa hè
+7b861842,train,Trần Hưng Đạo,0,single,
+7b9e9dab,test,Hai Bà Trưng,0,agreed,
+7bd050d0,test,Trần Phú,I,agreed,Bị che
+7bd34c12,train,Điện Biên Phủ#1,0,single,
+7c24d6c2,train,Điện Biên Phủ#1,0,single,
+7c2e99fb,val,Võ Văn Tần,0,agreed,
+7c445826,train,Cách Mạng Tháng Tám#0,I,adjudicated_proposal,
+7c58422e,train,Trần Hưng Đạo,0,single,
+7c7cd4eb,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+7c88d959,train,Cách Mạng Tháng Tám#0,0,single,
+7c9d4d7c,train,Trần Hưng Đạo,0,agreed,
+7d23c0d5,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+7d24ee92,train,Nguyễn Trãi,I,adjudicated_proposal,
+7d338aea,val,Hồng Bàng,I,agreed,
+7d3aabeb,test,Nơ Trang Long,I,agreed,
+7d3abc13,test,Lý Thường Kiệt,0,agreed,
+7d4c80f3,val,Võ Văn Tần,1,adjudicated_proposal,
+7d585509,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+7d674dd0,val,Hồng Bàng,0,agreed,
+7d6e8c5f,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+7d91b0d9,train,Điện Biên Phủ#1,0,single,
+7d9fc81d,val,Võ Văn Tần,I,agreed,Bị che
+7da0fb29,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+7dae9a5b,train,Pasteur,0,single,
+7de05eec,test,Trần Phú,0,agreed,
+7df516ec,test,Lý Thường Kiệt,0,agreed,
+7e191247,train,Trần Hưng Đạo,0,single,
+7e29569f,val,Hồng Bàng,0,agreed,
+7e4e6b59,train,Nguyễn Trãi,I,single,Bị che
+7eb0623b,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+7ebe432c,train,Nguyễn Trãi,0,agreed,
+7ec33e79,val,Hồng Bàng,0,agreed,
+7ed15d3d,test,Hai Bà Trưng,1,agreed,
+7eee86d9,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+7f17cff6,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+7f26d039,train,Nguyễn Trãi,0,single,
+7f27e2eb,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+7f49930a,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+7f5c7c0b,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+7f5d5c02,val,Nguyễn Đình Chiểu#0,I,agreed,
+7f8b2ad6,train,Nguyễn Kiệm#0,0,single,
+7fbb5f73,train,Nguyễn Trãi,0,single,
+7fee6897,train,Nguyễn Thị Minh Khai,0,single,
+7fee73e8,train,Điện Biên Phủ#1,I,single,Bị che
+8007681f,train,Nguyễn Thị Minh Khai,0,single,
+80114a10,val,Nguyễn Đình Chiểu#0,0,agreed,
+802d2fe2,val,Võ Văn Tần,0,agreed,
+8042d744,train,Điện Biên Phủ#1,0,single,
+805cd7e3,test,Trần Phú,1,agreed,
+8064fa61,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+807aa2df,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+808cdee6,test,Lý Thường Kiệt,0,agreed,
+809b6a2f,test,Lý Thường Kiệt,0,agreed,
+80be7e22,val,Hồng Bàng,I,adjudicated_proposal,
+80c0b5a0,test,Trần Phú,0,agreed,
+80cc9cc5,test,Lý Thường Kiệt,0,agreed,
+80da935d,test,Hai Bà Trưng,0,agreed,
+80f0293d,test,Hai Bà Trưng,0,agreed,
+80fc5403,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+815b14ac,test,Trần Phú,I,agreed,Không thấy vỉa hè
+815f7feb,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+816e78c7,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+8195db4e,test,Hai Bà Trưng,0,agreed,
+81a5a8ab,train,Nguyễn Trãi,0,single,
+81d87a95,train,Nguyễn Trãi,0,single,
+81dac50c,val,Nguyễn Đình Chiểu#0,0,agreed,
+81df68f5,train,Điện Biên Phủ#1,0,single,
+81e7ecc3,train,Nguyễn Kiệm#0,1,single,
+8217be2a,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+82411629,test,Nơ Trang Long,0,agreed,
+824c289f,test,Nơ Trang Long,I,adjudicated_proposal,
+82651566,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+826e2156,val,Hồng Bàng,0,agreed,
+827d560d,test,Trần Phú,I,adjudicated_proposal,
+8285e257,test,Lý Thường Kiệt,0,agreed,
+8293d6b5,test,Nơ Trang Long,0,agreed,
+8294856c,train,Nguyễn Trãi,1,single,
+830ead3e,train,Nguyễn Thị Minh Khai,0,single,
+831a5704,train,Trần Hưng Đạo,0,single,
+833194c6,test,Hai Bà Trưng,0,agreed,
+834e39de,train,Pasteur,I,single,Không thấy vỉa hè
+835f2edf,val,Võ Văn Tần,1,agreed,
+837e6bb2,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+8397a8a6,train,Nguyễn Thị Minh Khai,0,agreed,
+83bc192e,train,Nguyễn Trãi,0,agreed,
+83d8fbd4,val,Nguyễn Đình Chiểu#0,0,agreed,
+83d9d891,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+84422b07,train,Cách Mạng Tháng Tám#0,0,single,
+84469f68,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+845b2c44,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+84699c6f,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+847622a3,train,Nguyễn Thị Minh Khai,0,single,
+84a66097,train,Lê Văn Sỹ,1,single,
+84b382cc,train,Trần Hưng Đạo,0,single,
+84b8dd01,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+84b8f843,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+84bdc745,train,Trần Hưng Đạo,0,single,
+84cd8999,test,Lý Thường Kiệt,I,adjudicated_proposal,
+84d3674e,train,Nguyễn Kiệm#0,I,single,Bị che
+84d5c119,test,Hai Bà Trưng,0,adjudicated_proposal,
+84dca657,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+851cbfe9,train,Phan Đăng Lưu,0,single,
+85262a87,train,Nguyễn Thị Minh Khai,0,agreed,
+85672b4d,test,Trần Phú,I,agreed,
+85681e5c,test,Nơ Trang Long,0,agreed,
+8571c493,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+85a28366,test,Lý Thường Kiệt,0,agreed,
+85ad0f21,test,Trần Phú,0,adjudicated_phuc,
+85c1360c,test,Nơ Trang Long,0,agreed,
+85c48d4c,test,Lý Thường Kiệt,1,adjudicated_proposal,
+85e2d3a6,train,Trần Hưng Đạo,0,single,
+85ef3b04,val,Hồng Bàng,I,agreed,Bị che
+85f53a36,train,Cách Mạng Tháng Tám#0,0,single,
+8602075d,train,Cách Mạng Tháng Tám#0,0,single,
+8602f929,train,Điện Biên Phủ#1,0,agreed,
+86044bcb,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+8613e8af,test,Hai Bà Trưng,0,agreed,
+8616a42c,test,Lý Thường Kiệt,0,agreed,
+86338ba9,test,Hai Bà Trưng,0,agreed,
+86646192,train,Điện Biên Phủ#1,0,agreed,
+867524f0,train,Trần Hưng Đạo,0,single,
+86947027,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+86abe259,test,Trần Phú,1,agreed,
+86b0debd,train,Trần Hưng Đạo,0,agreed,
+86beae33,test,Lý Thường Kiệt,0,agreed,
+86c6f116,train,Pasteur,I,single,Không thấy vỉa hè
+86d2120f,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+86d84e5f,train,Lê Văn Sỹ,0,single,
+86e4f70f,test,Trần Phú,0,agreed,
+86eb142a,train,Điện Biên Phủ#1,0,single,
+86f2f86e,train,Trần Hưng Đạo,0,single,
+86fe12b8,train,Trần Hưng Đạo,0,single,
+87127d88,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+875caeb4,test,Nơ Trang Long,I,adjudicated_proposal,
+876f3f16,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+878ce741,train,Cách Mạng Tháng Tám#0,0,single,
+87a17f78,test,Nơ Trang Long,0,agreed,
+87b07417,train,Lê Văn Sỹ,0,agreed,
+87b1a456,train,Lê Văn Sỹ,0,single,
+87c3f882,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+87c47115,test,Hai Bà Trưng,0,adjudicated_proposal,
+87cf5fd1,test,Lý Thường Kiệt,0,agreed,
+87e504ab,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+88146443,train,Trần Hưng Đạo,0,single,
+881dbc83,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+88226c27,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+88276813,train,Trần Hưng Đạo,0,single,
+8827abe7,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+884deb7a,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+88545ca2,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+886935cd,train,Điện Biên Phủ#1,0,single,
+886c1e9c,train,Điện Biên Phủ#1,I,adjudicated_proposal,
+88b18de3,train,Phan Đăng Lưu,0,single,
+88b767aa,train,Phan Đăng Lưu,0,single,
+88bb36f4,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+88d9a43b,train,Nguyễn Kiệm#0,0,agreed,
+88ee013d,test,Lý Thường Kiệt,0,agreed,
+88f574ec,train,Pasteur,I,single,Không thấy vỉa hè
+8914a904,train,Lê Văn Sỹ,I,single,Bị che
+8920f0ec,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+89655651,train,Điện Biên Phủ#1,0,single,
+89683d4e,train,Lê Văn Sỹ,0,single,
+8972a9ff,train,Phan Đăng Lưu,0,single,
+8978bbc7,train,Nguyễn Trãi,0,single,
+89c9b62c,train,Điện Biên Phủ#1,0,single,
+89e4645e,test,Lý Thường Kiệt,0,agreed,
+89e5a133,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+89e63a23,train,Nguyễn Trãi,0,single,
+89ff6f51,test,Lý Thường Kiệt,0,adjudicated_proposal,
+8a07f05f,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+8a102610,test,Trần Phú,I,adjudicated_proposal,
+8a1348ff,val,Nguyễn Đình Chiểu#0,0,agreed,
+8a24ed9f,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+8a5aa553,train,Phan Đăng Lưu,1,single,
+8a861a16,train,Nguyễn Trãi,0,single,
+8a8dd20f,test,Lý Thường Kiệt,0,agreed,
+8aa3f59f,train,Lê Văn Sỹ,0,single,
+8ab56a6a,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+8ac549c4,train,Cách Mạng Tháng Tám#0,0,agreed,
+8afc7bd1,val,Võ Văn Tần,0,agreed,
+8b55890c,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+8b734a60,train,Điện Biên Phủ#1,0,single,
+8b8e256c,test,Hai Bà Trưng,0,agreed,
+8bac9ede,train,Trần Hưng Đạo,0,single,
+8be38ed8,test,Nơ Trang Long,0,agreed,
+8be9d87c,test,Hai Bà Trưng,0,agreed,
+8beb5b28,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+8c189375,test,Hai Bà Trưng,I,adjudicated_proposal,
+8c2b388a,train,Điện Biên Phủ#1,0,single,
+8c3293c9,test,Lý Thường Kiệt,0,agreed,
+8c430beb,train,Phan Đăng Lưu,0,single,
+8c584f30,train,Nguyễn Thị Minh Khai,0,agreed,
+8c6cbbde,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+8c7355a3,val,Võ Văn Tần,0,agreed,
+8c88864b,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+8c94a007,train,Pasteur,I,single,Không thấy vỉa hè
+8ca7d69d,val,Hồng Bàng,0,agreed,
+8ce3e55b,test,Lý Thường Kiệt,0,agreed,
+8cf4dda4,test,Hai Bà Trưng,I,adjudicated_proposal,
+8cf52837,train,Điện Biên Phủ#1,0,single,
+8d15575e,train,Lê Văn Sỹ,0,single,
+8d15ee9a,test,Lý Thường Kiệt,0,agreed,
+8d1af329,val,Võ Văn Tần,0,agreed,
+8d298866,test,Nơ Trang Long,0,agreed,
+8d3498f4,val,Võ Văn Tần,0,agreed,
+8d5ffadc,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+8d8690f7,train,Nguyễn Thị Minh Khai,0,agreed,
+8d86d859,test,Lý Thường Kiệt,0,agreed,
+8d92b04f,train,Cách Mạng Tháng Tám#0,1,single,
+8dbac443,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+8ddf90f5,val,Võ Văn Tần,I,adjudicated_proposal,
+8deabf2a,test,Trần Phú,I,agreed,Bị che
+8df0012e,train,Pasteur,I,single,Không thấy vỉa hè
+8df2b6a8,val,Hồng Bàng,1,adjudicated_phuc,
+8dfabb68,train,Nguyễn Thị Minh Khai,0,single,
+8e0b9aa7,train,Nguyễn Thị Minh Khai,I,single,Bị che
+8e16210b,val,Nguyễn Đình Chiểu#0,0,agreed,
+8e36835a,train,Cách Mạng Tháng Tám#0,0,single,
+8e5a0d99,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+8e5eccf9,test,Hai Bà Trưng,0,agreed,
+8e79e65b,test,Nơ Trang Long,0,adjudicated_proposal,
+8e7d2ba1,val,Nguyễn Đình Chiểu#0,0,agreed,
+8e8d06f8,test,Lý Thường Kiệt,0,agreed,
+8e8f70e4,train,Pasteur,I,single,Không thấy vỉa hè
+8e9b64ca,train,Nguyễn Thị Minh Khai,0,single,
+8f09b771,train,Điện Biên Phủ#1,0,single,
+8f1e0f83,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+8f611592,train,Nguyễn Thị Minh Khai,0,single,
+8f73ceef,val,Nguyễn Đình Chiểu#0,0,agreed,
+8f8c8437,train,Trần Hưng Đạo,0,single,
+8f95a49b,test,Lý Thường Kiệt,0,agreed,
+8fafedeb,train,Trần Hưng Đạo,0,single,
+8fb20be9,train,Cách Mạng Tháng Tám#0,0,agreed,
+8fb6166b,train,Cách Mạng Tháng Tám#0,1,single,
+8feafeb3,test,Lý Thường Kiệt,I,agreed,
+9070caf1,train,Nguyễn Thị Minh Khai,0,single,
+90732553,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+90a6a65f,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+90b5ed5a,train,Nguyễn Kiệm#0,1,adjudicated_proposal,
+90c45adf,train,Lê Văn Sỹ,0,single,
+90ebb8c4,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+91100514,train,Nguyễn Trãi,0,single,
+91184ccb,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+912a84a1,train,Nguyễn Trãi,1,single,
+9130a5c1,train,Hải Thượng Lãn Ông,0,adjudicated_proposal,
+9134504a,train,Nguyễn Kiệm#0,0,single,
+91549dd1,train,Nguyễn Kiệm#0,0,agreed,
+91660969,train,Nguyễn Trãi,0,single,
+9166ba21,test,Nơ Trang Long,1,agreed,
+916ef639,val,Võ Văn Tần,I,agreed,Bị che
+9170312f,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+918722db,train,Trần Hưng Đạo,I,agreed,
+918fa5b1,train,Cách Mạng Tháng Tám#0,0,single,
+9193e27a,test,Nơ Trang Long,0,agreed,
+91ae73a9,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+91b91c17,test,Lý Thường Kiệt,I,adjudicated_proposal,
+91c4f5c5,train,Phan Đăng Lưu,0,single,
+91c8c1ab,train,Cách Mạng Tháng Tám#0,1,single,
+91cf3fcf,test,Trần Phú,0,agreed,
+91e5a8e1,train,Nguyễn Trãi,0,single,
+91eb640e,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+91ed15d8,train,Cách Mạng Tháng Tám#0,1,agreed,
+92057552,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+9207e983,train,Nguyễn Thị Minh Khai,0,single,
+921d14bb,test,Lý Thường Kiệt,0,agreed,
+922448da,test,Hai Bà Trưng,0,agreed,
+9229226c,test,Trần Phú,I,agreed,Không thấy vỉa hè
+92360c8d,val,Hồng Bàng,0,agreed,
+9243df17,train,Phan Đăng Lưu,0,agreed,
+9253a9d8,val,Nguyễn Đình Chiểu#0,0,agreed,
+926bb8d4,test,Nơ Trang Long,0,agreed,
+928e77b9,train,Cách Mạng Tháng Tám#0,0,single,
+92aaea51,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+92ac6d4f,val,Nguyễn Đình Chiểu#0,0,agreed,
+92b2ac29,train,Pasteur,I,single,Bị che
+92b5102f,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+92d69bc9,train,Điện Biên Phủ#1,0,single,
+92d84099,val,Nguyễn Đình Chiểu#0,0,agreed,
+92dc1b25,train,Lê Văn Sỹ,0,single,
+92ff42e8,test,Trần Phú,0,agreed,
+933f6282,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+93575413,train,Pasteur,I,single,Không thấy vỉa hè
+935ac5f0,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+937b7f40,test,Lý Thường Kiệt,1,adjudicated_proposal,
+939a175f,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+93c2bd64,test,Lý Thường Kiệt,0,adjudicated_proposal,
+93de9039,test,Lý Thường Kiệt,0,agreed,
+93e4cd1a,test,Hai Bà Trưng,0,agreed,
+93eb6a70,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+93f8c1c4,train,Nguyễn Thị Minh Khai,0,single,
+940bbda8,val,Nguyễn Đình Chiểu#0,0,agreed,
+941406cc,train,Nguyễn Kiệm#0,0,single,
+94261841,test,Nơ Trang Long,0,agreed,
+94271a11,test,Hai Bà Trưng,0,agreed,
+9436e927,train,Nguyễn Trãi,0,single,
+943c9ea3,train,Trần Hưng Đạo,0,single,
+943ea4b7,test,Lý Thường Kiệt,0,adjudicated_proposal,
+945c2120,train,Điện Biên Phủ#1,I,adjudicated_proposal,
+946470d3,train,Nguyễn Trãi,0,single,
+948db25c,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+94aa2f30,train,Phan Đăng Lưu,0,single,
+94ad9175,val,Nguyễn Đình Chiểu#0,0,agreed,
+94b9ad10,test,Trần Phú,0,agreed,
+94e08bd2,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+94f31f74,val,Nguyễn Đình Chiểu#0,0,agreed,
+94fba569,val,Nguyễn Đình Chiểu#0,1,agreed,
+950346a4,val,Hồng Bàng,I,adjudicated_proposal,
+953f6d5e,test,Trần Phú,I,agreed,Không thấy vỉa hè
+95580a93,test,Hai Bà Trưng,1,adjudicated_phuc,
+955fc8ff,train,Nguyễn Trãi,I,adjudicated_proposal,
+95793a56,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+95a20deb,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+95aa1533,train,Cách Mạng Tháng Tám#0,1,single,
+95ae4443,train,Trần Hưng Đạo,0,single,
+95bba3b7,test,Trần Phú,I,agreed,
+95ef8a82,test,Lý Thường Kiệt,0,adjudicated_phuc,
+95f06e6b,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
+960e1a65,val,Nguyễn Đình Chiểu#0,0,agreed,
+9613d6e1,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+96212949,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+9622a5d7,val,Võ Văn Tần,0,agreed,
+96572809,train,Pasteur,I,single,Không thấy vỉa hè
+9680689e,train,Trần Hưng Đạo,0,single,
+96912ad8,train,Trần Hưng Đạo,1,agreed,
+969d1787,train,Cách Mạng Tháng Tám#0,0,single,
+96a1b7f9,test,Trần Phú,I,adjudicated_proposal,
+96afe55f,train,Cách Mạng Tháng Tám#0,0,single,
+96bd712d,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+96c2f86d,test,Nơ Trang Long,1,adjudicated_proposal,
+96ce995d,train,Lê Văn Sỹ,0,single,
+96dd7c04,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+96fa0405,train,Hải Thượng Lãn Ông,0,agreed,
+96fa100c,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+970452a6,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+9705b4bf,train,Trần Hưng Đạo,0,single,
+971e4390,train,Trần Hưng Đạo,0,single,
+971eec69,train,Điện Biên Phủ#1,0,single,
+972558a9,train,Cách Mạng Tháng Tám#0,0,single,
+97295224,val,Nguyễn Đình Chiểu#0,I,agreed,
+972b3935,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+976fe24f,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+977eddad,val,Hồng Bàng,I,agreed,Bị che
+97af6093,train,Pasteur,I,single,Không thấy vỉa hè
+97c5fcf4,test,Lý Thường Kiệt,0,agreed,
+97cd86c6,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+97f4a8c2,test,Hai Bà Trưng,0,agreed,
+97f98b9c,val,Võ Văn Tần,0,adjudicated_phuc,
+9833350b,test,Hai Bà Trưng,0,agreed,
+983674fb,train,Trần Hưng Đạo,0,single,
+983dc6a3,train,Cách Mạng Tháng Tám#0,0,agreed,
+984bddfa,val,Võ Văn Tần,0,adjudicated_proposal,
+98732130,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
+988dbb8d,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+98af4647,train,Trần Hưng Đạo,0,single,
+98bbce3b,train,Nguyễn Trãi,0,single,
+98bd88df,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+98c17d4a,train,Hải Thượng Lãn Ông,0,single,
+98d105b1,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+98dcfc79,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+98de72d8,test,Hai Bà Trưng,0,adjudicated_proposal,
+98dfd2cc,val,Nguyễn Đình Chiểu#0,I,agreed,
+98e17689,test,Hai Bà Trưng,0,agreed,
+98f0f9ee,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+98f270db,train,Pasteur,I,agreed,Không thấy vỉa hè
+98f88113,train,Hải Thượng Lãn Ông,1,single,
+98ffa6b6,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+9901d925,train,Nguyễn Thị Minh Khai,0,agreed,
+991c0a56,train,Trần Hưng Đạo,0,single,
+9931048d,test,Lý Thường Kiệt,0,agreed,
+994151b0,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+997bbb2e,test,Hai Bà Trưng,0,agreed,
+999fc1e9,train,Pasteur,I,single,Không thấy vỉa hè
+99ac4399,train,Nguyễn Trãi,0,agreed,
+99ba7807,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+99cfffe6,test,Lý Thường Kiệt,0,agreed,
+99d5bccb,val,Nguyễn Đình Chiểu#0,0,agreed,
+99d62122,train,Nguyễn Trãi,0,single,
+9a0a9af3,test,Trần Phú,I,agreed,Không thấy vỉa hè
+9a242315,train,Điện Biên Phủ#1,I,single,Bị che
+9a47d818,test,Lý Thường Kiệt,0,agreed,
+9a54ea50,train,Nguyễn Trãi,I,adjudicated_proposal,
+9a7211b4,train,Nguyễn Thị Minh Khai,0,single,
+9a8bf5b2,train,Nguyễn Thị Minh Khai,I,single,Bị che
+9a8e4573,train,Hải Thượng Lãn Ông,I,agreed,Không thấy vỉa hè
+9ab80176,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+9ad3a2f5,train,Pasteur,I,single,Không thấy vỉa hè
+9ad516d6,val,Nguyễn Đình Chiểu#0,0,agreed,
+9ae5e136,test,Lý Thường Kiệt,0,agreed,
+9b074fd2,test,Hai Bà Trưng,0,agreed,
+9b0a2b32,train,Điện Biên Phủ#1,0,single,
+9b2e847c,test,Lý Thường Kiệt,0,agreed,
+9b334b6d,test,Nơ Trang Long,0,adjudicated_proposal,
+9b459bb8,val,Hồng Bàng,0,agreed,
+9b4abb54,train,Trần Hưng Đạo,0,agreed,
+9b4c7317,train,Hải Thượng Lãn Ông,1,single,
+9b64bcdf,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+9b6a1203,test,Nơ Trang Long,I,agreed,
+9b90727b,train,Trần Hưng Đạo,0,agreed,
+9bb9bf1a,test,Nơ Trang Long,0,agreed,
+9be89c4a,train,Phan Đăng Lưu,I,adjudicated_proposal,
+9c342108,train,Phan Đăng Lưu,0,agreed,
+9c364cd2,train,Phan Đăng Lưu,0,single,
+9c5e25a8,train,Nguyễn Trãi,0,single,
+9c624b67,val,Hồng Bàng,0,adjudicated_proposal,
+9c99aaef,val,Nguyễn Đình Chiểu#0,0,agreed,
+9ca18de8,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+9ca2d61a,train,Nguyễn Thị Minh Khai,0,single,
+9cb01146,test,Nơ Trang Long,I,adjudicated_proposal,
+9cd52947,train,Phan Đăng Lưu,0,single,
+9cff2c0f,test,Trần Phú,I,adjudicated_proposal,
+9d3692a5,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+9d412c6d,test,Hai Bà Trưng,0,agreed,
+9d511feb,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+9d673c95,val,Hồng Bàng,1,adjudicated_proposal,
+9d7f354a,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+9d98a1fc,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+9db46757,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+9dddc5f5,train,Cách Mạng Tháng Tám#0,0,single,
+9ded563a,test,Lý Thường Kiệt,0,agreed,
+9df062d1,train,Nguyễn Thị Minh Khai,I,single,Bị che
+9dffd81e,test,Hai Bà Trưng,0,agreed,
+9e03ca3d,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+9e180136,val,Võ Văn Tần,I,adjudicated_proposal,
+9e2f824b,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+9e4d9026,train,Trần Hưng Đạo,0,agreed,
+9e5db0a4,train,Trần Hưng Đạo,0,single,
+9e6a2726,test,Trần Phú,I,agreed,
+9ed18d1b,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+9ed8e1d1,train,Trần Hưng Đạo,0,single,
+9ee59de9,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+9efcc589,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+9f08b3d2,train,Lê Văn Sỹ,0,single,
+9f0dd7d8,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+9f4f8c10,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+9f5bbad1,test,Nơ Trang Long,0,agreed,
+9f88b31f,train,Lê Văn Sỹ,1,single,
+9f8fcc14,val,Hồng Bàng,0,agreed,
+9fb04a9a,train,Lê Văn Sỹ,0,single,
+9fc009a9,train,Điện Biên Phủ#1,0,single,
+9fc8b559,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+9fe94618,train,Trần Hưng Đạo,0,single,
+a01513b4,train,Lê Văn Sỹ,0,single,
+a03ae43a,test,Hai Bà Trưng,I,agreed,
+a041dd05,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+a043b72f,train,Trần Hưng Đạo,0,single,
+a04e4a08,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+a08ca9bb,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+a097525e,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+a0bea6c0,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+a0bf0edd,train,Hải Thượng Lãn Ông,0,single,
+a0d39c95,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+a0dcdc4e,train,Phan Đăng Lưu,0,single,
+a0df311d,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+a0e4c917,test,Lý Thường Kiệt,0,agreed,
+a11341a6,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+a1160835,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+a1226183,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+a1298e09,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+a131d987,test,Lý Thường Kiệt,0,agreed,
+a1345932,test,Nơ Trang Long,1,agreed,
+a14ba701,train,Trần Hưng Đạo,0,single,
+a19d1bd1,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+a1afd055,train,Hải Thượng Lãn Ông,0,single,
+a1b0f8b9,test,Lý Thường Kiệt,0,agreed,
+a1b4fe9f,val,Nguyễn Đình Chiểu#0,0,adjudicated_phuc,
+a1b924c9,test,Nơ Trang Long,0,agreed,
+a1c1b4b6,train,Nguyễn Trãi,0,single,
+a1d4cce0,train,Trần Hưng Đạo,0,single,
+a1d81fc2,train,Trần Hưng Đạo,0,single,
+a1e4be56,train,Nguyễn Kiệm#0,I,single,Bị che
+a1ef18b4,test,Lý Thường Kiệt,0,agreed,
+a1f97303,val,Nguyễn Đình Chiểu#0,0,agreed,
+a2046d92,train,Lê Văn Sỹ,I,single,Bị che
+a22f147b,val,Hồng Bàng,0,agreed,
+a2317fb0,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+a26327a0,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+a26ee5f3,test,Nơ Trang Long,0,agreed,
+a28aeb28,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+a28b9d7f,test,Hai Bà Trưng,0,agreed,
+a28d0950,train,Nguyễn Thị Minh Khai,0,single,
+a290c126,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+a2957950,val,Hồng Bàng,0,agreed,
+a2a6bef9,train,Nguyễn Trãi,0,single,
+a2b63036,test,Trần Phú,I,agreed,Không thấy vỉa hè
+a2d1b0e2,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+a2edca85,test,Hai Bà Trưng,I,agreed,
+a30c6e34,train,Trần Hưng Đạo,0,single,
+a31de43e,test,Nơ Trang Long,0,adjudicated_proposal,
+a34a35d9,train,Nguyễn Kiệm#0,0,single,
+a3702a5b,test,Lý Thường Kiệt,0,agreed,
+a398b508,train,Nguyễn Trãi,0,agreed,
+a39c4c1c,train,Pasteur,I,single,Không thấy vỉa hè
+a3aa4647,test,Hai Bà Trưng,0,agreed,
+a41e70e1,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+a44881cb,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+a4648d09,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+a4aea9a2,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+a4b96299,test,Lý Thường Kiệt,0,agreed,
+a5110d34,test,Nơ Trang Long,1,adjudicated_proposal,
+a51ace68,train,Nguyễn Thị Minh Khai,0,single,
+a53850ec,test,Lý Thường Kiệt,I,adjudicated_proposal,
+a557a70d,test,Lý Thường Kiệt,0,agreed,
+a56f3da1,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+a59b03e0,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+a5aecba3,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+a5af6ec5,test,Nơ Trang Long,1,agreed,
+a5c3e8c8,train,Nguyễn Thị Minh Khai,0,single,
+a5ce3d2b,test,Nơ Trang Long,0,agreed,
+a5d98638,train,Phan Đăng Lưu,0,single,
+a5e23c51,train,Trần Hưng Đạo,0,single,
+a6071bf8,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+a60df195,train,Trần Hưng Đạo,0,single,
+a635fecd,test,Hai Bà Trưng,0,agreed,
+a63c6b40,test,Hai Bà Trưng,I,agreed,
+a688f0c3,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+a68c6934,train,Trần Hưng Đạo,0,single,
+a6a5e9f1,train,Điện Biên Phủ#1,0,single,
+a6b074f9,train,Cách Mạng Tháng Tám#0,0,single,
+a6db27e5,train,Lê Văn Sỹ,0,agreed,
+a6eba323,val,Hồng Bàng,0,agreed,
+a6fc0dc0,test,Trần Phú,1,agreed,
+a6fcd096,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+a76d15f6,train,Trần Hưng Đạo,0,single,
+a76eb0a5,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+a770f006,train,Hải Thượng Lãn Ông,I,agreed,Không thấy vỉa hè
+a78e4893,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+a7a2373f,train,Lê Văn Sỹ,0,single,
+a7e59643,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+a7fe20ce,train,Cách Mạng Tháng Tám#0,0,single,
+a8208e4b,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+a8274350,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+a84d0a3b,train,Trần Hưng Đạo,0,single,
+a87ceefa,train,Trần Hưng Đạo,0,single,
+a8de7149,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+a8e97061,train,Nguyễn Thị Minh Khai,0,single,
+a930a33a,train,Trần Hưng Đạo,0,single,
+a9469f46,train,Phan Đăng Lưu,0,single,
+a9492fbf,test,Lý Thường Kiệt,0,agreed,
+a97d7a43,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+a9a9a55f,test,Hai Bà Trưng,0,agreed,
+a9b89222,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+a9bc632b,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+a9cd6afd,test,Trần Phú,I,agreed,Không thấy vỉa hè
+a9d6cc73,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+a9e57f53,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+a9ed790f,train,Trần Hưng Đạo,0,single,
+aa052c88,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+aa27aae2,train,Nguyễn Thị Minh Khai,0,single,
+aa2d736b,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+aa66d4f6,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+aa928a63,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+aabcb5d6,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+ab0c3c90,val,Hồng Bàng,0,agreed,
+ab29772b,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+ab3777cd,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+ab39eb07,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+ab40b6d6,test,Hai Bà Trưng,0,agreed,
+ab4cdcd7,train,Trần Hưng Đạo,0,single,
+ab5b0eea,train,Nguyễn Trãi,0,single,
+ab85a19a,test,Hai Bà Trưng,I,agreed,Bị che
+abaf5dd9,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+abf7df85,test,Lý Thường Kiệt,0,agreed,
+ac082316,test,Lý Thường Kiệt,I,agreed,Bị che
+ac0cb380,train,Nguyễn Trãi,0,single,
+ac0d7d7c,test,Lý Thường Kiệt,0,agreed,
+ac110ff2,train,Nguyễn Thị Minh Khai,I,single,Bị che
+ac192ee6,train,Trần Hưng Đạo,0,single,
+ac2b3ef3,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+ac2f0052,train,Phan Đăng Lưu,0,single,
+ac3f65d4,train,Trần Hưng Đạo,0,agreed,
+ac4acb20,train,Pasteur,I,single,Không thấy vỉa hè
+ac6903b4,train,Cách Mạng Tháng Tám#0,0,single,
+ac6e3be2,train,Trần Hưng Đạo,0,single,
+ac958f7b,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+ac95e911,train,Nguyễn Trãi,0,agreed,
+acafabae,train,Pasteur,I,single,Không thấy vỉa hè
+acb35ae7,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+acb62e5f,val,Võ Văn Tần,1,agreed,
+accf765f,train,Pasteur,I,agreed,Không thấy vỉa hè
+acd5612d,train,Trần Hưng Đạo,0,single,
+acf57063,train,Trần Hưng Đạo,0,single,
+ad031390,train,Nguyễn Trãi,0,single,
+ad036726,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+ad04d33c,test,Hai Bà Trưng,0,agreed,
+ad126a38,test,Nơ Trang Long,0,agreed,
+ad4b2cb2,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+ad563520,test,Hai Bà Trưng,0,agreed,
+ad63ef9e,train,Nguyễn Trãi,0,single,
+ad6a6e20,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+ad87d7ec,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+adfae5b8,train,Nguyễn Thị Minh Khai,0,single,
+ae08e09e,train,Lê Văn Sỹ,1,single,
+ae23f743,test,Hai Bà Trưng,0,agreed,
+ae39b6b4,val,Nguyễn Đình Chiểu#0,0,agreed,
+ae3bb443,test,Trần Phú,I,agreed,Không thấy vỉa hè
+ae51c71d,test,Trần Phú,I,agreed,Không thấy vỉa hè
+ae556c74,test,Lý Thường Kiệt,I,adjudicated_proposal,
+ae927aa5,val,Hồng Bàng,I,agreed,
+ae95d468,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+ae9d6c7e,test,Lý Thường Kiệt,0,agreed,
+aeb44e6b,train,Nguyễn Trãi,1,single,
+af0dc410,train,Nguyễn Thị Minh Khai,I,agreed,Bị che
+af16e08c,test,Hai Bà Trưng,0,agreed,
+af2815ed,train,Cách Mạng Tháng Tám#0,1,single,
+af3ddeb6,test,Trần Phú,I,agreed,Không thấy vỉa hè
+af44df33,val,Hồng Bàng,0,agreed,
+af4aa293,train,Pasteur,I,single,Không thấy vỉa hè
+af59273a,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+af618010,train,Hải Thượng Lãn Ông,1,single,
+af822b52,train,Nguyễn Trãi,1,single,
+af87feaa,val,Nguyễn Đình Chiểu#0,0,agreed,
+afade3a3,val,Nguyễn Đình Chiểu#0,I,agreed,
+afb751f8,test,Trần Phú,0,adjudicated_proposal,
+afc01bdf,train,Điện Biên Phủ#1,1,single,
+afd645ca,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+afd9fc1d,train,Trần Hưng Đạo,0,agreed,
+afdf5c0a,test,Trần Phú,I,adjudicated_proposal,
+b004e363,test,Hai Bà Trưng,0,agreed,
+b01338dd,val,Nguyễn Đình Chiểu#0,0,agreed,
+b017e7c8,train,Nguyễn Trãi,0,agreed,
+b0235644,val,Võ Văn Tần,1,adjudicated_phuc,
+b025ddf1,train,Cách Mạng Tháng Tám#0,0,single,
+b02daa0d,test,Trần Phú,0,agreed,
+b044093d,test,Nơ Trang Long,I,adjudicated_proposal,
+b058f571,train,Trần Hưng Đạo,I,single,Bị che
+b05aae22,val,Hồng Bàng,0,agreed,
+b06122cb,train,Trần Hưng Đạo,0,single,
+b093c915,test,Lý Thường Kiệt,0,agreed,
+b0cb7b3e,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+b0ea156d,train,Trần Hưng Đạo,0,agreed,
+b0fb1a46,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+b11ab23f,test,Hai Bà Trưng,0,agreed,
+b11b43aa,train,Trần Hưng Đạo,0,single,
+b12d64e7,test,Trần Phú,I,adjudicated_proposal,
+b13578a7,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+b13cbf50,train,Nguyễn Trãi,0,single,
+b144b0f2,test,Trần Phú,I,adjudicated_proposal,
+b15314b1,train,Pasteur,0,agreed,
+b15d92f6,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+b169e369,train,Nguyễn Thị Minh Khai,1,single,
+b18c45a8,val,Hồng Bàng,I,agreed,
+b1969624,train,Pasteur,I,single,Không thấy vỉa hè
+b1b06ad9,train,Phan Đăng Lưu,I,adjudicated_proposal,
+b1fa4940,train,Cách Mạng Tháng Tám#0,0,single,
+b2175f75,test,Nơ Trang Long,0,agreed,
+b21bd0ba,val,Hồng Bàng,I,adjudicated_proposal,
+b21e6744,val,Võ Văn Tần,0,adjudicated_proposal,
+b23457e1,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+b234e807,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+b24fdaf8,train,Cách Mạng Tháng Tám#0,0,single,
+b25ef655,train,Trần Hưng Đạo,1,adjudicated_proposal,
+b27d5087,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+b2a8ea27,test,Trần Phú,I,adjudicated_proposal,
+b2bed675,train,Pasteur,I,single,Không thấy vỉa hè
+b2cf01b3,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+b2d42bd9,train,Trần Hưng Đạo,0,single,
+b309cfc8,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+b31ea345,train,Trần Hưng Đạo,0,single,
+b36d03d4,train,Điện Biên Phủ#1,I,single,Bị che
+b38b00d4,test,Hai Bà Trưng,0,agreed,
+b3a31891,train,Điện Biên Phủ#1,0,single,
+b3c4bd56,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+b3e8aacc,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+b4004764,train,Điện Biên Phủ#1,0,single,
+b4113027,test,Lý Thường Kiệt,0,agreed,
+b4238f63,train,Cách Mạng Tháng Tám#0,0,agreed,
+b42ca84f,train,Cách Mạng Tháng Tám#0,0,agreed,
+b4406a9d,train,Nguyễn Trãi,0,single,
+b4449168,train,Cách Mạng Tháng Tám#0,0,single,
+b44f6fe3,train,Nguyễn Trãi,0,single,
+b459fc8e,test,Trần Phú,1,agreed,
+b45b3246,train,Cách Mạng Tháng Tám#0,0,single,
+b467c19d,train,Hải Thượng Lãn Ông,0,adjudicated_proposal,
+b46cfd59,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+b476f215,test,Trần Phú,1,adjudicated_proposal,
+b4804d76,test,Lý Thường Kiệt,0,agreed,
+b49fe787,val,Võ Văn Tần,I,agreed,Bị che
+b4b38ebb,test,Lý Thường Kiệt,I,adjudicated_proposal,
+b4d29a81,train,Phan Đăng Lưu,I,agreed,Không thấy vỉa hè
+b50482e6,train,Lê Văn Sỹ,0,single,
+b50540a9,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+b536773f,train,Phan Đăng Lưu,0,single,
+b5475891,train,Điện Biên Phủ#1,0,single,
+b55a3377,test,Hai Bà Trưng,0,agreed,
+b5715d4e,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+b5916605,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+b5acb540,train,Điện Biên Phủ#1,0,single,
+b5c9d1c1,train,Cách Mạng Tháng Tám#0,0,single,
+b5cefff7,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+b6715759,val,Võ Văn Tần,0,agreed,
+b69b66a4,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+b6dd4a12,test,Trần Phú,I,adjudicated_proposal,
+b6ea65a6,train,Hải Thượng Lãn Ông,I,single,Bị che
+b70142ac,train,Nguyễn Trãi,0,single,
+b71725ed,train,Phan Đăng Lưu,0,agreed,
+b71cde4b,train,Cách Mạng Tháng Tám#0,0,single,
+b71fad20,train,Phan Đăng Lưu,0,single,
+b72de87f,train,Hải Thượng Lãn Ông,0,adjudicated_phuc,
+b7318752,test,Trần Phú,I,agreed,Không thấy vỉa hè
+b73d801b,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+b75ae447,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+b763fcf2,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+b76e1992,train,Nguyễn Kiệm#0,0,single,
+b76eed1d,train,Nguyễn Thị Minh Khai,0,single,
+b791f2d0,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+b7ab1ed8,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+b7c88ad1,test,Trần Phú,I,adjudicated_proposal,
+b7d8293f,train,Nguyễn Thị Minh Khai,0,single,
+b7e9d061,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+b7f76e1c,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+b7fea2b8,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+b8201b02,train,Trần Hưng Đạo,0,single,
+b83b1695,train,Phan Đăng Lưu,0,agreed,
+b8528ed9,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+b8529dc5,test,Trần Phú,0,adjudicated_proposal,
+b8787178,test,Lý Thường Kiệt,0,agreed,
+b88a0003,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+b8add471,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+b8ae8964,test,Trần Phú,I,adjudicated_proposal,
+b8ce72d1,val,Hồng Bàng,I,agreed,
+b8dc13c3,train,Pasteur,I,single,Không thấy vỉa hè
+b8fcdb7b,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+b8fd8126,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+b903e6ca,train,Nguyễn Trãi,1,single,
+b908458b,train,Nguyễn Kiệm#0,I,agreed,Không thấy vỉa hè
+b91c60f9,train,Pasteur,0,single,
+b91f32c6,val,Võ Văn Tần,0,agreed,
+b924f0ce,train,Nguyễn Thị Minh Khai,0,single,
+b93e685e,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+b943f370,train,Nguyễn Thị Minh Khai,0,single,
+b950e563,test,Hai Bà Trưng,0,adjudicated_proposal,
+b958eb2d,test,Hai Bà Trưng,0,agreed,
+b96bd9d8,test,Lý Thường Kiệt,0,agreed,
+b970fc75,train,Điện Biên Phủ#1,I,single,Bị che
+b991b318,train,Lê Văn Sỹ,0,single,
+b9c4f60f,train,Nguyễn Kiệm#0,0,single,
+b9e2830f,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+b9e79741,train,Trần Hưng Đạo,0,single,
+ba1015ab,test,Lý Thường Kiệt,I,adjudicated_proposal,
+ba1286bf,train,Cách Mạng Tháng Tám#0,0,single,
+ba150b4f,train,Trần Hưng Đạo,0,single,
+ba3d5399,test,Lý Thường Kiệt,0,agreed,
+ba55e528,train,Nguyễn Thị Minh Khai,I,single,Bị che
+ba5c2413,test,Lý Thường Kiệt,I,adjudicated_proposal,
+ba6ae0ff,val,Nguyễn Đình Chiểu#0,0,agreed,
+ba6b785f,test,Hai Bà Trưng,0,agreed,
+ba6c0ecf,train,Trần Hưng Đạo,0,single,
+ba7ec9bc,val,Nguyễn Đình Chiểu#0,0,agreed,
+ba8b6010,train,Nguyễn Trãi,0,single,
+ba8f24d6,test,Nơ Trang Long,I,adjudicated_proposal,
+baa00845,train,Cách Mạng Tháng Tám#0,0,single,
+bac01564,test,Hai Bà Trưng,0,agreed,
+bac76aee,test,Trần Phú,I,agreed,Bị che
+bac93c20,val,Nguyễn Đình Chiểu#0,1,agreed,
+bacfadd2,train,Cách Mạng Tháng Tám#0,0,single,
+bad60e96,train,Nguyễn Thị Minh Khai,I,single,Bị che
+bae1b628,test,Hai Bà Trưng,0,agreed,
+bb3ce5b1,train,Cách Mạng Tháng Tám#0,0,single,
+bb451dd6,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+bb5c4bf6,train,Phan Đăng Lưu,0,single,
+bb5d9c84,val,Võ Văn Tần,0,agreed,
+bb739ad6,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+bb9dfdd2,test,Hai Bà Trưng,1,agreed,
+bba8d90a,test,Nơ Trang Long,0,adjudicated_proposal,
+bbc6b3fd,train,Pasteur,I,single,Không thấy vỉa hè
+bbcf3e07,train,Hải Thượng Lãn Ông,I,single,Bị che
+bbd65089,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+bc0d2685,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+bc15ae65,train,Nguyễn Thị Minh Khai,0,single,
+bc3a3fd5,test,Trần Phú,1,agreed,
+bc416fee,train,Cách Mạng Tháng Tám#0,0,single,
+bc4af7e3,train,Nguyễn Trãi,1,single,
+bc665def,train,Nguyễn Trãi,I,agreed,
+bc677a03,train,Nguyễn Trãi,I,agreed,
+bc6834b0,test,Nơ Trang Long,0,agreed,
+bc738a59,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+bc8f49e5,test,Hai Bà Trưng,1,adjudicated_phuc,
+bc8f78ec,train,Pasteur,I,single,Không thấy vỉa hè
+bcace6f4,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+bcc47994,test,Nơ Trang Long,1,adjudicated_phuc,
+bcfd6b0f,train,Lê Văn Sỹ,0,single,
+bd95e70e,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+bda76a58,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+bdb33246,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+bddb0b46,test,Lý Thường Kiệt,0,agreed,
+bddfb623,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+bde95906,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+bdf59f68,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+be66c78b,train,Trần Hưng Đạo,1,single,
+be72a687,test,Hai Bà Trưng,1,adjudicated_proposal,
+be76d0a9,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+be84dddd,train,Nguyễn Trãi,0,single,
+be950a17,train,Điện Biên Phủ#1,0,single,
+befbf138,test,Lý Thường Kiệt,0,agreed,
+bf0623a9,test,Nơ Trang Long,I,agreed,Không thấy vỉa hè
+bf18c8f4,test,Lý Thường Kiệt,0,agreed,
+bf454841,train,Nguyễn Trãi,0,agreed,
+bf4aadbd,test,Lý Thường Kiệt,0,agreed,
+bf5b159e,test,Lý Thường Kiệt,0,agreed,
+bf5e059d,val,Võ Văn Tần,I,agreed,Bị che
+bf5e9c96,test,Trần Phú,I,agreed,Không thấy vỉa hè
+bf7d22b9,train,Hải Thượng Lãn Ông,1,single,
+bf80aaba,test,Nơ Trang Long,0,agreed,
+bf90e499,test,Hai Bà Trưng,0,agreed,
+bf92cc41,train,Cách Mạng Tháng Tám#0,0,single,
+bfa59371,test,Lý Thường Kiệt,0,agreed,
+bfb26dad,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+bfc35df6,train,Trần Hưng Đạo,0,agreed,
+bfdaebf4,train,Cách Mạng Tháng Tám#0,1,single,
+bfec513b,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+c0090f08,val,Võ Văn Tần,0,adjudicated_proposal,
+c00ad3ac,val,Võ Văn Tần,0,agreed,
+c01aa9e0,train,Hải Thượng Lãn Ông,1,single,
+c01f5348,train,Trần Hưng Đạo,0,single,
+c02b041f,train,Trần Hưng Đạo,0,single,
+c031d4c8,train,Trần Hưng Đạo,0,single,
+c0332785,val,Hồng Bàng,I,agreed,Bị che
+c035958a,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+c05e5617,val,Hồng Bàng,1,adjudicated_phuc,
+c06bf03b,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+c06cb4f7,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+c0ad3daa,train,Trần Hưng Đạo,0,single,
+c0c2d5df,train,Trần Hưng Đạo,0,single,
+c0caeb9f,train,Phan Đăng Lưu,I,agreed,Không thấy vỉa hè
+c0de467f,train,Trần Hưng Đạo,0,agreed,
+c0eadf0b,test,Nơ Trang Long,0,agreed,
+c0eca8bb,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+c12645cd,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+c12c78e9,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+c164e6d7,train,Điện Biên Phủ#1,0,single,
+c16afd98,test,Hai Bà Trưng,0,adjudicated_proposal,
+c183a0be,train,Nguyễn Thị Minh Khai,0,single,
+c1a166cb,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+c1b335e5,val,Nguyễn Đình Chiểu#0,0,agreed,
+c1ce84af,train,Phan Đăng Lưu,0,single,
+c1f7de08,train,Nguyễn Thị Minh Khai,0,single,
+c207a394,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+c21281b1,train,Nguyễn Trãi,1,single,
+c21e1c30,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+c25b963a,test,Hai Bà Trưng,0,agreed,
+c2624776,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+c278043f,val,Nguyễn Đình Chiểu#0,0,agreed,
+c27e358a,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+c2972f95,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+c2976397,train,Nguyễn Kiệm#0,0,single,
+c2c1c4b2,val,Hồng Bàng,0,agreed,
+c2cba1da,train,Nguyễn Thị Minh Khai,1,single,
+c31cf5eb,test,Nơ Trang Long,0,agreed,
+c324978c,train,Lê Văn Sỹ,0,single,
+c34627f3,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+c3627f32,train,Điện Biên Phủ#1,0,agreed,
+c36692b6,train,Hải Thượng Lãn Ông,0,single,
+c374b635,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+c387d230,train,Trần Hưng Đạo,0,single,
+c38dc461,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+c3993dc0,train,Phan Đăng Lưu,I,adjudicated_proposal,
+c3b1ecba,train,Điện Biên Phủ#1,I,single,Bị che
+c3c68a0c,val,Hồng Bàng,0,agreed,
+c3d6a716,test,Nơ Trang Long,0,agreed,
+c3d93314,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+c3d9f614,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+c4192f34,train,Nguyễn Trãi,0,single,
+c42d27ec,train,Điện Biên Phủ#1,I,single,Bị che
+c4329022,val,Hồng Bàng,0,agreed,
+c434767d,train,Điện Biên Phủ#1,0,single,
+c458f06b,train,Điện Biên Phủ#1,0,single,
+c47cd05f,train,Lê Văn Sỹ,0,agreed,
+c49f94de,test,Lý Thường Kiệt,0,agreed,
+c4a7b327,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+c4c58641,val,Nguyễn Đình Chiểu#0,0,agreed,
+c4ff90bc,train,Cách Mạng Tháng Tám#0,0,single,
+c516ba00,train,Điện Biên Phủ#1,0,single,
+c51dbc70,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+c51f147e,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+c537b5bf,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+c54ba339,train,Cách Mạng Tháng Tám#0,1,single,
+c5528976,train,Nguyễn Thị Minh Khai,0,agreed,
+c562e52b,train,Nguyễn Thị Minh Khai,0,single,
+c599bf11,val,Hồng Bàng,0,agreed,
+c5a8ae95,train,Lê Văn Sỹ,0,single,
+c5a985b3,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+c5d0dc48,train,Trần Hưng Đạo,0,single,
+c5df435f,test,Nơ Trang Long,0,agreed,
+c5ecf9b0,test,Lý Thường Kiệt,I,agreed,Bị che
+c5ee0f72,test,Lý Thường Kiệt,I,adjudicated_proposal,
+c5f56dd7,test,Hai Bà Trưng,0,agreed,
+c62a9884,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+c6502ae8,test,Trần Phú,I,agreed,Bị che
+c65f7688,train,Trần Hưng Đạo,0,single,
+c6632377,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+c699af78,train,Điện Biên Phủ#1,1,single,
+c6c14327,test,Lý Thường Kiệt,0,agreed,
+c6c67f56,test,Trần Phú,I,adjudicated_proposal,
+c73cefa9,val,Hồng Bàng,0,agreed,
+c7521791,val,Võ Văn Tần,0,agreed,
+c754a8ff,val,Hồng Bàng,0,agreed,
+c76dfdbf,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+c7767970,train,Nguyễn Thị Minh Khai,0,single,
+c79b6b62,val,Võ Văn Tần,I,adjudicated_proposal,
+c7b0ab35,val,Võ Văn Tần,0,agreed,
+c7e3010c,train,Pasteur,0,single,
+c7e5b501,train,Cách Mạng Tháng Tám#0,0,single,
+c7ee353c,train,Điện Biên Phủ#1,0,single,
+c7f8f2ad,test,Trần Phú,0,adjudicated_proposal,
+c7f90afe,val,Nguyễn Đình Chiểu#0,0,agreed,
+c804d0e7,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+c8061914,train,Nguyễn Trãi,0,single,
+c8178ec3,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+c83489bf,test,Lý Thường Kiệt,0,agreed,
+c844c268,train,Nguyễn Trãi,0,single,
+c86c9f00,train,Nguyễn Trãi,0,single,
+c87e588c,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+c883bfdc,val,Nguyễn Đình Chiểu#0,I,agreed,
+c894dc55,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+c8bbf2a7,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+c8c42243,test,Lý Thường Kiệt,0,agreed,
+c8c7fe5e,val,Hồng Bàng,0,agreed,
+c8cd7b36,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+c8e29c99,train,Trần Hưng Đạo,0,single,
+c8ed5d55,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+c91401c4,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+c917b124,test,Trần Phú,I,agreed,Không thấy vỉa hè
+c91b53a7,test,Lý Thường Kiệt,I,adjudicated_proposal,
+c92a5527,test,Hai Bà Trưng,0,agreed,
+c92d95d0,test,Lý Thường Kiệt,0,agreed,
+c95021ce,train,Nguyễn Trãi,I,adjudicated_proposal,
+c96295f9,val,Hồng Bàng,0,adjudicated_proposal,
+c97b6d0c,train,Nguyễn Trãi,0,single,
+c9a4ea9a,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+c9ab8e1a,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+c9d86b97,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+c9e3ba97,train,Điện Biên Phủ#1,0,single,
+c9f950b6,train,Trần Hưng Đạo,1,single,
+ca086ad2,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+ca208394,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+ca2a2774,test,Lý Thường Kiệt,0,agreed,
+ca46ec0e,train,Trần Hưng Đạo,0,single,
+ca73b3e2,train,Nguyễn Trãi,I,adjudicated_proposal,
+ca7c33aa,test,Hai Bà Trưng,I,agreed,Bị che
+cadaff9a,test,Nơ Trang Long,0,agreed,
+cb2fe4d9,test,Trần Phú,0,agreed,
+cb3b17b0,train,Nguyễn Trãi,0,single,
+cb6acc38,train,Phan Đăng Lưu,0,single,
+cb84a86a,test,Lý Thường Kiệt,0,agreed,
+cb97b163,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+cba32371,val,Võ Văn Tần,I,agreed,Bị che
+cba73174,train,Nguyễn Trãi,I,single,Bị che
+cba96344,train,Trần Hưng Đạo,1,single,
+cbb295b5,train,Trần Hưng Đạo,0,single,
+cbb56134,train,Cách Mạng Tháng Tám#0,0,single,
+cbbd58b5,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+cbbfc56a,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+cbce3fc9,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+cc011ddf,train,Điện Biên Phủ#1,0,agreed,
+cc257235,test,Lý Thường Kiệt,0,agreed,
+cc3d96cf,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+cc54da94,test,Hai Bà Trưng,0,agreed,
+cc687910,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+cc71ebd8,train,Trần Hưng Đạo,0,single,
+cc7383d0,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+cc7ef922,val,Hồng Bàng,I,agreed,Ảnh mờ / tối / cháy sáng
+ccb20ac0,val,Nguyễn Đình Chiểu#0,0,agreed,
+cccb2d43,train,Trần Hưng Đạo,0,single,
+cd0ac722,test,Trần Phú,I,agreed,
+cd52ddf9,test,Lý Thường Kiệt,0,agreed,
+cd8cf089,train,Cách Mạng Tháng Tám#0,0,single,
+cd9ef551,train,Hải Thượng Lãn Ông,1,single,
+cda02da1,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+ce513de4,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+ce62fba6,train,Pasteur,I,single,Không thấy vỉa hè
+ce798245,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+ce8510d0,val,Hồng Bàng,0,agreed,
+ce8927f4,train,Trần Hưng Đạo,0,single,
+cea649eb,val,Nguyễn Đình Chiểu#0,0,agreed,
+cedd3a7b,test,Hai Bà Trưng,0,agreed,
+cf073092,val,Nguyễn Đình Chiểu#0,0,agreed,
+cf3259db,train,Cách Mạng Tháng Tám#0,0,single,
+cf413141,train,Nguyễn Trãi,1,single,
+cf55aecf,test,Hai Bà Trưng,0,agreed,
+cf6e7a3c,train,Cách Mạng Tháng Tám#0,0,single,
+cf80180e,train,Trần Hưng Đạo,0,single,
+cf89b2fa,train,Trần Hưng Đạo,0,single,
+cf9c69fc,train,Hải Thượng Lãn Ông,0,single,
+cfac83c2,train,Nguyễn Kiệm#0,0,single,
+cfb0ab35,test,Lý Thường Kiệt,0,agreed,
+cfb3ded9,test,Trần Phú,0,agreed,
+cfe1ab48,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+d01693d0,test,Lý Thường Kiệt,I,adjudicated_proposal,
+d041aef9,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+d04e7cd2,train,Pasteur,I,single,Không thấy vỉa hè
+d05e0348,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+d07b9f3b,test,Hai Bà Trưng,0,agreed,
+d0834cb4,test,Hai Bà Trưng,0,agreed,
+d0952aa9,train,Nguyễn Thị Minh Khai,0,single,
+d095c411,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+d0ad89d6,test,Lý Thường Kiệt,0,agreed,
+d0ca14be,train,Cách Mạng Tháng Tám#0,0,adjudicated_proposal,
+d0e144e1,train,Phan Đăng Lưu,0,single,
+d1087bb7,train,Cách Mạng Tháng Tám#0,I,single,Lý do khác
+d110310c,train,Nguyễn Trãi,0,adjudicated_proposal,
+d1667818,train,Nguyễn Trãi,0,single,
+d186443b,train,Pasteur,I,single,Bị che
+d193cfad,test,Nơ Trang Long,I,adjudicated_proposal,
+d19819e8,test,Lý Thường Kiệt,I,adjudicated_proposal,
+d19c6249,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+d1ba206b,test,Lý Thường Kiệt,0,agreed,
+d1cfaa85,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+d1d2821d,val,Võ Văn Tần,0,agreed,
+d1e56859,test,Lý Thường Kiệt,0,agreed,
+d1eaa4f8,test,Hai Bà Trưng,0,agreed,
+d1f33b66,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+d1f82bcd,test,Trần Phú,0,agreed,
+d218d27b,train,Hải Thượng Lãn Ông,0,single,
+d21c44d3,train,Trần Hưng Đạo,0,single,
+d227fe75,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+d2399b56,train,Điện Biên Phủ#1,1,agreed,
+d25f1511,train,Nguyễn Trãi,I,single,Bị che
+d27750ae,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+d28f2acf,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+d2a30c9e,val,Võ Văn Tần,0,agreed,
+d2b58fe6,train,Nguyễn Trãi,0,single,
+d2df8ba8,test,Lý Thường Kiệt,I,adjudicated_proposal,
+d2f90b5b,train,Trần Hưng Đạo,0,single,
+d3074870,train,Trần Hưng Đạo,0,single,
+d317f370,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+d3376dc9,test,Hai Bà Trưng,0,agreed,
+d3397e07,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+d3545e18,test,Nơ Trang Long,0,agreed,
+d35f778c,val,Nguyễn Đình Chiểu#0,0,agreed,
+d364992e,train,Hải Thượng Lãn Ông,0,single,
+d37352da,train,Cách Mạng Tháng Tám#0,0,single,
+d37d901f,train,Nguyễn Thị Minh Khai,0,single,
+d39a4218,val,Nguyễn Đình Chiểu#0,0,agreed,
+d3cad16d,test,Trần Phú,I,adjudicated_proposal,
+d3d49c9e,train,Trần Hưng Đạo,0,single,
+d3e2243b,train,Nguyễn Thị Minh Khai,I,single,Bị che
+d3e3dcd7,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+d3f95f92,test,Lý Thường Kiệt,I,adjudicated_proposal,
+d3fd477a,train,Trần Hưng Đạo,0,single,
+d405356d,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+d431af6f,test,Lý Thường Kiệt,0,agreed,
+d44cb5c6,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+d4573391,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+d4586c7f,test,Nơ Trang Long,0,agreed,
+d459259b,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+d46f332a,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+d4a20a0d,train,Điện Biên Phủ#1,0,single,
+d4c2fd73,train,Nguyễn Thị Minh Khai,0,single,
+d4c31c6c,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+d4cec60f,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+d512d74f,train,Cách Mạng Tháng Tám#0,0,agreed,
+d538269d,train,Nguyễn Trãi,0,single,
+d56965bb,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+d5760cd8,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+d59c2d8e,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+d5b84dec,train,Lê Văn Sỹ,0,single,
+d5da7fb9,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+d5e66f08,train,Phan Đăng Lưu,0,single,
+d60d5d5f,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+d62cce3c,train,Nguyễn Thị Minh Khai,0,single,
+d649f8a4,train,Phan Đăng Lưu,0,single,
+d65beaa1,val,Nguyễn Đình Chiểu#0,0,agreed,
+d66bf94c,train,Trần Hưng Đạo,0,single,
+d674a5f5,train,Cách Mạng Tháng Tám#0,0,single,
+d678a2dc,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+d67e9747,train,Cách Mạng Tháng Tám#0,I,agreed,Bị che
+d6893da4,test,Trần Phú,0,adjudicated_phuc,
+d6aacda6,train,Cách Mạng Tháng Tám#0,0,single,
+d6b7e707,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+d6c9e837,test,Lý Thường Kiệt,I,adjudicated_proposal,
+d6e4b6ae,test,Hai Bà Trưng,0,adjudicated_proposal,
+d716f22e,train,Nguyễn Trãi,0,single,
+d71dab7d,train,Pasteur,I,single,Không thấy vỉa hè
+d72095ee,train,Trần Hưng Đạo,0,single,
+d766434d,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+d7a4d298,train,Cách Mạng Tháng Tám#0,0,single,
+d7a50da9,val,Nguyễn Đình Chiểu#0,I,agreed,
+d7a51531,train,Cách Mạng Tháng Tám#0,0,single,
+d7e49baa,train,Nguyễn Trãi,0,single,
+d7f41c0b,train,Nguyễn Thị Minh Khai,0,single,
+d7fe8362,test,Hai Bà Trưng,1,agreed,
+d8032773,train,Hải Thượng Lãn Ông,0,single,
+d8138924,train,Nguyễn Trãi,0,single,
+d819baee,train,Pasteur,I,agreed,Không thấy vỉa hè
+d832d48c,test,Hai Bà Trưng,0,agreed,
+d8557cdb,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+d85c63e3,train,Nguyễn Trãi,0,single,
+d85ca51b,train,Nguyễn Trãi,1,single,
+d863983e,test,Hai Bà Trưng,I,adjudicated_proposal,
+d8715f1c,train,Cách Mạng Tháng Tám#0,0,single,
+d87c3730,train,Trần Hưng Đạo,0,single,
+d89dbdf3,train,Nguyễn Thị Minh Khai,0,single,
+d8b668ba,train,Nguyễn Thị Minh Khai,I,single,Bị che
+d8d37ed1,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+d8d6c7f2,train,Nguyễn Thị Minh Khai,1,single,
+d8e482fe,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+d91bb883,val,Hồng Bàng,0,agreed,
+d95b955c,val,Nguyễn Đình Chiểu#0,I,agreed,Bị che
+d969efc4,test,Hai Bà Trưng,0,adjudicated_proposal,
+d96cf59b,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
+d97470ea,train,Nguyễn Trãi,0,single,
+d976d6e6,test,Lý Thường Kiệt,0,agreed,
+d98cd0f7,train,Nguyễn Thị Minh Khai,0,single,
+d9a4cd28,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+d9b26321,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
+d9c35ae9,test,Trần Phú,I,agreed,
+d9c79817,test,Lý Thường Kiệt,0,agreed,
+d9cc5d9c,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+d9ccbfcc,train,Nguyễn Trãi,0,single,
+d9db78c9,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+d9e1e7aa,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+d9fa0fbe,train,Hải Thượng Lãn Ông,0,single,
+da0e2dfe,val,Võ Văn Tần,0,agreed,
+da0fbe25,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+da34259f,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+dabafb69,val,Võ Văn Tần,I,adjudicated_proposal,
+db0583a8,train,Nguyễn Kiệm#0,I,single,Bị che
+db16a32f,train,Trần Hưng Đạo,0,single,
+db32fa94,train,Nguyễn Trãi,0,single,
+db4135f7,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+db665f46,test,Lý Thường Kiệt,0,agreed,
+db685bc3,val,Võ Văn Tần,1,agreed,
+db74fb00,test,Lý Thường Kiệt,1,agreed,
+db773d95,train,Hải Thượng Lãn Ông,1,single,
+db8a1f5e,train,Cách Mạng Tháng Tám#0,0,single,
+dba39a6c,train,Điện Biên Phủ#1,0,single,
+dbae22b7,train,Lê Văn Sỹ,0,single,
+dbc911b0,train,Điện Biên Phủ#1,0,single,
+dbe20894,train,Lê Văn Sỹ,0,single,
+dbe48bdb,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+dc05791d,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+dc17f834,train,Phan Đăng Lưu,0,single,
+dc2a351c,train,Nguyễn Trãi,0,single,
+dc532794,test,Lý Thường Kiệt,0,adjudicated_proposal,
+dc71a73b,test,Hai Bà Trưng,1,adjudicated_proposal,
+dc7b7848,test,Trần Phú,0,agreed,
+dca40cbf,test,Hai Bà Trưng,1,agreed,
+dcc06891,train,Nguyễn Trãi,0,single,
+dcc6eafd,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+dcccc280,train,Trần Hưng Đạo,0,single,
+dcda5a17,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+dd0e5443,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+dd0fda30,train,Trần Hưng Đạo,0,agreed,
+dd156929,train,Pasteur,I,single,Bị che
+dd1c33a4,train,Điện Biên Phủ#1,0,agreed,
+dd21dcf3,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+dd2222b5,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+dd2cafed,train,Pasteur,I,single,Không thấy vỉa hè
+dd2cca46,test,Nơ Trang Long,0,agreed,
+dd351599,train,Pasteur,I,single,Không thấy vỉa hè
+dd35a07c,train,Nguyễn Kiệm#0,0,single,
+dd7bf26f,train,Điện Biên Phủ#1,0,single,
+dd8ada18,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+dd98549e,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+ddad23e7,test,Hai Bà Trưng,0,agreed,
+ddb30110,train,Trần Hưng Đạo,0,single,
+ddbc4279,train,Nguyễn Thị Minh Khai,I,adjudicated_proposal,
+ddbf5a07,train,Trần Hưng Đạo,I,single,Bị che
+ddc11c9d,train,Nguyễn Trãi,I,adjudicated_proposal,
+dddad657,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+ddeb53da,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+de00c100,train,Trần Hưng Đạo,I,single,Bị che
+de2e6435,test,Hai Bà Trưng,0,agreed,
+de308a12,test,Lý Thường Kiệt,I,agreed,
+de35ed10,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+de4093b2,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+de64da07,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+de7f6bd5,train,Nguyễn Kiệm#0,0,single,
+de88538d,train,Nguyễn Thị Minh Khai,0,single,
+dee2e8d2,train,Nguyễn Thị Minh Khai,0,single,
+dee9e79a,train,Lê Văn Sỹ,0,single,
+df08497c,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+df2085fd,test,Trần Phú,0,agreed,
+df265ddc,train,Nguyễn Trãi,0,single,
+df2ab0c7,train,Trần Hưng Đạo,0,single,
+df3bc23c,train,Nguyễn Thị Minh Khai,0,single,
+df4e2654,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+df5bf488,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+df5f7bf9,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+df692d6b,train,Cách Mạng Tháng Tám#0,0,single,
+df82af86,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+df923296,val,Hồng Bàng,0,adjudicated_proposal,
+df9788bd,train,Nguyễn Trãi,0,single,
+dfaaf147,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+dfc5cc1b,train,Nguyễn Thị Minh Khai,0,single,
+dfce67c4,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+dfd942a7,train,Trần Hưng Đạo,0,single,
+e026ac3f,train,Lê Văn Sỹ,0,agreed,
+e05a0640,test,Trần Phú,0,agreed,
+e08e39e1,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+e099ae14,test,Lý Thường Kiệt,0,agreed,
+e09a4cd9,train,Trần Hưng Đạo,0,single,
+e09e7b14,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+e0c2ec0c,train,Pasteur,I,single,Không thấy vỉa hè
+e0d44dee,train,Trần Hưng Đạo,0,single,
+e0d99f0a,test,Nơ Trang Long,0,agreed,
+e0edffad,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+e0f2b66f,train,Nguyễn Thị Minh Khai,0,single,
+e0f37730,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+e10a1aee,train,Nguyễn Thị Minh Khai,0,single,
+e15b34e2,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+e1794162,test,Lý Thường Kiệt,0,agreed,
+e190ccc6,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+e1c958d9,test,Nơ Trang Long,I,adjudicated_proposal,
+e1cfcbe1,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+e1f56695,train,Cách Mạng Tháng Tám#0,0,single,
+e2168f1f,train,Nguyễn Thị Minh Khai,0,single,
+e23ab6e9,test,Hai Bà Trưng,1,agreed,
+e23dc56c,train,Lê Văn Sỹ,I,adjudicated_proposal,
+e2598706,test,Nơ Trang Long,0,agreed,
+e2607b7e,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+e272fbb0,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+e2992e39,train,Pasteur,0,single,
+e2b39168,train,Trần Hưng Đạo,I,adjudicated_proposal,
+e2b6757c,train,Nguyễn Thị Minh Khai,0,single,
+e2bc736b,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+e2caa2bb,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+e2dadceb,train,Điện Biên Phủ#1,0,single,
+e2e71528,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+e2f0c014,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+e2f2e83f,test,Hai Bà Trưng,I,adjudicated_proposal,
+e2fa8781,val,Nguyễn Đình Chiểu#0,0,adjudicated_phuc,
+e30cbf6a,train,Nguyễn Thị Minh Khai,0,single,
+e3216d25,train,Cách Mạng Tháng Tám#0,0,agreed,
+e32e32b1,val,Nguyễn Đình Chiểu#0,1,adjudicated_proposal,
+e393df4b,train,Trần Hưng Đạo,0,agreed,
+e3b2eaab,val,Hồng Bàng,0,agreed,
+e3ca3cf1,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+e3f3db67,train,Trần Hưng Đạo,0,single,
+e42c8885,train,Cách Mạng Tháng Tám#0,0,single,
+e43bbb30,train,Cách Mạng Tháng Tám#0,1,single,
+e442dc1f,test,Trần Phú,I,agreed,Không thấy vỉa hè
+e446ce92,test,Lý Thường Kiệt,0,agreed,
+e45c1672,train,Cách Mạng Tháng Tám#0,0,single,
+e46196eb,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+e485fc62,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+e4a0f950,test,Lý Thường Kiệt,0,adjudicated_proposal,
+e4ae97a0,train,Pasteur,0,single,
+e4c6eccd,train,Nguyễn Thị Minh Khai,0,single,
+e4ee2a11,test,Hai Bà Trưng,0,agreed,
+e4f89572,train,Cách Mạng Tháng Tám#0,0,single,
+e50248b0,test,Hai Bà Trưng,0,agreed,
+e51fb0b9,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+e55765f2,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+e55a61b4,train,Trần Hưng Đạo,1,single,
+e55b5cf0,train,Nguyễn Trãi,I,adjudicated_proposal,
+e56242f7,train,Nguyễn Trãi,0,single,
+e576137c,test,Lý Thường Kiệt,0,adjudicated_proposal,
+e57948f4,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+e57ab41d,test,Lý Thường Kiệt,0,agreed,
+e581c3d4,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+e586febd,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+e5946d7c,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+e5b0410d,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+e5f24634,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+e5f67d91,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+e6106c90,train,Cách Mạng Tháng Tám#0,I,adjudicated_proposal,
+e622cfc8,test,Lý Thường Kiệt,1,adjudicated_proposal,
+e6391200,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+e63beb7b,train,Nguyễn Kiệm#0,0,single,
+e642eb19,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+e659cf0d,train,Pasteur,I,single,Không thấy vỉa hè
+e65f10c5,train,Lê Văn Sỹ,0,single,
+e69511c2,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+e6cd9909,test,Trần Phú,I,adjudicated_proposal,
+e6d04a8a,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+e6fe4c85,train,Trần Hưng Đạo,0,single,
+e71e9295,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+e755662a,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+e75a8370,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+e75af545,train,Điện Biên Phủ#1,0,single,
+e7604f4b,test,Nơ Trang Long,I,adjudicated_proposal,
+e7668921,test,Trần Phú,I,agreed,Không thấy vỉa hè
+e798bae0,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+e79e453e,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+e7d9f682,train,Nguyễn Thị Minh Khai,0,single,
+e7e83c46,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+e7f9e969,train,Trần Hưng Đạo,0,single,
+e820fb16,train,Nguyễn Trãi,1,single,
+e82f2487,val,Võ Văn Tần,I,adjudicated_proposal,
+e84c7225,train,Nguyễn Thị Minh Khai,I,adjudicated_proposal,
+e8681694,train,Trần Hưng Đạo,0,single,
+e86bbceb,train,Nguyễn Trãi,0,single,
+e86cc95f,train,Trần Hưng Đạo,1,single,
+e87f7bbb,train,Cách Mạng Tháng Tám#0,0,agreed,
+e88567b7,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+e8861ebe,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+e8af404b,train,Hải Thượng Lãn Ông,1,single,
+e8bf1ebb,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+e8c24c7f,train,Nguyễn Thị Minh Khai,I,single,Bị che
+e8d644a8,train,Điện Biên Phủ#1,0,agreed,
+e8da2828,val,Võ Văn Tần,0,agreed,
+e927030a,test,Trần Phú,0,agreed,
+e9377e70,train,Lê Văn Sỹ,0,single,
+e94ca8cb,train,Nguyễn Trãi,0,single,
+e96348dd,train,Cách Mạng Tháng Tám#0,0,agreed,
+e980fe0a,test,Hai Bà Trưng,0,agreed,
+e9896c86,test,Hai Bà Trưng,0,agreed,
+e99048b2,train,Cách Mạng Tháng Tám#0,0,adjudicated_proposal,
+e99de8f9,train,Pasteur,0,single,
+e9ab6bc6,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+e9ac1f00,test,Lý Thường Kiệt,0,agreed,
+e9b7a69f,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+e9d1577a,val,Nguyễn Đình Chiểu#0,0,agreed,
+e9febaf1,val,Hồng Bàng,I,agreed,
+ea01c1ee,test,Hai Bà Trưng,I,adjudicated_proposal,
+ea63b767,val,Hồng Bàng,0,agreed,
+ea87d581,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+ea9e36c3,train,Nguyễn Thị Minh Khai,0,single,
+eaa2e752,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+eab35b00,train,Pasteur,I,single,Không thấy vỉa hè
+eab4e0d6,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+eb1cbab3,train,Điện Biên Phủ#1,0,single,
+eb29b163,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+eb29e4a0,val,Võ Văn Tần,0,agreed,
+eb8212ff,train,Nguyễn Trãi,0,single,
+eb9348c8,train,Nguyễn Trãi,0,single,
+eba7cf47,val,Hồng Bàng,1,agreed,
+eba80e31,val,Võ Văn Tần,0,agreed,
+eba847a6,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+ebaf7508,test,Trần Phú,I,agreed,
+ebb2297d,test,Hai Bà Trưng,0,agreed,
+ebd0fa15,test,Lý Thường Kiệt,0,agreed,
+ebefa48a,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+ec0f0fe3,test,Lý Thường Kiệt,0,agreed,
+ec36dd02,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+ec3da88f,train,Nguyễn Thị Minh Khai,0,single,
+ec810c2f,train,Nguyễn Trãi,1,single,
+ec83a693,test,Trần Phú,I,agreed,Không thấy vỉa hè
+ec9675f6,test,Nơ Trang Long,0,agreed,
+eca6c08b,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+eca7328c,train,Nguyễn Kiệm#0,0,single,
+ecb03a51,train,Cách Mạng Tháng Tám#0,0,single,
+eccb61bf,train,Nguyễn Trãi,0,single,
+ecd376ec,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+ed1085ab,val,Võ Văn Tần,0,agreed,
+ed1b7f53,test,Trần Phú,I,agreed,
+ed5ba036,test,Trần Phú,I,adjudicated_proposal,
+ed5e265a,train,Trần Hưng Đạo,1,agreed,
+ed5fb692,train,Hải Thượng Lãn Ông,0,single,
+ed687817,train,Điện Biên Phủ#1,0,single,
+ed76e8f4,val,Nguyễn Đình Chiểu#0,0,agreed,
+ed7aefb2,train,Cách Mạng Tháng Tám#0,0,single,
+ed824088,train,Nguyễn Thị Minh Khai,0,single,
+ed91b3c7,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+edd69674,train,Phan Đăng Lưu,0,single,
+ee16eeec,val,Hồng Bàng,I,agreed,Ảnh mờ / tối / cháy sáng
+ee1ade9a,train,Cách Mạng Tháng Tám#0,0,single,
+ee29986c,train,Điện Biên Phủ#1,0,single,
+ee3d3e93,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+ee452bb5,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+ee7f27a8,train,Điện Biên Phủ#1,0,single,
+ee9fe288,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+eeab5b9b,train,Trần Hưng Đạo,0,agreed,
+eedf4d01,train,Điện Biên Phủ#1,0,single,
+eee1f895,train,Nguyễn Trãi,I,agreed,Không thấy vỉa hè
+eee3195b,train,Lê Văn Sỹ,0,single,
+eeeee7bc,train,Pasteur,0,single,
+ef02b302,test,Lý Thường Kiệt,0,agreed,
+ef1d8f14,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+ef2756f5,test,Hai Bà Trưng,I,agreed,
+ef2e1470,val,Hồng Bàng,I,agreed,
+ef3956ca,train,Nguyễn Thị Minh Khai,0,single,
+efa6feed,test,Lý Thường Kiệt,0,agreed,
+efd22cde,train,Nguyễn Thị Minh Khai,0,single,
+eff0a0da,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+eff2bcdf,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+f01078e8,test,Hai Bà Trưng,0,agreed,
+f01c9a09,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+f01e0e08,test,Trần Phú,I,adjudicated_proposal,
+f0205233,train,Trần Hưng Đạo,0,single,
+f02b4e6a,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+f0313c1a,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+f067e8e8,test,Trần Phú,0,agreed,
+f0a3fe4a,val,Võ Văn Tần,I,agreed,Bị che
+f0c141f4,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
+f0c9d1c1,train,Nguyễn Trãi,0,single,
+f0ec1c4b,test,Nơ Trang Long,0,agreed,
+f0f30894,train,Nguyễn Thị Minh Khai,0,single,
+f10e70af,train,Trần Hưng Đạo,0,single,
+f1154b85,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+f1232440,train,Nguyễn Trãi,0,single,
+f12b051f,test,Lý Thường Kiệt,0,agreed,
+f1389134,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+f1763f88,train,Pasteur,I,single,Không thấy vỉa hè
+f19e4e4d,train,Trần Hưng Đạo,0,single,
+f1a25b91,test,Trần Phú,0,agreed,
+f1b0f460,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
+f1b5975c,test,Nơ Trang Long,I,adjudicated_proposal,
+f1b61829,test,Lý Thường Kiệt,0,adjudicated_proposal,
+f1b6eb57,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+f1ec637f,train,Điện Biên Phủ#1,0,single,
+f204ac4b,train,Cách Mạng Tháng Tám#0,0,single,
+f22e97c6,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+f276fe32,train,Nguyễn Thị Minh Khai,0,single,
+f27a841f,train,Phan Đăng Lưu,I,single,Bị che
+f284da11,test,Lý Thường Kiệt,0,agreed,
+f2b36a4c,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+f2b60afa,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+f2bf44d4,train,Trần Hưng Đạo,0,agreed,
+f2d974f2,test,Lý Thường Kiệt,0,agreed,
+f2da6ed0,train,Pasteur,I,single,Không thấy vỉa hè
+f2e0af2d,test,Lý Thường Kiệt,0,agreed,
+f305a595,train,Nguyễn Kiệm#0,1,single,
+f32b7930,train,Cách Mạng Tháng Tám#0,0,single,
+f35c027c,train,Nguyễn Thị Minh Khai,0,single,
+f379d23d,test,Hai Bà Trưng,1,agreed,
+f3862412,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+f392824c,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+f3a2d935,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+f3b69dd3,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+f3cc5eb9,test,Trần Phú,0,adjudicated_proposal,
+f3d0f100,test,Trần Phú,0,agreed,
+f3fdc924,train,Nguyễn Thị Minh Khai,I,agreed,Không thấy vỉa hè
+f42f2720,val,Nguyễn Đình Chiểu#0,0,agreed,
+f455eaae,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+f45a7eb6,train,Trần Hưng Đạo,0,single,
+f47ff7d6,test,Lý Thường Kiệt,0,agreed,
+f488edea,train,Lê Văn Sỹ,0,single,
+f48c6e84,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
+f48fc6a1,val,Võ Văn Tần,1,adjudicated_phuc,
+f4be3828,train,Nguyễn Kiệm#0,0,single,
+f4e5f509,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+f4ea477e,train,Điện Biên Phủ#1,0,single,
+f4fa115a,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+f504b027,train,Cách Mạng Tháng Tám#0,0,single,
+f504e4ea,test,Hai Bà Trưng,0,agreed,
+f50668f1,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+f51e9ed2,train,Nguyễn Trãi,0,agreed,
+f520b0f0,test,Hai Bà Trưng,0,agreed,
+f52ed039,val,Hồng Bàng,I,adjudicated_proposal,
+f53cb2c4,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+f573692e,train,Nguyễn Kiệm#0,0,single,
+f577befe,train,Nguyễn Trãi,I,adjudicated_proposal,
+f5b97b47,train,Nguyễn Trãi,0,single,
+f5c64f4a,train,Trần Hưng Đạo,0,agreed,
+f60e344c,test,Hai Bà Trưng,0,agreed,
+f61031b6,train,Phan Đăng Lưu,0,agreed,
+f620df99,train,Nguyễn Thị Minh Khai,I,single,Bị che
+f62ab184,val,Võ Văn Tần,I,agreed,Ảnh mờ / tối / cháy sáng
+f63a6402,test,Nơ Trang Long,0,agreed,
+f645028e,val,Nguyễn Đình Chiểu#0,0,agreed,
+f648e8cd,train,Trần Hưng Đạo,0,agreed,
+f64fd91a,test,Lý Thường Kiệt,0,agreed,
+f6a901b6,train,Nguyễn Thị Minh Khai,0,single,
+f6a949e5,train,Cách Mạng Tháng Tám#0,0,single,
+f6b74c36,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+f6ed418a,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
+f6f8d0bc,val,Võ Văn Tần,0,agreed,
+f70d27fe,train,Hải Thượng Lãn Ông,1,single,
+f727e00d,train,Nguyễn Thị Minh Khai,0,single,
+f741993c,train,Điện Biên Phủ#1,I,single,Bị che
+f74c09e3,test,Lý Thường Kiệt,0,agreed,
+f7734d9f,train,Điện Biên Phủ#1,0,single,
+f7a6aa18,val,Nguyễn Đình Chiểu#0,0,adjudicated_proposal,
+f7a83cfa,train,Phan Đăng Lưu,1,single,
+f7bb86d3,val,Nguyễn Đình Chiểu#0,0,agreed,
+f7dacb36,train,Cách Mạng Tháng Tám#0,0,single,
+f7dbf21d,test,Nơ Trang Long,0,agreed,
+f7eb5efd,val,Nguyễn Đình Chiểu#0,0,agreed,
+f801f506,train,Trần Hưng Đạo,I,agreed,Không thấy vỉa hè
+f81d7ad4,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+f81ec996,train,Phan Đăng Lưu,1,single,
+f824f093,test,Trần Phú,I,agreed,Không thấy vỉa hè
+f8326b31,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+f842220a,train,Cách Mạng Tháng Tám#0,0,single,
+f8427e2d,train,Trần Hưng Đạo,0,single,
+f8760c1a,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
+f87bcd89,train,Trần Hưng Đạo,0,single,
+f8949934,test,Lý Thường Kiệt,I,agreed,Không thấy vỉa hè
+f89b9672,test,Lý Thường Kiệt,0,agreed,
+f8a9c8fe,train,Nguyễn Thị Minh Khai,0,single,
+f8af7bca,train,Nguyễn Thị Minh Khai,I,adjudicated_proposal,
+f8b9e282,train,Trần Hưng Đạo,0,single,
+f8f0d269,train,Phan Đăng Lưu,0,single,
+f8f88546,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+f91ed103,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+f93dfb3e,test,Lý Thường Kiệt,1,agreed,
+f93e6d4f,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+f96ae734,train,Nguyễn Trãi,0,single,
+f97879ff,train,Nguyễn Thị Minh Khai,0,single,
+f980fd48,train,Lê Văn Sỹ,0,single,
+f9b62009,val,Võ Văn Tần,0,agreed,
+f9ba6654,test,Trần Phú,I,agreed,Không thấy vỉa hè
+f9bce920,train,Nguyễn Thị Minh Khai,0,single,
+f9dce9b9,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+f9eda075,train,Nguyễn Trãi,I,single,Bị che
+f9edde30,test,Nơ Trang Long,0,agreed,
+fa1b8186,train,Nguyễn Kiệm#0,I,single,Bị che
+fa306d09,test,Trần Phú,I,agreed,Không thấy vỉa hè
+fa3af08d,train,Điện Biên Phủ#1,0,single,
+fa3eab06,train,Phan Đăng Lưu,0,single,
+fa45f21a,test,Lý Thường Kiệt,1,adjudicated_proposal,
+fac615be,test,Lý Thường Kiệt,0,agreed,
+fafd251b,train,Nguyễn Trãi,0,single,
+fb14b7d6,train,Điện Biên Phủ#1,0,single,
+fb17cd15,val,Võ Văn Tần,0,adjudicated_proposal,
+fb28d75f,train,Lê Văn Sỹ,0,agreed,
+fb456eac,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+fb68b91b,train,Điện Biên Phủ#1,0,single,
+fbbf6974,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+fbdcd75f,train,Điện Biên Phủ#1,I,single,Bị che
+fbf877fe,train,Trần Hưng Đạo,0,agreed,
+fbf8dad3,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
+fc17cd77,val,Võ Văn Tần,0,adjudicated_phuc,
+fc4aef6d,test,Hai Bà Trưng,I,agreed,Ảnh mờ / tối / cháy sáng
+fc520a84,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+fc806199,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
+fc808e88,train,Điện Biên Phủ#1,I,single,Bị che
+fccbe529,train,Phan Đăng Lưu,0,single,
+fce783e8,train,Nguyễn Trãi,I,adjudicated_proposal,
+fcf2ee9b,train,Trần Hưng Đạo,0,agreed,
+fd001c35,train,Lê Văn Sỹ,0,agreed,
+fd010150,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+fd4560de,train,Nguyễn Thị Minh Khai,0,single,
+fd7735d6,test,Hai Bà Trưng,0,adjudicated_proposal,
+fd7923f2,train,Nguyễn Thị Minh Khai,0,agreed,
+fd874270,train,Nguyễn Thị Minh Khai,0,adjudicated_proposal,
+fd9dbfab,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
+fda04d71,train,Phan Đăng Lưu,0,single,
+fdbab6c2,test,Lý Thường Kiệt,I,adjudicated_proposal,
+fdc2e511,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+fdd17c17,train,Nguyễn Trãi,0,single,
+fde36746,train,Pasteur,I,single,Không thấy vỉa hè
+fe118180,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+fe1212df,val,Nguyễn Đình Chiểu#0,0,agreed,
+fe1b1370,train,Trần Hưng Đạo,I,single,Bị che
+fe2678ff,train,Hải Thượng Lãn Ông,I,single,Không thấy vỉa hè
+fe2bf942,train,Cách Mạng Tháng Tám#0,I,single,Bị che
+fe3878ef,train,Lê Văn Sỹ,I,adjudicated_proposal,
+fe432dff,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
+fe4ef154,train,Trần Hưng Đạo,0,single,
+fe7fc1c1,train,Điện Biên Phủ#1,0,single,
+fe82678c,test,Trần Phú,I,agreed,Không thấy vỉa hè
+fea17f12,train,Điện Biên Phủ#1,0,single,
+fec3fddc,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
+fec5154b,train,Điện Biên Phủ#1,I,single,Bị che
+fedf84b8,train,Trần Hưng Đạo,0,single,
+fee68d40,test,Lý Thường Kiệt,0,agreed,
+fef8714f,train,Cách Mạng Tháng Tám#0,0,single,
+ff064117,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+ff0a4ddc,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
+ff0d8f1a,train,Cách Mạng Tháng Tám#0,0,single,
+ff13267e,train,Trần Hưng Đạo,0,agreed,
+ff14c193,val,Nguyễn Đình Chiểu#0,0,agreed,
+ff2151e5,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+ff21a00b,train,Trần Hưng Đạo,0,single,
+ff4f0fd2,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
+ff689273,train,Điện Biên Phủ#1,0,single,
+ff76cfbb,train,Nguyễn Thị Minh Khai,0,single,
+ff8361f9,test,Lý Thường Kiệt,0,agreed,
+ff88bf97,train,Cách Mạng Tháng Tám#0,0,single,
+ff92bab1,train,Nguyễn Thị Minh Khai,0,agreed,
+ffbf8368,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
+ffc20768,train,Trần Hưng Đạo,0,agreed,
+ffd65c99,train,Phan Đăng Lưu,0,adjudicated_proposal,
+ffecf83c,train,Pasteur,I,agreed,Bị che
+fffe152b,train,Nguyễn Thị Minh Khai,0,single,
