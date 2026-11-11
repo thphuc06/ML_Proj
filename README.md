@@ -30,7 +30,7 @@ Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuố
 | Tiền xử lý | Một phần: đã cắt ảnh, lọc ảnh đêm, loại trùng tuyệt đối. Còn dò gần trùng và rà soát nội dung nhạy cảm |
 | EDA | Chưa làm |
 | Chia tập | Đã chia theo đường ([streets_v1.yaml](configs/streets_v1.yaml)), chưa khóa |
-| Bơm thêm ảnh "Bị chặn" cho train | Tạm hoãn, làm sau. Số ảnh "Bị chặn" thực tế: train 120 (gồm 14 ảnh pilot), val 35, test 47, ít hơn ước tính ([ghi chép](docs/data_enrichment.md)) |
+| Bơm thêm ảnh "Bị chặn" cho train | Chưa bơm. Đang so bộ chọn ảnh mới (embedding + logistic) với bộ cũ: code đã viết, chưa có kết quả ([mục 7](docs/data_enrichment.md)). Số ảnh "Bị chặn" thực tế: train 120 (gồm 14 ảnh pilot), val 35, test 47, ít hơn ước tính ([ghi chép](docs/data_enrichment.md)) |
 
 ## Cấu trúc thư mục
 
@@ -43,6 +43,7 @@ Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuố
 ├── src/
 │   ├── common.py       Đường dẫn, quy tắc cắt ảnh, hàm địa lý
 │   ├── seg_measures.py Đo vỉa hè và xe đậu bằng SegFormer, chỉ để chọn mẫu
+│   ├── enrich.py       Dựng lại ảnh cắt, embedding và bộ chọn ảnh, chỉ để chọn mẫu
 │   ├── ls_client.py    Kết nối Label Studio
 │   ├── collection/     OSM, metadata Mapillary, xếp hạng đường, thu thập ảnh
 │   ├── labeling/       Tạo pilot và project, tính đồng thuận
@@ -96,6 +97,13 @@ Thử nghiệm bơm thêm ảnh "Bị chặn" cho train (không bắt buộc, xe
 ```bash
 python src/analysis/16_train_extra_preview.py --sample 80   # tập nhỏ, có --dry để chỉ đếm
 python src/analysis/17_check_scorer_pilot.py                # so bộ chấm điểm trên phiếu pilot, nên chạy trên GPU
+```
+
+So bộ chọn ảnh mới với bộ cũ trên nhãn train (chưa chạy, nên chạy trên GPU):
+
+```bash
+python src/analysis/21_selector_benchmark.py --seg-n -1     # giữ nguyên một đường ra ngoài, không đọc val/test
+python src/analysis/22_enrichment_simulation.py             # chọn theo điểm có giúp bộ phân loại không
 ```
 
 Chạy khung giao diện:

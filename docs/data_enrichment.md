@@ -1,6 +1,6 @@
 # Bơm thêm ảnh "Bị chặn" cho tập train
 
-Ghi chép ngày 04/11/2026, cập nhật 11/11/2026. **Trạng thái: chưa bơm ảnh nào.** Đã gán xong bộ chính, số ảnh "Bị chặn" thật thấp hơn ước tính (xem mục 1). Nhóm quyết định chờ gán xong đợt đầu rồi mới xem xét bơm thêm, và lấy ảnh từ **đường train mới**. Nhật ký kỹ thuật ở [collection_log.md](collection_log.md).
+Ghi chép ngày 04/11/2026, cập nhật 11/11/2026. **Trạng thái: chưa bơm ảnh nào. Đang đo một bộ chọn ảnh mới (mục 7), chưa có kết quả.** Đã gán xong bộ chính, số ảnh "Bị chặn" thật thấp hơn ước tính (xem mục 1). Nhóm quyết định chờ gán xong đợt đầu rồi mới xem xét bơm thêm, và lấy ảnh từ **đường train mới**. Nhật ký kỹ thuật ở [collection_log.md](collection_log.md).
 
 ## Bàn giao (11/11/2026)
 
@@ -117,5 +117,59 @@ python src/analysis/17_check_scorer_pilot.py                 # so occ_v1 và occ
 ```
 
 Ảnh, mask và metadata được lưu trong `data/raw/` và `data/crops/`, không đưa lên git. Bảng điểm của tập nhỏ: [train_extra_preview_scores.csv](../data/streets/train_extra_preview_scores.csv).
+
+## 7. Bộ chọn ảnh mới: đang đo (11/11/2026)
+
+**Trạng thái: code đã viết, chưa chạy, chưa có kết quả.** Pipeline cũ (mục 3) vẫn là pipeline hiện hành cho tới khi có số đo. Nhánh `enrichment-selector`.
+
+### Đã có
+
+| File | Việc |
+|---|---|
+| [src/enrich.py](../src/enrich.py) | Tải pano, dựng lại ảnh cắt từ `yaw` trong manifest, embedding đóng băng (CLIP ViT-B/16, CLIP ViT-L/14, DINOv2 ViT-B/14, SigLIP B/16), bộ chọn ảnh = logistic regression P(Bị chặn) trên embedding |
+| [21_selector_benchmark.py](../src/analysis/21_selector_benchmark.py) | So `occ_v1`, `occ_v2`, zero-shot và logistic trên từng encoder bằng nhãn người của train. Thay cho script 17 (17 chỉ so v1 và v2 trên 150 ảnh pilot) |
+| [22_enrichment_simulation.py](../src/analysis/22_enrichment_simulation.py) | Mô phỏng trong train: chọn ảnh theo điểm có giúp bộ phân loại không, hay chỉ tăng số ảnh dương |
+
+Hai script 21 và 22 mới qua kiểm tra cú pháp, **chưa chạy lần nào**.
+
+### Cách đo
+
+- **Chỉ dùng nhãn train.** Không đọc nhãn val và test, kể cả để chọn encoder.
+- **Giữ nguyên một đường ra ngoài:** ảnh của mỗi đường được chấm bởi model chỉ thấy 9 đường train còn lại, giống tình huống thật là chấm ảnh của đường mới.
+- **Mục tiêu:** 1 nếu "Bị chặn", 0 cho cả "Còn lối đi" lẫn "Không đủ thông tin". Tỉ lệ trúng khi đó là số ảnh "Bị chặn" trên mỗi ảnh người phải gán.
+- **Đo trên 1.839 ảnh main của train** (phân phối tự nhiên, 106 ảnh dương). 150 ảnh pilot chỉ dùng để fit, vì được lấy mẫu lệch.
+- **Chỉ số:** AP, AUC, tỉ lệ trúng ở top 10% / 20% / 33%, và mô phỏng quy tắc của mục 5 (70% theo điểm, trần 25% mỗi đường, 30% ngẫu nhiên). Khoảng tin cậy bằng bootstrap theo cặp so với `occ_v2`.
+- **Quy tắc quyết định, đặt trước khi xem số:** thay pipeline cũ chỉ khi bộ mới hơn `occ_v2` về tỉ lệ trúng ở top 20% (khoảng tin cậy 95% của hiệu nằm trên 0) và không kém về AP. So nhiều encoder trên cùng dữ liệu thì bộ thắng bị lạc quan một chút.
+
+### Số đã đo trên laptop (không GPU)
+
+- Máy laptop chỉ có 303/2.999 ảnh cắt của bộ chính. Ảnh dựng lại từ pano và `yaw` khớp ảnh gốc: 5 ảnh kiểm tra lệch trung bình 1,35–1,5 mức xám, do nén JPEG lại. Đã dựng lại đủ 1.839 ảnh train.
+- Tải 1.518 pano mất 890 giây với 8 luồng. Mapillary có lúc bóp tốc độ tới khoảng 11 giây mỗi yêu cầu.
+- SegFormer-B5 khoảng 11 giây/ảnh trên CPU (đo lúc máy đang tải ảnh). CLIP ViT-B/16 khoảng 0,19 giây/ảnh (1.851 ảnh trong 355 giây). Bộ chấm embedding rẻ hơn khoảng 50 lần, nên có thể chấm kho ứng viên lớn hơn. Chất lượng thì **chưa đo**.
+
+### Việc còn lại (chạy trên PC có GPU)
+
+```bash
+pip install -r requirements.txt                              # thêm scikit-learn, sentencepiece, protobuf
+python src/analysis/21_selector_benchmark.py --seg-n -1      # tự dựng lại ảnh train còn thiếu; cần MAPILLARY_TOKEN
+python src/analysis/22_enrichment_simulation.py --enc <encoder thắng>
+```
+
+1. Chạy hai lệnh trên, sửa lỗi nếu có, ghi bảng kết quả vào mục này.
+2. Nếu bộ mới thắng theo quy tắc trên: viết script thu thập cho đường train mới (mục 5, bước 3–4) dùng bộ chọn ảnh này, và bỏ phần chọn ảnh `--all` của script 16. Nếu không thắng thì giữ pipeline cũ và ghi lại kết quả.
+3. Danh sách đường mới để ở file riêng, trạng thái "đề xuất". Việc chốt đường là của nhóm.
+
+### Tài liệu tham khảo
+
+Đã kiểm tra là có tồn tại. Cần đọc bản gốc trước khi trích nội dung vào báo cáo.
+
+- Attenberg và Provost, "Why Label When You Can Search?", KDD 2010, [DOI 10.1145/1835804.1835859](https://doi.org/10.1145/1835804.1835859). Với lớp hiếm, chủ động đi tìm mẫu dương hiệu quả hơn active learning thuần.
+- Garnett và cộng sự, "Bayesian Optimal Active Search and Surveying", ICML 2012, [arXiv:1206.6406](https://arxiv.org/abs/1206.6406). "Active search": mục tiêu là tìm càng nhiều mẫu dương càng tốt, khác với uncertainty sampling.
+- Coleman và cộng sự, "Similarity Search for Efficient Active Learning and Search of Rare Concepts", AAAI 2022, [arXiv:2007.00077](https://arxiv.org/abs/2007.00077).
+- Mullapudi và cộng sự, "Learning Rare Category Classifiers on a Tight Labeling Budget", [ICCV 2021](https://openaccess.thecvf.com/content/ICCV2021/html/Mullapudi_Learning_Rare_Category_Classifiers_on_a_Tight_Labeling_Budget_ICCV_2021_paper.html).
+- Aggarwal, Popescu và Hudelot, "Active Learning for Imbalanced Datasets", [WACV 2020](https://openaccess.thecvf.com/content_WACV_2020/html/Aggarwal_Active_Learning_for_Imbalanced_Datasets_WACV_2020_paper.html).
+- Farquhar, Gal và Rainforth, "On Statistical Bias in Active Learning: How and When to Fix It", ICLR 2021, [arXiv:2101.11665](https://arxiv.org/abs/2101.11665). Dữ liệu được chọn có chủ đích thì lệch khỏi phân phối gốc. Đây là lý do giữ 30% ảnh ngẫu nhiên và tách "main tự nhiên" với "train_extra" trong báo cáo.
+- Hacohen, Dekel và Weinshall, "Active Learning on a Budget: Opposite Strategies Suit High and Low Budgets", ICML 2022, [arXiv:2202.02794](https://arxiv.org/abs/2202.02794).
+- Oquab và cộng sự, "DINOv2: Learning Robust Visual Features without Supervision", [arXiv:2304.07193](https://arxiv.org/abs/2304.07193).
 
 *Ảnh: © Mapillary contributors, CC BY-SA 4.0.*
