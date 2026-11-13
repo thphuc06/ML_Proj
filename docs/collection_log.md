@@ -244,4 +244,28 @@ Summary: `docs/data_enrichment.md` section 9.
 - Five new projects `MAIN2_<name>` (ids 13 to 17), 400 tasks each from `train_extra_v1_assignment.csv`, private random order, v1 interface and guide v1. A task holds the image and the item code only.
 - Separate projects, not mixed into `MAIN_*` as first planned: the `MAIN_*` projects are the closed record of round 1 and `19_main_agreement.py` reads every `MAIN_*` project.
 - Checked after the import: 400 tasks and no annotation in each project; 60 random images are served; the task list of `MAIN2_Phuc` equals the assignment; the five `MAIN_*` projects still show 887 of 887.
-- **Open:** no script pulls the `MAIN2_*` labels yet.
+
+## 2026-11-12 — Train enrichment labels done (`src/labeling/26_train_extra_report.py --fresh`, report `data/labels/train_extra_report/report.md`)
+
+- 2,000/2,000 crops labelled, none missing, no task saved twice. 0 = 810, 1 = 588, I = 602. Labels: `data/labels/train_extra_labels_v1.csv` (kept separate from `main_labels_v1.csv`).
+- Train after enrichment: 708 blocked of 2,530 usable (before: 120 of 1,132).
+- **Selector on the new streets:** top_score stratum (all 1,400 pool crops with score >= 0.61) 541 blocked = 0.386 [0.361, 0.412]; random stratum (600 of the other 3,635) 47 = 0.078 [0.059, 0.103]. Estimated blocked share of the whole pool 0.164 [0.148, 0.182], so the 2,000 picked crops hold 1.8x what random labelling of the pool would give (588 vs about 328). The top stratum (28% of the pool) holds about 66% [60%, 72%] of the pool's blocked crops. Blocked share rises with the score: 0.02 below 0.2 up to 0.54 above 0.9.
+- **Street choice:** pool base rate 0.164 against 0.058 on the 10 old train streets. Street scan score against the pool-weighted blocked share of 62 streets with >= 3 random crops: Spearman 0.55.
+- **Annotators differ beyond chance** on randomly assigned crops (chi-square p = 4e-15 on all 2,000; p = 0.001 on the random stratum): blocked per crop Hoc 0.43, Khai 0.31, Phuc 0.28, Minh 0.25, Loan 0.19; random stratum Hoc 16/108, Loan 1/120. One annotator per crop, so it is not known who is right.
+- Obstacles on blocked crops: parked motorbikes 351, goods / stalls 221, other 66, tables and chairs 49, barriers / works 38, parked cars 11. Reasons for I: no sidewalk seen 463, covered 106, blurred / dark / overexposed 21, other 9.
+
+## 2026-11-13 — Eye review of the train-extra labels tried and dropped
+
+- Claude re-read 788 crops (all 588 labelled 1 + 200 random of the 0/I crops): blind pass, then a second look at the 288 crops where the blind proposal differed from the annotator's label (13 sheets by Claude, 19 by a Sonnet subagent). 264 proposals still differed from the original labels; Claude proposed changing 212 of the 588 blocked labels (Hoc 47%, Khai 38%, Phuc 35%, Minh 26%, Loan 24%).
+- **Decision (Phuc):** most of Claude's changes looked wrong on the sheets, so the review is dropped and the team's labels stay as they are. `data/labels/train_extra_labels_v1.csv` is the final table; no v2 was written. The review script and its output (never committed) were deleted.
+- Not measured: how many of Claude's proposals were right; nobody checked the crops one by one.
+- Still true: annotators differ beyond chance on randomly assigned crops (section above), one annotator per crop, no second check.
+
+## 2026-11-14 — Cross-check of the train-extra labels by a team member
+
+- A team member cross-checked the list of 264 crops that Claude had doubted on 2026-11-13 (numbered as the sheets of that review). The review folder had been deleted, so the sheet-tile to item map was rebuilt: the blind sample from the same seeded code, the blind proposals recovered from the tool calls in the session transcript (788 of 788 tiles, no conflicts), and the 35 second-look changes. Every number printed during the review is reproduced (sample 126 zeros + 74 I, crops per annotator 203/175/116/152/142, blind agreement 0.635, 264 tiles, 12/12, 140/72, 10/18).
+- The cross-check has labels for 203 tiles. It equals the original label on 186 (92%) and Claude's proposal on 1. 61 tiles have no label (original kept). Tile 264 appears twice (0 and I) and tile 263 is missing: both kept as originally labelled (I) until the checker confirms.
+- **17 labels change:** 1 to 0: 10; 1 to I: 4; I to 1: 2; 0 to 1: 1 (original annotator Hoc 10, Minh 4, Phuc 3; 14 in the top_score stratum, 3 in random). `data/labels/train_extra_labels_v2.csv` (columns `label_v1`, `source` = single / cross_check) is the new table, `data/labels/train_extra_cross_check.csv` the 203-row record. v1 is kept.
+- After the cross-check: 0 = 819, 1 = 577, I = 604; top_score 531/1,400 = 0.379, random 46/600 = 0.077. Train: 697 blocked of 2,528 usable (before: 120 of 1,132). The report of 2026-11-12 and `report.md` are computed on v1.
+- Only 203 of 2,000 crops have a second opinion, and they were picked because Claude doubted them.
+

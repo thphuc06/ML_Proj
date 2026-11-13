@@ -1,0 +1,204 @@
+﻿item,annotator,street_id,stratum,label_v1,label_cross_check,changed
+3fd74f0c,Minh,Ba Đình#1,top_score,0,0,False
+cd52fe91,Minh,Đinh Bộ Lĩnh,top_score,0,0,False
+f8c4cb69,Loan,Nguyễn Thái Bình#0,top_score,0,0,False
+a8c12b0f,Loan,Dương Bá Trạc,top_score,0,0,False
+d6c5f48f,Khai,Bạch Đằng#0,top_score,0,0,False
+008e4cf0,Minh,Xô Viết Nghệ Tĩnh#1,top_score,0,0,False
+a9c6e188,Minh,Phạm Thế Hiển#1,random,0,0,False
+2555652d,Loan,Phan Xích Long,random,0,0,False
+800bee1e,Phuc,Hoàng Sa,top_score,0,0,False
+465a9f67,Khai,Hoàng Hoa Thám,top_score,0,0,False
+ed17ae59,Phuc,Bùi Thị Xuân#1,top_score,0,1,True
+7c5f0eab,Hoc,Dương Bá Trạc,random,0,0,False
+18a04a17,Minh,Ngô Gia Tự#1,top_score,0,0,False
+95cfb2d5,Phuc,Chu Văn An#0,top_score,0,0,False
+f06ca0fd,Minh,Nguyễn Văn Đậu,top_score,0,0,False
+60a6bf61,Minh,Nguyễn Duy#0,random,1,1,False
+eb5e92fd,Hoc,Bạch Đằng#0,top_score,1,1,False
+ad875186,Minh,Nguyễn Thái Bình#0,top_score,1,1,False
+28b891db,Hoc,Vĩnh Viễn#0,random,1,1,False
+c7322ff6,Minh,Huỳnh Văn Bánh,top_score,1,1,False
+d4c29ab2,Phuc,Huỳnh Văn Bánh,random,1,1,False
+703a083a,Khai,Phan Văn Hân,top_score,1,1,False
+f4387862,Phuc,Hoàng Sa,random,1,1,False
+af3b89e7,Hoc,Hoàng Sa,top_score,1,1,False
+e4fda1ac,Khai,Nguyễn Trọng Tuyển,top_score,1,1,False
+1a8b920b,Khai,Nguyễn Thái Bình#0,top_score,1,1,False
+6d5519ac,Phuc,Hoàng Sa,top_score,1,1,False
+3f85b3d9,Hoc,Đinh Bộ Lĩnh,top_score,1,1,False
+56e0b31a,Khai,Huỳnh Văn Bánh,top_score,1,1,False
+d3f95e52,Khai,Ung Văn Khiêm,random,1,1,False
+2713df20,Khai,Phạm Hữu Chí#0,top_score,1,1,False
+f57f5ee2,Minh,Tôn Đản,top_score,1,1,False
+0bf21372,Hoc,Phan Đình Phùng,random,1,1,False
+bccd1c9b,Phuc,Phan Văn Hân,top_score,1,1,False
+745ef02b,Minh,Xô Viết Nghệ Tĩnh#1,top_score,1,1,False
+fd7ef7fe,Hoc,Nguyễn Trọng Tuyển,top_score,1,1,False
+934a07b6,Loan,Phạm Thế Hiển#1,random,1,1,False
+a83d1693,Hoc,Vạn Kiếp#0,random,1,1,False
+ff339e89,Minh,Bành Văn Trân,top_score,1,I,True
+bb0c0052,Phuc,Hoàng Sa,top_score,1,1,False
+d7e4e3a2,Hoc,Cống Quỳnh#0,random,1,1,False
+968fcfb9,Hoc,Nguyễn Thông,top_score,1,1,False
+65c1215e,Hoc,Bùi Đình Tuý#0,top_score,1,1,False
+f56afa9b,Hoc,Bùi Đình Tuý#0,top_score,1,1,False
+5f8414c1,Minh,Hoàng Sa,top_score,1,I,True
+0332ec99,Khai,Sư Vạn Hạnh,top_score,1,1,False
+21e7e10a,Loan,Ung Văn Khiêm,top_score,1,1,False
+eb159e03,Khai,Tôn Thất Thuyết,top_score,1,1,False
+21e280aa,Khai,Lê Quang Định#0,top_score,1,1,False
+9684fd72,Minh,Bạch Đằng#0,top_score,1,1,False
+86d17f20,Phuc,Nhật Tảo,top_score,1,1,False
+97c305ba,Phuc,Phan Xích Long,top_score,1,1,False
+0d94cf13,Khai,Ngô Quyền,top_score,1,1,False
+03677a51,Khai,Bắc Hải,random,1,1,False
+c8ac6f2d,Minh,Lạc Long Quân,top_score,1,1,False
+e6106995,Hoc,Nguyễn Văn Đậu,top_score,1,1,False
+c70ea2f7,Hoc,Ba Đình#0,random,1,1,False
+33e5d4c5,Hoc,Trường Sa#0,top_score,1,1,False
+322da08e,Phuc,Hoàng Sa,top_score,1,1,False
+a58efd32,Hoc,Trường Sa#0,top_score,1,1,False
+49f19e27,Khai,Nguyễn Duy#0,top_score,1,1,False
+6b8ad40e,Hoc,Hoàng Sa,top_score,1,1,False
+7effa22f,Phuc,Ngô Quyền,top_score,1,1,False
+530ba37e,Hoc,Ba Đình#0,top_score,1,1,False
+0bb4d2bf,Minh,Phạm Văn Hai#0,top_score,1,1,False
+7a36cfbc,Phuc,Bành Văn Trân,top_score,1,1,False
+2ac1fb30,Khai,Trần Quý,top_score,1,1,False
+e0edff5f,Hoc,Trường Sơn#1,top_score,1,1,False
+3522e9b9,Hoc,Xô Viết Nghệ Tĩnh#1,top_score,1,1,False
+ee588ead,Minh,Phan Văn Hân,top_score,1,1,False
+fae4e7e3,Minh,Bùi Đình Tuý#0,top_score,1,1,False
+fd132514,Khai,Cống Quỳnh#0,top_score,1,1,False
+4c521d90,Hoc,Nguyễn Thượng Hiền#1,top_score,1,1,False
+f9b4f71d,Minh,Bùi Thị Xuân#1,top_score,1,1,False
+4f999980,Minh,Phan Đình Phùng,top_score,1,1,False
+8b7c21fe,Minh,Nguyễn Thái Bình#0,top_score,1,1,False
+bde6887b,Loan,Nguyễn Trọng Tuyển,top_score,1,1,False
+817c97bb,Hoc,Trường Sa#0,top_score,1,1,False
+153358ed,Khai,Đoàn Văn Bơ,top_score,1,1,False
+a91f7497,Phuc,Hòa Hảo#0,random,1,1,False
+4e9d67a4,Khai,Phan Xích Long,top_score,1,1,False
+45cf2455,Hoc,Nguyễn Thượng Hiền#1,top_score,1,1,False
+71a4e6c9,Khai,Ba Đình#1,top_score,1,1,False
+a2a9c3e2,Hoc,Ngô Quyền,top_score,1,1,False
+4229428b,Khai,Hoàng Hoa Thám,top_score,1,1,False
+81a0628a,Loan,Lạc Long Quân,top_score,1,1,False
+ef48aaba,Minh,Sư Vạn Hạnh,top_score,1,1,False
+5b398b5a,Phuc,Hoàng Sa,top_score,1,1,False
+673a2b13,Hoc,Bà Hạt,top_score,1,1,False
+1c9fa8b5,Khai,Trường Sa#0,top_score,1,1,False
+0255a319,Hoc,Bà Hạt,top_score,1,1,False
+b4f07869,Khai,Ngô Quyền,random,1,1,False
+e610ef5e,Hoc,Lê Hồng Phong#0,top_score,1,1,False
+f8ffcdb5,Khai,Phạm Hữu Chí#0,top_score,1,1,False
+97674330,Hoc,Hoàng Sa,random,1,1,False
+b030c735,Loan,Lê Hồng Phong#0,top_score,1,1,False
+c43a53a4,Loan,Đoàn Văn Bơ,top_score,1,1,False
+198d4e8e,Loan,Trường Sa#0,top_score,1,1,False
+5afa99ec,Hoc,Hoàng Sa,top_score,1,1,False
+c6c4f25c,Loan,Trần Quý,top_score,1,1,False
+188a264e,Phuc,Lê Văn Duyệt,random,1,1,False
+b1eb401f,Phuc,Hoàng Sa,top_score,1,1,False
+edc73309,Khai,Trường Sa#0,top_score,1,1,False
+b89e5646,Minh,Nguyễn Thái Bình#0,random,1,1,False
+cdf43c7d,Hoc,Hoàng Sa,top_score,1,1,False
+7fbf4507,Phuc,Trường Sơn#1,top_score,1,1,False
+07ff19f8,Phuc,Hoàng Sa,top_score,1,1,False
+677e1f3e,Phuc,Phan Xích Long,top_score,1,1,False
+6fea682b,Hoc,Vạn Kiếp#0,top_score,1,I,True
+119e0305,Phuc,Xô Viết Nghệ Tĩnh#1,top_score,1,1,False
+ddada13e,Hoc,Nguyễn Duy Dương,random,1,1,False
+fdc1350a,Hoc,Nguyễn Thượng Hiền#0,top_score,1,1,False
+3654bc2a,Khai,Nguyễn Thái Bình#0,random,1,1,False
+b080b2e2,Hoc,Thành Thái,top_score,1,1,False
+75033950,Khai,Nguyễn Duy Dương,top_score,1,1,False
+4504a694,Khai,Nguyễn Chí Thanh#0,top_score,1,1,False
+149b1290,Hoc,Hoàng Hoa Thám,top_score,1,1,False
+f47f1d00,Phuc,Hoàng Sa,top_score,1,1,False
+5689a01c,Khai,Nhật Tảo,top_score,1,1,False
+e8681574,Loan,Đinh Bộ Lĩnh,top_score,1,1,False
+211e1af8,Minh,Trường Sa#0,top_score,1,1,False
+a4384aa7,Loan,Ngô Quyền,top_score,1,1,False
+10206c86,Khai,Nguyễn Gia Trí,random,1,1,False
+4dfc8d2c,Minh,Phan Văn Hân,top_score,1,1,False
+b5af05ce,Hoc,Bạch Đằng#0,top_score,1,0,True
+d6d6c430,Khai,Trường Sa#0,top_score,1,1,False
+0b1fac31,Loan,Ba Đình#0,top_score,1,1,False
+440d12a9,Hoc,Cống Quỳnh#0,top_score,1,1,False
+4e22afde,Phuc,Hoàng Sa,random,1,1,False
+0fad11bb,Hoc,Lê Văn Duyệt,random,1,1,False
+d31678cb,Hoc,Nguyễn Kim,random,1,I,True
+8132e022,Hoc,Hoàng Sa,top_score,1,1,False
+f33816f8,Khai,Xô Viết Nghệ Tĩnh#0,top_score,1,1,False
+0f3617cf,Hoc,Ba Đình#0,random,1,0,True
+f31d7825,Hoc,Huỳnh Văn Bánh,top_score,1,1,False
+f0984ad4,Phuc,Ngô Quyền,top_score,1,0,True
+7ead0084,Minh,Xô Viết Nghệ Tĩnh#1,top_score,1,1,False
+8abffecc,Hoc,Hòa Hảo#0,top_score,1,0,True
+94f1ea38,Hoc,Hoàng Hoa Thám,top_score,1,0,True
+f353d195,Phuc,Nguyễn Chí Thanh#0,top_score,1,1,False
+a96bec90,Phuc,Phạm Văn Hai#0,random,1,1,False
+e7d32a56,Hoc,Xô Viết Nghệ Tĩnh#1,top_score,1,0,True
+2bde72fb,Khai,Lê Hồng Phong#0,top_score,1,1,False
+527712e4,Khai,Bắc Hải,top_score,1,1,False
+6d8b279b,Hoc,Hòa Hảo#0,top_score,1,1,False
+15ba377f,Hoc,Trần Nhân Tôn,top_score,1,1,False
+a7fcfa8d,Hoc,Ba Đình#1,top_score,1,1,False
+42752f2d,Hoc,Xô Viết Nghệ Tĩnh#0,top_score,1,1,False
+ae66a6e5,Khai,Sư Vạn Hạnh,random,1,1,False
+29ec0011,Khai,Hòa Hảo#0,top_score,1,1,False
+eb352464,Khai,Trần Quý,top_score,1,1,False
+bc230f0b,Minh,Xô Viết Nghệ Tĩnh#0,top_score,1,1,False
+39a0b830,Khai,Đinh Bộ Lĩnh,top_score,1,1,False
+b2c2240a,Hoc,Vĩnh Viễn#0,top_score,1,1,False
+13a2f54b,Hoc,Ngô Quyền,top_score,1,1,False
+fdd2a6aa,Khai,Triệu Quang Phục,random,1,1,False
+eee49d11,Phuc,Hòa Hảo#0,top_score,1,1,False
+8f6d77cf,Hoc,Bùi Đình Tuý#0,top_score,1,1,False
+827314b3,Phuc,Nguyễn Chí Thanh#0,top_score,1,1,False
+62c02d48,Phuc,Phạm Ngũ Lão,top_score,1,1,False
+8f4f88b2,Loan,Lê Hồng Phong#1,top_score,1,1,False
+429f72e3,Minh,Bùi Đình Tuý#0,top_score,1,1,False
+75ed8968,Khai,Trần Quang Khải,top_score,1,1,False
+ed59e439,Hoc,Trường Sa#0,top_score,1,1,False
+575cec77,Hoc,Trần Bình Trọng#0,top_score,1,1,False
+adc0f159,Hoc,Phan Xích Long,top_score,1,1,False
+dfc274ab,Hoc,Lê Quang Định#0,top_score,1,0,True
+25e6ebc6,Loan,Ngô Quyền,top_score,1,1,False
+d2d2698b,Phuc,Trần Nhân Tôn,top_score,1,1,False
+eb702f8a,Phuc,Tùng Thiện Vương,top_score,1,1,False
+d73837f9,Loan,Vĩnh Khánh,top_score,1,1,False
+d9e37e12,Loan,Bắc Hải,top_score,1,1,False
+b5d45bf5,Hoc,Tôn Đản,top_score,1,0,True
+e4e3f58f,Hoc,Nguyễn Duy Dương,top_score,1,1,False
+c7a622f7,Phuc,Đinh Bộ Lĩnh,top_score,1,1,False
+0682ac29,Hoc,Nguyễn Thái Bình#0,top_score,1,1,False
+d769fb9c,Hoc,Lê Quang Định#0,top_score,1,0,True
+cf40dbe4,Hoc,Vĩnh Viễn#0,top_score,1,1,False
+6d05c25b,Khai,Nguyễn Thượng Hiền#0,top_score,1,1,False
+03c3c2ce,Loan,Hoàng Hoa Thám,top_score,1,1,False
+b46dc087,Khai,Bùi Thị Xuân#1,top_score,1,1,False
+fef5f3e1,Hoc,Hoàng Sa,top_score,1,1,False
+586f313b,Phuc,Trường Sa#0,top_score,1,0,True
+bd011617,Khai,Nguyễn Thái Bình#0,top_score,1,1,False
+e24ebeca,Minh,Ba Đình#0,random,I,1,True
+344ee91b,Minh,Bùi Thị Xuân#1,top_score,I,1,True
+c9eb0aa4,Khai,Nhật Tảo,top_score,I,I,False
+5eb77278,Loan,Lê Hồng Phong#0,top_score,I,I,False
+f19cec8f,Minh,Nguyễn Thượng Hiền#0,top_score,I,I,False
+29c48a5e,Loan,Đoàn Văn Bơ,top_score,I,I,False
+b7b12544,Hoc,Đoàn Văn Bơ,top_score,I,I,False
+610a096f,Loan,Nguyễn Thượng Hiền#1,top_score,I,I,False
+708ea241,Minh,Sư Vạn Hạnh,top_score,I,I,False
+bd8fbfe2,Loan,Nguyễn Thượng Hiền#0,top_score,I,I,False
+57f5a0d4,Hoc,Bùi Thị Xuân#0,top_score,I,I,False
+e0e6b92c,Khai,Xóm Chiếu,top_score,I,I,False
+ba6d2e3b,Khai,Nguyễn Duy Dương,top_score,I,I,False
+d232bffa,Khai,Nguyễn Thượng Hiền#0,top_score,I,I,False
+ba0d9656,Phuc,Nguyễn Duy#0,top_score,I,I,False
+b1dde37e,Minh,Phạm Hữu Chí#0,top_score,I,I,False
+78c554e0,Minh,Nguyễn Trọng Tuyển,top_score,I,I,False
+a87ec9a1,Minh,Hoàng Sa,top_score,I,I,False
+f064b141,Phuc,Vạn Kiếp#0,top_score,I,I,False

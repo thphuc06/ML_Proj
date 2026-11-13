@@ -1,6 +1,6 @@
 # Bơm thêm ảnh "Bị chặn" cho tập train
 
-Ghi chép ngày 04/11/2026, cập nhật 11/11/2026. **Trạng thái: chưa bơm ảnh nào. Bộ chọn ảnh mới (embedding DINOv2 + logistic) đã đo xong và thay bộ chấm `occ_v2` (mục 7). Đã quét 150 đường để chọn đường (mục 8) và lập danh sách 2.000 ảnh từ 75 đường, chia 400 ảnh cho mỗi người gán (mục 9). **Đã đưa lên Label Studio ngày 11/11: 5 project `MAIN2_<tên>`, mỗi project 400 ảnh, chưa ai gán.** Đã gán xong bộ chính, số ảnh "Bị chặn" thật thấp hơn ước tính (xem mục 1). Nhóm quyết định chờ gán xong đợt đầu rồi mới xem xét bơm thêm, và lấy ảnh từ **đường train mới**. Nhật ký kỹ thuật ở [collection_log.md](collection_log.md).
+Ghi chép ngày 04/11/2026, cập nhật 11/11/2026. **Trạng thái: chưa bơm ảnh nào. Bộ chọn ảnh mới (embedding DINOv2 + logistic) đã đo xong và thay bộ chấm `occ_v2` (mục 7). Đã quét 150 đường để chọn đường (mục 8) và lập danh sách 2.000 ảnh từ 75 đường, chia 400 ảnh cho mỗi người gán (mục 9).** Đã gán xong 12/11 và kiểm tra chéo một phần 14/11: 577 ảnh "Bị chặn" trong 2.000 ảnh (mục 9). Đã gán xong bộ chính, số ảnh "Bị chặn" thật thấp hơn ước tính (xem mục 1). Nhóm quyết định chờ gán xong đợt đầu rồi mới xem xét bơm thêm, và lấy ảnh từ **đường train mới**. Nhật ký kỹ thuật ở [collection_log.md](collection_log.md).
 
 ## Bàn giao (11/11/2026)
 
@@ -343,11 +343,67 @@ Script: [25_ls_create_train_extra.py](../src/labeling/25_ls_create_train_extra.p
 - Tách project riêng thay vì trộn vào `MAIN_*` (kế hoạch ở mục 5): các project `MAIN_*` đã gán xong và là bản ghi của đợt 1, và `19_main_agreement.py` đọc mọi project `MAIN_*`. Mỗi task chỉ chứa ảnh và mã `item`; không có tầng, điểm hay tên đường.
 - Đã kiểm tra: 5 project có 400 task, chưa có nhãn; 60 ảnh thử ngẫu nhiên đều hiển thị được; danh sách task của `MAIN2_Phuc` khớp file phân công; 5 project `MAIN_*` vẫn 887/887.
 
+### Kết quả gán (12/11/2026)
+
+Script: [26_train_extra_report.py](../src/labeling/26_train_extra_report.py) (`--fresh` kéo bản export chỉ đọc). Báo cáo đầy đủ: [train_extra_report/report.md](../data/labels/train_extra_report/report.md). Nhãn: [train_extra_labels_v1.csv](../data/labels/train_extra_labels_v1.csv), cùng cột với `main_labels_v1.csv` cộng `stratum` và `score`. Số liệu bên dưới là của v1; bản sau kiểm tra chéo là `train_extra_labels_v2.csv` (xem "Xem lại nhãn bơm").
+
+- **Đủ 2.000/2.000 ảnh**, không thiếu, không lưu trùng. 0 = 810, **1 = 588**, I = 602.
+- **Train sau khi bơm:** 708 ảnh "Bị chặn" trên 2.530 ảnh dùng được (trước đó 120/1.132). 588 trong 708 ảnh dương (83%) đến từ `train_extra`.
+
+| Tầng | Ảnh | Bị chặn | Tỉ lệ [95% Wilson] | Không đủ thông tin |
+|---|---|---|---|---|
+| `top_score` (điểm ≥ 0,61) | 1.400 | 541 | 0,386 [0,361; 0,412] | 27% |
+| `random` | 600 | 47 | 0,078 [0,059; 0,103] | 37% |
+| Cả 2.000 ảnh | 2.000 | 588 | 0,294 [0,274; 0,314] | 30% |
+
+- **Bộ chọn ảnh giữ được hiệu quả trên đường mới.** Tầng `top_score` là toàn bộ 1.400 ảnh có điểm cao nhất của kho, còn tầng `random` là mẫu đều của 3.635 ảnh còn lại, nên ước lượng được: nếu bốc ngẫu nhiên 2.000 ảnh từ kho thì tỉ lệ "Bị chặn" khoảng **0,164** [0,148; 0,182], tức khoảng 328 ảnh; chọn theo quy tắc 70/30 được 588 ảnh, **gấp 1,8 lần**. Tầng điểm (28% kho) chứa khoảng 66% [60%; 72%] số ảnh "Bị chặn" của cả kho.
+- **Tỉ lệ trúng tăng đều theo điểm:** dưới 0,2 là 0,02; 0,2–0,4 là 0,10; 0,4–0,61 là 0,20; 0,61–0,7 là 0,26; 0,7–0,8 là 0,33; 0,8–0,9 là 0,43; trên 0,9 là 0,54.
+- **Chọn đường cũng có tác dụng:** tỉ lệ nền ước lượng của kho (0,164) gấp khoảng 3 lần tỉ lệ của 10 đường train cũ (0,058). Trên 62 đường có ít nhất 3 ảnh ngẫu nhiên, điểm quét đường tương quan với tỉ lệ "Bị chặn" ước lượng: Spearman 0,55. Mỗi đường chỉ có vài ảnh ngẫu nhiên nên từng giá trị rất thô.
+- **Đường nhỏ cho nhiều ảnh dương hơn** trong tầng ngẫu nhiên: tertiary 0,091, residential 0,105, so với primary 0,043 và secondary 0,046 (mỗi nhóm 38–384 ảnh, khoảng tin cậy rộng).
+- Vật cản trên ảnh "Bị chặn": xe máy đậu 351, hàng hóa / quầy hàng 221, khác 66, bàn ghế quán 49, rào chắn / công trình 38, ô tô đậu 11.
+- Lý do "Không đủ thông tin": không thấy vỉa hè 463, bị che 106, ảnh mờ / tối / cháy sáng 21, khác 9.
+
+**Người gán đọc guide khác nhau rõ rệt.** Ảnh được chia ngẫu nhiên nên mỗi người nhận một mẫu tương đương, nhưng tỉ lệ nhãn khác nhau nhiều hơn mức ngẫu nhiên (kiểm định χ² trên bảng người gán × nhãn: p = 4·10⁻¹⁵ trên 2.000 ảnh, p = 0,001 chỉ trên tầng ngẫu nhiên):
+
+| Người gán | Bị chặn / ảnh | Bị chặn / ảnh ở tầng ngẫu nhiên | Không đủ thông tin | Trung vị giây/ảnh |
+|---|---|---|---|---|
+| Học | 0,43 | 0,15 (16/108) | 20% | 3,8 |
+| Khải | 0,31 | 0,08 (10/131) | 24% | 3,9 |
+| Phúc | 0,28 | 0,09 (11/125) | 35% | 3,1 |
+| Minh | 0,25 | 0,08 (9/116) | 37% | 3,8 |
+| Loan | 0,19 | 0,01 (1/120) | 35% | 6,8 |
+
+Học gán "Bị chặn" nhiều gấp khoảng 2 lần Loan trên cùng loại ảnh. Mỗi ảnh chỉ một người gán nên không biết ai đúng; nhãn của phần bơm vì vậy nhiễu hơn bộ chính (bộ chính có 15% gán chéo và phân xử). Ở đợt 1, Học và Loan là cặp gán test, κ 0,60.
+
+### Xem lại nhãn bơm (13–14/11/2026)
+
+**Lượt Claude xem lại (13/11): đã bỏ.** Claude xem lại 788 ảnh (toàn bộ 588 ảnh "Bị chặn" và 200 ảnh ngẫu nhiên của hai nhãn còn lại), lần đầu xem mù rồi xem lại lần hai, theo cách của đợt phân xử đợt 1. Đề xuất cuối khác nhãn gốc ở 264 ảnh; Claude đề xuất đổi 212 trong 588 ảnh "Bị chặn" (36%), nhiều nhất ở nhãn của Học (47%). Phúc xem các tấm ảnh và thấy phần lớn đề xuất sai, nên **không nhãn nào đổi theo đề xuất của Claude**. File và script của lượt này đã xóa (chưa từng commit).
+
+**Kiểm tra chéo của một người trong nhóm (14/11): đã áp dụng.** Người này gán nhãn độc lập cho các ô của danh sách 264 ảnh mà Claude nghi ngờ (đánh số theo các tấm xem lại). Có nhãn cho 203 ô; 61 ô không có nhãn thì giữ nhãn gốc; ô 264 xuất hiện hai lần với hai nhãn khác nhau (0 và I) và ô 263 không có, nên cả hai giữ nhãn gốc ("Không đủ thông tin") cho tới khi người kiểm tra xác nhận. Vì thư mục lượt xem lại đã xóa, bảng số ô → ảnh được dựng lại từ nhật ký phiên; mọi con số đã in lúc đó (mẫu 788 ảnh, số ảnh từng người gán, 35 ảnh đổi ở lượt xem lại, 264 ảnh với 12/12, 140/72, 10/18) khớp.
+
+| Nhóm (nhãn gốc / đề xuất Claude) | Ô có nhãn | Trùng nhãn gốc | Trùng đề xuất Claude |
+|---|---|---|---|
+| Còn lối đi / Bị chặn | 7 | 7 | 0 |
+| Còn lối đi / Không đủ thông tin | 8 | 7 | 0 |
+| Bị chặn / Còn lối đi | 109 | 106 | 0 |
+| Bị chặn / Không đủ thông tin | 60 | 49 | 1 |
+| Không đủ thông tin / Còn lối đi | 4 | 2 | 0 |
+| Không đủ thông tin / Bị chặn | 15 | 15 | 0 |
+| **Tổng** | **203** | **186 (92%)** | **1** |
+
+- Người kiểm tra chéo hầu như không đồng ý với Claude (1/203) và trùng nhãn gốc ở 92% số ô, phù hợp nhận xét của Phúc.
+- **17 nhãn đổi** theo người kiểm tra chéo (nhãn gốc → mới): Bị chặn → Còn lối đi 10, Bị chặn → Không đủ thông tin 4, Không đủ thông tin → Bị chặn 2, Còn lối đi → Bị chặn 1. Theo người gán gốc: Học 10, Minh 4, Phúc 3. Theo tầng: 14 ở `top_score`, 3 ở `random`. Ảnh đổi sang "Không đủ thông tin" chưa có lý do.
+- **Nhãn sau kiểm tra chéo (v2):** 0 = 819, **1 = 577**, I = 604. Tầng `top_score` 531/1.400 = 0,379, tầng `random` 46/600 = 0,077, cả 2.000 ảnh 0,288. Train: 697 ảnh "Bị chặn" trên 2.528 ảnh dùng được (trước đó 120/1.132); 83% ảnh dương đến từ `train_extra`. Các bảng ở trên trong mục này và báo cáo tự động tính trên nhãn v1, chênh lệch dưới 1 điểm %.
+- File: [train_extra_labels_v2.csv](../data/labels/train_extra_labels_v2.csv) (cột `label_v1` và `source` = `single` hoặc `cross_check`), [train_extra_cross_check.csv](../data/labels/train_extra_cross_check.csv) (203 ô: ảnh, người gán gốc, nhãn gốc, nhãn kiểm tra chéo). Bản v1 giữ nguyên.
+
+Hệ quả cần nhớ:
+- **Chênh lệch giữa người gán vẫn còn** (bảng trên). Phần bơm mỗi ảnh một người gán; chỉ 203 ảnh có thêm một ý kiến thứ hai, và các ảnh này được chọn vì Claude nghi ngờ nên không đại diện cho toàn bộ 2.000 ảnh.
+- Khi so tỉ lệ "Bị chặn" giữa các người gán, nhớ rằng Học và Loan lệch nhau xa nhất.
+
 ### Việc tiếp theo
 
-1. Mỗi người gán 400 ảnh trong project `MAIN2_<tên>` của mình, theo [guide v1](../labeling/guide/annotation_guide_v1_draft.md).
-2. Sau khi gán: kéo nhãn về (chưa có script; `19_main_agreement.py` chỉ đọc `MAIN_*`), so tỉ lệ "Bị chặn" của tầng `top_score` với `random`, gộp nhãn vào file nhãn chính với `phase=train_extra`.
-3. Tách "main tự nhiên" với "train_extra" trong EDA và báo cáo.
+1. Người kiểm tra chéo xác nhận ô 263 và 264. Gộp nhãn vào bộ dữ liệu train: `train_extra_labels_v2.csv` đang để riêng, chưa gộp vào `main_labels_v1.csv`.
+2. Khi train và báo cáo: 83% ảnh dương của train đến từ ảnh chọn theo điểm, phần lớn ở đường nhỏ; tách "main tự nhiên" với "train_extra", và có thể thử train với một phần ảnh bơm để xem ảnh hưởng.
 
 ## Tài liệu tham khảo
 
