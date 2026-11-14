@@ -1,0 +1,55 @@
+﻿subset,target,variable,n,n_levels,cramers_v_bc,chi2_p_iid_optimistic,dof,v_lo_cluster,v_hi_cluster,reading,note
+main_all,blocked_vs_passable,street_id,1746,17,0.17761142868618415,6.511895173241968e-09,16,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+main_all,blocked_vs_passable,creator,1746,6,0.0,0.5057217025406442,5,0.0,0.12368471583505938,"rất nhỏ (<0,1)",
+main_all,blocked_vs_passable,year,1746,3,0.018602524613376775,0.27184995153080227,2,0.0,0.10947974276789049,"rất nhỏ (<0,1)",
+main_all,blocked_vs_passable,highway,1746,2,0.0,0.7937964454933251,1,0.0,0.07441223758429479,"rất nhỏ (<0,1)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+main_all,blocked_vs_passable,month,1746,10,0.04866021245270155,0.1565047082955823,9,0.0,0.2587389692328141,"rất nhỏ (<0,1)",
+main_all,blocked_vs_passable,split,1746,3,0.03381036489803555,0.13561123347925347,2,,,"rất nhỏ (<0,1)","split gộp theo đường (3 val, 4 test, 10 train)"
+main_all,I_vs_usable,street_id,2999,17,0.2829553864370226,2.985956765662213e-45,16,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+main_all,I_vs_usable,creator,2999,6,0.08273889889173652,0.00011029042135207365,5,0.02216537747170199,0.18732272919225548,"rất nhỏ (<0,1)",
+main_all,I_vs_usable,year,2999,3,0.08057407400024318,2.1832466806171443e-05,2,0.032832927482007626,0.13760589345971358,"rất nhỏ (<0,1)",
+main_all,I_vs_usable,highway,2999,2,0.0747401235717263,2.5225966547637496e-05,1,0.0,0.19333912902139286,"rất nhỏ (<0,1)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+main_all,I_vs_usable,month,2999,10,0.154659607790084,1.1657459994331718e-13,9,0.1222498248997027,0.29493127319324625,"nhỏ-vừa (0,1-0,3)",
+main_all,I_vs_usable,split,2999,3,0.11652779007781694,5.317533532292055e-10,2,,,"nhỏ-vừa (0,1-0,3)","split gộp theo đường (3 val, 4 test, 10 train)"
+main_train,blocked_vs_passable,street_id,1045,10,0.18337802471954842,1.3438037131112023e-06,9,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+main_train,blocked_vs_passable,creator,1045,5,0.049149125294971924,0.16317491210496418,4,0.0,0.1815456773996638,"rất nhỏ (<0,1)",
+main_train,blocked_vs_passable,year,1045,3,0.0730579678191019,0.022660931973862247,2,0.0,0.2031181729789799,"rất nhỏ (<0,1)",
+main_train,blocked_vs_passable,highway,1045,2,0.0,0.8371843803917929,1,0.0,0.07872034414709045,"rất nhỏ (<0,1)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+main_train,blocked_vs_passable,month,1045,10,0.1649379868964259,2.2232557195832503e-05,9,0.0,0.41225285292059727,"nhỏ-vừa (0,1-0,3)",
+main_train,I_vs_usable,street_id,1839,10,0.27866434840876847,3.8587559191914926e-28,9,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+main_train,I_vs_usable,creator,1839,6,0.10352496194798798,0.00015910552278281285,5,0.0,0.23552210940835588,"nhỏ-vừa (0,1-0,3)",
+main_train,I_vs_usable,year,1839,3,0.10417680743742916,1.7136995680914128e-05,2,0.039991250412104044,0.1813891389577055,"nhỏ-vừa (0,1-0,3)",
+main_train,I_vs_usable,highway,1839,2,0.07007445088077881,0.001543534580731811,1,0.0,0.26718985536542006,"rất nhỏ (<0,1)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+main_train,I_vs_usable,month,1839,10,0.20367022188337144,1.4556311242354915e-14,9,0.1737695440258818,0.3582513403211985,"nhỏ-vừa (0,1-0,3)",
+extra_all,blocked_vs_passable,street_id,1396,75,0.28560297025839,7.329933811812872e-12,74,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+extra_all,blocked_vs_passable,creator,1396,5,0.03164457285951041,0.24867941797766865,4,0.0,0.1189246076690706,"rất nhỏ (<0,1)",
+extra_all,blocked_vs_passable,year,1396,3,0.03003114681297373,0.1959745072206237,2,0.0,0.11376189671089613,"rất nhỏ (<0,1)",
+extra_all,blocked_vs_passable,highway,1396,4,0.13964103934006397,1.250141098722828e-06,3,0.05800062962139102,0.23474578494893314,"nhỏ-vừa (0,1-0,3)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+extra_all,blocked_vs_passable,month,1396,11,0.0,0.46197459757653625,10,0.021660179592744404,0.182834065765179,"rất nhỏ (<0,1)",
+extra_all,blocked_vs_passable,stratum,1396,2,0.3600127808459328,1.9553544904156835e-41,1,,,"khá lớn (>=0,3)",tầng chọn theo điểm bộ chọn ảnh: liên hệ nhãn là do thiết kế
+extra_all,I_vs_usable,street_id,2000,75,0.20707006561523414,3.0177869856565206e-08,74,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+extra_all,I_vs_usable,creator,2000,5,0.0,0.9907406560119607,4,0.0,0.07938665377132069,"rất nhỏ (<0,1)",
+extra_all,I_vs_usable,year,2000,3,0.0,0.6425107151670799,2,0.0,0.07272010545153505,"rất nhỏ (<0,1)",
+extra_all,I_vs_usable,highway,2000,4,0.11539648267300125,1.6581750781312527e-06,3,0.04668867226754345,0.1906806596779369,"nhỏ-vừa (0,1-0,3)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+extra_all,I_vs_usable,month,2000,11,0.0,0.9999583263975024,10,0.0,0.13144460090174653,"rất nhỏ (<0,1)",
+extra_all,I_vs_usable,stratum,2000,2,0.09436792253069985,1.4499976444717748e-05,1,,,"rất nhỏ (<0,1)",tầng chọn theo điểm bộ chọn ảnh: liên hệ nhãn là do thiết kế
+extra_top_score,blocked_vs_passable,street_id,1018,75,0.29740452627760516,9.029211102459885e-09,74,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+extra_top_score,blocked_vs_passable,creator,1018,4,0.04976461562740746,0.13735445567374552,3,0.0,0.1495998924593037,"rất nhỏ (<0,1)",
+extra_top_score,blocked_vs_passable,year,1018,3,0.016309623846449114,0.32102184636634334,2,0.0,0.11859909147683344,"rất nhỏ (<0,1)",
+extra_top_score,blocked_vs_passable,highway,1018,4,0.15660682621287164,3.728862432695614e-06,3,0.07249421863766763,0.26014513261114747,"nhỏ-vừa (0,1-0,3)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+extra_top_score,blocked_vs_passable,month,1018,11,0.0,0.7878327159720435,10,0.0,0.18762194705371638,"rất nhỏ (<0,1)",
+extra_top_score,I_vs_usable,street_id,1400,75,0.22349606337179856,2.0981487825406743e-06,74,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+extra_top_score,I_vs_usable,creator,1400,4,0.0,0.922489952065323,3,0.0,0.09799735513688453,"rất nhỏ (<0,1)",
+extra_top_score,I_vs_usable,year,1400,3,0.0,0.3752576167469449,2,0.0,0.11115883346609914,"rất nhỏ (<0,1)",
+extra_top_score,I_vs_usable,highway,1400,4,0.15884763831852275,2.4389173217639262e-08,3,0.06976659313342723,0.24036152464587393,"nhỏ-vừa (0,1-0,3)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+extra_top_score,I_vs_usable,month,1400,11,0.0,0.8019527872035402,10,0.0,0.1646121052923165,"rất nhỏ (<0,1)",
+extra_random,blocked_vs_passable,street_id,378,69,0.2455428492222516,0.03326021484107785,68,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+extra_random,blocked_vs_passable,creator,378,4,0.0,0.707503198059012,3,0.0,0.10820771060118135,"rất nhỏ (<0,1)",
+extra_random,blocked_vs_passable,year,378,3,0.0,0.5623623953654217,2,0.0,0.12796024731064123,"rất nhỏ (<0,1)",
+extra_random,blocked_vs_passable,highway,378,4,0.055549747984149016,0.2435524337159738,3,0.0,0.24174691811102283,"rất nhỏ (<0,1)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+extra_random,blocked_vs_passable,month,378,11,0.13961789381740655,0.0664593263988585,10,0.023901781373534978,0.3492885574581,"nhỏ-vừa (0,1-0,3)",
+extra_random,I_vs_usable,street_id,600,72,0.13511609708225156,0.17393335718356048,71,,,"nhỏ-vừa (0,1-0,3)","bias-corrected V; nhiều mức, bảng thưa; street là cụm nên chỉ dùng như mức độ khác biệt giữa đường, không bootstrap"
+extra_random,I_vs_usable,creator,600,4,0.0,0.9497124679556064,3,0.0,0.08590788129783675,"rất nhỏ (<0,1)",
+extra_random,I_vs_usable,year,600,3,0.0,0.5296075067012276,2,0.0,0.10770447943407593,"rất nhỏ (<0,1)",
+extra_random,I_vs_usable,highway,600,4,0.0,0.5158551070422874,3,0.0,0.15470846861325818,"rất nhỏ (<0,1)",highway hằng số trong mỗi đường: hiệu ứng đường lớn/nhỏ lẫn với đường cụ thể
+extra_random,I_vs_usable,month,600,11,0.0,0.585373703819578,10,0.0,0.21805701410609452,"rất nhỏ (<0,1)",

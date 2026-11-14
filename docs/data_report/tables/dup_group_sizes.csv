@@ -1,0 +1,7 @@
+group,n_crops
+main_train,1839
+pilot,150
+te_top_score,1400
+te_random,600
+val,486
+test,674

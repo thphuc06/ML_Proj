@@ -1,0 +1,13 @@
+﻿table,path,rows,columns
+main_labels_v1,data/labels/main_labels_v1.csv,3149,8
+train_extra_labels_v2,data/labels/train_extra_labels_v2.csv,2000,11
+main_v1 (manifest),data/manifest/main_v1.csv,2999,21
+pilot_v2 (manifest),data/manifest/pilot_v2.csv,150,21
+train_extra_v1 (manifest),data/manifest/train_extra_v1.csv,2000,25
+main_v1_collection_status,data/manifest/main_v1_collection_status.csv,3057,5
+train_extra_v1_scores (candidate pool),data/streets/train_extra_v1_scores.csv,5074,11
+main_report/main_labels (annotations),data/labels/main_report/main_labels.csv,4435,13
+main_report/main_items,data/labels/main_report/main_items.csv,2999,17
+train_extra_report/train_extra_labels (annotations),data/labels/train_extra_report/train_extra_labels.csv,2000,13
+street_candidates_v1,data/streets/street_candidates_v1.csv,907,19
+street_scan_v1,data/streets/street_scan_v1.csv,150,16

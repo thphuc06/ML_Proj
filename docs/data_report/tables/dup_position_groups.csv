@@ -1,0 +1,3291 @@
+﻿position_group,n,n_days,n_phase,n_split,n_group
+Ba Đình#0|0,1,1,1,1,1
+Ba Đình#0|10,1,1,1,1,1
+Ba Đình#0|11,2,2,1,1,1
+Ba Đình#0|12,1,1,1,1,1
+Ba Đình#0|13,1,1,1,1,1
+Ba Đình#0|14,1,1,1,1,1
+Ba Đình#0|15,2,2,1,1,1
+Ba Đình#0|17,1,1,1,1,1
+Ba Đình#0|19,1,1,1,1,1
+Ba Đình#0|2,1,1,1,1,1
+Ba Đình#0|20,1,1,1,1,1
+Ba Đình#0|21,1,1,1,1,1
+Ba Đình#0|22,1,1,1,1,1
+Ba Đình#0|24,2,2,1,1,1
+Ba Đình#0|26,1,1,1,1,1
+Ba Đình#0|3,1,1,1,1,1
+Ba Đình#0|4,1,1,1,1,1
+Ba Đình#0|5,1,1,1,1,1
+Ba Đình#0|6,1,1,1,1,1
+Ba Đình#0|9,1,1,1,1,1
+Ba Đình#1|0,2,2,1,1,2
+Ba Đình#1|1,1,1,1,1,1
+Ba Đình#1|10,2,2,1,1,1
+Ba Đình#1|12,2,2,1,1,1
+Ba Đình#1|13,2,2,1,1,1
+Ba Đình#1|14,1,1,1,1,1
+Ba Đình#1|16,2,2,1,1,1
+Ba Đình#1|19,2,2,1,1,1
+Ba Đình#1|2,1,1,1,1,1
+Ba Đình#1|20,1,1,1,1,1
+Ba Đình#1|21,2,2,1,1,1
+Ba Đình#1|23,1,1,1,1,1
+Ba Đình#1|24,1,1,1,1,1
+Ba Đình#1|25,2,2,1,1,2
+Ba Đình#1|3,2,2,1,1,1
+Ba Đình#1|8,2,2,1,1,1
+Bà Hạt|1,2,2,1,1,2
+Bà Hạt|10,1,1,1,1,1
+Bà Hạt|12,1,1,1,1,1
+Bà Hạt|13,1,1,1,1,1
+Bà Hạt|16,1,1,1,1,1
+Bà Hạt|17,2,2,1,1,1
+Bà Hạt|18,2,2,1,1,1
+Bà Hạt|19,1,1,1,1,1
+Bà Hạt|21,2,2,1,1,1
+Bà Hạt|24,2,2,1,1,1
+Bà Hạt|25,1,1,1,1,1
+Bà Hạt|26,1,1,1,1,1
+Bà Hạt|27,1,1,1,1,1
+Bà Hạt|28,1,1,1,1,1
+Bà Hạt|29,1,1,1,1,1
+Bà Hạt|3,1,1,1,1,1
+Bà Hạt|31,2,2,1,1,1
+Bà Hạt|32,2,2,1,1,1
+Bà Hạt|33,2,2,1,1,2
+Bà Hạt|36,1,1,1,1,1
+Bà Hạt|4,1,1,1,1,1
+Bà Hạt|5,2,2,1,1,1
+Bà Hạt|6,1,1,1,1,1
+Bà Hạt|7,1,1,1,1,1
+Bà Hạt|8,1,1,1,1,1
+Bà Hạt|9,2,2,1,1,2
+Bành Văn Trân|10,1,1,1,1,1
+Bành Văn Trân|12,1,1,1,1,1
+Bành Văn Trân|14,1,1,1,1,1
+Bành Văn Trân|19,1,1,1,1,1
+Bành Văn Trân|20,1,1,1,1,1
+Bành Văn Trân|22,1,1,1,1,1
+Bành Văn Trân|25,1,1,1,1,1
+Bành Văn Trân|26,1,1,1,1,1
+Bành Văn Trân|5,1,1,1,1,1
+Bình Đông|1,1,1,1,1,1
+Bình Đông|11,1,1,1,1,1
+Bình Đông|12,1,1,1,1,1
+Bình Đông|17,1,1,1,1,1
+Bình Đông|18,2,2,1,1,2
+Bình Đông|2,1,1,1,1,1
+Bình Đông|21,1,1,1,1,1
+Bình Đông|22,2,2,1,1,2
+Bình Đông|23,1,1,1,1,1
+Bình Đông|24,1,1,1,1,1
+Bình Đông|27,1,1,1,1,1
+Bình Đông|32,1,1,1,1,1
+Bình Đông|34,1,1,1,1,1
+Bình Đông|35,2,2,1,1,1
+Bình Đông|38,1,1,1,1,1
+Bình Đông|4,2,2,1,1,2
+Bình Đông|41,1,1,1,1,1
+Bình Đông|42,1,1,1,1,1
+Bình Đông|44,1,1,1,1,1
+Bình Đông|48,2,2,1,1,1
+Bình Đông|49,1,1,1,1,1
+Bình Đông|5,1,1,1,1,1
+Bùi Thị Xuân#0|0,1,1,1,1,1
+Bùi Thị Xuân#0|11,1,1,1,1,1
+Bùi Thị Xuân#0|12,2,2,1,1,1
+Bùi Thị Xuân#0|14,1,1,1,1,1
+Bùi Thị Xuân#0|15,2,2,1,1,1
+Bùi Thị Xuân#0|16,1,1,1,1,1
+Bùi Thị Xuân#0|18,1,1,1,1,1
+Bùi Thị Xuân#0|20,1,1,1,1,1
+Bùi Thị Xuân#0|21,1,1,1,1,1
+Bùi Thị Xuân#0|22,1,1,1,1,1
+Bùi Thị Xuân#0|23,1,1,1,1,1
+Bùi Thị Xuân#0|24,1,1,1,1,1
+Bùi Thị Xuân#0|27,1,1,1,1,1
+Bùi Thị Xuân#0|3,1,1,1,1,1
+Bùi Thị Xuân#0|4,2,2,1,1,2
+Bùi Thị Xuân#0|5,1,1,1,1,1
+Bùi Thị Xuân#0|7,1,1,1,1,1
+Bùi Thị Xuân#1|0,1,1,1,1,1
+Bùi Thị Xuân#1|10,2,2,1,1,1
+Bùi Thị Xuân#1|14,1,1,1,1,1
+Bùi Thị Xuân#1|15,1,1,1,1,1
+Bùi Thị Xuân#1|18,1,1,1,1,1
+Bùi Thị Xuân#1|19,1,1,1,1,1
+Bùi Thị Xuân#1|23,1,1,1,1,1
+Bùi Thị Xuân#1|3,1,1,1,1,1
+Bùi Thị Xuân#1|5,1,1,1,1,1
+Bùi Thị Xuân#1|6,1,1,1,1,1
+Bùi Thị Xuân#1|7,2,2,1,1,1
+Bùi Thị Xuân#1|8,2,2,1,1,2
+Bùi Đình Tuý#0|0,1,1,1,1,1
+Bùi Đình Tuý#0|1,1,1,1,1,1
+Bùi Đình Tuý#0|10,2,2,1,1,2
+Bùi Đình Tuý#0|11,2,2,1,1,1
+Bùi Đình Tuý#0|12,1,1,1,1,1
+Bùi Đình Tuý#0|13,1,1,1,1,1
+Bùi Đình Tuý#0|15,2,2,1,1,1
+Bùi Đình Tuý#0|16,2,2,1,1,1
+Bùi Đình Tuý#0|17,1,1,1,1,1
+Bùi Đình Tuý#0|18,2,2,1,1,1
+Bùi Đình Tuý#0|19,1,1,1,1,1
+Bùi Đình Tuý#0|2,1,1,1,1,1
+Bùi Đình Tuý#0|20,1,1,1,1,1
+Bùi Đình Tuý#0|21,1,1,1,1,1
+Bùi Đình Tuý#0|23,1,1,1,1,1
+Bùi Đình Tuý#0|24,2,2,1,1,1
+Bùi Đình Tuý#0|25,2,2,1,1,1
+Bùi Đình Tuý#0|26,2,2,1,1,1
+Bùi Đình Tuý#0|27,1,1,1,1,1
+Bùi Đình Tuý#0|28,1,1,1,1,1
+Bùi Đình Tuý#0|29,1,1,1,1,1
+Bùi Đình Tuý#0|3,2,2,1,1,1
+Bùi Đình Tuý#0|30,1,1,1,1,1
+Bùi Đình Tuý#0|31,1,1,1,1,1
+Bùi Đình Tuý#0|32,1,1,1,1,1
+Bùi Đình Tuý#0|34,1,1,1,1,1
+Bùi Đình Tuý#0|35,2,2,1,1,2
+Bùi Đình Tuý#0|5,1,1,1,1,1
+Bùi Đình Tuý#0|6,2,2,1,1,1
+Bùi Đình Tuý#0|7,1,1,1,1,1
+Bùi Đình Tuý#0|9,2,2,1,1,1
+Bạch Đằng#0|0,1,1,1,1,1
+Bạch Đằng#0|1,1,1,1,1,1
+Bạch Đằng#0|10,1,1,1,1,1
+Bạch Đằng#0|12,2,2,1,1,2
+Bạch Đằng#0|13,2,2,1,1,1
+Bạch Đằng#0|14,2,2,1,1,1
+Bạch Đằng#0|15,2,2,1,1,2
+Bạch Đằng#0|16,1,1,1,1,1
+Bạch Đằng#0|17,1,1,1,1,1
+Bạch Đằng#0|18,2,2,1,1,1
+Bạch Đằng#0|20,1,1,1,1,1
+Bạch Đằng#0|21,1,1,1,1,1
+Bạch Đằng#0|23,1,1,1,1,1
+Bạch Đằng#0|27,2,2,1,1,1
+Bạch Đằng#0|28,1,1,1,1,1
+Bạch Đằng#0|29,1,1,1,1,1
+Bạch Đằng#0|3,1,1,1,1,1
+Bạch Đằng#0|31,1,1,1,1,1
+Bạch Đằng#0|32,2,2,1,1,1
+Bạch Đằng#0|33,1,1,1,1,1
+Bạch Đằng#0|34,2,2,1,1,2
+Bạch Đằng#0|36,2,2,1,1,2
+Bạch Đằng#0|37,1,1,1,1,1
+Bạch Đằng#0|39,2,2,1,1,2
+Bạch Đằng#0|4,1,1,1,1,1
+Bạch Đằng#0|41,1,1,1,1,1
+Bạch Đằng#0|45,2,2,1,1,2
+Bạch Đằng#0|6,1,1,1,1,1
+Bạch Đằng#0|8,1,1,1,1,1
+Bạch Đằng#0|9,1,1,1,1,1
+Bắc Hải|0,2,2,1,1,2
+Bắc Hải|1,2,2,1,1,1
+Bắc Hải|10,1,1,1,1,1
+Bắc Hải|11,1,1,1,1,1
+Bắc Hải|16,2,2,1,1,1
+Bắc Hải|17,2,2,1,1,1
+Bắc Hải|18,1,1,1,1,1
+Bắc Hải|2,1,1,1,1,1
+Bắc Hải|20,1,1,1,1,1
+Bắc Hải|22,2,2,1,1,1
+Bắc Hải|24,1,1,1,1,1
+Bắc Hải|27,1,1,1,1,1
+Bắc Hải|28,1,1,1,1,1
+Bắc Hải|30,1,1,1,1,1
+Bắc Hải|31,1,1,1,1,1
+Bắc Hải|33,1,1,1,1,1
+Bắc Hải|35,1,1,1,1,1
+Bắc Hải|36,1,1,1,1,1
+Bắc Hải|37,2,2,1,1,2
+Bắc Hải|4,2,2,1,1,1
+Bắc Hải|40,1,1,1,1,1
+Bắc Hải|42,1,1,1,1,1
+Bắc Hải|5,1,1,1,1,1
+Bắc Hải|7,2,2,1,1,2
+Bắc Hải|8,2,2,1,1,1
+Bắc Hải|9,2,2,1,1,1
+Chu Văn An#0|0,2,2,1,1,2
+Chu Văn An#0|1,2,2,1,1,1
+Chu Văn An#0|10,1,1,1,1,1
+Chu Văn An#0|13,2,2,1,1,1
+Chu Văn An#0|14,1,1,1,1,1
+Chu Văn An#0|16,1,1,1,1,1
+Chu Văn An#0|18,1,1,1,1,1
+Chu Văn An#0|20,2,2,1,1,1
+Chu Văn An#0|21,1,1,1,1,1
+Chu Văn An#0|22,2,2,1,1,2
+Chu Văn An#0|24,2,2,1,1,1
+Chu Văn An#0|3,1,1,1,1,1
+Chu Văn An#0|4,1,1,1,1,1
+Châu Văn Liêm|14,1,1,1,1,1
+Châu Văn Liêm|17,1,1,1,1,1
+Châu Văn Liêm|20,1,1,1,1,1
+Châu Văn Liêm|6,1,1,1,1,1
+Châu Văn Liêm|7,2,2,1,1,1
+Châu Văn Liêm|8,1,1,1,1,1
+Châu Văn Liêm|9,1,1,1,1,1
+Cách Mạng Tháng Tám#0|0,2,2,1,1,1
+Cách Mạng Tháng Tám#0|1,2,2,1,1,1
+Cách Mạng Tháng Tám#0|10,2,2,1,1,1
+Cách Mạng Tháng Tám#0|100,2,2,1,1,1
+Cách Mạng Tháng Tám#0|101,1,1,1,1,1
+Cách Mạng Tháng Tám#0|102,2,2,1,1,1
+Cách Mạng Tháng Tám#0|103,2,2,1,1,1
+Cách Mạng Tháng Tám#0|104,2,2,1,1,1
+Cách Mạng Tháng Tám#0|105,2,2,1,1,1
+Cách Mạng Tháng Tám#0|106,2,2,1,1,1
+Cách Mạng Tháng Tám#0|107,2,2,1,1,1
+Cách Mạng Tháng Tám#0|108,2,2,1,1,1
+Cách Mạng Tháng Tám#0|109,2,2,1,1,1
+Cách Mạng Tháng Tám#0|11,2,2,1,1,1
+Cách Mạng Tháng Tám#0|110,1,1,1,1,1
+Cách Mạng Tháng Tám#0|111,2,2,1,1,1
+Cách Mạng Tháng Tám#0|112,1,1,1,1,1
+Cách Mạng Tháng Tám#0|113,2,2,1,1,1
+Cách Mạng Tháng Tám#0|114,1,1,1,1,1
+Cách Mạng Tháng Tám#0|12,2,2,1,1,1
+Cách Mạng Tháng Tám#0|13,2,2,1,1,1
+Cách Mạng Tháng Tám#0|14,2,2,1,1,1
+Cách Mạng Tháng Tám#0|15,2,2,1,1,1
+Cách Mạng Tháng Tám#0|16,2,2,1,1,1
+Cách Mạng Tháng Tám#0|17,2,2,1,1,1
+Cách Mạng Tháng Tám#0|18,2,2,1,1,1
+Cách Mạng Tháng Tám#0|19,2,2,1,1,1
+Cách Mạng Tháng Tám#0|2,2,2,1,1,1
+Cách Mạng Tháng Tám#0|20,2,2,1,1,1
+Cách Mạng Tháng Tám#0|21,2,2,1,1,1
+Cách Mạng Tháng Tám#0|22,2,2,1,1,1
+Cách Mạng Tháng Tám#0|23,2,2,1,1,1
+Cách Mạng Tháng Tám#0|24,2,2,1,1,1
+Cách Mạng Tháng Tám#0|25,2,2,1,1,1
+Cách Mạng Tháng Tám#0|26,2,2,1,1,1
+Cách Mạng Tháng Tám#0|27,2,2,1,1,1
+Cách Mạng Tháng Tám#0|28,2,2,1,1,1
+Cách Mạng Tháng Tám#0|29,2,2,1,1,1
+Cách Mạng Tháng Tám#0|3,2,2,1,1,1
+Cách Mạng Tháng Tám#0|30,2,2,1,1,1
+Cách Mạng Tháng Tám#0|31,2,2,1,1,1
+Cách Mạng Tháng Tám#0|32,2,2,1,1,1
+Cách Mạng Tháng Tám#0|33,2,2,1,1,1
+Cách Mạng Tháng Tám#0|34,2,2,1,1,1
+Cách Mạng Tháng Tám#0|35,2,2,1,1,1
+Cách Mạng Tháng Tám#0|36,2,2,1,1,1
+Cách Mạng Tháng Tám#0|37,2,2,1,1,1
+Cách Mạng Tháng Tám#0|38,2,2,1,1,1
+Cách Mạng Tháng Tám#0|39,1,1,1,1,1
+Cách Mạng Tháng Tám#0|4,2,2,1,1,1
+Cách Mạng Tháng Tám#0|40,2,2,1,1,1
+Cách Mạng Tháng Tám#0|41,2,2,1,1,1
+Cách Mạng Tháng Tám#0|42,2,2,1,1,1
+Cách Mạng Tháng Tám#0|43,2,2,1,1,1
+Cách Mạng Tháng Tám#0|44,1,1,1,1,1
+Cách Mạng Tháng Tám#0|45,2,2,1,1,1
+Cách Mạng Tháng Tám#0|46,2,2,1,1,1
+Cách Mạng Tháng Tám#0|47,2,2,1,1,1
+Cách Mạng Tháng Tám#0|48,2,2,1,1,1
+Cách Mạng Tháng Tám#0|49,2,2,1,1,1
+Cách Mạng Tháng Tám#0|5,2,2,1,1,1
+Cách Mạng Tháng Tám#0|50,2,2,1,1,1
+Cách Mạng Tháng Tám#0|51,2,2,1,1,1
+Cách Mạng Tháng Tám#0|52,2,2,1,1,1
+Cách Mạng Tháng Tám#0|53,2,2,1,1,1
+Cách Mạng Tháng Tám#0|54,2,2,1,1,1
+Cách Mạng Tháng Tám#0|55,2,2,1,1,1
+Cách Mạng Tháng Tám#0|56,2,2,1,1,1
+Cách Mạng Tháng Tám#0|57,2,2,1,1,1
+Cách Mạng Tháng Tám#0|58,2,2,1,1,1
+Cách Mạng Tháng Tám#0|59,2,2,1,1,1
+Cách Mạng Tháng Tám#0|6,2,2,1,1,1
+Cách Mạng Tháng Tám#0|60,2,2,1,1,1
+Cách Mạng Tháng Tám#0|61,2,2,1,1,1
+Cách Mạng Tháng Tám#0|62,2,2,1,1,1
+Cách Mạng Tháng Tám#0|63,2,2,1,1,1
+Cách Mạng Tháng Tám#0|64,2,2,1,1,1
+Cách Mạng Tháng Tám#0|65,2,2,1,1,1
+Cách Mạng Tháng Tám#0|66,2,2,1,1,1
+Cách Mạng Tháng Tám#0|67,2,2,1,1,1
+Cách Mạng Tháng Tám#0|68,2,2,1,1,1
+Cách Mạng Tháng Tám#0|69,2,2,1,1,1
+Cách Mạng Tháng Tám#0|7,2,2,1,1,1
+Cách Mạng Tháng Tám#0|70,2,2,1,1,1
+Cách Mạng Tháng Tám#0|71,2,2,1,1,1
+Cách Mạng Tháng Tám#0|72,2,2,1,1,1
+Cách Mạng Tháng Tám#0|73,2,2,1,1,1
+Cách Mạng Tháng Tám#0|74,2,2,1,1,1
+Cách Mạng Tháng Tám#0|75,2,2,1,1,1
+Cách Mạng Tháng Tám#0|76,2,2,1,1,1
+Cách Mạng Tháng Tám#0|77,2,2,1,1,1
+Cách Mạng Tháng Tám#0|78,1,1,1,1,1
+Cách Mạng Tháng Tám#0|79,2,2,1,1,1
+Cách Mạng Tháng Tám#0|8,2,2,1,1,1
+Cách Mạng Tháng Tám#0|80,2,2,1,1,1
+Cách Mạng Tháng Tám#0|81,2,2,1,1,1
+Cách Mạng Tháng Tám#0|82,2,2,1,1,1
+Cách Mạng Tháng Tám#0|83,2,2,1,1,1
+Cách Mạng Tháng Tám#0|84,2,2,1,1,1
+Cách Mạng Tháng Tám#0|85,2,2,1,1,1
+Cách Mạng Tháng Tám#0|86,2,2,1,1,1
+Cách Mạng Tháng Tám#0|87,2,2,1,1,1
+Cách Mạng Tháng Tám#0|88,2,2,1,1,1
+Cách Mạng Tháng Tám#0|89,2,2,1,1,1
+Cách Mạng Tháng Tám#0|9,2,2,1,1,1
+Cách Mạng Tháng Tám#0|90,2,2,1,1,1
+Cách Mạng Tháng Tám#0|91,2,2,1,1,1
+Cách Mạng Tháng Tám#0|92,2,2,1,1,1
+Cách Mạng Tháng Tám#0|93,2,2,1,1,1
+Cách Mạng Tháng Tám#0|94,2,2,1,1,1
+Cách Mạng Tháng Tám#0|95,2,2,1,1,1
+Cách Mạng Tháng Tám#0|96,2,2,1,1,1
+Cách Mạng Tháng Tám#0|97,2,2,1,1,1
+Cách Mạng Tháng Tám#0|98,2,2,1,1,1
+Cách Mạng Tháng Tám#0|99,2,2,1,1,1
+Cống Quỳnh#0|0,1,1,1,1,1
+Cống Quỳnh#0|12,1,1,1,1,1
+Cống Quỳnh#0|14,2,2,1,1,1
+Cống Quỳnh#0|16,1,1,1,1,1
+Cống Quỳnh#0|17,1,1,1,1,1
+Cống Quỳnh#0|2,1,1,1,1,1
+Cống Quỳnh#0|21,1,1,1,1,1
+Cống Quỳnh#0|25,2,2,1,1,2
+Cống Quỳnh#0|26,1,1,1,1,1
+Cống Quỳnh#0|27,1,1,1,1,1
+Cống Quỳnh#0|3,1,1,1,1,1
+Cống Quỳnh#0|6,2,2,1,1,1
+Cống Quỳnh#0|7,1,1,1,1,1
+Dương Bá Trạc|0,1,1,1,1,1
+Dương Bá Trạc|1,1,1,1,1,1
+Dương Bá Trạc|10,1,1,1,1,1
+Dương Bá Trạc|11,1,1,1,1,1
+Dương Bá Trạc|14,1,1,1,1,1
+Dương Bá Trạc|15,2,2,1,1,1
+Dương Bá Trạc|16,1,1,1,1,1
+Dương Bá Trạc|17,1,1,1,1,1
+Dương Bá Trạc|19,2,2,1,1,2
+Dương Bá Trạc|2,1,1,1,1,1
+Dương Bá Trạc|20,1,1,1,1,1
+Dương Bá Trạc|21,1,1,1,1,1
+Dương Bá Trạc|4,1,1,1,1,1
+Dương Bá Trạc|7,1,1,1,1,1
+Dương Bá Trạc|9,2,2,1,1,1
+Dương Tử Giang|1,2,2,1,1,1
+Dương Tử Giang|14,1,1,1,1,1
+Dương Tử Giang|17,2,2,1,1,1
+Dương Tử Giang|18,2,2,1,1,2
+Dương Tử Giang|21,1,1,1,1,1
+Dương Tử Giang|22,1,1,1,1,1
+Dương Tử Giang|25,1,1,1,1,1
+Dương Tử Giang|26,2,2,1,1,1
+Dương Tử Giang|4,2,2,1,1,1
+Dương Tử Giang|5,1,1,1,1,1
+Hai Bà Trưng|0,2,2,1,1,1
+Hai Bà Trưng|1,2,2,1,1,1
+Hai Bà Trưng|10,2,2,1,1,1
+Hai Bà Trưng|11,2,2,1,1,1
+Hai Bà Trưng|12,2,2,1,1,1
+Hai Bà Trưng|13,2,2,1,1,1
+Hai Bà Trưng|14,1,1,1,1,1
+Hai Bà Trưng|15,2,2,1,1,1
+Hai Bà Trưng|16,2,2,1,1,1
+Hai Bà Trưng|17,2,2,1,1,1
+Hai Bà Trưng|18,2,2,1,1,1
+Hai Bà Trưng|19,2,2,1,1,1
+Hai Bà Trưng|2,2,2,1,1,1
+Hai Bà Trưng|20,2,2,1,1,1
+Hai Bà Trưng|21,2,2,1,1,1
+Hai Bà Trưng|22,2,2,1,1,1
+Hai Bà Trưng|23,2,2,1,1,1
+Hai Bà Trưng|24,2,2,1,1,1
+Hai Bà Trưng|25,2,2,1,1,1
+Hai Bà Trưng|26,2,2,1,1,1
+Hai Bà Trưng|27,2,2,1,1,1
+Hai Bà Trưng|28,2,2,1,1,1
+Hai Bà Trưng|29,2,2,1,1,1
+Hai Bà Trưng|3,2,2,1,1,1
+Hai Bà Trưng|30,2,2,1,1,1
+Hai Bà Trưng|31,2,2,1,1,1
+Hai Bà Trưng|32,1,1,1,1,1
+Hai Bà Trưng|33,2,2,1,1,1
+Hai Bà Trưng|34,2,2,1,1,1
+Hai Bà Trưng|35,2,2,1,1,1
+Hai Bà Trưng|36,2,2,1,1,1
+Hai Bà Trưng|37,2,2,1,1,1
+Hai Bà Trưng|38,2,2,1,1,1
+Hai Bà Trưng|39,2,2,1,1,1
+Hai Bà Trưng|4,2,2,1,1,1
+Hai Bà Trưng|40,2,2,1,1,1
+Hai Bà Trưng|41,2,2,1,1,1
+Hai Bà Trưng|42,2,2,1,1,1
+Hai Bà Trưng|43,2,2,1,1,1
+Hai Bà Trưng|44,1,1,1,1,1
+Hai Bà Trưng|45,2,2,1,1,1
+Hai Bà Trưng|46,2,2,1,1,1
+Hai Bà Trưng|47,2,2,1,1,1
+Hai Bà Trưng|48,2,2,1,1,1
+Hai Bà Trưng|49,2,2,1,1,1
+Hai Bà Trưng|5,2,2,1,1,1
+Hai Bà Trưng|50,2,2,1,1,1
+Hai Bà Trưng|51,2,2,1,1,1
+Hai Bà Trưng|52,2,2,1,1,1
+Hai Bà Trưng|53,2,2,1,1,1
+Hai Bà Trưng|54,2,2,1,1,1
+Hai Bà Trưng|55,2,2,1,1,1
+Hai Bà Trưng|56,2,2,1,1,1
+Hai Bà Trưng|57,2,2,1,1,1
+Hai Bà Trưng|58,2,2,1,1,1
+Hai Bà Trưng|59,2,2,1,1,1
+Hai Bà Trưng|6,2,2,1,1,1
+Hai Bà Trưng|60,2,2,1,1,1
+Hai Bà Trưng|61,2,2,1,1,1
+Hai Bà Trưng|62,2,2,1,1,1
+Hai Bà Trưng|63,2,2,1,1,1
+Hai Bà Trưng|64,1,1,1,1,1
+Hai Bà Trưng|65,2,2,1,1,1
+Hai Bà Trưng|66,2,2,1,1,1
+Hai Bà Trưng|67,2,2,1,1,1
+Hai Bà Trưng|68,2,2,1,1,1
+Hai Bà Trưng|69,2,2,1,1,1
+Hai Bà Trưng|7,2,2,1,1,1
+Hai Bà Trưng|70,1,1,1,1,1
+Hai Bà Trưng|71,2,2,1,1,1
+Hai Bà Trưng|72,2,2,1,1,1
+Hai Bà Trưng|73,2,2,1,1,1
+Hai Bà Trưng|74,2,2,1,1,1
+Hai Bà Trưng|75,2,2,1,1,1
+Hai Bà Trưng|76,2,2,1,1,1
+Hai Bà Trưng|77,2,2,1,1,1
+Hai Bà Trưng|78,2,2,1,1,1
+Hai Bà Trưng|79,1,1,1,1,1
+Hai Bà Trưng|8,2,2,1,1,1
+Hai Bà Trưng|80,2,2,1,1,1
+Hai Bà Trưng|81,1,1,1,1,1
+Hai Bà Trưng|82,2,2,1,1,1
+Hai Bà Trưng|83,1,1,1,1,1
+Hai Bà Trưng|84,2,2,1,1,1
+Hai Bà Trưng|85,2,2,1,1,1
+Hai Bà Trưng|86,2,2,1,1,1
+Hai Bà Trưng|87,2,2,1,1,1
+Hai Bà Trưng|88,2,2,1,1,1
+Hai Bà Trưng|89,2,2,1,1,1
+Hai Bà Trưng|9,2,2,1,1,1
+Hai Bà Trưng|90,2,2,1,1,1
+Hai Bà Trưng|91,2,2,1,1,1
+Hai Bà Trưng|92,2,2,1,1,1
+Hoàng Hoa Thám|0,1,1,1,1,1
+Hoàng Hoa Thám|1,1,1,1,1,1
+Hoàng Hoa Thám|10,1,1,1,1,1
+Hoàng Hoa Thám|11,2,2,1,1,2
+Hoàng Hoa Thám|12,1,1,1,1,1
+Hoàng Hoa Thám|14,1,1,1,1,1
+Hoàng Hoa Thám|15,1,1,1,1,1
+Hoàng Hoa Thám|16,1,1,1,1,1
+Hoàng Hoa Thám|17,1,1,1,1,1
+Hoàng Hoa Thám|19,2,2,1,1,1
+Hoàng Hoa Thám|2,1,1,1,1,1
+Hoàng Hoa Thám|20,1,1,1,1,1
+Hoàng Hoa Thám|21,2,2,1,1,1
+Hoàng Hoa Thám|22,1,1,1,1,1
+Hoàng Hoa Thám|23,2,2,1,1,1
+Hoàng Hoa Thám|24,1,1,1,1,1
+Hoàng Hoa Thám|25,1,1,1,1,1
+Hoàng Hoa Thám|27,1,1,1,1,1
+Hoàng Hoa Thám|28,2,2,1,1,1
+Hoàng Hoa Thám|29,2,2,1,1,1
+Hoàng Hoa Thám|3,2,2,1,1,1
+Hoàng Hoa Thám|30,2,2,1,1,1
+Hoàng Hoa Thám|32,1,1,1,1,1
+Hoàng Hoa Thám|33,1,1,1,1,1
+Hoàng Hoa Thám|34,1,1,1,1,1
+Hoàng Hoa Thám|37,1,1,1,1,1
+Hoàng Hoa Thám|38,1,1,1,1,1
+Hoàng Hoa Thám|39,1,1,1,1,1
+Hoàng Hoa Thám|4,2,2,1,1,1
+Hoàng Hoa Thám|40,2,2,1,1,2
+Hoàng Hoa Thám|5,1,1,1,1,1
+Hoàng Hoa Thám|6,2,2,1,1,2
+Hoàng Hoa Thám|7,1,1,1,1,1
+Hoàng Hoa Thám|8,1,1,1,1,1
+Hoàng Hoa Thám|9,1,1,1,1,1
+Hoàng Sa|0,1,1,1,1,1
+Hoàng Sa|1,1,1,1,1,1
+Hoàng Sa|10,1,1,1,1,1
+Hoàng Sa|101,1,1,1,1,1
+Hoàng Sa|105,1,1,1,1,1
+Hoàng Sa|106,2,2,1,1,1
+Hoàng Sa|107,2,2,1,1,1
+Hoàng Sa|108,1,1,1,1,1
+Hoàng Sa|109,1,1,1,1,1
+Hoàng Sa|110,1,1,1,1,1
+Hoàng Sa|111,1,1,1,1,1
+Hoàng Sa|112,1,1,1,1,1
+Hoàng Sa|114,2,2,1,1,2
+Hoàng Sa|117,2,2,1,1,2
+Hoàng Sa|119,1,1,1,1,1
+Hoàng Sa|12,1,1,1,1,1
+Hoàng Sa|120,1,1,1,1,1
+Hoàng Sa|122,2,2,1,1,1
+Hoàng Sa|123,1,1,1,1,1
+Hoàng Sa|125,1,1,1,1,1
+Hoàng Sa|128,1,1,1,1,1
+Hoàng Sa|129,2,2,1,1,1
+Hoàng Sa|13,1,1,1,1,1
+Hoàng Sa|130,1,1,1,1,1
+Hoàng Sa|133,1,1,1,1,1
+Hoàng Sa|135,1,1,1,1,1
+Hoàng Sa|138,1,1,1,1,1
+Hoàng Sa|14,1,1,1,1,1
+Hoàng Sa|142,1,1,1,1,1
+Hoàng Sa|143,2,2,1,1,1
+Hoàng Sa|145,1,1,1,1,1
+Hoàng Sa|146,1,1,1,1,1
+Hoàng Sa|148,1,1,1,1,1
+Hoàng Sa|149,1,1,1,1,1
+Hoàng Sa|15,1,1,1,1,1
+Hoàng Sa|151,1,1,1,1,1
+Hoàng Sa|152,2,2,1,1,1
+Hoàng Sa|153,1,1,1,1,1
+Hoàng Sa|156,1,1,1,1,1
+Hoàng Sa|157,1,1,1,1,1
+Hoàng Sa|162,2,2,1,1,1
+Hoàng Sa|163,1,1,1,1,1
+Hoàng Sa|164,2,2,1,1,1
+Hoàng Sa|167,1,1,1,1,1
+Hoàng Sa|17,2,2,1,1,1
+Hoàng Sa|170,1,1,1,1,1
+Hoàng Sa|176,1,1,1,1,1
+Hoàng Sa|177,1,1,1,1,1
+Hoàng Sa|178,1,1,1,1,1
+Hoàng Sa|179,1,1,1,1,1
+Hoàng Sa|18,1,1,1,1,1
+Hoàng Sa|183,1,1,1,1,1
+Hoàng Sa|184,1,1,1,1,1
+Hoàng Sa|186,1,1,1,1,1
+Hoàng Sa|187,1,1,1,1,1
+Hoàng Sa|189,1,1,1,1,1
+Hoàng Sa|191,2,2,1,1,1
+Hoàng Sa|193,2,2,1,1,2
+Hoàng Sa|194,1,1,1,1,1
+Hoàng Sa|195,1,1,1,1,1
+Hoàng Sa|199,1,1,1,1,1
+Hoàng Sa|2,2,2,1,1,2
+Hoàng Sa|20,1,1,1,1,1
+Hoàng Sa|204,1,1,1,1,1
+Hoàng Sa|206,2,2,1,1,2
+Hoàng Sa|207,1,1,1,1,1
+Hoàng Sa|208,1,1,1,1,1
+Hoàng Sa|209,1,1,1,1,1
+Hoàng Sa|21,1,1,1,1,1
+Hoàng Sa|210,1,1,1,1,1
+Hoàng Sa|211,1,1,1,1,1
+Hoàng Sa|215,2,2,1,1,1
+Hoàng Sa|217,1,1,1,1,1
+Hoàng Sa|219,2,2,1,1,2
+Hoàng Sa|22,1,1,1,1,1
+Hoàng Sa|221,1,1,1,1,1
+Hoàng Sa|24,1,1,1,1,1
+Hoàng Sa|25,2,2,1,1,1
+Hoàng Sa|26,2,2,1,1,1
+Hoàng Sa|27,1,1,1,1,1
+Hoàng Sa|29,1,1,1,1,1
+Hoàng Sa|3,2,2,1,1,1
+Hoàng Sa|30,1,1,1,1,1
+Hoàng Sa|32,1,1,1,1,1
+Hoàng Sa|33,1,1,1,1,1
+Hoàng Sa|34,2,2,1,1,1
+Hoàng Sa|35,1,1,1,1,1
+Hoàng Sa|36,1,1,1,1,1
+Hoàng Sa|37,1,1,1,1,1
+Hoàng Sa|39,1,1,1,1,1
+Hoàng Sa|4,1,1,1,1,1
+Hoàng Sa|40,1,1,1,1,1
+Hoàng Sa|41,1,1,1,1,1
+Hoàng Sa|46,1,1,1,1,1
+Hoàng Sa|47,1,1,1,1,1
+Hoàng Sa|48,2,2,1,1,1
+Hoàng Sa|49,1,1,1,1,1
+Hoàng Sa|52,1,1,1,1,1
+Hoàng Sa|54,1,1,1,1,1
+Hoàng Sa|56,2,2,1,1,2
+Hoàng Sa|57,2,2,1,1,1
+Hoàng Sa|58,1,1,1,1,1
+Hoàng Sa|62,1,1,1,1,1
+Hoàng Sa|63,1,1,1,1,1
+Hoàng Sa|64,1,1,1,1,1
+Hoàng Sa|66,1,1,1,1,1
+Hoàng Sa|69,1,1,1,1,1
+Hoàng Sa|70,2,2,1,1,1
+Hoàng Sa|72,1,1,1,1,1
+Hoàng Sa|73,1,1,1,1,1
+Hoàng Sa|74,1,1,1,1,1
+Hoàng Sa|75,1,1,1,1,1
+Hoàng Sa|76,1,1,1,1,1
+Hoàng Sa|78,1,1,1,1,1
+Hoàng Sa|79,2,2,1,1,1
+Hoàng Sa|8,2,2,1,1,2
+Hoàng Sa|80,2,2,1,1,1
+Hoàng Sa|81,1,1,1,1,1
+Hoàng Sa|83,1,1,1,1,1
+Hoàng Sa|84,1,1,1,1,1
+Hoàng Sa|85,1,1,1,1,1
+Hoàng Sa|86,1,1,1,1,1
+Hoàng Sa|88,1,1,1,1,1
+Hoàng Sa|92,1,1,1,1,1
+Hoàng Sa|94,1,1,1,1,1
+Hoàng Sa|95,2,2,1,1,1
+Hoàng Sa|99,2,2,1,1,1
+Huỳnh Văn Bánh|0,2,2,1,1,1
+Huỳnh Văn Bánh|1,2,2,1,1,1
+Huỳnh Văn Bánh|11,1,1,1,1,1
+Huỳnh Văn Bánh|13,1,1,1,1,1
+Huỳnh Văn Bánh|15,1,1,1,1,1
+Huỳnh Văn Bánh|17,2,2,1,1,1
+Huỳnh Văn Bánh|18,2,2,1,1,2
+Huỳnh Văn Bánh|19,1,1,1,1,1
+Huỳnh Văn Bánh|2,1,1,1,1,1
+Huỳnh Văn Bánh|21,1,1,1,1,1
+Huỳnh Văn Bánh|22,1,1,1,1,1
+Huỳnh Văn Bánh|25,1,1,1,1,1
+Huỳnh Văn Bánh|26,1,1,1,1,1
+Huỳnh Văn Bánh|27,1,1,1,1,1
+Huỳnh Văn Bánh|28,2,2,1,1,1
+Huỳnh Văn Bánh|29,2,2,1,1,2
+Huỳnh Văn Bánh|3,1,1,1,1,1
+Huỳnh Văn Bánh|31,1,1,1,1,1
+Huỳnh Văn Bánh|36,1,1,1,1,1
+Huỳnh Văn Bánh|37,2,2,1,1,1
+Huỳnh Văn Bánh|38,1,1,1,1,1
+Huỳnh Văn Bánh|4,2,2,1,1,1
+Huỳnh Văn Bánh|41,1,1,1,1,1
+Huỳnh Văn Bánh|42,2,2,1,1,1
+Huỳnh Văn Bánh|43,1,1,1,1,1
+Huỳnh Văn Bánh|45,1,1,1,1,1
+Huỳnh Văn Bánh|46,1,1,1,1,1
+Huỳnh Văn Bánh|47,1,1,1,1,1
+Huỳnh Văn Bánh|6,2,2,1,1,2
+Huỳnh Văn Bánh|8,2,2,1,1,1
+Hòa Hảo#0|11,1,1,1,1,1
+Hòa Hảo#0|13,1,1,1,1,1
+Hòa Hảo#0|14,1,1,1,1,1
+Hòa Hảo#0|15,1,1,1,1,1
+Hòa Hảo#0|17,1,1,1,1,1
+Hòa Hảo#0|21,1,1,1,1,1
+Hòa Hảo#0|25,1,1,1,1,1
+Hòa Hảo#0|28,1,1,1,1,1
+Hòa Hảo#0|29,1,1,1,1,1
+Hòa Hảo#0|4,1,1,1,1,1
+Hòa Hảo#0|5,1,1,1,1,1
+Hòa Hảo#0|6,1,1,1,1,1
+Hòa Hảo#0|7,1,1,1,1,1
+Hòa Hảo#0|9,1,1,1,1,1
+Hải Thượng Lãn Ông|0,2,2,1,1,1
+Hải Thượng Lãn Ông|1,2,2,1,1,1
+Hải Thượng Lãn Ông|10,1,1,1,1,1
+Hải Thượng Lãn Ông|11,1,1,1,1,1
+Hải Thượng Lãn Ông|12,1,1,1,1,1
+Hải Thượng Lãn Ông|13,1,1,1,1,1
+Hải Thượng Lãn Ông|14,2,2,1,1,1
+Hải Thượng Lãn Ông|15,1,1,1,1,1
+Hải Thượng Lãn Ông|16,1,1,1,1,1
+Hải Thượng Lãn Ông|17,2,2,1,1,1
+Hải Thượng Lãn Ông|18,1,1,1,1,1
+Hải Thượng Lãn Ông|19,1,1,1,1,1
+Hải Thượng Lãn Ông|2,2,2,1,1,1
+Hải Thượng Lãn Ông|20,2,2,1,1,1
+Hải Thượng Lãn Ông|21,1,1,1,1,1
+Hải Thượng Lãn Ông|22,2,2,1,1,1
+Hải Thượng Lãn Ông|23,1,1,1,1,1
+Hải Thượng Lãn Ông|24,2,2,1,1,1
+Hải Thượng Lãn Ông|25,2,2,1,1,1
+Hải Thượng Lãn Ông|26,2,2,1,1,1
+Hải Thượng Lãn Ông|27,2,2,1,1,1
+Hải Thượng Lãn Ông|28,1,1,1,1,1
+Hải Thượng Lãn Ông|29,2,2,1,1,1
+Hải Thượng Lãn Ông|3,2,2,1,1,1
+Hải Thượng Lãn Ông|30,1,1,1,1,1
+Hải Thượng Lãn Ông|31,2,2,1,1,1
+Hải Thượng Lãn Ông|32,1,1,1,1,1
+Hải Thượng Lãn Ông|33,1,1,1,1,1
+Hải Thượng Lãn Ông|34,2,2,1,1,1
+Hải Thượng Lãn Ông|35,2,2,1,1,1
+Hải Thượng Lãn Ông|36,2,2,1,1,1
+Hải Thượng Lãn Ông|37,1,1,1,1,1
+Hải Thượng Lãn Ông|38,2,2,1,1,1
+Hải Thượng Lãn Ông|39,2,2,1,1,1
+Hải Thượng Lãn Ông|4,2,2,1,1,1
+Hải Thượng Lãn Ông|40,2,2,1,1,1
+Hải Thượng Lãn Ông|41,1,1,1,1,1
+Hải Thượng Lãn Ông|42,2,2,1,1,1
+Hải Thượng Lãn Ông|43,2,2,1,1,1
+Hải Thượng Lãn Ông|44,2,2,1,1,1
+Hải Thượng Lãn Ông|45,1,1,1,1,1
+Hải Thượng Lãn Ông|46,2,2,1,1,1
+Hải Thượng Lãn Ông|47,1,1,1,1,1
+Hải Thượng Lãn Ông|48,1,1,1,1,1
+Hải Thượng Lãn Ông|49,1,1,1,1,1
+Hải Thượng Lãn Ông|5,1,1,1,1,1
+Hải Thượng Lãn Ông|50,1,1,1,1,1
+Hải Thượng Lãn Ông|51,2,2,1,1,1
+Hải Thượng Lãn Ông|52,1,1,1,1,1
+Hải Thượng Lãn Ông|53,1,1,1,1,1
+Hải Thượng Lãn Ông|54,2,2,1,1,1
+Hải Thượng Lãn Ông|55,1,1,1,1,1
+Hải Thượng Lãn Ông|6,1,1,1,1,1
+Hải Thượng Lãn Ông|7,2,2,1,1,1
+Hải Thượng Lãn Ông|8,2,2,1,1,1
+Hải Thượng Lãn Ông|9,2,2,1,1,1
+Hồng Bàng|0,1,1,1,1,1
+Hồng Bàng|1,1,1,1,1,1
+Hồng Bàng|10,2,2,1,1,1
+Hồng Bàng|11,2,2,1,1,1
+Hồng Bàng|12,1,1,1,1,1
+Hồng Bàng|13,2,2,1,1,1
+Hồng Bàng|14,2,2,1,1,1
+Hồng Bàng|15,2,2,1,1,1
+Hồng Bàng|16,2,2,1,1,1
+Hồng Bàng|17,1,1,1,1,1
+Hồng Bàng|18,2,2,1,1,1
+Hồng Bàng|19,2,2,1,1,1
+Hồng Bàng|2,1,1,1,1,1
+Hồng Bàng|20,2,2,1,1,1
+Hồng Bàng|21,1,1,1,1,1
+Hồng Bàng|22,2,2,1,1,1
+Hồng Bàng|23,2,2,1,1,1
+Hồng Bàng|24,2,2,1,1,1
+Hồng Bàng|25,1,1,1,1,1
+Hồng Bàng|26,2,2,1,1,1
+Hồng Bàng|27,1,1,1,1,1
+Hồng Bàng|28,2,2,1,1,1
+Hồng Bàng|29,1,1,1,1,1
+Hồng Bàng|3,2,2,1,1,1
+Hồng Bàng|30,2,2,1,1,1
+Hồng Bàng|31,2,2,1,1,1
+Hồng Bàng|32,1,1,1,1,1
+Hồng Bàng|33,1,1,1,1,1
+Hồng Bàng|34,1,1,1,1,1
+Hồng Bàng|35,2,2,1,1,1
+Hồng Bàng|36,2,2,1,1,1
+Hồng Bàng|37,1,1,1,1,1
+Hồng Bàng|38,2,2,1,1,1
+Hồng Bàng|39,2,2,1,1,1
+Hồng Bàng|4,2,2,1,1,1
+Hồng Bàng|40,1,1,1,1,1
+Hồng Bàng|41,2,2,1,1,1
+Hồng Bàng|42,2,2,1,1,1
+Hồng Bàng|43,2,2,1,1,1
+Hồng Bàng|44,2,2,1,1,1
+Hồng Bàng|45,2,2,1,1,1
+Hồng Bàng|46,2,2,1,1,1
+Hồng Bàng|47,2,2,1,1,1
+Hồng Bàng|48,1,1,1,1,1
+Hồng Bàng|49,2,2,1,1,1
+Hồng Bàng|5,1,1,1,1,1
+Hồng Bàng|50,2,2,1,1,1
+Hồng Bàng|51,1,1,1,1,1
+Hồng Bàng|52,1,1,1,1,1
+Hồng Bàng|53,2,2,1,1,1
+Hồng Bàng|54,2,2,1,1,1
+Hồng Bàng|55,2,2,1,1,1
+Hồng Bàng|56,1,1,1,1,1
+Hồng Bàng|57,1,1,1,1,1
+Hồng Bàng|58,1,1,1,1,1
+Hồng Bàng|59,1,1,1,1,1
+Hồng Bàng|6,2,2,1,1,1
+Hồng Bàng|60,1,1,1,1,1
+Hồng Bàng|61,1,1,1,1,1
+Hồng Bàng|62,2,2,1,1,1
+Hồng Bàng|63,2,2,1,1,1
+Hồng Bàng|64,1,1,1,1,1
+Hồng Bàng|65,2,2,1,1,1
+Hồng Bàng|66,1,1,1,1,1
+Hồng Bàng|67,2,2,1,1,1
+Hồng Bàng|68,1,1,1,1,1
+Hồng Bàng|69,2,2,1,1,1
+Hồng Bàng|7,2,2,1,1,1
+Hồng Bàng|70,1,1,1,1,1
+Hồng Bàng|71,2,2,1,1,1
+Hồng Bàng|72,2,2,1,1,1
+Hồng Bàng|73,2,2,1,1,1
+Hồng Bàng|74,2,2,1,1,1
+Hồng Bàng|75,2,2,1,1,1
+Hồng Bàng|76,1,1,1,1,1
+Hồng Bàng|77,1,1,1,1,1
+Hồng Bàng|78,1,1,1,1,1
+Hồng Bàng|79,1,1,1,1,1
+Hồng Bàng|8,2,2,1,1,1
+Hồng Bàng|80,1,1,1,1,1
+Hồng Bàng|81,1,1,1,1,1
+Hồng Bàng|82,1,1,1,1,1
+Hồng Bàng|83,2,2,1,1,1
+Hồng Bàng|84,1,1,1,1,1
+Hồng Bàng|85,1,1,1,1,1
+Hồng Bàng|86,1,1,1,1,1
+Hồng Bàng|87,1,1,1,1,1
+Hồng Bàng|88,2,2,1,1,1
+Hồng Bàng|89,1,1,1,1,1
+Hồng Bàng|9,2,2,1,1,1
+Hồng Bàng|90,2,2,1,1,1
+Hồng Bàng|91,2,2,1,1,1
+Hồng Bàng|92,2,2,1,1,1
+Hồng Bàng|94,2,2,1,1,1
+Hồng Bàng|95,2,2,1,1,1
+Lê Hồng Phong#0|0,1,1,1,1,1
+Lê Hồng Phong#0|1,1,1,1,1,1
+Lê Hồng Phong#0|11,1,1,1,1,1
+Lê Hồng Phong#0|12,1,1,1,1,1
+Lê Hồng Phong#0|14,1,1,1,1,1
+Lê Hồng Phong#0|15,1,1,1,1,1
+Lê Hồng Phong#0|21,1,1,1,1,1
+Lê Hồng Phong#0|22,1,1,1,1,1
+Lê Hồng Phong#0|23,1,1,1,1,1
+Lê Hồng Phong#0|24,1,1,1,1,1
+Lê Hồng Phong#0|27,2,2,1,1,1
+Lê Hồng Phong#0|28,1,1,1,1,1
+Lê Hồng Phong#0|30,2,2,1,1,1
+Lê Hồng Phong#0|31,1,1,1,1,1
+Lê Hồng Phong#0|32,2,2,1,1,1
+Lê Hồng Phong#0|34,1,1,1,1,1
+Lê Hồng Phong#0|36,1,1,1,1,1
+Lê Hồng Phong#0|40,1,1,1,1,1
+Lê Hồng Phong#0|41,1,1,1,1,1
+Lê Hồng Phong#0|44,1,1,1,1,1
+Lê Hồng Phong#0|45,1,1,1,1,1
+Lê Hồng Phong#0|47,1,1,1,1,1
+Lê Hồng Phong#0|7,2,2,1,1,1
+Lê Hồng Phong#0|8,2,2,1,1,2
+Lê Hồng Phong#0|9,2,2,1,1,1
+Lê Hồng Phong#1|0,1,1,1,1,1
+Lê Hồng Phong#1|10,2,2,1,1,1
+Lê Hồng Phong#1|13,1,1,1,1,1
+Lê Hồng Phong#1|14,1,1,1,1,1
+Lê Hồng Phong#1|15,2,2,1,1,1
+Lê Hồng Phong#1|17,1,1,1,1,1
+Lê Hồng Phong#1|18,1,1,1,1,1
+Lê Hồng Phong#1|20,1,1,1,1,1
+Lê Hồng Phong#1|21,2,2,1,1,2
+Lê Hồng Phong#1|22,1,1,1,1,1
+Lê Hồng Phong#1|23,1,1,1,1,1
+Lê Hồng Phong#1|24,1,1,1,1,1
+Lê Hồng Phong#1|25,1,1,1,1,1
+Lê Hồng Phong#1|5,1,1,1,1,1
+Lê Hồng Phong#1|6,2,2,1,1,2
+Lê Hồng Phong#1|9,2,2,1,1,2
+Lê Quang Định#0|1,2,2,1,1,2
+Lê Quang Định#0|10,1,1,1,1,1
+Lê Quang Định#0|11,2,2,1,1,1
+Lê Quang Định#0|12,1,1,1,1,1
+Lê Quang Định#0|13,1,1,1,1,1
+Lê Quang Định#0|14,1,1,1,1,1
+Lê Quang Định#0|16,2,2,1,1,1
+Lê Quang Định#0|17,1,1,1,1,1
+Lê Quang Định#0|18,1,1,1,1,1
+Lê Quang Định#0|19,2,2,1,1,1
+Lê Quang Định#0|20,1,1,1,1,1
+Lê Quang Định#0|21,2,2,1,1,1
+Lê Quang Định#0|23,2,2,1,1,1
+Lê Quang Định#0|25,2,2,1,1,1
+Lê Quang Định#0|26,2,2,1,1,1
+Lê Quang Định#0|29,1,1,1,1,1
+Lê Quang Định#0|3,1,1,1,1,1
+Lê Quang Định#0|30,2,2,1,1,1
+Lê Quang Định#0|32,2,2,1,1,1
+Lê Quang Định#0|33,1,1,1,1,1
+Lê Quang Định#0|34,2,2,1,1,1
+Lê Quang Định#0|36,1,1,1,1,1
+Lê Quang Định#0|37,1,1,1,1,1
+Lê Quang Định#0|39,2,2,1,1,1
+Lê Quang Định#0|4,2,2,1,1,1
+Lê Quang Định#0|41,2,2,1,1,1
+Lê Quang Định#0|46,1,1,1,1,1
+Lê Quang Định#0|48,2,2,1,1,1
+Lê Quang Định#0|49,1,1,1,1,1
+Lê Quang Định#0|5,1,1,1,1,1
+Lê Quang Định#0|50,1,1,1,1,1
+Lê Quang Định#0|51,2,2,1,1,2
+Lê Quang Định#0|54,1,1,1,1,1
+Lê Quang Định#0|6,1,1,1,1,1
+Lê Quang Định#0|8,1,1,1,1,1
+Lê Quang Định#0|9,1,1,1,1,1
+Lê Văn Duyệt|0,1,1,1,1,1
+Lê Văn Duyệt|1,1,1,1,1,1
+Lê Văn Duyệt|14,1,1,1,1,1
+Lê Văn Duyệt|17,1,1,1,1,1
+Lê Văn Duyệt|19,2,2,1,1,1
+Lê Văn Duyệt|2,1,1,1,1,1
+Lê Văn Duyệt|20,1,1,1,1,1
+Lê Văn Duyệt|24,1,1,1,1,1
+Lê Văn Duyệt|27,1,1,1,1,1
+Lê Văn Duyệt|3,2,2,1,1,1
+Lê Văn Duyệt|30,2,2,1,1,2
+Lê Văn Duyệt|7,2,2,1,1,1
+Lê Văn Duyệt|9,1,1,1,1,1
+Lê Văn Sỹ|12,2,2,1,1,1
+Lê Văn Sỹ|13,2,2,1,1,1
+Lê Văn Sỹ|17,1,1,1,1,1
+Lê Văn Sỹ|18,2,2,1,1,1
+Lê Văn Sỹ|19,2,2,1,1,1
+Lê Văn Sỹ|2,2,2,1,1,1
+Lê Văn Sỹ|24,2,2,1,1,1
+Lê Văn Sỹ|26,2,2,1,1,1
+Lê Văn Sỹ|27,2,2,1,1,1
+Lê Văn Sỹ|28,2,2,1,1,1
+Lê Văn Sỹ|3,2,2,1,1,1
+Lê Văn Sỹ|36,2,2,1,1,1
+Lê Văn Sỹ|37,2,2,1,1,1
+Lê Văn Sỹ|38,2,2,1,1,1
+Lê Văn Sỹ|4,2,2,1,1,1
+Lê Văn Sỹ|40,1,1,1,1,1
+Lê Văn Sỹ|41,2,2,1,1,1
+Lê Văn Sỹ|42,2,2,1,1,1
+Lê Văn Sỹ|43,2,2,1,1,1
+Lê Văn Sỹ|44,2,2,1,1,1
+Lê Văn Sỹ|45,2,2,1,1,1
+Lê Văn Sỹ|48,2,2,1,1,1
+Lê Văn Sỹ|52,2,2,1,1,1
+Lê Văn Sỹ|54,2,2,1,1,1
+Lê Văn Sỹ|56,2,2,1,1,1
+Lê Văn Sỹ|57,2,2,1,1,1
+Lê Văn Sỹ|59,2,2,1,1,1
+Lê Văn Sỹ|60,2,2,1,1,1
+Lê Văn Sỹ|61,2,2,1,1,1
+Lê Văn Sỹ|62,2,2,1,1,1
+Lê Văn Sỹ|65,2,2,1,1,1
+Lê Văn Sỹ|66,2,2,1,1,1
+Lê Văn Sỹ|67,2,2,1,1,1
+Lê Văn Sỹ|68,2,2,1,1,1
+Lê Văn Sỹ|7,2,2,1,1,1
+Lê Văn Sỹ|70,2,2,1,1,1
+Lê Văn Sỹ|72,2,2,1,1,1
+Lê Văn Sỹ|73,2,2,1,1,1
+Lê Văn Sỹ|75,2,2,1,1,1
+Lê Văn Sỹ|76,1,1,1,1,1
+Lê Văn Sỹ|78,2,2,1,1,1
+Lê Văn Sỹ|79,2,2,1,1,1
+Lê Văn Sỹ|80,2,2,1,1,1
+Lê Văn Sỹ|81,2,2,1,1,1
+Lê Văn Sỹ|82,2,2,1,1,1
+Lê Văn Sỹ|9,2,2,1,1,1
+Lý Thái Tổ#0|0,1,1,1,1,1
+Lý Thái Tổ#0|10,1,1,1,1,1
+Lý Thái Tổ#0|11,1,1,1,1,1
+Lý Thái Tổ#0|13,2,2,1,1,2
+Lý Thái Tổ#0|15,1,1,1,1,1
+Lý Thái Tổ#0|17,1,1,1,1,1
+Lý Thái Tổ#0|18,1,1,1,1,1
+Lý Thái Tổ#0|19,1,1,1,1,1
+Lý Thái Tổ#0|2,1,1,1,1,1
+Lý Thái Tổ#0|23,1,1,1,1,1
+Lý Thái Tổ#0|25,2,2,1,1,1
+Lý Thái Tổ#0|3,1,1,1,1,1
+Lý Thái Tổ#0|5,1,1,1,1,1
+Lý Thường Kiệt|0,2,2,1,1,1
+Lý Thường Kiệt|1,2,2,1,1,1
+Lý Thường Kiệt|10,2,2,1,1,1
+Lý Thường Kiệt|100,2,2,1,1,1
+Lý Thường Kiệt|101,2,2,1,1,1
+Lý Thường Kiệt|102,2,2,1,1,1
+Lý Thường Kiệt|103,2,2,1,1,1
+Lý Thường Kiệt|104,2,2,1,1,1
+Lý Thường Kiệt|105,2,2,1,1,1
+Lý Thường Kiệt|106,2,2,1,1,1
+Lý Thường Kiệt|107,2,2,1,1,1
+Lý Thường Kiệt|108,2,2,1,1,1
+Lý Thường Kiệt|109,2,2,1,1,1
+Lý Thường Kiệt|11,2,2,1,1,1
+Lý Thường Kiệt|110,2,2,1,1,1
+Lý Thường Kiệt|111,2,2,1,1,1
+Lý Thường Kiệt|112,2,2,1,1,1
+Lý Thường Kiệt|113,2,2,1,1,1
+Lý Thường Kiệt|114,2,2,1,1,1
+Lý Thường Kiệt|115,2,2,1,1,1
+Lý Thường Kiệt|116,2,2,1,1,1
+Lý Thường Kiệt|117,2,2,1,1,1
+Lý Thường Kiệt|118,2,2,1,1,1
+Lý Thường Kiệt|119,2,2,1,1,1
+Lý Thường Kiệt|12,2,2,1,1,1
+Lý Thường Kiệt|120,2,2,1,1,1
+Lý Thường Kiệt|121,2,2,1,1,1
+Lý Thường Kiệt|122,2,2,1,1,1
+Lý Thường Kiệt|123,2,2,1,1,1
+Lý Thường Kiệt|124,1,1,1,1,1
+Lý Thường Kiệt|125,2,2,1,1,1
+Lý Thường Kiệt|126,2,2,1,1,1
+Lý Thường Kiệt|127,2,2,1,1,1
+Lý Thường Kiệt|128,2,2,1,1,1
+Lý Thường Kiệt|129,2,2,1,1,1
+Lý Thường Kiệt|13,2,2,1,1,1
+Lý Thường Kiệt|130,2,2,1,1,1
+Lý Thường Kiệt|131,1,1,1,1,1
+Lý Thường Kiệt|132,2,2,1,1,1
+Lý Thường Kiệt|133,2,2,1,1,1
+Lý Thường Kiệt|134,2,2,1,1,1
+Lý Thường Kiệt|135,2,2,1,1,1
+Lý Thường Kiệt|136,2,2,1,1,1
+Lý Thường Kiệt|137,2,2,1,1,1
+Lý Thường Kiệt|138,1,1,1,1,1
+Lý Thường Kiệt|139,2,2,1,1,1
+Lý Thường Kiệt|14,2,2,1,1,1
+Lý Thường Kiệt|140,2,2,1,1,1
+Lý Thường Kiệt|141,2,2,1,1,1
+Lý Thường Kiệt|142,2,2,1,1,1
+Lý Thường Kiệt|143,2,2,1,1,1
+Lý Thường Kiệt|144,2,2,1,1,1
+Lý Thường Kiệt|145,2,2,1,1,1
+Lý Thường Kiệt|146,1,1,1,1,1
+Lý Thường Kiệt|15,2,2,1,1,1
+Lý Thường Kiệt|16,2,2,1,1,1
+Lý Thường Kiệt|17,2,2,1,1,1
+Lý Thường Kiệt|18,1,1,1,1,1
+Lý Thường Kiệt|19,2,2,1,1,1
+Lý Thường Kiệt|2,2,2,1,1,1
+Lý Thường Kiệt|20,2,2,1,1,1
+Lý Thường Kiệt|21,2,2,1,1,1
+Lý Thường Kiệt|22,2,2,1,1,1
+Lý Thường Kiệt|23,2,2,1,1,1
+Lý Thường Kiệt|24,2,2,1,1,1
+Lý Thường Kiệt|25,2,2,1,1,1
+Lý Thường Kiệt|26,2,2,1,1,1
+Lý Thường Kiệt|27,2,2,1,1,1
+Lý Thường Kiệt|28,2,2,1,1,1
+Lý Thường Kiệt|29,2,2,1,1,1
+Lý Thường Kiệt|3,2,2,1,1,1
+Lý Thường Kiệt|30,2,2,1,1,1
+Lý Thường Kiệt|31,2,2,1,1,1
+Lý Thường Kiệt|32,1,1,1,1,1
+Lý Thường Kiệt|33,2,2,1,1,1
+Lý Thường Kiệt|34,2,2,1,1,1
+Lý Thường Kiệt|35,2,2,1,1,1
+Lý Thường Kiệt|36,2,2,1,1,1
+Lý Thường Kiệt|37,2,2,1,1,1
+Lý Thường Kiệt|38,2,2,1,1,1
+Lý Thường Kiệt|39,2,2,1,1,1
+Lý Thường Kiệt|4,2,2,1,1,1
+Lý Thường Kiệt|40,2,2,1,1,1
+Lý Thường Kiệt|41,2,2,1,1,1
+Lý Thường Kiệt|42,2,2,1,1,1
+Lý Thường Kiệt|43,2,2,1,1,1
+Lý Thường Kiệt|44,2,2,1,1,1
+Lý Thường Kiệt|45,2,2,1,1,1
+Lý Thường Kiệt|46,2,2,1,1,1
+Lý Thường Kiệt|47,2,2,1,1,1
+Lý Thường Kiệt|48,2,2,1,1,1
+Lý Thường Kiệt|49,2,2,1,1,1
+Lý Thường Kiệt|5,2,2,1,1,1
+Lý Thường Kiệt|50,2,2,1,1,1
+Lý Thường Kiệt|51,2,2,1,1,1
+Lý Thường Kiệt|52,2,2,1,1,1
+Lý Thường Kiệt|53,2,2,1,1,1
+Lý Thường Kiệt|54,2,2,1,1,1
+Lý Thường Kiệt|55,2,2,1,1,1
+Lý Thường Kiệt|56,2,2,1,1,1
+Lý Thường Kiệt|57,1,1,1,1,1
+Lý Thường Kiệt|58,2,2,1,1,1
+Lý Thường Kiệt|59,2,2,1,1,1
+Lý Thường Kiệt|6,2,2,1,1,1
+Lý Thường Kiệt|60,2,2,1,1,1
+Lý Thường Kiệt|61,2,2,1,1,1
+Lý Thường Kiệt|62,2,2,1,1,1
+Lý Thường Kiệt|63,2,2,1,1,1
+Lý Thường Kiệt|64,2,2,1,1,1
+Lý Thường Kiệt|65,2,2,1,1,1
+Lý Thường Kiệt|66,2,2,1,1,1
+Lý Thường Kiệt|67,2,2,1,1,1
+Lý Thường Kiệt|68,2,2,1,1,1
+Lý Thường Kiệt|69,2,2,1,1,1
+Lý Thường Kiệt|7,2,2,1,1,1
+Lý Thường Kiệt|70,2,2,1,1,1
+Lý Thường Kiệt|71,2,2,1,1,1
+Lý Thường Kiệt|72,2,2,1,1,1
+Lý Thường Kiệt|73,2,2,1,1,1
+Lý Thường Kiệt|74,1,1,1,1,1
+Lý Thường Kiệt|75,2,2,1,1,1
+Lý Thường Kiệt|76,2,2,1,1,1
+Lý Thường Kiệt|77,2,2,1,1,1
+Lý Thường Kiệt|78,2,2,1,1,1
+Lý Thường Kiệt|79,2,2,1,1,1
+Lý Thường Kiệt|8,2,2,1,1,1
+Lý Thường Kiệt|80,2,2,1,1,1
+Lý Thường Kiệt|81,2,2,1,1,1
+Lý Thường Kiệt|82,2,2,1,1,1
+Lý Thường Kiệt|83,2,2,1,1,1
+Lý Thường Kiệt|84,2,2,1,1,1
+Lý Thường Kiệt|85,2,2,1,1,1
+Lý Thường Kiệt|86,2,2,1,1,1
+Lý Thường Kiệt|87,2,2,1,1,1
+Lý Thường Kiệt|88,2,2,1,1,1
+Lý Thường Kiệt|89,2,2,1,1,1
+Lý Thường Kiệt|9,2,2,1,1,1
+Lý Thường Kiệt|90,2,2,1,1,1
+Lý Thường Kiệt|91,2,2,1,1,1
+Lý Thường Kiệt|92,1,1,1,1,1
+Lý Thường Kiệt|93,2,2,1,1,1
+Lý Thường Kiệt|94,2,2,1,1,1
+Lý Thường Kiệt|95,2,2,1,1,1
+Lý Thường Kiệt|96,2,2,1,1,1
+Lý Thường Kiệt|97,2,2,1,1,1
+Lý Thường Kiệt|98,2,2,1,1,1
+Lý Thường Kiệt|99,2,2,1,1,1
+Lạc Long Quân|0,1,1,1,1,1
+Lạc Long Quân|1,2,2,1,1,1
+Lạc Long Quân|10,1,1,1,1,1
+Lạc Long Quân|11,1,1,1,1,1
+Lạc Long Quân|12,1,1,1,1,1
+Lạc Long Quân|13,1,1,1,1,1
+Lạc Long Quân|15,2,2,1,1,1
+Lạc Long Quân|16,1,1,1,1,1
+Lạc Long Quân|17,2,2,1,1,1
+Lạc Long Quân|18,2,2,1,1,1
+Lạc Long Quân|19,1,1,1,1,1
+Lạc Long Quân|2,1,1,1,1,1
+Lạc Long Quân|20,1,1,1,1,1
+Lạc Long Quân|22,1,1,1,1,1
+Lạc Long Quân|25,1,1,1,1,1
+Lạc Long Quân|27,1,1,1,1,1
+Lạc Long Quân|29,2,2,1,1,2
+Lạc Long Quân|32,1,1,1,1,1
+Lạc Long Quân|35,1,1,1,1,1
+Lạc Long Quân|5,1,1,1,1,1
+Lạc Long Quân|6,1,1,1,1,1
+Lạc Long Quân|7,2,2,1,1,1
+Nguyễn Biểu|0,1,1,1,1,1
+Nguyễn Biểu|1,2,2,1,1,2
+Nguyễn Biểu|10,1,1,1,1,1
+Nguyễn Biểu|12,1,1,1,1,1
+Nguyễn Biểu|13,2,2,1,1,2
+Nguyễn Biểu|14,1,1,1,1,1
+Nguyễn Biểu|16,1,1,1,1,1
+Nguyễn Biểu|18,1,1,1,1,1
+Nguyễn Biểu|19,1,1,1,1,1
+Nguyễn Biểu|2,1,1,1,1,1
+Nguyễn Biểu|21,1,1,1,1,1
+Nguyễn Biểu|25,1,1,1,1,1
+Nguyễn Biểu|4,1,1,1,1,1
+Nguyễn Chí Thanh#0|10,1,1,1,1,1
+Nguyễn Chí Thanh#0|11,1,1,1,1,1
+Nguyễn Chí Thanh#0|12,1,1,1,1,1
+Nguyễn Chí Thanh#0|13,2,2,1,1,1
+Nguyễn Chí Thanh#0|15,1,1,1,1,1
+Nguyễn Chí Thanh#0|16,1,1,1,1,1
+Nguyễn Chí Thanh#0|18,1,1,1,1,1
+Nguyễn Chí Thanh#0|20,1,1,1,1,1
+Nguyễn Chí Thanh#0|21,1,1,1,1,1
+Nguyễn Chí Thanh#0|22,1,1,1,1,1
+Nguyễn Chí Thanh#0|27,1,1,1,1,1
+Nguyễn Chí Thanh#0|29,1,1,1,1,1
+Nguyễn Chí Thanh#0|3,1,1,1,1,1
+Nguyễn Chí Thanh#0|30,1,1,1,1,1
+Nguyễn Chí Thanh#0|31,2,2,1,1,2
+Nguyễn Chí Thanh#0|32,1,1,1,1,1
+Nguyễn Chí Thanh#0|33,1,1,1,1,1
+Nguyễn Chí Thanh#0|34,1,1,1,1,1
+Nguyễn Chí Thanh#0|35,2,2,1,1,1
+Nguyễn Chí Thanh#0|37,1,1,1,1,1
+Nguyễn Chí Thanh#0|38,1,1,1,1,1
+Nguyễn Chí Thanh#0|39,2,2,1,1,2
+Nguyễn Chí Thanh#0|40,1,1,1,1,1
+Nguyễn Chí Thanh#0|41,1,1,1,1,1
+Nguyễn Chí Thanh#0|42,1,1,1,1,1
+Nguyễn Chí Thanh#0|43,1,1,1,1,1
+Nguyễn Chí Thanh#0|46,1,1,1,1,1
+Nguyễn Chí Thanh#0|47,1,1,1,1,1
+Nguyễn Chí Thanh#0|48,1,1,1,1,1
+Nguyễn Chí Thanh#0|5,2,2,1,1,1
+Nguyễn Chí Thanh#0|53,2,2,1,1,1
+Nguyễn Chí Thanh#0|55,1,1,1,1,1
+Nguyễn Chí Thanh#0|56,1,1,1,1,1
+Nguyễn Chí Thanh#0|57,1,1,1,1,1
+Nguyễn Chí Thanh#0|58,2,2,1,1,2
+Nguyễn Chí Thanh#0|59,1,1,1,1,1
+Nguyễn Chí Thanh#0|6,2,2,1,1,1
+Nguyễn Chí Thanh#0|9,2,2,1,1,1
+Nguyễn Công Trứ#0|0,1,1,1,1,1
+Nguyễn Công Trứ#0|11,1,1,1,1,1
+Nguyễn Công Trứ#0|12,1,1,1,1,1
+Nguyễn Công Trứ#0|15,1,1,1,1,1
+Nguyễn Công Trứ#0|16,1,1,1,1,1
+Nguyễn Công Trứ#0|2,1,1,1,1,1
+Nguyễn Công Trứ#0|20,1,1,1,1,1
+Nguyễn Công Trứ#0|24,1,1,1,1,1
+Nguyễn Công Trứ#0|27,1,1,1,1,1
+Nguyễn Công Trứ#0|3,1,1,1,1,1
+Nguyễn Công Trứ#0|4,1,1,1,1,1
+Nguyễn Công Trứ#0|5,1,1,1,1,1
+Nguyễn Duy Dương|0,1,1,1,1,1
+Nguyễn Duy Dương|1,2,2,1,1,1
+Nguyễn Duy Dương|11,2,2,1,1,1
+Nguyễn Duy Dương|12,1,1,1,1,1
+Nguyễn Duy Dương|15,2,2,1,1,1
+Nguyễn Duy Dương|17,1,1,1,1,1
+Nguyễn Duy Dương|18,2,2,1,1,1
+Nguyễn Duy Dương|2,1,1,1,1,1
+Nguyễn Duy Dương|27,2,2,1,1,1
+Nguyễn Duy Dương|28,1,1,1,1,1
+Nguyễn Duy Dương|32,1,1,1,1,1
+Nguyễn Duy Dương|33,1,1,1,1,1
+Nguyễn Duy Dương|36,1,1,1,1,1
+Nguyễn Duy Dương|4,2,2,1,1,1
+Nguyễn Duy Dương|6,2,2,1,1,1
+Nguyễn Duy Dương|8,1,1,1,1,1
+Nguyễn Duy Dương|9,1,1,1,1,1
+Nguyễn Duy#0|0,1,1,1,1,1
+Nguyễn Duy#0|1,1,1,1,1,1
+Nguyễn Duy#0|10,1,1,1,1,1
+Nguyễn Duy#0|12,1,1,1,1,1
+Nguyễn Duy#0|13,1,1,1,1,1
+Nguyễn Duy#0|15,1,1,1,1,1
+Nguyễn Duy#0|16,1,1,1,1,1
+Nguyễn Duy#0|17,1,1,1,1,1
+Nguyễn Duy#0|22,1,1,1,1,1
+Nguyễn Duy#0|23,1,1,1,1,1
+Nguyễn Duy#0|24,1,1,1,1,1
+Nguyễn Duy#0|25,1,1,1,1,1
+Nguyễn Duy#0|27,1,1,1,1,1
+Nguyễn Duy#0|30,1,1,1,1,1
+Nguyễn Duy#0|4,1,1,1,1,1
+Nguyễn Duy#0|5,1,1,1,1,1
+Nguyễn Duy#0|6,1,1,1,1,1
+Nguyễn Duy#0|7,1,1,1,1,1
+Nguyễn Gia Trí|20,1,1,1,1,1
+Nguyễn Gia Trí|29,1,1,1,1,1
+Nguyễn Gia Trí|3,1,1,1,1,1
+Nguyễn Gia Trí|30,1,1,1,1,1
+Nguyễn Gia Trí|31,1,1,1,1,1
+Nguyễn Gia Trí|32,1,1,1,1,1
+Nguyễn Gia Trí|36,1,1,1,1,1
+Nguyễn Kim|1,1,1,1,1,1
+Nguyễn Kim|10,2,2,1,1,1
+Nguyễn Kim|15,1,1,1,1,1
+Nguyễn Kim|16,1,1,1,1,1
+Nguyễn Kim|2,1,1,1,1,1
+Nguyễn Kim|23,1,1,1,1,1
+Nguyễn Kim|24,1,1,1,1,1
+Nguyễn Kim|25,1,1,1,1,1
+Nguyễn Kim|27,1,1,1,1,1
+Nguyễn Kim|29,1,1,1,1,1
+Nguyễn Kim|30,1,1,1,1,1
+Nguyễn Kim|5,2,2,1,1,2
+Nguyễn Kim|6,1,1,1,1,1
+Nguyễn Kim|7,2,2,1,1,1
+Nguyễn Kim|9,1,1,1,1,1
+Nguyễn Kiệm#0|0,2,2,1,1,1
+Nguyễn Kiệm#0|1,2,2,1,1,1
+Nguyễn Kiệm#0|10,2,2,1,1,1
+Nguyễn Kiệm#0|11,2,2,1,1,1
+Nguyễn Kiệm#0|12,2,2,1,1,1
+Nguyễn Kiệm#0|13,2,2,1,1,1
+Nguyễn Kiệm#0|14,2,2,1,1,1
+Nguyễn Kiệm#0|15,2,2,1,1,1
+Nguyễn Kiệm#0|16,2,2,1,1,1
+Nguyễn Kiệm#0|17,2,2,1,1,1
+Nguyễn Kiệm#0|18,2,2,1,1,1
+Nguyễn Kiệm#0|19,2,2,1,1,1
+Nguyễn Kiệm#0|2,2,2,1,1,1
+Nguyễn Kiệm#0|20,2,2,1,1,1
+Nguyễn Kiệm#0|21,2,2,1,1,1
+Nguyễn Kiệm#0|22,2,2,1,1,1
+Nguyễn Kiệm#0|23,2,2,1,1,1
+Nguyễn Kiệm#0|24,2,2,1,1,1
+Nguyễn Kiệm#0|25,2,2,1,1,1
+Nguyễn Kiệm#0|26,2,2,1,1,1
+Nguyễn Kiệm#0|27,2,2,1,1,1
+Nguyễn Kiệm#0|29,2,2,1,1,1
+Nguyễn Kiệm#0|3,1,1,1,1,1
+Nguyễn Kiệm#0|30,2,2,1,1,1
+Nguyễn Kiệm#0|31,2,2,1,1,1
+Nguyễn Kiệm#0|32,2,2,1,1,1
+Nguyễn Kiệm#0|33,2,2,1,1,1
+Nguyễn Kiệm#0|34,2,2,1,1,1
+Nguyễn Kiệm#0|35,2,2,1,1,1
+Nguyễn Kiệm#0|36,2,2,1,1,1
+Nguyễn Kiệm#0|37,2,2,1,1,1
+Nguyễn Kiệm#0|38,2,2,1,1,1
+Nguyễn Kiệm#0|39,2,2,1,1,1
+Nguyễn Kiệm#0|4,2,2,1,1,1
+Nguyễn Kiệm#0|40,2,2,1,1,1
+Nguyễn Kiệm#0|41,2,2,1,1,1
+Nguyễn Kiệm#0|42,1,1,1,1,1
+Nguyễn Kiệm#0|43,2,2,1,1,1
+Nguyễn Kiệm#0|44,2,2,1,1,1
+Nguyễn Kiệm#0|45,2,2,1,1,1
+Nguyễn Kiệm#0|46,2,2,1,1,1
+Nguyễn Kiệm#0|47,1,1,1,1,1
+Nguyễn Kiệm#0|48,2,2,1,1,1
+Nguyễn Kiệm#0|49,1,1,1,1,1
+Nguyễn Kiệm#0|5,2,2,1,1,1
+Nguyễn Kiệm#0|50,2,2,1,1,1
+Nguyễn Kiệm#0|51,2,2,1,1,1
+Nguyễn Kiệm#0|6,2,2,1,1,1
+Nguyễn Kiệm#0|7,2,2,1,1,1
+Nguyễn Kiệm#0|8,2,2,1,1,1
+Nguyễn Kiệm#0|9,2,2,1,1,1
+Nguyễn Thái Bình#0|1,1,1,1,1,1
+Nguyễn Thái Bình#0|10,1,1,1,1,1
+Nguyễn Thái Bình#0|11,2,2,1,1,1
+Nguyễn Thái Bình#0|12,1,1,1,1,1
+Nguyễn Thái Bình#0|13,1,1,1,1,1
+Nguyễn Thái Bình#0|14,1,1,1,1,1
+Nguyễn Thái Bình#0|15,1,1,1,1,1
+Nguyễn Thái Bình#0|16,1,1,1,1,1
+Nguyễn Thái Bình#0|17,1,1,1,1,1
+Nguyễn Thái Bình#0|18,2,2,1,1,1
+Nguyễn Thái Bình#0|19,2,2,1,1,1
+Nguyễn Thái Bình#0|2,2,2,1,1,1
+Nguyễn Thái Bình#0|21,1,1,1,1,1
+Nguyễn Thái Bình#0|22,1,1,1,1,1
+Nguyễn Thái Bình#0|24,1,1,1,1,1
+Nguyễn Thái Bình#0|25,2,2,1,1,2
+Nguyễn Thái Bình#0|27,1,1,1,1,1
+Nguyễn Thái Bình#0|28,1,1,1,1,1
+Nguyễn Thái Bình#0|3,1,1,1,1,1
+Nguyễn Thái Bình#0|30,2,2,1,1,1
+Nguyễn Thái Bình#0|31,2,2,1,1,2
+Nguyễn Thái Bình#0|32,1,1,1,1,1
+Nguyễn Thái Bình#0|33,2,2,1,1,1
+Nguyễn Thái Bình#0|36,1,1,1,1,1
+Nguyễn Thái Bình#0|37,1,1,1,1,1
+Nguyễn Thái Bình#0|5,1,1,1,1,1
+Nguyễn Thái Bình#0|7,1,1,1,1,1
+Nguyễn Thái Bình#0|9,1,1,1,1,1
+Nguyễn Thông|1,1,1,1,1,1
+Nguyễn Thông|10,1,1,1,1,1
+Nguyễn Thông|11,1,1,1,1,1
+Nguyễn Thông|16,1,1,1,1,1
+Nguyễn Thông|17,1,1,1,1,1
+Nguyễn Thông|18,1,1,1,1,1
+Nguyễn Thông|21,1,1,1,1,1
+Nguyễn Thông|22,1,1,1,1,1
+Nguyễn Thông|26,1,1,1,1,1
+Nguyễn Thông|28,1,1,1,1,1
+Nguyễn Thượng Hiền#0|0,2,2,1,1,1
+Nguyễn Thượng Hiền#0|1,1,1,1,1,1
+Nguyễn Thượng Hiền#0|10,1,1,1,1,1
+Nguyễn Thượng Hiền#0|11,1,1,1,1,1
+Nguyễn Thượng Hiền#0|12,2,2,1,1,1
+Nguyễn Thượng Hiền#0|13,1,1,1,1,1
+Nguyễn Thượng Hiền#0|15,2,2,1,1,1
+Nguyễn Thượng Hiền#0|16,1,1,1,1,1
+Nguyễn Thượng Hiền#0|17,1,1,1,1,1
+Nguyễn Thượng Hiền#0|19,1,1,1,1,1
+Nguyễn Thượng Hiền#0|24,1,1,1,1,1
+Nguyễn Thượng Hiền#0|25,1,1,1,1,1
+Nguyễn Thượng Hiền#0|26,1,1,1,1,1
+Nguyễn Thượng Hiền#0|27,2,2,1,1,1
+Nguyễn Thượng Hiền#0|29,1,1,1,1,1
+Nguyễn Thượng Hiền#0|3,2,2,1,1,1
+Nguyễn Thượng Hiền#0|30,1,1,1,1,1
+Nguyễn Thượng Hiền#0|33,2,2,1,1,2
+Nguyễn Thượng Hiền#0|34,2,2,1,1,1
+Nguyễn Thượng Hiền#0|35,1,1,1,1,1
+Nguyễn Thượng Hiền#0|36,1,1,1,1,1
+Nguyễn Thượng Hiền#0|37,1,1,1,1,1
+Nguyễn Thượng Hiền#0|39,1,1,1,1,1
+Nguyễn Thượng Hiền#0|4,2,2,1,1,1
+Nguyễn Thượng Hiền#0|40,1,1,1,1,1
+Nguyễn Thượng Hiền#0|41,2,2,1,1,1
+Nguyễn Thượng Hiền#0|42,1,1,1,1,1
+Nguyễn Thượng Hiền#0|44,2,2,1,1,2
+Nguyễn Thượng Hiền#0|46,1,1,1,1,1
+Nguyễn Thượng Hiền#0|48,1,1,1,1,1
+Nguyễn Thượng Hiền#0|49,1,1,1,1,1
+Nguyễn Thượng Hiền#0|5,2,2,1,1,1
+Nguyễn Thượng Hiền#0|6,2,2,1,1,1
+Nguyễn Thượng Hiền#0|8,1,1,1,1,1
+Nguyễn Thượng Hiền#0|9,1,1,1,1,1
+Nguyễn Thượng Hiền#1|11,2,2,1,1,1
+Nguyễn Thượng Hiền#1|12,1,1,1,1,1
+Nguyễn Thượng Hiền#1|13,2,2,1,1,1
+Nguyễn Thượng Hiền#1|14,2,2,1,1,1
+Nguyễn Thượng Hiền#1|15,1,1,1,1,1
+Nguyễn Thượng Hiền#1|17,2,2,1,1,2
+Nguyễn Thượng Hiền#1|18,1,1,1,1,1
+Nguyễn Thượng Hiền#1|19,1,1,1,1,1
+Nguyễn Thượng Hiền#1|2,1,1,1,1,1
+Nguyễn Thượng Hiền#1|20,2,2,1,1,2
+Nguyễn Thượng Hiền#1|22,2,2,1,1,2
+Nguyễn Thượng Hiền#1|23,1,1,1,1,1
+Nguyễn Thượng Hiền#1|25,2,2,1,1,1
+Nguyễn Thượng Hiền#1|26,2,2,1,1,1
+Nguyễn Thượng Hiền#1|27,2,2,1,1,1
+Nguyễn Thượng Hiền#1|3,1,1,1,1,1
+Nguyễn Thượng Hiền#1|4,1,1,1,1,1
+Nguyễn Thượng Hiền#1|7,1,1,1,1,1
+Nguyễn Thượng Hiền#1|8,1,1,1,1,1
+Nguyễn Thượng Hiền#1|9,2,2,1,1,1
+Nguyễn Thị Minh Khai|0,2,2,1,1,1
+Nguyễn Thị Minh Khai|1,2,2,1,1,1
+Nguyễn Thị Minh Khai|10,2,2,1,1,1
+Nguyễn Thị Minh Khai|100,2,2,1,1,1
+Nguyễn Thị Minh Khai|101,2,2,1,1,1
+Nguyễn Thị Minh Khai|102,2,2,1,1,1
+Nguyễn Thị Minh Khai|103,2,2,1,1,1
+Nguyễn Thị Minh Khai|104,2,2,1,1,1
+Nguyễn Thị Minh Khai|105,2,2,1,1,1
+Nguyễn Thị Minh Khai|106,2,2,1,1,1
+Nguyễn Thị Minh Khai|107,2,2,1,1,1
+Nguyễn Thị Minh Khai|108,2,2,1,1,1
+Nguyễn Thị Minh Khai|109,2,2,1,1,1
+Nguyễn Thị Minh Khai|11,2,2,1,1,1
+Nguyễn Thị Minh Khai|110,2,2,1,1,1
+Nguyễn Thị Minh Khai|111,2,2,1,1,1
+Nguyễn Thị Minh Khai|112,2,2,1,1,1
+Nguyễn Thị Minh Khai|113,2,2,1,1,1
+Nguyễn Thị Minh Khai|114,2,2,1,1,1
+Nguyễn Thị Minh Khai|115,2,2,1,1,1
+Nguyễn Thị Minh Khai|116,2,2,1,1,1
+Nguyễn Thị Minh Khai|117,2,2,1,1,1
+Nguyễn Thị Minh Khai|118,2,2,1,1,1
+Nguyễn Thị Minh Khai|119,2,2,1,1,1
+Nguyễn Thị Minh Khai|12,2,2,1,1,1
+Nguyễn Thị Minh Khai|120,2,2,1,1,1
+Nguyễn Thị Minh Khai|121,2,2,1,1,1
+Nguyễn Thị Minh Khai|122,2,2,1,1,1
+Nguyễn Thị Minh Khai|123,2,2,1,1,1
+Nguyễn Thị Minh Khai|124,2,2,1,1,1
+Nguyễn Thị Minh Khai|125,2,2,1,1,1
+Nguyễn Thị Minh Khai|126,2,2,1,1,1
+Nguyễn Thị Minh Khai|127,2,2,1,1,1
+Nguyễn Thị Minh Khai|128,2,2,1,1,1
+Nguyễn Thị Minh Khai|129,2,2,1,1,1
+Nguyễn Thị Minh Khai|13,2,2,1,1,1
+Nguyễn Thị Minh Khai|14,2,2,1,1,1
+Nguyễn Thị Minh Khai|15,2,2,1,1,1
+Nguyễn Thị Minh Khai|16,2,2,1,1,1
+Nguyễn Thị Minh Khai|17,2,2,1,1,1
+Nguyễn Thị Minh Khai|18,2,2,1,1,1
+Nguyễn Thị Minh Khai|19,2,2,1,1,1
+Nguyễn Thị Minh Khai|2,2,2,1,1,1
+Nguyễn Thị Minh Khai|20,2,2,1,1,1
+Nguyễn Thị Minh Khai|21,2,2,1,1,1
+Nguyễn Thị Minh Khai|22,2,2,1,1,1
+Nguyễn Thị Minh Khai|23,2,2,1,1,1
+Nguyễn Thị Minh Khai|24,2,2,1,1,1
+Nguyễn Thị Minh Khai|25,2,2,1,1,1
+Nguyễn Thị Minh Khai|27,2,2,1,1,1
+Nguyễn Thị Minh Khai|28,2,2,1,1,1
+Nguyễn Thị Minh Khai|29,2,2,1,1,1
+Nguyễn Thị Minh Khai|3,2,2,1,1,1
+Nguyễn Thị Minh Khai|30,2,2,1,1,1
+Nguyễn Thị Minh Khai|31,2,2,1,1,1
+Nguyễn Thị Minh Khai|32,2,2,1,1,1
+Nguyễn Thị Minh Khai|33,2,2,1,1,1
+Nguyễn Thị Minh Khai|34,2,2,1,1,1
+Nguyễn Thị Minh Khai|35,2,2,1,1,1
+Nguyễn Thị Minh Khai|36,2,2,1,1,1
+Nguyễn Thị Minh Khai|37,2,2,1,1,1
+Nguyễn Thị Minh Khai|38,2,2,1,1,1
+Nguyễn Thị Minh Khai|39,1,1,1,1,1
+Nguyễn Thị Minh Khai|4,2,2,1,1,1
+Nguyễn Thị Minh Khai|40,2,2,1,1,1
+Nguyễn Thị Minh Khai|41,2,2,1,1,1
+Nguyễn Thị Minh Khai|42,2,2,1,1,1
+Nguyễn Thị Minh Khai|43,2,2,1,1,1
+Nguyễn Thị Minh Khai|44,2,2,1,1,1
+Nguyễn Thị Minh Khai|45,2,2,1,1,1
+Nguyễn Thị Minh Khai|46,2,2,1,1,1
+Nguyễn Thị Minh Khai|47,2,2,1,1,1
+Nguyễn Thị Minh Khai|48,2,2,1,1,1
+Nguyễn Thị Minh Khai|49,2,2,1,1,1
+Nguyễn Thị Minh Khai|5,1,1,1,1,1
+Nguyễn Thị Minh Khai|50,2,2,1,1,1
+Nguyễn Thị Minh Khai|51,2,2,1,1,1
+Nguyễn Thị Minh Khai|52,2,2,1,1,1
+Nguyễn Thị Minh Khai|53,2,2,1,1,1
+Nguyễn Thị Minh Khai|54,2,2,1,1,1
+Nguyễn Thị Minh Khai|55,2,2,1,1,1
+Nguyễn Thị Minh Khai|56,2,2,1,1,1
+Nguyễn Thị Minh Khai|57,2,2,1,1,1
+Nguyễn Thị Minh Khai|58,2,2,1,1,1
+Nguyễn Thị Minh Khai|59,2,2,1,1,1
+Nguyễn Thị Minh Khai|6,2,2,1,1,1
+Nguyễn Thị Minh Khai|60,2,2,1,1,1
+Nguyễn Thị Minh Khai|61,2,2,1,1,1
+Nguyễn Thị Minh Khai|62,2,2,1,1,1
+Nguyễn Thị Minh Khai|63,1,1,1,1,1
+Nguyễn Thị Minh Khai|64,2,2,1,1,1
+Nguyễn Thị Minh Khai|65,2,2,1,1,1
+Nguyễn Thị Minh Khai|66,2,2,1,1,1
+Nguyễn Thị Minh Khai|67,1,1,1,1,1
+Nguyễn Thị Minh Khai|68,2,2,1,1,1
+Nguyễn Thị Minh Khai|69,2,2,1,1,1
+Nguyễn Thị Minh Khai|7,2,2,1,1,1
+Nguyễn Thị Minh Khai|70,2,2,1,1,1
+Nguyễn Thị Minh Khai|71,2,2,1,1,1
+Nguyễn Thị Minh Khai|72,2,2,1,1,1
+Nguyễn Thị Minh Khai|73,2,2,1,1,1
+Nguyễn Thị Minh Khai|74,2,2,1,1,1
+Nguyễn Thị Minh Khai|75,2,2,1,1,1
+Nguyễn Thị Minh Khai|76,2,2,1,1,1
+Nguyễn Thị Minh Khai|77,2,2,1,1,1
+Nguyễn Thị Minh Khai|78,2,2,1,1,1
+Nguyễn Thị Minh Khai|79,2,2,1,1,1
+Nguyễn Thị Minh Khai|8,2,2,1,1,1
+Nguyễn Thị Minh Khai|80,2,2,1,1,1
+Nguyễn Thị Minh Khai|81,2,2,1,1,1
+Nguyễn Thị Minh Khai|82,2,2,1,1,1
+Nguyễn Thị Minh Khai|83,2,2,1,1,1
+Nguyễn Thị Minh Khai|84,1,1,1,1,1
+Nguyễn Thị Minh Khai|85,2,2,1,1,1
+Nguyễn Thị Minh Khai|86,2,2,1,1,1
+Nguyễn Thị Minh Khai|87,2,2,1,1,1
+Nguyễn Thị Minh Khai|88,2,2,1,1,1
+Nguyễn Thị Minh Khai|89,2,2,1,1,1
+Nguyễn Thị Minh Khai|9,2,2,1,1,1
+Nguyễn Thị Minh Khai|90,2,2,1,1,1
+Nguyễn Thị Minh Khai|91,2,2,1,1,1
+Nguyễn Thị Minh Khai|92,2,2,1,1,1
+Nguyễn Thị Minh Khai|93,2,2,1,1,1
+Nguyễn Thị Minh Khai|94,2,2,1,1,1
+Nguyễn Thị Minh Khai|95,2,2,1,1,1
+Nguyễn Thị Minh Khai|96,2,2,1,1,1
+Nguyễn Thị Minh Khai|97,2,2,1,1,1
+Nguyễn Thị Minh Khai|98,2,2,1,1,1
+Nguyễn Thị Minh Khai|99,2,2,1,1,1
+Nguyễn Trãi|0,2,2,1,1,1
+Nguyễn Trãi|1,2,2,1,1,1
+Nguyễn Trãi|10,2,2,1,1,1
+Nguyễn Trãi|100,2,2,1,1,1
+Nguyễn Trãi|101,2,2,1,1,1
+Nguyễn Trãi|102,2,2,1,1,1
+Nguyễn Trãi|103,1,1,1,1,1
+Nguyễn Trãi|104,2,2,1,1,1
+Nguyễn Trãi|105,1,1,1,1,1
+Nguyễn Trãi|106,2,2,1,1,1
+Nguyễn Trãi|107,2,2,1,1,1
+Nguyễn Trãi|108,2,2,1,1,1
+Nguyễn Trãi|109,2,2,1,1,1
+Nguyễn Trãi|11,2,2,1,1,1
+Nguyễn Trãi|110,2,2,1,1,1
+Nguyễn Trãi|111,2,2,1,1,1
+Nguyễn Trãi|112,2,2,1,1,1
+Nguyễn Trãi|113,2,2,1,1,1
+Nguyễn Trãi|114,2,2,1,1,1
+Nguyễn Trãi|115,2,2,1,1,1
+Nguyễn Trãi|116,1,1,1,1,1
+Nguyễn Trãi|117,2,2,1,1,1
+Nguyễn Trãi|118,2,2,1,1,1
+Nguyễn Trãi|119,2,2,1,1,1
+Nguyễn Trãi|12,2,2,1,1,1
+Nguyễn Trãi|120,2,2,1,1,1
+Nguyễn Trãi|121,2,2,1,1,1
+Nguyễn Trãi|122,2,2,1,1,1
+Nguyễn Trãi|123,2,2,1,1,1
+Nguyễn Trãi|124,2,2,1,1,1
+Nguyễn Trãi|125,1,1,1,1,1
+Nguyễn Trãi|126,2,2,1,1,1
+Nguyễn Trãi|127,2,2,1,1,1
+Nguyễn Trãi|128,1,1,1,1,1
+Nguyễn Trãi|129,2,2,1,1,1
+Nguyễn Trãi|13,2,2,1,1,1
+Nguyễn Trãi|130,2,2,1,1,1
+Nguyễn Trãi|131,2,2,1,1,1
+Nguyễn Trãi|132,2,2,1,1,1
+Nguyễn Trãi|133,2,2,1,1,1
+Nguyễn Trãi|134,1,1,1,1,1
+Nguyễn Trãi|135,2,2,1,1,1
+Nguyễn Trãi|136,2,2,1,1,1
+Nguyễn Trãi|137,2,2,1,1,1
+Nguyễn Trãi|138,2,2,1,1,1
+Nguyễn Trãi|139,2,2,1,1,1
+Nguyễn Trãi|14,2,2,1,1,1
+Nguyễn Trãi|140,2,2,1,1,1
+Nguyễn Trãi|141,2,2,1,1,1
+Nguyễn Trãi|142,1,1,1,1,1
+Nguyễn Trãi|143,2,2,1,1,1
+Nguyễn Trãi|144,2,2,1,1,1
+Nguyễn Trãi|145,1,1,1,1,1
+Nguyễn Trãi|146,2,2,1,1,1
+Nguyễn Trãi|147,1,1,1,1,1
+Nguyễn Trãi|148,1,1,1,1,1
+Nguyễn Trãi|149,2,2,1,1,1
+Nguyễn Trãi|15,1,1,1,1,1
+Nguyễn Trãi|150,2,2,1,1,1
+Nguyễn Trãi|151,2,2,1,1,1
+Nguyễn Trãi|152,1,1,1,1,1
+Nguyễn Trãi|153,1,1,1,1,1
+Nguyễn Trãi|154,2,2,1,1,1
+Nguyễn Trãi|155,2,2,1,1,1
+Nguyễn Trãi|156,1,1,1,1,1
+Nguyễn Trãi|157,2,2,1,1,1
+Nguyễn Trãi|158,2,2,1,1,1
+Nguyễn Trãi|159,2,2,1,1,1
+Nguyễn Trãi|16,2,2,1,1,1
+Nguyễn Trãi|17,1,1,1,1,1
+Nguyễn Trãi|18,1,1,1,1,1
+Nguyễn Trãi|19,1,1,1,1,1
+Nguyễn Trãi|2,2,2,1,1,1
+Nguyễn Trãi|20,2,2,1,1,1
+Nguyễn Trãi|21,2,2,1,1,1
+Nguyễn Trãi|22,2,2,1,1,1
+Nguyễn Trãi|23,2,2,1,1,1
+Nguyễn Trãi|24,2,2,1,1,1
+Nguyễn Trãi|25,2,2,1,1,1
+Nguyễn Trãi|26,2,2,1,1,1
+Nguyễn Trãi|27,2,2,1,1,1
+Nguyễn Trãi|28,2,2,1,1,1
+Nguyễn Trãi|29,2,2,1,1,1
+Nguyễn Trãi|3,2,2,1,1,1
+Nguyễn Trãi|30,2,2,1,1,1
+Nguyễn Trãi|31,2,2,1,1,1
+Nguyễn Trãi|32,1,1,1,1,1
+Nguyễn Trãi|33,2,2,1,1,1
+Nguyễn Trãi|34,2,2,1,1,1
+Nguyễn Trãi|35,2,2,1,1,1
+Nguyễn Trãi|36,2,2,1,1,1
+Nguyễn Trãi|37,2,2,1,1,1
+Nguyễn Trãi|38,2,2,1,1,1
+Nguyễn Trãi|39,2,2,1,1,1
+Nguyễn Trãi|4,1,1,1,1,1
+Nguyễn Trãi|40,2,2,1,1,1
+Nguyễn Trãi|41,2,2,1,1,1
+Nguyễn Trãi|42,2,2,1,1,1
+Nguyễn Trãi|43,2,2,1,1,1
+Nguyễn Trãi|44,2,2,1,1,1
+Nguyễn Trãi|45,2,2,1,1,1
+Nguyễn Trãi|46,2,2,1,1,1
+Nguyễn Trãi|47,2,2,1,1,1
+Nguyễn Trãi|48,2,2,1,1,1
+Nguyễn Trãi|49,1,1,1,1,1
+Nguyễn Trãi|5,2,2,1,1,1
+Nguyễn Trãi|50,2,2,1,1,1
+Nguyễn Trãi|51,1,1,1,1,1
+Nguyễn Trãi|52,2,2,1,1,1
+Nguyễn Trãi|53,2,2,1,1,1
+Nguyễn Trãi|54,2,2,1,1,1
+Nguyễn Trãi|55,2,2,1,1,1
+Nguyễn Trãi|56,1,1,1,1,1
+Nguyễn Trãi|57,2,2,1,1,1
+Nguyễn Trãi|58,2,2,1,1,1
+Nguyễn Trãi|59,2,2,1,1,1
+Nguyễn Trãi|6,1,1,1,1,1
+Nguyễn Trãi|60,1,1,1,1,1
+Nguyễn Trãi|61,2,2,1,1,1
+Nguyễn Trãi|62,2,2,1,1,1
+Nguyễn Trãi|63,2,2,1,1,1
+Nguyễn Trãi|64,2,2,1,1,1
+Nguyễn Trãi|65,2,2,1,1,1
+Nguyễn Trãi|66,1,1,1,1,1
+Nguyễn Trãi|67,2,2,1,1,1
+Nguyễn Trãi|68,2,2,1,1,1
+Nguyễn Trãi|69,2,2,1,1,1
+Nguyễn Trãi|7,2,2,1,1,1
+Nguyễn Trãi|70,2,2,1,1,1
+Nguyễn Trãi|71,2,2,1,1,1
+Nguyễn Trãi|72,2,2,1,1,1
+Nguyễn Trãi|73,2,2,1,1,1
+Nguyễn Trãi|74,1,1,1,1,1
+Nguyễn Trãi|75,2,2,1,1,1
+Nguyễn Trãi|76,2,2,1,1,1
+Nguyễn Trãi|77,2,2,1,1,1
+Nguyễn Trãi|78,2,2,1,1,1
+Nguyễn Trãi|79,1,1,1,1,1
+Nguyễn Trãi|8,2,2,1,1,1
+Nguyễn Trãi|80,2,2,1,1,1
+Nguyễn Trãi|81,2,2,1,1,1
+Nguyễn Trãi|82,2,2,1,1,1
+Nguyễn Trãi|83,2,2,1,1,1
+Nguyễn Trãi|84,2,2,1,1,1
+Nguyễn Trãi|85,2,2,1,1,1
+Nguyễn Trãi|86,2,2,1,1,1
+Nguyễn Trãi|87,2,2,1,1,1
+Nguyễn Trãi|88,1,1,1,1,1
+Nguyễn Trãi|89,1,1,1,1,1
+Nguyễn Trãi|9,2,2,1,1,1
+Nguyễn Trãi|90,2,2,1,1,1
+Nguyễn Trãi|91,2,2,1,1,1
+Nguyễn Trãi|92,2,2,1,1,1
+Nguyễn Trãi|93,2,2,1,1,1
+Nguyễn Trãi|94,2,2,1,1,1
+Nguyễn Trãi|95,2,2,1,1,1
+Nguyễn Trãi|96,2,2,1,1,1
+Nguyễn Trãi|97,1,1,1,1,1
+Nguyễn Trãi|98,2,2,1,1,1
+Nguyễn Trãi|99,2,2,1,1,1
+Nguyễn Trọng Tuyển|13,1,1,1,1,1
+Nguyễn Trọng Tuyển|14,1,1,1,1,1
+Nguyễn Trọng Tuyển|15,1,1,1,1,1
+Nguyễn Trọng Tuyển|16,1,1,1,1,1
+Nguyễn Trọng Tuyển|17,1,1,1,1,1
+Nguyễn Trọng Tuyển|18,1,1,1,1,1
+Nguyễn Trọng Tuyển|19,1,1,1,1,1
+Nguyễn Trọng Tuyển|2,1,1,1,1,1
+Nguyễn Trọng Tuyển|20,2,2,1,1,2
+Nguyễn Trọng Tuyển|26,2,2,1,1,2
+Nguyễn Trọng Tuyển|28,1,1,1,1,1
+Nguyễn Trọng Tuyển|29,1,1,1,1,1
+Nguyễn Trọng Tuyển|3,1,1,1,1,1
+Nguyễn Trọng Tuyển|31,1,1,1,1,1
+Nguyễn Trọng Tuyển|32,1,1,1,1,1
+Nguyễn Trọng Tuyển|33,1,1,1,1,1
+Nguyễn Trọng Tuyển|37,1,1,1,1,1
+Nguyễn Trọng Tuyển|39,1,1,1,1,1
+Nguyễn Trọng Tuyển|4,2,2,1,1,2
+Nguyễn Trọng Tuyển|41,1,1,1,1,1
+Nguyễn Trọng Tuyển|43,1,1,1,1,1
+Nguyễn Trọng Tuyển|45,2,2,1,1,1
+Nguyễn Trọng Tuyển|46,1,1,1,1,1
+Nguyễn Trọng Tuyển|47,1,1,1,1,1
+Nguyễn Trọng Tuyển|49,1,1,1,1,1
+Nguyễn Trọng Tuyển|5,1,1,1,1,1
+Nguyễn Trọng Tuyển|50,1,1,1,1,1
+Nguyễn Trọng Tuyển|7,1,1,1,1,1
+Nguyễn Trọng Tuyển|8,1,1,1,1,1
+Nguyễn Văn Đậu|11,1,1,1,1,1
+Nguyễn Văn Đậu|14,1,1,1,1,1
+Nguyễn Văn Đậu|16,1,1,1,1,1
+Nguyễn Văn Đậu|19,1,1,1,1,1
+Nguyễn Văn Đậu|20,1,1,1,1,1
+Nguyễn Văn Đậu|23,1,1,1,1,1
+Nguyễn Văn Đậu|24,1,1,1,1,1
+Nguyễn Văn Đậu|28,1,1,1,1,1
+Nguyễn Văn Đậu|3,1,1,1,1,1
+Nguyễn Văn Đậu|35,1,1,1,1,1
+Nguyễn Văn Đậu|36,1,1,1,1,1
+Nguyễn Văn Đậu|37,1,1,1,1,1
+Nguyễn Văn Đậu|41,1,1,1,1,1
+Nguyễn Văn Đậu|42,1,1,1,1,1
+Nguyễn Văn Đậu|46,1,1,1,1,1
+Nguyễn Văn Đậu|48,1,1,1,1,1
+Nguyễn Văn Đậu|49,1,1,1,1,1
+Nguyễn Văn Đậu|5,1,1,1,1,1
+Nguyễn Văn Đậu|7,1,1,1,1,1
+Nguyễn Văn Đậu|8,1,1,1,1,1
+Nguyễn Văn Đậu|9,1,1,1,1,1
+Nguyễn Đình Chiểu#0|0,2,2,1,1,1
+Nguyễn Đình Chiểu#0|1,2,2,1,1,1
+Nguyễn Đình Chiểu#0|10,2,2,1,1,1
+Nguyễn Đình Chiểu#0|100,2,2,1,1,1
+Nguyễn Đình Chiểu#0|101,2,2,1,1,1
+Nguyễn Đình Chiểu#0|102,2,2,1,1,1
+Nguyễn Đình Chiểu#0|103,2,2,1,1,1
+Nguyễn Đình Chiểu#0|104,1,1,1,1,1
+Nguyễn Đình Chiểu#0|105,2,2,1,1,1
+Nguyễn Đình Chiểu#0|106,2,2,1,1,1
+Nguyễn Đình Chiểu#0|107,2,2,1,1,1
+Nguyễn Đình Chiểu#0|108,2,2,1,1,1
+Nguyễn Đình Chiểu#0|109,2,2,1,1,1
+Nguyễn Đình Chiểu#0|11,2,2,1,1,1
+Nguyễn Đình Chiểu#0|110,2,2,1,1,1
+Nguyễn Đình Chiểu#0|111,2,2,1,1,1
+Nguyễn Đình Chiểu#0|112,2,2,1,1,1
+Nguyễn Đình Chiểu#0|113,2,2,1,1,1
+Nguyễn Đình Chiểu#0|114,2,2,1,1,1
+Nguyễn Đình Chiểu#0|115,2,2,1,1,1
+Nguyễn Đình Chiểu#0|116,2,2,1,1,1
+Nguyễn Đình Chiểu#0|12,2,2,1,1,1
+Nguyễn Đình Chiểu#0|13,2,2,1,1,1
+Nguyễn Đình Chiểu#0|14,2,2,1,1,1
+Nguyễn Đình Chiểu#0|15,2,2,1,1,1
+Nguyễn Đình Chiểu#0|16,2,2,1,1,1
+Nguyễn Đình Chiểu#0|17,2,2,1,1,1
+Nguyễn Đình Chiểu#0|18,2,2,1,1,1
+Nguyễn Đình Chiểu#0|19,2,2,1,1,1
+Nguyễn Đình Chiểu#0|2,2,2,1,1,1
+Nguyễn Đình Chiểu#0|20,2,2,1,1,1
+Nguyễn Đình Chiểu#0|21,2,2,1,1,1
+Nguyễn Đình Chiểu#0|22,2,2,1,1,1
+Nguyễn Đình Chiểu#0|23,2,2,1,1,1
+Nguyễn Đình Chiểu#0|24,2,2,1,1,1
+Nguyễn Đình Chiểu#0|25,2,2,1,1,1
+Nguyễn Đình Chiểu#0|26,2,2,1,1,1
+Nguyễn Đình Chiểu#0|27,2,2,1,1,1
+Nguyễn Đình Chiểu#0|28,2,2,1,1,1
+Nguyễn Đình Chiểu#0|29,2,2,1,1,1
+Nguyễn Đình Chiểu#0|3,2,2,1,1,1
+Nguyễn Đình Chiểu#0|30,2,2,1,1,1
+Nguyễn Đình Chiểu#0|31,2,2,1,1,1
+Nguyễn Đình Chiểu#0|32,2,2,1,1,1
+Nguyễn Đình Chiểu#0|33,2,2,1,1,1
+Nguyễn Đình Chiểu#0|34,2,2,1,1,1
+Nguyễn Đình Chiểu#0|35,2,2,1,1,1
+Nguyễn Đình Chiểu#0|36,2,2,1,1,1
+Nguyễn Đình Chiểu#0|37,2,2,1,1,1
+Nguyễn Đình Chiểu#0|38,2,2,1,1,1
+Nguyễn Đình Chiểu#0|39,2,2,1,1,1
+Nguyễn Đình Chiểu#0|4,2,2,1,1,1
+Nguyễn Đình Chiểu#0|40,2,2,1,1,1
+Nguyễn Đình Chiểu#0|41,2,2,1,1,1
+Nguyễn Đình Chiểu#0|42,2,2,1,1,1
+Nguyễn Đình Chiểu#0|43,2,2,1,1,1
+Nguyễn Đình Chiểu#0|44,2,2,1,1,1
+Nguyễn Đình Chiểu#0|45,2,2,1,1,1
+Nguyễn Đình Chiểu#0|46,2,2,1,1,1
+Nguyễn Đình Chiểu#0|47,2,2,1,1,1
+Nguyễn Đình Chiểu#0|48,2,2,1,1,1
+Nguyễn Đình Chiểu#0|49,2,2,1,1,1
+Nguyễn Đình Chiểu#0|5,2,2,1,1,1
+Nguyễn Đình Chiểu#0|50,2,2,1,1,1
+Nguyễn Đình Chiểu#0|51,2,2,1,1,1
+Nguyễn Đình Chiểu#0|52,2,2,1,1,1
+Nguyễn Đình Chiểu#0|53,2,2,1,1,1
+Nguyễn Đình Chiểu#0|54,2,2,1,1,1
+Nguyễn Đình Chiểu#0|55,2,2,1,1,1
+Nguyễn Đình Chiểu#0|56,2,2,1,1,1
+Nguyễn Đình Chiểu#0|57,2,2,1,1,1
+Nguyễn Đình Chiểu#0|58,2,2,1,1,1
+Nguyễn Đình Chiểu#0|59,2,2,1,1,1
+Nguyễn Đình Chiểu#0|6,2,2,1,1,1
+Nguyễn Đình Chiểu#0|60,2,2,1,1,1
+Nguyễn Đình Chiểu#0|61,2,2,1,1,1
+Nguyễn Đình Chiểu#0|62,2,2,1,1,1
+Nguyễn Đình Chiểu#0|63,2,2,1,1,1
+Nguyễn Đình Chiểu#0|64,2,2,1,1,1
+Nguyễn Đình Chiểu#0|65,2,2,1,1,1
+Nguyễn Đình Chiểu#0|66,2,2,1,1,1
+Nguyễn Đình Chiểu#0|67,2,2,1,1,1
+Nguyễn Đình Chiểu#0|68,2,2,1,1,1
+Nguyễn Đình Chiểu#0|69,2,2,1,1,1
+Nguyễn Đình Chiểu#0|7,2,2,1,1,1
+Nguyễn Đình Chiểu#0|70,2,2,1,1,1
+Nguyễn Đình Chiểu#0|71,2,2,1,1,1
+Nguyễn Đình Chiểu#0|72,1,1,1,1,1
+Nguyễn Đình Chiểu#0|73,2,2,1,1,1
+Nguyễn Đình Chiểu#0|74,2,2,1,1,1
+Nguyễn Đình Chiểu#0|75,2,2,1,1,1
+Nguyễn Đình Chiểu#0|76,2,2,1,1,1
+Nguyễn Đình Chiểu#0|77,2,2,1,1,1
+Nguyễn Đình Chiểu#0|78,2,2,1,1,1
+Nguyễn Đình Chiểu#0|79,2,2,1,1,1
+Nguyễn Đình Chiểu#0|8,2,2,1,1,1
+Nguyễn Đình Chiểu#0|80,2,2,1,1,1
+Nguyễn Đình Chiểu#0|81,2,2,1,1,1
+Nguyễn Đình Chiểu#0|82,2,2,1,1,1
+Nguyễn Đình Chiểu#0|83,2,2,1,1,1
+Nguyễn Đình Chiểu#0|84,2,2,1,1,1
+Nguyễn Đình Chiểu#0|85,2,2,1,1,1
+Nguyễn Đình Chiểu#0|86,2,2,1,1,1
+Nguyễn Đình Chiểu#0|87,2,2,1,1,1
+Nguyễn Đình Chiểu#0|88,2,2,1,1,1
+Nguyễn Đình Chiểu#0|89,2,2,1,1,1
+Nguyễn Đình Chiểu#0|9,2,2,1,1,1
+Nguyễn Đình Chiểu#0|90,2,2,1,1,1
+Nguyễn Đình Chiểu#0|91,2,2,1,1,1
+Nguyễn Đình Chiểu#0|92,2,2,1,1,1
+Nguyễn Đình Chiểu#0|93,2,2,1,1,1
+Nguyễn Đình Chiểu#0|94,2,2,1,1,1
+Nguyễn Đình Chiểu#0|95,2,2,1,1,1
+Nguyễn Đình Chiểu#0|96,2,2,1,1,1
+Nguyễn Đình Chiểu#0|97,2,2,1,1,1
+Nguyễn Đình Chiểu#0|98,2,2,1,1,1
+Nguyễn Đình Chiểu#0|99,2,2,1,1,1
+Ngô Gia Tự#1|12,1,1,1,1,1
+Ngô Gia Tự#1|15,1,1,1,1,1
+Ngô Gia Tự#1|16,2,2,1,1,1
+Ngô Gia Tự#1|2,1,1,1,1,1
+Ngô Gia Tự#1|20,1,1,1,1,1
+Ngô Gia Tự#1|25,1,1,1,1,1
+Ngô Gia Tự#1|27,1,1,1,1,1
+Ngô Gia Tự#1|4,1,1,1,1,1
+Ngô Gia Tự#1|6,1,1,1,1,1
+Ngô Gia Tự#1|7,1,1,1,1,1
+Ngô Quyền|11,1,1,1,1,1
+Ngô Quyền|12,2,2,1,1,1
+Ngô Quyền|15,2,2,1,1,1
+Ngô Quyền|18,1,1,1,1,1
+Ngô Quyền|19,1,1,1,1,1
+Ngô Quyền|20,2,2,1,1,1
+Ngô Quyền|22,1,1,1,1,1
+Ngô Quyền|26,1,1,1,1,1
+Ngô Quyền|29,1,1,1,1,1
+Ngô Quyền|3,2,2,1,1,1
+Ngô Quyền|30,1,1,1,1,1
+Ngô Quyền|32,1,1,1,1,1
+Ngô Quyền|33,1,1,1,1,1
+Ngô Quyền|34,1,1,1,1,1
+Ngô Quyền|36,1,1,1,1,1
+Ngô Quyền|38,1,1,1,1,1
+Ngô Quyền|39,2,2,1,1,1
+Ngô Quyền|4,1,1,1,1,1
+Ngô Quyền|40,1,1,1,1,1
+Ngô Quyền|41,2,2,1,1,2
+Ngô Quyền|42,2,2,1,1,2
+Ngô Quyền|43,1,1,1,1,1
+Ngô Quyền|44,1,1,1,1,1
+Ngô Quyền|46,2,2,1,1,2
+Ngô Quyền|47,1,1,1,1,1
+Ngô Quyền|49,1,1,1,1,1
+Ngô Quyền|8,1,1,1,1,1
+Ngô Quyền|9,1,1,1,1,1
+Nhánh Cầu Tân Thuận 2|12,1,1,1,1,1
+Nhánh Cầu Tân Thuận 2|13,1,1,1,1,1
+Nhánh Cầu Tân Thuận 2|15,1,1,1,1,1
+Nhánh Cầu Tân Thuận 2|2,1,1,1,1,1
+Nhánh Cầu Tân Thuận 2|20,1,1,1,1,1
+Nhánh Cầu Tân Thuận 2|8,1,1,1,1,1
+Nhật Tảo|0,2,2,1,1,1
+Nhật Tảo|10,1,1,1,1,1
+Nhật Tảo|11,1,1,1,1,1
+Nhật Tảo|12,1,1,1,1,1
+Nhật Tảo|13,1,1,1,1,1
+Nhật Tảo|14,2,2,1,1,1
+Nhật Tảo|15,1,1,1,1,1
+Nhật Tảo|17,2,2,1,1,1
+Nhật Tảo|19,1,1,1,1,1
+Nhật Tảo|20,1,1,1,1,1
+Nhật Tảo|22,1,1,1,1,1
+Nhật Tảo|23,2,2,1,1,2
+Nhật Tảo|24,1,1,1,1,1
+Nhật Tảo|25,2,2,1,1,1
+Nhật Tảo|26,1,1,1,1,1
+Nhật Tảo|29,2,2,1,1,1
+Nhật Tảo|32,1,1,1,1,1
+Nhật Tảo|33,1,1,1,1,1
+Nhật Tảo|38,1,1,1,1,1
+Nhật Tảo|39,2,2,1,1,2
+Nhật Tảo|4,2,2,1,1,1
+Nhật Tảo|40,1,1,1,1,1
+Nhật Tảo|41,1,1,1,1,1
+Nhật Tảo|5,2,2,1,1,1
+Nhật Tảo|6,1,1,1,1,1
+Nhật Tảo|7,1,1,1,1,1
+Nhật Tảo|8,1,1,1,1,1
+Nhật Tảo|9,1,1,1,1,1
+Nơ Trang Long|0,2,2,1,1,1
+Nơ Trang Long|1,2,2,1,1,1
+Nơ Trang Long|10,2,2,1,1,1
+Nơ Trang Long|11,2,2,1,1,1
+Nơ Trang Long|12,2,2,1,1,1
+Nơ Trang Long|13,2,2,1,1,1
+Nơ Trang Long|14,2,2,1,1,1
+Nơ Trang Long|15,2,2,1,1,1
+Nơ Trang Long|16,2,2,1,1,1
+Nơ Trang Long|17,2,2,1,1,1
+Nơ Trang Long|18,2,2,1,1,1
+Nơ Trang Long|19,2,2,1,1,1
+Nơ Trang Long|2,2,2,1,1,1
+Nơ Trang Long|20,2,2,1,1,1
+Nơ Trang Long|21,2,2,1,1,1
+Nơ Trang Long|22,2,2,1,1,1
+Nơ Trang Long|23,2,2,1,1,1
+Nơ Trang Long|24,2,2,1,1,1
+Nơ Trang Long|25,2,2,1,1,1
+Nơ Trang Long|26,2,2,1,1,1
+Nơ Trang Long|27,2,2,1,1,1
+Nơ Trang Long|28,2,2,1,1,1
+Nơ Trang Long|29,2,2,1,1,1
+Nơ Trang Long|3,2,2,1,1,1
+Nơ Trang Long|30,2,2,1,1,1
+Nơ Trang Long|31,2,2,1,1,1
+Nơ Trang Long|32,2,2,1,1,1
+Nơ Trang Long|33,2,2,1,1,1
+Nơ Trang Long|34,1,1,1,1,1
+Nơ Trang Long|35,2,2,1,1,1
+Nơ Trang Long|36,2,2,1,1,1
+Nơ Trang Long|37,2,2,1,1,1
+Nơ Trang Long|38,2,2,1,1,1
+Nơ Trang Long|39,2,2,1,1,1
+Nơ Trang Long|4,2,2,1,1,1
+Nơ Trang Long|40,2,2,1,1,1
+Nơ Trang Long|41,2,2,1,1,1
+Nơ Trang Long|42,2,2,1,1,1
+Nơ Trang Long|43,2,2,1,1,1
+Nơ Trang Long|44,2,2,1,1,1
+Nơ Trang Long|45,1,1,1,1,1
+Nơ Trang Long|46,2,2,1,1,1
+Nơ Trang Long|47,2,2,1,1,1
+Nơ Trang Long|5,2,2,1,1,1
+Nơ Trang Long|6,2,2,1,1,1
+Nơ Trang Long|7,2,2,1,1,1
+Nơ Trang Long|8,2,2,1,1,1
+Nơ Trang Long|9,2,2,1,1,1
+Pasteur|1,2,2,1,1,1
+Pasteur|11,2,2,1,1,1
+Pasteur|12,2,2,1,1,1
+Pasteur|14,2,2,1,1,1
+Pasteur|15,2,2,1,1,1
+Pasteur|16,2,2,1,1,1
+Pasteur|18,2,2,1,1,1
+Pasteur|2,2,2,1,1,1
+Pasteur|21,2,2,1,1,1
+Pasteur|23,2,2,1,1,1
+Pasteur|24,1,1,1,1,1
+Pasteur|26,2,2,1,1,1
+Pasteur|28,2,2,1,1,1
+Pasteur|29,2,2,1,1,1
+Pasteur|32,2,2,1,1,1
+Pasteur|33,2,2,1,1,1
+Pasteur|34,2,2,1,1,1
+Pasteur|37,2,2,1,1,1
+Pasteur|38,2,2,1,1,1
+Pasteur|40,2,2,1,1,1
+Pasteur|45,2,2,1,1,1
+Pasteur|48,2,2,1,1,1
+Pasteur|49,2,2,1,1,1
+Pasteur|50,2,2,1,1,1
+Pasteur|51,2,2,1,1,1
+Pasteur|52,2,2,1,1,1
+Pasteur|54,2,2,1,1,1
+Pasteur|55,2,2,1,1,1
+Pasteur|56,2,2,1,1,1
+Pasteur|58,2,2,1,1,1
+Pasteur|59,2,2,1,1,1
+Pasteur|63,2,2,1,1,1
+Pasteur|64,1,1,1,1,1
+Pasteur|65,2,2,1,1,1
+Pasteur|68,1,1,1,1,1
+Pasteur|69,2,2,1,1,1
+Pasteur|7,2,2,1,1,1
+Pasteur|71,2,2,1,1,1
+Pasteur|73,2,2,1,1,1
+Pasteur|75,2,2,1,1,1
+Pasteur|78,2,2,1,1,1
+Pasteur|8,2,2,1,1,1
+Pasteur|80,2,2,1,1,1
+Pasteur|81,1,1,1,1,1
+Pasteur|83,2,2,1,1,1
+Phan Văn Hân|0,1,1,1,1,1
+Phan Văn Hân|1,1,1,1,1,1
+Phan Văn Hân|11,1,1,1,1,1
+Phan Văn Hân|13,1,1,1,1,1
+Phan Văn Hân|15,1,1,1,1,1
+Phan Văn Hân|16,1,1,1,1,1
+Phan Văn Hân|18,2,2,1,1,1
+Phan Văn Hân|19,1,1,1,1,1
+Phan Văn Hân|2,1,1,1,1,1
+Phan Văn Hân|20,1,1,1,1,1
+Phan Văn Hân|21,1,1,1,1,1
+Phan Văn Hân|23,1,1,1,1,1
+Phan Văn Hân|24,1,1,1,1,1
+Phan Văn Hân|3,1,1,1,1,1
+Phan Văn Hân|4,1,1,1,1,1
+Phan Văn Hân|5,1,1,1,1,1
+Phan Văn Hân|7,1,1,1,1,1
+Phan Văn Hân|8,2,2,1,1,1
+Phan Văn Trị#0|1,1,1,1,1,1
+Phan Văn Trị#0|13,1,1,1,1,1
+Phan Văn Trị#0|19,1,1,1,1,1
+Phan Văn Trị#0|22,1,1,1,1,1
+Phan Văn Trị#0|23,1,1,1,1,1
+Phan Văn Trị#0|24,1,1,1,1,1
+Phan Văn Trị#0|25,1,1,1,1,1
+Phan Văn Trị#0|26,1,1,1,1,1
+Phan Văn Trị#0|27,2,2,1,1,1
+Phan Văn Trị#0|3,2,2,1,1,1
+Phan Văn Trị#0|30,2,2,1,1,1
+Phan Văn Trị#0|31,2,2,1,1,1
+Phan Văn Trị#0|4,2,2,1,1,1
+Phan Văn Trị#0|7,1,1,1,1,1
+Phan Văn Trị#0|8,1,1,1,1,1
+Phan Văn Trị#0|9,2,2,1,1,1
+Phan Xích Long|0,1,1,1,1,1
+Phan Xích Long|1,1,1,1,1,1
+Phan Xích Long|12,1,1,1,1,1
+Phan Xích Long|13,1,1,1,1,1
+Phan Xích Long|16,1,1,1,1,1
+Phan Xích Long|18,1,1,1,1,1
+Phan Xích Long|20,2,2,1,1,2
+Phan Xích Long|21,1,1,1,1,1
+Phan Xích Long|23,1,1,1,1,1
+Phan Xích Long|25,1,1,1,1,1
+Phan Xích Long|26,1,1,1,1,1
+Phan Xích Long|28,1,1,1,1,1
+Phan Xích Long|32,1,1,1,1,1
+Phan Xích Long|37,1,1,1,1,1
+Phan Xích Long|39,1,1,1,1,1
+Phan Xích Long|4,1,1,1,1,1
+Phan Xích Long|40,1,1,1,1,1
+Phan Xích Long|42,1,1,1,1,1
+Phan Xích Long|44,1,1,1,1,1
+Phan Xích Long|47,1,1,1,1,1
+Phan Xích Long|5,1,1,1,1,1
+Phan Xích Long|50,1,1,1,1,1
+Phan Xích Long|51,1,1,1,1,1
+Phan Xích Long|52,1,1,1,1,1
+Phan Xích Long|53,2,2,1,1,1
+Phan Xích Long|55,1,1,1,1,1
+Phan Xích Long|56,2,2,1,1,1
+Phan Xích Long|58,2,2,1,1,2
+Phan Xích Long|59,1,1,1,1,1
+Phan Xích Long|60,1,1,1,1,1
+Phan Xích Long|62,1,1,1,1,1
+Phan Xích Long|63,1,1,1,1,1
+Phan Xích Long|64,1,1,1,1,1
+Phan Xích Long|66,1,1,1,1,1
+Phan Xích Long|67,1,1,1,1,1
+Phan Xích Long|9,2,2,1,1,1
+Phan Đình Phùng|0,2,2,1,1,1
+Phan Đình Phùng|1,1,1,1,1,1
+Phan Đình Phùng|13,1,1,1,1,1
+Phan Đình Phùng|14,1,1,1,1,1
+Phan Đình Phùng|15,2,2,1,1,2
+Phan Đình Phùng|17,1,1,1,1,1
+Phan Đình Phùng|18,1,1,1,1,1
+Phan Đình Phùng|19,1,1,1,1,1
+Phan Đình Phùng|2,1,1,1,1,1
+Phan Đình Phùng|21,2,2,1,1,1
+Phan Đình Phùng|22,1,1,1,1,1
+Phan Đình Phùng|23,1,1,1,1,1
+Phan Đình Phùng|26,1,1,1,1,1
+Phan Đình Phùng|3,1,1,1,1,1
+Phan Đình Phùng|31,2,2,1,1,1
+Phan Đình Phùng|32,1,1,1,1,1
+Phan Đình Phùng|4,1,1,1,1,1
+Phan Đình Phùng|5,1,1,1,1,1
+Phan Đình Phùng|6,1,1,1,1,1
+Phan Đình Phùng|7,1,1,1,1,1
+Phan Đình Phùng|8,1,1,1,1,1
+Phan Đăng Lưu|10,2,2,1,1,1
+Phan Đăng Lưu|11,2,2,1,1,1
+Phan Đăng Lưu|12,2,2,1,1,1
+Phan Đăng Lưu|13,1,1,1,1,1
+Phan Đăng Lưu|15,2,2,1,1,1
+Phan Đăng Lưu|16,1,1,1,1,1
+Phan Đăng Lưu|17,2,2,1,1,1
+Phan Đăng Lưu|19,1,1,1,1,1
+Phan Đăng Lưu|2,2,2,1,1,1
+Phan Đăng Lưu|21,2,2,1,1,1
+Phan Đăng Lưu|23,2,2,1,1,1
+Phan Đăng Lưu|24,2,2,1,1,1
+Phan Đăng Lưu|25,2,2,1,1,1
+Phan Đăng Lưu|27,2,2,1,1,1
+Phan Đăng Lưu|28,2,2,1,1,1
+Phan Đăng Lưu|30,2,2,1,1,1
+Phan Đăng Lưu|31,2,2,1,1,1
+Phan Đăng Lưu|32,2,2,1,1,1
+Phan Đăng Lưu|33,2,2,1,1,1
+Phan Đăng Lưu|37,2,2,1,1,1
+Phan Đăng Lưu|38,2,2,1,1,1
+Phan Đăng Lưu|4,2,2,1,1,1
+Phan Đăng Lưu|41,2,2,1,1,1
+Phan Đăng Lưu|42,2,2,1,1,1
+Phan Đăng Lưu|43,2,2,1,1,1
+Phan Đăng Lưu|45,2,2,1,1,1
+Phan Đăng Lưu|47,2,2,1,1,1
+Phan Đăng Lưu|48,2,2,1,1,1
+Phan Đăng Lưu|49,2,2,1,1,1
+Phan Đăng Lưu|5,2,2,1,1,1
+Phan Đăng Lưu|50,2,2,1,1,1
+Phan Đăng Lưu|51,2,2,1,1,1
+Phan Đăng Lưu|52,2,2,1,1,1
+Phan Đăng Lưu|54,2,2,1,1,1
+Phan Đăng Lưu|55,2,2,1,1,1
+Phan Đăng Lưu|56,2,2,1,1,1
+Phan Đăng Lưu|58,2,2,1,1,1
+Phan Đăng Lưu|59,2,2,1,1,1
+Phan Đăng Lưu|61,2,2,1,1,1
+Phan Đăng Lưu|62,2,2,1,1,1
+Phan Đăng Lưu|65,2,2,1,1,1
+Phan Đăng Lưu|66,2,2,1,1,1
+Phan Đăng Lưu|67,1,1,1,1,1
+Phan Đăng Lưu|69,2,2,1,1,1
+Phan Đăng Lưu|70,2,2,1,1,1
+Phan Đăng Lưu|71,2,2,1,1,1
+Phan Đăng Lưu|72,2,2,1,1,1
+Phan Đăng Lưu|73,2,2,1,1,1
+Phan Đăng Lưu|74,2,2,1,1,1
+Phan Đăng Lưu|75,2,2,1,1,1
+Phan Đăng Lưu|76,1,1,1,1,1
+Phan Đăng Lưu|79,2,2,1,1,1
+Phan Đăng Lưu|80,2,2,1,1,1
+Phan Đăng Lưu|81,1,1,1,1,1
+Phan Đăng Lưu|82,1,1,1,1,1
+Phan Đăng Lưu|9,2,2,1,1,1
+Phạm Hữu Chí#0|10,1,1,1,1,1
+Phạm Hữu Chí#0|11,1,1,1,1,1
+Phạm Hữu Chí#0|13,1,1,1,1,1
+Phạm Hữu Chí#0|14,1,1,1,1,1
+Phạm Hữu Chí#0|16,1,1,1,1,1
+Phạm Hữu Chí#0|17,1,1,1,1,1
+Phạm Hữu Chí#0|18,1,1,1,1,1
+Phạm Hữu Chí#0|19,1,1,1,1,1
+Phạm Hữu Chí#0|2,1,1,1,1,1
+Phạm Hữu Chí#0|21,1,1,1,1,1
+Phạm Hữu Chí#0|3,1,1,1,1,1
+Phạm Hữu Chí#0|5,1,1,1,1,1
+Phạm Hữu Chí#0|6,1,1,1,1,1
+Phạm Hữu Chí#0|8,1,1,1,1,1
+Phạm Hữu Chí#0|9,1,1,1,1,1
+Phạm Ngũ Lão|10,1,1,1,1,1
+Phạm Ngũ Lão|16,1,1,1,1,1
+Phạm Ngũ Lão|18,1,1,1,1,1
+Phạm Ngũ Lão|19,1,1,1,1,1
+Phạm Ngũ Lão|21,1,1,1,1,1
+Phạm Ngũ Lão|23,1,1,1,1,1
+Phạm Ngũ Lão|25,1,1,1,1,1
+Phạm Ngũ Lão|6,1,1,1,1,1
+Phạm Ngũ Lão|9,1,1,1,1,1
+Phạm Thế Hiển#1|1,1,1,1,1,1
+Phạm Thế Hiển#1|11,1,1,1,1,1
+Phạm Thế Hiển#1|12,1,1,1,1,1
+Phạm Thế Hiển#1|13,1,1,1,1,1
+Phạm Thế Hiển#1|17,1,1,1,1,1
+Phạm Thế Hiển#1|18,1,1,1,1,1
+Phạm Thế Hiển#1|19,1,1,1,1,1
+Phạm Thế Hiển#1|2,1,1,1,1,1
+Phạm Thế Hiển#1|21,1,1,1,1,1
+Phạm Thế Hiển#1|22,1,1,1,1,1
+Phạm Thế Hiển#1|23,1,1,1,1,1
+Phạm Thế Hiển#1|26,1,1,1,1,1
+Phạm Thế Hiển#1|27,1,1,1,1,1
+Phạm Thế Hiển#1|28,2,2,1,1,2
+Phạm Thế Hiển#1|4,1,1,1,1,1
+Phạm Thế Hiển#1|5,1,1,1,1,1
+Phạm Thế Hiển#1|7,1,1,1,1,1
+Phạm Văn Hai#0|0,2,2,1,1,2
+Phạm Văn Hai#0|10,1,1,1,1,1
+Phạm Văn Hai#0|11,2,2,1,1,1
+Phạm Văn Hai#0|12,1,1,1,1,1
+Phạm Văn Hai#0|14,2,2,1,1,1
+Phạm Văn Hai#0|17,1,1,1,1,1
+Phạm Văn Hai#0|19,1,1,1,1,1
+Phạm Văn Hai#0|20,1,1,1,1,1
+Phạm Văn Hai#0|23,2,2,1,1,2
+Phạm Văn Hai#0|3,2,2,1,1,1
+Phạm Văn Hai#0|4,1,1,1,1,1
+Phạm Văn Hai#0|5,1,1,1,1,1
+Phạm Văn Hai#0|8,1,1,1,1,1
+Phạm Văn Hai#0|9,1,1,1,1,1
+Sư Vạn Hạnh|0,1,1,1,1,1
+Sư Vạn Hạnh|1,1,1,1,1,1
+Sư Vạn Hạnh|12,1,1,1,1,1
+Sư Vạn Hạnh|13,1,1,1,1,1
+Sư Vạn Hạnh|15,2,2,1,1,2
+Sư Vạn Hạnh|18,2,2,1,1,1
+Sư Vạn Hạnh|20,1,1,1,1,1
+Sư Vạn Hạnh|21,1,1,1,1,1
+Sư Vạn Hạnh|22,1,1,1,1,1
+Sư Vạn Hạnh|26,1,1,1,1,1
+Sư Vạn Hạnh|27,2,2,1,1,1
+Sư Vạn Hạnh|29,1,1,1,1,1
+Sư Vạn Hạnh|3,1,1,1,1,1
+Sư Vạn Hạnh|33,1,1,1,1,1
+Sư Vạn Hạnh|35,1,1,1,1,1
+Sư Vạn Hạnh|37,2,2,1,1,2
+Sư Vạn Hạnh|38,1,1,1,1,1
+Sư Vạn Hạnh|4,1,1,1,1,1
+Sư Vạn Hạnh|40,1,1,1,1,1
+Sư Vạn Hạnh|46,1,1,1,1,1
+Sư Vạn Hạnh|49,1,1,1,1,1
+Sư Vạn Hạnh|5,1,1,1,1,1
+Sư Vạn Hạnh|50,1,1,1,1,1
+Sư Vạn Hạnh|52,1,1,1,1,1
+Sư Vạn Hạnh|53,1,1,1,1,1
+Sư Vạn Hạnh|56,1,1,1,1,1
+Sư Vạn Hạnh|59,2,2,1,1,2
+Sư Vạn Hạnh|6,1,1,1,1,1
+Sư Vạn Hạnh|61,1,1,1,1,1
+Sư Vạn Hạnh|62,1,1,1,1,1
+Sư Vạn Hạnh|66,1,1,1,1,1
+Sư Vạn Hạnh|68,1,1,1,1,1
+Sư Vạn Hạnh|69,2,2,1,1,2
+Sư Vạn Hạnh|7,1,1,1,1,1
+Sư Vạn Hạnh|70,1,1,1,1,1
+Sư Vạn Hạnh|9,1,1,1,1,1
+Thành Thái|0,1,1,1,1,1
+Thành Thái|13,1,1,1,1,1
+Thành Thái|15,2,2,1,1,1
+Thành Thái|17,2,2,1,1,1
+Thành Thái|18,1,1,1,1,1
+Thành Thái|19,2,2,1,1,2
+Thành Thái|20,1,1,1,1,1
+Thành Thái|22,2,2,1,1,1
+Thành Thái|23,1,1,1,1,1
+Thành Thái|24,1,1,1,1,1
+Thành Thái|25,1,1,1,1,1
+Thành Thái|28,1,1,1,1,1
+Thành Thái|29,2,2,1,1,2
+Thành Thái|3,1,1,1,1,1
+Thành Thái|32,1,1,1,1,1
+Thành Thái|37,1,1,1,1,1
+Thành Thái|38,2,2,1,1,2
+Thành Thái|39,1,1,1,1,1
+Thành Thái|4,1,1,1,1,1
+Thành Thái|40,1,1,1,1,1
+Thành Thái|42,2,2,1,1,2
+Thành Thái|46,1,1,1,1,1
+Thành Thái|48,1,1,1,1,1
+Thành Thái|5,1,1,1,1,1
+Thành Thái|53,1,1,1,1,1
+Thành Thái|57,2,2,1,1,1
+Thành Thái|6,2,2,1,1,1
+Thành Thái|7,1,1,1,1,1
+Thành Thái|8,2,2,1,1,1
+Thích Quảng Đức|0,1,1,1,1,1
+Thích Quảng Đức|11,1,1,1,1,1
+Thích Quảng Đức|12,1,1,1,1,1
+Thích Quảng Đức|14,1,1,1,1,1
+Thích Quảng Đức|15,1,1,1,1,1
+Thích Quảng Đức|16,1,1,1,1,1
+Thích Quảng Đức|18,1,1,1,1,1
+Thích Quảng Đức|19,1,1,1,1,1
+Thích Quảng Đức|2,1,1,1,1,1
+Thích Quảng Đức|20,1,1,1,1,1
+Thích Quảng Đức|3,1,1,1,1,1
+Thích Quảng Đức|4,1,1,1,1,1
+Thích Quảng Đức|6,1,1,1,1,1
+Thích Quảng Đức|8,1,1,1,1,1
+Triệu Quang Phục|11,2,2,1,1,1
+Triệu Quang Phục|13,1,1,1,1,1
+Triệu Quang Phục|14,2,2,1,1,2
+Triệu Quang Phục|17,1,1,1,1,1
+Triệu Quang Phục|18,1,1,1,1,1
+Triệu Quang Phục|21,1,1,1,1,1
+Triệu Quang Phục|23,1,1,1,1,1
+Triệu Quang Phục|3,2,2,1,1,1
+Triệu Quang Phục|5,1,1,1,1,1
+Triệu Quang Phục|6,1,1,1,1,1
+Triệu Quang Phục|8,1,1,1,1,1
+Trường Sa#0|1,1,1,1,1,1
+Trường Sa#0|100,1,1,1,1,1
+Trường Sa#0|101,1,1,1,1,1
+Trường Sa#0|103,1,1,1,1,1
+Trường Sa#0|105,1,1,1,1,1
+Trường Sa#0|106,1,1,1,1,1
+Trường Sa#0|109,2,2,1,1,2
+Trường Sa#0|110,1,1,1,1,1
+Trường Sa#0|111,1,1,1,1,1
+Trường Sa#0|112,1,1,1,1,1
+Trường Sa#0|115,1,1,1,1,1
+Trường Sa#0|116,1,1,1,1,1
+Trường Sa#0|118,1,1,1,1,1
+Trường Sa#0|12,1,1,1,1,1
+Trường Sa#0|122,2,2,1,1,1
+Trường Sa#0|123,1,1,1,1,1
+Trường Sa#0|125,1,1,1,1,1
+Trường Sa#0|129,1,1,1,1,1
+Trường Sa#0|130,2,2,1,1,2
+Trường Sa#0|131,1,1,1,1,1
+Trường Sa#0|133,1,1,1,1,1
+Trường Sa#0|135,1,1,1,1,1
+Trường Sa#0|141,1,1,1,1,1
+Trường Sa#0|144,1,1,1,1,1
+Trường Sa#0|145,1,1,1,1,1
+Trường Sa#0|15,1,1,1,1,1
+Trường Sa#0|151,1,1,1,1,1
+Trường Sa#0|152,1,1,1,1,1
+Trường Sa#0|153,1,1,1,1,1
+Trường Sa#0|157,2,2,1,1,2
+Trường Sa#0|158,1,1,1,1,1
+Trường Sa#0|159,2,2,1,1,2
+Trường Sa#0|160,1,1,1,1,1
+Trường Sa#0|162,1,1,1,1,1
+Trường Sa#0|171,2,2,1,1,1
+Trường Sa#0|173,1,1,1,1,1
+Trường Sa#0|174,1,1,1,1,1
+Trường Sa#0|175,1,1,1,1,1
+Trường Sa#0|177,1,1,1,1,1
+Trường Sa#0|18,2,2,1,1,2
+Trường Sa#0|183,1,1,1,1,1
+Trường Sa#0|185,1,1,1,1,1
+Trường Sa#0|190,1,1,1,1,1
+Trường Sa#0|191,1,1,1,1,1
+Trường Sa#0|193,1,1,1,1,1
+Trường Sa#0|199,1,1,1,1,1
+Trường Sa#0|20,1,1,1,1,1
+Trường Sa#0|201,2,2,1,1,1
+Trường Sa#0|202,1,1,1,1,1
+Trường Sa#0|207,1,1,1,1,1
+Trường Sa#0|208,2,2,1,1,2
+Trường Sa#0|21,1,1,1,1,1
+Trường Sa#0|211,1,1,1,1,1
+Trường Sa#0|214,1,1,1,1,1
+Trường Sa#0|215,2,2,1,1,1
+Trường Sa#0|217,1,1,1,1,1
+Trường Sa#0|220,2,2,1,1,1
+Trường Sa#0|222,1,1,1,1,1
+Trường Sa#0|223,1,1,1,1,1
+Trường Sa#0|24,1,1,1,1,1
+Trường Sa#0|28,2,2,1,1,1
+Trường Sa#0|29,1,1,1,1,1
+Trường Sa#0|33,1,1,1,1,1
+Trường Sa#0|36,2,2,1,1,1
+Trường Sa#0|38,1,1,1,1,1
+Trường Sa#0|40,1,1,1,1,1
+Trường Sa#0|41,1,1,1,1,1
+Trường Sa#0|42,2,2,1,1,2
+Trường Sa#0|44,2,2,1,1,1
+Trường Sa#0|45,1,1,1,1,1
+Trường Sa#0|46,2,2,1,1,1
+Trường Sa#0|47,1,1,1,1,1
+Trường Sa#0|5,1,1,1,1,1
+Trường Sa#0|50,2,2,1,1,2
+Trường Sa#0|51,2,2,1,1,1
+Trường Sa#0|53,1,1,1,1,1
+Trường Sa#0|61,1,1,1,1,1
+Trường Sa#0|62,2,2,1,1,2
+Trường Sa#0|63,1,1,1,1,1
+Trường Sa#0|64,2,2,1,1,1
+Trường Sa#0|65,1,1,1,1,1
+Trường Sa#0|66,1,1,1,1,1
+Trường Sa#0|68,1,1,1,1,1
+Trường Sa#0|7,2,2,1,1,2
+Trường Sa#0|70,1,1,1,1,1
+Trường Sa#0|72,1,1,1,1,1
+Trường Sa#0|78,1,1,1,1,1
+Trường Sa#0|85,1,1,1,1,1
+Trường Sa#0|87,1,1,1,1,1
+Trường Sa#0|88,1,1,1,1,1
+Trường Sa#0|90,2,2,1,1,1
+Trường Sa#0|91,1,1,1,1,1
+Trường Sa#0|92,2,2,1,1,1
+Trường Sa#0|93,1,1,1,1,1
+Trường Sơn#1|0,2,2,1,1,1
+Trường Sơn#1|10,1,1,1,1,1
+Trường Sơn#1|12,1,1,1,1,1
+Trường Sơn#1|15,1,1,1,1,1
+Trường Sơn#1|16,1,1,1,1,1
+Trường Sơn#1|2,1,1,1,1,1
+Trường Sơn#1|22,1,1,1,1,1
+Trường Sơn#1|24,1,1,1,1,1
+Trường Sơn#1|25,1,1,1,1,1
+Trường Sơn#1|26,1,1,1,1,1
+Trường Sơn#1|28,1,1,1,1,1
+Trường Sơn#1|3,1,1,1,1,1
+Trường Sơn#1|6,1,1,1,1,1
+Trần Bình Trọng#0|0,1,1,1,1,1
+Trần Bình Trọng#0|11,1,1,1,1,1
+Trần Bình Trọng#0|12,1,1,1,1,1
+Trần Bình Trọng#0|15,1,1,1,1,1
+Trần Bình Trọng#0|16,1,1,1,1,1
+Trần Bình Trọng#0|18,1,1,1,1,1
+Trần Bình Trọng#0|23,1,1,1,1,1
+Trần Bình Trọng#0|30,1,1,1,1,1
+Trần Bình Trọng#0|35,1,1,1,1,1
+Trần Bình Trọng#0|37,1,1,1,1,1
+Trần Bình Trọng#0|39,1,1,1,1,1
+Trần Bình Trọng#0|4,1,1,1,1,1
+Trần Bình Trọng#0|41,1,1,1,1,1
+Trần Bình Trọng#0|45,1,1,1,1,1
+Trần Huy Liệu|0,1,1,1,1,1
+Trần Huy Liệu|1,2,2,1,1,1
+Trần Huy Liệu|12,1,1,1,1,1
+Trần Huy Liệu|13,1,1,1,1,1
+Trần Huy Liệu|15,1,1,1,1,1
+Trần Huy Liệu|20,1,1,1,1,1
+Trần Huy Liệu|21,1,1,1,1,1
+Trần Huy Liệu|24,1,1,1,1,1
+Trần Huy Liệu|26,1,1,1,1,1
+Trần Huy Liệu|3,1,1,1,1,1
+Trần Huy Liệu|4,1,1,1,1,1
+Trần Hưng Đạo|0,2,2,1,1,1
+Trần Hưng Đạo|1,2,2,1,1,1
+Trần Hưng Đạo|10,2,2,1,1,1
+Trần Hưng Đạo|100,1,1,1,1,1
+Trần Hưng Đạo|101,2,2,1,1,1
+Trần Hưng Đạo|102,1,1,1,1,1
+Trần Hưng Đạo|103,2,2,1,1,1
+Trần Hưng Đạo|104,1,1,1,1,1
+Trần Hưng Đạo|105,2,2,1,1,1
+Trần Hưng Đạo|106,2,2,1,1,1
+Trần Hưng Đạo|107,1,1,1,1,1
+Trần Hưng Đạo|108,2,2,1,1,1
+Trần Hưng Đạo|109,2,2,1,1,1
+Trần Hưng Đạo|11,2,2,1,1,1
+Trần Hưng Đạo|110,1,1,1,1,1
+Trần Hưng Đạo|111,1,1,1,1,1
+Trần Hưng Đạo|112,2,2,1,1,1
+Trần Hưng Đạo|113,2,2,1,1,1
+Trần Hưng Đạo|114,2,2,1,1,1
+Trần Hưng Đạo|115,2,2,1,1,1
+Trần Hưng Đạo|116,2,2,1,1,1
+Trần Hưng Đạo|117,1,1,1,1,1
+Trần Hưng Đạo|118,2,2,1,1,1
+Trần Hưng Đạo|119,1,1,1,1,1
+Trần Hưng Đạo|12,2,2,1,1,1
+Trần Hưng Đạo|120,2,2,1,1,1
+Trần Hưng Đạo|121,2,2,1,1,1
+Trần Hưng Đạo|122,2,2,1,1,1
+Trần Hưng Đạo|123,2,2,1,1,1
+Trần Hưng Đạo|124,2,2,1,1,1
+Trần Hưng Đạo|125,2,2,1,1,1
+Trần Hưng Đạo|126,2,2,1,1,1
+Trần Hưng Đạo|127,1,1,1,1,1
+Trần Hưng Đạo|128,1,1,1,1,1
+Trần Hưng Đạo|129,2,2,1,1,1
+Trần Hưng Đạo|13,2,2,1,1,1
+Trần Hưng Đạo|130,2,2,1,1,1
+Trần Hưng Đạo|131,1,1,1,1,1
+Trần Hưng Đạo|132,1,1,1,1,1
+Trần Hưng Đạo|133,1,1,1,1,1
+Trần Hưng Đạo|134,1,1,1,1,1
+Trần Hưng Đạo|135,2,2,1,1,1
+Trần Hưng Đạo|136,2,2,1,1,1
+Trần Hưng Đạo|137,1,1,1,1,1
+Trần Hưng Đạo|138,1,1,1,1,1
+Trần Hưng Đạo|139,2,2,1,1,1
+Trần Hưng Đạo|14,2,2,1,1,1
+Trần Hưng Đạo|140,1,1,1,1,1
+Trần Hưng Đạo|141,2,2,1,1,1
+Trần Hưng Đạo|142,1,1,1,1,1
+Trần Hưng Đạo|143,2,2,1,1,1
+Trần Hưng Đạo|144,2,2,1,1,1
+Trần Hưng Đạo|145,2,2,1,1,1
+Trần Hưng Đạo|146,2,2,1,1,1
+Trần Hưng Đạo|147,2,2,1,1,1
+Trần Hưng Đạo|148,2,2,1,1,1
+Trần Hưng Đạo|149,1,1,1,1,1
+Trần Hưng Đạo|15,2,2,1,1,1
+Trần Hưng Đạo|150,2,2,1,1,1
+Trần Hưng Đạo|151,2,2,1,1,1
+Trần Hưng Đạo|152,1,1,1,1,1
+Trần Hưng Đạo|153,1,1,1,1,1
+Trần Hưng Đạo|154,1,1,1,1,1
+Trần Hưng Đạo|155,2,2,1,1,1
+Trần Hưng Đạo|156,1,1,1,1,1
+Trần Hưng Đạo|157,1,1,1,1,1
+Trần Hưng Đạo|158,2,2,1,1,1
+Trần Hưng Đạo|159,2,2,1,1,1
+Trần Hưng Đạo|16,2,2,1,1,1
+Trần Hưng Đạo|160,2,2,1,1,1
+Trần Hưng Đạo|161,1,1,1,1,1
+Trần Hưng Đạo|162,2,2,1,1,1
+Trần Hưng Đạo|163,2,2,1,1,1
+Trần Hưng Đạo|164,2,2,1,1,1
+Trần Hưng Đạo|165,1,1,1,1,1
+Trần Hưng Đạo|166,1,1,1,1,1
+Trần Hưng Đạo|167,2,2,1,1,1
+Trần Hưng Đạo|168,1,1,1,1,1
+Trần Hưng Đạo|169,2,2,1,1,1
+Trần Hưng Đạo|17,2,2,1,1,1
+Trần Hưng Đạo|170,2,2,1,1,1
+Trần Hưng Đạo|171,1,1,1,1,1
+Trần Hưng Đạo|172,1,1,1,1,1
+Trần Hưng Đạo|173,1,1,1,1,1
+Trần Hưng Đạo|174,2,2,1,1,1
+Trần Hưng Đạo|175,2,2,1,1,1
+Trần Hưng Đạo|176,1,1,1,1,1
+Trần Hưng Đạo|177,1,1,1,1,1
+Trần Hưng Đạo|178,1,1,1,1,1
+Trần Hưng Đạo|179,1,1,1,1,1
+Trần Hưng Đạo|18,2,2,1,1,1
+Trần Hưng Đạo|180,2,2,1,1,1
+Trần Hưng Đạo|181,2,2,1,1,1
+Trần Hưng Đạo|182,1,1,1,1,1
+Trần Hưng Đạo|183,1,1,1,1,1
+Trần Hưng Đạo|184,2,2,1,1,1
+Trần Hưng Đạo|185,1,1,1,1,1
+Trần Hưng Đạo|186,1,1,1,1,1
+Trần Hưng Đạo|187,1,1,1,1,1
+Trần Hưng Đạo|188,1,1,1,1,1
+Trần Hưng Đạo|189,2,2,1,1,1
+Trần Hưng Đạo|19,2,2,1,1,1
+Trần Hưng Đạo|190,1,1,1,1,1
+Trần Hưng Đạo|191,2,2,1,1,1
+Trần Hưng Đạo|192,1,1,1,1,1
+Trần Hưng Đạo|193,1,1,1,1,1
+Trần Hưng Đạo|194,1,1,1,1,1
+Trần Hưng Đạo|195,1,1,1,1,1
+Trần Hưng Đạo|196,1,1,1,1,1
+Trần Hưng Đạo|197,1,1,1,1,1
+Trần Hưng Đạo|198,1,1,1,1,1
+Trần Hưng Đạo|199,1,1,1,1,1
+Trần Hưng Đạo|2,2,2,1,1,1
+Trần Hưng Đạo|20,2,2,1,1,1
+Trần Hưng Đạo|200,2,2,1,1,1
+Trần Hưng Đạo|201,2,2,1,1,1
+Trần Hưng Đạo|202,1,1,1,1,1
+Trần Hưng Đạo|203,1,1,1,1,1
+Trần Hưng Đạo|204,1,1,1,1,1
+Trần Hưng Đạo|205,1,1,1,1,1
+Trần Hưng Đạo|206,2,2,1,1,1
+Trần Hưng Đạo|207,2,2,1,1,1
+Trần Hưng Đạo|208,1,1,1,1,1
+Trần Hưng Đạo|209,1,1,1,1,1
+Trần Hưng Đạo|21,1,1,1,1,1
+Trần Hưng Đạo|210,2,2,1,1,1
+Trần Hưng Đạo|211,2,2,1,1,1
+Trần Hưng Đạo|212,1,1,1,1,1
+Trần Hưng Đạo|213,1,1,1,1,1
+Trần Hưng Đạo|214,2,2,1,1,1
+Trần Hưng Đạo|215,2,2,1,1,1
+Trần Hưng Đạo|216,1,1,1,1,1
+Trần Hưng Đạo|22,1,1,1,1,1
+Trần Hưng Đạo|23,2,2,1,1,1
+Trần Hưng Đạo|24,2,2,1,1,1
+Trần Hưng Đạo|25,1,1,1,1,1
+Trần Hưng Đạo|26,2,2,1,1,1
+Trần Hưng Đạo|27,2,2,1,1,1
+Trần Hưng Đạo|28,1,1,1,1,1
+Trần Hưng Đạo|29,2,2,1,1,1
+Trần Hưng Đạo|3,1,1,1,1,1
+Trần Hưng Đạo|30,2,2,1,1,1
+Trần Hưng Đạo|31,1,1,1,1,1
+Trần Hưng Đạo|32,2,2,1,1,1
+Trần Hưng Đạo|33,1,1,1,1,1
+Trần Hưng Đạo|34,1,1,1,1,1
+Trần Hưng Đạo|35,2,2,1,1,1
+Trần Hưng Đạo|36,2,2,1,1,1
+Trần Hưng Đạo|37,2,2,1,1,1
+Trần Hưng Đạo|38,1,1,1,1,1
+Trần Hưng Đạo|39,2,2,1,1,1
+Trần Hưng Đạo|4,2,2,1,1,1
+Trần Hưng Đạo|40,2,2,1,1,1
+Trần Hưng Đạo|41,1,1,1,1,1
+Trần Hưng Đạo|42,2,2,1,1,1
+Trần Hưng Đạo|43,2,2,1,1,1
+Trần Hưng Đạo|44,2,2,1,1,1
+Trần Hưng Đạo|45,2,2,1,1,1
+Trần Hưng Đạo|46,2,2,1,1,1
+Trần Hưng Đạo|47,1,1,1,1,1
+Trần Hưng Đạo|48,2,2,1,1,1
+Trần Hưng Đạo|49,1,1,1,1,1
+Trần Hưng Đạo|5,2,2,1,1,1
+Trần Hưng Đạo|50,2,2,1,1,1
+Trần Hưng Đạo|51,2,2,1,1,1
+Trần Hưng Đạo|52,1,1,1,1,1
+Trần Hưng Đạo|53,2,2,1,1,1
+Trần Hưng Đạo|54,2,2,1,1,1
+Trần Hưng Đạo|55,2,2,1,1,1
+Trần Hưng Đạo|56,1,1,1,1,1
+Trần Hưng Đạo|57,1,1,1,1,1
+Trần Hưng Đạo|58,1,1,1,1,1
+Trần Hưng Đạo|59,1,1,1,1,1
+Trần Hưng Đạo|6,2,2,1,1,1
+Trần Hưng Đạo|60,2,2,1,1,1
+Trần Hưng Đạo|61,2,2,1,1,1
+Trần Hưng Đạo|62,2,2,1,1,1
+Trần Hưng Đạo|63,1,1,1,1,1
+Trần Hưng Đạo|64,2,2,1,1,1
+Trần Hưng Đạo|65,1,1,1,1,1
+Trần Hưng Đạo|66,2,2,1,1,1
+Trần Hưng Đạo|67,1,1,1,1,1
+Trần Hưng Đạo|68,2,2,1,1,1
+Trần Hưng Đạo|69,1,1,1,1,1
+Trần Hưng Đạo|7,1,1,1,1,1
+Trần Hưng Đạo|70,2,2,1,1,1
+Trần Hưng Đạo|71,2,2,1,1,1
+Trần Hưng Đạo|72,2,2,1,1,1
+Trần Hưng Đạo|73,2,2,1,1,1
+Trần Hưng Đạo|74,2,2,1,1,1
+Trần Hưng Đạo|75,2,2,1,1,1
+Trần Hưng Đạo|76,1,1,1,1,1
+Trần Hưng Đạo|77,2,2,1,1,1
+Trần Hưng Đạo|78,1,1,1,1,1
+Trần Hưng Đạo|79,2,2,1,1,1
+Trần Hưng Đạo|8,2,2,1,1,1
+Trần Hưng Đạo|80,1,1,1,1,1
+Trần Hưng Đạo|81,2,2,1,1,1
+Trần Hưng Đạo|82,2,2,1,1,1
+Trần Hưng Đạo|83,2,2,1,1,1
+Trần Hưng Đạo|84,2,2,1,1,1
+Trần Hưng Đạo|85,2,2,1,1,1
+Trần Hưng Đạo|86,2,2,1,1,1
+Trần Hưng Đạo|87,2,2,1,1,1
+Trần Hưng Đạo|88,2,2,1,1,1
+Trần Hưng Đạo|89,2,2,1,1,1
+Trần Hưng Đạo|9,2,2,1,1,1
+Trần Hưng Đạo|90,1,1,1,1,1
+Trần Hưng Đạo|91,2,2,1,1,1
+Trần Hưng Đạo|92,2,2,1,1,1
+Trần Hưng Đạo|93,2,2,1,1,1
+Trần Hưng Đạo|94,1,1,1,1,1
+Trần Hưng Đạo|95,2,2,1,1,1
+Trần Hưng Đạo|96,2,2,1,1,1
+Trần Hưng Đạo|97,2,2,1,1,1
+Trần Hưng Đạo|98,2,2,1,1,1
+Trần Hưng Đạo|99,2,2,1,1,1
+Trần Nhân Tôn|15,1,1,1,1,1
+Trần Nhân Tôn|20,1,1,1,1,1
+Trần Nhân Tôn|26,1,1,1,1,1
+Trần Nhân Tôn|27,1,1,1,1,1
+Trần Nhân Tôn|3,1,1,1,1,1
+Trần Nhân Tôn|5,1,1,1,1,1
+Trần Nhân Tôn|8,1,1,1,1,1
+Trần Phú|0,2,2,1,1,1
+Trần Phú|1,2,2,1,1,1
+Trần Phú|10,1,1,1,1,1
+Trần Phú|11,2,2,1,1,1
+Trần Phú|12,2,2,1,1,1
+Trần Phú|13,2,2,1,1,1
+Trần Phú|14,2,2,1,1,1
+Trần Phú|15,2,2,1,1,1
+Trần Phú|16,2,2,1,1,1
+Trần Phú|17,2,2,1,1,1
+Trần Phú|18,1,1,1,1,1
+Trần Phú|19,1,1,1,1,1
+Trần Phú|2,2,2,1,1,1
+Trần Phú|20,2,2,1,1,1
+Trần Phú|21,2,2,1,1,1
+Trần Phú|22,1,1,1,1,1
+Trần Phú|23,2,2,1,1,1
+Trần Phú|24,2,2,1,1,1
+Trần Phú|25,2,2,1,1,1
+Trần Phú|26,2,2,1,1,1
+Trần Phú|27,2,2,1,1,1
+Trần Phú|28,2,2,1,1,1
+Trần Phú|29,2,2,1,1,1
+Trần Phú|3,2,2,1,1,1
+Trần Phú|30,2,2,1,1,1
+Trần Phú|31,2,2,1,1,1
+Trần Phú|32,2,2,1,1,1
+Trần Phú|33,1,1,1,1,1
+Trần Phú|34,2,2,1,1,1
+Trần Phú|35,1,1,1,1,1
+Trần Phú|36,2,2,1,1,1
+Trần Phú|37,1,1,1,1,1
+Trần Phú|38,2,2,1,1,1
+Trần Phú|39,2,2,1,1,1
+Trần Phú|4,1,1,1,1,1
+Trần Phú|40,2,2,1,1,1
+Trần Phú|41,2,2,1,1,1
+Trần Phú|42,2,2,1,1,1
+Trần Phú|43,2,2,1,1,1
+Trần Phú|44,2,2,1,1,1
+Trần Phú|45,1,1,1,1,1
+Trần Phú|46,1,1,1,1,1
+Trần Phú|47,1,1,1,1,1
+Trần Phú|48,2,2,1,1,1
+Trần Phú|49,2,2,1,1,1
+Trần Phú|5,2,2,1,1,1
+Trần Phú|50,2,2,1,1,1
+Trần Phú|51,2,2,1,1,1
+Trần Phú|52,1,1,1,1,1
+Trần Phú|53,1,1,1,1,1
+Trần Phú|54,2,2,1,1,1
+Trần Phú|55,2,2,1,1,1
+Trần Phú|56,2,2,1,1,1
+Trần Phú|57,2,2,1,1,1
+Trần Phú|58,1,1,1,1,1
+Trần Phú|59,2,2,1,1,1
+Trần Phú|6,2,2,1,1,1
+Trần Phú|60,2,2,1,1,1
+Trần Phú|61,2,2,1,1,1
+Trần Phú|62,2,2,1,1,1
+Trần Phú|63,2,2,1,1,1
+Trần Phú|64,1,1,1,1,1
+Trần Phú|65,2,2,1,1,1
+Trần Phú|7,2,2,1,1,1
+Trần Phú|8,2,2,1,1,1
+Trần Phú|9,2,2,1,1,1
+Trần Quang Khải|1,1,1,1,1,1
+Trần Quang Khải|11,1,1,1,1,1
+Trần Quang Khải|12,1,1,1,1,1
+Trần Quang Khải|13,1,1,1,1,1
+Trần Quang Khải|14,1,1,1,1,1
+Trần Quang Khải|18,1,1,1,1,1
+Trần Quang Khải|20,1,1,1,1,1
+Trần Quang Khải|22,1,1,1,1,1
+Trần Quang Khải|23,1,1,1,1,1
+Trần Quang Khải|26,1,1,1,1,1
+Trần Quang Khải|5,1,1,1,1,1
+Trần Quang Khải|9,1,1,1,1,1
+Trần Quý|0,1,1,1,1,1
+Trần Quý|1,1,1,1,1,1
+Trần Quý|11,1,1,1,1,1
+Trần Quý|12,1,1,1,1,1
+Trần Quý|14,1,1,1,1,1
+Trần Quý|15,1,1,1,1,1
+Trần Quý|17,1,1,1,1,1
+Trần Quý|18,1,1,1,1,1
+Trần Quý|19,1,1,1,1,1
+Trần Quý|20,1,1,1,1,1
+Trần Quý|21,1,1,1,1,1
+Trần Quý|22,1,1,1,1,1
+Trần Quý|23,1,1,1,1,1
+Trần Quý|4,1,1,1,1,1
+Trần Quý|5,1,1,1,1,1
+Trần Quý|6,1,1,1,1,1
+Trần Quý|8,1,1,1,1,1
+Trần Quý|9,1,1,1,1,1
+Tôn Thất Thuyết|13,1,1,1,1,1
+Tôn Thất Thuyết|14,1,1,1,1,1
+Tôn Thất Thuyết|16,1,1,1,1,1
+Tôn Thất Thuyết|23,1,1,1,1,1
+Tôn Thất Thuyết|24,1,1,1,1,1
+Tôn Thất Thuyết|26,1,1,1,1,1
+Tôn Thất Thuyết|31,1,1,1,1,1
+Tôn Thất Thuyết|33,1,1,1,1,1
+Tôn Thất Thuyết|38,1,1,1,1,1
+Tôn Thất Thuyết|39,2,2,1,1,2
+Tôn Thất Thuyết|41,1,1,1,1,1
+Tôn Thất Thuyết|43,1,1,1,1,1
+Tôn Thất Thuyết|44,1,1,1,1,1
+Tôn Thất Thuyết|50,1,1,1,1,1
+Tôn Thất Thuyết|51,1,1,1,1,1
+Tôn Thất Thuyết|52,1,1,1,1,1
+Tôn Thất Thuyết|54,1,1,1,1,1
+Tôn Thất Thuyết|55,1,1,1,1,1
+Tôn Thất Thuyết|56,1,1,1,1,1
+Tôn Thất Thuyết|58,1,1,1,1,1
+Tôn Thất Thuyết|59,1,1,1,1,1
+Tôn Thất Thuyết|62,1,1,1,1,1
+Tôn Thất Thuyết|65,1,1,1,1,1
+Tôn Thất Thuyết|66,1,1,1,1,1
+Tôn Thất Thuyết|7,1,1,1,1,1
+Tôn Thất Thuyết|73,1,1,1,1,1
+Tôn Thất Thuyết|75,1,1,1,1,1
+Tôn Thất Thuyết|76,1,1,1,1,1
+Tôn Thất Thuyết|78,1,1,1,1,1
+Tôn Thất Thuyết|79,1,1,1,1,1
+Tôn Thất Thuyết|80,1,1,1,1,1
+Tôn Thất Thuyết|88,1,1,1,1,1
+Tôn Thất Thuyết|9,1,1,1,1,1
+Tôn Thất Thuyết|93,1,1,1,1,1
+Tôn Thất Thuyết|95,1,1,1,1,1
+Tôn Thất Thuyết|98,1,1,1,1,1
+Tôn Đản|0,1,1,1,1,1
+Tôn Đản|1,1,1,1,1,1
+Tôn Đản|12,1,1,1,1,1
+Tôn Đản|13,1,1,1,1,1
+Tôn Đản|14,1,1,1,1,1
+Tôn Đản|15,1,1,1,1,1
+Tôn Đản|16,1,1,1,1,1
+Tôn Đản|17,1,1,1,1,1
+Tôn Đản|18,1,1,1,1,1
+Tôn Đản|19,1,1,1,1,1
+Tôn Đản|2,1,1,1,1,1
+Tôn Đản|21,1,1,1,1,1
+Tôn Đản|23,1,1,1,1,1
+Tôn Đản|24,1,1,1,1,1
+Tôn Đản|25,1,1,1,1,1
+Tôn Đản|28,1,1,1,1,1
+Tôn Đản|29,1,1,1,1,1
+Tôn Đản|4,1,1,1,1,1
+Tôn Đản|5,1,1,1,1,1
+Tôn Đản|8,1,1,1,1,1
+Tôn Đản|9,1,1,1,1,1
+Tùng Thiện Vương|0,1,1,1,1,1
+Tùng Thiện Vương|1,1,1,1,1,1
+Tùng Thiện Vương|10,1,1,1,1,1
+Tùng Thiện Vương|11,1,1,1,1,1
+Tùng Thiện Vương|12,1,1,1,1,1
+Tùng Thiện Vương|13,1,1,1,1,1
+Tùng Thiện Vương|17,1,1,1,1,1
+Tùng Thiện Vương|18,1,1,1,1,1
+Tùng Thiện Vương|19,1,1,1,1,1
+Tùng Thiện Vương|2,1,1,1,1,1
+Tùng Thiện Vương|20,1,1,1,1,1
+Tùng Thiện Vương|26,1,1,1,1,1
+Tùng Thiện Vương|27,1,1,1,1,1
+Tùng Thiện Vương|30,1,1,1,1,1
+Tùng Thiện Vương|32,1,1,1,1,1
+Tùng Thiện Vương|33,1,1,1,1,1
+Tùng Thiện Vương|4,1,1,1,1,1
+Tùng Thiện Vương|5,1,1,1,1,1
+Tùng Thiện Vương|7,1,1,1,1,1
+Tùng Thiện Vương|8,1,1,1,1,1
+Ung Văn Khiêm|1,1,1,1,1,1
+Ung Văn Khiêm|10,1,1,1,1,1
+Ung Văn Khiêm|11,1,1,1,1,1
+Ung Văn Khiêm|16,1,1,1,1,1
+Ung Văn Khiêm|18,1,1,1,1,1
+Ung Văn Khiêm|2,1,1,1,1,1
+Ung Văn Khiêm|20,1,1,1,1,1
+Ung Văn Khiêm|21,1,1,1,1,1
+Ung Văn Khiêm|23,1,1,1,1,1
+Ung Văn Khiêm|24,1,1,1,1,1
+Ung Văn Khiêm|27,1,1,1,1,1
+Ung Văn Khiêm|28,1,1,1,1,1
+Ung Văn Khiêm|3,1,1,1,1,1
+Ung Văn Khiêm|30,1,1,1,1,1
+Ung Văn Khiêm|32,1,1,1,1,1
+Ung Văn Khiêm|33,1,1,1,1,1
+Ung Văn Khiêm|38,1,1,1,1,1
+Ung Văn Khiêm|4,1,1,1,1,1
+Ung Văn Khiêm|40,1,1,1,1,1
+Ung Văn Khiêm|41,1,1,1,1,1
+Ung Văn Khiêm|42,1,1,1,1,1
+Ung Văn Khiêm|43,1,1,1,1,1
+Ung Văn Khiêm|48,1,1,1,1,1
+Ung Văn Khiêm|5,1,1,1,1,1
+Ung Văn Khiêm|50,1,1,1,1,1
+Ung Văn Khiêm|51,1,1,1,1,1
+Ung Văn Khiêm|7,1,1,1,1,1
+Ung Văn Khiêm|8,1,1,1,1,1
+Võ Văn Tần|0,1,1,1,1,1
+Võ Văn Tần|1,1,1,1,1,1
+Võ Văn Tần|10,1,1,1,1,1
+Võ Văn Tần|11,1,1,1,1,1
+Võ Văn Tần|12,2,2,1,1,1
+Võ Văn Tần|13,2,2,1,1,1
+Võ Văn Tần|14,2,2,1,1,1
+Võ Văn Tần|15,2,2,1,1,1
+Võ Văn Tần|16,2,2,1,1,1
+Võ Văn Tần|17,2,2,1,1,1
+Võ Văn Tần|18,2,2,1,1,1
+Võ Văn Tần|19,1,1,1,1,1
+Võ Văn Tần|2,2,2,1,1,1
+Võ Văn Tần|20,2,2,1,1,1
+Võ Văn Tần|21,2,2,1,1,1
+Võ Văn Tần|22,2,2,1,1,1
+Võ Văn Tần|23,2,2,1,1,1
+Võ Văn Tần|24,2,2,1,1,1
+Võ Văn Tần|25,2,2,1,1,1
+Võ Văn Tần|26,1,1,1,1,1
+Võ Văn Tần|28,2,2,1,1,1
+Võ Văn Tần|29,2,2,1,1,1
+Võ Văn Tần|3,2,2,1,1,1
+Võ Văn Tần|30,2,2,1,1,1
+Võ Văn Tần|31,2,2,1,1,1
+Võ Văn Tần|32,1,1,1,1,1
+Võ Văn Tần|33,1,1,1,1,1
+Võ Văn Tần|34,2,2,1,1,1
+Võ Văn Tần|35,2,2,1,1,1
+Võ Văn Tần|36,1,1,1,1,1
+Võ Văn Tần|37,1,1,1,1,1
+Võ Văn Tần|38,2,2,1,1,1
+Võ Văn Tần|39,2,2,1,1,1
+Võ Văn Tần|4,2,2,1,1,1
+Võ Văn Tần|40,1,1,1,1,1
+Võ Văn Tần|41,1,1,1,1,1
+Võ Văn Tần|42,2,2,1,1,1
+Võ Văn Tần|43,1,1,1,1,1
+Võ Văn Tần|44,2,2,1,1,1
+Võ Văn Tần|45,2,2,1,1,1
+Võ Văn Tần|46,2,2,1,1,1
+Võ Văn Tần|47,2,2,1,1,1
+Võ Văn Tần|48,2,2,1,1,1
+Võ Văn Tần|49,2,2,1,1,1
+Võ Văn Tần|5,2,2,1,1,1
+Võ Văn Tần|50,2,2,1,1,1
+Võ Văn Tần|51,2,2,1,1,1
+Võ Văn Tần|52,1,1,1,1,1
+Võ Văn Tần|53,2,2,1,1,1
+Võ Văn Tần|54,2,2,1,1,1
+Võ Văn Tần|55,1,1,1,1,1
+Võ Văn Tần|56,1,1,1,1,1
+Võ Văn Tần|57,2,2,1,1,1
+Võ Văn Tần|58,2,2,1,1,1
+Võ Văn Tần|59,2,2,1,1,1
+Võ Văn Tần|6,1,1,1,1,1
+Võ Văn Tần|60,1,1,1,1,1
+Võ Văn Tần|61,1,1,1,1,1
+Võ Văn Tần|62,1,1,1,1,1
+Võ Văn Tần|7,2,2,1,1,1
+Võ Văn Tần|8,2,2,1,1,1
+Võ Văn Tần|9,2,2,1,1,1
+Vĩnh Khánh|1,1,1,1,1,1
+Vĩnh Khánh|10,1,1,1,1,1
+Vĩnh Khánh|12,1,1,1,1,1
+Vĩnh Khánh|15,1,1,1,1,1
+Vĩnh Khánh|16,1,1,1,1,1
+Vĩnh Khánh|17,1,1,1,1,1
+Vĩnh Khánh|2,1,1,1,1,1
+Vĩnh Khánh|22,1,1,1,1,1
+Vĩnh Khánh|23,1,1,1,1,1
+Vĩnh Khánh|24,1,1,1,1,1
+Vĩnh Khánh|26,1,1,1,1,1
+Vĩnh Khánh|29,2,2,1,1,2
+Vĩnh Khánh|30,1,1,1,1,1
+Vĩnh Khánh|4,1,1,1,1,1
+Vĩnh Khánh|7,1,1,1,1,1
+Vĩnh Khánh|8,1,1,1,1,1
+Vĩnh Khánh|9,1,1,1,1,1
+Vĩnh Viễn#0|1,2,2,1,1,1
+Vĩnh Viễn#0|10,1,1,1,1,1
+Vĩnh Viễn#0|11,1,1,1,1,1
+Vĩnh Viễn#0|13,1,1,1,1,1
+Vĩnh Viễn#0|14,1,1,1,1,1
+Vĩnh Viễn#0|15,1,1,1,1,1
+Vĩnh Viễn#0|17,1,1,1,1,1
+Vĩnh Viễn#0|18,1,1,1,1,1
+Vĩnh Viễn#0|19,1,1,1,1,1
+Vĩnh Viễn#0|20,1,1,1,1,1
+Vĩnh Viễn#0|21,2,2,1,1,1
+Vĩnh Viễn#0|22,1,1,1,1,1
+Vĩnh Viễn#0|24,1,1,1,1,1
+Vĩnh Viễn#0|25,2,2,1,1,2
+Vĩnh Viễn#0|27,1,1,1,1,1
+Vĩnh Viễn#0|29,2,2,1,1,2
+Vĩnh Viễn#0|30,1,1,1,1,1
+Vĩnh Viễn#0|33,2,2,1,1,2
+Vĩnh Viễn#0|34,1,1,1,1,1
+Vĩnh Viễn#0|36,1,1,1,1,1
+Vĩnh Viễn#0|38,1,1,1,1,1
+Vĩnh Viễn#0|4,1,1,1,1,1
+Vĩnh Viễn#0|5,1,1,1,1,1
+Vĩnh Viễn#0|6,1,1,1,1,1
+Vĩnh Viễn#0|7,2,2,1,1,2
+Vĩnh Viễn#0|8,1,1,1,1,1
+Vĩnh Viễn#0|9,1,1,1,1,1
+Vạn Kiếp#0|1,1,1,1,1,1
+Vạn Kiếp#0|10,1,1,1,1,1
+Vạn Kiếp#0|11,1,1,1,1,1
+Vạn Kiếp#0|12,1,1,1,1,1
+Vạn Kiếp#0|13,1,1,1,1,1
+Vạn Kiếp#0|14,1,1,1,1,1
+Vạn Kiếp#0|15,1,1,1,1,1
+Vạn Kiếp#0|18,1,1,1,1,1
+Vạn Kiếp#0|19,1,1,1,1,1
+Vạn Kiếp#0|2,1,1,1,1,1
+Vạn Kiếp#0|20,1,1,1,1,1
+Vạn Kiếp#0|21,2,2,1,1,2
+Vạn Kiếp#0|22,1,1,1,1,1
+Vạn Kiếp#0|3,2,2,1,1,1
+Vạn Kiếp#0|4,2,2,1,1,1
+Vạn Kiếp#0|6,2,2,1,1,1
+Vạn Kiếp#0|7,2,2,1,1,2
+Vạn Kiếp#0|8,2,2,1,1,1
+Vạn Kiếp#0|9,2,2,1,1,1
+Xóm Chiếu|0,1,1,1,1,1
+Xóm Chiếu|1,1,1,1,1,1
+Xóm Chiếu|12,1,1,1,1,1
+Xóm Chiếu|14,1,1,1,1,1
+Xóm Chiếu|15,1,1,1,1,1
+Xóm Chiếu|16,1,1,1,1,1
+Xóm Chiếu|17,1,1,1,1,1
+Xóm Chiếu|19,1,1,1,1,1
+Xóm Chiếu|2,1,1,1,1,1
+Xóm Chiếu|20,1,1,1,1,1
+Xóm Chiếu|22,1,1,1,1,1
+Xóm Chiếu|24,1,1,1,1,1
+Xóm Chiếu|25,1,1,1,1,1
+Xóm Chiếu|3,1,1,1,1,1
+Xóm Chiếu|4,1,1,1,1,1
+Xóm Chiếu|5,1,1,1,1,1
+Xóm Chiếu|8,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|0,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|11,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|12,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|13,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|14,2,2,1,1,1
+Xô Viết Nghệ Tĩnh#0|18,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|19,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|2,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|21,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|22,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|26,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|30,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|31,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|35,2,2,1,1,1
+Xô Viết Nghệ Tĩnh#0|36,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|38,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|39,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|40,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#0|8,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|11,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|12,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|13,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|14,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|16,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|17,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|19,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|2,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|24,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|25,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|26,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|27,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|29,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|31,2,2,1,1,1
+Xô Viết Nghệ Tĩnh#1|35,2,2,1,1,2
+Xô Viết Nghệ Tĩnh#1|36,2,2,1,1,2
+Xô Viết Nghệ Tĩnh#1|37,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|39,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|4,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|40,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|41,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|47,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|49,2,2,1,1,2
+Xô Viết Nghệ Tĩnh#1|55,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|57,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|59,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|60,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|61,1,1,1,1,1
+Xô Viết Nghệ Tĩnh#1|62,1,1,1,1,1
+Đinh Bộ Lĩnh|10,1,1,1,1,1
+Đinh Bộ Lĩnh|13,1,1,1,1,1
+Đinh Bộ Lĩnh|14,1,1,1,1,1
+Đinh Bộ Lĩnh|16,1,1,1,1,1
+Đinh Bộ Lĩnh|17,1,1,1,1,1
+Đinh Bộ Lĩnh|19,1,1,1,1,1
+Đinh Bộ Lĩnh|2,2,2,1,1,1
+Đinh Bộ Lĩnh|20,1,1,1,1,1
+Đinh Bộ Lĩnh|23,1,1,1,1,1
+Đinh Bộ Lĩnh|24,1,1,1,1,1
+Đinh Bộ Lĩnh|25,1,1,1,1,1
+Đinh Bộ Lĩnh|26,2,2,1,1,2
+Đinh Bộ Lĩnh|27,1,1,1,1,1
+Đinh Bộ Lĩnh|28,1,1,1,1,1
+Đinh Bộ Lĩnh|29,1,1,1,1,1
+Đinh Bộ Lĩnh|3,1,1,1,1,1
+Đinh Bộ Lĩnh|31,1,1,1,1,1
+Đinh Bộ Lĩnh|33,2,2,1,1,1
+Đinh Bộ Lĩnh|35,2,2,1,1,1
+Đinh Bộ Lĩnh|37,1,1,1,1,1
+Đinh Bộ Lĩnh|39,1,1,1,1,1
+Đinh Bộ Lĩnh|4,1,1,1,1,1
+Đinh Bộ Lĩnh|41,1,1,1,1,1
+Đinh Bộ Lĩnh|42,1,1,1,1,1
+Đinh Bộ Lĩnh|46,1,1,1,1,1
+Đinh Bộ Lĩnh|7,2,2,1,1,1
+Điện Biên Phủ#1|0,2,2,1,1,1
+Điện Biên Phủ#1|1,2,2,1,1,1
+Điện Biên Phủ#1|10,2,2,1,1,1
+Điện Biên Phủ#1|100,2,2,1,1,1
+Điện Biên Phủ#1|101,2,2,1,1,1
+Điện Biên Phủ#1|102,2,2,1,1,1
+Điện Biên Phủ#1|103,2,2,1,1,1
+Điện Biên Phủ#1|104,2,2,1,1,1
+Điện Biên Phủ#1|105,2,2,1,1,1
+Điện Biên Phủ#1|106,2,2,1,1,1
+Điện Biên Phủ#1|107,2,2,1,1,1
+Điện Biên Phủ#1|108,2,2,1,1,1
+Điện Biên Phủ#1|109,2,2,1,1,1
+Điện Biên Phủ#1|11,2,2,1,1,1
+Điện Biên Phủ#1|110,2,2,1,1,1
+Điện Biên Phủ#1|111,2,2,1,1,1
+Điện Biên Phủ#1|112,2,2,1,1,1
+Điện Biên Phủ#1|113,2,2,1,1,1
+Điện Biên Phủ#1|114,2,2,1,1,1
+Điện Biên Phủ#1|115,2,2,1,1,1
+Điện Biên Phủ#1|116,2,2,1,1,1
+Điện Biên Phủ#1|117,2,2,1,1,1
+Điện Biên Phủ#1|118,2,2,1,1,1
+Điện Biên Phủ#1|119,1,1,1,1,1
+Điện Biên Phủ#1|12,1,1,1,1,1
+Điện Biên Phủ#1|120,2,2,1,1,1
+Điện Biên Phủ#1|121,1,1,1,1,1
+Điện Biên Phủ#1|122,2,2,1,1,1
+Điện Biên Phủ#1|123,2,2,1,1,1
+Điện Biên Phủ#1|124,2,2,1,1,1
+Điện Biên Phủ#1|125,2,2,1,1,1
+Điện Biên Phủ#1|126,2,2,1,1,1
+Điện Biên Phủ#1|127,2,2,1,1,1
+Điện Biên Phủ#1|128,2,2,1,1,1
+Điện Biên Phủ#1|129,2,2,1,1,1
+Điện Biên Phủ#1|13,2,2,1,1,1
+Điện Biên Phủ#1|130,2,2,1,1,1
+Điện Biên Phủ#1|131,2,2,1,1,1
+Điện Biên Phủ#1|132,1,1,1,1,1
+Điện Biên Phủ#1|14,2,2,1,1,1
+Điện Biên Phủ#1|15,2,2,1,1,1
+Điện Biên Phủ#1|16,2,2,1,1,1
+Điện Biên Phủ#1|17,2,2,1,1,1
+Điện Biên Phủ#1|18,2,2,1,1,1
+Điện Biên Phủ#1|19,2,2,1,1,1
+Điện Biên Phủ#1|2,2,2,1,1,1
+Điện Biên Phủ#1|20,2,2,1,1,1
+Điện Biên Phủ#1|21,2,2,1,1,1
+Điện Biên Phủ#1|22,2,2,1,1,1
+Điện Biên Phủ#1|23,2,2,1,1,1
+Điện Biên Phủ#1|24,2,2,1,1,1
+Điện Biên Phủ#1|25,2,2,1,1,1
+Điện Biên Phủ#1|26,2,2,1,1,1
+Điện Biên Phủ#1|27,2,2,1,1,1
+Điện Biên Phủ#1|28,2,2,1,1,1
+Điện Biên Phủ#1|29,2,2,1,1,1
+Điện Biên Phủ#1|3,2,2,1,1,1
+Điện Biên Phủ#1|30,2,2,1,1,1
+Điện Biên Phủ#1|31,2,2,1,1,1
+Điện Biên Phủ#1|32,2,2,1,1,1
+Điện Biên Phủ#1|33,2,2,1,1,1
+Điện Biên Phủ#1|34,2,2,1,1,1
+Điện Biên Phủ#1|35,2,2,1,1,1
+Điện Biên Phủ#1|36,2,2,1,1,1
+Điện Biên Phủ#1|37,2,2,1,1,1
+Điện Biên Phủ#1|38,2,2,1,1,1
+Điện Biên Phủ#1|39,2,2,1,1,1
+Điện Biên Phủ#1|4,2,2,1,1,1
+Điện Biên Phủ#1|40,2,2,1,1,1
+Điện Biên Phủ#1|41,1,1,1,1,1
+Điện Biên Phủ#1|42,2,2,1,1,1
+Điện Biên Phủ#1|43,2,2,1,1,1
+Điện Biên Phủ#1|44,2,2,1,1,1
+Điện Biên Phủ#1|45,2,2,1,1,1
+Điện Biên Phủ#1|46,2,2,1,1,1
+Điện Biên Phủ#1|47,2,2,1,1,1
+Điện Biên Phủ#1|48,2,2,1,1,1
+Điện Biên Phủ#1|49,2,2,1,1,1
+Điện Biên Phủ#1|5,2,2,1,1,1
+Điện Biên Phủ#1|50,2,2,1,1,1
+Điện Biên Phủ#1|51,2,2,1,1,1
+Điện Biên Phủ#1|52,2,2,1,1,1
+Điện Biên Phủ#1|53,2,2,1,1,1
+Điện Biên Phủ#1|54,2,2,1,1,1
+Điện Biên Phủ#1|55,2,2,1,1,1
+Điện Biên Phủ#1|56,2,2,1,1,1
+Điện Biên Phủ#1|57,2,2,1,1,1
+Điện Biên Phủ#1|58,2,2,1,1,1
+Điện Biên Phủ#1|59,2,2,1,1,1
+Điện Biên Phủ#1|6,2,2,1,1,1
+Điện Biên Phủ#1|60,2,2,1,1,1
+Điện Biên Phủ#1|61,2,2,1,1,1
+Điện Biên Phủ#1|62,2,2,1,1,1
+Điện Biên Phủ#1|63,2,2,1,1,1
+Điện Biên Phủ#1|64,2,2,1,1,1
+Điện Biên Phủ#1|65,2,2,1,1,1
+Điện Biên Phủ#1|66,2,2,1,1,1
+Điện Biên Phủ#1|67,2,2,1,1,1
+Điện Biên Phủ#1|68,2,2,1,1,1
+Điện Biên Phủ#1|69,2,2,1,1,1
+Điện Biên Phủ#1|7,2,2,1,1,1
+Điện Biên Phủ#1|70,2,2,1,1,1
+Điện Biên Phủ#1|71,2,2,1,1,1
+Điện Biên Phủ#1|72,2,2,1,1,1
+Điện Biên Phủ#1|73,2,2,1,1,1
+Điện Biên Phủ#1|74,2,2,1,1,1
+Điện Biên Phủ#1|75,2,2,1,1,1
+Điện Biên Phủ#1|76,2,2,1,1,1
+Điện Biên Phủ#1|77,2,2,1,1,1
+Điện Biên Phủ#1|78,2,2,1,1,1
+Điện Biên Phủ#1|79,2,2,1,1,1
+Điện Biên Phủ#1|8,2,2,1,1,1
+Điện Biên Phủ#1|80,2,2,1,1,1
+Điện Biên Phủ#1|81,2,2,1,1,1
+Điện Biên Phủ#1|82,2,2,1,1,1
+Điện Biên Phủ#1|83,2,2,1,1,1
+Điện Biên Phủ#1|84,2,2,1,1,1
+Điện Biên Phủ#1|85,2,2,1,1,1
+Điện Biên Phủ#1|86,2,2,1,1,1
+Điện Biên Phủ#1|87,2,2,1,1,1
+Điện Biên Phủ#1|88,2,2,1,1,1
+Điện Biên Phủ#1|89,2,2,1,1,1
+Điện Biên Phủ#1|9,2,2,1,1,1
+Điện Biên Phủ#1|90,2,2,1,1,1
+Điện Biên Phủ#1|91,2,2,1,1,1
+Điện Biên Phủ#1|92,2,2,1,1,1
+Điện Biên Phủ#1|93,2,2,1,1,1
+Điện Biên Phủ#1|94,2,2,1,1,1
+Điện Biên Phủ#1|95,2,2,1,1,1
+Điện Biên Phủ#1|96,2,2,1,1,1
+Điện Biên Phủ#1|97,2,2,1,1,1
+Điện Biên Phủ#1|98,2,2,1,1,1
+Điện Biên Phủ#1|99,2,2,1,1,1
+Đoàn Văn Bơ|0,1,1,1,1,1
+Đoàn Văn Bơ|10,1,1,1,1,1
+Đoàn Văn Bơ|12,1,1,1,1,1
+Đoàn Văn Bơ|13,1,1,1,1,1
+Đoàn Văn Bơ|16,1,1,1,1,1
+Đoàn Văn Bơ|18,1,1,1,1,1
+Đoàn Văn Bơ|19,1,1,1,1,1
+Đoàn Văn Bơ|2,1,1,1,1,1
+Đoàn Văn Bơ|20,1,1,1,1,1
+Đoàn Văn Bơ|21,1,1,1,1,1
+Đoàn Văn Bơ|22,1,1,1,1,1
+Đoàn Văn Bơ|24,1,1,1,1,1
+Đoàn Văn Bơ|26,1,1,1,1,1
+Đoàn Văn Bơ|28,1,1,1,1,1
+Đoàn Văn Bơ|29,1,1,1,1,1
+Đoàn Văn Bơ|3,1,1,1,1,1
+Đoàn Văn Bơ|30,1,1,1,1,1
+Đoàn Văn Bơ|32,1,1,1,1,1
+Đoàn Văn Bơ|34,1,1,1,1,1
+Đoàn Văn Bơ|35,1,1,1,1,1
+Đoàn Văn Bơ|37,1,1,1,1,1
+Đoàn Văn Bơ|4,1,1,1,1,1
+Đoàn Văn Bơ|42,1,1,1,1,1
+Đoàn Văn Bơ|47,1,1,1,1,1
+Đoàn Văn Bơ|48,1,1,1,1,1
+Đoàn Văn Bơ|49,1,1,1,1,1
+Đoàn Văn Bơ|5,1,1,1,1,1
+Đoàn Văn Bơ|50,1,1,1,1,1
+Đoàn Văn Bơ|51,1,1,1,1,1
+Đoàn Văn Bơ|52,1,1,1,1,1
+Đoàn Văn Bơ|54,1,1,1,1,1
+Đoàn Văn Bơ|58,1,1,1,1,1
+Đoàn Văn Bơ|59,1,1,1,1,1
+Đoàn Văn Bơ|61,1,1,1,1,1
+Đoàn Văn Bơ|8,1,1,1,1,1
+Đào Duy Từ#0|0,1,1,1,1,1
+Đào Duy Từ#0|15,1,1,1,1,1
+Đào Duy Từ#0|16,2,2,1,1,2
+Đào Duy Từ#0|18,1,1,1,1,1
+Đào Duy Từ#0|19,2,2,1,1,2
+Đào Duy Từ#0|2,1,1,1,1,1
+Đào Duy Từ#0|20,1,1,1,1,1
+Đào Duy Từ#0|21,1,1,1,1,1
+Đào Duy Từ#0|23,1,1,1,1,1
+Đào Duy Từ#0|3,1,1,1,1,1
+Đào Duy Từ#0|7,1,1,1,1,1
+Đỗ Ngọc Thạnh|1,2,2,1,1,2
+Đỗ Ngọc Thạnh|10,2,2,1,1,1
+Đỗ Ngọc Thạnh|13,1,1,1,1,1
+Đỗ Ngọc Thạnh|14,1,1,1,1,1
+Đỗ Ngọc Thạnh|15,1,1,1,1,1
+Đỗ Ngọc Thạnh|16,1,1,1,1,1
+Đỗ Ngọc Thạnh|17,1,1,1,1,1
+Đỗ Ngọc Thạnh|22,1,1,1,1,1
+Đỗ Ngọc Thạnh|25,1,1,1,1,1
+Đỗ Ngọc Thạnh|7,1,1,1,1,1
+Đỗ Ngọc Thạnh|8,1,1,1,1,1

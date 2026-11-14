@@ -1,0 +1,56 @@
+% ==============================================================================
+% PHỤ LỤC: TRUY NGUỒN SỐ LIỆU
+% ==============================================================================
+\section{Truy nguồn số liệu và cách chạy lại}
+\label{sec:trace}
+
+Mọi con số trong báo cáo đến từ một file trong repo hoặc từ một script chạy lại được. Đường dẫn \f{tables/} và \f{figures/} là tương đối so với \f{docs/data_report/}.
+
+\begin{table}[H]
+\centering
+\caption{Script sinh số liệu và hình của báo cáo}
+\label{tab:scripts}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.34\linewidth} L}
+\toprule
+\textbf{Script} & \textbf{Sinh ra} \\
+\midrule
+\f{src/eda/27_rebuild_missing_crops.py} & Dựng lại ảnh cắt còn thiếu trên máy từ manifest (671 ảnh val/test). Không đọc nhãn \\
+\f{src/eda/28_eda_tabular.py} & Bảng~\ref{tab:overview}, \ref{tab:label-source}, \ref{tab:inventory}--\ref{tab:assoc}, \ref{tab:checks}; hình \f{tab_*.pdf}; \f{tables/tabular_numbers.json} và các bảng thống kê nhãn, metadata, kiểm tra nhất quán \\
+\f{src/eda/29_eda_images.py} & Bảng~\ref{tab:image}; hình \f{img_*}; \f{tables/image_stats.csv} (mỗi ảnh một dòng), \f{tables/image_numbers.json} \\
+\f{src/eda/30_eda_duplicates.py} & Bảng~\ref{tab:spatial}, \ref{tab:domain}; hình \f{dup_*}; \f{tables/duplicate_numbers.json} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Nguồn của các số liệu không do script EDA sinh ra}
+\label{tab:othersrc}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.36\linewidth} L}
+\toprule
+\textbf{Số liệu} & \textbf{Nguồn} \\
+\midrule
+Số ảnh Mapillary, số đường OSM, tỉ lệ gắn đường, ảnh đêm bị loại & \f{docs/collection_log.md}; \f{data/manifest/main_v1_collection_status.csv} \\
+So sánh ảnh trái và phải, tham số cắt ảnh & \f{src/analysis/08_side_analysis.py}, \f{09_crop_param_study.py}; \f{data/streets/side_coverage.csv}, \f{crop_param_study.csv} \\
+Đồng thuận, phân xử, nguồn nhãn & \f{src/labeling/19_main_agreement.py}; \f{data/labels/main_report/main_report.md}; \f{docs/labeling_phase1.md} \\
+Pilot & \f{src/labeling/07_pilot_agreement.py}; \f{data/labels/pilot_report/} \\
+So sánh bộ chọn ảnh & \f{src/analysis/21_selector_benchmark.py}; \f{data/streets/selector_benchmark.csv} \\
+Quét đường, kho ảnh bơm, chọn 2.000 ảnh & \f{src/analysis/24_street_scan.py}, \f{src/collection/23_collect_train_extra.py}; \f{data/streets/street_scan_v1.csv}, \f{train_extra_v1_scores.csv} \\
+Kết quả gán ảnh bơm, kiểm tra chéo & \f{src/labeling/26_train_extra_report.py}; \f{data/labels/train_extra_report/report.md}; \f{data/labels/train_extra_cross_check.csv} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{Chạy lại} (từ thư mục gốc của repo, Python trong \f{.venv}; script 29 và 30 cần ảnh trong \f{data/crops/}, script 30 nên chạy trên GPU):
+
+\begin{verbatim}
+python src/eda/27_rebuild_missing_crops.py  # can MAPILLARY_TOKEN
+python src/eda/28_eda_tabular.py
+python src/eda/29_eda_images.py
+python src/eda/30_eda_duplicates.py
+cd docs/data_report && sh make.sh           # ra data_report.pdf
+\end{verbatim}
+
+\textbf{Việc ai làm.} Ba script EDA do ba tác tử AI (Claude Sonnet) viết theo đề bài của tác tử điều phối (Claude); tác tử điều phối đã tính lại độc lập các số chính (đếm nhãn, khoảng Wilson, thống kê metadata, phép đo ảnh trên 300 ảnh mẫu, mã băm md5, khoảng cách giữa các tập, độ tương đồng embedding) và xem các tấm ảnh kiểm tra trước khi đưa vào báo cáo. Các câu ``quan sát bằng mắt'' là quan sát của AI trên tấm ảnh ghép, không phải nhãn và không phải phép đo. Nhãn của bộ dữ liệu do người gán.
+
+\textbf{Ảnh trong báo cáo.} Hình~\ref{fig:examples} và~\ref{fig:examples-extra} chỉ dùng ảnh train. Các tấm ảnh kiểm tra nội bộ (\f{figures/*_sheet_*.jpg}) có ảnh val/test nên không đưa vào báo cáo và không đưa lên git. Ảnh: \cc.

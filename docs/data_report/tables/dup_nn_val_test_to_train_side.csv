@@ -1,0 +1,1161 @@
+﻿item,split,street_id,nn_cos_item,nn_cos_group,nn_cos_street,nn_cos,nn_cos_dhash,nn_cos_dist_m,nn_dhash_item,nn_dhash_group,nn_dhash,nn_dhash_cos,nn_dhash_dist_m,min_phash,min_dist_m_to_train_side
+00160190,test,Trần Phú,d110310c,main_train,Nguyễn Trãi,0.77023685,31,2745.6106,067a2160,main_train,15,0.56357944,3822.1494,16,88.65686
+00d49193,test,Trần Phú,56fe54bc,te_top_score,Lê Hồng Phong#0,0.86171156,31,415.57306,fcb720b7,te_top_score,16,0.8365331,548.50085,16,37.96504
+0118dafe,test,Hai Bà Trưng,5a487a1c,main_train,Pasteur,0.7502168,34,862.12805,cfc7e6c2,te_random,17,0.5597395,5420.601,14,349.79663
+01308ebc,test,Lý Thường Kiệt,94aa2f30,main_train,Phan Đăng Lưu,0.75815946,34,5038.9443,952e456a,te_random,17,0.5343218,3297.173,16,281.99097
+016df105,val,Nguyễn Đình Chiểu#0,86d2120f,main_train,Nguyễn Trãi,0.8322362,30,5421.8193,89a4ea44,te_top_score,15,0.38786814,5863.8164,14,300.23752
+01c33053,test,Trần Phú,9d7f354a,main_train,Nguyễn Trãi,0.852175,30,2331.7444,66dedb1d,main_train,15,0.55689025,3676.0388,16,193.79698
+01f40dbb,test,Nơ Trang Long,f88eff9b,te_top_score,Lê Hồng Phong#0,0.81808436,40,5304.432,d270c22a,te_top_score,17,0.58416814,5681.106,16,109.059105
+027c7587,val,Nguyễn Đình Chiểu#0,a5aecba3,main_train,Nguyễn Trãi,0.8676509,26,3912.086,2eec78ea,main_train,16,0.6096657,3371.0789,16,285.03928
+028f82d8,val,Hồng Bàng,db0583a8,main_train,Nguyễn Kiệm#0,0.73689336,31,5303.758,91194b17,te_random,16,0.24222732,6813.068,14,135.96584
+02970c79,val,Nguyễn Đình Chiểu#0,768bb1fb,main_train,Nguyễn Trãi,0.86569387,28,5470.152,dee930a5,te_top_score,16,0.73001766,1125.687,16,259.91516
+032d1273,test,Hai Bà Trưng,d024a0ae,te_random,Trần Quang Khải,0.81055975,26,467.02396,fda04d71,main_train,16,0.40462908,1677.0747,16,309.52032
+03d9d41c,test,Lý Thường Kiệt,ddc11c9d,main_train,Nguyễn Trãi,0.8438563,26,3749.3018,05330742,main_train,15,0.67925286,4698.3,14,305.8617
+04546518,val,Võ Văn Tần,4a0b2d61,main_train,Phan Đăng Lưu,0.7244958,34,2856.5876,fb9fde34,te_random,16,0.5703605,1740.6658,16,150.23454
+048ef1c6,val,Hồng Bàng,f488edea,main_train,Lê Văn Sỹ,0.7222139,27,4609.365,23ce209d,main_train,14,0.41884735,3218.9348,16,104.0975
+04a0561b,val,Võ Văn Tần,55465971,main_train,Nguyễn Trãi,0.65954965,30,4219.0723,5df6db12,te_top_score,16,0.43813863,3054.9092,14,151.5443
+04a57005,test,Nơ Trang Long,4b22f696,te_random,Phạm Thế Hiển#1,0.86332405,32,7515.0093,d44cb5c6,main_train,17,0.51673657,1288.7844,16,274.08047
+04b7150a,test,Lý Thường Kiệt,db4135f7,main_train,Nguyễn Trãi,0.8273326,39,1199.9712,64513c33,main_train,15,0.21888877,3895.2004,14,119.12427
+04e6eec2,val,Hồng Bàng,8dbac443,main_train,Nguyễn Trãi,0.7557579,29,740.1024,aa30cb35,te_top_score,16,0.4448613,7481.13,12,126.33547
+0516b586,test,Trần Phú,40ed79b4,te_top_score,Nguyễn Gia Trí,0.84792453,34,7665.7646,5fc7a990,main_train,14,0.747591,725.0222,16,134.84337
+052a0637,val,Hồng Bàng,b319dcd0,te_random,Lê Hồng Phong#0,0.7644315,37,1706.9952,dfc274ab,te_top_score,15,0.4747192,6954.8325,16,130.6887
+0547a90f,test,Lý Thường Kiệt,f00b309a,pilot,Phan Đăng Lưu,0.7607749,29,4247.8257,53b82122,main_train,15,0.40770236,4038.0823,14,170.72446
+05500952,test,Lý Thường Kiệt,92dc1b25,main_train,Lê Văn Sỹ,0.8237351,27,2242.8875,fbefa847,te_top_score,18,0.43707615,3794.176,20,338.00055
+0566c38f,test,Trần Phú,34e2cecb,main_train,Điện Biên Phủ#1,0.87469834,33,1036.3337,08dc4a33,te_random,17,0.78997195,3082.2734,14,94.8776
+058eff49,val,Võ Văn Tần,c47cd05f,main_train,Lê Văn Sỹ,0.8425312,30,2747.9048,7aa880a2,main_train,16,0.43395334,2578.5012,14,145.2329
+059c6f84,test,Trần Phú,6ebcddcf,te_random,Sư Vạn Hạnh,0.78464013,34,1298.3434,652d9e17,main_train,18,0.46128494,919.4083,14,177.94147
+05ac14ae,test,Lý Thường Kiệt,23ce209d,main_train,Cách Mạng Tháng Tám#0,0.7654238,25,1719.2803,92d69bc9,main_train,12,0.32841933,2812.2532,16,393.05948
+060561d0,val,Nguyễn Đình Chiểu#0,014665ba,main_train,Nguyễn Trãi,0.8672899,31,4244.441,d60a9792,pilot,16,0.7904015,766.4733,16,307.80582
+06194799,test,Trần Phú,2564fad9,te_top_score,Nguyễn Thượng Hiền#0,0.7775273,38,5228.3813,9a0e0add,te_top_score,15,0.63839763,2841.2346,16,56.627872
+062a49ab,val,Nguyễn Đình Chiểu#0,7ad0147a,te_random,Đào Duy Từ#0,0.74505854,22,5459.857,b6aaa503,te_top_score,18,0.3483328,2450.693,16,249.06468
+063f3308,test,Nơ Trang Long,15886b93,te_random,Xô Viết Nghệ Tĩnh#0,0.834993,33,1958.9454,d6ec35df,te_top_score,17,0.65078145,1238.3882,16,68.04923
+064f0ba9,val,Hồng Bàng,42597e1c,main_train,Điện Biên Phủ#1,0.78550076,32,3145.4663,6b587e86,te_random,15,0.5598945,5524.143,14,13.733061
+069a376c,val,Nguyễn Đình Chiểu#0,999fc1e9,main_train,Pasteur,0.82280517,32,334.05145,b74d3c93,te_random,16,0.25436336,3045.779,14,286.44714
+06fe853a,val,Nguyễn Đình Chiểu#0,4a024506,main_train,Pasteur,0.833047,29,1087.4233,a9b89222,main_train,16,0.7433761,3626.8752,16,130.32373
+0784cff2,test,Lý Thường Kiệt,9be89c4a,main_train,Phan Đăng Lưu,0.8623396,27,4998.0054,81037121,te_random,17,0.63027155,1838.5294,14,558.79846
+07b54676,test,Nơ Trang Long,04d5205b,main_train,Nguyễn Trãi,0.8348955,27,7204.3013,3688b349,main_train,17,0.58988595,5247.2324,16,8.757235
+07dfa288,val,Võ Văn Tần,f01eab0d,te_top_score,Phan Xích Long,0.8697513,30,3139.5642,69ef87a4,main_train,12,0.5103919,1790.3662,14,115.41327
+082a201c,test,Nơ Trang Long,1d98f2ca,te_top_score,Trần Quang Khải,0.6089849,35,2515.3887,c27e358a,main_train,18,0.38247868,4236.4976,18,189.82675
+084f90b8,val,Nguyễn Đình Chiểu#0,ff0f06d9,te_top_score,Nguyễn Trọng Tuyển,0.80572784,41,3502.3877,cdd5cf56,te_random,18,0.6261064,1281.8511,18,114.52985
+08cc90ca,val,Võ Văn Tần,8fb20be9,main_train,Cách Mạng Tháng Tám#0,0.69093186,26,3849.9976,e30cbf6a,main_train,18,0.43723735,710.66907,18,90.45158
+08ccfe84,val,Hồng Bàng,dc08dca9,te_random,Phan Đình Phùng,0.7831968,36,5461.112,8abffecc,te_top_score,15,0.6038605,2207.022,18,87.155365
+09072443,val,Hồng Bàng,58c2bce4,te_random,Huỳnh Văn Bánh,0.88445246,33,4671.392,f57f5ee2,te_top_score,17,0.5815984,5745.831,16,84.82301
+091287c2,val,Hồng Bàng,ef48aaba,te_top_score,Sư Vạn Hạnh,0.8618473,22,2228.7886,608f4248,main_train,15,0.6580201,2150.5796,14,101.915886
+0924b20b,test,Nơ Trang Long,e4ae97a0,main_train,Pasteur,0.7565786,31,3260.3525,54d0e90a,main_train,16,0.64777935,4395.1006,10,228.71986
+09423d2d,test,Lý Thường Kiệt,85e2d3a6,main_train,Trần Hưng Đạo,0.7396304,24,4126.5806,3a9589bb,main_train,19,0.529379,5453.2144,12,350.67526
+095adcb6,val,Võ Văn Tần,89683d4e,main_train,Lê Văn Sỹ,0.8217594,32,3081.0544,6e0a100a,main_train,13,0.66812384,3588.3413,14,61.787487
+09a89c69,test,Nơ Trang Long,8f09b771,main_train,Điện Biên Phủ#1,0.76677924,22,3218.3108,c9c02cb5,te_random,14,0.54235023,5609.1514,16,147.619
+09c45603,val,Hồng Bàng,788a36e5,main_train,Điện Biên Phủ#1,0.8693533,27,2757.8706,af822b52,main_train,19,0.76125354,3594.8948,14,126.909256
+0a7275d4,test,Lý Thường Kiệt,a5e28a68,te_random,Vĩnh Viễn#0,0.79179543,34,1677.4199,ddaa524d,te_top_score,17,0.5634367,5488.76,14,379.30988
+0b95c469,val,Võ Văn Tần,4a024506,main_train,Pasteur,0.66742235,28,91.2427,29e59242,main_train,17,0.43773717,1780.4719,18,65.97503
+0c5a625c,val,Võ Văn Tần,1c129812,main_train,Lê Văn Sỹ,0.9089844,37,3307.7632,7f879fb9,te_random,17,0.62513644,2175.1946,18,146.2546
+0c6b0875,test,Lý Thường Kiệt,cf80180e,main_train,Trần Hưng Đạo,0.75220954,39,4179.855,7650a6fc,te_top_score,16,0.47254947,4591.7803,18,724.00836
+0cb98d3d,val,Nguyễn Đình Chiểu#0,54d9faf5,main_train,Nguyễn Trãi,0.83194983,33,3848.1643,0e56264a,main_train,19,0.6545803,877.62494,18,304.0072
+0d0813b0,val,Nguyễn Đình Chiểu#0,f8326b31,main_train,Nguyễn Thị Minh Khai,0.8511958,30,303.32187,130aee66,te_random,16,0.34673977,1010.7278,18,303.14984
+0d427ee0,val,Võ Văn Tần,9a94f69b,te_top_score,Hoàng Hoa Thám,0.74304044,28,3759.528,eeab5b9b,main_train,14,0.61022776,4323.427,18,141.26889
+0da5b692,test,Lý Thường Kiệt,45698ddc,main_train,Nguyễn Thị Minh Khai,0.80214226,35,3374.796,b991b318,main_train,17,0.6056592,2956.2666,16,780.9763
+0dc16546,test,Lý Thường Kiệt,a59b03e0,main_train,Nguyễn Trãi,0.66925704,38,1933.4991,b2bed675,main_train,15,0.35337463,4652.409,16,187.33481
+0dc52c11,test,Hai Bà Trưng,7fbb5f73,main_train,Nguyễn Trãi,0.65979064,41,1600.6019,201a8e00,main_train,17,0.48992082,2846.3738,16,245.54964
+0e18afb2,test,Lý Thường Kiệt,9be89c4a,main_train,Phan Đăng Lưu,0.7538873,34,5031.3,b15c2e2c,te_top_score,15,0.43037984,7457.298,18,634.3854
+0e2a7e6e,test,Lý Thường Kiệt,658cd49a,main_train,Trần Hưng Đạo,0.7260652,21,2038.5679,51f374ee,te_random,17,0.5126563,6080.705,18,103.75077
+0e58ec37,val,Võ Văn Tần,f01eab0d,te_top_score,Phan Xích Long,0.8553846,21,3152.4648,dc428d3d,te_top_score,15,0.6347455,3170.4534,16,98.6581
+0e5aa286,val,Hồng Bàng,f284b062,te_random,Sư Vạn Hạnh,0.7831225,29,2662.0896,54f823a8,main_train,17,0.6492446,1442.626,16,89.020615
+0e5c5cac,test,Hai Bà Trưng,a7a2373f,main_train,Lê Văn Sỹ,0.7681466,39,4456.865,f7a83cfa,main_train,16,0.5297085,3735.0972,16,492.9486
+0e9fde7b,val,Võ Văn Tần,e807e08e,pilot,Phan Đăng Lưu,0.59561354,36,3069.039,7b840576,te_random,17,0.3756969,4280.167,16,153.24739
+0ef7087c,test,Nơ Trang Long,03c3c2ce,te_top_score,Hoàng Hoa Thám,0.8179058,35,1243.8849,d1cfaa85,main_train,15,0.6569156,8162.849,16,253.27686
+0ff46e8e,test,Hai Bà Trưng,943c9ea3,main_train,Trần Hưng Đạo,0.7639463,30,5114.3276,d67dec05,te_top_score,16,0.60805327,5906.0635,16,192.32013
+0ff73f4c,val,Nguyễn Đình Chiểu#0,33e25433,main_train,Nguyễn Thị Minh Khai,0.85729855,33,1291.2645,e1f56695,main_train,17,0.3043766,2506.391,16,278.09915
+101c6876,test,Lý Thường Kiệt,7146c3b2,te_top_score,Đào Duy Từ#0,0.832128,26,937.90436,0ef6aaed,main_train,15,0.4906373,1477.7151,14,178.5888
+1021e9b0,val,Hồng Bàng,fcf2ee9b,main_train,Trần Hưng Đạo,0.77252865,32,3057.374,c5a37929,te_top_score,15,0.42693874,7812.2476,12,75.83609
+10304a66,test,Trần Phú,9d7f354a,main_train,Nguyễn Trãi,0.8668699,28,2250.558,2d25fd2b,main_train,16,0.7962467,2040.5648,16,155.93324
+109630a6,val,Võ Văn Tần,767997ea,main_train,Điện Biên Phủ#1,0.7248903,27,2321.8914,3688b349,main_train,16,0.4700857,1305.5153,14,143.44511
+109a062b,test,Lý Thường Kiệt,e3216d25,main_train,Cách Mạng Tháng Tám#0,0.8721539,30,1956.0867,0174df20,te_top_score,15,0.5866811,2918.2583,18,336.0163
+10d515d7,val,Nguyễn Đình Chiểu#0,0ef16731,main_train,Cách Mạng Tháng Tám#0,0.7464684,31,2611.7776,b907dfe1,te_top_score,17,0.6670872,4008.563,16,298.08984
+110005dc,val,Hồng Bàng,8b7c21fe,te_top_score,Nguyễn Thái Bình#0,0.8784739,25,4604.3745,63cfc98f,main_train,18,0.7258183,4107.4966,16,113.32059
+110fd2c8,test,Nơ Trang Long,d0251cf8,te_random,Vĩnh Khánh,0.6612272,32,4531.367,6fea682b,te_top_score,16,0.42242533,441.39407,16,57.105686
+11a1d33c,val,Hồng Bàng,5e828698,te_random,Lê Hồng Phong#0,0.82747036,36,2032.7609,7f5673a3,te_random,17,0.5668156,4055.1545,16,124.60643
+11bc768e,test,Lý Thường Kiệt,f53cb2c4,main_train,Phan Đăng Lưu,0.6352159,31,6131.165,d8032773,main_train,18,0.42937684,1290.5868,14,154.86066
+11e56da7,val,Võ Văn Tần,6689e65f,te_random,Xô Viết Nghệ Tĩnh#1,0.7931757,27,4700.7163,505f5302,te_top_score,17,0.6861436,2495.0996,18,147.63214
+11ec3135,val,Hồng Bàng,e707f0bb,te_random,Nhật Tảo,0.77963996,38,1596.535,294dcfe1,te_top_score,18,0.71840304,372.51318,18,102.22446
+12ff8206,val,Võ Văn Tần,b1fa4940,main_train,Cách Mạng Tháng Tám#0,0.797003,38,3897.925,7d6ac707,te_random,12,0.4644177,4305.8477,18,149.31384
+13472d54,val,Nguyễn Đình Chiểu#0,36b78646,main_train,Điện Biên Phủ#1,0.8528624,32,514.0379,4cf3d0cd,te_top_score,15,0.50632733,4268.2812,16,301.3564
+142d2d3c,test,Trần Phú,b970fc75,main_train,Điện Biên Phủ#1,0.75799465,32,1003.1646,86d84e5f,main_train,18,0.5585173,4194.2866,16,142.03304
+14a058dd,val,Hồng Bàng,b73d801b,main_train,Cách Mạng Tháng Tám#0,0.7841206,31,3612.8452,a58efd32,te_top_score,17,0.46742532,5838.88,18,104.697655
+1504516d,test,Nơ Trang Long,dbc37bbd,te_top_score,Hoàng Hoa Thám,0.8431718,31,1380.6018,536174ce,te_top_score,17,0.78607947,674.65674,18,213.09013
+151a19df,test,Lý Thường Kiệt,e707f0bb,te_random,Nhật Tảo,0.8683577,27,2983.96,1500f1a8,main_train,18,0.59646463,2223.4084,16,141.10574
+1541e0fe,val,Võ Văn Tần,7fee6897,main_train,Nguyễn Thị Minh Khai,0.63433135,17,515.0356,7fee6897,main_train,17,0.63433135,515.0356,12,153.0989
+155f91ad,test,Lý Thường Kiệt,c4ff90bc,main_train,Cách Mạng Tháng Tám#0,0.7566143,38,585.2106,6c7107c7,te_top_score,15,0.5136005,2852.7295,16,95.13584
+159a5164,test,Hai Bà Trưng,2aa735b2,main_train,Nguyễn Kiệm#0,0.69118375,30,3729.3699,11a3d0dc,main_train,18,0.48134667,3102.834,18,56.50183
+15ae013e,test,Lý Thường Kiệt,36aa8b96,main_train,Hải Thượng Lãn Ông,0.808756,35,2951.5193,d0ca14be,main_train,16,0.28257802,1432.5071,18,257.01132
+15ba22b7,test,Nơ Trang Long,f83e7abb,te_top_score,Trường Sa#0,0.7499393,31,1230.4265,d1cfaa85,main_train,16,0.56229055,7211.3467,14,242.74951
+1600ad6b,val,Hồng Bàng,4ebac960,te_random,Ngô Gia Tự#1,0.8642198,37,1876.6569,5b398b5a,te_top_score,18,0.5574515,3674.8384,14,92.37896
+165d72ef,val,Nguyễn Đình Chiểu#0,04aec862,main_train,Điện Biên Phủ#1,0.8492811,32,923.2302,5865263f,main_train,16,0.4605142,1629.5443,14,190.10503
+16717f49,val,Nguyễn Đình Chiểu#0,5967051a,main_train,Pasteur,0.84753406,35,823.4833,2d3ccdff,te_top_score,17,0.58448005,3431.637,16,236.62302
+16a5ded3,val,Hồng Bàng,53afbb35,main_train,Điện Biên Phủ#1,0.6694631,40,4377.6143,09867c7f,main_train,17,0.30617958,513.42664,18,100.54136
+17cd9818,test,Lý Thường Kiệt,f53cb2c4,main_train,Phan Đăng Lưu,0.71154004,37,5938.507,daea1d5d,te_top_score,18,0.50721383,6088.3867,12,203.80136
+17d7f5c2,test,Lý Thường Kiệt,d21c44d3,main_train,Trần Hưng Đạo,0.7309253,34,4395.514,a96bec90,te_random,16,0.5026394,1575.6298,16,267.1153
+180bc330,val,Nguyễn Đình Chiểu#0,767997ea,main_train,Điện Biên Phủ#1,0.6374364,27,645.8349,6fb6c5aa,main_train,15,0.40174955,2798.828,16,289.6755
+186e4ded,val,Hồng Bàng,d7e4e3a2,te_random,Cống Quỳnh#0,0.84813297,34,3295.2437,e08e39e1,main_train,17,0.5869023,2768.4766,16,168.15582
+1892da83,test,Trần Phú,b73bf798,te_random,Đinh Bộ Lĩnh,0.8831624,17,7170.8247,b73bf798,te_random,17,0.8831624,7170.8247,18,50.83774
+18cd7918,val,Võ Văn Tần,f8c4cb69,te_top_score,Nguyễn Thái Bình#0,0.7112541,38,4305.0723,d58a4017,te_top_score,14,0.4215056,2548.9243,16,154.18488
+1912771d,test,Nơ Trang Long,f8253950,te_top_score,Lý Thái Tổ#0,0.87043935,30,4625.116,da044979,te_top_score,16,0.5530105,5351.5786,14,187.95537
+1920a698,val,Hồng Bàng,58c2bce4,te_random,Huỳnh Văn Bánh,0.8651336,29,4766.663,fb68b91b,main_train,14,0.6903527,4599.529,16,53.964035
+192fb10d,val,Hồng Bàng,3c69f7a8,main_train,Hải Thượng Lãn Ông,0.8644476,28,912.24164,dc8c78be,te_top_score,15,0.6292406,4339.3037,16,37.86865
+194fa6de,val,Nguyễn Đình Chiểu#0,184016e5,main_train,Nguyễn Thị Minh Khai,0.80921113,28,652.6752,84469f68,main_train,15,0.72138953,6128.7515,18,290.5247
+197d0314,test,Nơ Trang Long,3062ef09,main_train,Điện Biên Phủ#1,0.8005642,28,1479.8239,5cbfa478,main_train,16,0.6813096,6221.021,14,242.46446
+19d3159c,val,Nguyễn Đình Chiểu#0,c6632377,main_train,Nguyễn Trãi,0.87612593,27,3744.2034,d72809ce,te_random,17,0.72501,2675.773,16,236.14738
+1a54222b,val,Nguyễn Đình Chiểu#0,a9bc632b,main_train,Nguyễn Trãi,0.7613952,31,3494.3022,f7a83cfa,main_train,17,0.54992855,3038.6692,16,118.21916
+1a77b87b,test,Hai Bà Trưng,5e25edca,te_top_score,Bà Hạt,0.6341149,34,3765.9907,fa415824,te_top_score,13,0.42668927,4199.226,20,25.857876
+1a85f1c2,test,Lý Thường Kiệt,c5d0dc48,main_train,Trần Hưng Đạo,0.64931107,25,3937.219,69b4d211,pilot,14,0.59019965,2872.392,16,776.90515
+1a9065b5,test,Hai Bà Trưng,198aade0,main_train,Pasteur,0.6888953,38,709.69775,93575413,main_train,15,0.6119079,373.6164,14,366.06876
+1aad760f,val,Võ Văn Tần,85e2d3a6,main_train,Trần Hưng Đạo,0.58656526,38,1774.8624,ad63ef9e,main_train,19,0.43700516,3887.7322,16,145.72455
+1adde2d6,test,Hai Bà Trưng,e71e9295,main_train,Nguyễn Trãi,0.75295013,26,2636.625,af0dc410,main_train,15,0.18957505,2434.0957,14,263.65826
+1b99a5b8,test,Hai Bà Trưng,b71cde4b,main_train,Cách Mạng Tháng Tám#0,0.82646996,34,3052.7874,5519bba6,main_train,14,0.37909323,806.361,14,142.01404
+1c281c3b,test,Lý Thường Kiệt,fbe531df,te_random,Ngô Quyền,0.7059547,37,2066.5188,7d6ac707,te_random,17,0.4031416,5490.97,16,777.837
+1c50f160,test,Lý Thường Kiệt,f45a7eb6,main_train,Trần Hưng Đạo,0.85322505,38,1730.0554,cc82cad7,te_random,14,0.778317,4631.4062,16,42.95623
+1cb7e1f0,test,Trần Phú,32bc3083,te_top_score,Nguyễn Văn Đậu,0.8689112,23,6295.341,3b4a93f9,main_train,16,0.7073146,2838.2732,14,85.22981
+1d2d3368,test,Hai Bà Trưng,b83b1695,main_train,Phan Đăng Lưu,0.8828009,26,1420.7124,b19b6e04,te_top_score,18,0.74660414,4263.9,14,103.99446
+1d35fa5f,test,Trần Phú,b7ab1ed8,main_train,Nguyễn Trãi,0.82858074,25,3376.4116,8042d744,main_train,19,0.5297151,3591.856,16,159.50034
+1d92c4d1,test,Nơ Trang Long,87b7a3ff,te_random,Hoàng Hoa Thám,0.75234586,33,1265.9779,a6db27e5,main_train,17,0.44900426,3814.3013,18,115.280045
+1da4b388,test,Lý Thường Kiệt,2bd695af,te_random,Tôn Thất Thuyết,0.7648169,36,7145.6836,cf6e7a3c,main_train,18,0.63927835,1298.8615,18,169.58432
+1e292335,test,Hai Bà Trưng,ed83625b,te_top_score,Huỳnh Văn Bánh,0.86876935,32,1758.5577,987f1699,te_top_score,15,0.743577,1623.0789,18,54.407215
+1e4920cb,test,Nơ Trang Long,399d4387,main_train,Điện Biên Phủ#1,0.8493222,33,4846.745,b7e9d061,main_train,17,0.70715183,7174.4805,14,65.438545
+1e6a66c4,test,Lý Thường Kiệt,cfe1ab48,main_train,Cách Mạng Tháng Tám#0,0.7833704,30,1350.9167,97ccaadf,te_random,11,0.6932603,2912.862,14,409.48325
+1e7996ea,val,Hồng Bàng,8f4c4a2a,pilot,Pasteur,0.6669272,34,4728.8296,8e0b9aa7,main_train,17,0.33927327,3237.4521,16,101.178474
+1eb4ef6d,test,Hai Bà Trưng,78eb07bb,main_train,Trần Hưng Đạo,0.52247405,22,2643.223,c434767d,main_train,15,0.39793697,1449.8754,14,403.71136
+1ee2fd87,val,Hồng Bàng,77f060ab,te_random,Lý Thái Tổ#0,0.6131069,34,2366.3818,b2157b4a,te_top_score,16,0.4177781,3800.3472,16,87.99738
+1f864a72,val,Hồng Bàng,5cb35930,te_random,Hòa Hảo#0,0.7606131,28,2104.381,e51b9a40,te_random,15,0.55407995,5321.822,16,100.11925
+1face8f4,val,Hồng Bàng,8dbac443,main_train,Nguyễn Trãi,0.81729966,28,864.10205,aeb44e6b,main_train,14,0.56457156,3757.1892,14,77.666824
+1fe56c20,val,Nguyễn Đình Chiểu#0,34e2cecb,main_train,Điện Biên Phủ#1,0.8854775,37,767.299,006d7b6b,main_train,19,0.76616544,1945.819,12,230.18922
+1febcf2f,val,Nguyễn Đình Chiểu#0,d60d5d5f,main_train,Nguyễn Trãi,0.82223666,39,3038.5774,5cb34871,main_train,18,0.41786778,3237.0278,18,96.82953
+2038f9b9,test,Lý Thường Kiệt,8972a9ff,main_train,Phan Đăng Lưu,0.8120703,33,4695.297,78a83640,te_top_score,17,0.56724304,2479.2905,16,449.43655
+20b2bd29,test,Trần Phú,427e59e4,te_random,Xô Viết Nghệ Tĩnh#0,0.7725789,28,6202.439,be950a17,main_train,16,0.67785394,2271.5483,18,74.565926
+20d052bf,test,Trần Phú,aa052c88,main_train,Điện Biên Phủ#1,0.7175483,26,3548.0913,c4192f34,main_train,15,0.48926064,1741.885,14,186.09691
+20d78c27,test,Hai Bà Trưng,67a82690,main_train,Hải Thượng Lãn Ông,0.7115464,30,5235.226,ac192ee6,main_train,21,0.457813,2241.2593,16,206.57234
+20e00267,test,Lý Thường Kiệt,36cf3992,main_train,Điện Biên Phủ#1,0.62118995,31,3487.098,1a4b3a33,main_train,13,0.43458313,4195.9614,12,93.59528
+210a3569,test,Lý Thường Kiệt,b2840f5d,te_random,Đinh Bộ Lĩnh,0.7060539,32,6327.321,dee9e79a,main_train,18,0.3645295,1664.5314,12,234.07077
+21fae87d,val,Hồng Bàng,133045ac,main_train,Phan Đăng Lưu,0.689744,30,5527.396,2283591a,main_train,14,0.39783207,1177.9917,16,165.44777
+2253e92f,test,Lý Thường Kiệt,48e0783b,main_train,Điện Biên Phủ#1,0.7855202,33,5100.531,fae4e7e3,te_top_score,14,0.5367635,6173.6626,16,530.83154
+22701503,test,Lý Thường Kiệt,2d23031d,main_train,Trần Hưng Đạo,0.903503,32,3584.799,d04e7cd2,main_train,17,0.6940316,4113.8174,16,350.65488
+22dc41ec,test,Nơ Trang Long,844be740,te_top_score,Thành Thái,0.8124853,30,5627.89,56d78531,main_train,16,0.41408867,3536.1528,18,285.75818
+22f063a2,val,Nguyễn Đình Chiểu#0,c6632377,main_train,Nguyễn Trãi,0.8944161,31,4163.444,8db1c1eb,te_top_score,18,0.72112834,2335.7412,16,180.28546
+237a76d2,val,Nguyễn Đình Chiểu#0,64b45f4c,main_train,Trần Hưng Đạo,0.7379065,34,4865.5576,673a2b13,te_top_score,16,0.5398449,4553.0527,18,86.71805
+238a557b,val,Hồng Bàng,4ef1e1f0,main_train,Nguyễn Thị Minh Khai,0.7122969,28,5188.154,1a37f039,te_top_score,17,0.43336067,7431.6997,18,124.74694
+2405c398,val,Võ Văn Tần,dc793b2a,te_random,Sư Vạn Hạnh,0.63267976,36,2619.7366,21e7e10a,te_top_score,20,0.47912648,4369.5894,14,150.2965
+2422ed89,test,Lý Thường Kiệt,eacf4a1b,te_top_score,Thành Thái,0.79838026,36,1528.0121,d9bafed6,te_random,15,0.6145039,1366.8967,18,412.7443
+243252e0,val,Nguyễn Đình Chiểu#0,3d7488a1,pilot,Pasteur,0.83394176,37,743.6681,9243df17,main_train,15,0.609056,2199.104,14,300.3539
+246ca785,test,Lý Thường Kiệt,5f66ce51,main_train,Điện Biên Phủ#1,0.7591654,31,4272.5557,1047c60b,main_train,16,0.6140931,4435.9126,16,53.09802
+24ab5ec2,test,Trần Phú,00e48ac8,main_train,Trần Hưng Đạo,0.85491234,40,1625.9631,a268b4a7,te_random,18,0.742552,4250.828,18,66.769646
+24cf550e,test,Trần Phú,e73a88df,te_random,Hoàng Sa,0.7363817,33,3599.3047,79a637b7,main_train,17,0.5960351,2932.4346,14,85.99823
+24f058b2,test,Lý Thường Kiệt,82b5a512,te_top_score,Đỗ Ngọc Thạnh,0.8366594,28,1049.2686,50a05abd,te_top_score,17,0.65045446,6024.8726,16,93.47318
+24f1eca0,test,Lý Thường Kiệt,1c2e2ab9,main_train,Điện Biên Phủ#1,0.6131955,34,4338.7344,ca97d357,te_random,15,0.4824852,3420.4302,16,184.94467
+251548e0,test,Trần Phú,9d3692a5,main_train,Nguyễn Trãi,0.87757707,27,147.78839,a0155e1d,te_top_score,16,0.690945,1509.9354,12,52.82268
+251a18d9,test,Trần Phú,8d3dca06,te_random,Xô Viết Nghệ Tĩnh#1,0.84939545,26,5548.762,93575413,main_train,15,0.7347417,2421.521,12,98.71479
+25b7accc,val,Hồng Bàng,9b4c7317,main_train,Hải Thượng Lãn Ông,0.8377991,27,747.3682,595c0442,te_random,14,0.53018844,1439.0469,12,144.37682
+25cc8d9e,val,Hồng Bàng,cccb2d43,main_train,Trần Hưng Đạo,0.84810823,23,3244.9077,c70ea2f7,te_random,16,0.61350584,2943.136,16,90.46379
+26234bae,val,Hồng Bàng,b41bcffe,pilot,Phan Đăng Lưu,0.729729,32,6647.546,9de0f0a2,te_random,17,0.37576592,4158.626,18,87.75483
+26262c0b,test,Lý Thường Kiệt,b7d8293f,main_train,Nguyễn Thị Minh Khai,0.74785805,33,3285.0393,cc7383d0,main_train,16,0.50249213,948.48,16,112.93525
+2636b0cd,test,Trần Phú,76821b53,te_random,Lê Hồng Phong#0,0.6622051,32,803.25726,8571c493,main_train,16,0.16853853,1417.0068,14,95.2453
+263b4f41,val,Hồng Bàng,ac3f65d4,main_train,Trần Hưng Đạo,0.83673716,28,2237.2898,d4a20a0d,main_train,18,0.4914297,6109.1763,18,43.107384
+26d9622b,test,Nơ Trang Long,440bbf44,te_top_score,Thành Thái,0.8733178,29,5926.408,2d3ccdff,te_top_score,18,0.73908985,4546.264,16,165.37706
+2700dd24,test,Lý Thường Kiệt,80510589,te_random,Phạm Văn Hai#0,0.86223876,35,1935.937,59fa79b1,te_top_score,16,0.61647767,1613.3754,16,335.3873
+28135893,test,Nơ Trang Long,8b491f9f,te_top_score,Phan Đình Phùng,0.76059246,35,2672.9282,23f30195,main_train,15,0.44548014,5284.726,16,284.10156
+2831a61e,test,Lý Thường Kiệt,5e828698,te_random,Lê Hồng Phong#0,0.88557243,29,1654.3022,18af8ea3,main_train,15,0.4527508,2921.797,14,152.6504
+283fff89,test,Hai Bà Trưng,dcc6eafd,main_train,Trần Hưng Đạo,0.78545725,25,4762.527,2073a168,main_train,14,0.44245788,4327.36,14,351.8423
+28808d44,val,Võ Văn Tần,b7fea2b8,main_train,Điện Biên Phủ#1,0.7668797,35,1670.4202,4229428b,te_top_score,13,0.5069073,3241.6313,18,131.00648
+2897ff35,val,Nguyễn Đình Chiểu#0,cb14df8f,te_random,Nguyễn Chí Thanh#0,0.8088709,35,4289.692,e3eeeeec,te_top_score,15,0.6326062,2444.1448,16,79.697235
+293e6c3d,test,Nơ Trang Long,cc01b040,te_top_score,Hoàng Sa,0.7846665,32,4723.723,40002bb0,te_top_score,13,0.7441708,5531.314,18,220.12735
+2942dc7e,test,Lý Thường Kiệt,8ef4b883,te_random,Nguyễn Kim,0.81339365,24,547.7793,a3baf632,te_random,16,0.43688428,6157.9897,18,67.184006
+297aade6,val,Hồng Bàng,a1226183,main_train,Cách Mạng Tháng Tám#0,0.75083303,30,4227.539,2662da18,main_train,18,0.27850008,3112.888,16,130.0931
+2a674bb2,val,Nguyễn Đình Chiểu#0,f3a2d935,main_train,Nguyễn Trãi,0.82205325,32,4062.571,3e328a85,te_top_score,17,0.23195598,4396.7695,18,266.24515
+2a857540,test,Lý Thường Kiệt,12a9715c,main_train,Nguyễn Trãi,0.5018955,29,1414.3611,fb50499b,te_top_score,15,0.2851637,5490.9346,14,146.91893
+2aa956ef,val,Nguyễn Đình Chiểu#0,75c34137,main_train,Cách Mạng Tháng Tám#0,0.82466817,24,3071.4963,b50540a9,main_train,15,0.6114889,3264.6082,18,79.062614
+2ada75f8,test,Lý Thường Kiệt,4a02ccf4,main_train,Điện Biên Phủ#1,0.8028748,33,3596.6199,cf6e7a3c,main_train,17,0.52552354,3098.7332,16,113.00807
+2b081d65,test,Trần Phú,66e47885,main_train,Nguyễn Trãi,0.83873266,34,2025.1466,d44cb5c6,main_train,17,0.70159817,5092.8647,14,52.08814
+2b9e60ca,val,Hồng Bàng,86646192,main_train,Điện Biên Phủ#1,0.6983007,37,2646.9177,ff689273,main_train,16,0.53127754,4180.275,18,94.35
+2bb5874a,val,Nguyễn Đình Chiểu#0,08057194,main_train,Trần Hưng Đạo,0.7555215,20,2688.9954,c34627f3,main_train,15,0.64639366,703.82983,14,297.3094
+2bdd6777,test,Lý Thường Kiệt,4750deab,te_top_score,Vạn Kiếp#0,0.854946,38,4959.2173,14fcd716,te_random,15,0.74169546,2191.6492,16,312.33328
+2c1bc1bf,test,Lý Thường Kiệt,a0df311d,main_train,Cách Mạng Tháng Tám#0,0.77919996,21,9.106072,d6fd131a,te_top_score,12,0.3265828,2642.305,16,7.1300435
+2c1f6c5c,test,Lý Thường Kiệt,4c0eb396,main_train,Nguyễn Thị Minh Khai,0.7131395,26,5400.0063,5d5bfe27,main_train,16,0.36014417,1857.6396,16,124.567665
+2c79aec7,test,Lý Thường Kiệt,5b3bf1b9,te_top_score,Bùi Đình Tuý#0,0.8570041,28,6243.009,58eb1a59,te_top_score,16,0.7011839,1272.9297,14,190.26552
+2c976422,val,Nguyễn Đình Chiểu#0,7a064683,main_train,Phan Đăng Lưu,0.8100359,25,3699.453,6a03b42b,main_train,19,0.6257154,3151.5627,14,143.89853
+2ce0d7e9,test,Lý Thường Kiệt,f0205233,main_train,Trần Hưng Đạo,0.81230444,27,1281.4752,7209f289,te_top_score,18,0.6279688,3055.5305,14,104.76627
+2cfdd032,test,Lý Thường Kiệt,e707f0bb,te_random,Nhật Tảo,0.862263,28,3060.3137,fbefa847,te_top_score,15,0.52073646,3508.0806,16,99.963806
+2cfe6acc,val,Võ Văn Tần,816e78c7,main_train,Trần Hưng Đạo,0.61293405,27,1485.8905,8e5514cc,te_random,16,0.25287056,2778.827,16,154.24792
+2d05ead2,val,Nguyễn Đình Chiểu#0,1e8233bf,main_train,Nguyễn Trãi,0.8312591,25,3844.7156,d3e2243b,main_train,16,0.5002402,2019.7618,16,307.5074
+2d366506,test,Hai Bà Trưng,85e2d3a6,main_train,Trần Hưng Đạo,0.6230699,37,1915.8209,1cb607f1,main_train,17,0.42706951,3397.9165,16,447.1168
+2d59fc5f,test,Lý Thường Kiệt,3bef8f2e,main_train,Lê Văn Sỹ,0.73728293,30,2498.605,6f7d529d,main_train,17,0.4052806,3644.502,14,492.4371
+2d5c7b33,test,Hai Bà Trưng,36cf3992,main_train,Điện Biên Phủ#1,0.6764512,23,2083.4756,a6db27e5,main_train,12,0.41313526,5213.54,16,462.97363
+2d5e1a25,test,Lý Thường Kiệt,594550cb,main_train,Trần Hưng Đạo,0.7643112,32,2328.1902,26c6db11,te_random,19,0.6193968,5584.0425,14,96.97751
+2d66eb71,test,Lý Thường Kiệt,98e2028c,te_random,Nguyễn Chí Thanh#0,0.7511396,32,760.5833,8b234e95,te_random,13,0.34090668,4674.156,18,89.47889
+2d84744a,val,Nguyễn Đình Chiểu#0,8dbac443,main_train,Nguyễn Trãi,0.7104863,32,3427.5903,91ed15d8,main_train,18,0.44617528,3373.259,16,155.16571
+2d8dcb90,val,Nguyễn Đình Chiểu#0,d44cb5c6,main_train,Phan Đăng Lưu,0.8837036,26,3833.6536,03c3c2ce,te_top_score,14,0.47967663,4239.037,14,306.64136
+2d8def01,val,Nguyễn Đình Chiểu#0,184016e5,main_train,Nguyễn Thị Minh Khai,0.7797945,36,1078.2822,8efb132c,te_top_score,18,0.51622707,4406.5835,18,165.50607
+2daaa56d,val,Nguyễn Đình Chiểu#0,a1c1b4b6,main_train,Nguyễn Trãi,0.796644,37,4112.2876,250c8597,pilot,15,0.6309437,3538.8347,16,289.85977
+2dbd4220,test,Hai Bà Trưng,8a07f05f,main_train,Nguyễn Thị Minh Khai,0.7625457,26,625.8699,4f2179d4,pilot,18,0.4465774,1481.6167,18,119.23248
+2dcb5ad9,val,Nguyễn Đình Chiểu#0,b06122cb,main_train,Trần Hưng Đạo,0.7485359,28,3156.7263,b5475891,main_train,14,0.6408466,2507.7502,16,122.615944
+2e0ebcea,test,Lý Thường Kiệt,11d310f4,main_train,Nguyễn Thị Minh Khai,0.73983216,37,3228.2554,deb834a4,pilot,18,0.5635356,2877.375,16,781.08026
+2e218932,test,Hai Bà Trưng,b3a31891,main_train,Điện Biên Phủ#1,0.5776188,28,2976.4338,053a0041,main_train,17,0.48140645,5541.1665,18,209.4589
+2e33b10d,test,Lý Thường Kiệt,71ec5c79,main_train,Cách Mạng Tháng Tám#0,0.78284967,33,1989.6007,eccb61bf,main_train,19,0.6254993,4918.618,18,174.8658
+2e7f1216,test,Hai Bà Trưng,53a4d4f9,main_train,Cách Mạng Tháng Tám#0,0.8489771,32,2837.268,af7e5b90,te_top_score,19,0.29563522,3415.7498,16,409.47287
+2f0c3e5f,val,Nguyễn Đình Chiểu#0,c7bc3739,te_random,Phan Xích Long,0.67110413,32,3272.1672,ecd376ec,main_train,15,0.31312567,3784.404,18,308.8529
+2fd99097,test,Trần Phú,375550bb,main_train,Nguyễn Trãi,0.80270416,24,526.2662,b0ea156d,main_train,18,0.54691803,171.12564,12,45.256073
+2fdddd38,test,Hai Bà Trưng,4094a693,te_top_score,Ngô Quyền,0.79443026,34,4661.868,29c48a5e,te_top_score,14,0.55622584,2393.575,16,387.79904
+2ff42022,test,Trần Phú,c5d20525,te_random,Lê Hồng Phong#0,0.87802535,23,1268.17,75811123,te_top_score,18,0.7194791,7916.1963,14,56.72745
+30287a87,val,Nguyễn Đình Chiểu#0,4e67f300,pilot,Pasteur,0.883715,27,1290.9052,053a0041,main_train,14,0.7143165,4144.3228,16,118.306244
+303b981a,val,Hồng Bàng,9ff38479,te_top_score,Nguyễn Thượng Hiền#1,0.8575419,34,4360.096,5f29f740,te_top_score,18,0.44806513,5239.9683,16,75.98475
+3097b53a,val,Nguyễn Đình Chiểu#0,04aec862,main_train,Điện Biên Phủ#1,0.8201704,26,926.0875,5df44591,main_train,13,0.6825514,3793.5986,12,186.91025
+309b8c15,val,Nguyễn Đình Chiểu#0,d31678cb,te_random,Nguyễn Kim,0.69416994,38,3802.857,229947d6,te_random,15,0.49149168,3772.1519,14,306.38605
+31b7166d,val,Nguyễn Đình Chiểu#0,58b95dd1,main_train,Nguyễn Thị Minh Khai,0.7991584,25,3104.0027,93eb6a70,main_train,15,0.3653198,3030.5205,14,315.3829
+31f7b9d4,val,Hồng Bàng,726d54d6,te_top_score,Lý Thái Tổ#0,0.662293,34,3309.7356,21f1fcb1,main_train,17,0.49424437,6414.255,18,76.46738
+3233cc32,test,Lý Thường Kiệt,89683d4e,main_train,Lê Văn Sỹ,0.81651956,32,2327.19,7f51b51f,te_top_score,14,0.41440424,1922.4713,14,267.20718
+32352b8a,val,Nguyễn Đình Chiểu#0,dd36c6e3,te_random,Nguyễn Trọng Tuyển,0.77979654,33,3263.6543,c21281b1,main_train,16,0.5683772,1889.646,16,301.0263
+324d72ec,val,Nguyễn Đình Chiểu#0,200e5a20,main_train,Lê Văn Sỹ,0.53710663,33,2281.342,81a5a8ab,main_train,17,0.4123532,3670.2058,16,88.56718
+32693383,test,Hai Bà Trưng,628adef6,te_top_score,Lê Hồng Phong#0,0.8522843,29,3366.2559,c3b1ecba,main_train,17,0.5014603,2808.5383,16,396.27377
+32f6f9bf,test,Lý Thường Kiệt,d66bf94c,main_train,Trần Hưng Đạo,0.8465918,30,2376.3801,b53d4b7d,te_top_score,15,0.47895426,6921.955,16,430.69775
+334ddd4d,val,Hồng Bàng,b8528ed9,main_train,Nguyễn Trãi,0.8267886,27,168.77563,37942f88,main_train,16,0.4815961,787.71094,14,95.79496
+335039f1,val,Hồng Bàng,3ec6a1bc,main_train,Trần Hưng Đạo,0.79024225,30,1758.4504,a1298e09,main_train,19,0.5955567,3412.4878,16,157.3487
+3365ac30,test,Lý Thường Kiệt,89683d4e,main_train,Lê Văn Sỹ,0.82582736,35,2711.0586,27e90ab0,main_train,20,0.6725453,1902.2737,16,780.4706
+33e7dbe5,test,Lý Thường Kiệt,0f3617cf,te_random,Ba Đình#0,0.7284645,36,4077.6448,86646192,main_train,18,0.28220764,2507.233,14,237.78583
+33fd9360,val,Hồng Bàng,36b34561,main_train,Phan Đăng Lưu,0.7653906,25,7022.0537,cca077a8,te_random,18,0.53373706,4038.8955,18,95.62657
+34179e20,val,Võ Văn Tần,45698ddc,main_train,Nguyễn Thị Minh Khai,0.8333397,22,253.04315,1ec585cc,te_top_score,11,0.6786202,2639.4258,14,151.05547
+342e2ce3,val,Hồng Bàng,f70d27fe,main_train,Hải Thượng Lãn Ông,0.81709075,26,911.2922,c035bfb7,te_top_score,15,0.6322367,3051.274,14,159.09082
+344edad9,val,Hồng Bàng,d4cec60f,main_train,Điện Biên Phủ#1,0.7674061,32,4050.5156,c11dc85d,te_random,15,0.30333686,6873.627,16,126.26007
+34662237,test,Lý Thường Kiệt,20f8b958,main_train,Nguyễn Kiệm#0,0.7952538,27,4997.1006,3bb1d39f,main_train,16,0.27740878,2389.2568,18,756.7558
+347763d2,val,Nguyễn Đình Chiểu#0,a6db27e5,main_train,Lê Văn Sỹ,0.79699486,28,4007.7444,306c280d,pilot,19,0.72273463,2664.904,16,97.052246
+35749762,test,Lý Thường Kiệt,356ac051,main_train,Lê Văn Sỹ,0.675701,27,3211.5332,983674fb,main_train,16,0.49320957,4043.0244,14,190.16527
+357d5755,val,Võ Văn Tần,73ef5a1e,main_train,Điện Biên Phủ#1,0.660243,35,1528.5038,5cb34871,main_train,14,0.4955487,3196.973,16,137.21254
+359c2902,test,Hai Bà Trưng,628c70ce,main_train,Điện Biên Phủ#1,0.728856,21,522.00336,da4d20f5,te_top_score,17,0.45221284,5069.7505,16,243.1665
+35da9460,val,Nguyễn Đình Chiểu#0,eba847a6,main_train,Nguyễn Trãi,0.8768167,29,3601.4966,f32c1c5c,te_top_score,17,0.30492845,3323.6838,12,306.26727
+3621e2e4,val,Nguyễn Đình Chiểu#0,c5d20525,te_random,Lê Hồng Phong#0,0.83928823,23,2049.4634,c02b041f,main_train,17,0.78174376,2890.3413,18,164.82118
+36d3d3f0,val,Hồng Bàng,169bc420,te_random,Triệu Quang Phục,0.8015388,30,509.94,e0edff5f,te_top_score,15,0.49689698,3339.2534,14,87.01908
+3745af9c,val,Nguyễn Đình Chiểu#0,0e6b9fee,pilot,Lê Văn Sỹ,0.67785674,27,3077.6545,6d6a1adf,main_train,16,0.45918715,3665.2346,14,302.23132
+377a9426,test,Lý Thường Kiệt,bf454841,main_train,Nguyễn Trãi,0.75055206,27,2952.1768,681f2af6,pilot,18,0.3237177,3098.841,18,313.69073
+377d8307,val,Võ Văn Tần,886935cd,main_train,Điện Biên Phủ#1,0.7067619,28,2116.3098,6a3ffe8e,te_top_score,13,0.3817698,1854.5565,18,143.97401
+379e4263,val,Hồng Bàng,f32c1c5c,te_top_score,Nguyễn Trọng Tuyển,0.7075344,34,4822.3545,b5acb540,main_train,16,0.16422535,5603.23,18,118.44505
+37b5423a,val,Hồng Bàng,09e6c3f5,main_train,Phan Đăng Lưu,0.72087216,36,6471.41,f04b2afc,te_random,16,0.30610687,8155.013,16,150.81425
+37b8636a,val,Hồng Bàng,e610ef5e,te_top_score,Lê Hồng Phong#0,0.85479397,31,2418.7239,10206c86,te_random,18,0.8014845,9174.876,12,102.60239
+384240cf,test,Lý Thường Kiệt,80510589,te_random,Phạm Văn Hai#0,0.8103708,24,1456.1566,3c348e37,te_top_score,19,0.6774623,547.7489,16,71.654045
+3846ec2e,val,Võ Văn Tần,513f9123,main_train,Nguyễn Thị Minh Khai,0.75675666,26,730.37054,1101b088,te_top_score,12,0.45545232,2885.033,14,130.41805
+38488cfc,test,Hai Bà Trưng,cfc0a146,te_top_score,Phan Xích Long,0.7931162,32,963.0858,831a5704,main_train,15,0.33571464,3371.2432,16,303.36472
+38817527,test,Hai Bà Trưng,767997ea,main_train,Điện Biên Phủ#1,0.7316525,29,206.74898,0df6e27d,main_train,16,0.47199443,3403.2444,18,188.6522
+39024ee1,test,Lý Thường Kiệt,c2574f1c,te_top_score,Đinh Bộ Lĩnh,0.68028295,26,7185.904,8ad7d960,te_top_score,16,0.40058416,1037.4182,18,201.40517
+399b5a4c,test,Hai Bà Trưng,a28d0950,main_train,Nguyễn Thị Minh Khai,0.5329368,41,1213.8008,305e285b,main_train,15,0.45776245,1574.8722,16,420.95233
+39b50370,val,Nguyễn Đình Chiểu#0,88276813,main_train,Trần Hưng Đạo,0.7555523,38,3171.9072,189f76b2,te_random,17,0.4746432,5049.64,16,208.59918
+3a6a7da6,val,Nguyễn Đình Chiểu#0,81183125,te_random,Phạm Văn Hai#0,0.68598557,38,4339.01,fa3af08d,main_train,20,0.40877435,3465.9775,18,93.72839
+3a79ffd2,test,Trần Phú,3c5b9252,main_train,Nguyễn Trãi,0.8885441,35,2701.3896,8dbac443,main_train,15,0.72057503,1761.6971,16,133.89706
+3b00c8ae,val,Võ Văn Tần,541e61b9,main_train,Cách Mạng Tháng Tám#0,0.7091475,31,3322.2588,13deb01f,te_top_score,18,0.4767249,3103.9092,16,149.38771
+3b0c3471,test,Lý Thường Kiệt,5cbfa478,main_train,Trần Hưng Đạo,0.84612054,30,1744.458,34f37e9f,te_top_score,18,0.7685981,1429.971,16,87.8533
+3b8e677a,val,Hồng Bàng,eb5e92fd,te_top_score,Bạch Đằng#0,0.8017435,25,7047.0024,055432fa,main_train,14,0.41783625,5549.733,16,126.404625
+3b91d1ad,test,Hai Bà Trưng,ddbc4279,main_train,Nguyễn Thị Minh Khai,0.4982428,33,613.8836,0ef6aaed,main_train,15,0.18862808,5007.1846,16,159.76215
+3b9798fb,val,Hồng Bàng,82b5a512,te_top_score,Đỗ Ngọc Thạnh,0.8290941,26,679.8317,8d8690f7,main_train,15,0.557199,3720.9705,16,71.0038
+3be0c8a5,test,Lý Thường Kiệt,d041aef9,main_train,Nguyễn Kiệm#0,0.7899963,39,4109.1807,3688b349,main_train,18,0.58756375,3860.299,16,453.59302
+3be2b33b,val,Võ Văn Tần,ab715499,te_random,Thành Thái,0.7305738,37,3272.0676,436178ef,main_train,16,0.47221506,1019.99817,14,148.26599
+3bf5a27d,test,Nơ Trang Long,ee12e92e,te_top_score,Lê Văn Duyệt,0.8959057,29,1664.597,5e8f8be6,main_train,16,0.8144105,7876.434,18,47.364388
+3c0dc742,test,Hai Bà Trưng,49fc98b3,main_train,Lê Văn Sỹ,0.53530693,30,3098.8157,8217be2a,main_train,17,0.3211877,2086.6091,18,297.21222
+3c24d195,test,Lý Thường Kiệt,71ec5c79,main_train,Cách Mạng Tháng Tám#0,0.79537,29,1987.4727,8602075d,main_train,17,0.65744877,2792.7285,16,168.60002
+3c2e93ca,test,Lý Thường Kiệt,9ee59de9,main_train,Điện Biên Phủ#1,0.7910354,27,3796.881,848d00bf,te_top_score,15,0.5212033,3118.117,14,401.26126
+3c2ecfe1,val,Hồng Bàng,96212949,main_train,Cách Mạng Tháng Tám#0,0.7558899,32,3867.5015,1101b088,te_top_score,14,0.6707165,4802.814,16,106.94425
+3c878ec4,test,Hai Bà Trưng,3916be33,main_train,Nguyễn Trãi,0.46013483,33,2007.3118,eca7328c,main_train,17,0.18291706,4187.9507,12,366.5582
+3ca3cb92,val,Hồng Bàng,0f7170cb,te_top_score,Phạm Văn Hai#0,0.82692564,30,4436.6494,5018a3f2,te_top_score,19,0.72097534,6694.4976,16,104.710365
+3cad8ad6,test,Hai Bà Trưng,65d37779,te_top_score,Bạch Đằng#0,0.84302205,24,2295.4297,172fc632,main_train,16,0.54279584,2261.4548,16,126.66198
+3cfb45c0,val,Nguyễn Đình Chiểu#0,067999f4,main_train,Nguyễn Thị Minh Khai,0.8425377,33,445.66745,adb09660,te_random,16,0.5011535,1445.9945,16,314.98196
+3d22b7d3,test,Lý Thường Kiệt,1130e35d,te_top_score,Thành Thái,0.8667763,33,1107.8418,6b439387,te_top_score,17,0.58922696,2733.3857,18,205.90408
+3d38494a,test,Lý Thường Kiệt,0f7170cb,te_top_score,Phạm Văn Hai#0,0.8778335,32,1199.5886,8ec4a3a8,te_top_score,16,0.6682091,3549.1177,14,199.25284
+3d61276e,val,Nguyễn Đình Chiểu#0,cffe8cc2,te_top_score,Đinh Bộ Lĩnh,0.8545895,31,4852.738,afc01bdf,main_train,18,0.70013684,1076.1804,12,196.42722
+3d816005,test,Lý Thường Kiệt,4a7e5392,main_train,Nguyễn Kiệm#0,0.7405603,32,4075.3672,5f7c5474,main_train,15,0.45847192,2098.4314,14,787.6826
+3db86891,val,Hồng Bàng,d110310c,main_train,Nguyễn Trãi,0.8111299,33,468.63843,a01513b4,main_train,16,0.6567848,4523.6147,16,80.52284
+3e4bf966,test,Lý Thường Kiệt,e84c7225,main_train,Nguyễn Thị Minh Khai,0.52010137,38,3535.0305,bbd65089,main_train,16,0.29695266,3715.6958,16,286.2979
+3e5b1cc3,val,Nguyễn Đình Chiểu#0,475ebd4b,main_train,Nguyễn Trãi,0.8048414,38,6248.91,f1c58a00,pilot,17,0.55228305,1589.2979,16,300.482
+3e93ff81,val,Hồng Bàng,642c3335,te_random,Trường Sa#0,0.5865343,23,5274.156,426e2bde,main_train,17,0.3469497,3266.3713,14,143.09605
+3e9f962f,test,Trần Phú,ea12c8d1,te_top_score,Xô Viết Nghệ Tĩnh#1,0.8233947,30,6126.614,93575413,main_train,15,0.5873008,3195.2039,14,80.3453
+3eb7f8f8,test,Hai Bà Trưng,7d91b0d9,main_train,Điện Biên Phủ#1,0.7537988,36,659.6175,2596f5bb,te_top_score,16,0.5214864,5184.334,16,303.6302
+3ec57fff,val,Nguyễn Đình Chiểu#0,f5b7d63e,te_random,Trường Sa#0,0.7205143,29,3450.7454,6d8b279b,te_top_score,16,0.332227,3031.3923,14,25.739893
+3f2caf55,test,Nơ Trang Long,fbe531df,te_random,Ngô Quyền,0.7626499,30,6652.6904,9cc4d77c,te_top_score,19,0.5024669,1484.5398,16,86.6673
+3f898d30,val,Võ Văn Tần,f00b309a,pilot,Phan Đăng Lưu,0.7228399,31,3010.0642,306c280d,pilot,17,0.4856991,2406.1223,14,148.84087
+3fcc094f,val,Nguyễn Đình Chiểu#0,c5d20525,te_random,Lê Hồng Phong#0,0.8006495,35,2384.214,b1dcab34,te_top_score,15,0.6115873,2016.3638,12,309.0043
+3fe93050,val,Hồng Bàng,84422b07,main_train,Cách Mạng Tháng Tám#0,0.80598557,32,3904.2764,8c2b388a,main_train,18,0.46265787,6407.658,14,95.38731
+40119b5a,val,Hồng Bàng,76821b53,te_random,Lê Hồng Phong#0,0.764194,19,2305.4883,93565c54,te_random,16,0.25862235,5008.133,10,71.599785
+401c6135,test,Hai Bà Trưng,054cc6fd,main_train,Phan Đăng Lưu,0.76424205,23,1280.7145,c70ea2f7,te_random,15,0.381323,4518.9854,14,85.622375
+401d3074,test,Lý Thường Kiệt,04bffe96,te_random,Đinh Bộ Lĩnh,0.8441013,28,6345.7666,498ddad1,te_random,13,0.5131999,4580.597,14,322.20425
+402e353a,test,Hai Bà Trưng,b703ef0b,te_random,Vĩnh Khánh,0.6250317,39,3156.086,2131f8b8,main_train,14,0.3379065,1088.4613,16,297.8287
+408fae13,test,Lý Thường Kiệt,11d310f4,main_train,Nguyễn Thị Minh Khai,0.71390843,30,3338.1343,d8138924,main_train,18,0.4805394,2359.8445,16,532.741
+40d90b61,val,Nguyễn Đình Chiểu#0,658e684f,main_train,Lê Văn Sỹ,0.7769799,27,4088.409,5f03d8f9,main_train,17,0.22502916,1933.1937,16,182.2476
+40f1e9dd,test,Hai Bà Trưng,0626b5b0,te_top_score,Bùi Thị Xuân#0,0.57860094,32,4636.3047,66dedb1d,main_train,19,0.38229477,1484.6434,16,373.42264
+40faf29d,test,Lý Thường Kiệt,db363a80,te_top_score,Vạn Kiếp#0,0.82144713,33,4696.7627,cc42281f,te_top_score,16,0.41733402,2696.9905,16,213.26834
+412ff8ed,val,Nguyễn Đình Chiểu#0,65d37779,te_top_score,Bạch Đằng#0,0.82083654,33,1753.4867,774a8c73,te_random,17,0.65487593,5202.3354,18,293.1861
+418027da,test,Lý Thường Kiệt,8948fa88,te_random,Đinh Bộ Lĩnh,0.8114721,27,6574.563,a0df311d,main_train,18,0.7269983,47.96408,14,47.96408
+4182f0b4,val,Hồng Bàng,4c386490,main_train,Cách Mạng Tháng Tám#0,0.8364234,25,3905.906,52220b33,main_train,15,0.6328915,3932.7744,18,85.382225
+418e38c9,test,Lý Thường Kiệt,f8f88546,main_train,Nguyễn Trãi,0.86803365,31,1167.1584,344f12f3,pilot,11,0.6098493,3605.5605,16,155.99623
+4234f857,val,Hồng Bàng,7146c3b2,te_top_score,Đào Duy Từ#0,0.8669609,24,1261.8425,2b9a577d,te_top_score,16,0.70454323,4190.5293,16,103.614235
+42513979,val,Hồng Bàng,238fbcbb,main_train,Phan Đăng Lưu,0.85685873,29,6164.662,c5528976,main_train,17,0.46938598,3293.876,18,114.29319
+42605362,val,Nguyễn Đình Chiểu#0,5abd8d7d,main_train,Phan Đăng Lưu,0.72299576,35,2647.7732,627e83a5,te_random,18,0.553287,4001.5598,12,301.51074
+43103c8d,val,Hồng Bàng,f1763f88,main_train,Pasteur,0.70613664,25,4500.544,440bbf44,te_top_score,17,0.5496909,1397.1359,16,172.24423
+434a54e6,val,Nguyễn Đình Chiểu#0,f02b4e6a,main_train,Nguyễn Thị Minh Khai,0.7288344,37,2503.9749,d9e38a16,te_top_score,19,0.42146492,4033.7476,14,73.03807
+4387a2f0,val,Nguyễn Đình Chiểu#0,cf80180e,main_train,Trần Hưng Đạo,0.7863376,32,1194.5559,bc230f0b,te_top_score,17,0.4919566,3264.9797,18,135.42027
+43a67994,val,Hồng Bàng,ca46ec0e,main_train,Trần Hưng Đạo,0.8235027,30,1955.0714,079011d0,te_top_score,17,0.5552307,5884.2847,16,118.52691
+43c27a86,test,Hai Bà Trưng,30e007f2,main_train,Nguyễn Trãi,0.73318255,27,5347.8804,86eb142a,main_train,13,0.54301655,815.9666,16,25.255882
+44941d16,test,Trần Phú,1df673f8,main_train,Phan Đăng Lưu,0.7386363,31,5845.8013,b8201b02,main_train,17,0.45929933,540.8509,16,16.33203
+451eebef,val,Nguyễn Đình Chiểu#0,5af41400,main_train,Điện Biên Phủ#1,0.83752745,26,422.52533,86dce5d9,te_top_score,15,0.76119214,2764.7395,16,155.3104
+45688fbc,val,Hồng Bàng,e707f0bb,te_random,Nhật Tảo,0.8502172,35,1576.1427,a5f037bd,te_top_score,15,0.6185248,1143.8604,18,100.29945
+456bb807,test,Hai Bà Trưng,42a84f42,te_random,Phan Đình Phùng,0.6948082,36,1205.7552,9c25bf27,te_random,14,0.30449298,1281.968,18,99.827614
+4571e2e5,val,Hồng Bàng,414b19ae,main_train,Nguyễn Thị Minh Khai,0.784764,29,5119.335,e5b0410d,main_train,16,0.61307836,5784.8726,14,86.5441
+457956f3,test,Hai Bà Trưng,95ae4443,main_train,Trần Hưng Đạo,0.673716,27,1530.3883,acb35ae7,main_train,14,0.46278816,1593.374,14,190.29288
+461c603f,val,Hồng Bàng,ff13267e,main_train,Trần Hưng Đạo,0.8394056,26,1803.2733,322ea79e,te_top_score,17,0.55643094,4186.0474,14,94.265465
+462b5a02,test,Lý Thường Kiệt,9c6f951b,te_random,Bắc Hải,0.8510238,29,1062.0177,b4f07869,te_random,16,0.57297796,2267.7893,14,381.3172
+466498ee,test,Hai Bà Trưng,7fee73e8,main_train,Điện Biên Phủ#1,0.734834,31,1579.9551,54b6abd1,pilot,13,0.4368865,2934.326,16,449.97244
+46c27084,val,Nguyễn Đình Chiểu#0,a9bc632b,main_train,Nguyễn Trãi,0.7580675,27,3501.0125,ab29772b,main_train,15,0.60054964,2308.4849,16,122.29234
+4754ab65,val,Nguyễn Đình Chiểu#0,ee7f27a8,main_train,Điện Biên Phủ#1,0.8678346,25,677.87384,988c06ff,te_top_score,15,0.72283083,2011.4785,14,169.36485
+477f9610,test,Hai Bà Trưng,575cec77,te_top_score,Trần Bình Trọng#0,0.80282515,37,3780.5276,6aa020af,te_top_score,15,0.7120256,2335.6592,14,147.90895
+47817e6e,val,Nguyễn Đình Chiểu#0,20003f08,main_train,Nguyễn Thị Minh Khai,0.7669205,36,2647.4927,6d408095,main_train,19,0.70160806,1361.8159,12,314.097
+478e5bdc,val,Nguyễn Đình Chiểu#0,34ce2a57,te_random,Lê Quang Định#0,0.7780362,30,3985.998,5a299959,te_top_score,18,0.62862587,2776.349,18,312.27124
+47909f6f,val,Nguyễn Đình Chiểu#0,54d9faf5,main_train,Nguyễn Trãi,0.8834922,23,2091.3276,52220b33,main_train,14,0.7098409,1059.2931,16,116.04213
+47ac231e,val,Nguyễn Đình Chiểu#0,3065b26c,te_random,Nguyễn Chí Thanh#0,0.6402921,33,5762.637,70859a23,te_top_score,17,0.4717919,3139.251,14,294.78546
+47b071c4,test,Lý Thường Kiệt,e84c7225,main_train,Nguyễn Thị Minh Khai,0.7160406,32,3528.002,2283591a,main_train,19,0.597499,1714.0547,12,229.0133
+48445563,test,Lý Thường Kiệt,f53cb2c4,main_train,Phan Đăng Lưu,0.627554,29,5702.5933,d6aacda6,main_train,19,0.43350562,2310.2415,16,638.85565
+4844a4e9,val,Nguyễn Đình Chiểu#0,4e67f300,pilot,Pasteur,0.8368871,28,1156.0502,143de1d7,te_random,14,0.60797566,2351.192,16,300.22043
+4860d7bf,test,Lý Thường Kiệt,92dc1b25,main_train,Lê Văn Sỹ,0.880197,29,2917.9583,52a234a0,te_top_score,16,0.7106916,3391.1606,14,497.3557
+4884c673,test,Lý Thường Kiệt,1a9723f5,main_train,Cách Mạng Tháng Tám#0,0.6171772,31,2633.273,658c0c2d,main_train,17,0.49532178,4731.3613,14,356.0961
+49877fa9,val,Nguyễn Đình Chiểu#0,49b3d331,main_train,Hải Thượng Lãn Ông,0.7616202,26,3291.33,0abd1e9d,te_random,17,0.49202853,1763.3346,16,307.01425
+49b8b770,test,Lý Thường Kiệt,3c809d98,te_top_score,Thành Thái,0.70881796,29,1391.3578,b136e867,te_top_score,16,0.2206569,1174.773,16,335.2354
+4ac6ce8f,val,Võ Văn Tần,7fee73e8,main_train,Điện Biên Phủ#1,0.69488007,31,923.1947,198aade0,main_train,18,0.403466,1239.6401,20,148.41475
+4b05117f,test,Lý Thường Kiệt,254cc648,te_random,Bình Đông,0.64583874,31,2560.9153,8e8f70e4,main_train,18,0.58400905,4282.666,16,709.2762
+4b160004,test,Hai Bà Trưng,9da5f418,te_random,Bạch Đằng#0,0.5942994,33,2622.5417,7531a6c7,pilot,18,0.33221596,3166.4983,16,356.20087
+4b75c401,test,Hai Bà Trưng,f5111f47,te_random,Nguyễn Văn Đậu,0.6783469,32,4079.6304,b7e9d061,main_train,16,0.3967984,5291.939,12,375.99692
+4b76f715,val,Võ Văn Tần,18cfa85c,main_train,Điện Biên Phủ#1,0.84830546,29,559.7903,b319dcd0,te_random,16,0.7746197,2070.928,18,144.37573
+4bc134c9,val,Võ Văn Tần,30fb467c,te_top_score,Phan Văn Trị#0,0.6765445,37,3651.3835,9c556297,te_random,18,0.5507827,4623.1016,14,154.06668
+4bfa993f,test,Nơ Trang Long,86149fd3,te_random,Xô Viết Nghệ Tĩnh#0,0.8075983,40,2083.1924,97900026,te_random,14,0.49694812,2968.7095,16,91.27988
+4c19e9a7,test,Lý Thường Kiệt,6138ab2a,te_top_score,Sư Vạn Hạnh,0.7404842,31,1471.0953,053f90e8,te_top_score,18,0.527848,2307.6777,14,423.7657
+4cf688fa,test,Lý Thường Kiệt,8602075d,main_train,Cách Mạng Tháng Tám#0,0.7620197,26,2336.3093,983dc6a3,main_train,16,0.7095302,1504.5231,16,451.68924
+4d18f167,val,Võ Văn Tần,86c6f116,main_train,Pasteur,0.72142833,30,948.9164,30588690,main_train,17,0.41248694,1925.7129,16,148.80112
+4d26ef6d,test,Trần Phú,19299d4a,main_train,Điện Biên Phủ#1,0.84536785,30,3827.7476,11d3d20d,main_train,17,0.47671533,2278.0059,16,34.272987
+4d3bbdd9,test,Lý Thường Kiệt,b0c458b8,pilot,Lê Văn Sỹ,0.89068466,26,2457.1252,f7d07bc2,te_random,17,0.30916092,4584.301,16,174.66705
+4d7467c1,test,Lý Thường Kiệt,eb8212ff,main_train,Nguyễn Trãi,0.6999429,31,2117.1575,21ddcdf9,main_train,16,0.5624631,3952.3613,16,105.472565
+4d8b771e,test,Lý Thường Kiệt,626d93a1,main_train,Cách Mạng Tháng Tám#0,0.6196496,29,766.1791,86b0debd,main_train,16,0.32017237,4082.5388,16,274.84793
+4dfac14e,test,Lý Thường Kiệt,9c6f951b,te_random,Bắc Hải,0.82986534,31,1075.6581,e1659c80,te_top_score,16,0.74231255,6018.8403,18,323.94064
+4eba2295,test,Lý Thường Kiệt,fbe531df,te_random,Ngô Quyền,0.7329348,28,1005.9152,00ace063,te_random,16,0.4200096,5159.2046,18,167.14075
+4ed45db8,val,Nguyễn Đình Chiểu#0,fbe531df,te_random,Ngô Quyền,0.7761462,29,5758.6587,39fb4afb,main_train,17,0.29420334,300.91772,16,72.76617
+4f716f3c,test,Trần Phú,594550cb,main_train,Trần Hưng Đạo,0.8368419,26,1046.8861,3daa756f,te_top_score,17,0.69204175,4851.4414,16,57.297173
+4f8da0c6,test,Nơ Trang Long,ff0f06d9,te_top_score,Nguyễn Trọng Tuyển,0.87621576,38,3479.3848,6a8652e1,main_train,16,0.74876404,6194.3877,14,128.75876
+4f991f8e,test,Lý Thường Kiệt,a6071bf8,main_train,Phan Đăng Lưu,0.7794137,33,3225.955,85262a87,main_train,14,0.4820149,4239.1304,10,69.73542
+4fbdc40d,test,Hai Bà Trưng,4151e8f4,main_train,Nguyễn Thị Minh Khai,0.6757095,29,1091.3833,bb0bd95c,te_top_score,19,0.29576555,3515.0195,18,63.42037
+4fef1ea8,test,Trần Phú,cd84ab03,te_top_score,Trường Sa#0,0.67660373,33,3228.42,183c61d9,pilot,14,0.48244414,4163.351,16,127.988205
+4ff142ac,test,Lý Thường Kiệt,11d3d20d,main_train,Hải Thượng Lãn Ông,0.8267957,29,2120.2278,176248a2,te_random,16,0.3869097,5621.1475,16,687.928
+5034a1b4,test,Lý Thường Kiệt,c164e6d7,main_train,Điện Biên Phủ#1,0.78632617,28,4700.7793,345a6cdf,main_train,18,0.60836303,4210.5483,14,136.33214
+50526771,val,Hồng Bàng,55465971,main_train,Nguyễn Trãi,0.77118385,35,638.67676,24cd1f4f,main_train,17,0.372982,2909.6265,16,143.05383
+506aaf1a,test,Hai Bà Trưng,cbbd58b5,main_train,Hải Thượng Lãn Ông,0.8199971,24,5357.6416,01741e6e,main_train,17,0.8191918,5399.332,12,233.97739
+509315ae,test,Lý Thường Kiệt,d4f9438f,te_random,Bà Hạt,0.8523233,36,549.2322,91ed15d8,main_train,14,0.68584025,3203.0579,16,151.55263
+50a69ae0,val,Hồng Bàng,e3216d25,main_train,Cách Mạng Tháng Tám#0,0.85869074,28,3779.6785,f36fd502,te_top_score,13,0.6399867,2572.7908,16,88.355156
+51644b8f,val,Nguyễn Đình Chiểu#0,8c94a007,main_train,Pasteur,0.75991774,32,636.6773,5cbfa478,main_train,16,0.54793835,4445.1484,16,298.28574
+517cbdcc,test,Nơ Trang Long,f9dce9b9,main_train,Hải Thượng Lãn Ông,0.86286294,23,7959.6973,ee3d3e93,main_train,13,0.72800195,7020.0967,12,48.321644
+51929301,test,Hai Bà Trưng,cf413141,main_train,Nguyễn Trãi,0.5978003,41,2928.9302,64801a65,te_random,16,0.25578168,3617.185,18,370.04868
+51a17af0,val,Nguyễn Đình Chiểu#0,3c5b9252,main_train,Nguyễn Trãi,0.8940568,34,3582.7087,e0edffad,main_train,17,0.5750306,3425.4841,14,306.35364
+51d5d862,test,Hai Bà Trưng,accf765f,main_train,Pasteur,0.62375724,41,377.7196,4094a693,te_top_score,16,0.29374394,4415.9004,16,187.1485
+52255927,test,Nơ Trang Long,bcace6f4,main_train,Phan Đăng Lưu,0.79968625,35,36.24843,1e1d3dd6,te_random,17,0.34570733,2192.891,16,23.998045
+52516478,val,Nguyễn Đình Chiểu#0,3909ddb2,main_train,Pasteur,0.8892739,39,925.6112,f4be3828,main_train,18,0.51259226,2986.4146,16,308.85883
+5277a8b8,val,Nguyễn Đình Chiểu#0,8f4c4a2a,pilot,Pasteur,0.7202631,43,202.82144,a6b074f9,main_train,16,0.4796771,3270.7986,18,35.33985
+539344c4,val,Nguyễn Đình Chiểu#0,5f7aaef0,main_train,Pasteur,0.7351342,36,414.26523,b6d4a3de,te_top_score,16,0.23641604,3446.5154,16,298.90067
+5432dd89,val,Võ Văn Tần,56d78531,main_train,Nguyễn Thị Minh Khai,0.6326911,23,891.5909,d5b767e1,te_top_score,17,0.32439452,1736.5873,16,151.44359
+5453598a,test,Trần Phú,34e2cecb,main_train,Điện Biên Phủ#1,0.867712,28,1066.1254,ae08e09e,main_train,17,0.58027035,2907.8257,16,57.630405
+54807cda,val,Nguyễn Đình Chiểu#0,3065b26c,te_random,Nguyễn Chí Thanh#0,0.78666705,29,2732.7856,ff689273,main_train,15,0.5443837,1403.9971,16,163.59834
+54e46cc2,val,Hồng Bàng,066d628b,main_train,Nguyễn Thị Minh Khai,0.7230386,27,5845.494,8677387b,te_random,17,0.6789538,2494.06,16,166.73853
+54ee1aae,test,Lý Thường Kiệt,e949fb6a,te_random,Hoàng Sa,0.7531177,29,4017.5366,23f3bd87,te_random,17,0.5351316,4847.4097,16,87.30177
+54eff26f,val,Nguyễn Đình Chiểu#0,f504b027,main_train,Cách Mạng Tháng Tám#0,0.72681475,33,3767.0251,4c521d90,te_top_score,16,0.39285308,1081.3577,16,300.84964
+54f18110,val,Nguyễn Đình Chiểu#0,999fc1e9,main_train,Pasteur,0.8206284,30,520.08264,6bef4859,main_train,16,0.55905545,4827.7446,16,291.4764
+5500efe0,val,Võ Văn Tần,87b1a456,main_train,Lê Văn Sỹ,0.8343163,25,1766.0975,fae4e7e3,te_top_score,14,0.49768278,4028.1917,18,151.0138
+5558fff8,val,Nguyễn Đình Chiểu#0,d4d720f2,te_top_score,Hoàng Sa,0.72938937,33,3231.3374,a3baf632,te_random,14,0.3526918,4656.702,18,237.11028
+555f6b1c,test,Lý Thường Kiệt,cca34d88,te_top_score,Lê Hồng Phong#0,0.5647788,33,1923.3677,e69511c2,main_train,19,0.40205756,5032.502,12,637.64557
+557117d5,test,Hai Bà Trưng,56894e4e,main_train,Trần Hưng Đạo,0.7179585,44,5272.842,436178ef,main_train,15,0.57640845,930.70715,14,302.84265
+559583a4,test,Lý Thường Kiệt,006d7b6b,main_train,Nguyễn Trãi,0.83111227,35,1688.5643,a285a7e0,pilot,17,0.74737656,4499.7744,14,157.41455
+562e6900,test,Hai Bà Trưng,0b049cb0,te_random,Trường Sa#0,0.6761725,38,1453.5363,0e107c0b,te_top_score,16,0.51951873,1670.2891,14,356.7965
+5668264c,test,Hai Bà Trưng,d86fc046,te_top_score,Cống Quỳnh#0,0.7518693,38,2108.5051,f7e588be,te_top_score,18,0.5069199,1466.8545,16,27.316483
+56700c61,val,Hồng Bàng,baf0f36b,te_top_score,Lê Quang Định#0,0.7901513,29,7545.484,4cd500d9,te_top_score,18,0.49471354,7340.792,16,77.10373
+56751b98,test,Hai Bà Trưng,29626ac3,main_train,Trần Hưng Đạo,0.7758927,27,5773.5684,f979e81d,te_top_score,16,0.48801398,4277.446,16,374.45724
+5696ec6f,val,Võ Văn Tần,da34259f,main_train,Nguyễn Thị Minh Khai,0.63115686,32,324.2607,5ee27e5e,main_train,19,0.3328623,429.23,16,68.384796
+56f7db8b,val,Hồng Bàng,3c69f7a8,main_train,Hải Thượng Lãn Ông,0.8456049,30,733.9284,d538269d,main_train,16,0.46900463,2458.3328,12,132.0244
+5741b24f,test,Lý Thường Kiệt,498ddad1,te_random,Hoàng Hoa Thám,0.7102208,30,5111.7046,33b3f055,te_top_score,15,0.4321578,5646.335,18,585.35156
+57bcb0d2,val,Nguyễn Đình Chiểu#0,53afbb35,main_train,Điện Biên Phủ#1,0.75330156,30,345.39246,647fdae7,main_train,16,0.4031221,2709.2617,18,304.0816
+57e095cf,val,Hồng Bàng,fa1b8186,main_train,Nguyễn Kiệm#0,0.76032376,26,5629.6963,f8f88546,main_train,16,0.5306892,1142.9375,14,61.143635
+57e5b319,val,Nguyễn Đình Chiểu#0,98d105b1,main_train,Nguyễn Thị Minh Khai,0.72003984,33,3211.2664,0f0b83f1,te_top_score,18,0.45615557,3563.9177,16,292.63342
+580a1d55,test,Nơ Trang Long,dd1c33a4,main_train,Điện Biên Phủ#1,0.58291274,30,1787.3236,7f4a3a49,pilot,16,0.38982856,3168.6782,18,156.2197
+580ebe77,test,Lý Thường Kiệt,96ea7964,te_top_score,Lê Quang Định#0,0.831463,36,5361.777,344ee91b,te_top_score,15,0.52946,3779.081,16,197.74466
+5841a74a,test,Lý Thường Kiệt,8a24ed9f,main_train,Trần Hưng Đạo,0.7226925,37,422.9297,bccd1c9b,te_top_score,18,0.4086115,6193.255,16,133.66571
+58768a28,test,Hai Bà Trưng,3cd64f1c,pilot,Lê Văn Sỹ,0.74524814,34,4394.8467,3f2e5a2d,te_top_score,16,0.6060917,4406.0063,16,357.4407
+58830bef,val,Võ Văn Tần,2da7a49a,main_train,Nguyễn Trãi,0.7528427,24,691.13434,f83e7abb,te_top_score,17,0.5308484,2595.111,14,101.22261
+5892ecf9,test,Lý Thường Kiệt,cf80180e,main_train,Trần Hưng Đạo,0.670204,35,4224.863,3916be33,main_train,18,0.40251052,3473.8943,16,610.8134
+58e4165d,val,Hồng Bàng,8042d744,main_train,Điện Biên Phủ#1,0.7893915,31,5836.657,353aa300,te_random,16,0.5271722,8649.604,18,143.21951
+58ea4d8e,test,Lý Thường Kiệt,e75af545,main_train,Điện Biên Phủ#1,0.6831439,21,4403.21,16cad715,te_top_score,18,0.4317035,3446.5874,16,94.40511
+59562fab,val,Nguyễn Đình Chiểu#0,e3f3db67,main_train,Trần Hưng Đạo,0.7442391,35,3742.409,5f7c5474,main_train,15,0.49761176,2642.539,16,300.28046
+5977a1b8,val,Nguyễn Đình Chiểu#0,1989b9b5,main_train,Pasteur,0.80536175,37,774.2612,cbce3fc9,main_train,14,0.58163655,3695.8027,16,296.52716
+59a2fb57,val,Nguyễn Đình Chiểu#0,d66bf94c,main_train,Trần Hưng Đạo,0.7383268,34,4621.6436,5aa70ab2,te_top_score,16,0.6579529,6366.808,16,300.8668
+59c3923c,val,Nguyễn Đình Chiểu#0,36b78646,main_train,Điện Biên Phủ#1,0.8384474,28,984.4212,d3f95e52,te_random,19,0.4265489,3810.462,16,74.756195
+5a06d0af,test,Hai Bà Trưng,fe1b1370,main_train,Trần Hưng Đạo,0.8146384,31,1795.0835,1ec585cc,te_top_score,15,0.6321654,3906.7085,16,128.57706
+5a1042d3,val,Võ Văn Tần,f7d07bc2,te_random,Trường Sa#0,0.72614217,27,2304.4507,f604d9a7,te_top_score,17,0.5618497,3957.6162,16,153.5012
+5a2a8307,test,Hai Bà Trưng,0a861bca,main_train,Lê Văn Sỹ,0.7412212,37,1557.5402,dd21dcf3,main_train,18,0.2347683,1337.5284,16,113.704475
+5a396a84,test,Lý Thường Kiệt,ed687817,main_train,Điện Biên Phủ#1,0.78382707,36,5057.7017,13787c2e,te_top_score,17,0.59533256,1393.8411,16,141.51608
+5a85fc9c,val,Nguyễn Đình Chiểu#0,d227fe75,main_train,Nguyễn Trãi,0.7401124,28,4276.0557,1e249209,te_random,18,0.2770378,1859.5109,16,163.51271
+5a9a27a2,val,Võ Văn Tần,a9735225,te_top_score,Vạn Kiếp#0,0.7425371,32,2874.2056,1234e381,te_top_score,17,0.54909974,3756.5215,18,153.2826
+5b0ae1b8,test,Lý Thường Kiệt,f00b309a,pilot,Phan Đăng Lưu,0.7833307,39,3774.0588,d1ff67b6,te_top_score,11,0.56059235,6693.7124,18,102.98388
+5b0f2f48,val,Võ Văn Tần,7209f289,te_top_score,Nguyễn Thượng Hiền#1,0.76920325,29,85.19896,54b6abd1,pilot,15,0.6543311,1818.9185,12,57.47547
+5b538cc9,test,Hai Bà Trưng,698960b8,main_train,Trần Hưng Đạo,0.8932665,31,3427.933,b7d8293f,main_train,16,0.36242765,2137.93,16,107.68134
+5b87e3fb,val,Võ Văn Tần,7330814d,main_train,Lê Văn Sỹ,0.71128845,31,3386.3115,f53c12ab,te_random,14,0.46402606,2672.2288,18,136.53864
+5b96b1bf,val,Nguyễn Đình Chiểu#0,621a407d,main_train,Nguyễn Thị Minh Khai,0.730632,29,942.72595,e73a88df,te_random,17,0.41907984,3446.946,18,288.07596
+5c12311d,test,Nơ Trang Long,cd8cf089,main_train,Cách Mạng Tháng Tám#0,0.863162,28,4045.563,7f5673a3,te_random,15,0.5785033,3866.0806,12,116.98818
+5c4851f5,test,Hai Bà Trưng,8e9b64ca,main_train,Nguyễn Thị Minh Khai,0.74882174,31,401.04446,d0a8707a,te_top_score,15,0.67399406,1372.9022,16,277.74182
+5c780654,val,Nguyễn Đình Chiểu#0,740fe4f2,te_random,Lê Hồng Phong#1,0.8530143,33,774.483,49fc98b3,main_train,15,0.3618733,3679.7034,16,290.87012
+5ca761d1,test,Lý Thường Kiệt,658cd49a,main_train,Trần Hưng Đạo,0.6839608,21,2357.532,f4be3828,main_train,18,0.6372491,4843.454,12,64.90304
+5cb41bb9,test,Lý Thường Kiệt,0a861bca,main_train,Lê Văn Sỹ,0.84329903,29,2942.6404,7fd2c75a,te_top_score,20,0.71818346,894.67487,14,463.01056
+5cdf7f34,test,Hai Bà Trưng,952e456a,te_random,Nguyễn Thông,0.61946994,28,1684.0891,b617db66,te_random,18,0.49497336,5123.085,18,354.94888
+5d2e6735,test,Trần Phú,f47f1d00,te_top_score,Hoàng Sa,0.8825939,32,2413.0442,16c1e8d4,te_top_score,11,0.6255162,5861.983,16,174.49773
+5d948453,test,Lý Thường Kiệt,f6a949e5,main_train,Cách Mạng Tháng Tám#0,0.594848,38,1166.3578,9749eadf,pilot,18,0.40339196,4258.153,16,434.40674
+5dadce76,test,Lý Thường Kiệt,77f060ab,te_random,Lý Thái Tổ#0,0.7157622,31,2319.5496,5646a45e,te_random,14,0.34810144,2047.5901,14,390.17786
+5dd51de3,val,Nguyễn Đình Chiểu#0,acafabae,main_train,Pasteur,0.7872505,33,1027.2975,aeb44e6b,main_train,14,0.5818206,1067.2346,16,143.19206
+5de51d34,val,Nguyễn Đình Chiểu#0,2522d17b,main_train,Trần Hưng Đạo,0.8486305,38,5323.8784,4d86be63,te_top_score,18,0.6289594,4923.96,16,256.1841
+5e163f6a,val,Hồng Bàng,3062ef09,main_train,Điện Biên Phủ#1,0.7451562,34,5502.538,ac6903b4,main_train,15,0.47659525,3119.5198,14,115.694305
+5e3eebc0,test,Trần Phú,5cb35930,te_random,Hòa Hảo#0,0.84222215,26,914.4614,8f6d77cf,te_top_score,14,0.6469658,5890.4956,16,153.29633
+5f2d682c,val,Võ Văn Tần,7330814d,main_train,Lê Văn Sỹ,0.7395682,34,3438.4275,82b4ec71,te_top_score,16,0.713745,1539.4321,14,88.47116
+5fb0c0b6,test,Lý Thường Kiệt,a268b4a7,te_random,Bùi Thị Xuân#0,0.8912453,30,1564.1803,0f3617cf,te_random,19,0.77463865,4677.2383,14,290.8297
+5fe3283d,test,Nơ Trang Long,8a5aa553,main_train,Phan Đăng Lưu,0.7434805,27,1584.3783,b991b318,main_train,15,0.5547829,2706.1052,16,197.19327
+60056107,test,Lý Thường Kiệt,df5f7bf9,main_train,Điện Biên Phủ#1,0.7726165,28,3809.914,f0a41c43,te_top_score,15,0.55663604,3441.1572,18,103.69303
+6022a91e,val,Võ Văn Tần,82064a3a,te_top_score,Nguyễn Trọng Tuyển,0.88878566,28,3436.886,41761453,main_train,17,0.4593546,1451.324,14,96.303185
+6036dc5e,test,Lý Thường Kiệt,8cf52837,main_train,Điện Biên Phủ#1,0.7268751,38,1919.4216,75cdcf93,main_train,16,0.5124826,2027.648,10,784.1474
+60b19ead,test,Trần Phú,c6632377,main_train,Nguyễn Trãi,0.8826692,32,1534.7356,56fe54bc,te_top_score,17,0.75457025,1434.2169,16,32.55029
+6112e273,val,Nguyễn Đình Chiểu#0,a6a5e9f1,main_train,Điện Biên Phủ#1,0.7879747,34,946.5564,ffd15872,te_random,14,0.48330432,2512.4478,12,172.28589
+614430fa,val,Nguyễn Đình Chiểu#0,7fee73e8,main_train,Điện Biên Phủ#1,0.7462537,31,1390.469,a26327a0,main_train,16,0.44540536,403.41605,14,68.58488
+61cb68ee,test,Hai Bà Trưng,b0d7e31d,te_top_score,Nguyễn Gia Trí,0.76762664,37,3100.5217,0a662807,main_train,17,0.4936378,898.0783,16,30.508873
+624eb23c,test,Nơ Trang Long,39b922fa,pilot,Lê Văn Sỹ,0.78352565,29,3715.7986,990ba148,pilot,16,0.25794616,619.4607,18,62.21928
+62611992,test,Trần Phú,3789c28f,main_train,Hải Thượng Lãn Ông,0.8741911,24,1077.2053,46818324,main_train,14,0.5313747,4366.569,16,68.8639
+62bb1fab,test,Hai Bà Trưng,3916be33,main_train,Nguyễn Trãi,0.48731703,30,2006.8846,5153a6a6,te_random,15,0.21492915,3859.3555,16,365.54932
+62d7509f,test,Lý Thường Kiệt,d6375c1f,te_top_score,Tôn Thất Thuyết,0.7950971,26,5523.1284,d8032773,main_train,18,0.63312656,3189.7737,16,174.73366
+62fc9368,test,Lý Thường Kiệt,ed5415fe,te_random,Trường Sa#0,0.70426965,29,3674.0774,e84c7225,main_train,17,0.64802283,3554.8843,16,421.86075
+6317b8c3,test,Hai Bà Trưng,b8a54ed6,te_random,Phan Xích Long,0.8113671,21,3342.1104,0b23735d,te_top_score,13,0.4205602,4198.2036,14,486.38733
+6322839b,val,Hồng Bàng,4151e8f4,main_train,Nguyễn Thị Minh Khai,0.6855401,28,5656.093,dd5db387,te_random,17,0.33399123,4404.6357,18,64.27429
+63404134,val,Hồng Bàng,d2b58fe6,main_train,Nguyễn Trãi,0.6412327,32,4286.3833,fc808e88,main_train,17,0.17683864,2965.9277,14,102.07522
+63bcb384,val,Nguyễn Đình Chiểu#0,33e25433,main_train,Nguyễn Thị Minh Khai,0.8782255,23,1201.1671,a43a3e2f,te_top_score,15,0.35588396,4105.5645,20,185.74739
+63fe07fc,val,Hồng Bàng,ee4d2ee9,pilot,Pasteur,0.8463698,28,4985.7725,f2835428,te_random,16,0.56811106,1086.689,16,155.78247
+641aaced,val,Hồng Bàng,40fae742,te_random,Nguyễn Chí Thanh#0,0.5317221,27,388.18253,6716da7f,main_train,18,0.32177475,4651.322,14,89.46723
+6445d5a1,val,Nguyễn Đình Chiểu#0,7d24ee92,main_train,Nguyễn Trãi,0.7196297,38,2179.5635,edd4ea76,te_top_score,15,0.29796463,3732.3706,18,296.68314
+6445f28b,test,Hai Bà Trưng,332ca2bb,main_train,Pasteur,0.65421075,28,1484.1971,b76e1992,main_train,15,0.20896663,4220.4424,14,522.5977
+646e15b7,val,Nguyễn Đình Chiểu#0,785b1122,te_random,Nguyễn Thượng Hiền#1,0.7334383,34,2684.579,86b0debd,main_train,18,0.4659448,5475.2754,16,165.78215
+64d836cb,test,Lý Thường Kiệt,e676df25,te_random,Nguyễn Chí Thanh#0,0.690139,24,1173.4285,008e4cf0,te_top_score,18,0.6137313,8159.76,14,150.86263
+64e048d2,test,Lý Thường Kiệt,3245779e,main_train,Cách Mạng Tháng Tám#0,0.7069247,31,3081.5164,cf194ecf,te_top_score,17,0.5810888,7532.355,16,214.01932
+64e20e39,test,Hai Bà Trưng,29626ac3,main_train,Trần Hưng Đạo,0.77010196,32,5598.4277,3e328a85,te_top_score,14,0.22388053,5553.227,18,102.126434
+64e27502,val,Hồng Bàng,1031f83c,main_train,Nguyễn Thị Minh Khai,0.7513429,34,6273.701,21e280aa,te_top_score,14,0.24611032,7775.5293,14,77.54878
+64eee134,test,Lý Thường Kiệt,616578e7,main_train,Nguyễn Trãi,0.84795713,33,3574.864,d819baee,main_train,18,0.678873,5269.3716,16,319.85217
+64fd0252,test,Trần Phú,d60d5d5f,main_train,Nguyễn Trãi,0.82984465,29,1607.8945,73511970,te_random,17,0.69052094,5249.751,14,162.13492
+652cb19c,val,Nguyễn Đình Chiểu#0,3ce49981,te_top_score,Hoàng Sa,0.80822086,33,2174.9111,22b6ac38,te_top_score,17,0.50386506,2646.7676,18,230.51738
+6572543e,val,Võ Văn Tần,8a24ed9f,main_train,Trần Hưng Đạo,0.8151241,32,4157.861,f6f14ed4,te_top_score,17,0.5354392,3549.4185,14,128.3983
+65c8eab6,test,Lý Thường Kiệt,2131490f,te_top_score,Trường Sa#0,0.81389594,27,2304.657,e1cfcbe1,main_train,16,0.5669373,2427.279,16,705.0438
+65fa2b98,val,Nguyễn Đình Chiểu#0,575cec77,te_top_score,Trần Bình Trọng#0,0.85902756,27,4701.706,8b734a60,main_train,16,0.6822178,506.49472,14,135.08536
+661faf5c,test,Nơ Trang Long,02f81e3a,te_top_score,Đinh Bộ Lĩnh,0.8079833,31,1606.7908,9a7211b4,main_train,16,0.49016193,2147.981,16,130.11136
+664612d0,test,Hai Bà Trưng,135a583e,te_random,Vĩnh Viễn#0,0.80322087,28,3799.953,1ea9439c,main_train,16,0.70909476,2682.6128,16,104.23146
+6665e807,val,Võ Văn Tần,344ee91b,te_top_score,Bùi Thị Xuân#1,0.75532377,32,519.41986,5ee27e5e,main_train,16,0.5349632,884.4494,16,148.78612
+66d8e000,test,Trần Phú,acb35ae7,main_train,Trần Hưng Đạo,0.88016146,24,2144.6873,f3213b41,pilot,16,0.6716863,3012.676,14,42.78709
+66fc5193,test,Lý Thường Kiệt,bdf59f68,main_train,Trần Hưng Đạo,0.87725437,33,2725.8298,8ec4a3a8,te_top_score,14,0.6629981,4987.746,14,116.21921
+671f8cf5,val,Võ Văn Tần,57fc4b7a,main_train,Nguyễn Thị Minh Khai,0.69658196,33,1350.6497,78eb07bb,main_train,17,0.4996763,2571.0693,18,43.227665
+67c0f8d0,test,Lý Thường Kiệt,53757afd,main_train,Trần Hưng Đạo,0.7821781,34,3785.2778,19915d70,te_random,18,0.64868104,4218.0234,16,362.64914
+67f964b0,test,Hai Bà Trưng,67a82690,main_train,Hải Thượng Lãn Ông,0.7336893,27,5252.457,8b734a60,main_train,18,0.5781724,751.6521,16,127.24689
+67fdb35d,val,Nguyễn Đình Chiểu#0,86149fd3,te_random,Xô Viết Nghệ Tĩnh#0,0.8040947,31,4235.5435,2779f6b1,main_train,19,0.5384544,1639.1217,16,90.94442
+68137e01,val,Võ Văn Tần,38e2aede,main_train,Điện Biên Phủ#1,0.6478517,24,1086.8729,d24124ce,te_top_score,18,0.4471062,1760.5592,18,153.90593
+68738ef6,val,Võ Văn Tần,c7322ff6,te_top_score,Huỳnh Văn Bánh,0.83519,24,2713.355,c4ae98b2,te_top_score,16,0.4309404,4020.4092,16,145.40797
+689a8b1d,val,Hồng Bàng,02d0cef7,main_train,Trần Hưng Đạo,0.72605395,31,814.93823,cc7383d0,main_train,16,0.57000315,547.2283,16,105.86712
+68c7040c,test,Hai Bà Trưng,f8326b31,main_train,Nguyễn Thị Minh Khai,0.7792635,33,598.39703,4549b145,main_train,18,0.6543506,4055.3665,18,365.01752
+68e7ebdb,val,Võ Văn Tần,a8c12b0f,te_top_score,Dương Bá Trạc,0.75807256,37,3214.033,9134504a,main_train,16,0.50578386,3423.2432,14,153.27689
+68eb4f2e,test,Lý Thường Kiệt,a76d15f6,main_train,Trần Hưng Đạo,0.82350963,34,4051.0825,fab43492,te_top_score,16,0.59768844,5435.0923,14,190.15826
+6902d130,val,Nguyễn Đình Chiểu#0,4a0b2d61,main_train,Phan Đăng Lưu,0.73385185,35,2469.454,4b1780cf,te_top_score,18,0.42897585,1359.5957,18,265.5761
+691320ef,val,Hồng Bàng,e7e83c46,main_train,Phan Đăng Lưu,0.6084745,19,5911.966,f1b0f460,main_train,16,0.34889412,3742.8672,18,81.527115
+693295fb,test,Lý Thường Kiệt,c65f7688,main_train,Trần Hưng Đạo,0.7566592,29,2514.2725,1e0ba2e5,main_train,17,0.5863357,4252.6143,18,768.3235
+695fb3f6,test,Lý Thường Kiệt,7fbf4507,te_top_score,Trường Sơn#1,0.87779063,31,1657.8615,9a7211b4,main_train,15,0.582749,5680.619,16,131.95976
+6967649c,test,Nơ Trang Long,a7692b8f,te_random,Vạn Kiếp#0,0.7068752,27,271.50128,98b6cd57,te_top_score,16,0.34093463,4966.4873,16,169.67795
+69a9be09,val,Hồng Bàng,df5f7bf9,main_train,Điện Biên Phủ#1,0.78113323,29,3127.5957,acb1e323,te_top_score,16,0.5715883,4440.2217,14,91.76411
+69cb9f8a,test,Lý Thường Kiệt,d8b668ba,main_train,Nguyễn Thị Minh Khai,0.7267955,25,3684.228,b924f0ce,main_train,16,0.27539736,2867.1323,14,664.04926
+6a0ddd3c,test,Trần Phú,61425595,main_train,Trần Hưng Đạo,0.83402824,33,785.0797,acafabae,main_train,16,0.686966,3427.4617,16,67.75677
+6a10aa6c,test,Hai Bà Trưng,52a234a0,te_top_score,Nguyễn Thái Bình#0,0.7893288,31,3916.8257,7a36cfbc,te_top_score,13,0.6109367,3115.396,16,246.02545
+6a13d375,val,Võ Văn Tần,305e285b,main_train,Điện Biên Phủ#1,0.8215262,25,2319.2126,1e0ba2e5,main_train,16,0.51167756,3172.18,14,152.45511
+6a21d5ec,val,Hồng Bàng,4f999980,te_top_score,Phan Đình Phùng,0.8323914,30,5534.4966,1f5eb111,te_top_score,17,0.7178803,6452.0825,16,85.767235
+6a4bc755,test,Trần Phú,e4fda1ac,te_top_score,Nguyễn Trọng Tuyển,0.78905994,28,4120.057,de5a7562,te_top_score,17,0.6427273,4904.65,18,95.69408
+6a6dc18d,val,Nguyễn Đình Chiểu#0,4e67f300,pilot,Pasteur,0.83851004,30,1063.4746,884942c7,te_top_score,17,0.608919,4098.6333,16,300.77097
+6a6f2948,val,Nguyễn Đình Chiểu#0,93575413,main_train,Pasteur,0.76423144,24,993.8023,4ffc284f,main_train,15,0.5046372,3285.7356,16,300.60013
+6a720f3b,val,Nguyễn Đình Chiểu#0,85f53a36,main_train,Cách Mạng Tháng Tám#0,0.755752,29,3012.12,56894e4e,main_train,20,0.5117018,2871.2615,16,316.96072
+6abdc079,test,Lý Thường Kiệt,04d5205b,main_train,Nguyễn Trãi,0.8351181,19,2199.544,a2a6bef9,main_train,17,0.693282,2490.7063,12,758.844
+6ad711f1,test,Nơ Trang Long,3c6b8060,main_train,Phan Đăng Lưu,0.82532585,35,648.94183,e676df25,te_random,14,0.5699765,7302.9136,16,186.30862
+6b236bbb,test,Lý Thường Kiệt,9ef4fe0b,te_random,Lê Hồng Phong#0,0.86221623,30,1653.3223,20e7544e,main_train,17,0.64740646,5170.6304,12,151.19049
+6b60b308,test,Hai Bà Trưng,3816d398,main_train,Nguyễn Thị Minh Khai,0.7284594,31,1800.5604,0f3617cf,te_random,15,0.4137357,4114.5337,14,258.3682
+6bcdae87,test,Lý Thường Kiệt,f648e8cd,main_train,Trần Hưng Đạo,0.8899128,30,3782.6177,eaab10cf,pilot,18,0.8377231,1786.5742,18,328.0536
+6c3de4fa,val,Võ Văn Tần,08802534,main_train,Cách Mạng Tháng Tám#0,0.770787,21,3676.0352,27e90ab0,main_train,15,0.6532563,3339.7112,16,139.58154
+6c5b59c0,test,Lý Thường Kiệt,498ddad1,te_random,Hoàng Hoa Thám,0.6754815,34,4924.2056,c516ba00,main_train,18,0.5475457,3142.7046,16,243.64043
+6c6bd818,test,Hai Bà Trưng,b703ef0b,te_random,Vĩnh Khánh,0.7539436,34,3167.0337,9165b2fe,te_random,14,0.5271221,3886.63,16,287.23898
+6c8ce2e8,val,Nguyễn Đình Chiểu#0,2e4db68c,te_top_score,Phan Xích Long,0.70191866,32,3363.2202,d27750ae,main_train,14,0.51905894,3497.6375,18,314.93497
+6cc53e20,val,Nguyễn Đình Chiểu#0,120596ea,te_top_score,Phan Đình Phùng,0.6484732,32,2868.8494,8d35c467,te_random,15,0.37619624,2621.3965,18,314.8923
+6d866a79,val,Nguyễn Đình Chiểu#0,df5f7bf9,main_train,Điện Biên Phủ#1,0.8056415,28,1420.4631,3e328a85,te_top_score,14,0.24548772,5475.3555,16,279.75247
+6d9a273e,val,Nguyễn Đình Chiểu#0,4a096fc3,main_train,Điện Biên Phủ#1,0.83671075,40,1914.7693,2ffc5911,te_top_score,15,0.6893205,2444.7231,16,300.13907
+6d9e90ab,test,Hai Bà Trưng,628c70ce,main_train,Điện Biên Phủ#1,0.72266024,35,974.5251,658c0c2d,main_train,16,0.5261908,969.8362,18,294.19418
+6e51d435,val,Nguyễn Đình Chiểu#0,bc0d2685,main_train,Trần Hưng Đạo,0.76281464,22,3630.43,52220b33,main_train,16,0.5644486,399.55814,18,213.28453
+6e56ce19,val,Hồng Bàng,55465971,main_train,Nguyễn Trãi,0.68000054,23,1506.5858,8c88864b,main_train,17,0.5485085,6193.7803,16,62.012074
+6e9b2084,test,Lý Thường Kiệt,98d105b1,main_train,Nguyễn Thị Minh Khai,0.8145826,31,2414.5906,0f0b83f1,te_top_score,16,0.64747703,1911.1796,16,95.182434
+6ea6f006,val,Võ Văn Tần,e787aa3d,te_top_score,Nguyễn Duy Dương,0.7654681,27,2380.873,184340f5,main_train,17,0.6160644,902.03906,16,149.71158
+6f03de2b,test,Hai Bà Trưng,f276fe32,main_train,Nguyễn Thị Minh Khai,0.62973386,30,907.66364,d8b668ba,main_train,15,0.33617067,1346.2305,18,424.6279
+6f83dcfe,test,Lý Thường Kiệt,294cf7b8,main_train,Điện Biên Phủ#1,0.85114837,29,2490.8486,6cd50eb4,te_top_score,19,0.58874434,3540.7615,16,44.859097
+6f9dc115,val,Nguyễn Đình Chiểu#0,6d991197,main_train,Nguyễn Trãi,0.8774452,29,2796.1274,39fb4afb,main_train,16,0.23584604,2817.9011,18,100.3122
+6fb419e2,test,Hai Bà Trưng,dfd942a7,main_train,Trần Hưng Đạo,0.7237138,31,1916.6187,ca074761,te_random,17,0.60167235,3266.221,16,282.39014
+702010c9,test,Hai Bà Trưng,f19e4e4d,main_train,Trần Hưng Đạo,0.7818506,32,5164.1763,3918fbee,te_top_score,17,0.70303845,2051.2463,14,305.93027
+704602a9,val,Hồng Bàng,d27750ae,main_train,Hải Thượng Lãn Ông,0.87046456,29,1009.4608,c7251d50,te_random,18,0.6452422,7471.0,14,124.37395
+70583221,test,Lý Thường Kiệt,9ff38479,te_top_score,Nguyễn Thượng Hiền#1,0.84762055,30,2816.813,7122a3f2,te_random,17,0.4918636,2872.8577,16,247.11592
+70a54889,test,Hai Bà Trưng,8e65fa74,te_top_score,Nguyễn Thượng Hiền#1,0.7791359,28,1796.3007,bad60e96,main_train,14,0.5662171,1912.302,16,307.41998
+70b08b5e,val,Võ Văn Tần,c01f5348,main_train,Trần Hưng Đạo,0.7947591,31,1124.076,11dbb137,main_train,16,0.5272223,2422.2556,16,114.41051
+70bd31f2,val,Võ Văn Tần,7c88d959,main_train,Cách Mạng Tháng Tám#0,0.8644721,34,3314.9163,c6b4cbea,te_random,16,0.72326714,1836.792,16,136.62001
+70faad63,test,Trần Phú,beb5b8aa,te_top_score,Xô Viết Nghệ Tĩnh#1,0.83403504,30,7330.059,79727f10,main_train,17,0.53781843,3968.2825,18,47.634686
+71129936,test,Lý Thường Kiệt,08057194,main_train,Trần Hưng Đạo,0.80744296,25,4159.89,89a4ea44,te_top_score,15,0.32518664,2517.8362,14,177.4841
+7125d2e9,test,Hai Bà Trưng,c183a0be,main_train,Nguyễn Thị Minh Khai,0.7505206,29,174.15092,7d4f4673,te_top_score,18,0.44364133,1345.5775,16,174.15092
+718b9535,val,Nguyễn Đình Chiểu#0,edb33847,te_top_score,Phan Xích Long,0.6489818,31,2619.9958,57119832,main_train,17,0.40870148,1227.2245,16,213.77998
+719efcb7,val,Nguyễn Đình Chiểu#0,86d2120f,main_train,Nguyễn Trãi,0.79770917,32,4532.0264,d232bffa,te_top_score,17,0.519588,3738.0393,16,174.87038
+71b03e52,test,Lý Thường Kiệt,7b861842,main_train,Trần Hưng Đạo,0.7913431,33,4028.3975,b71fad20,main_train,17,0.56817985,3902.212,14,201.6838
+71ccfefd,test,Hai Bà Trưng,496c6033,main_train,Điện Biên Phủ#1,0.73947597,32,1482.7455,38f8836e,main_train,17,0.38434294,1322.6274,14,443.843
+71dc2d73,test,Trần Phú,d44cb5c6,main_train,Phan Đăng Lưu,0.86626315,26,6275.847,e787aa3d,te_top_score,12,0.48956186,1341.317,14,16.915274
+71f84f47,val,Hồng Bàng,a9d6cc73,main_train,Điện Biên Phủ#1,0.75807947,30,3565.8828,df5f7bf9,main_train,14,0.6026054,3148.929,16,100.6356
+724e01f5,test,Lý Thường Kiệt,3b4a93f9,main_train,Lê Văn Sỹ,0.7384332,35,3074.4163,5f29f740,te_top_score,13,0.46776688,3396.0115,14,18.539091
+72640691,test,Lý Thường Kiệt,d66bf94c,main_train,Trần Hưng Đạo,0.85637885,33,1507.8018,6ba27fca,te_top_score,17,0.7512972,6301.7817,18,103.241196
+73071e1a,test,Lý Thường Kiệt,a1226183,main_train,Cách Mạng Tháng Tám#0,0.7785606,38,1045.6819,b9b9b031,te_top_score,18,0.5424758,5260.8057,18,423.91235
+732b6374,test,Lý Thường Kiệt,8602075d,main_train,Cách Mạng Tháng Tám#0,0.79464245,24,2798.443,41193139,main_train,16,0.5184236,4465.32,16,10.864608
+733fc57a,val,Nguyễn Đình Chiểu#0,f741993c,main_train,Điện Biên Phủ#1,0.6872522,34,2241.0066,ffecf83c,main_train,18,0.53803545,1416.5559,14,215.36395
+734af2d5,val,Hồng Bàng,5b5cf2e9,main_train,Điện Biên Phủ#1,0.7414933,39,2688.1682,4ce4b43f,main_train,13,0.65433544,436.59155,12,157.67902
+739f726a,val,Hồng Bàng,14fcd716,te_random,Huỳnh Văn Bánh,0.8729065,40,4698.3438,453fd3ac,main_train,16,0.7213171,3234.8442,18,30.313896
+73a836ae,test,Lý Thường Kiệt,ddaa524d,te_top_score,Lê Quang Định#0,0.88574684,28,4829.808,33a31157,te_top_score,18,0.8067188,3237.3489,14,53.400677
+73bf2b26,test,Trần Phú,dc08dca9,te_random,Phan Đình Phùng,0.8544779,33,4109.8154,d1da861f,te_random,15,0.6021913,4907.48,16,85.713875
+73c73314,val,Nguyễn Đình Chiểu#0,3c5b9252,main_train,Nguyễn Trãi,0.7897728,35,5782.8237,d67e9747,main_train,18,0.55311614,3026.9688,18,294.48853
+73defecc,val,Nguyễn Đình Chiểu#0,04bc5f8b,te_random,Lê Hồng Phong#1,0.5658485,28,3846.7166,69fcd735,main_train,15,0.30271077,2590.2854,16,179.54297
+74168cbb,test,Hai Bà Trưng,f7734d9f,main_train,Điện Biên Phủ#1,0.7615613,26,750.0316,09b6365f,main_train,14,0.54531884,2288.3237,18,175.26607
+74280a18,test,Nơ Trang Long,52a234a0,te_top_score,Nguyễn Thái Bình#0,0.8319117,37,4411.075,cc82cad7,te_random,17,0.7763172,1986.8021,16,66.674835
+74aeceac,test,Hai Bà Trưng,fbf8dad3,main_train,Nguyễn Thị Minh Khai,0.6713112,31,2398.9023,10a14c21,main_train,16,0.50553745,6179.5093,16,441.29874
+74d20199,val,Võ Văn Tần,a01513b4,main_train,Lê Văn Sỹ,0.8647905,20,1826.1583,184340f5,main_train,14,0.7422329,838.3492,14,126.72545
+75df3fa0,test,Lý Thường Kiệt,3257f1a4,te_top_score,Dương Bá Trạc,0.83203095,27,5996.67,03fa780e,main_train,18,0.55638224,4417.881,16,135.79536
+75e0e8ea,val,Nguyễn Đình Chiểu#0,ca46ec0e,main_train,Trần Hưng Đạo,0.78606963,36,3536.0515,b7f76e1c,main_train,17,0.6025136,1481.4419,14,57.43689
+75f05f89,test,Hai Bà Trưng,d110310c,main_train,Nguyễn Trãi,0.8403825,30,5852.9985,440bbf44,te_top_score,19,0.7416578,3440.9087,14,200.67314
+762e8da9,test,Lý Thường Kiệt,57aace02,te_top_score,Phan Xích Long,0.72800344,33,5202.691,c5d0dc48,main_train,17,0.3802997,3606.1252,16,144.96686
+76a4cc41,val,Nguyễn Đình Chiểu#0,3065b26c,te_random,Nguyễn Chí Thanh#0,0.8518392,35,2597.09,64df2bbb,te_top_score,17,0.64285785,3387.0408,16,69.22559
+76b3c5ca,test,Hai Bà Trưng,2cbf2715,main_train,Trần Hưng Đạo,0.83489317,24,4338.1025,c1676336,te_top_score,16,0.6659279,3565.3215,16,482.5896
+77017d7b,test,Hai Bà Trưng,0405a3ca,main_train,Pasteur,0.74561656,32,1613.2374,643e7e40,main_train,17,0.5944238,6197.131,16,506.70715
+77022751,test,Lý Thường Kiệt,4a0b2d61,main_train,Phan Đăng Lưu,0.6825145,34,6096.9023,d58a4017,te_top_score,14,0.521717,5273.315,16,48.65565
+7754339f,test,Lý Thường Kiệt,44e02832,main_train,Nguyễn Thị Minh Khai,0.8061475,35,3872.0405,90b5ed5a,main_train,18,0.4352178,4031.5293,14,264.387
+77787543,test,Nơ Trang Long,95878bd4,te_random,Vĩnh Viễn#0,0.8030131,29,6435.502,fbe9182c,te_top_score,18,0.78813434,6853.6226,16,71.798294
+777ec20f,val,Nguyễn Đình Chiểu#0,69281ba8,main_train,Trần Hưng Đạo,0.7956907,22,2982.9019,b991b318,main_train,18,0.5162319,1968.6168,18,310.50797
+7788fb59,test,Lý Thường Kiệt,53a8403e,pilot,Phan Đăng Lưu,0.7873935,28,4165.1987,6857b3b7,te_top_score,17,0.3905146,2274.3743,16,395.44165
+778ec996,test,Lý Thường Kiệt,64bd8ac6,te_random,Tùng Thiện Vương,0.8756014,33,4790.7695,ee485ac5,te_top_score,19,0.6504819,4751.3364,14,111.88511
+779a12a0,val,Hồng Bàng,c3993dc0,main_train,Phan Đăng Lưu,0.74640876,28,6214.605,118b2704,main_train,19,0.6178304,4218.082,12,99.14705
+77c410d0,test,Hai Bà Trưng,dd0fda30,main_train,Trần Hưng Đạo,0.85831213,25,3831.2979,9f0dd7d8,main_train,16,0.57951117,2439.3145,14,140.01054
+77f846da,test,Hai Bà Trưng,4549b145,main_train,Lê Văn Sỹ,0.799632,35,4074.629,dc39e991,te_top_score,15,0.55827045,3753.6116,16,366.48395
+781fa660,test,Lý Thường Kiệt,a9bc632b,main_train,Nguyễn Trãi,0.663303,29,1677.2543,8efb132c,te_top_score,14,0.37180185,6044.7593,14,434.59375
+78e857ec,val,Hồng Bàng,eb29b163,main_train,Nguyễn Thị Minh Khai,0.59740734,31,4828.817,1ce09b31,te_top_score,18,0.21437262,2947.255,18,93.38236
+79eac0cf,val,Nguyễn Đình Chiểu#0,4e67f300,pilot,Pasteur,0.8695111,39,928.16797,a6b9de30,te_top_score,15,0.516614,1980.5623,14,303.05045
+7a00d8aa,val,Nguyễn Đình Chiểu#0,a2c5b87f,te_random,Nhật Tảo,0.88373107,37,2193.597,9f11c49e,te_top_score,17,0.53285915,3286.777,18,61.92123
+7a02732b,val,Hồng Bàng,96212949,main_train,Cách Mạng Tháng Tám#0,0.7946,29,3833.2405,bce03561,pilot,13,0.45504284,5481.4487,16,113.276505
+7a31c763,test,Trần Phú,c9f950b6,main_train,Trần Hưng Đạo,0.8327632,30,1567.1433,5afa99ec,te_top_score,18,0.73621887,3641.1294,16,79.25211
+7a35d0fd,val,Võ Văn Tần,e09a4cd9,main_train,Trần Hưng Đạo,0.6675599,29,1853.7156,811a71f7,te_top_score,19,0.3223527,1356.3541,16,154.58107
+7a9919f5,test,Lý Thường Kiệt,36cf3992,main_train,Điện Biên Phủ#1,0.727038,35,3463.7625,7241c5af,te_top_score,17,0.5306048,1932.8448,16,90.92142
+7abd7bf1,test,Nơ Trang Long,cfc7e6c2,te_random,Ba Đình#1,0.89414096,38,7296.153,1c71f927,main_train,17,0.65017366,7377.766,16,233.68117
+7b357fc0,test,Trần Phú,b329865a,te_top_score,Lê Văn Duyệt,0.7911466,35,5611.069,89655651,main_train,16,0.6011191,4038.5715,16,17.997454
+7b636f99,val,Hồng Bàng,e8d644a8,main_train,Điện Biên Phủ#1,0.767707,30,4901.408,d60d5d5f,main_train,14,0.5652307,388.05872,12,126.014984
+7b71d684,test,Hai Bà Trưng,f7515b5e,pilot,Lê Văn Sỹ,0.8190596,22,1606.173,21701261,main_train,16,0.72851706,1207.4357,18,265.2976
+7b9e9dab,test,Hai Bà Trưng,260894b3,te_random,Sư Vạn Hạnh,0.71432287,31,3352.2524,0bb623ab,te_random,18,0.5675015,3337.1353,18,9.602567
+7bd050d0,test,Trần Phú,9e5db0a4,main_train,Trần Hưng Đạo,0.79945654,31,826.66406,5cb35930,te_random,17,0.6599039,814.51025,16,137.8722
+7c2e99fb,val,Võ Văn Tần,7330814d,main_train,Lê Văn Sỹ,0.75461483,35,3388.3918,ffbf8368,main_train,17,0.464235,1817.9344,18,149.0458
+7d338aea,val,Hồng Bàng,5231f08e,main_train,Điện Biên Phủ#1,0.67780775,29,4431.1665,c4192f34,main_train,11,0.36670753,3699.8452,18,89.49828
+7d3aabeb,test,Nơ Trang Long,d8e482fe,main_train,Cách Mạng Tháng Tám#0,0.67901236,32,4612.915,98bd88df,main_train,19,0.5692174,3897.2676,20,21.446568
+7d3abc13,test,Lý Thường Kiệt,006d7b6b,main_train,Nguyễn Trãi,0.80486816,33,2359.2217,04bc5526,te_random,14,0.4591173,6810.2124,16,630.27234
+7d4c80f3,val,Võ Văn Tần,8b7c21fe,te_top_score,Nguyễn Thái Bình#0,0.8733484,24,4622.772,d2bf5dcc,te_top_score,16,0.78734905,1404.0437,12,136.5144
+7d585509,val,Nguyễn Đình Chiểu#0,3c5b9252,main_train,Nguyễn Trãi,0.83288187,37,4208.2354,a5862398,te_top_score,15,0.59727144,2807.2683,16,189.09267
+7d674dd0,val,Hồng Bàng,7aba9a51,te_random,Hoàng Sa,0.74326086,35,5655.235,296bf4fb,te_top_score,18,0.67475677,1004.73486,18,73.954704
+7d9fc81d,val,Võ Văn Tần,36a782cb,main_train,Cách Mạng Tháng Tám#0,0.7612312,28,2901.6963,cf6e7a3c,main_train,16,0.51708955,3825.477,16,150.14066
+7da0fb29,val,Hồng Bàng,b5916605,main_train,Hải Thượng Lãn Ông,0.86359006,32,876.89105,0ebf643e,te_top_score,13,0.51910174,6974.542,18,108.10347
+7de05eec,test,Trần Phú,3789c28f,main_train,Hải Thượng Lãn Ông,0.90153515,21,1029.3959,cc3d96cf,main_train,17,0.8242035,1571.9299,14,61.180073
+7df516ec,test,Lý Thường Kiệt,9207e983,main_train,Nguyễn Thị Minh Khai,0.6766408,32,3837.02,817c97bb,te_top_score,15,0.51350594,3029.9534,18,275.8406
+7e29569f,val,Hồng Bàng,066d628b,main_train,Nguyễn Thị Minh Khai,0.73339856,34,6184.931,c91401c4,main_train,17,0.37806284,702.1684,16,95.00684
+7ec33e79,val,Hồng Bàng,399d4387,main_train,Điện Biên Phủ#1,0.8728447,25,2240.4036,1dc8c52e,main_train,17,0.79952693,3055.2512,14,131.17007
+7ed15d3d,test,Hai Bà Trưng,1ffa8665,te_top_score,Phan Văn Trị#0,0.7406528,30,3263.6401,375550bb,main_train,16,0.37471193,4825.979,18,383.6998
+7eee86d9,test,Lý Thường Kiệt,acb35ae7,main_train,Trần Hưng Đạo,0.83740234,19,5288.047,6ff567bc,te_top_score,14,0.63191867,4748.768,16,90.20475
+7f17cff6,test,Hai Bà Trưng,bb451dd6,main_train,Trần Hưng Đạo,0.7733821,24,1233.643,169bc420,te_random,19,0.5682975,5522.954,16,452.75665
+7f5c7c0b,val,Nguyễn Đình Chiểu#0,3c5b9252,main_train,Nguyễn Trãi,0.8620757,29,3167.828,6e4da349,main_train,17,0.57217216,2487.2896,16,156.56012
+7f5d5c02,val,Nguyễn Đình Chiểu#0,92e79d1d,te_top_score,Phạm Văn Hai#0,0.8268098,32,3382.6582,9c387bbd,te_random,13,0.5034473,2777.1301,16,312.43503
+80114a10,val,Nguyễn Đình Chiểu#0,14502629,main_train,Điện Biên Phủ#1,0.7052534,26,749.9075,e2a778af,pilot,16,0.59241164,2305.1877,16,44.760117
+802d2fe2,val,Võ Văn Tần,d678a2dc,main_train,Cách Mạng Tháng Tám#0,0.68653446,32,4357.5986,74cd28a4,main_train,16,0.5340145,812.3468,14,150.35829
+805cd7e3,test,Trần Phú,9d7f354a,main_train,Nguyễn Trãi,0.8917616,26,1526.6837,fae4e7e3,te_top_score,13,0.52815175,6038.5127,16,123.866104
+807aa2df,test,Lý Thường Kiệt,f53cb2c4,main_train,Phan Đăng Lưu,0.7305037,29,5882.811,2127b1d0,main_train,13,0.36603844,4178.843,14,279.91885
+808cdee6,test,Lý Thường Kiệt,2dbfb9cf,main_train,Nguyễn Trãi,0.85057855,39,3920.5552,db0583a8,main_train,15,0.058781922,3228.151,14,147.4254
+809b6a2f,test,Lý Thường Kiệt,f98151a7,te_top_score,Lý Thái Tổ#0,0.8028687,32,1832.9753,5066cec9,te_random,10,0.29615152,3170.9436,14,101.01887
+80be7e22,val,Hồng Bàng,9e5db0a4,main_train,Trần Hưng Đạo,0.77617115,31,2788.3413,e2dadceb,main_train,14,0.60244346,5913.6606,18,14.342427
+80c0b5a0,test,Trần Phú,c65f7688,main_train,Trần Hưng Đạo,0.8081799,27,499.52963,32aee15b,te_top_score,16,0.71714693,3030.6829,18,89.54537
+80cc9cc5,test,Lý Thường Kiệt,f01eab0d,te_top_score,Phan Xích Long,0.84545285,35,3913.6511,2b3dab60,te_top_score,16,0.66530514,4126.5854,18,180.3215
+80da935d,test,Hai Bà Trưng,80b97cbe,te_top_score,Phạm Ngũ Lão,0.76798487,35,2339.9932,d9db78c9,main_train,16,0.56627953,778.215,16,217.3941
+80f0293d,test,Hai Bà Trưng,c3993dc0,main_train,Phan Đăng Lưu,0.7213401,31,2295.1013,749e8e70,main_train,16,0.44269648,5462.162,16,93.406494
+815b14ac,test,Trần Phú,9d7f354a,main_train,Nguyễn Trãi,0.8412798,32,1951.9028,9b4abb54,main_train,17,0.68724906,1765.8689,14,125.40986
+8195db4e,test,Hai Bà Trưng,079011d0,te_top_score,Trường Sa#0,0.80166405,27,1291.7435,5abd8d7d,main_train,17,0.41766784,2134.0984,20,73.39129
+81dac50c,val,Nguyễn Đình Chiểu#0,2cef6096,main_train,Nguyễn Thị Minh Khai,0.58466494,34,1472.9653,d3074870,main_train,17,0.15653375,4591.138,18,108.73239
+82411629,test,Nơ Trang Long,ff0f06d9,te_top_score,Nguyễn Trọng Tuyển,0.8560429,32,3539.739,972558a9,main_train,17,0.744963,4887.1875,14,58.3079
+824c289f,test,Nơ Trang Long,a6071bf8,main_train,Phan Đăng Lưu,0.7350009,25,1657.1136,bc230f0b,te_top_score,16,0.58297914,1891.8837,18,89.85575
+826e2156,val,Hồng Bàng,f5ce4405,te_random,Hoàng Hoa Thám,0.6944619,35,6056.1836,cd8cf089,main_train,17,0.5718492,3487.2495,16,137.84125
+827d560d,test,Trần Phú,e6373e2f,te_random,Trần Bình Trọng#0,0.867956,32,302.07846,145b58ac,te_random,15,0.7229529,5423.5093,14,140.44633
+8285e257,test,Lý Thường Kiệt,cf80180e,main_train,Trần Hưng Đạo,0.73946565,30,4115.741,3947b321,te_top_score,16,0.42643356,5309.9165,14,768.20166
+8293d6b5,test,Nơ Trang Long,f8253950,te_top_score,Lý Thái Tổ#0,0.84486616,31,5048.844,2668b2e7,pilot,17,0.63984627,952.8528,16,100.57486
+833194c6,test,Hai Bà Trưng,b2ff90e7,te_random,Nguyễn Trọng Tuyển,0.787586,29,3721.7417,555dac9b,te_top_score,18,0.71933633,4661.8447,18,271.05542
+835f2edf,val,Võ Văn Tần,8f92d1a6,te_top_score,Vĩnh Khánh,0.81630605,35,1808.7023,053a0041,main_train,14,0.6556713,4438.2256,18,148.7002
+837e6bb2,test,Lý Thường Kiệt,f98151a7,te_top_score,Lý Thái Tổ#0,0.7988975,29,1690.635,1cb607f1,main_train,16,0.39975676,2541.1064,16,73.26237
+83d8fbd4,val,Nguyễn Đình Chiểu#0,73796e61,te_top_score,Phan Xích Long,0.7938228,36,1616.7131,b467c19d,main_train,18,0.37143332,5379.433,18,27.41613
+84b8dd01,val,Hồng Bàng,00e48ac8,main_train,Trần Hưng Đạo,0.7926422,34,340.7326,f5ce4405,te_random,14,0.6673612,6341.585,12,109.78928
+84b8f843,test,Lý Thường Kiệt,04d20f4e,te_random,Bùi Thị Xuân#1,0.7494507,24,3725.8323,8c88864b,main_train,15,0.6058369,3713.4087,16,164.4482
+84cd8999,test,Lý Thường Kiệt,f0763153,te_top_score,Nhật Tảo,0.82258594,26,1398.2882,acafabae,main_train,17,0.6137344,4367.632,16,432.2509
+84d5c119,test,Hai Bà Trưng,1995625a,main_train,Trần Hưng Đạo,0.7341078,26,2771.1462,ac6903b4,main_train,15,0.50615454,2641.4055,14,91.35722
+84dca657,val,Nguyễn Đình Chiểu#0,dd8ada18,main_train,Điện Biên Phủ#1,0.82472736,31,2004.3486,4a65865f,te_top_score,17,0.5762385,5379.001,18,299.52606
+85672b4d,test,Trần Phú,8c95ed2e,te_random,Tôn Đản,0.73595,41,3464.4897,afb61f86,pilot,15,0.24525851,4678.872,16,95.50632
+85681e5c,test,Nơ Trang Long,84ff90bc,te_top_score,Phan Văn Hân,0.8659973,26,2491.1257,988dbb8d,main_train,13,0.6698881,8263.704,14,313.0488
+85a28366,test,Lý Thường Kiệt,0585689f,main_train,Trần Hưng Đạo,0.8574309,31,1928.3071,47e61845,main_train,18,0.37971973,3946.3987,16,156.0836
+85ad0f21,test,Trần Phú,86ccb746,te_top_score,Nhật Tảo,0.8468306,32,1462.5625,9ed8e1d1,main_train,17,0.6594487,438.6336,16,74.04117
+85c1360c,test,Nơ Trang Long,2e4db68c,te_top_score,Phan Xích Long,0.7716432,35,1025.9639,ebd20880,te_top_score,18,0.63418657,4977.586,16,214.68906
+85c48d4c,test,Lý Thường Kiệt,cc3d96cf,main_train,Trần Hưng Đạo,0.8131113,23,4292.5444,11dbb137,main_train,15,0.59732896,1835.1171,18,141.06017
+85ef3b04,val,Hồng Bàng,8f4c4a2a,pilot,Pasteur,0.69237834,30,4257.3335,835ad8be,te_random,16,0.5993185,95.319664,14,95.319664
+8613e8af,test,Hai Bà Trưng,c7322ff6,te_top_score,Huỳnh Văn Bánh,0.84617597,28,3296.8708,aa3329f0,te_top_score,17,0.6229545,2237.2156,12,356.91205
+8616a42c,test,Lý Thường Kiệt,219d515d,te_random,Thành Thái,0.73731583,36,1153.2379,13ddb8a9,main_train,16,0.47265604,3248.0562,16,74.25173
+86338ba9,test,Hai Bà Trưng,26e4211c,te_random,Bắc Hải,0.60582304,34,3978.7239,ae95d468,main_train,15,0.26921928,5451.4717,18,285.17184
+86abe259,test,Trần Phú,513f978a,te_top_score,Nguyễn Thượng Hiền#1,0.9039378,28,2097.9458,c183a0be,main_train,14,0.32521805,3982.8176,16,122.20391
+86beae33,test,Lý Thường Kiệt,80510589,te_random,Phạm Văn Hai#0,0.8876588,24,1467.5227,f54ffe14,te_top_score,16,0.6834223,4862.369,14,88.530975
+86e4f70f,test,Trần Phú,1e5b6ec7,te_top_score,Nguyễn Duy Dương,0.8522072,35,904.90967,8921940b,te_top_score,16,0.71683276,5836.8145,16,177.4641
+87127d88,val,Nguyễn Đình Chiểu#0,9a8bf5b2,main_train,Nguyễn Thị Minh Khai,0.69003445,34,3419.0923,c9f7a48e,te_random,15,0.3602606,2441.203,12,77.80757
+875caeb4,test,Nơ Trang Long,e787aa3d,te_top_score,Nguyễn Duy Dương,0.86595786,32,5381.996,ac409069,te_random,16,0.68264997,6280.004,14,134.22762
+87a17f78,test,Nơ Trang Long,65d37779,te_top_score,Bạch Đằng#0,0.87119365,33,1095.2107,a30c3599,te_top_score,17,0.8116249,1530.6255,16,194.72913
+87c47115,test,Hai Bà Trưng,c6678e67,te_top_score,Sư Vạn Hạnh,0.86428404,31,2955.4404,fe7fc1c1,main_train,14,0.7656533,2667.5652,14,113.131966
+87cf5fd1,test,Lý Thường Kiệt,b4d29a81,main_train,Phan Đăng Lưu,0.67645186,26,5856.31,902385d9,te_top_score,17,0.32620478,6316.3823,14,79.62613
+87e504ab,test,Lý Thường Kiệt,bfec513b,main_train,Cách Mạng Tháng Tám#0,0.6908254,33,1954.1382,971e4390,main_train,15,0.49485227,4341.977,18,710.90155
+881dbc83,val,Nguyễn Đình Chiểu#0,84469f68,main_train,Nguyễn Trãi,0.86328125,27,4369.2104,83d9d891,main_train,15,0.8115562,311.16727,14,105.26109
+8827abe7,test,Nơ Trang Long,d44cb5c6,main_train,Phan Đăng Lưu,0.8289841,34,629.831,0abd1e9d,te_random,16,0.40580702,5859.7954,16,59.071655
+88545ca2,val,Nguyễn Đình Chiểu#0,5abd8d7d,main_train,Phan Đăng Lưu,0.6969381,34,2642.2153,e5f67d91,main_train,17,0.4833461,3466.662,16,297.42688
+88ee013d,test,Lý Thường Kiệt,94a6ef64,te_top_score,Lê Quang Định#0,0.8295673,33,4905.1685,579ee38f,te_top_score,17,0.65940547,4939.7646,18,207.98643
+8920f0ec,val,Nguyễn Đình Chiểu#0,c3993dc0,main_train,Phan Đăng Lưu,0.7680073,35,1805.1179,120596ea,te_top_score,14,0.38908905,2161.251,16,285.2217
+89e4645e,test,Lý Thường Kiệt,dc08dca9,te_random,Phan Đình Phùng,0.8495015,31,3262.7996,db4135f7,main_train,17,0.5765674,4436.8096,14,27.819454
+89e5a133,test,Lý Thường Kiệt,e96348dd,main_train,Cách Mạng Tháng Tám#0,0.5295645,29,2629.1914,658cd49a,main_train,16,0.36501744,2458.6511,18,179.27254
+89ff6f51,test,Lý Thường Kiệt,37227547,te_top_score,Lạc Long Quân,0.78684187,27,195.4676,093cdacd,te_top_score,15,0.54836875,4538.3438,16,180.34546
+8a102610,test,Trần Phú,9d7f354a,main_train,Nguyễn Trãi,0.8859715,28,1514.2511,81327608,te_top_score,15,0.7439266,3896.2969,14,136.43436
+8a1348ff,val,Nguyễn Đình Chiểu#0,4655b97e,te_top_score,Nguyễn Thái Bình#0,0.8176082,30,4376.6235,65d37779,te_top_score,16,0.7524876,4888.998,18,98.62736
+8a8dd20f,test,Lý Thường Kiệt,cc3d96cf,main_train,Trần Hưng Đạo,0.87646836,24,4492.5728,b0efd8e2,te_top_score,15,0.7635317,544.2074,18,34.756756
+8afc7bd1,val,Võ Văn Tần,a68c6934,main_train,Trần Hưng Đạo,0.80314684,28,2938.1138,bc2fb171,te_top_score,17,0.5889764,3854.6606,16,153.75896
+8b8e256c,test,Hai Bà Trưng,37942f88,main_train,Nguyễn Trãi,0.81627905,32,4743.6875,886c1e9c,main_train,17,0.2691455,1060.2671,14,245.14655
+8be38ed8,test,Nơ Trang Long,ca2d406b,pilot,Phan Đăng Lưu,0.85212123,27,1341.1481,6fdbc47b,main_train,16,0.4391749,4800.0825,16,48.204975
+8be9d87c,test,Hai Bà Trưng,98af4647,main_train,Trần Hưng Đạo,0.6597253,25,4934.409,dd35a07c,main_train,17,0.5075499,2822.7566,18,77.328735
+8beb5b28,val,Nguyễn Đình Chiểu#0,5f66ce51,main_train,Điện Biên Phủ#1,0.8235348,35,357.43344,7c24d6c2,main_train,17,0.40713623,1109.9603,16,263.11725
+8c189375,test,Hai Bà Trưng,14c5d303,main_train,Cách Mạng Tháng Tám#0,0.81755936,26,1952.523,6a3ffe8e,te_top_score,17,0.7162985,3097.2947,16,120.302605
+8c3293c9,test,Lý Thường Kiệt,f4c4bbaf,te_top_score,Bạch Đằng#0,0.745539,31,5990.1797,0d94cf13,te_top_score,13,0.5516797,3149.9348,14,172.01338
+8c7355a3,val,Võ Văn Tần,f36a3a0d,te_random,Lý Thái Tổ#0,0.67942154,30,2116.0217,7aa880a2,main_train,14,0.37680504,1602.2446,16,148.19115
+8ca7d69d,val,Hồng Bàng,b0fb1a46,main_train,Điện Biên Phủ#1,0.64501756,27,5262.978,69c94a88,main_train,16,0.5017589,1459.7561,12,107.898895
+8ce3e55b,test,Lý Thường Kiệt,2dbfb9cf,main_train,Nguyễn Trãi,0.82275265,31,1723.5698,260894b3,te_random,15,0.6494054,1237.6705,16,487.4853
+8cf4dda4,test,Hai Bà Trưng,5e8f8be6,main_train,Trần Hưng Đạo,0.8615854,20,5540.591,86ccb746,te_top_score,14,0.6500849,4183.4365,14,50.490635
+8d15ee9a,test,Lý Thường Kiệt,ac6e3be2,main_train,Trần Hưng Đạo,0.64941275,28,4795.192,d2bf5dcc,te_top_score,18,0.4987489,3118.2368,14,249.76128
+8d1af329,val,Võ Văn Tần,c47cd05f,main_train,Lê Văn Sỹ,0.7586434,23,2870.2346,b5c9d1c1,main_train,17,0.425171,1335.5227,16,143.82954
+8d298866,test,Nơ Trang Long,79a637b7,main_train,Nguyễn Thị Minh Khai,0.8317655,24,3117.1719,2f762264,te_top_score,14,0.6706154,6638.8667,14,127.33092
+8d3498f4,val,Võ Văn Tần,0c84da36,te_random,Trường Sa#0,0.71608114,31,2218.3293,3854f1fa,te_random,16,0.5474186,2176.238,14,149.25671
+8d5ffadc,val,Nguyễn Đình Chiểu#0,1e8233bf,main_train,Nguyễn Trãi,0.8060878,37,5802.386,412fdc64,te_top_score,18,0.6544637,3631.0405,16,227.61069
+8d86d859,test,Lý Thường Kiệt,1f43b00b,te_top_score,Nguyễn Kim,0.8601675,35,3262.8335,79a637b7,main_train,18,0.8050741,5168.5615,16,73.71701
+8ddf90f5,val,Võ Văn Tần,d21c44d3,main_train,Trần Hưng Đạo,0.6813365,26,3116.0042,de516d94,pilot,17,0.43766358,2614.5151,18,148.64426
+8deabf2a,test,Trần Phú,8ab56a6a,main_train,Nguyễn Trãi,0.8364977,26,623.59674,96fa0405,main_train,16,0.6312393,1789.372,16,108.73541
+8df2b6a8,val,Hồng Bàng,cfac83c2,main_train,Nguyễn Kiệm#0,0.72830397,25,6891.6504,a0537574,te_top_score,17,0.4039432,6815.7666,14,63.164803
+8e16210b,val,Nguyễn Đình Chiểu#0,b1fa4940,main_train,Cách Mạng Tháng Tám#0,0.6822392,32,3622.9763,25e6ebc6,te_top_score,17,0.46433714,1824.305,18,252.5004
+8e5eccf9,test,Hai Bà Trưng,f204ac4b,main_train,Cách Mạng Tháng Tám#0,0.84068596,39,2912.85,2926dbfa,te_top_score,17,0.5474475,3719.6777,16,103.44127
+8e79e65b,test,Nơ Trang Long,d37352da,main_train,Cách Mạng Tháng Tám#0,0.8227152,34,4725.4897,0ebf643e,te_top_score,18,0.50149816,795.1548,18,240.69167
+8e7d2ba1,val,Nguyễn Đình Chiểu#0,ab5b0eea,main_train,Nguyễn Trãi,0.75582975,36,2858.541,0ab10152,te_random,17,0.5347425,3828.4094,14,295.2386
+8e8d06f8,test,Lý Thường Kiệt,a41e70e1,main_train,Trần Hưng Đạo,0.8799459,27,4179.4023,c4192f34,main_train,13,0.57807934,4752.955,16,92.53376
+8f1e0f83,val,Võ Văn Tần,c3993dc0,main_train,Phan Đăng Lưu,0.82950115,27,3367.3076,34f4634b,te_top_score,14,0.7002327,1525.0712,14,147.01808
+8f73ceef,val,Nguyễn Đình Chiểu#0,d4cec60f,main_train,Điện Biên Phủ#1,0.7114903,30,1493.6166,4b316272,pilot,16,0.57984424,1123.3802,18,295.3734
+8f95a49b,test,Lý Thường Kiệt,99fdee25,pilot,Lê Văn Sỹ,0.8250322,35,2628.529,9207e983,main_train,16,0.54387414,3482.1033,16,392.57645
+8feafeb3,test,Lý Thường Kiệt,84a82d00,te_top_score,Lê Quang Định#0,0.63310164,37,4855.382,c8060555,te_top_score,15,0.38405252,2498.0579,16,81.43304
+90a6a65f,val,Nguyễn Đình Chiểu#0,2cbbabba,main_train,Trần Hưng Đạo,0.9071742,24,2651.6946,80ee5912,te_top_score,14,0.6097998,2557.3503,16,306.16568
+91184ccb,val,Nguyễn Đình Chiểu#0,c733cebf,te_top_score,Hòa Hảo#0,0.8019238,33,4408.0977,b09b725b,te_random,15,0.5922995,4536.67,14,278.11993
+9166ba21,test,Nơ Trang Long,e40772f3,te_top_score,Xô Viết Nghệ Tĩnh#1,0.86979365,37,1815.1951,3fd4a4fd,main_train,17,0.75385153,3729.1265,16,50.437355
+916ef639,val,Võ Văn Tần,9a8bf5b2,main_train,Nguyễn Thị Minh Khai,0.72722256,33,495.31958,8064fa61,main_train,15,0.37172204,1266.0984,14,57.063446
+9193e27a,test,Nơ Trang Long,acc30cb0,te_random,Thành Thái,0.7848854,36,5075.496,69812fa5,main_train,17,0.5779622,4365.077,18,129.96185
+91b91c17,test,Lý Thường Kiệt,d8557cdb,main_train,Điện Biên Phủ#1,0.6929169,34,5036.1606,250c8597,pilot,17,0.5515839,2503.7646,18,478.3334
+91cf3fcf,test,Trần Phú,3789c28f,main_train,Hải Thượng Lãn Ông,0.87705827,27,1065.456,0ce2b6b9,te_random,16,0.55214924,2747.4058,16,63.46833
+921d14bb,test,Lý Thường Kiệt,7444fd25,te_top_score,Nguyễn Duy Dương,0.73071915,35,3410.1584,66a00f71,te_top_score,16,0.5877548,1542.2158,14,353.97928
+922448da,test,Hai Bà Trưng,559a928b,te_top_score,Cống Quỳnh#0,0.7596575,37,2171.1511,de35ed10,main_train,17,0.45145133,3421.976,16,193.30055
+9229226c,test,Trần Phú,4c40c3a5,main_train,Trần Hưng Đạo,0.77994674,30,1854.1437,e272fbb0,main_train,17,0.64899886,3939.4,14,94.85159
+92360c8d,val,Hồng Bàng,e99de8f9,main_train,Pasteur,0.7316514,34,4880.815,86eb142a,main_train,13,0.46322507,6032.317,18,58.54057
+9253a9d8,val,Nguyễn Đình Chiểu#0,5cb34871,main_train,Phan Đăng Lưu,0.74663377,30,3922.3728,02b11ad6,te_top_score,18,0.44287023,3397.8472,14,144.70752
+926bb8d4,test,Nơ Trang Long,f01eab0d,te_top_score,Phan Xích Long,0.84116006,33,1396.4691,9c387bbd,te_random,14,0.6384574,7198.843,16,107.00268
+92ac6d4f,val,Nguyễn Đình Chiểu#0,e610ef5e,te_top_score,Lê Hồng Phong#0,0.85549843,31,1420.5687,a8208e4b,main_train,15,0.6718189,3260.3735,16,231.12886
+92d84099,val,Nguyễn Đình Chiểu#0,ff2151e5,main_train,Điện Biên Phủ#1,0.7644533,29,2424.5076,bba5b425,te_top_score,13,0.45142424,2352.2224,14,298.67896
+92ff42e8,test,Trần Phú,1fcff60e,pilot,Pasteur,0.8132247,30,2409.886,ff2151e5,main_train,16,0.5398481,1082.8732,14,97.879074
+937b7f40,test,Lý Thường Kiệt,dfaaf147,main_train,Điện Biên Phủ#1,0.6464558,36,4452.157,f96ae734,main_train,19,0.46095693,1001.44965,14,99.75623
+93c2bd64,test,Lý Thường Kiệt,bbc6b3fd,main_train,Pasteur,0.6621567,35,4413.6836,c5a8ae95,main_train,18,0.5418249,3625.9214,18,143.13948
+93de9039,test,Lý Thường Kiệt,668e8d3a,te_top_score,Trường Sơn#1,0.8810644,28,2070.3271,f9fc4e1e,te_top_score,17,0.5706237,2353.2502,16,71.58512
+93e4cd1a,test,Hai Bà Trưng,223ee612,main_train,Điện Biên Phủ#1,0.6505159,31,2907.6018,1047c60b,main_train,16,0.41285178,273.5827,16,17.91692
+940bbda8,val,Nguyễn Đình Chiểu#0,84b382cc,main_train,Trần Hưng Đạo,0.8168079,29,3988.815,f9bce920,main_train,19,0.75906605,2315.5305,18,98.01296
+94261841,test,Nơ Trang Long,30fb467c,te_top_score,Phan Văn Trị#0,0.799378,25,170.28558,988dbb8d,main_train,13,0.50088775,7939.095,12,102.04705
+94271a11,test,Hai Bà Trưng,b4d29a81,main_train,Phan Đăng Lưu,0.71881926,29,2830.2756,14fd786e,main_train,16,0.5493013,1648.2133,16,355.6885
+943ea4b7,test,Lý Thường Kiệt,53a8403e,pilot,Phan Đăng Lưu,0.7148959,37,4220.5674,200e5a20,main_train,18,0.48467323,2533.0972,16,510.30933
+94ad9175,val,Nguyễn Đình Chiểu#0,668e8d3a,te_top_score,Trường Sơn#1,0.8183008,33,4470.188,604ad524,te_top_score,18,0.7639316,3884.889,14,190.57237
+94b9ad10,test,Trần Phú,a6db27e5,main_train,Lê Văn Sỹ,0.7356655,34,5022.5635,5fc7a990,main_train,18,0.5448451,899.52716,16,40.198086
+94f31f74,val,Nguyễn Đình Chiểu#0,e3f3db67,main_train,Trần Hưng Đạo,0.78692865,30,4446.701,f01eab0d,te_top_score,18,0.73015493,2188.8132,18,282.54816
+94fba569,val,Nguyễn Đình Chiểu#0,af3b89e7,te_top_score,Hoàng Sa,0.84219545,27,895.69855,be66c78b,main_train,17,0.5602182,5853.1562,18,118.02166
+950346a4,val,Hồng Bàng,8dbac443,main_train,Nguyễn Trãi,0.7138691,28,772.0356,6245bec6,te_top_score,15,0.4557098,4172.194,16,118.3195
+953f6d5e,test,Trần Phú,bde95906,main_train,Nguyễn Kiệm#0,0.885647,29,3912.3762,a59366c5,te_random,17,0.45490575,2592.089,14,61.880527
+95580a93,test,Hai Bà Trưng,132e644c,te_top_score,Nguyễn Biểu,0.78205305,31,3538.2402,33a31157,te_top_score,16,0.61739826,1175.1001,16,295.2662
+95bba3b7,test,Trần Phú,440aae47,main_train,Cách Mạng Tháng Tám#0,0.7278974,29,3656.7207,1993e0b7,te_random,14,0.55551416,4037.8079,16,50.524025
+95ef8a82,test,Lý Thường Kiệt,23ce209d,main_train,Cách Mạng Tháng Tám#0,0.7452624,32,3007.6162,0174df20,te_top_score,16,0.54735893,1710.2557,14,51.164845
+960e1a65,val,Nguyễn Đình Chiểu#0,96bdc487,pilot,Pasteur,0.72121125,40,1079.6793,dbd11fca,te_top_score,18,0.36971903,5391.833,16,293.65396
+9613d6e1,test,Hai Bà Trưng,8e8f70e4,main_train,Pasteur,0.7298801,36,851.83057,6fb6c5aa,main_train,18,0.28722277,2333.4363,16,137.15201
+9622a5d7,val,Võ Văn Tần,e7d9f682,main_train,Nguyễn Thị Minh Khai,0.744236,27,2154.4978,2955b5ac,te_top_score,19,0.6271524,3960.7617,18,112.61275
+96a1b7f9,test,Trần Phú,fe2bf942,main_train,Cách Mạng Tháng Tám#0,0.7559889,31,3209.6528,948db25c,main_train,16,0.5690109,423.18958,16,36.510845
+96c2f86d,test,Nơ Trang Long,2e094adc,te_top_score,Xô Viết Nghệ Tĩnh#1,0.8783625,21,1969.4912,946470d3,main_train,13,0.51095337,6654.317,16,64.60789
+970452a6,val,Nguyễn Đình Chiểu#0,19715ae5,main_train,Nguyễn Trãi,0.87651527,34,4234.312,f284b062,te_random,13,0.77847475,1545.6575,16,61.46811
+97295224,val,Nguyễn Đình Chiểu#0,ec0656f8,te_top_score,Hoàng Sa,0.795994,25,3225.409,dca9c5f9,te_random,18,0.6779992,3091.7012,16,234.17177
+977eddad,val,Hồng Bàng,b907dfe1,te_top_score,Sư Vạn Hạnh,0.77693075,29,2504.8325,1fcdfe5b,te_top_score,14,0.6746872,6907.3667,16,111.241486
+97c5fcf4,test,Lý Thường Kiệt,29ec0011,te_top_score,Hòa Hảo#0,0.85499495,24,3199.834,9af10011,te_random,13,0.50397766,911.175,12,181.75201
+97cd86c6,test,Hai Bà Trưng,15a52e4f,main_train,Nguyễn Trãi,0.86511856,33,3406.0083,d6d6c430,te_top_score,18,0.7168361,1782.2742,16,195.59119
+97f4a8c2,test,Hai Bà Trưng,3916be33,main_train,Nguyễn Trãi,0.50165856,23,2007.3381,149b1290,te_top_score,16,0.2058339,3340.999,16,366.06158
+97f98b9c,val,Võ Văn Tần,ff0d8f1a,main_train,Cách Mạng Tháng Tám#0,0.8155426,21,1111.7146,be84dddd,main_train,19,0.79388845,728.3828,18,136.94983
+9833350b,test,Hai Bà Trưng,fb28d75f,main_train,Lê Văn Sỹ,0.7440446,34,3351.823,053a0041,main_train,15,0.3592758,5464.5117,18,275.05328
+984bddfa,val,Võ Văn Tần,49fc98b3,main_train,Lê Văn Sỹ,0.7526325,30,3708.399,11d01a54,main_train,17,0.37617132,1800.3805,16,149.40987
+98de72d8,test,Hai Bà Trưng,a41e70e1,main_train,Trần Hưng Đạo,0.88273984,31,5310.409,39a0b830,te_top_score,18,0.72072905,3500.234,14,66.10119
+98dfd2cc,val,Nguyễn Đình Chiểu#0,ac958f7b,main_train,Điện Biên Phủ#1,0.8057921,39,788.54663,574cddb2,te_top_score,16,0.4619033,1668.2487,16,305.3721
+98e17689,test,Hai Bà Trưng,1a49c91c,te_random,Lê Hồng Phong#1,0.7695807,28,2858.93,900d7f2c,te_random,17,0.5288356,2310.2004,14,25.906769
+98f0f9ee,test,Hai Bà Trưng,6aa6204f,main_train,Pasteur,0.635881,32,516.7754,4a7e5392,main_train,18,0.32172683,3749.4453,18,453.97156
+9931048d,test,Lý Thường Kiệt,8714c32d,pilot,Lê Văn Sỹ,0.84878457,27,3097.9788,7e191247,main_train,18,0.7099598,2950.2444,16,304.20932
+997bbb2e,test,Hai Bà Trưng,abaf5dd9,main_train,Nguyễn Trãi,0.6054315,33,4276.098,5a1d4ee4,te_top_score,18,0.52602077,2383.3354,14,172.79274
+99cfffe6,test,Lý Thường Kiệt,a68c6934,main_train,Trần Hưng Đạo,0.7519391,25,3479.797,2b7b37b1,te_top_score,14,0.3722735,1368.4309,14,508.23828
+99d5bccb,val,Nguyễn Đình Chiểu#0,d97470ea,main_train,Nguyễn Trãi,0.6492059,39,4022.9092,4691aa66,te_top_score,18,0.46136445,4670.758,18,29.454655
+9a0a9af3,test,Trần Phú,c5d20525,te_random,Lê Hồng Phong#0,0.8370038,28,866.6784,c894dc55,main_train,14,0.73119295,1822.0364,14,12.1580105
+9a47d818,test,Lý Thường Kiệt,cccb2d43,main_train,Trần Hưng Đạo,0.83586836,26,2369.2087,956412a6,pilot,18,0.7005038,4327.8286,16,45.92838
+9ad516d6,val,Nguyễn Đình Chiểu#0,7a064683,main_train,Phan Đăng Lưu,0.8310444,28,3386.392,45cf2455,te_top_score,19,0.6617062,429.52075,18,313.70163
+9ae5e136,test,Lý Thường Kiệt,016cbba2,main_train,Điện Biên Phủ#1,0.8564486,36,4892.3154,815f7feb,main_train,17,0.5482609,1575.7823,16,28.76803
+9b074fd2,test,Hai Bà Trưng,f9b4f71d,te_top_score,Bùi Thị Xuân#1,0.78566444,27,2256.1252,3a5f6595,te_random,18,0.59126174,1816.9874,18,98.11973
+9b2e847c,test,Lý Thường Kiệt,f6a949e5,main_train,Cách Mạng Tháng Tám#0,0.72121316,33,155.73982,054cc6fd,main_train,16,0.33460438,3675.218,18,128.65924
+9b334b6d,test,Nơ Trang Long,3ec6a1bc,main_train,Trần Hưng Đạo,0.8428239,31,6237.0044,bcfd6b0f,main_train,17,0.60856247,3139.3008,14,106.57995
+9b459bb8,val,Hồng Bàng,4ebac960,te_random,Ngô Gia Tự#1,0.8148445,35,2004.5555,a285a7e0,pilot,18,0.6362804,4900.9717,16,172.96434
+9b64bcdf,val,Nguyễn Đình Chiểu#0,475ebd4b,main_train,Nguyễn Trãi,0.79244256,41,5767.944,cd5eb5e5,te_top_score,17,0.34102902,1780.6207,16,297.10217
+9b6a1203,test,Nơ Trang Long,cccaa3d9,te_top_score,Phan Xích Long,0.8218304,22,1977.957,7b1df68a,te_top_score,17,0.67418563,6422.9106,16,172.97719
+9bb9bf1a,test,Nơ Trang Long,a9735225,te_top_score,Vạn Kiếp#0,0.6511595,38,389.29465,430bf489,main_train,19,0.51789725,6896.231,16,123.62629
+9c624b67,val,Hồng Bàng,006d7b6b,main_train,Nguyễn Trãi,0.76341534,33,1761.566,e95ae969,te_random,17,0.6931527,4880.471,16,92.99644
+9c99aaef,val,Nguyễn Đình Chiểu#0,375ecbdf,main_train,Điện Biên Phủ#1,0.78964245,28,611.25305,9eda785c,te_top_score,16,0.50961864,3589.7834,18,3.7726965
+9cb01146,test,Nơ Trang Long,3ec6a1bc,main_train,Trần Hưng Đạo,0.86765504,33,6171.4897,d0a8707a,te_top_score,14,0.6460498,1617.3864,12,160.97574
+9cff2c0f,test,Trần Phú,d2d2698b,te_top_score,Trần Nhân Tôn,0.81508094,34,646.4907,2a7952fc,te_top_score,16,0.6943172,4988.6304,14,191.68304
+9d412c6d,test,Hai Bà Trưng,13787c2e,te_top_score,Sư Vạn Hạnh,0.8258778,28,3011.7202,6a03b42b,main_train,17,0.77029413,2641.9326,16,209.93472
+9d511feb,test,Lý Thường Kiệt,e707f0bb,te_random,Nhật Tảo,0.8893629,37,2874.1423,ffecf83c,main_train,17,0.59639406,3937.5723,18,189.53598
+9d673c95,val,Hồng Bàng,cb97b163,main_train,Lê Văn Sỹ,0.6731896,33,3908.6174,8ad7d960,te_top_score,17,0.21917813,1170.7905,16,104.611534
+9db46757,val,Nguyễn Đình Chiểu#0,77659a23,main_train,Nguyễn Thị Minh Khai,0.6516603,33,1654.9036,145b58ac,te_random,14,0.4148519,3422.3638,16,310.61133
+9ded563a,test,Lý Thường Kiệt,6e4a2631,te_top_score,Tôn Đản,0.8464486,38,6055.829,db8a1f5e,main_train,16,0.52817947,2384.408,18,215.10379
+9dffd81e,test,Hai Bà Trưng,8db1c1eb,te_top_score,Thành Thái,0.8169755,29,3406.1245,64df2bbb,te_top_score,16,0.6823898,1704.4167,16,140.95201
+9e03ca3d,test,Nơ Trang Long,5cbfa478,main_train,Trần Hưng Đạo,0.7625749,29,7313.642,e5a56849,te_top_score,15,0.5132638,2166.4631,16,321.42303
+9e180136,val,Võ Văn Tần,a1c1b4b6,main_train,Nguyễn Trãi,0.76362383,34,2133.5427,31bb5d1a,main_train,17,0.5376603,1552.4674,16,147.85327
+9e6a2726,test,Trần Phú,3909ddb2,main_train,Pasteur,0.82445383,33,3246.244,c0ad3daa,main_train,14,0.4553714,2014.961,16,78.66331
+9efcc589,val,Nguyễn Đình Chiểu#0,a5aecba3,main_train,Nguyễn Trãi,0.8700192,33,4098.2095,bb5c4bf6,main_train,15,0.7216074,3517.7485,16,104.595566
+9f5bbad1,test,Nơ Trang Long,87b7a3ff,te_random,Hoàng Hoa Thám,0.7321185,29,1265.9613,50a05abd,te_top_score,16,0.3305098,1192.9452,12,113.09987
+9f8fcc14,val,Hồng Bàng,b44f6fe3,main_train,Nguyễn Trãi,0.7051386,31,2880.8179,80839237,te_random,16,0.43745854,3661.752,14,167.05678
+a03ae43a,test,Hai Bà Trưng,c3b1ecba,main_train,Điện Biên Phủ#1,0.65085083,31,2321.0864,2287c8fc,te_random,17,0.34956118,4113.845,16,214.52808
+a041dd05,val,Hồng Bàng,1e8233bf,main_train,Nguyễn Trãi,0.77044845,25,285.9936,dd35a07c,main_train,12,0.46341133,6780.522,14,91.79222
+a0bea6c0,val,Hồng Bàng,1989b9b5,main_train,Pasteur,0.6691043,28,4626.5557,052e2522,main_train,16,0.40272912,6186.4336,14,121.67624
+a0d39c95,test,Lý Thường Kiệt,047b232e,te_random,Bình Đông,0.68261874,29,2519.9092,4921c53b,te_random,14,0.33183748,4824.833,16,574.84296
+a0e4c917,test,Lý Thường Kiệt,03b7c4a0,te_top_score,Bà Hạt,0.8294747,22,1470.1755,60b9e9ec,main_train,15,0.6244627,1738.3816,16,674.561
+a11341a6,val,Nguyễn Đình Chiểu#0,bc0d2685,main_train,Trần Hưng Đạo,0.8610053,25,3359.3018,f3213b41,pilot,17,0.7665154,1997.4961,14,67.75997
+a131d987,test,Lý Thường Kiệt,36b34561,main_train,Phan Đăng Lưu,0.7082001,29,4737.9595,13a3202d,te_top_score,18,0.3397944,3687.7563,18,146.93878
+a1345932,test,Nơ Trang Long,c4a2bd2f,te_top_score,Trần Quý,0.85216147,31,7336.4023,818be88a,te_top_score,16,0.6661357,6489.2324,18,212.39816
+a1b0f8b9,test,Lý Thường Kiệt,e3216d25,main_train,Cách Mạng Tháng Tám#0,0.88120943,27,1980.4417,6e0a100a,main_train,14,0.57406306,4427.8145,18,314.28815
+a1b4fe9f,val,Nguyễn Đình Chiểu#0,2776e9dd,main_train,Trần Hưng Đạo,0.6920152,32,3489.0566,145b58ac,te_random,15,0.53229624,3000.9465,16,138.56316
+a1b924c9,test,Nơ Trang Long,fccbe529,main_train,Phan Đăng Lưu,0.8211068,33,1114.1759,6d6a1adf,main_train,16,0.60938984,6842.9136,16,64.15605
+a1ef18b4,test,Lý Thường Kiệt,c62a9884,main_train,Điện Biên Phủ#1,0.63506746,28,3417.9482,11d01a54,main_train,18,0.39969972,5915.0312,18,119.506996
+a1f97303,val,Nguyễn Đình Chiểu#0,332ca2bb,main_train,Pasteur,0.723886,31,23.077908,89c9b62c,main_train,17,0.5133566,957.1103,16,14.477493
+a22f147b,val,Hồng Bàng,b080b2e2,te_top_score,Thành Thái,0.8600972,35,1938.8342,3ce21877,te_top_score,16,0.80591017,4989.106,18,118.294655
+a26ee5f3,test,Nơ Trang Long,d5bb7d76,te_random,Nhánh Cầu Tân Thuận 2,0.72894853,30,6334.007,e0d44dee,main_train,17,0.4911561,5243.3257,14,21.89068
+a28b9d7f,test,Hai Bà Trưng,62250e9a,main_train,Lê Văn Sỹ,0.7831653,31,2946.034,76e8f36b,main_train,16,0.3193602,4762.466,14,452.6897
+a290c126,test,Lý Thường Kiệt,0ed4292c,main_train,Cách Mạng Tháng Tám#0,0.7660608,29,334.77332,664d169e,main_train,15,0.4734798,3422.6396,16,72.04669
+a2957950,val,Hồng Bàng,f75955f3,te_top_score,Thích Quảng Đức,0.8121416,21,6789.4995,5afa99ec,te_top_score,14,0.71044916,4456.6235,14,66.721924
+a2b63036,test,Trần Phú,34e2cecb,main_train,Điện Biên Phủ#1,0.88670427,37,1265.9751,acc30cb0,te_random,16,0.57731324,2223.503,14,71.07874
+a2d1b0e2,test,Lý Thường Kiệt,08057194,main_train,Trần Hưng Đạo,0.772561,35,4056.493,17863384,te_top_score,15,0.42059955,5882.28,14,298.57034
+a2edca85,test,Hai Bà Trưng,2948afdd,main_train,Phan Đăng Lưu,0.7540682,23,1850.2415,4167915a,main_train,15,0.29455966,3153.9758,16,175.98955
+a31de43e,test,Nơ Trang Long,74cd28a4,main_train,Điện Biên Phủ#1,0.7734026,28,2196.7332,0a2b8736,te_top_score,15,0.67698115,3745.0576,14,135.11829
+a3702a5b,test,Lý Thường Kiệt,7571f855,main_train,Nguyễn Trãi,0.7827947,26,3451.349,968fcfb9,te_top_score,15,0.5951278,2758.0657,14,601.2047
+a3aa4647,test,Hai Bà Trưng,5192d7ff,te_top_score,Bùi Đình Tuý#0,0.803399,35,2436.4102,cbb295b5,main_train,17,0.7034628,5018.6807,14,147.00587
+a4648d09,val,Nguyễn Đình Chiểu#0,7dae9a5b,main_train,Pasteur,0.8528321,34,1716.7521,987f1699,te_top_score,13,0.70176154,2165.9746,14,197.43349
+a4aea9a2,val,Nguyễn Đình Chiểu#0,a41e70e1,main_train,Trần Hưng Đạo,0.8985052,24,2969.9895,513f978a,te_top_score,17,0.7073828,587.7603,18,312.81506
+a4b96299,test,Lý Thường Kiệt,3c3e6f11,main_train,Nguyễn Thị Minh Khai,0.8203595,31,2558.707,13c9e083,main_train,15,0.6653981,2146.0227,12,511.90167
+a5110d34,test,Nơ Trang Long,6470911e,main_train,Nguyễn Trãi,0.86588097,28,5615.0,2127b1d0,main_train,11,0.5514871,4546.102,14,41.58473
+a53850ec,test,Lý Thường Kiệt,99f2fc24,te_random,Bắc Hải,0.60130084,29,835.1486,3fc42617,te_random,18,0.33203194,1500.2494,14,770.11444
+a557a70d,test,Lý Thường Kiệt,9be89c4a,main_train,Phan Đăng Lưu,0.8318151,36,4870.179,a2a6bef9,main_train,15,0.66086376,2971.9077,16,270.9033
+a5af6ec5,test,Nơ Trang Long,536174ce,te_top_score,Phan Văn Trị#0,0.83998746,25,572.7666,800bee1e,te_top_score,16,0.60189927,4141.196,18,120.24656
+a5ce3d2b,test,Nơ Trang Long,0914a6b4,main_train,Trần Hưng Đạo,0.83712065,24,7415.769,b45b3246,main_train,14,0.34212062,4374.586,18,266.10858
+a635fecd,test,Hai Bà Trưng,7ead0084,te_top_score,Xô Viết Nghệ Tĩnh#1,0.7517218,24,3551.613,393833ec,main_train,17,0.63897085,1018.66064,16,251.19771
+a63c6b40,test,Hai Bà Trưng,af0dc410,main_train,Nguyễn Thị Minh Khai,0.55949503,37,2562.332,b3d329ff,te_top_score,14,0.16438402,4847.7075,18,419.54242
+a6eba323,val,Hồng Bàng,f1232440,main_train,Nguyễn Trãi,0.8352849,28,2034.8267,81648c4f,te_top_score,18,0.720111,1600.5948,18,125.11146
+a6fc0dc0,test,Trần Phú,36b34561,main_train,Phan Đăng Lưu,0.8080864,37,6014.706,33b3f055,te_top_score,18,0.6423904,6584.1636,16,92.64559
+a7e59643,val,Nguyễn Đình Chiểu#0,016cbba2,main_train,Điện Biên Phủ#1,0.73901486,33,2394.042,e8bf1ebb,main_train,17,0.40423626,1434.8966,16,63.11972
+a9492fbf,test,Lý Thường Kiệt,053a0041,main_train,Hải Thượng Lãn Ông,0.7339336,21,3954.488,7a36cfbc,te_top_score,14,0.33575556,911.4493,14,251.1464
+a9a9a55f,test,Hai Bà Trưng,65d37779,te_top_score,Bạch Đằng#0,0.78490937,28,2259.8071,2b3dab60,te_top_score,19,0.6496528,1736.5509,16,125.888245
+a9cd6afd,test,Trần Phú,33a7fd9d,main_train,Nguyễn Trãi,0.8790456,30,366.80777,a08cafbf,te_top_score,15,0.5278741,1382.7257,16,57.719322
+ab0c3c90,val,Hồng Bàng,4b0ec863,main_train,Trần Hưng Đạo,0.8003422,34,1155.4921,3166c977,main_train,16,0.47826666,3011.8586,18,153.99509
+ab40b6d6,test,Hai Bà Trưng,6089d49b,main_train,Trần Hưng Đạo,0.72916484,31,5486.7007,946470d3,main_train,15,0.5755897,3982.0757,14,275.73227
+ab85a19a,test,Hai Bà Trưng,6e27fc60,main_train,Điện Biên Phủ#1,0.809569,27,1877.574,b6c15b8e,te_top_score,17,0.39785355,4269.967,14,515.8538
+abf7df85,test,Lý Thường Kiệt,e807e08e,pilot,Phan Đăng Lưu,0.6405235,30,4787.5186,91194b17,te_random,16,0.5148262,5384.9707,16,117.08294
+ac082316,test,Lý Thường Kiệt,cba73174,main_train,Nguyễn Trãi,0.7738894,28,1056.8774,b2840f5d,te_random,16,0.5964582,6980.788,18,154.91846
+ac0d7d7c,test,Lý Thường Kiệt,1e1e6c52,main_train,Nguyễn Trãi,0.7417189,32,4916.379,92d69bc9,main_train,15,0.45719877,3518.5742,18,58.862892
+acb62e5f,val,Võ Văn Tần,8aa92400,te_top_score,Nguyễn Thái Bình#0,0.8031066,34,4505.2407,13d16c88,main_train,17,0.6980502,2050.89,16,145.47174
+ad04d33c,test,Hai Bà Trưng,ac2f0052,main_train,Phan Đăng Lưu,0.63495106,35,2371.4756,9a8bf5b2,main_train,14,0.30586842,2271.1208,16,110.72373
+ad126a38,test,Nơ Trang Long,399d4387,main_train,Điện Biên Phủ#1,0.866887,33,4653.819,28b891db,te_random,16,0.63129574,5767.8804,18,161.25792
+ad4b2cb2,val,Nguyễn Đình Chiểu#0,3c5b9252,main_train,Nguyễn Trãi,0.82687515,31,4082.226,e659cf0d,main_train,14,0.5524876,1732.521,14,133.5906
+ad563520,test,Hai Bà Trưng,375ecbdf,main_train,Điện Biên Phủ#1,0.73433524,29,1209.3767,2aa735b2,main_train,18,0.40057263,3883.7424,16,210.68546
+ad6a6e20,val,Nguyễn Đình Chiểu#0,33a7fd9d,main_train,Nguyễn Trãi,0.82393193,26,2732.8552,38297678,main_train,15,0.60076857,3761.2527,16,141.31282
+ad87d7ec,val,Nguyễn Đình Chiểu#0,a9b89222,main_train,Trần Hưng Đạo,0.8295138,29,3576.3906,85b71601,te_top_score,15,0.75723344,2263.839,14,155.0307
+ae23f743,test,Hai Bà Trưng,47e61845,main_train,Nguyễn Thị Minh Khai,0.63108116,31,1206.316,a0155e1d,te_top_score,15,0.4229921,4520.948,14,280.66144
+ae39b6b4,val,Nguyễn Đình Chiểu#0,006d7b6b,main_train,Nguyễn Trãi,0.79620844,33,4423.101,00a0d926,te_top_score,18,0.7066864,2355.5044,18,296.57678
+ae3bb443,test,Trần Phú,16480132,te_random,Tùng Thiện Vương,0.8563888,27,1131.2484,ab29772b,main_train,14,0.69385326,5627.739,14,19.6415
+ae51c71d,test,Trần Phú,16480132,te_random,Tùng Thiện Vương,0.85480934,32,2452.2566,9f88b31f,main_train,17,0.39586735,4350.0957,16,70.153366
+ae556c74,test,Lý Thường Kiệt,99ebc50f,te_top_score,Đào Duy Từ#0,0.781463,31,1579.9846,0cadda17,te_random,17,0.6934265,5985.0894,14,787.9997
+ae927aa5,val,Hồng Bàng,c3b1ecba,main_train,Điện Biên Phủ#1,0.8105794,35,2805.5786,42e531e0,pilot,17,0.42590815,4894.2593,10,121.91157
+ae9d6c7e,test,Lý Thường Kiệt,85e2d3a6,main_train,Trần Hưng Đạo,0.72616243,31,3655.0378,cf6e7a3c,main_train,17,0.41970038,2581.2122,16,336.06827
+af16e08c,test,Hai Bà Trưng,119e0305,te_top_score,Xô Viết Nghệ Tĩnh#1,0.85235286,31,3866.9543,af49ce43,te_top_score,19,0.78465587,2627.2644,18,390.151
+af3ddeb6,test,Trần Phú,5335b832,main_train,Trần Hưng Đạo,0.84002846,37,644.7177,9f0dd7d8,main_train,15,0.6249563,5667.289,16,36.311897
+af44df33,val,Hồng Bàng,8b7c21fe,te_top_score,Nguyễn Thái Bình#0,0.7113958,29,4690.7305,aabcb5d6,main_train,16,0.5268841,3731.9807,16,111.37138
+af59273a,test,Nơ Trang Long,5575b6b3,te_top_score,Lý Thái Tổ#0,0.8661025,36,4669.3936,dc428d3d,te_top_score,18,0.7517905,733.2826,14,228.10213
+af87feaa,val,Nguyễn Đình Chiểu#0,45698ddc,main_train,Nguyễn Thị Minh Khai,0.79938287,36,1264.7042,84699c6f,main_train,16,0.5727309,509.49893,16,66.348175
+afade3a3,val,Nguyễn Đình Chiểu#0,b8a54ed6,te_random,Phan Xích Long,0.76892823,33,2022.4468,f504b027,main_train,18,0.6307618,4457.9946,14,299.24728
+afb751f8,test,Trần Phú,53e4bd60,main_train,Nguyễn Trãi,0.8514227,33,789.0194,6355420a,te_random,12,0.7332705,4687.8057,16,71.291756
+afd645ca,val,Nguyễn Đình Chiểu#0,a1160835,main_train,Trần Hưng Đạo,0.8514452,27,3082.7732,47f5c3af,main_train,16,0.8080771,3098.4463,14,208.09583
+afdf5c0a,test,Trần Phú,c6eed711,te_top_score,Châu Văn Liêm,0.896888,20,2163.4707,bc910b84,te_top_score,14,0.50469106,2304.283,12,46.48166
+b004e363,test,Hai Bà Trưng,b06122cb,main_train,Trần Hưng Đạo,0.7454986,38,3495.5557,10a14c21,main_train,17,0.41110823,6242.2417,14,497.9881
+b01338dd,val,Nguyễn Đình Chiểu#0,d2399b56,main_train,Điện Biên Phủ#1,0.8516632,36,772.49744,2ffc5911,te_top_score,15,0.7099687,3958.8162,14,85.88424
+b0235644,val,Võ Văn Tần,594550cb,main_train,Trần Hưng Đạo,0.70264465,29,1614.5621,7650a6fc,te_top_score,18,0.4943766,1665.935,18,145.19908
+b02daa0d,test,Trần Phú,67ae8352,te_top_score,Hoàng Sa,0.84094584,39,4565.5493,69fcd735,main_train,16,0.6360706,5202.9697,16,94.574455
+b044093d,test,Nơ Trang Long,cb97b163,main_train,Lê Văn Sỹ,0.7387791,20,2594.6335,c894dc55,main_train,15,0.54895544,7343.1333,16,227.93199
+b05aae22,val,Hồng Bàng,85f53a36,main_train,Cách Mạng Tháng Tám#0,0.7814311,30,3686.6987,fe7fc1c1,main_train,18,0.58892155,2265.2153,18,117.16869
+b093c915,test,Lý Thường Kiệt,a68c6934,main_train,Trần Hưng Đạo,0.83181185,31,3759.903,3672a8f9,te_top_score,14,0.57238865,2120.8372,16,213.3575
+b0cb7b3e,val,Nguyễn Đình Chiểu#0,92b2ac29,main_train,Pasteur,0.7417859,28,1652.7452,a76d15f6,main_train,15,0.38946104,2573.0251,18,306.95383
+b11ab23f,test,Hai Bà Trưng,1a49c91c,te_random,Lê Hồng Phong#1,0.72795534,30,2948.2378,348a90e6,te_random,17,0.40955,4265.117,14,291.01273
+b12d64e7,test,Trần Phú,8d3dca06,te_random,Xô Viết Nghệ Tĩnh#1,0.8288297,36,5566.308,ddf62a54,te_random,15,0.4892217,3762.257,14,113.9247
+b144b0f2,test,Trần Phú,d405356d,main_train,Cách Mạng Tháng Tám#0,0.76352507,38,2328.868,2407a617,te_top_score,18,0.6484588,4609.9023,14,79.88976
+b18c45a8,val,Hồng Bàng,847622a3,main_train,Nguyễn Thị Minh Khai,0.62451434,36,2483.691,84469f68,main_train,15,0.4391071,1257.6837,14,160.87767
+b2175f75,test,Nơ Trang Long,f488edea,main_train,Lê Văn Sỹ,0.71806276,32,3653.4495,c9c02cb5,te_random,18,0.57401246,5277.356,12,114.90654
+b21bd0ba,val,Hồng Bàng,475ebd4b,main_train,Nguyễn Trãi,0.7443112,26,206.11621,cd84ab03,te_top_score,15,0.5690241,4554.3384,14,79.77455
+b21e6744,val,Võ Văn Tần,a3208fc2,te_random,Xô Viết Nghệ Tĩnh#0,0.5272616,31,1776.7305,6bd41a30,te_top_score,17,0.17845424,1411.5289,16,27.830423
+b23457e1,val,Hồng Bàng,3f6d96d5,main_train,Điện Biên Phủ#1,0.7274708,30,3765.3313,59ef1621,main_train,14,0.403618,3760.987,14,132.96582
+b27d5087,test,Hai Bà Trưng,39b922fa,pilot,Lê Văn Sỹ,0.79750234,36,4259.9756,f2da6ed0,main_train,17,0.7114963,386.11063,16,15.298194
+b2a8ea27,test,Trần Phú,d66bf94c,main_train,Trần Hưng Đạo,0.7840021,26,807.5835,08dc4a33,te_random,15,0.62063843,3573.6968,14,15.589853
+b2cf01b3,test,Hai Bà Trưng,9f4f8c10,main_train,Nguyễn Thị Minh Khai,0.75699335,23,1228.2042,f27eee59,te_random,15,0.3801858,1583.412,14,105.52503
+b38b00d4,test,Hai Bà Trưng,900d7f2c,te_random,Trường Sa#0,0.80591667,33,1759.7524,3d9dd4e3,main_train,16,0.59436643,2072.6714,16,112.06941
+b3e8aacc,val,Nguyễn Đình Chiểu#0,b8fcdb7b,main_train,Nguyễn Trãi,0.85965794,34,2518.6167,b7f76e1c,main_train,18,0.76881605,496.2436,16,306.31876
+b4113027,test,Lý Thường Kiệt,dc58ca61,pilot,Pasteur,0.85743654,36,5729.387,8294856c,main_train,17,0.68358266,4026.5999,18,99.73219
+b459fc8e,test,Trần Phú,74f4a5ab,te_top_score,Hoàng Sa,0.7734032,35,3620.5828,455e85bd,main_train,15,0.6316063,2691.818,16,128.03932
+b476f215,test,Trần Phú,1df9964d,main_train,Phan Đăng Lưu,0.6492597,29,5989.096,c9d1bb1b,te_random,15,0.34818214,4939.0015,16,91.60687
+b4804d76,test,Lý Thường Kiệt,8a07f05f,main_train,Nguyễn Thị Minh Khai,0.7931909,30,4986.595,345a3818,main_train,18,0.33117592,4456.838,16,146.7487
+b49fe787,val,Võ Văn Tần,b5715d4e,main_train,Nguyễn Kiệm#0,0.69692844,29,4316.3403,f064b141,te_top_score,17,0.13951465,3298.6018,16,143.90915
+b4b38ebb,test,Lý Thường Kiệt,095a7d0d,te_random,Phan Xích Long,0.716192,32,4358.234,684d9619,te_top_score,14,0.41917583,4982.1157,14,463.8035
+b55a3377,test,Hai Bà Trưng,4070cc60,te_random,Đào Duy Từ#0,0.6871083,34,4107.1914,358a0158,main_train,17,0.460905,2492.701,16,241.68008
+b6715759,val,Võ Văn Tần,acc30cb0,te_random,Thành Thái,0.7809708,32,2374.896,188a264e,te_random,16,0.28494424,3592.662,16,61.440178
+b69b66a4,val,Nguyễn Đình Chiểu#0,bde95906,main_train,Nguyễn Kiệm#0,0.79851764,25,2483.3325,89c9b62c,main_train,16,0.7059329,1239.5697,16,301.3606
+b6dd4a12,test,Trần Phú,c537b5bf,main_train,Nguyễn Trãi,0.8254636,36,353.23038,6302a1d2,main_train,16,0.6735606,651.45435,16,32.477898
+b7318752,test,Trần Phú,b7ab1ed8,main_train,Nguyễn Trãi,0.86825615,27,3288.9697,21e280aa,te_top_score,17,0.41348773,5068.921,16,170.51547
+b7c88ad1,test,Trần Phú,7fd2c75a,te_top_score,Thành Thái,0.8432807,29,2274.8171,bf1e836b,te_random,16,0.6940473,4447.014,16,74.85681
+b8529dc5,test,Trần Phú,ebeb6f66,te_top_score,Nguyễn Thái Bình#0,0.8493594,30,4873.4536,233dc29b,main_train,14,0.6399393,1889.8885,14,83.08621
+b8787178,test,Lý Thường Kiệt,73137a6d,main_train,Trần Hưng Đạo,0.75915086,36,3776.3254,29ddf10d,te_top_score,18,0.5937275,4312.3037,16,131.83109
+b88a0003,val,Nguyễn Đình Chiểu#0,dcda5a17,main_train,Điện Biên Phủ#1,0.8726734,27,1120.937,e4ae97a0,main_train,18,0.5567994,1549.9196,18,72.312004
+b8add471,val,Nguyễn Đình Chiểu#0,9f0dd7d8,main_train,Nguyễn Kiệm#0,0.7993788,36,3713.026,5c2b8604,te_top_score,18,0.6515576,5162.4287,16,225.85904
+b8ae8964,test,Trần Phú,4ebac960,te_random,Ngô Gia Tự#1,0.8533045,26,1049.6339,86dce5d9,te_top_score,16,0.81415224,4613.455,14,51.92872
+b8ce72d1,val,Hồng Bàng,b234e807,main_train,Điện Biên Phủ#1,0.66215646,34,2301.489,15886b93,te_random,16,0.36820385,7258.9956,16,152.3948
+b91f32c6,val,Võ Văn Tần,c2574f1c,te_top_score,Đinh Bộ Lĩnh,0.650454,23,3573.0273,cbce3fc9,main_train,15,0.5021242,2785.0745,14,154.02878
+b950e563,test,Hai Bà Trưng,7f4a3a49,pilot,Pasteur,0.56467754,33,472.58762,72ce6ec0,te_top_score,17,0.19101027,2568.1736,18,366.72287
+b958eb2d,test,Hai Bà Trưng,b44f6fe3,main_train,Nguyễn Trãi,0.54268557,36,1975.1715,988dbb8d,main_train,17,0.24900505,5786.8696,12,363.32562
+b96bd9d8,test,Lý Thường Kiệt,d4f9438f,te_random,Bà Hạt,0.8247653,33,2802.1943,cc82cad7,te_random,15,0.73631763,3222.4302,16,161.16682
+ba1015ab,test,Lý Thường Kiệt,627e83a5,te_random,Tôn Thất Thuyết,0.67368495,34,7146.0337,e320fa5d,te_top_score,17,0.22367062,5541.749,14,350.82233
+ba3d5399,test,Lý Thường Kiệt,71ec5c79,main_train,Cách Mạng Tháng Tám#0,0.73113376,27,1613.5063,4b316272,pilot,17,0.47833514,3947.9126,18,311.29587
+ba5c2413,test,Lý Thường Kiệt,a96bec90,te_random,Phạm Văn Hai#0,0.81701356,35,2990.49,00a0d926,te_top_score,18,0.64880425,3028.8032,16,608.3243
+ba6ae0ff,val,Nguyễn Đình Chiểu#0,86149fd3,te_random,Xô Viết Nghệ Tĩnh#0,0.7735364,27,3948.9219,b503c5c3,te_random,15,0.46488082,3620.8086,18,195.96988
+ba6b785f,test,Hai Bà Trưng,9f76e0d1,te_random,Ngô Quyền,0.6089052,36,4564.3286,7178fceb,te_top_score,16,0.27584675,3930.924,18,370.42282
+ba7ec9bc,val,Nguyễn Đình Chiểu#0,524b40da,main_train,Trần Hưng Đạo,0.6529968,28,3167.2969,8cd90109,te_top_score,16,0.369643,1745.769,18,299.32095
+ba8f24d6,test,Nơ Trang Long,5cbfa478,main_train,Trần Hưng Đạo,0.7776714,30,6569.4556,70859a23,te_top_score,15,0.63291943,1793.9498,16,84.13192
+bac01564,test,Hai Bà Trưng,64408c7b,main_train,Nguyễn Thị Minh Khai,0.63478446,29,2379.7454,69812fa5,main_train,15,0.37136245,2892.5496,18,545.4223
+bac76aee,test,Trần Phú,92b2ac29,main_train,Pasteur,0.7055075,34,3847.1743,e707f0bb,te_random,16,0.41991037,1274.9945,16,39.78944
+bac93c20,val,Nguyễn Đình Chiểu#0,c5d20525,te_random,Lê Hồng Phong#0,0.85318804,38,870.45624,3877d005,main_train,18,0.7600524,3576.9248,16,283.97223
+bae1b628,test,Hai Bà Trưng,054cc6fd,main_train,Phan Đăng Lưu,0.74382645,25,2024.849,fe432dff,main_train,15,0.48580986,1939.3168,14,91.60235
+bb5d9c84,val,Võ Văn Tần,4c607124,main_train,Trần Hưng Đạo,0.73989004,33,1295.5892,800fd73d,te_random,18,0.41025436,2664.5,16,145.3992
+bb739ad6,val,Nguyễn Đình Chiểu#0,6b42a09f,main_train,Pasteur,0.83570015,31,1026.8356,3754d9e4,te_top_score,15,0.564131,2024.7479,18,298.3848
+bb9dfdd2,test,Hai Bà Trưng,42a84f42,te_random,Phan Đình Phùng,0.7050785,27,2077.3953,343ffa70,te_top_score,18,0.52499914,3003.516,16,80.69063
+bba8d90a,test,Nơ Trang Long,df5f7bf9,main_train,Điện Biên Phủ#1,0.7193144,34,3238.4585,81327608,te_top_score,16,0.5773968,5332.4805,14,212.53435
+bc3a3fd5,test,Trần Phú,7fc77247,te_top_score,Trần Nhân Tôn,0.84697753,29,51.2572,7444fd25,te_top_score,15,0.6979874,465.63248,18,51.2572
+bc6834b0,test,Nơ Trang Long,82eb2010,te_top_score,Lê Quang Định#0,0.8092067,40,680.2526,107a6c2c,main_train,16,0.40898892,4370.934,16,91.65452
+bc8f49e5,test,Hai Bà Trưng,fe1b1370,main_train,Trần Hưng Đạo,0.86208886,28,2286.1582,8f92d1a6,te_top_score,17,0.77099746,2829.73,14,269.3212
+bcc47994,test,Nơ Trang Long,1fcdfe5b,te_top_score,Lê Quang Định#0,0.8566066,30,209.97298,39335ac1,main_train,18,0.72619486,5971.439,16,170.2581
+bd95e70e,val,Nguyễn Đình Chiểu#0,e581c3d4,main_train,Điện Biên Phủ#1,0.85796237,26,1832.7389,805d499b,te_top_score,18,0.62066126,2656.31,18,152.09834
+bda76a58,val,Nguyễn Đình Chiểu#0,79a5b13f,main_train,Nguyễn Trãi,0.86986816,30,3502.162,13b07f1d,pilot,18,0.5958028,2006.5176,16,68.03597
+bddb0b46,test,Lý Thường Kiệt,1d1500f7,te_random,Nguyễn Kim,0.7656152,26,1934.1741,89d200be,te_random,16,0.5682344,3689.1897,14,575.81476
+bddfb623,val,Nguyễn Đình Chiểu#0,d60d5d5f,main_train,Nguyễn Trãi,0.8266625,29,2672.4075,067a2160,main_train,12,0.6533315,3278.0977,16,264.58258
+be72a687,test,Hai Bà Trưng,7ee6160c,te_top_score,Nguyễn Văn Đậu,0.7129156,29,3598.5706,9c6f951b,te_random,15,0.47961837,4128.0107,14,356.32004
+be76d0a9,val,Nguyễn Đình Chiểu#0,73796e61,te_top_score,Phan Xích Long,0.8478569,32,1253.942,40303af3,te_top_score,14,0.65293133,1733.1749,14,291.1789
+befbf138,test,Lý Thường Kiệt,15fadc3f,main_train,Cách Mạng Tháng Tám#0,0.8153572,35,2157.1418,9475eade,te_top_score,17,0.49959117,6562.078,16,423.55026
+bf0623a9,test,Nơ Trang Long,cbce3fc9,main_train,Trần Hưng Đạo,0.77899516,35,6240.101,7d17a4d2,te_top_score,17,0.5993997,8327.561,14,46.27656
+bf18c8f4,test,Lý Thường Kiệt,ddc11c9d,main_train,Nguyễn Trãi,0.83897316,35,1735.9547,67ae8352,te_top_score,19,0.6674226,4021.443,16,425.6094
+bf4aadbd,test,Lý Thường Kiệt,78652a65,te_random,Ung Văn Khiêm,0.80070484,27,7802.172,f7734d9f,main_train,17,0.6210315,4887.786,14,695.4543
+bf5b159e,test,Lý Thường Kiệt,03c3c2ce,te_top_score,Hoàng Hoa Thám,0.73018956,27,6144.891,93565c54,te_random,16,0.513212,4330.848,14,117.73934
+bf5e059d,val,Võ Văn Tần,955fc8ff,main_train,Nguyễn Trãi,0.7933315,41,2563.5781,a2317fb0,main_train,17,0.56120265,794.55475,18,145.38718
+bf5e9c96,test,Trần Phú,e581c3d4,main_train,Điện Biên Phủ#1,0.87623215,30,1169.0625,616578e7,main_train,17,0.6096599,2987.8083,14,183.75296
+bf80aaba,test,Nơ Trang Long,1ce66e6e,te_top_score,Xóm Chiếu,0.8548491,29,6294.3306,03478969,te_top_score,14,0.6617898,6817.727,16,310.11993
+bf90e499,test,Hai Bà Trưng,b83b1695,main_train,Phan Đăng Lưu,0.84109336,32,1679.9265,9070caf1,main_train,17,0.51889783,1641.7072,14,302.24237
+bfa59371,test,Lý Thường Kiệt,ab715499,te_random,Thành Thái,0.7124137,41,571.73114,d8138924,main_train,16,0.6507236,2592.8533,14,311.1388
+c0090f08,val,Võ Văn Tần,5146ef06,te_top_score,Nguyễn Thượng Hiền#0,0.78494,30,4162.0205,45cf2455,te_top_score,14,0.62384033,226.14319,16,41.547585
+c00ad3ac,val,Võ Văn Tần,d041aef9,main_train,Nguyễn Kiệm#0,0.7824759,36,4290.1953,8e24941e,te_top_score,16,0.3369292,3015.1426,16,149.02525
+c0332785,val,Hồng Bàng,c804d0e7,main_train,Nguyễn Thị Minh Khai,0.84537727,31,4371.401,9a2cc7c9,te_top_score,16,0.55373716,7170.8394,14,38.367912
+c05e5617,val,Hồng Bàng,cd9ef551,main_train,Hải Thượng Lãn Ông,0.78395,37,552.7424,bc677a03,main_train,16,0.6797788,603.1915,14,118.03315
+c06bf03b,val,Hồng Bàng,8e8f70e4,main_train,Pasteur,0.6925843,36,4481.379,c11dc85d,te_random,16,0.28531003,6854.0366,14,127.03304
+c0eadf0b,test,Nơ Trang Long,8f09b771,main_train,Điện Biên Phủ#1,0.7263106,28,2142.8909,adfae5b8,main_train,18,0.3350163,3391.1318,14,13.42879
+c12645cd,val,Nguyễn Đình Chiểu#0,18cfa85c,main_train,Điện Biên Phủ#1,0.779311,30,1612.8821,e95ae969,te_random,18,0.618912,4693.1646,14,305.85376
+c12c78e9,test,Lý Thường Kiệt,66f49fff,pilot,Pasteur,0.81139296,32,4594.733,bd011617,te_top_score,17,0.5618777,4179.4116,14,123.76385
+c16afd98,test,Hai Bà Trưng,614ae414,main_train,Điện Biên Phủ#1,0.59032667,36,2972.096,f7a83cfa,main_train,16,0.24469537,3763.5933,16,503.78275
+c1a166cb,test,Lý Thường Kiệt,139dc338,main_train,Phan Đăng Lưu,0.8150612,35,6130.836,b329865a,te_top_score,17,0.57859826,5802.6753,18,148.58295
+c1b335e5,val,Nguyễn Đình Chiểu#0,c97b6d0c,main_train,Nguyễn Trãi,0.8023083,37,2260.8733,4878e508,main_train,16,0.6352605,704.16486,18,149.19728
+c25b963a,test,Hai Bà Trưng,ff0d8f1a,main_train,Cách Mạng Tháng Tám#0,0.78015035,29,1734.4008,65f26b46,te_top_score,15,0.7224285,3502.9626,14,8.25374
+c2624776,test,Lý Thường Kiệt,bde95906,main_train,Nguyễn Kiệm#0,0.87421674,34,3591.9563,2d25fd2b,main_train,15,0.76721865,3001.7788,14,182.95322
+c278043f,val,Nguyễn Đình Chiểu#0,2feb19d3,te_top_score,Xô Viết Nghệ Tĩnh#0,0.85629904,39,4210.4214,ff0b5e36,te_top_score,19,0.6872323,3441.5664,14,261.67444
+c2972f95,test,Lý Thường Kiệt,a0df311d,main_train,Cách Mạng Tháng Tám#0,0.73131335,29,9.156547,06495f5b,main_train,16,0.21536396,348.27682,16,9.156547
+c2c1c4b2,val,Hồng Bàng,8b7c21fe,te_top_score,Nguyễn Thái Bình#0,0.8032862,29,4688.675,4b55054b,main_train,16,0.57164216,2061.1765,20,112.95339
+c31cf5eb,test,Nơ Trang Long,dd1c33a4,main_train,Điện Biên Phủ#1,0.6879796,35,1703.9072,b5e35242,te_top_score,17,0.54058284,4144.174,16,73.23245
+c374b635,val,Nguyễn Đình Chiểu#0,8677387b,te_random,Thành Thái,0.7922954,40,4082.0728,bb06e471,te_top_score,16,0.49600545,2729.4841,16,299.50793
+c38dc461,val,Hồng Bàng,831a5704,main_train,Trần Hưng Đạo,0.5645145,28,2735.216,9070caf1,main_train,18,0.32572764,3621.1638,14,116.06473
+c3c68a0c,val,Hồng Bàng,4070cc60,te_random,Đào Duy Từ#0,0.78232956,39,2111.444,d38e2f44,te_top_score,18,0.61673605,6670.7046,16,1.4534129
+c3d6a716,test,Nơ Trang Long,412fdc64,te_top_score,Trường Sa#0,0.8960817,33,3996.3171,c2086e75,te_top_score,16,0.78879905,1065.874,14,114.27118
+c4329022,val,Hồng Bàng,339435d1,main_train,Trần Hưng Đạo,0.7338112,39,3157.0107,40ddfeba,te_top_score,16,0.141978,3029.7585,16,69.33197
+c49f94de,test,Lý Thường Kiệt,0c8f96cb,main_train,Cách Mạng Tháng Tám#0,0.8523159,32,1894.6993,dee9e79a,main_train,16,0.63662684,1842.5304,18,371.86734
+c4c58641,val,Nguyễn Đình Chiểu#0,a89db1eb,te_top_score,Phạm Văn Hai#0,0.85673696,35,3414.7488,d7b4ddb0,te_top_score,19,0.42662194,3320.6353,16,320.11353
+c51f147e,test,Lý Thường Kiệt,92aaea51,main_train,Cách Mạng Tháng Tám#0,0.8208162,31,2916.7856,8ab56a6a,main_train,13,0.5690536,3799.1821,16,288.70773
+c599bf11,val,Hồng Bàng,19299d4a,main_train,Điện Biên Phủ#1,0.82976484,31,5495.2446,876f3f16,main_train,18,0.6742254,3701.7505,18,143.92857
+c5df435f,test,Nơ Trang Long,02f81e3a,te_top_score,Đinh Bộ Lĩnh,0.8249401,31,1742.4718,2257a430,te_top_score,17,0.7676876,316.84457,16,88.06405
+c5ecf9b0,test,Lý Thường Kiệt,c3b1ecba,main_train,Điện Biên Phủ#1,0.63656616,27,2585.3542,f32c1c5c,te_top_score,13,0.26047194,2476.9844,14,176.85434
+c5ee0f72,test,Lý Thường Kiệt,1863131b,main_train,Nguyễn Trãi,0.84614956,33,4242.3345,b1dcab34,te_top_score,17,0.45491806,3635.6638,18,229.78862
+c5f56dd7,test,Hai Bà Trưng,e84c7225,main_train,Nguyễn Thị Minh Khai,0.6908931,27,1262.3668,436178ef,main_train,14,0.4261813,835.70123,18,208.09242
+c6502ae8,test,Trần Phú,a6a2d82a,te_random,Ngô Gia Tự#1,0.6833961,34,616.0023,a39c4c1c,main_train,19,0.37937802,3545.714,12,60.68507
+c6c14327,test,Lý Thường Kiệt,89683d4e,main_train,Lê Văn Sỹ,0.8437635,28,1922.1847,262b40ce,te_top_score,17,0.31043,3086.6362,14,361.14697
+c6c67f56,test,Trần Phú,a6db27e5,main_train,Lê Văn Sỹ,0.86373764,29,4437.2114,11c59783,te_random,16,0.6490393,4648.706,18,142.83339
+c73cefa9,val,Hồng Bàng,00e48ac8,main_train,Trần Hưng Đạo,0.82060033,33,341.55203,3854f1fa,te_random,15,0.5575033,1565.2,14,109.5231
+c7521791,val,Võ Văn Tần,64408c7b,main_train,Nguyễn Thị Minh Khai,0.6818984,40,946.9514,d364992e,main_train,15,0.3765454,4419.4653,14,150.33339
+c754a8ff,val,Hồng Bàng,4ef1e1f0,main_train,Nguyễn Thị Minh Khai,0.6047808,40,5278.7246,3bfb910f,te_random,15,0.51564085,6131.429,16,70.99501
+c79b6b62,val,Võ Văn Tần,fbf8dad3,main_train,Nguyễn Thị Minh Khai,0.7157067,26,1198.1378,c34627f3,main_train,16,0.59393865,1982.0424,14,147.26791
+c7b0ab35,val,Võ Văn Tần,02ecae9b,main_train,Nguyễn Trãi,0.7933937,19,849.8342,f3fdc924,main_train,17,0.44652212,735.0008,14,148.92065
+c7f8f2ad,test,Trần Phú,e31c8c0c,te_random,Hoàng Sa,0.6953319,24,3760.3464,78e34b4e,te_random,14,0.39901632,1279.8246,14,58.290062
+c7f90afe,val,Nguyễn Đình Chiểu#0,3e396100,te_top_score,Phan Văn Trị#0,0.8350735,29,2427.9412,fe3878ef,main_train,17,0.5795726,4453.7974,14,145.11192
+c83489bf,test,Lý Thường Kiệt,b8fd8126,main_train,Nguyễn Trãi,0.69728816,34,2970.6375,39b7d59b,main_train,17,0.36543474,1658.5087,12,353.59808
+c883bfdc,val,Nguyễn Đình Chiểu#0,0e6b9fee,pilot,Lê Văn Sỹ,0.679102,27,3477.5024,11d3d20d,main_train,13,0.39718804,5951.88,14,296.14502
+c8c42243,test,Lý Thường Kiệt,1e249209,te_random,Hoàng Sa,0.5794257,29,4143.979,8a861a16,main_train,18,0.35847566,3144.8918,18,802.52545
+c8c7fe5e,val,Hồng Bàng,4a0b2d61,main_train,Phan Đăng Lưu,0.6696766,43,6067.62,7d23c0d5,main_train,17,0.378053,1353.4535,18,103.436554
+c8cd7b36,val,Hồng Bàng,9749eadf,pilot,Pasteur,0.78571624,37,4346.23,8571c493,main_train,13,0.70241547,2388.2717,12,177.19157
+c917b124,test,Trần Phú,935ac5f0,main_train,Điện Biên Phủ#1,0.86396265,31,2963.257,183c61d9,pilot,16,0.69067216,3982.1235,16,40.845387
+c91b53a7,test,Lý Thường Kiệt,8e28f952,te_random,Phan Xích Long,0.7969317,28,4693.637,f9736178,te_random,15,0.6420863,2792.3267,16,555.795
+c92a5527,test,Hai Bà Trưng,dd0fda30,main_train,Trần Hưng Đạo,0.7963911,36,3845.3008,10609c83,main_train,17,0.40669012,1659.1101,16,149.1874
+c92d95d0,test,Lý Thường Kiệt,daea1d5d,te_top_score,Lê Quang Định#0,0.72121555,30,5395.21,972b3935,main_train,17,0.5658292,4942.621,16,270.9815
+c96295f9,val,Hồng Bàng,55b3c389,main_train,Cách Mạng Tháng Tám#0,0.7820886,29,3237.5283,98329549,te_top_score,14,0.6833405,3853.9048,18,134.99101
+c9ab8e1a,val,Nguyễn Đình Chiểu#0,a2c5b87f,te_random,Nhật Tảo,0.85153866,31,2960.618,f85b2fa5,te_top_score,12,0.6829087,4696.507,12,306.71176
+ca208394,val,Hồng Bàng,f0c9d1c1,main_train,Nguyễn Trãi,0.6882525,35,2518.86,ee3d3e93,main_train,14,0.4902508,439.5471,18,108.96618
+ca2a2774,test,Lý Thường Kiệt,8972a9ff,main_train,Phan Đăng Lưu,0.8316159,38,4736.789,e45c1672,main_train,14,0.6860467,1992.8622,16,518.05096
+ca7c33aa,test,Hai Bà Trưng,a2046d92,main_train,Lê Văn Sỹ,0.72823375,36,1757.5211,2e99ff8c,te_random,15,0.2680955,722.71094,16,132.0648
+cadaff9a,test,Nơ Trang Long,4a7e5392,main_train,Nguyễn Kiệm#0,0.7505101,32,2251.2595,fb9fde34,te_random,13,0.5950414,2238.501,14,146.7958
+cb2fe4d9,test,Trần Phú,ed337232,te_top_score,Lê Hồng Phong#1,0.8056476,30,1748.9155,4504a694,te_top_score,15,0.6725962,1864.8749,16,98.390884
+cb84a86a,test,Lý Thường Kiệt,89e63a23,main_train,Nguyễn Trãi,0.81283903,33,3408.0122,bc05bfd9,te_top_score,15,0.6432723,4473.548,18,372.17963
+cba32371,val,Võ Văn Tần,5e01964f,main_train,Trần Hưng Đạo,0.7621629,38,3502.6,139dc338,main_train,17,0.61052924,3208.3604,16,147.1425
+cc257235,test,Lý Thường Kiệt,9c364cd2,main_train,Phan Đăng Lưu,0.72661155,21,3954.7134,cb97b163,main_train,14,0.54067117,2948.1702,14,609.7671
+cc54da94,test,Hai Bà Trưng,e3216d25,main_train,Cách Mạng Tháng Tám#0,0.81456906,38,1916.5338,5e8f8be6,main_train,18,0.7223959,5542.412,14,60.096508
+cc7ef922,val,Hồng Bàng,40fae742,te_random,Nguyễn Chí Thanh#0,0.6054477,26,475.83096,f3213b41,pilot,17,0.41630828,4917.012,18,138.42761
+ccb20ac0,val,Nguyễn Đình Chiểu#0,76b09c62,te_top_score,Xô Viết Nghệ Tĩnh#1,0.7348053,28,2709.9414,573546a1,te_random,18,0.35593635,1728.5599,18,304.31528
+cd0ac722,test,Trần Phú,34e2cecb,main_train,Điện Biên Phủ#1,0.88325715,26,1009.7185,792ee8aa,te_top_score,16,0.71527034,6711.4185,12,108.21978
+cd52ddf9,test,Lý Thường Kiệt,96bdc487,pilot,Pasteur,0.67876756,29,4217.2153,d5bd9310,te_random,14,0.3756727,5613.6484,16,110.94126
+cda02da1,val,Hồng Bàng,835ad8be,te_random,Ngô Quyền,0.7220614,28,190.20789,b75ae447,main_train,15,0.49641266,3494.1707,16,181.8057
+ce513de4,val,Hồng Bàng,33e25433,main_train,Nguyễn Thị Minh Khai,0.88094795,32,3275.2573,92aaea51,main_train,16,0.6987313,2921.3403,14,93.82637
+ce8510d0,val,Hồng Bàng,f5b7d63e,te_random,Trường Sa#0,0.75758266,36,3946.2454,029137b5,te_top_score,15,0.44093344,2706.531,12,83.29058
+cea649eb,val,Nguyễn Đình Chiểu#0,73137a6d,main_train,Trần Hưng Đạo,0.8388429,32,1464.7903,98d96d77,te_top_score,19,0.62179404,2819.8086,16,314.67572
+cedd3a7b,test,Hai Bà Trưng,f980fd48,main_train,Lê Văn Sỹ,0.67819947,32,3984.456,e798bae0,main_train,18,0.46985096,5124.558,14,362.16382
+cf073092,val,Nguyễn Đình Chiểu#0,21676d75,main_train,Trần Hưng Đạo,0.7486704,26,3671.533,22cf3c03,te_top_score,17,0.572205,1316.4312,16,304.54898
+cf55aecf,test,Hai Bà Trưng,29e59242,main_train,Nguyễn Trãi,0.88647246,33,2594.5137,c11dc85d,te_random,16,0.2559531,2716.4363,14,210.72401
+cfb0ab35,test,Lý Thường Kiệt,80510589,te_random,Phạm Văn Hai#0,0.81582874,34,2121.0774,d3f95e52,te_random,19,0.7071413,7632.6807,16,173.08432
+cfb3ded9,test,Trần Phú,fec3fddc,main_train,Nguyễn Trãi,0.87125844,27,1145.7802,4e22afde,te_random,10,0.559511,3461.3381,16,56.46142
+d01693d0,test,Lý Thường Kiệt,d1087bb7,main_train,Cách Mạng Tháng Tám#0,0.8165733,33,3283.8428,f7d07bc2,te_random,15,0.38742897,4492.272,16,48.221523
+d05e0348,val,Nguyễn Đình Chiểu#0,fdd17c17,main_train,Nguyễn Trãi,0.7099938,24,3234.0857,013c4b43,te_random,17,0.50210863,5598.1685,18,299.758
+d07b9f3b,test,Hai Bà Trưng,f9736178,te_random,Phạm Văn Hai#0,0.66310287,32,4373.1147,2899a9fb,main_train,18,0.45010248,1637.313,16,364.5648
+d0834cb4,test,Hai Bà Trưng,be84dddd,main_train,Nguyễn Trãi,0.78589654,21,2822.7766,9b49d814,te_top_score,16,0.3533145,2385.0403,16,251.36002
+d0ad89d6,test,Lý Thường Kiệt,0e56264a,main_train,Điện Biên Phủ#1,0.7470929,35,2783.4138,fe432dff,main_train,15,0.5347565,4237.158,16,784.2026
+d193cfad,test,Nơ Trang Long,fb456eac,main_train,Nguyễn Trãi,0.8546973,37,7291.204,a6ae4244,te_top_score,15,0.6871466,7448.391,16,49.523903
+d19819e8,test,Lý Thường Kiệt,e5f24634,main_train,Điện Biên Phủ#1,0.80117714,31,5729.0522,8e28f952,te_random,19,0.72112083,5563.2114,12,144.49544
+d1ba206b,test,Lý Thường Kiệt,baf0f36b,te_top_score,Lê Quang Định#0,0.88941884,24,5145.407,7bd34c12,main_train,19,0.6760087,3534.5476,16,83.54818
+d1d2821d,val,Võ Văn Tần,77f060ab,te_random,Lý Thái Tổ#0,0.6854438,31,2261.255,7d17a4d2,te_top_score,14,0.4171564,5513.959,16,108.0679
+d1e56859,test,Lý Thường Kiệt,7eb52ac0,te_top_score,Nguyễn Thái Bình#0,0.8764068,32,3796.115,1c394bef,te_top_score,17,0.6139505,6226.209,18,167.74641
+d1eaa4f8,test,Hai Bà Trưng,785b1122,te_random,Nguyễn Thượng Hiền#1,0.6535305,33,1676.5974,f3fdc924,main_train,16,0.578837,644.3624,16,115.504555
+d1f33b66,val,Nguyễn Đình Chiểu#0,a5aecba3,main_train,Nguyễn Trãi,0.85135293,32,4306.963,c7cbf6a4,te_top_score,18,0.62092394,2887.6123,16,115.39816
+d1f82bcd,test,Trần Phú,99ebc50f,te_top_score,Đào Duy Từ#0,0.8541818,21,835.6535,5dc974e1,te_top_score,14,0.67257357,6579.0264,16,58.03882
+d2a30c9e,val,Võ Văn Tần,830ead3e,main_train,Nguyễn Thị Minh Khai,0.6859785,28,457.78793,8dbac443,main_train,17,0.5855558,3597.868,16,154.70023
+d2df8ba8,test,Lý Thường Kiệt,4c288537,main_train,Nguyễn Thị Minh Khai,0.7135792,30,3567.2864,ccd5b738,te_top_score,17,0.20374702,6391.615,16,600.9182
+d3376dc9,test,Hai Bà Trưng,e393df4b,main_train,Trần Hưng Đạo,0.69398504,26,3615.0264,7d17a4d2,te_top_score,15,0.4744724,5938.451,16,47.081425
+d3397e07,val,Hồng Bàng,a39c4c1c,main_train,Pasteur,0.6893837,27,4949.601,f1c58a00,pilot,10,0.49451402,6862.4175,16,81.366806
+d3545e18,test,Nơ Trang Long,7ead0084,te_top_score,Xô Viết Nghệ Tĩnh#1,0.8877964,25,2091.2139,884baa39,te_top_score,18,0.63278025,7674.611,16,98.732216
+d35f778c,val,Nguyễn Đình Chiểu#0,08b16c77,main_train,Nguyễn Kiệm#0,0.6997377,33,4043.4077,f91ed103,main_train,17,0.4749717,1275.1877,14,55.748753
+d39a4218,val,Nguyễn Đình Chiểu#0,b06122cb,main_train,Trần Hưng Đạo,0.7454793,25,3440.4602,0e30888e,main_train,17,0.49791422,3288.571,16,162.24948
+d3cad16d,test,Trần Phú,1e968870,te_random,Nguyễn Duy Dương,0.7896178,29,992.5555,800fd73d,te_random,14,0.40511504,2741.31,14,138.25868
+d3e3dcd7,val,Nguyễn Đình Chiểu#0,0e56264a,main_train,Điện Biên Phủ#1,0.86543417,40,1473.8984,69ef87a4,main_train,16,0.6801989,436.87903,16,89.04669
+d3f95f92,test,Lý Thường Kiệt,d8e482fe,main_train,Cách Mạng Tháng Tám#0,0.634186,32,3026.3528,b6d4a3de,te_top_score,14,0.23468652,2848.1104,12,248.08075
+d431af6f,test,Lý Thường Kiệt,616578e7,main_train,Nguyễn Trãi,0.820722,29,2189.7402,1a4b3a33,main_train,18,0.60962284,4393.514,14,720.6506
+d4586c7f,test,Nơ Trang Long,1fea0e05,te_top_score,Trường Sa#0,0.8130491,26,1930.266,f04b2afc,te_random,15,0.40988392,1887.4878,16,127.421524
+d46f332a,val,Nguyễn Đình Chiểu#0,f01eab0d,te_top_score,Phan Xích Long,0.8869339,29,2945.993,f01c9a09,main_train,13,0.7057907,2706.8188,16,168.07823
+d65beaa1,val,Nguyễn Đình Chiểu#0,f45a7eb6,main_train,Trần Hưng Đạo,0.80978274,31,2881.4353,2ffec4c2,main_train,15,0.601433,1928.6008,14,270.54117
+d6893da4,test,Trần Phú,afd9fc1d,main_train,Trần Hưng Đạo,0.8382483,25,2931.2693,991c0a56,main_train,16,0.595855,2371.943,10,163.6868
+d6c9e837,test,Lý Thường Kiệt,94a6ef64,te_top_score,Lê Quang Định#0,0.8716127,36,4785.5347,7d04bf3c,te_top_score,15,0.5971766,1392.6909,14,137.23686
+d6e4b6ae,test,Hai Bà Trưng,2904ff2e,te_top_score,Bắc Hải,0.59744465,33,2999.932,422fcb7a,te_random,16,0.26047277,2628.8938,16,289.37476
+d7a50da9,val,Nguyễn Đình Chiểu#0,375ecbdf,main_train,Điện Biên Phủ#1,0.7784336,36,770.9991,ec3da88f,main_train,18,0.50046337,1058.4156,16,183.72482
+d7fe8362,test,Hai Bà Trưng,e8c24c7f,main_train,Nguyễn Thị Minh Khai,0.807566,37,2667.257,2b3dab60,te_top_score,17,0.7157719,3864.3345,14,475.08755
+d832d48c,test,Hai Bà Trưng,bcace6f4,main_train,Phan Đăng Lưu,0.7895954,36,2951.9404,09867c7f,main_train,16,0.3979639,5665.3013,16,424.13626
+d863983e,test,Hai Bà Trưng,e7d9f682,main_train,Nguyễn Thị Minh Khai,0.7323889,33,2625.6477,133045ac,main_train,16,0.50049096,1422.9165,14,158.94568
+d8d37ed1,val,Võ Văn Tần,04d5205b,main_train,Nguyễn Trãi,0.8017212,36,4543.361,200e5a20,main_train,18,0.49966922,2339.0593,16,131.02983
+d91bb883,val,Hồng Bàng,a9bc632b,main_train,Nguyễn Trãi,0.74209815,32,1003.9956,fdd2a6aa,te_random,15,0.46537146,714.8982,12,105.069496
+d95b955c,val,Nguyễn Đình Chiểu#0,ac95e911,main_train,Nguyễn Trãi,0.79424363,41,1753.7712,f02b4e6a,main_train,18,0.52640253,437.39545,14,135.58173
+d969efc4,test,Hai Bà Trưng,fa3eab06,main_train,Phan Đăng Lưu,0.8297588,33,2176.1394,69281ba8,main_train,13,0.70306844,5319.6807,18,152.64127
+d976d6e6,test,Lý Thường Kiệt,740fe4f2,te_random,Lê Hồng Phong#1,0.85373724,25,3270.3975,9100e866,te_top_score,15,0.34477916,5479.7007,18,93.89355
+d9a4cd28,val,Nguyễn Đình Chiểu#0,b1969624,main_train,Pasteur,0.8322023,34,314.92587,eb9348c8,main_train,13,0.6557193,2074.6055,14,293.02374
+d9c35ae9,test,Trần Phú,56894e4e,main_train,Trần Hưng Đạo,0.859516,23,2113.5671,a6b9199c,te_top_score,15,0.2971153,5960.299,14,186.25005
+d9c79817,test,Lý Thường Kiệt,af4aa293,main_train,Pasteur,0.72909415,32,4708.689,f3dbee41,te_random,19,0.6738612,4793.9556,18,364.5896
+da0e2dfe,val,Võ Văn Tần,8e9b64ca,main_train,Nguyễn Thị Minh Khai,0.75688696,32,1480.1517,ccb43252,te_random,16,0.6811537,1448.5552,16,151.75352
+dabafb69,val,Võ Văn Tần,2d23031d,main_train,Trần Hưng Đạo,0.8668227,33,3924.645,93575413,main_train,17,0.60830957,1594.5919,16,43.419933
+db665f46,test,Lý Thường Kiệt,01f923e2,te_top_score,Nguyễn Công Trứ#0,0.83849084,31,5494.8936,5007a68b,te_top_score,11,0.5876914,6769.5874,14,165.38783
+db685bc3,val,Võ Văn Tần,e896bf22,te_top_score,Bạch Đằng#0,0.7520461,32,3776.43,d196e6ea,te_random,19,0.5397699,1679.7985,16,143.6934
+db74fb00,test,Lý Thường Kiệt,0e3347df,main_train,Nguyễn Kiệm#0,0.61077905,29,4361.469,131c25c6,main_train,17,0.41458035,4376.9014,16,234.96056
+dc532794,test,Lý Thường Kiệt,142073a4,main_train,Nguyễn Trãi,0.7950884,29,2172.1726,b5f0a12f,te_top_score,17,0.7014854,5597.8315,18,106.27071
+dc71a73b,test,Hai Bà Trưng,af2815ed,main_train,Cách Mạng Tháng Tám#0,0.7975933,42,4230.62,c324978c,main_train,16,0.47580066,2698.8032,18,217.44543
+dc7b7848,test,Trần Phú,86ccb746,te_top_score,Nhật Tảo,0.87546235,21,1405.5681,f56afa9b,te_top_score,15,0.74397874,6582.991,16,60.4388
+dca40cbf,test,Hai Bà Trưng,ed83625b,te_top_score,Huỳnh Văn Bánh,0.8220713,29,847.3967,acd5612d,main_train,17,0.4255498,5208.183,16,102.985344
+dd0e5443,val,Nguyễn Đình Chiểu#0,82978689,te_top_score,Lê Hồng Phong#0,0.7853251,29,3697.7195,d819baee,main_train,17,0.49878275,1505.7216,16,299.28217
+dd2cca46,test,Nơ Trang Long,8c4922ea,te_top_score,Lê Quang Định#0,0.7624903,28,550.6661,f8ffcdb5,te_top_score,17,0.58897924,6932.451,16,211.54337
+dd98549e,val,Nguyễn Đình Chiểu#0,1e5e0391,te_top_score,Hoàng Sa,0.8276894,30,1935.4968,30c80e48,main_train,19,0.34731433,578.6021,14,115.36596
+ddad23e7,test,Hai Bà Trưng,57bbac75,main_train,Lê Văn Sỹ,0.76852643,39,2248.6216,4384cc1b,main_train,17,0.5367457,2689.3018,14,229.59923
+ddeb53da,val,Võ Văn Tần,80fc5403,main_train,Nguyễn Thị Minh Khai,0.8444401,25,557.1603,0fcfdb76,main_train,18,0.72515595,4308.108,16,131.563
+de2e6435,test,Hai Bà Trưng,27e90ab0,main_train,Cách Mạng Tháng Tám#0,0.7899877,35,2949.0928,3fa880a1,main_train,16,0.5024198,1209.8677,18,123.887924
+de308a12,test,Lý Thường Kiệt,8f4c4a2a,pilot,Pasteur,0.66529316,35,4580.3457,1c2e2ab9,main_train,18,0.42089903,4740.8457,16,110.14433
+de4093b2,val,Nguyễn Đình Chiểu#0,ac958f7b,main_train,Điện Biên Phủ#1,0.77316725,40,1819.879,0cadda17,te_random,17,0.5493332,2627.8914,18,298.88968
+df08497c,val,Nguyễn Đình Chiểu#0,123633c4,main_train,Nguyễn Trãi,0.84792006,39,4022.4197,5aede7ee,te_top_score,16,0.49118382,3060.9946,18,128.63132
+df2085fd,test,Trần Phú,86d84e5f,main_train,Lê Văn Sỹ,0.8548991,29,4724.116,eedf4d01,main_train,15,0.6242514,1787.4739,16,49.634823
+df82af86,test,Lý Thường Kiệt,ed5415fe,te_random,Trường Sa#0,0.70203215,33,3686.265,4818b57b,te_random,18,0.4702186,1259.0719,18,395.84247
+df923296,val,Hồng Bàng,dbd11fca,te_top_score,Nguyễn Thái Bình#0,0.83656293,31,4655.5747,d4c31c6c,main_train,18,0.6925712,3352.9194,16,172.98917
+e05a0640,test,Trần Phú,f284b062,te_random,Sư Vạn Hạnh,0.8134079,32,1779.5474,c9c02cb5,te_random,17,0.48376247,3148.0156,18,95.95835
+e099ae14,test,Lý Thường Kiệt,212b79ab,main_train,Cách Mạng Tháng Tám#0,0.644686,38,2051.486,eb1cbab3,main_train,18,0.34476703,4361.623,18,45.03578
+e0d99f0a,test,Nơ Trang Long,8c4922ea,te_top_score,Lê Quang Định#0,0.7942103,34,340.0456,1e63678a,main_train,15,0.46473736,6938.8755,14,42.746456
+e1794162,test,Lý Thường Kiệt,d4f9438f,te_random,Bà Hạt,0.86327255,35,2982.8115,a2c097b0,te_top_score,17,0.78767693,7229.9575,14,74.62959
+e190ccc6,val,Nguyễn Đình Chiểu#0,294cf7b8,main_train,Điện Biên Phủ#1,0.76618975,34,2856.1362,f276fe32,main_train,17,0.41812533,1021.4143,16,294.79327
+e1c958d9,test,Nơ Trang Long,0f3a322a,main_train,Nguyễn Trãi,0.82079655,34,6798.5337,440aae47,main_train,17,0.58105934,4062.9707,18,85.788734
+e23ab6e9,test,Hai Bà Trưng,c8504a9f,te_top_score,Nguyễn Thượng Hiền#0,0.66005886,29,3666.593,79e4c0ce,te_top_score,17,0.4454687,4059.6296,16,59.840626
+e2598706,test,Nơ Trang Long,92e79d1d,te_top_score,Phạm Văn Hai#0,0.8650897,26,4317.1265,6647e44d,te_top_score,17,0.78463256,1476.3967,14,188.24011
+e2caa2bb,val,Nguyễn Đình Chiểu#0,f06ca0fd,te_top_score,Nguyễn Văn Đậu,0.7646497,27,2330.113,0ad3b15a,te_top_score,17,0.44423914,5838.205,14,299.844
+e2e71528,val,Nguyễn Đình Chiểu#0,8921940b,te_top_score,Bùi Đình Tuý#0,0.77951866,34,4477.031,36521f27,main_train,19,0.54377717,1303.608,18,54.127068
+e2f0c014,val,Nguyễn Đình Chiểu#0,d60d5d5f,main_train,Nguyễn Trãi,0.83072746,29,2703.311,344ee91b,te_top_score,18,0.6793659,738.64764,14,235.52519
+e2f2e83f,test,Hai Bà Trưng,2ed9cd82,main_train,Nguyễn Thị Minh Khai,0.82024246,33,461.9619,2949503b,pilot,14,0.66618997,2123.0283,18,169.84167
+e2fa8781,val,Nguyễn Đình Chiểu#0,04d5205b,main_train,Nguyễn Trãi,0.76979655,37,6494.658,a34a35d9,main_train,14,0.47650427,3048.5928,18,293.67148
+e32e32b1,val,Nguyễn Đình Chiểu#0,c37967f0,te_top_score,Hoàng Sa,0.7490617,29,4112.722,1ce09b31,te_top_score,12,0.6263543,4880.557,14,190.13782
+e3b2eaab,val,Hồng Bàng,15f933c7,te_top_score,Nguyễn Chí Thanh#0,0.83908325,26,433.30234,2e99ff8c,te_random,14,0.44104612,5760.4487,16,37.988243
+e442dc1f,test,Trần Phú,5335b832,main_train,Trần Hưng Đạo,0.82661164,40,858.8869,465a9f67,te_top_score,17,0.6885187,5015.681,14,155.98674
+e446ce92,test,Lý Thường Kiệt,3e74b9d5,main_train,Nguyễn Thị Minh Khai,0.83253115,32,3003.05,9f731efd,te_top_score,17,0.6152572,2082.1233,14,161.34013
+e485fc62,val,Nguyễn Đình Chiểu#0,b75ae447,main_train,Điện Biên Phủ#1,0.7093972,30,511.38214,edc73309,te_top_score,16,0.34317127,2992.54,14,297.33344
+e4a0f950,test,Lý Thường Kiệt,98187ec5,pilot,Lê Văn Sỹ,0.7973171,33,2368.51,d041aef9,main_train,16,0.43644586,4446.083,14,202.71623
+e4ee2a11,test,Hai Bà Trưng,4a928612,main_train,Nguyễn Thị Minh Khai,0.59971213,25,788.9997,dec8f6ad,te_random,16,0.29307064,2179.8804,14,362.9031
+e50248b0,test,Hai Bà Trưng,7e4e6b59,main_train,Nguyễn Trãi,0.70544606,35,2167.1023,0bf21372,te_random,13,0.23924316,3109.1292,14,354.62305
+e51fb0b9,val,Nguyễn Đình Chiểu#0,2dbfb9cf,main_train,Nguyễn Trãi,0.83405524,28,3340.7122,193d215c,te_random,16,0.54936767,4365.789,18,311.43466
+e576137c,test,Lý Thường Kiệt,1619a0a0,pilot,Lê Văn Sỹ,0.77841264,29,2658.1687,f505cef1,te_top_score,17,0.6371961,5256.439,18,406.6325
+e57ab41d,test,Lý Thường Kiệt,a41e70e1,main_train,Trần Hưng Đạo,0.8713704,30,776.8373,3a26b393,main_train,15,0.37334788,6005.043,16,61.5954
+e5946d7c,val,Hồng Bàng,a76eb0a5,main_train,Điện Biên Phủ#1,0.6736575,23,5601.7407,c34627f3,main_train,16,0.5224399,5626.5566,16,147.21541
+e622cfc8,test,Lý Thường Kiệt,d4d720f2,te_top_score,Hoàng Sa,0.63122225,38,4780.2207,b5f0a12f,te_top_score,18,0.4659239,5193.84,16,218.35092
+e6cd9909,test,Trần Phú,37fe7ee2,main_train,Điện Biên Phủ#1,0.8584809,36,2335.933,ea87d581,main_train,18,0.68976074,4701.0103,16,26.30506
+e6d04a8a,val,Nguyễn Đình Chiểu#0,e55b5cf0,main_train,Nguyễn Trãi,0.8672043,32,3117.2703,9b49d814,te_top_score,17,0.4794331,3704.9512,14,305.79166
+e7604f4b,test,Nơ Trang Long,84ff90bc,te_top_score,Phan Văn Hân,0.8063792,35,2507.3833,e95ae969,te_random,20,0.6926995,4973.514,18,324.6299
+e7668921,test,Trần Phú,8d3dca06,te_random,Xô Viết Nghệ Tĩnh#1,0.87658405,27,6496.768,fc631971,te_top_score,12,0.6149748,6472.925,14,116.667984
+e82f2487,val,Võ Văn Tần,cccb2d43,main_train,Trần Hưng Đạo,0.8857288,23,1773.9917,53d078ac,main_train,17,0.6401712,2307.3262,14,48.59933
+e88567b7,val,Nguyễn Đình Chiểu#0,c6632377,main_train,Nguyễn Trãi,0.8135825,29,4889.507,b791f2d0,main_train,19,0.71390295,4514.0015,16,305.874
+e8861ebe,val,Nguyễn Đình Chiểu#0,4a096fc3,main_train,Điện Biên Phủ#1,0.7948622,40,1789.4854,eee3195b,main_train,17,0.5626296,3165.674,16,296.6097
+e8da2828,val,Võ Văn Tần,96466651,pilot,Lê Văn Sỹ,0.7755164,33,3115.839,6e27fc60,main_train,15,0.29200628,3020.5928,16,144.93277
+e927030a,test,Trần Phú,169bc420,te_random,Triệu Quang Phục,0.79840446,32,1008.9033,a7692b8f,te_random,18,0.63648385,5973.7217,14,100.02239
+e980fe0a,test,Hai Bà Trưng,73796e61,te_top_score,Phan Xích Long,0.8278218,31,1035.579,09d22a01,te_top_score,17,0.6559743,3078.8523,18,226.5794
+e9896c86,test,Hai Bà Trưng,c6678e67,te_top_score,Sư Vạn Hạnh,0.81976676,34,2974.7144,6ffc2b12,te_top_score,20,0.7421461,3967.8875,16,161.95717
+e9ab6bc6,val,Hồng Bàng,08057194,main_train,Trần Hưng Đạo,0.73830307,32,3693.8552,184016e5,main_train,17,0.48750407,4910.393,16,55.82999
+e9ac1f00,test,Lý Thường Kiệt,423a3fed,main_train,Nguyễn Trãi,0.76230097,30,2285.1697,d0a8707a,te_top_score,16,0.6028891,5344.137,14,673.2606
+e9d1577a,val,Nguyễn Đình Chiểu#0,440bbf44,te_top_score,Thành Thái,0.8866035,30,1406.2764,2f762264,te_top_score,16,0.7774149,2057.5234,16,182.57755
+e9febaf1,val,Hồng Bàng,61cb8d8d,pilot,Pasteur,0.69847935,31,4725.053,207ca44c,main_train,16,0.52271307,2874.7844,16,109.785355
+ea01c1ee,test,Hai Bà Trưng,d459259b,main_train,Nguyễn Thị Minh Khai,0.7258438,37,1252.8282,345a6cdf,main_train,16,0.4559811,425.55353,18,53.803333
+ea63b767,val,Hồng Bàng,708ea241,te_top_score,Sư Vạn Hạnh,0.7832761,21,2660.345,b991b318,main_train,16,0.6372786,4900.7974,14,54.46831
+eb29e4a0,val,Võ Văn Tần,8e65fa74,te_top_score,Nguyễn Thượng Hiền#1,0.8270643,24,293.13785,095a7d0d,te_random,16,0.5157963,2966.7288,14,46.542763
+eba7cf47,val,Hồng Bàng,e610ef5e,te_top_score,Lê Hồng Phong#0,0.8586899,32,2265.6143,623f6e5f,main_train,15,0.760304,3552.0222,10,64.17209
+eba80e31,val,Võ Văn Tần,3e396100,te_top_score,Phan Văn Trị#0,0.82877606,31,3798.348,89e63a23,main_train,18,0.61150235,5210.7227,14,149.50294
+ebaf7508,test,Trần Phú,79a5b13f,main_train,Nguyễn Trãi,0.8628516,42,904.3749,b04c2f9a,pilot,14,0.7683175,4174.6577,14,29.884691
+ebb2297d,test,Hai Bà Trưng,b0d7e31d,te_top_score,Nguyễn Gia Trí,0.66421366,32,3116.483,37fdb246,te_top_score,16,0.5787726,3146.4766,16,99.14989
+ebd0fa15,test,Lý Thường Kiệt,89683d4e,main_train,Lê Văn Sỹ,0.77526647,30,1814.5686,6355420a,te_random,18,0.64763594,4001.5593,14,94.63988
+ec0f0fe3,test,Lý Thường Kiệt,ef3956ca,main_train,Nguyễn Thị Minh Khai,0.6405077,30,3001.6792,f8b9e282,main_train,19,0.4597961,3443.0645,16,628.8401
+ec83a693,test,Trần Phú,b1969624,main_train,Pasteur,0.8449299,30,3409.3381,91100514,main_train,13,0.37768066,2217.1252,18,96.81803
+ec9675f6,test,Nơ Trang Long,b4d29a81,main_train,Phan Đăng Lưu,0.7904659,25,1229.6012,f505cef1,te_top_score,13,0.6440134,778.47394,16,77.60721
+ed1085ab,val,Võ Văn Tần,49296fec,main_train,Trần Hưng Đạo,0.7138804,26,1148.0309,55536511,main_train,15,0.45616564,1582.4534,18,151.47401
+ed1b7f53,test,Trần Phú,b791f2d0,main_train,Trần Hưng Đạo,0.8777386,30,1929.0874,af618010,main_train,15,0.35618523,2077.64,12,48.46437
+ed5ba036,test,Trần Phú,ea12c8d1,te_top_score,Xô Viết Nghệ Tĩnh#1,0.7411341,34,6130.2964,4b15b9bf,main_train,15,0.44876462,3032.041,16,75.901245
+ed76e8f4,val,Nguyễn Đình Chiểu#0,13deb01f,te_top_score,Thành Thái,0.84519297,31,2168.8274,c2cba1da,main_train,14,0.7130229,1915.527,16,315.4308
+ee16eeec,val,Hồng Bàng,4ef1e1f0,main_train,Nguyễn Thị Minh Khai,0.72927135,29,5699.266,f1c58a00,pilot,17,0.5237259,7409.5996,16,63.274258
+ee9fe288,test,Lý Thường Kiệt,f53cb2c4,main_train,Phan Đăng Lưu,0.6751914,27,5783.7114,70fd25bf,main_train,16,0.36609763,2690.2336,16,461.45786
+ef02b302,test,Lý Thường Kiệt,bcfd6b0f,main_train,Lê Văn Sỹ,0.7980664,36,1984.4382,edf954ce,te_top_score,18,0.4313251,5278.0234,18,337.24954
+ef2756f5,test,Hai Bà Trưng,fc808e88,main_train,Điện Biên Phủ#1,0.7311512,28,2646.5635,c8178ec3,main_train,13,0.2564073,3129.4155,16,115.024216
+ef2e1470,val,Hồng Bàng,09a6e539,main_train,Pasteur,0.70071834,39,4519.8584,3ac765cb,te_top_score,16,0.40678212,968.7035,18,140.07248
+efa6feed,test,Lý Thường Kiệt,4897f466,main_train,Phan Đăng Lưu,0.6778251,29,5152.5273,8ef4b883,te_random,15,0.3407147,2169.6528,14,438.15594
+eff0a0da,val,Nguyễn Đình Chiểu#0,c5d20525,te_random,Lê Hồng Phong#0,0.8511065,35,3095.1284,15fadc3f,main_train,18,0.6385519,2207.5989,18,125.662415
+eff2bcdf,val,Nguyễn Đình Chiểu#0,57119832,main_train,Trần Hưng Đạo,0.76054025,30,1726.8862,1047c60b,main_train,15,0.43164855,376.4836,16,152.18164
+f01078e8,test,Hai Bà Trưng,db16a32f,main_train,Trần Hưng Đạo,0.4800686,29,2674.7354,4eab7449,te_random,15,0.18599503,2794.76,16,418.57724
+f01e0e08,test,Trần Phú,83d9d891,main_train,Nguyễn Thị Minh Khai,0.8509701,26,1483.6841,8b55890c,main_train,16,0.62417704,2424.5444,16,169.09999
+f067e8e8,test,Trần Phú,f2bf44d4,main_train,Trần Hưng Đạo,0.79352826,32,1347.4374,0a861bca,main_train,17,0.7322297,3624.5305,14,100.64163
+f0a3fe4a,val,Võ Văn Tần,8e8f70e4,main_train,Pasteur,0.67286,28,1035.2451,c9d1bb1b,te_random,14,0.48038113,2032.4167,20,150.34349
+f0c141f4,test,Hai Bà Trưng,13b91cfc,te_top_score,Bà Hạt,0.780567,35,3854.5193,683de398,main_train,17,0.5237963,2314.4434,18,40.85471
+f0ec1c4b,test,Nơ Trang Long,1fcdfe5b,te_top_score,Lê Quang Định#0,0.89439523,30,276.50476,4384cc1b,main_train,15,0.75774443,4827.952,16,51.787655
+f12b051f,test,Lý Thường Kiệt,b62883cb,te_random,Đào Duy Từ#0,0.7971075,29,561.28925,4094a693,te_top_score,17,0.5059049,880.3157,16,80.29723
+f1389134,val,Hồng Bàng,bfe3921c,te_random,Xô Viết Nghệ Tĩnh#1,0.8049151,42,8630.209,81a0628a,te_top_score,18,0.4973886,3958.3894,16,6.8936625
+f1a25b91,test,Trần Phú,f284b062,te_random,Sư Vạn Hạnh,0.85827005,25,1238.4889,8571c493,main_train,12,0.73351187,854.0382,16,54.887756
+f1b5975c,test,Nơ Trang Long,1863131b,main_train,Nguyễn Trãi,0.836528,25,5454.989,87261ce1,te_top_score,15,0.3001984,1715.9966,16,89.99189
+f1b61829,test,Lý Thường Kiệt,44e02832,main_train,Nguyễn Thị Minh Khai,0.82445776,35,2635.8196,f1b6eb57,main_train,16,0.7233863,402.02164,16,99.63189
+f284da11,test,Lý Thường Kiệt,0bb623ab,te_random,Vĩnh Viễn#0,0.750245,35,1474.1171,acc30cb0,te_random,17,0.6917802,1408.3685,16,85.28182
+f2b36a4c,test,Lý Thường Kiệt,50d75b73,main_train,Trần Hưng Đạo,0.80919605,34,3165.2327,cdf43c7d,te_top_score,16,0.47899887,1584.1671,14,280.4836
+f2b60afa,val,Hồng Bàng,fe118180,main_train,Điện Biên Phủ#1,0.73777133,30,2643.1118,f1c58a00,pilot,6,0.5270979,6850.162,14,83.07156
+f2d974f2,test,Lý Thường Kiệt,cffe8cc2,te_top_score,Đinh Bộ Lĩnh,0.8566204,35,7223.2666,2522d17b,main_train,19,0.8100358,3154.5454,18,219.64143
+f2e0af2d,test,Lý Thường Kiệt,0a861bca,main_train,Lê Văn Sỹ,0.84710824,34,2318.6787,3e72ca3a,te_top_score,16,0.54901147,5966.672,14,305.9269
+f379d23d,test,Hai Bà Trưng,745ef02b,te_top_score,Xô Viết Nghệ Tĩnh#1,0.840596,28,3602.8599,2b3dab60,te_top_score,16,0.7170111,2884.1018,14,60.614742
+f3b69dd3,test,Lý Thường Kiệt,123633c4,main_train,Nguyễn Trãi,0.781134,31,1101.0037,933f6282,main_train,17,0.71747017,1849.6246,14,102.948395
+f3cc5eb9,test,Trần Phú,86b0debd,main_train,Trần Hưng Đạo,0.88014257,33,1239.5162,eb7f7d3b,te_random,13,0.42328596,2468.0432,14,118.46951
+f3d0f100,test,Trần Phú,c91401c4,main_train,Nguyễn Trãi,0.79248685,35,3000.6157,c47c55bc,te_top_score,15,0.278873,2494.165,14,187.54317
+f42f2720,val,Nguyễn Đình Chiểu#0,b73bf798,te_random,Đinh Bộ Lĩnh,0.82251245,29,5658.7915,eedf4d01,main_train,17,0.77761227,490.20706,14,119.96679
+f47ff7d6,test,Lý Thường Kiệt,89683d4e,main_train,Lê Văn Sỹ,0.8135393,28,2190.2393,0e994c3e,te_top_score,16,0.65683275,1324.4526,14,171.23204
+f48fc6a1,val,Võ Văn Tần,b536773f,main_train,Phan Đăng Lưu,0.60927224,28,3801.2065,a3baf632,te_random,16,0.33586717,4416.6196,20,145.18695
+f4e5f509,val,Nguyễn Đình Chiểu#0,d60d5d5f,main_train,Nguyễn Trãi,0.8185155,34,3640.1287,654fce49,main_train,17,0.7037143,4347.6455,16,305.37274
+f504e4ea,test,Hai Bà Trưng,3a9589bb,main_train,Phan Đăng Lưu,0.5324297,32,2209.459,e4fda1ac,te_top_score,18,0.20491184,3988.6824,16,25.993204
+f520b0f0,test,Hai Bà Trưng,10e2ab0c,main_train,Trần Hưng Đạo,0.8225593,33,3561.0513,1c2e2ab9,main_train,19,0.60535586,277.7764,16,261.0899
+f52ed039,val,Hồng Bàng,98f270db,main_train,Pasteur,0.7807793,43,5016.925,dbc37bbd,te_top_score,14,0.5694549,6676.962,14,94.78559
+f60e344c,test,Hai Bà Trưng,7f99d2ac,te_top_score,Bùi Thị Xuân#1,0.8442489,31,2560.0615,956412a6,pilot,16,0.6955312,605.9914,16,142.22125
+f62ab184,val,Võ Văn Tần,36cf3992,main_train,Điện Biên Phủ#1,0.5819309,27,571.0659,48032fe4,main_train,16,0.48603892,1482.7067,18,149.75912
+f63a6402,test,Nơ Trang Long,ca2d406b,pilot,Phan Đăng Lưu,0.84007055,30,1384.7533,884942c7,te_top_score,18,0.59750664,4983.2144,10,70.8979
+f645028e,val,Nguyễn Đình Chiểu#0,36b34561,main_train,Phan Đăng Lưu,0.73699427,31,3241.12,f3e59214,te_random,16,0.6467433,5029.953,16,181.25665
+f64fd91a,test,Lý Thường Kiệt,36b34561,main_train,Phan Đăng Lưu,0.7525867,28,4738.6694,54d6c40c,main_train,18,0.6732057,4071.0168,20,145.09355
+f6f8d0bc,val,Võ Văn Tần,42c095e7,te_random,Lý Thái Tổ#0,0.800398,35,937.8241,88b767aa,main_train,15,0.6323657,3670.7905,16,127.2187
+f74c09e3,test,Lý Thường Kiệt,73796e61,te_top_score,Phan Xích Long,0.87039894,35,4451.3887,1485915b,te_top_score,16,0.5219509,4801.382,16,120.48515
+f7a6aa18,val,Nguyễn Đình Chiểu#0,628adef6,te_top_score,Lê Hồng Phong#0,0.8775123,35,2910.145,2a0b85f8,te_top_score,17,0.81584287,1916.6243,16,130.88274
+f7bb86d3,val,Nguyễn Đình Chiểu#0,46e6e26e,main_train,Nguyễn Thị Minh Khai,0.8070772,23,525.3131,85e2d3a6,main_train,15,0.6006245,1811.5417,16,221.83203
+f7dbf21d,test,Nơ Trang Long,a5e28a68,te_random,Vĩnh Viễn#0,0.6977811,28,6380.594,82651566,main_train,16,0.35242912,4237.7104,16,94.237274
+f7eb5efd,val,Nguyễn Đình Chiểu#0,a3baf632,te_random,Hoàng Hoa Thám,0.7285137,31,3019.5151,236c4a49,main_train,18,0.6649464,3063.572,14,299.61975
+f824f093,test,Trần Phú,d60d5d5f,main_train,Nguyễn Trãi,0.8481342,36,1794.6909,0d045cab,te_random,14,0.3477458,3704.5706,14,134.64551
+f8760c1a,val,Võ Văn Tần,33e25433,main_train,Nguyễn Thị Minh Khai,0.842331,31,702.82275,09eb524f,main_train,15,0.358283,2721.3691,18,134.20767
+f8949934,test,Lý Thường Kiệt,e30cbf6a,main_train,Nguyễn Thị Minh Khai,0.7289834,31,3617.848,f2bf44d4,main_train,16,0.35190764,3041.3235,16,227.10266
+f89b9672,test,Lý Thường Kiệt,be65fc55,te_random,Nguyễn Chí Thanh#0,0.6724266,32,347.55618,d44cb5c6,main_train,16,0.36226815,6341.2656,14,99.4304
+f93dfb3e,test,Lý Thường Kiệt,bd011617,te_top_score,Nguyễn Thái Bình#0,0.7642121,30,2226.8044,d6b3dd96,te_random,17,0.48702678,4035.822,16,228.52562
+f9b62009,val,Võ Văn Tần,ac0cb380,main_train,Nguyễn Trãi,0.8287893,32,900.0528,89187e8a,te_top_score,16,0.50710803,4741.567,16,142.73827
+f9ba6654,test,Trần Phú,26c2b432,main_train,Trần Hưng Đạo,0.7669167,30,961.1682,730d3a11,main_train,17,0.36837167,2983.9255,16,55.074142
+f9edde30,test,Nơ Trang Long,0c84da36,te_random,Trường Sa#0,0.52736074,33,1221.9692,8f09b771,main_train,16,0.31827298,2336.8416,12,201.3811
+fa306d09,test,Trần Phú,dcda5a17,main_train,Điện Biên Phủ#1,0.90182716,26,778.0531,bdf59f68,main_train,16,0.72033197,903.2618,16,137.10825
+fa45f21a,test,Lý Thường Kiệt,0e3347df,main_train,Nguyễn Kiệm#0,0.6484682,32,4359.072,7e191247,main_train,17,0.54834914,4110.154,18,238.07262
+fac615be,test,Lý Thường Kiệt,301620fb,te_random,Trường Sa#0,0.85701233,35,2099.619,1989b9b5,main_train,17,0.33464226,4383.5654,12,566.6938
+fb17cd15,val,Võ Văn Tần,53a4d4f9,main_train,Cách Mạng Tháng Tám#0,0.82819897,41,1356.1184,03e14ee8,main_train,18,0.74270684,1796.0804,14,142.66705
+fbbf6974,val,Nguyễn Đình Chiểu#0,0ef6aaed,main_train,Trần Hưng Đạo,0.8205814,31,5550.989,e7e83c46,main_train,15,0.4368028,2340.703,12,294.079
+fc17cd77,val,Võ Văn Tần,f4be3828,main_train,Nguyễn Kiệm#0,0.68471026,26,3360.021,0e3347df,main_train,15,0.36845058,4381.577,18,144.7793
+fc4aef6d,test,Hai Bà Trưng,1863131b,main_train,Nguyễn Trãi,0.854952,28,3689.107,36b60244,main_train,17,0.72704333,5347.366,20,228.19151
+fc520a84,val,Nguyễn Đình Chiểu#0,0a98d3d9,pilot,Pasteur,0.82262117,20,684.87646,5af1f2d3,main_train,15,0.7262123,2519.6113,16,299.70746
+fc806199,val,Nguyễn Đình Chiểu#0,f8af7bca,main_train,Nguyễn Thị Minh Khai,0.7920987,31,322.04834,014665ba,main_train,17,0.6575684,3847.6445,16,125.401405
+fd7735d6,test,Hai Bà Trưng,ea9e36c3,main_train,Nguyễn Thị Minh Khai,0.70615727,33,697.0863,0ee2dd95,pilot,17,0.3040236,2136.2285,18,144.47891
+fdbab6c2,test,Lý Thường Kiệt,172fc632,main_train,Nguyễn Kiệm#0,0.78490114,36,4431.675,8064fa61,main_train,16,0.5057423,3546.7048,16,393.89062
+fdc2e511,val,Hồng Bàng,1e1e6c52,main_train,Nguyễn Trãi,0.7363356,34,2621.7126,0ad3b15a,te_top_score,10,0.38194558,650.24097,16,124.911575
+fe1212df,val,Nguyễn Đình Chiểu#0,1fcdfe5b,te_top_score,Lê Quang Định#0,0.8446215,28,4488.986,d67dec05,te_top_score,17,0.752708,3539.8064,14,319.79025
+fe82678c,test,Trần Phú,886c1e9c,main_train,Điện Biên Phủ#1,0.8198042,37,3476.1853,9f4802d3,te_top_score,18,0.57800275,6342.7964,16,157.92546
+fee68d40,test,Lý Thường Kiệt,23ce209d,main_train,Cách Mạng Tháng Tám#0,0.6797806,42,1763.1251,0c84da36,te_random,18,0.451848,4750.763,16,429.12662
+ff064117,val,Nguyễn Đình Chiểu#0,184016e5,main_train,Nguyễn Thị Minh Khai,0.8363915,40,665.5381,e46196eb,main_train,16,0.6104374,1187.9597,14,306.43607
+ff0a4ddc,val,Nguyễn Đình Chiểu#0,26c2b432,main_train,Trần Hưng Đạo,0.901344,31,2941.289,1fea0e05,te_top_score,15,0.6909852,2522.6602,18,58.60408
+ff14c193,val,Nguyễn Đình Chiểu#0,8f4c4a2a,pilot,Pasteur,0.7463013,20,1607.9404,a3208fc2,te_random,16,0.377663,3345.8677,14,143.32634
+ff4f0fd2,val,Hồng Bàng,9749eadf,pilot,Pasteur,0.77157056,35,5345.002,bb451dd6,main_train,16,0.65880114,4918.5767,18,93.764725
+ff8361f9,test,Lý Thường Kiệt,0f7170cb,te_top_score,Phạm Văn Hai#0,0.8457087,38,1545.8582,cd52fe91,te_top_score,14,0.40852347,6457.5225,16,352.69067

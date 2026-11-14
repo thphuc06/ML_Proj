@@ -1,0 +1,557 @@
+﻿variable,group,category,n,share
+creator,main_train,phoenix_mapping_front,766,0.41653072321914086
+creator,main_train,bemaps3_sg,667,0.36269711799891247
+creator,main_train,phoenixmap_front,380,0.20663404023926046
+creator,main_train,bemaps2_hn,13,0.0070690592713431215
+creator,main_train,bemaps1,9,0.004893964110929853
+creator,main_train,theonenetwork,4,0.002175095160413268
+creator,main_val,phoenix_mapping_front,322,0.6625514403292181
+creator,main_val,bemaps3_sg,159,0.3271604938271605
+creator,main_val,bemaps1,2,0.00411522633744856
+creator,main_val,phoenixmap_front,2,0.00411522633744856
+creator,main_val,bemaps2_hn,1,0.00205761316872428
+creator,main_test,bemaps3_sg,327,0.48516320474777447
+creator,main_test,phoenix_mapping_front,282,0.41839762611275966
+creator,main_test,phoenixmap_front,52,0.0771513353115727
+creator,main_test,theonenetwork,10,0.01483679525222552
+creator,main_test,bemaps1,3,0.004451038575667656
+creator,pilot,bemaps3_sg,82,0.5466666666666666
+creator,pilot,phoenix_mapping_front,42,0.28
+creator,pilot,phoenixmap_front,23,0.15333333333333332
+creator,pilot,theonenetwork,3,0.02
+creator,extra_top_score,bemaps3_sg,806,0.5757142857142857
+creator,extra_top_score,phoenix_mapping_front,569,0.4064285714285714
+creator,extra_top_score,phoenixmap_front,22,0.015714285714285715
+creator,extra_top_score,bemaps1,3,0.002142857142857143
+creator,extra_random,bemaps3_sg,323,0.5383333333333333
+creator,extra_random,phoenix_mapping_front,262,0.43666666666666665
+creator,extra_random,phoenixmap_front,12,0.02
+creator,extra_random,theonenetwork,3,0.005
+creator,main_all,phoenix_mapping_front,1370,0.45681893964654885
+creator,main_all,bemaps3_sg,1153,0.3844614871623875
+creator,main_all,phoenixmap_front,434,0.14471490496832276
+creator,main_all,theonenetwork,14,0.004668222740913638
+creator,main_all,bemaps1,14,0.004668222740913638
+creator,main_all,bemaps2_hn,14,0.004668222740913638
+creator,extra_all,bemaps3_sg,1129,0.5645
+creator,extra_all,phoenix_mapping_front,831,0.4155
+creator,extra_all,phoenixmap_front,34,0.017
+creator,extra_all,bemaps1,3,0.0015
+creator,extra_all,theonenetwork,3,0.0015
+year,main_train,2016,36,0.01957585644371941
+year,main_train,2023,1458,0.7928221859706363
+year,main_train,2024,345,0.18760195758564438
+year,main_val,2023,362,0.7448559670781894
+year,main_val,2024,124,0.2551440329218107
+year,main_test,2023,483,0.7166172106824926
+year,main_test,2024,191,0.28338278931750743
+year,pilot,2016,29,0.19333333333333333
+year,pilot,2023,109,0.7266666666666667
+year,pilot,2024,12,0.08
+year,extra_top_score,2016,25,0.017857142857142856
+year,extra_top_score,2023,1009,0.7207142857142858
+year,extra_top_score,2024,366,0.26142857142857145
+year,extra_random,2016,13,0.021666666666666667
+year,extra_random,2023,415,0.6916666666666667
+year,extra_random,2024,172,0.2866666666666667
+year,main_all,2016,36,0.012004001333777926
+year,main_all,2023,2303,0.7679226408802934
+year,main_all,2024,660,0.22007335778592865
+year,extra_all,2016,38,0.019
+year,extra_all,2023,1424,0.712
+year,extra_all,2024,538,0.269
+month,main_train,1,177,0.09624796084828711
+month,main_train,2,31,0.016856987493202826
+month,main_train,4,467,0.25394235997824904
+month,main_train,5,319,0.17346383904295812
+month,main_train,6,121,0.06579662860250136
+month,main_train,8,198,0.10766721044045677
+month,main_train,9,41,0.022294725394236
+month,main_train,10,187,0.10168569874932028
+month,main_train,11,203,0.11038607939097335
+month,main_train,12,95,0.051658510059815116
+month,main_val,1,68,0.13991769547325103
+month,main_val,2,8,0.01646090534979424
+month,main_val,4,31,0.06378600823045268
+month,main_val,5,211,0.43415637860082307
+month,main_val,6,10,0.0205761316872428
+month,main_val,8,36,0.07407407407407407
+month,main_val,10,70,0.1440329218106996
+month,main_val,11,6,0.012345679012345678
+month,main_val,12,46,0.09465020576131687
+month,main_test,1,54,0.08011869436201781
+month,main_test,2,75,0.11127596439169139
+month,main_test,4,54,0.08011869436201781
+month,main_test,5,147,0.21810089020771514
+month,main_test,6,103,0.15281899109792285
+month,main_test,8,10,0.01483679525222552
+month,main_test,9,13,0.019287833827893175
+month,main_test,10,64,0.09495548961424333
+month,main_test,11,94,0.1394658753709199
+month,main_test,12,60,0.08902077151335312
+month,pilot,1,34,0.22666666666666666
+month,pilot,2,2,0.013333333333333334
+month,pilot,4,1,0.006666666666666667
+month,pilot,5,30,0.2
+month,pilot,6,25,0.16666666666666666
+month,pilot,8,9,0.06
+month,pilot,9,3,0.02
+month,pilot,10,15,0.1
+month,pilot,11,31,0.20666666666666667
+month,extra_top_score,1,96,0.06857142857142857
+month,extra_top_score,2,139,0.09928571428571428
+month,extra_top_score,3,37,0.02642857142857143
+month,extra_top_score,4,52,0.037142857142857144
+month,extra_top_score,5,308,0.22
+month,extra_top_score,6,216,0.15428571428571428
+month,extra_top_score,8,38,0.027142857142857142
+month,extra_top_score,9,57,0.04071428571428572
+month,extra_top_score,10,62,0.04428571428571428
+month,extra_top_score,11,269,0.19214285714285714
+month,extra_top_score,12,126,0.09
+month,extra_random,1,50,0.08333333333333333
+month,extra_random,2,65,0.10833333333333334
+month,extra_random,3,16,0.02666666666666667
+month,extra_random,4,41,0.06833333333333333
+month,extra_random,5,153,0.255
+month,extra_random,6,70,0.11666666666666667
+month,extra_random,8,17,0.028333333333333332
+month,extra_random,9,30,0.05
+month,extra_random,10,34,0.056666666666666664
+month,extra_random,11,73,0.12166666666666667
+month,extra_random,12,51,0.085
+month,main_all,1,299,0.09969989996665556
+month,main_all,2,114,0.038012670890296765
+month,main_all,4,552,0.18406135378459487
+month,main_all,5,677,0.2257419139713238
+month,main_all,6,234,0.07802600866955652
+month,main_all,8,244,0.08136045348449483
+month,main_all,9,54,0.01800600200066689
+month,main_all,10,321,0.10703567855951984
+month,main_all,11,303,0.10103367789263087
+month,main_all,12,201,0.06702234078026009
+month,extra_all,1,146,0.073
+month,extra_all,2,204,0.102
+month,extra_all,3,53,0.0265
+month,extra_all,4,93,0.0465
+month,extra_all,5,461,0.2305
+month,extra_all,6,286,0.143
+month,extra_all,8,55,0.0275
+month,extra_all,9,87,0.0435
+month,extra_all,10,96,0.048
+month,extra_all,11,342,0.171
+month,extra_all,12,177,0.0885
+hour,main_train,0,66,0.03588907014681892
+hour,main_train,7,34,0.018488308863512777
+hour,main_train,8,2,0.001087547580206634
+hour,main_train,12,76,0.0413268080478521
+hour,main_train,13,25,0.013594344752582926
+hour,main_train,14,174,0.09461663947797716
+hour,main_train,15,461,0.25067971723762916
+hour,main_train,16,297,0.16150081566068517
+hour,main_train,17,75,0.040783034257748776
+hour,main_train,18,97,0.05274605764002175
+hour,main_train,19,80,0.043501903208265365
+hour,main_train,20,31,0.016856987493202826
+hour,main_train,21,137,0.07449700924415444
+hour,main_train,22,77,0.04187058183795541
+hour,main_train,23,207,0.11256117455138662
+hour,main_val,0,56,0.11522633744855967
+hour,main_val,1,20,0.0411522633744856
+hour,main_val,12,3,0.006172839506172839
+hour,main_val,13,21,0.043209876543209874
+hour,main_val,14,10,0.0205761316872428
+hour,main_val,15,53,0.10905349794238683
+hour,main_val,16,119,0.2448559670781893
+hour,main_val,17,30,0.06172839506172839
+hour,main_val,18,8,0.01646090534979424
+hour,main_val,19,115,0.2366255144032922
+hour,main_val,21,2,0.00411522633744856
+hour,main_val,22,8,0.01646090534979424
+hour,main_val,23,41,0.08436213991769548
+hour,main_test,0,5,0.00741839762611276
+hour,main_test,12,2,0.002967359050445104
+hour,main_test,13,79,0.1172106824925816
+hour,main_test,14,23,0.03412462908011869
+hour,main_test,15,124,0.18397626112759644
+hour,main_test,16,181,0.2685459940652819
+hour,main_test,17,130,0.19287833827893175
+hour,main_test,18,68,0.10089020771513353
+hour,main_test,19,14,0.020771513353115726
+hour,main_test,21,4,0.005934718100890208
+hour,main_test,22,5,0.00741839762611276
+hour,main_test,23,39,0.057863501483679525
+hour,pilot,7,29,0.19333333333333333
+hour,pilot,12,15,0.1
+hour,pilot,13,2,0.013333333333333334
+hour,pilot,14,21,0.14
+hour,pilot,15,44,0.29333333333333333
+hour,pilot,16,13,0.08666666666666667
+hour,pilot,17,4,0.02666666666666667
+hour,pilot,18,12,0.08
+hour,pilot,19,6,0.04
+hour,pilot,22,3,0.02
+hour,pilot,23,1,0.006666666666666667
+hour,extra_top_score,0,29,0.020714285714285713
+hour,extra_top_score,7,25,0.017857142857142856
+hour,extra_top_score,12,36,0.025714285714285714
+hour,extra_top_score,13,82,0.05857142857142857
+hour,extra_top_score,14,187,0.13357142857142856
+hour,extra_top_score,15,243,0.17357142857142857
+hour,extra_top_score,16,193,0.13785714285714284
+hour,extra_top_score,17,96,0.06857142857142857
+hour,extra_top_score,18,150,0.10714285714285714
+hour,extra_top_score,19,42,0.03
+hour,extra_top_score,20,74,0.05285714285714286
+hour,extra_top_score,21,49,0.035
+hour,extra_top_score,22,69,0.04928571428571429
+hour,extra_top_score,23,125,0.08928571428571429
+hour,extra_random,0,26,0.043333333333333335
+hour,extra_random,7,12,0.02
+hour,extra_random,8,1,0.0016666666666666668
+hour,extra_random,12,25,0.041666666666666664
+hour,extra_random,13,66,0.11
+hour,extra_random,14,75,0.125
+hour,extra_random,15,88,0.14666666666666667
+hour,extra_random,16,60,0.1
+hour,extra_random,17,49,0.08166666666666667
+hour,extra_random,18,35,0.058333333333333334
+hour,extra_random,19,23,0.03833333333333333
+hour,extra_random,20,26,0.043333333333333335
+hour,extra_random,21,8,0.013333333333333334
+hour,extra_random,22,43,0.07166666666666667
+hour,extra_random,23,63,0.105
+hour,main_all,0,127,0.042347449149716575
+hour,main_all,1,20,0.006668889629876626
+hour,main_all,7,34,0.011337112370790263
+hour,main_all,8,2,0.0006668889629876625
+hour,main_all,12,81,0.027009003001000332
+hour,main_all,13,125,0.04168056018672891
+hour,main_all,14,207,0.06902300766922308
+hour,main_all,15,638,0.21273757919306435
+hour,main_all,16,597,0.19906635545181728
+hour,main_all,17,235,0.07835945315105035
+hour,main_all,18,173,0.057685895298432814
+hour,main_all,19,209,0.06968989663221074
+hour,main_all,20,31,0.010336778926308769
+hour,main_all,21,143,0.04768256085361787
+hour,main_all,22,90,0.030010003334444816
+hour,main_all,23,287,0.09569856618872957
+hour,extra_all,0,55,0.0275
+hour,extra_all,7,37,0.0185
+hour,extra_all,8,1,0.0005
+hour,extra_all,12,61,0.0305
+hour,extra_all,13,148,0.074
+hour,extra_all,14,262,0.131
+hour,extra_all,15,331,0.1655
+hour,extra_all,16,253,0.1265
+hour,extra_all,17,145,0.0725
+hour,extra_all,18,185,0.0925
+hour,extra_all,19,65,0.0325
+hour,extra_all,20,100,0.05
+hour,extra_all,21,57,0.0285
+hour,extra_all,22,112,0.056
+hour,extra_all,23,188,0.094
+street_id,main_train,Trần Hưng Đạo,348,0.18923327895595432
+street_id,main_train,Nguyễn Trãi,290,0.15769439912996194
+street_id,main_train,Điện Biên Phủ#1,261,0.14192495921696574
+street_id,main_train,Nguyễn Thị Minh Khai,253,0.1375747688961392
+street_id,main_train,Cách Mạng Tháng Tám#0,223,0.1212615551930397
+street_id,main_train,Phan Đăng Lưu,105,0.057096247960848286
+street_id,main_train,Nguyễn Kiệm#0,98,0.05328983143012507
+street_id,main_train,Lê Văn Sỹ,89,0.048395867319195214
+street_id,main_train,Pasteur,86,0.04676454594888527
+street_id,main_train,Hải Thượng Lãn Ông,86,0.04676454594888527
+street_id,main_val,Nguyễn Đình Chiểu#0,232,0.4773662551440329
+street_id,main_val,Hồng Bàng,150,0.30864197530864196
+street_id,main_val,Võ Văn Tần,104,0.2139917695473251
+street_id,main_test,Lý Thường Kiệt,285,0.4228486646884273
+street_id,main_test,Hai Bà Trưng,178,0.26409495548961426
+street_id,main_test,Trần Phú,117,0.17359050445103857
+street_id,main_test,Nơ Trang Long,94,0.1394658753709199
+street_id,pilot,Lê Văn Sỹ,50,0.3333333333333333
+street_id,pilot,Phan Đăng Lưu,50,0.3333333333333333
+street_id,pilot,Pasteur,50,0.3333333333333333
+street_id,extra_top_score,Hoàng Sa,101,0.07214285714285715
+street_id,extra_top_score,Trường Sa#0,68,0.04857142857142857
+street_id,extra_top_score,Lê Quang Định#0,47,0.03357142857142857
+street_id,extra_top_score,Nguyễn Thượng Hiền#0,41,0.029285714285714286
+street_id,extra_top_score,Bùi Đình Tuý#0,38,0.027142857142857142
+street_id,extra_top_score,Hoàng Hoa Thám,38,0.027142857142857142
+street_id,extra_top_score,Đoàn Văn Bơ,32,0.022857142857142857
+street_id,extra_top_score,Nhật Tảo,32,0.022857142857142857
+street_id,extra_top_score,Sư Vạn Hạnh,30,0.02142857142857143
+street_id,extra_top_score,Bà Hạt,29,0.020714285714285713
+street_id,extra_top_score,Bạch Đằng#0,29,0.020714285714285713
+street_id,extra_top_score,Thành Thái,27,0.019285714285714285
+street_id,extra_top_score,Phan Xích Long,27,0.019285714285714285
+street_id,extra_top_score,Lạc Long Quân,26,0.018571428571428572
+street_id,extra_top_score,Nguyễn Thái Bình#0,26,0.018571428571428572
+street_id,extra_top_score,Nguyễn Chí Thanh#0,26,0.018571428571428572
+street_id,extra_top_score,Nguyễn Thượng Hiền#1,25,0.017857142857142856
+street_id,extra_top_score,Xô Viết Nghệ Tĩnh#1,24,0.017142857142857144
+street_id,extra_top_score,Ung Văn Khiêm,23,0.016428571428571428
+street_id,extra_top_score,Huỳnh Văn Bánh,22,0.015714285714285715
+street_id,extra_top_score,Ngô Quyền,22,0.015714285714285715
+street_id,extra_top_score,Tôn Thất Thuyết,22,0.015714285714285715
+street_id,extra_top_score,Vạn Kiếp#0,21,0.015
+street_id,extra_top_score,Ba Đình#1,21,0.015
+street_id,extra_top_score,Tôn Đản,20,0.014285714285714285
+street_id,extra_top_score,Đinh Bộ Lĩnh,20,0.014285714285714285
+street_id,extra_top_score,Phan Văn Trị#0,20,0.014285714285714285
+street_id,extra_top_score,Phan Văn Hân,20,0.014285714285714285
+street_id,extra_top_score,Lê Hồng Phong#0,19,0.013571428571428571
+street_id,extra_top_score,Bắc Hải,19,0.013571428571428571
+street_id,extra_top_score,Tùng Thiện Vương,17,0.012142857142857143
+street_id,extra_top_score,Xô Viết Nghệ Tĩnh#0,17,0.012142857142857143
+street_id,extra_top_score,Chu Văn An#0,17,0.012142857142857143
+street_id,extra_top_score,Nguyễn Duy Dương,17,0.012142857142857143
+street_id,extra_top_score,Vĩnh Viễn#0,16,0.011428571428571429
+street_id,extra_top_score,Trần Quý,16,0.011428571428571429
+street_id,extra_top_score,Phan Đình Phùng,16,0.011428571428571429
+street_id,extra_top_score,Nguyễn Văn Đậu,16,0.011428571428571429
+street_id,extra_top_score,Nguyễn Trọng Tuyển,16,0.011428571428571429
+street_id,extra_top_score,Bùi Thị Xuân#0,15,0.010714285714285714
+street_id,extra_top_score,Thích Quảng Đức,14,0.01
+street_id,extra_top_score,Phạm Hữu Chí#0,14,0.01
+street_id,extra_top_score,Nguyễn Duy#0,14,0.01
+street_id,extra_top_score,Xóm Chiếu,14,0.01
+street_id,extra_top_score,Ba Đình#0,13,0.009285714285714286
+street_id,extra_top_score,Cống Quỳnh#0,13,0.009285714285714286
+street_id,extra_top_score,Lê Hồng Phong#1,13,0.009285714285714286
+street_id,extra_top_score,Nguyễn Kim,13,0.009285714285714286
+street_id,extra_top_score,Dương Bá Trạc,13,0.009285714285714286
+street_id,extra_top_score,Vĩnh Khánh,12,0.008571428571428572
+street_id,extra_top_score,Dương Tử Giang,12,0.008571428571428572
+street_id,extra_top_score,Phạm Văn Hai#0,12,0.008571428571428572
+street_id,extra_top_score,Đỗ Ngọc Thạnh,11,0.007857142857142858
+street_id,extra_top_score,Bình Đông,11,0.007857142857142858
+street_id,extra_top_score,Phạm Thế Hiển#1,10,0.007142857142857143
+street_id,extra_top_score,Trần Bình Trọng#0,10,0.007142857142857143
+street_id,extra_top_score,Hòa Hảo#0,10,0.007142857142857143
+street_id,extra_top_score,Bùi Thị Xuân#1,9,0.0064285714285714285
+street_id,extra_top_score,Lý Thái Tổ#0,9,0.0064285714285714285
+street_id,extra_top_score,Trường Sơn#1,9,0.0064285714285714285
+street_id,extra_top_score,Nguyễn Biểu,8,0.005714285714285714
+street_id,extra_top_score,Phạm Ngũ Lão,8,0.005714285714285714
+street_id,extra_top_score,Lê Văn Duyệt,8,0.005714285714285714
+street_id,extra_top_score,Trần Nhân Tôn,7,0.005
+street_id,extra_top_score,Nguyễn Công Trứ#0,7,0.005
+street_id,extra_top_score,Châu Văn Liêm,6,0.004285714285714286
+street_id,extra_top_score,Nguyễn Gia Trí,6,0.004285714285714286
+street_id,extra_top_score,Đào Duy Từ#0,6,0.004285714285714286
+street_id,extra_top_score,Triệu Quang Phục,5,0.0035714285714285713
+street_id,extra_top_score,Trần Huy Liệu,5,0.0035714285714285713
+street_id,extra_top_score,Trần Quang Khải,5,0.0035714285714285713
+street_id,extra_top_score,Bành Văn Trân,5,0.0035714285714285713
+street_id,extra_top_score,Nguyễn Thông,5,0.0035714285714285713
+street_id,extra_top_score,Nhánh Cầu Tân Thuận 2,3,0.002142857142857143
+street_id,extra_top_score,Ngô Gia Tự#1,2,0.0014285714285714286
+street_id,extra_random,Hoàng Sa,56,0.09333333333333334
+street_id,extra_random,Trường Sa#0,49,0.08166666666666667
+street_id,extra_random,Nguyễn Chí Thanh#0,21,0.035
+street_id,extra_random,Huỳnh Văn Bánh,19,0.03166666666666667
+street_id,extra_random,Nguyễn Trọng Tuyển,17,0.028333333333333332
+street_id,extra_random,Vĩnh Viễn#0,17,0.028333333333333332
+street_id,extra_random,Bắc Hải,17,0.028333333333333332
+street_id,extra_random,Bình Đông,16,0.02666666666666667
+street_id,extra_random,Tôn Thất Thuyết,15,0.025
+street_id,extra_random,Ngô Quyền,14,0.023333333333333334
+street_id,extra_random,Phan Xích Long,14,0.023333333333333334
+street_id,extra_random,Lê Hồng Phong#0,12,0.02
+street_id,extra_random,Sư Vạn Hạnh,12,0.02
+street_id,extra_random,Bạch Đằng#0,12,0.02
+street_id,extra_random,Thành Thái,12,0.02
+street_id,extra_random,Đinh Bộ Lĩnh,11,0.018333333333333333
+street_id,extra_random,Nguyễn Thái Bình#0,10,0.016666666666666666
+street_id,extra_random,Ba Đình#0,10,0.016666666666666666
+street_id,extra_random,Lê Văn Duyệt,9,0.015
+street_id,extra_random,Phan Đình Phùng,9,0.015
+street_id,extra_random,Xô Viết Nghệ Tĩnh#1,9,0.015
+street_id,extra_random,Triệu Quang Phục,9,0.015
+street_id,extra_random,Ngô Gia Tự#1,9,0.015
+street_id,extra_random,Hoàng Hoa Thám,8,0.013333333333333334
+street_id,extra_random,Phạm Thế Hiển#1,8,0.013333333333333334
+street_id,extra_random,Lê Hồng Phong#1,8,0.013333333333333334
+street_id,extra_random,Trần Quang Khải,7,0.011666666666666667
+street_id,extra_random,Đào Duy Từ#0,7,0.011666666666666667
+street_id,extra_random,Phạm Văn Hai#0,7,0.011666666666666667
+street_id,extra_random,Nguyễn Biểu,7,0.011666666666666667
+street_id,extra_random,Nguyễn Duy Dương,7,0.011666666666666667
+street_id,extra_random,Bà Hạt,7,0.011666666666666667
+street_id,extra_random,Trần Huy Liệu,7,0.011666666666666667
+street_id,extra_random,Lý Thái Tổ#0,6,0.01
+street_id,extra_random,Nguyễn Thượng Hiền#0,6,0.01
+street_id,extra_random,Vĩnh Khánh,6,0.01
+street_id,extra_random,Bùi Thị Xuân#1,6,0.01
+street_id,extra_random,Nguyễn Thượng Hiền#1,5,0.008333333333333333
+street_id,extra_random,Vạn Kiếp#0,5,0.008333333333333333
+street_id,extra_random,Bùi Thị Xuân#0,5,0.008333333333333333
+street_id,extra_random,Dương Bá Trạc,5,0.008333333333333333
+street_id,extra_random,Nguyễn Thông,5,0.008333333333333333
+street_id,extra_random,Ung Văn Khiêm,5,0.008333333333333333
+street_id,extra_random,Lê Quang Định#0,5,0.008333333333333333
+street_id,extra_random,Ba Đình#1,5,0.008333333333333333
+street_id,extra_random,Nhật Tảo,5,0.008333333333333333
+street_id,extra_random,Nguyễn Công Trứ#0,5,0.008333333333333333
+street_id,extra_random,Trường Sơn#1,5,0.008333333333333333
+street_id,extra_random,Nguyễn Kim,5,0.008333333333333333
+street_id,extra_random,Nguyễn Văn Đậu,5,0.008333333333333333
+street_id,extra_random,Bùi Đình Tuý#0,5,0.008333333333333333
+street_id,extra_random,Nguyễn Duy#0,4,0.006666666666666667
+street_id,extra_random,Hòa Hảo#0,4,0.006666666666666667
+street_id,extra_random,Xô Viết Nghệ Tĩnh#0,4,0.006666666666666667
+street_id,extra_random,Bành Văn Trân,4,0.006666666666666667
+street_id,extra_random,Trần Bình Trọng#0,4,0.006666666666666667
+street_id,extra_random,Nhánh Cầu Tân Thuận 2,3,0.005
+street_id,extra_random,Dương Tử Giang,3,0.005
+street_id,extra_random,Xóm Chiếu,3,0.005
+street_id,extra_random,Cống Quỳnh#0,3,0.005
+street_id,extra_random,Tùng Thiện Vương,3,0.005
+street_id,extra_random,Đoàn Văn Bơ,3,0.005
+street_id,extra_random,Đỗ Ngọc Thạnh,2,0.0033333333333333335
+street_id,extra_random,Châu Văn Liêm,2,0.0033333333333333335
+street_id,extra_random,Lạc Long Quân,2,0.0033333333333333335
+street_id,extra_random,Phan Văn Trị#0,2,0.0033333333333333335
+street_id,extra_random,Chu Văn An#0,2,0.0033333333333333335
+street_id,extra_random,Trần Quý,2,0.0033333333333333335
+street_id,extra_random,Phạm Ngũ Lão,1,0.0016666666666666668
+street_id,extra_random,Tôn Đản,1,0.0016666666666666668
+street_id,extra_random,Phạm Hữu Chí#0,1,0.0016666666666666668
+street_id,extra_random,Nguyễn Gia Trí,1,0.0016666666666666668
+street_id,main_all,Trần Hưng Đạo,348,0.11603867955985328
+street_id,main_all,Nguyễn Trãi,290,0.09669889963321107
+street_id,main_all,Lý Thường Kiệt,285,0.09503167722574192
+street_id,main_all,Điện Biên Phủ#1,261,0.08702900966988997
+street_id,main_all,Nguyễn Thị Minh Khai,253,0.08436145381793932
+street_id,main_all,Nguyễn Đình Chiểu#0,232,0.07735911970656886
+street_id,main_all,Cách Mạng Tháng Tám#0,223,0.07435811937312438
+street_id,main_all,Hai Bà Trưng,178,0.059353117705901966
+street_id,main_all,Hồng Bàng,150,0.050016672224074694
+street_id,main_all,Trần Phú,117,0.03901300433477826
+street_id,main_all,Phan Đăng Lưu,105,0.03501167055685228
+street_id,main_all,Võ Văn Tần,104,0.034678226075358455
+street_id,main_all,Nguyễn Kiệm#0,98,0.03267755918639546
+street_id,main_all,Nơ Trang Long,94,0.03134378126042014
+street_id,main_all,Lê Văn Sỹ,89,0.029676558852950983
+street_id,main_all,Pasteur,86,0.02867622540846949
+street_id,main_all,Hải Thượng Lãn Ông,86,0.02867622540846949
+street_id,extra_all,Hoàng Sa,157,0.0785
+street_id,extra_all,Trường Sa#0,117,0.0585
+street_id,extra_all,Lê Quang Định#0,52,0.026
+street_id,extra_all,Nguyễn Thượng Hiền#0,47,0.0235
+street_id,extra_all,Nguyễn Chí Thanh#0,47,0.0235
+street_id,extra_all,Hoàng Hoa Thám,46,0.023
+street_id,extra_all,Bùi Đình Tuý#0,43,0.0215
+street_id,extra_all,Sư Vạn Hạnh,42,0.021
+street_id,extra_all,Huỳnh Văn Bánh,41,0.0205
+street_id,extra_all,Phan Xích Long,41,0.0205
+street_id,extra_all,Bạch Đằng#0,41,0.0205
+street_id,extra_all,Thành Thái,39,0.0195
+street_id,extra_all,Tôn Thất Thuyết,37,0.0185
+street_id,extra_all,Nhật Tảo,37,0.0185
+street_id,extra_all,Ngô Quyền,36,0.018
+street_id,extra_all,Bà Hạt,36,0.018
+street_id,extra_all,Bắc Hải,36,0.018
+street_id,extra_all,Nguyễn Thái Bình#0,36,0.018
+street_id,extra_all,Đoàn Văn Bơ,35,0.0175
+street_id,extra_all,Vĩnh Viễn#0,33,0.0165
+street_id,extra_all,Xô Viết Nghệ Tĩnh#1,33,0.0165
+street_id,extra_all,Nguyễn Trọng Tuyển,33,0.0165
+street_id,extra_all,Lê Hồng Phong#0,31,0.0155
+street_id,extra_all,Đinh Bộ Lĩnh,31,0.0155
+street_id,extra_all,Nguyễn Thượng Hiền#1,30,0.015
+street_id,extra_all,Ung Văn Khiêm,28,0.014
+street_id,extra_all,Lạc Long Quân,28,0.014
+street_id,extra_all,Bình Đông,27,0.0135
+street_id,extra_all,Vạn Kiếp#0,26,0.013
+street_id,extra_all,Ba Đình#1,26,0.013
+street_id,extra_all,Phan Đình Phùng,25,0.0125
+street_id,extra_all,Nguyễn Duy Dương,24,0.012
+street_id,extra_all,Ba Đình#0,23,0.0115
+street_id,extra_all,Phan Văn Trị#0,22,0.011
+street_id,extra_all,Tôn Đản,21,0.0105
+street_id,extra_all,Xô Viết Nghệ Tĩnh#0,21,0.0105
+street_id,extra_all,Lê Hồng Phong#1,21,0.0105
+street_id,extra_all,Nguyễn Văn Đậu,21,0.0105
+street_id,extra_all,Tùng Thiện Vương,20,0.01
+street_id,extra_all,Bùi Thị Xuân#0,20,0.01
+street_id,extra_all,Phan Văn Hân,20,0.01
+street_id,extra_all,Chu Văn An#0,19,0.0095
+street_id,extra_all,Phạm Văn Hai#0,19,0.0095
+street_id,extra_all,Trần Quý,18,0.009
+street_id,extra_all,Vĩnh Khánh,18,0.009
+street_id,extra_all,Nguyễn Duy#0,18,0.009
+street_id,extra_all,Phạm Thế Hiển#1,18,0.009
+street_id,extra_all,Dương Bá Trạc,18,0.009
+street_id,extra_all,Nguyễn Kim,18,0.009
+street_id,extra_all,Lê Văn Duyệt,17,0.0085
+street_id,extra_all,Xóm Chiếu,17,0.0085
+street_id,extra_all,Cống Quỳnh#0,16,0.008
+street_id,extra_all,Nguyễn Biểu,15,0.0075
+street_id,extra_all,Lý Thái Tổ#0,15,0.0075
+street_id,extra_all,Bùi Thị Xuân#1,15,0.0075
+street_id,extra_all,Phạm Hữu Chí#0,15,0.0075
+street_id,extra_all,Dương Tử Giang,15,0.0075
+street_id,extra_all,Thích Quảng Đức,14,0.007
+street_id,extra_all,Triệu Quang Phục,14,0.007
+street_id,extra_all,Hòa Hảo#0,14,0.007
+street_id,extra_all,Trần Bình Trọng#0,14,0.007
+street_id,extra_all,Trường Sơn#1,14,0.007
+street_id,extra_all,Đào Duy Từ#0,13,0.0065
+street_id,extra_all,Đỗ Ngọc Thạnh,13,0.0065
+street_id,extra_all,Trần Huy Liệu,12,0.006
+street_id,extra_all,Trần Quang Khải,12,0.006
+street_id,extra_all,Nguyễn Công Trứ#0,12,0.006
+street_id,extra_all,Ngô Gia Tự#1,11,0.0055
+street_id,extra_all,Nguyễn Thông,10,0.005
+street_id,extra_all,Phạm Ngũ Lão,9,0.0045
+street_id,extra_all,Bành Văn Trân,9,0.0045
+street_id,extra_all,Châu Văn Liêm,8,0.004
+street_id,extra_all,Trần Nhân Tôn,7,0.0035
+street_id,extra_all,Nguyễn Gia Trí,7,0.0035
+street_id,extra_all,Nhánh Cầu Tân Thuận 2,6,0.003
+highway,main_train,primary,1374,0.7471451876019576
+highway,main_train,secondary,465,0.2528548123980424
+highway,main_val,secondary,336,0.691358024691358
+highway,main_val,primary,150,0.30864197530864196
+highway,main_test,primary,580,0.8605341246290801
+highway,main_test,secondary,94,0.1394658753709199
+highway,pilot,secondary,100,0.6666666666666666
+highway,pilot,primary,50,0.3333333333333333
+highway,extra_top_score,tertiary,846,0.6042857142857143
+highway,extra_top_score,secondary,266,0.19
+highway,extra_top_score,residential,151,0.10785714285714286
+highway,extra_top_score,primary,137,0.09785714285714285
+highway,extra_random,tertiary,384,0.64
+highway,extra_random,secondary,108,0.18
+highway,extra_random,primary,70,0.11666666666666667
+highway,extra_random,residential,38,0.06333333333333334
+highway,main_all,primary,2104,0.701567189063021
+highway,main_all,secondary,895,0.298432810936979
+highway,extra_all,tertiary,1230,0.615
+highway,extra_all,secondary,374,0.187
+highway,extra_all,primary,207,0.1035
+highway,extra_all,residential,189,0.0945
+label_source,main_train,single,1563,0.8499184339314845
+label_source,main_train,agreed,215,0.11691136487221315
+label_source,main_train,adjudicated_proposal,56,0.030451332245785754
+label_source,main_train,adjudicated_phuc,5,0.0027188689505165853
+label_source,main_val,agreed,387,0.7962962962962963
+label_source,main_val,adjudicated_proposal,86,0.17695473251028807
+label_source,main_val,adjudicated_phuc,13,0.026748971193415638
+label_source,main_test,agreed,531,0.787833827893175
+label_source,main_test,adjudicated_proposal,133,0.19732937685459942
+label_source,main_test,adjudicated_phuc,10,0.01483679525222552
+label_source,pilot,pilot_review_proposal,147,0.98
+label_source,pilot,pilot_review_phuc,3,0.02
+label_source,extra_top_score,single,1386,0.99
+label_source,extra_top_score,cross_check,14,0.01
+label_source,extra_random,single,597,0.995
+label_source,extra_random,cross_check,3,0.005
+label_source,main_all,single,1563,0.5211737245748583
+label_source,main_all,agreed,1133,0.3777925975325108
+label_source,main_all,adjudicated_proposal,275,0.0916972324108036
+label_source,main_all,adjudicated_phuc,28,0.009336445481827277
+label_source,extra_all,single,1983,0.9915
+label_source,extra_all,cross_check,17,0.0085

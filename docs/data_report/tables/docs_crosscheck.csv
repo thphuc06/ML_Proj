@@ -1,0 +1,40 @@
+﻿item,doc,computed,status
+main phase 0/1/I,"(1558, 188, 1253)","(1558, 188, 1253)",khớp
+pilot 0/1/I,"(73, 14, 63)","(73, 14, 63)",khớp
+train_extra v2 0/1/I,"(819, 577, 604)","(819, 577, 604)",khớp
+top_score blocked / n,"(531, 1400)","(531, 1400)",khớp
+random blocked / n,"(46, 600)","(46, 600)",khớp
+main train 0/1/I,"(939, 106, 794)","(939, 106, 794)",khớp
+main val 0/1/I,"(207, 35, 244)","(207, 35, 244)",khớp
+main test 0/1/I,"(412, 47, 215)","(412, 47, 215)",khớp
+main+pilot: 0 / 1 / I / usable,"(1631, 202, 1316, 1833)","(1631, 202, 1316, 1833)",khớp
+train main+pilot 0/1/I,"(1012, 120, 857)","(1012, 120, 857)",khớp
+train all phases: usable / blocked,"(2528, 697)","(2528, 697)",khớp
+share of train blocked from train_extra (docs: 83%),0.83,0.83,khớp
+train_extra v1 0/1/I (labels_v1 via annotation table),"(810, 588, 602)","(810, 588, 602)",khớp
+train_extra v1: top_score blocked / random blocked,"(541, 47)","(541, 47)",khớp
+"blocked share top_score v2 (docs 0,379)",0.379,0.3793,khớp
+"blocked share random v2 (docs 0,077)",0.077,0.0767,khớp
+"blocked share all train_extra v2 (docs 0,288; exact 577/2000 = 0.2885)",0.288,0.2885,khớp
+main annotations / annotators x 887,"(4435, 5, 887)","(4435, 5, 887)",khớp
+train_extra: crops / streets,"(2000, 75)","(2000, 75)",khớp
+main: crops / streets,"(2999, 17)","(2999, 17)",khớp
+pilot / main + pilot labelled,"(150, 3149)","(150, 3149)",khớp
+train_extra v1->v2 changes,17,17,khớp
+"train_extra v1 obstacle tags (annotation count, docs: Xe máy 351, Hàng hóa 221, Khác 66, Bàn ghế 49, Rào chắn 38, Ô tô 11)","(351, 221, 66, 49, 38, 11)","(351, 221, 66, 49, 38, 11)",khớp
+"train_extra v1 I reasons (docs: 463, 106, 21, 9)","(463, 106, 21, 9)","(463, 106, 21, 9)",khớp
+"highway counts of train_extra crops, top_score (docs: tertiary 846, secondary 266, residential 151, primary 137)","(846, 266, 151, 137)","(846, 266, 151, 137)",khớp
+"highway counts of train_extra crops, random (docs: 384, 108, 38, 70)","(384, 108, 38, 70)","(384, 108, 38, 70)",khớp
+"top streets (docs: Hoàng Sa 157, Trường Sa#0 117; min 6 crops)","(157, 117, 6)","(157, 117, 6)",khớp
+train_extra top_score tier: max crops per street (docs: 101; cap 350),101,101,khớp
+score mean: top_score 0.80 / random 0.23 (docs),"(0.8, 0.23)","(np.float64(0.8), np.float64(0.23))",khớp
+"main annotator Hoc: share 0/1/I, median s (docs)","(0.69, 0.1, 0.21, 2.1)","(np.float64(0.69), np.float64(0.1), np.float64(0.21), np.float64(2.1))",khớp
+"main annotator Khai: share 0/1/I, median s (docs)","(0.52, 0.08, 0.39, 3.4)","(np.float64(0.52), np.float64(0.08), np.float64(0.39), np.float64(3.4))",khớp
+"main annotator Loan: share 0/1/I, median s (docs)","(0.54, 0.06, 0.4, 5.9)","(np.float64(0.54), np.float64(0.06), np.float64(0.4), np.float64(5.9))",khớp
+"main annotator Minh: share 0/1/I, median s (docs)","(0.45, 0.05, 0.5, 2.3)","(np.float64(0.45), np.float64(0.05), np.float64(0.5), np.float64(2.3))",khớp
+"main annotator Phuc: share 0/1/I, median s (docs)","(0.47, 0.06, 0.47, 7.5)","(np.float64(0.47), np.float64(0.06), np.float64(0.47), np.float64(7.5))",khớp
+"train_extra annotator Hoc: blocked/crop, blocked/crop random (k, n), median s (v1; docs)","(0.43, 0.15, 16, 108, 3.8)","(np.float64(0.43), np.float64(0.15), 16, 108, np.float64(3.8))",khớp
+"train_extra annotator Khai: blocked/crop, blocked/crop random (k, n), median s (v1; docs)","(0.31, 0.08, 10, 131, 3.9)","(np.float64(0.31), np.float64(0.08), 10, 131, np.float64(3.9))",khớp
+"train_extra annotator Phuc: blocked/crop, blocked/crop random (k, n), median s (v1; docs)","(0.28, 0.09, 11, 125, 3.1)","(np.float64(0.28), np.float64(0.09), 11, 125, np.float64(3.1))",khớp
+"train_extra annotator Minh: blocked/crop, blocked/crop random (k, n), median s (v1; docs)","(0.25, 0.08, 9, 116, 3.8)","(np.float64(0.25), np.float64(0.08), 9, 116, np.float64(3.8))",khớp
+"train_extra annotator Loan: blocked/crop, blocked/crop random (k, n), median s (v1; docs)","(0.19, 0.01, 1, 120, 6.8)","(np.float64(0.19), np.float64(0.01), 1, 120, np.float64(6.8))",khớp

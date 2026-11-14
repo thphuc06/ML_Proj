@@ -1,0 +1,133 @@
+% ==============================================================================
+% 2. PHƯƠNG PHÁP VÀ NGUỒN THU THẬP DỮ LIỆU
+% ==============================================================================
+\section{Phương pháp và nguồn thu thập dữ liệu}
+
+\subsection{Nguồn dữ liệu}
+
+\begin{table}[H]
+\centering
+\caption{Trả lời các câu hỏi về nguồn dữ liệu của khung báo cáo}
+\label{tab:sources}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.27\linewidth}L}
+\toprule
+\textbf{Câu hỏi} & \textbf{Trả lời} \\
+\midrule
+Dựa trên dataset có sẵn? & Không. Nhóm tự dựng bộ dữ liệu từ ảnh gốc. Bộ gần nhất là Vietnamese Sidewalk Violation VQA~\cite{dao2026viahevqa}, nhưng bộ đó không có tọa độ và thời gian chụp nên không chia được theo tuyến đường; nhóm không dùng ảnh hay nhãn của bộ đó. \\
+Từ API? & Có. Ảnh $360^\circ$ và metadata lấy qua Mapillary Graph API~\cite{mapillary2024intro}; mạng lưới đường và điểm ngữ cảnh (chợ, trường) lấy từ OpenStreetMap~\cite{osm2026} qua Overpass API. \\
+Web scraping? & Không. \\
+Khảo sát, biểu mẫu? & Không. Nhãn do 5 thành viên nhóm gán trên Label Studio~\cite{labelstudio2020} (mục~\ref{sec:labeling}). \\
+Giấy phép & Ảnh Mapillary theo CC BY-SA 4.0, ghi công \cc. Phần làm mờ mặt người và biển số của Mapillary được giữ nguyên. Ảnh không đưa lên git. \\
+Ảnh nhóm tự chụp & \textbf{Chưa có} (đề cương dự kiến ít nhất 100 ảnh). \\
+\bottomrule
+\end{tabularx}
+\src{\f{docs/feasibility_log.md}, \f{docs/collection_log.md}, \f{docs/unresolved_items.md} (mục 13).}
+\end{table}
+
+Khu vực nghiên cứu là trung tâm TP.HCM (Quận 1, 3, 5, 10, Phú Nhuận, Bình Thạnh cũ), khung tọa độ 10,745--10,815$^\circ$ Bắc, 106,650--106,725$^\circ$ Đông. Trong khung này Mapillary có 652.159 ảnh $360^\circ$ thuộc 1.234 chuỗi ảnh (quét ngày 22/10/2026), chủ yếu của ba tài khoản \lab{bemaps3\_sg}, \lab{phoenix\_mapping\_front} và \lab{phoenixmap\_front}, chụp các năm 2016, 2023 và 2024.
+
+\subsection{Quy trình thu thập từng bước}
+\label{sec:pipeline}
+
+\begin{table}[H]
+\centering
+\caption{Các bước thu thập bộ chính và pilot}
+\label{tab:steps}
+\begin{tabularx}{\textwidth}{c >{\raggedright\arraybackslash}p{0.34\linewidth} L}
+\toprule
+\textbf{\#} & \textbf{Việc} & \textbf{Kết quả} \\
+\midrule
+1 & Lấy đường có tên và điểm ngữ cảnh từ OSM (\f{01_osm_streets.py}) & 7.283 đoạn đường, 6.715 điểm \\
+2 & Quét metadata ảnh $360^\circ$ theo ô 0,001$^\circ$ (\f{02_fetch_mapillary_meta.py}) & 652.159 ảnh; 2 ô nhỏ ở góc khung bị lỗi \\
+3 & Gắn ảnh vào đường: cách đường $\le 20$ m và hướng đi lệch trục đường $\le 30^\circ$; bỏ hẻm (\f{03_rank_streets.py}) & 81,3\% số ảnh gắn được vào một đường \\
+4 & Xem trước 56 đường, mỗi đường 20 vị trí, để chọn đường (\f{04_street_preview.py}) & Loại 7 đường ven kênh, cầu, đường hầm; chọn 17 đường \\
+5 & Chia 17 đường thành train/val/test \emph{trước khi} gán nhãn (\f{configs/streets_v1.yaml}) & 10 đường train, 3 val, 4 test \\
+6 & Pilot: 150 ảnh trên 3 đường train, 5 người gán cùng một ảnh (\f{10_make_pilot_v2.py}) & Fleiss $\kappa$~\cite{fleiss1971kappa} 0,57; viết lại hướng dẫn gán (v1) \\
+7 & Thu thập bộ chính: vị trí cách nhau 25 m, tối đa 2 ảnh mỗi vị trí ở hai ngày khác nhau, trần 420 ảnh mỗi đường, bỏ vị trí của pilot (\f{11_collect_main.py}) & Chọn 3.057 ảnh, loại 58 ảnh đêm, còn 2.999 ảnh \\
+8 & Gán nhãn bộ chính, đo đồng thuận, phân xử (mục~\ref{sec:labeling}) & Nhãn cuối cho 3.149 ảnh \\
+9 & Bơm ảnh cho train từ 75 đường mới (mục~\ref{sec:enrich}) & 2.000 ảnh, 577 ảnh \lab{Bị chặn} \\
+\bottomrule
+\end{tabularx}
+\src{\f{docs/collection_log.md}; script trong \f{src/collection/} và \f{src/labeling/}.}
+\end{table}
+
+\textbf{Cắt ảnh.} Mỗi ảnh $360^\circ$ cho đúng một ảnh cắt: nhìn bên phải xe, chếch $60^\circ$ so với hướng đi, chúc xuống $4^\circ$, góc nhìn $90^\circ$, kích thước $640\times640$, lưu JPEG chất lượng 90. Hai quyết định này dựa trên phép đo thăm dò, không dựa trên nhãn:
+\begin{itemize}
+  \item \emph{Chỉ lấy bên phải.} Trên 1.166 ảnh $360^\circ$, một phép đo tự động (khắt khe) thấy vỉa hè gần ở 38\% ảnh phải và 7\% ảnh trái. Ảnh trái phần lớn thấy lòng đường, dải phân cách hoặc vỉa hè bên kia. Hệ quả: vỉa hè bên trái của đường một chiều ít được quan sát.
+  \item \emph{Góc $60^\circ$, chúc $4^\circ$} cho tỉ lệ thấy vỉa hè gần cao nhất trong 6 tổ hợp đã thử (góc 60/75/90$^\circ$, chúc 4/10$^\circ$).
+\end{itemize}
+\src{\f{src/analysis/08_side_analysis.py}, \f{src/analysis/09_crop_param_study.py}, \f{src/common.py} (\lab{right\_crop}); \f{docs/collection_log.md} mục 23/10/2026.}
+
+\textbf{Chia tập theo tuyến đường.} Mỗi đường nằm trọn trong một tập, nên model được đánh giá trên đường chưa từng thấy. Bốn đường test nằm ở bốn khu vực khác nhau. Danh sách đường và tập được chốt ngày 23/10/2026, trước khi có nhãn nào của bộ chính; trạng thái hiện tại là \emph{đã chia, chưa khóa}, vì test chỉ có 47 ảnh \lab{Bị chặn} và nhóm chưa quyết định có thêm đường test hay không.
+
+\subsection{Gán nhãn}
+\label{sec:labeling}
+
+Nhãn do người gán, theo hướng dẫn gán nhãn v1 (\f{labeling/guide/annotation_guide_v1_draft.md}, đã chốt nguyên văn). Mỗi ảnh đi qua ba câu hỏi theo thứ tự:
+\begin{enumerate}
+  \item Ảnh xem được không? Ảnh mờ, tối hoặc cháy sáng thì chọn \lab{I}.
+  \item Có thấy vỉa hè gần không? Phải có một đoạn mép vỉa hè nằm dưới vạch 3/5 chiều cao ảnh; nếu không (lòng đường, vỉa hè ở xa, giao lộ, đầu hẻm, bị che quá nửa) thì chọn \lab{I}.
+  \item Còn lối đi liên tục không? Không đi thẳng qua được thì chọn \lab{1}. Người và xe đang chạy không tính là vật cản; vật cản chỉ tính tới khoảng giữa ảnh.
+\end{enumerate}
+
+Ngoài nhãn chính, người gán ghi lý do khi chọn \lab{I} (4 lý do), có thể đánh dấu loại vật cản (6 loại, không bắt buộc), ô \lab{Khó / không chắc} và ghi chú. Giao diện: \f{labeling/label_studio/ls_label_config_v1.xml}.
+
+\begin{table}[H]
+\centering
+\caption{Ai gán ảnh nào}
+\label{tab:assignment}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.22\linewidth} r L}
+\toprule
+\textbf{Phần} & \textbf{Ảnh} & \textbf{Cách gán} \\
+\midrule
+Test & 674 & Hai người (Học, Loan) gán độc lập mọi ảnh \\
+Val & 486 & Hai người (Minh, Khải) gán độc lập mọi ảnh \\
+Train, bộ chính & 1.839 & Mỗi ảnh một người; 276 ảnh (15\%) được người thứ hai gán chéo \\
+Pilot & 150 & 5 người gán theo hướng dẫn v0; sau đó cả 150 ảnh được xem lại theo v1 \\
+Ảnh bơm & 2.000 & Mỗi ảnh một người (5 người, mỗi người 400 ảnh chia ngẫu nhiên); 203 ảnh có người thứ hai kiểm tra chéo \\
+\bottomrule
+\end{tabularx}
+\src{\f{docs/labeling_phase1.md} mục 2.2; \f{data/manifest/main_v1_assignment.csv}, \f{data/manifest/train_extra_v1_assignment.csv}.}
+\end{table}
+
+Người gán không thấy tên đường, tập, điểm của model hay phiếu của người khác. Ảnh của các tập được trộn lẫn trong cùng một project. Tổng cộng bộ chính có $5\times887 = 4.435$ lượt gán, không thiếu lượt nào. Kết quả đồng thuận và phân xử ở mục~\ref{sec:qa}.
+
+\subsection{Bơm thêm ảnh ``Bị chặn'' cho train}
+\label{sec:enrich}
+
+Sau đợt gán đầu, train chỉ có 120 ảnh \lab{Bị chặn} (gồm 14 ảnh pilot). Nhóm bơm thêm ảnh \emph{chỉ vào train}, theo hướng chủ động tìm mẫu dương của lớp hiếm~\cite{attenberg2010search}:
+
+\begin{enumerate}
+  \item \textbf{Bộ chọn ảnh.} Logistic regression trên embedding DINOv2 ViT-B/14~\cite{oquab2023dinov2}, học từ 1.989 nhãn train (120 ảnh dương). Bộ này được chọn bằng một phép so sánh chỉ dùng nhãn train, kiểu giữ nguyên một đường ra ngoài: trong 20\% ảnh điểm cao nhất có 22,0\% ảnh \lab{Bị chặn}, so với 13,9\% của bộ chấm cũ (hiệu $+8,2$ điểm \%, khoảng tin cậy 95\% $[4,3;\,11,7]$) và 5,8\% nếu bốc ngẫu nhiên.
+  \item \textbf{Chọn đường.} Quét 150 đường chưa dùng (mỗi đường 30 ảnh), xếp hạng theo điểm trung bình, lấy 75 đường đầu. Đường trùng tên với đường val/test bị từ chối, kể cả đoạn khác của cùng đường.
+  \item \textbf{Chọn ảnh.} Kho ứng viên 5.035 ảnh. Chọn 2.000 ảnh: 1.400 ảnh điểm cao nhất (tầng \lab{top\_score}, điểm $\ge 0,61$) và 600 ảnh ngẫu nhiên trong phần còn lại (tầng \lab{random}). Vị trí cách ảnh val/test dưới 40 m bị bỏ.
+  \item \textbf{Gán nhãn.} Như bộ chính, mỗi ảnh một người; người gán không biết tầng của ảnh.
+\end{enumerate}
+
+Điểm của model \emph{chỉ dùng để chọn ảnh cho người gán, không bao giờ là nhãn}. Vì ảnh bơm được chọn có chủ đích nên phân phối của chúng lệch khỏi tự nhiên~\cite{farquhar2021bias}; tầng ngẫu nhiên 30\% được giữ để đo lại hiệu quả của bộ chọn ảnh trên đường mới, và mọi thống kê trong báo cáo này tách \lab{train\_extra} khỏi bộ chính.
+\src{\f{docs/data_enrichment.md} mục 7--9; \f{src/analysis/21_selector_benchmark.py}, \f{src/analysis/24_street_scan.py}, \f{src/collection/23_collect_train_extra.py}; \f{data/streets/selector_benchmark.csv}.}
+
+\subsection{Công cụ và định dạng lưu trữ}
+
+\begin{table}[H]
+\centering
+\caption{Công cụ sử dụng và định dạng lưu trữ}
+\label{tab:tools}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.25\linewidth} >{\raggedright\arraybackslash}p{0.30\linewidth} L}
+\toprule
+\textbf{Việc} & \textbf{Công cụ} & \textbf{Định dạng lưu} \\
+\midrule
+Mạng lưới đường, điểm ngữ cảnh & Overpass API, \lab{shapely} & JSON (\f{data/raw/osm/}) \\
+Metadata ảnh & Mapillary Graph API, \lab{requests}, \lab{pandas} & Parquet (\f{data/raw/metadata/}, \f{data/streets/}) \\
+Ảnh $360^\circ$ gốc & Mapillary (ảnh thu nhỏ 2.048 px) & JPEG (\f{data/raw/pano/}) \\
+Cắt ảnh & \lab{py360convert}, \lab{Pillow} & JPEG $640\times640$ (\f{data/crops/}) \\
+Danh sách ảnh (manifest) & \lab{pandas} & CSV UTF-8, mỗi ảnh một dòng (\f{data/manifest/}) \\
+Gán nhãn & Label Studio tự host trên AWS (Docker, Caddy) & Export JSON trên server; bảng nhãn CSV trong repo (\f{data/labels/}) \\
+Đo đồng thuận, thống kê & \lab{pandas}, \lab{scipy}, \lab{scikit-learn} & CSV, Markdown \\
+Bộ chọn ảnh, đo vỉa hè (chỉ để chọn mẫu) & \lab{torch}, \lab{transformers} (DINOv2~\cite{oquab2023dinov2}, CLIP~\cite{radford2021clip}, SegFormer~\cite{xie2021segformer}) & Embedding NPZ (\f{data/raw/embeddings/}) \\
+Cấu hình đường và tập & & YAML (\f{configs/}) \\
+EDA của báo cáo này & \lab{pandas}, \lab{scipy}, \lab{matplotlib} & CSV, JSON, PDF, JPEG (\f{docs/data_report/}) \\
+\bottomrule
+\end{tabularx}
+\src{\f{requirements.txt}, \f{README.md}, \f{infra/}.}
+\end{table}

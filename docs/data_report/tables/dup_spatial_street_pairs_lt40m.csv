@@ -1,0 +1,14 @@
+﻿vt_split,vt_street,train_group,train_street,n_pairs,min_dist_m,max_cosine
+val,Hồng Bàng,main_train,Nguyễn Trãi,23,1.4534128904342651,0.8052854537963867
+val,Nguyễn Đình Chiểu#0,main_train,Pasteur,16,3.7726964950561523,0.7238860130310059
+test,Lý Thường Kiệt,main_train,Cách Mạng Tháng Tám#0,16,7.1300435066223145,0.7791999578475952
+test,Hai Bà Trưng,main_train,Điện Biên Phủ#1,17,8.253740310668945,0.720734715461731
+test,Nơ Trang Long,main_train,Phan Đăng Lưu,11,8.757234573364258,0.8096497654914856
+test,Hai Bà Trưng,main_train,Nguyễn Thị Minh Khai,18,9.602566719055176,0.5163139700889587
+test,Trần Phú,main_train,Nguyễn Trãi,11,12.158010482788086,0.7481576204299927
+test,Trần Phú,main_train,Trần Hưng Đạo,25,15.589853286743164,0.8187353610992432
+val,Nguyễn Đình Chiểu#0,pilot,Pasteur,4,17.901037216186523,0.6469836235046387
+test,Nơ Trang Long,pilot,Phan Đăng Lưu,6,20.884218215942383,0.6198508143424988
+val,Võ Văn Tần,main_train,Pasteur,2,27.83042335510254,0.36774829030036926
+test,Trần Phú,te_random,Lê Hồng Phong#0,3,34.272987365722656,0.6691358089447021
+val,Võ Văn Tần,pilot,Pasteur,1,37.47172927856445,0.23429732024669647

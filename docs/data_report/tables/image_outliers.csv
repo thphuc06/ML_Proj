@@ -1,0 +1,309 @@
+﻿item,group,label,reason,file,lum,contrast,sharpness,log10_sharpness,flag_lum,flag_contrast,flag_sharpness,flag_log10_sharpness
+0573d1e1,main_train,0,,main/0573d1e1.jpg,168.755,51.7578,366.792,2.56442,high_1.5,,,
+084f87a8,main_train,0,,main/084f87a8.jpg,24.3147,17.36,154.125,2.18787,low_1.5,low_1.5,,low_1.5
+08802534,main_train,0,,main/08802534.jpg,46.8965,30.7186,30.4603,1.48373,,low_1.5,,low_3
+09e6c3f5,main_train,I,Ảnh mờ / tối / cháy sáng,main/09e6c3f5.jpg,220.46,47.5327,625.378,2.79614,high_3,,,
+0b9edcf9,main_train,I,Không thấy vỉa hè,main/0b9edcf9.jpg,98.0926,64.3491,1299.37,3.11373,,,high_1.5,
+0c9d08ca,main_train,I,Không thấy vỉa hè,main/0c9d08ca.jpg,117.372,52.2476,1270.12,3.10384,,,high_1.5,
+118b2704,main_train,0,,main/118b2704.jpg,133.729,92.5152,300.874,2.47838,,high_1.5,,
+15da6091,main_train,I,Không thấy vỉa hè,main/15da6091.jpg,97.586,64.1136,1186.25,3.07418,,,high_1.5,
+17cf2a0d,main_train,I,Không thấy vỉa hè,main/17cf2a0d.jpg,117.373,65.7283,1169.87,3.06814,,,high_1.5,
+1989b9b5,main_train,I,Không thấy vỉa hè,main/1989b9b5.jpg,127.749,63.935,1227.9,3.08916,,,high_1.5,
+1d6c9aaa,main_train,0,,main/1d6c9aaa.jpg,172.313,71.3409,397.16,2.59897,high_1.5,,,
+1e307513,main_train,I,Ảnh mờ / tối / cháy sáng,main/1e307513.jpg,24.3367,25.9248,149.102,2.17348,low_1.5,low_1.5,,low_1.5
+1f79514e,main_train,I,Không thấy vỉa hè,main/1f79514e.jpg,109.583,59.733,1273.32,3.10494,,,high_1.5,
+23f30195,main_train,I,Bị che,main/23f30195.jpg,69.6287,52.6896,166.034,2.2202,,,,low_1.5
+23f811bc,main_train,I,Không thấy vỉa hè,main/23f811bc.jpg,77.9715,59.0057,1191.29,3.07602,,,high_1.5,
+2bbda355,main_train,I,Ảnh mờ / tối / cháy sáng,main/2bbda355.jpg,242.311,30.9818,251.447,2.40045,high_3,low_1.5,,
+2d3f92dc,main_train,0,,main/2d3f92dc.jpg,61.2949,38.2202,155.349,2.19131,,,,low_1.5
+2ffec4c2,main_train,0,,main/2ffec4c2.jpg,172.775,56.6199,511.369,2.70873,high_1.5,,,
+310a9d92,main_train,1,,main/310a9d92.jpg,84.8955,50.6659,145.637,2.16327,,,,low_1.5
+327b17c1,main_train,0,,main/327b17c1.jpg,99.1524,50.8555,1109.99,3.04532,,,high_1.5,
+332ca2bb,main_train,0,,main/332ca2bb.jpg,88.5747,47.9653,1049.24,3.02087,,,high_1.5,
+33a7fd9d,main_train,I,Không thấy vỉa hè,main/33a7fd9d.jpg,167.806,55.0918,450.039,2.65325,high_1.5,,,
+345a3818,main_train,0,,main/345a3818.jpg,127.05,70.0383,1063.88,3.02689,,,high_1.5,
+36d800f7,main_train,I,Không thấy vỉa hè,main/36d800f7.jpg,170.658,70.0839,465.259,2.66769,high_1.5,,,
+3727aa13,main_train,I,,main/3727aa13.jpg,121.391,66.1774,1227.68,3.08909,,,high_1.5,
+3877d005,main_train,I,Không thấy vỉa hè,main/3877d005.jpg,92.0219,73.3065,103.855,2.01643,,,,low_1.5
+38fd9cb5,main_train,I,Không thấy vỉa hè,main/38fd9cb5.jpg,105.639,85.0956,119.937,2.07895,,,,low_1.5
+3d9dd4e3,main_train,I,Không thấy vỉa hè,main/3d9dd4e3.jpg,104.799,76.8758,157.717,2.19788,,,,low_1.5
+4230fc22,main_train,I,Không thấy vỉa hè,main/4230fc22.jpg,40.1387,30.9618,230.35,2.36239,,low_1.5,,
+423a3fed,main_train,I,Không thấy vỉa hè,main/423a3fed.jpg,77.4183,39.1415,162.845,2.21177,,,,low_1.5
+4241c0a4,main_train,0,,main/4241c0a4.jpg,78.1452,58.4942,86.7437,1.93824,,,,low_1.5
+42a193a2,main_train,I,Bị che,main/42a193a2.jpg,115.901,76.8414,152.277,2.18263,,,,low_1.5
+45957094,main_train,0,,main/45957094.jpg,203.348,51.1468,334.871,2.52488,high_1.5,,,
+46b8fb88,main_train,I,Không thấy vỉa hè,main/46b8fb88.jpg,170.906,60.469,247.238,2.39312,high_1.5,,,
+4ad0790e,main_train,0,,main/4ad0790e.jpg,76.4299,54.291,118.136,2.07238,,,,low_1.5
+4cb2bd00,main_train,0,,main/4cb2bd00.jpg,100.507,50.0288,83.5208,1.92179,,,,low_1.5
+4d426ea6,main_train,I,Bị che,main/4d426ea6.jpg,114.124,91.7968,417.214,2.62036,,high_1.5,,
+4d691a29,main_train,I,Không thấy vỉa hè,main/4d691a29.jpg,132.438,58.1258,1133.31,3.05435,,,high_1.5,
+546d79fc,main_train,0,,main/546d79fc.jpg,55.7743,31.0673,317.384,2.50159,,low_1.5,,
+54867acd,main_train,I,Không thấy vỉa hè,main/54867acd.jpg,40.612,29.6015,200.97,2.30313,,low_1.5,,
+55465971,main_train,I,Không thấy vỉa hè,main/55465971.jpg,168.322,64.1179,430.647,2.63412,high_1.5,,,
+57119832,main_train,0,,main/57119832.jpg,171.686,63.9387,587.555,2.76905,high_1.5,,,
+5ed037a4,main_train,0,,main/5ed037a4.jpg,110.727,82.4592,125.005,2.09693,,,,low_1.5
+6092a46e,main_train,I,Không thấy vỉa hè,main/6092a46e.jpg,94.0654,61.442,1401.44,3.14657,,,high_1.5,
+62f12c06,main_train,0,,main/62f12c06.jpg,77.254,44.1384,151.562,2.18059,,,,low_1.5
+6302a1d2,main_train,I,Không thấy vỉa hè,main/6302a1d2.jpg,185.568,53.0824,452.028,2.65517,high_1.5,,,
+64672e39,main_train,0,,main/64672e39.jpg,28.992,25.146,216.13,2.33472,low_1.5,low_1.5,,
+659b4e20,main_train,0,,main/659b4e20.jpg,74.8813,44.7847,123.384,2.09126,,,,low_1.5
+68264add,main_train,I,Không thấy vỉa hè,main/68264add.jpg,139.845,90.3215,417.046,2.62018,,high_1.5,,
+69c65adb,main_train,I,Ảnh mờ / tối / cháy sáng,main/69c65adb.jpg,84.891,45.6341,36.8371,1.56629,,,,low_3
+69fcd735,main_train,I,Không thấy vỉa hè,main/69fcd735.jpg,108.087,73.7766,137.871,2.13947,,,,low_1.5
+6fdbc47b,main_train,0,,main/6fdbc47b.jpg,42.5579,31.4782,29.7128,1.47294,,low_1.5,,low_3
+75cdcf93,main_train,0,,main/75cdcf93.jpg,95.9839,45.2582,96.7133,1.98549,,,,low_1.5
+7a335bfa,main_train,0,,main/7a335bfa.jpg,55.386,35.2109,73.9084,1.86869,,,,low_3
+7acbec19,main_train,I,Bị che,main/7acbec19.jpg,73.2019,46.2076,1707.63,3.23239,,,high_3,high_1.5
+84d3674e,main_train,I,Bị che,main/84d3674e.jpg,111.966,91.6546,430.09,2.63356,,high_1.5,,
+86044bcb,main_train,I,Không thấy vỉa hè,main/86044bcb.jpg,75.428,49.3491,1082.81,3.03455,,,high_1.5,
+86eb142a,main_train,0,,main/86eb142a.jpg,46.4844,35.5497,67.0218,1.82622,,,,low_3
+88b767aa,main_train,0,,main/88b767aa.jpg,72.4759,46.4468,127.543,2.10566,,,,low_1.5
+8c88864b,main_train,I,Không thấy vỉa hè,main/8c88864b.jpg,96.7144,78.3273,129.027,2.11068,,,,low_1.5
+91ed15d8,main_train,1,,main/91ed15d8.jpg,60.2386,56.4281,100.388,2.00168,,,,low_1.5
+93f8c1c4,main_train,0,,main/93f8c1c4.jpg,94.874,41.4464,171.08,2.2332,,,,low_1.5
+94e08bd2,main_train,I,Không thấy vỉa hè,main/94e08bd2.jpg,175.343,60.3257,331.4,2.52035,high_1.5,,,
+95f06e6b,main_train,I,Không thấy vỉa hè,main/95f06e6b.jpg,131.584,70.7294,170.208,2.23098,,,,low_1.5
+96fa100c,main_train,I,Không thấy vỉa hè,main/96fa100c.jpg,114.579,64.9483,1241.71,3.09402,,,high_1.5,
+9fc8b559,main_train,I,Không thấy vỉa hè,main/9fc8b559.jpg,114.444,58.9231,1135.13,3.05505,,,high_1.5,
+a04e4a08,main_train,I,Không thấy vỉa hè,main/a04e4a08.jpg,120.606,71.3283,1300.47,3.1141,,,high_1.5,
+a19d1bd1,main_train,I,Không thấy vỉa hè,main/a19d1bd1.jpg,55.5717,46.052,165.034,2.21757,,,,low_1.5
+a28aeb28,main_train,I,Không thấy vỉa hè,main/a28aeb28.jpg,115.495,64.8323,1049.22,3.02087,,,high_1.5,
+a8de7149,main_train,I,Không thấy vỉa hè,main/a8de7149.jpg,57.5028,51.3781,106.267,2.0264,,,,low_1.5
+a9e57f53,main_train,I,Không thấy vỉa hè,main/a9e57f53.jpg,97.3947,48.8457,1051.78,3.02192,,,high_1.5,
+acafabae,main_train,I,Không thấy vỉa hè,main/acafabae.jpg,122.367,61.5795,1204.38,3.08076,,,high_1.5,
+accf765f,main_train,I,Không thấy vỉa hè,main/accf765f.jpg,131.196,56.1248,1156.03,3.06297,,,high_1.5,
+ae95d468,main_train,I,Không thấy vỉa hè,main/ae95d468.jpg,38.2808,31.9114,140.412,2.1474,,low_1.5,,low_1.5
+b50540a9,main_train,I,Không thấy vỉa hè,main/b50540a9.jpg,86.096,64.0199,120.952,2.08261,,,,low_1.5
+b5715d4e,main_train,I,Không thấy vỉa hè,main/b5715d4e.jpg,119.894,82.8374,103.279,2.01401,,,,low_1.5
+b763fcf2,main_train,I,Không thấy vỉa hè,main/b763fcf2.jpg,129.148,72.6602,1411.93,3.14981,,,high_1.5,
+b7ab1ed8,main_train,I,Không thấy vỉa hè,main/b7ab1ed8.jpg,43.7955,28.9421,140.007,2.14615,,low_1.5,,low_1.5
+b908458b,main_train,I,Không thấy vỉa hè,main/b908458b.jpg,95.6968,71.4218,136.705,2.13578,,,,low_1.5
+b9c4f60f,main_train,0,,main/b9c4f60f.jpg,100.654,76.0625,110.483,2.0433,,,,low_1.5
+bfc35df6,main_train,0,,main/bfc35df6.jpg,77.1458,31.384,249.406,2.39691,,low_1.5,,
+c2976397,main_train,0,,main/c2976397.jpg,100.173,81.232,105.74,2.02424,,,,low_1.5
+c36692b6,main_train,0,,main/c36692b6.jpg,55.3006,44.8343,156.404,2.19425,,,,low_1.5
+c8178ec3,main_train,I,Không thấy vỉa hè,main/c8178ec3.jpg,113.568,79.6189,94.2542,1.9743,,,,low_1.5
+d459259b,main_train,I,Không thấy vỉa hè,main/d459259b.jpg,98.5837,54.1286,1320.77,3.12083,,,high_1.5,
+d62cce3c,main_train,0,,main/d62cce3c.jpg,102.418,62.928,1063.46,3.02672,,,high_1.5,
+d6b7e707,main_train,I,Không thấy vỉa hè,main/d6b7e707.jpg,107.626,74.2912,162.116,2.20983,,,,low_1.5
+d8715f1c,main_train,0,,main/d8715f1c.jpg,75.6934,47.7371,127.687,2.10615,,,,low_1.5
+d87c3730,main_train,0,,main/d87c3730.jpg,185.344,60.0774,368.893,2.5669,high_1.5,,,
+da34259f,main_train,I,Không thấy vỉa hè,main/da34259f.jpg,126.566,72.1122,1118.21,3.04852,,,high_1.5,
+db0583a8,main_train,I,Bị che,main/db0583a8.jpg,104.079,68.9574,137.634,2.13873,,,,low_1.5
+db4135f7,main_train,I,Không thấy vỉa hè,main/db4135f7.jpg,120.516,65.045,1138.42,3.0563,,,high_1.5,
+dc05791d,main_train,I,Không thấy vỉa hè,main/dc05791d.jpg,117.257,79.3146,146.413,2.16558,,,,low_1.5
+de64da07,main_train,I,Không thấy vỉa hè,main/de64da07.jpg,104.051,79.7135,123.593,2.09199,,,,low_1.5
+de7f6bd5,main_train,0,,main/de7f6bd5.jpg,96.1069,63.6436,147.448,2.16864,,,,low_1.5
+e09a4cd9,main_train,0,,main/e09a4cd9.jpg,99.7451,80.4793,162.483,2.21081,,,,low_1.5
+e0c2ec0c,main_train,I,Không thấy vỉa hè,main/e0c2ec0c.jpg,103.899,63.5426,1266.2,3.1025,,,high_1.5,
+e2b6757c,main_train,0,,main/e2b6757c.jpg,120.074,51.9269,1106.05,3.04377,,,high_1.5,
+e30cbf6a,main_train,0,,main/e30cbf6a.jpg,95.792,51.9865,1075.41,3.03157,,,high_1.5,
+e46196eb,main_train,I,Không thấy vỉa hè,main/e46196eb.jpg,128.615,95.3623,379.51,2.57922,,high_1.5,,
+e5f67d91,main_train,I,Không thấy vỉa hè,main/e5f67d91.jpg,113.348,87.3675,122.701,2.08885,,high_1.5,,low_1.5
+e820fb16,main_train,1,,main/e820fb16.jpg,40.7992,31.166,218.038,2.33853,,low_1.5,,
+e86cc95f,main_train,1,,main/e86cc95f.jpg,53.2503,45.4068,118.302,2.07299,,,,low_1.5
+eaa2e752,main_train,I,Không thấy vỉa hè,main/eaa2e752.jpg,86.6402,48.8236,1289.77,3.11051,,,high_1.5,
+eca7328c,main_train,0,,main/eca7328c.jpg,70.1298,59.2645,68.7602,1.83734,,,,low_3
+ecd376ec,main_train,I,Không thấy vỉa hè,main/ecd376ec.jpg,69.8226,54.137,41.9843,1.62309,,,,low_3
+ff88bf97,main_train,0,,main/ff88bf97.jpg,53.7567,43.1061,111.168,2.04598,,,,low_1.5
+ffbf8368,main_train,I,Không thấy vỉa hè,main/ffbf8368.jpg,87.6141,68.7468,161.89,2.20922,,,,low_1.5
+048ef1c6,main_val,1,,main/048ef1c6.jpg,86.0384,52.8487,1266.12,3.10247,,,high_1.5,
+0d427ee0,main_val,0,,main/0d427ee0.jpg,69.9845,42.877,139.681,2.14514,,,,low_1.5
+1600ad6b,main_val,I,Không thấy vỉa hè,main/1600ad6b.jpg,122.557,88.1717,304.439,2.4835,,high_1.5,,
+1f864a72,main_val,I,Ảnh mờ / tối / cháy sáng,main/1f864a72.jpg,62.1369,60.5889,113.323,2.05432,,,,low_1.5
+238a557b,main_val,0,,main/238a557b.jpg,56.4109,45.1777,147.125,2.16769,,,,low_1.5
+25cc8d9e,main_val,0,,main/25cc8d9e.jpg,124.083,63.1921,1159.16,3.06414,,,high_1.5,
+297aade6,main_val,I,Bị che,main/297aade6.jpg,125.982,74.8532,1071.85,3.03013,,,high_1.5,
+2b9e60ca,main_val,0,,main/2b9e60ca.jpg,74.375,52.5936,170.375,2.23141,,,,low_1.5
+33fd9360,main_val,0,,main/33fd9360.jpg,98.2201,57.7507,1394.19,3.14432,,,high_1.5,
+342e2ce3,main_val,1,,main/342e2ce3.jpg,115.47,91.5659,544.241,2.73579,,high_1.5,,
+3e93ff81,main_val,I,Không thấy vỉa hè,main/3e93ff81.jpg,109.101,66.8911,1205.7,3.08124,,,high_1.5,
+3fe93050,main_val,I,Ảnh mờ / tối / cháy sáng,main/3fe93050.jpg,88.2829,70.3276,133.223,2.12458,,,,low_1.5
+4571e2e5,main_val,I,Không thấy vỉa hè,main/4571e2e5.jpg,129.793,59.885,1048.28,3.02048,,,high_1.5,
+4ed45db8,main_val,I,,main/4ed45db8.jpg,113.941,51.9756,1156.38,3.0631,,,high_1.5,
+50526771,main_val,I,Không thấy vỉa hè,main/50526771.jpg,98.383,58.1373,1135.93,3.05535,,,high_1.5,
+57bcb0d2,main_val,I,Không thấy vỉa hè,main/57bcb0d2.jpg,109.182,51.6351,1328.91,3.1235,,,high_1.5,
+5c780654,main_val,0,,main/5c780654.jpg,46.4866,28.8463,264.796,2.42291,,low_1.5,,
+5f2d682c,main_val,0,,main/5f2d682c.jpg,82.1297,53.2838,143.55,2.157,,,,low_1.5
+6322839b,main_val,I,,main/6322839b.jpg,95.818,69.6906,1880.85,3.27435,,,high_3,high_1.5
+63bcb384,main_val,I,Không thấy vỉa hè,main/63bcb384.jpg,137.794,76.1496,1125.14,3.05121,,,high_1.5,
+64e27502,main_val,I,Không thấy vỉa hè,main/64e27502.jpg,89.0138,80.6485,165.263,2.21818,,,,low_1.5
+689a8b1d,main_val,0,,main/689a8b1d.jpg,55.3547,53.6985,144.325,2.15934,,,,low_1.5
+69a9be09,main_val,I,Không thấy vỉa hè,main/69a9be09.jpg,95.8688,69.2643,1049.24,3.02087,,,high_1.5,
+6a720f3b,main_val,0,,main/6a720f3b.jpg,177.173,69.7679,436.161,2.63965,high_1.5,,,
+6e56ce19,main_val,I,,main/6e56ce19.jpg,129.07,64.0248,1128.38,3.05246,,,high_1.5,
+71f84f47,main_val,I,,main/71f84f47.jpg,98.6973,58.0949,1324.48,3.12205,,,high_1.5,
+7a02732b,main_val,0,,main/7a02732b.jpg,88.9585,64.7095,122.761,2.08906,,,,low_1.5
+7e29569f,main_val,0,,main/7e29569f.jpg,113.449,57.144,1115.94,3.04764,,,high_1.5,
+802d2fe2,main_val,0,,main/802d2fe2.jpg,176.19,62.2119,298.108,2.47437,high_1.5,,,
+84dca657,main_val,I,Không thấy vỉa hè,main/84dca657.jpg,65.1674,54.1989,1047.32,3.02008,,,high_1.5,
+8c7355a3,main_val,0,,main/8c7355a3.jpg,186.82,64.7517,370.802,2.56914,high_1.5,,,
+8ca7d69d,main_val,0,,main/8ca7d69d.jpg,89.9467,69.1791,108.927,2.03714,,,,low_1.5
+8d5ffadc,main_val,I,,main/8d5ffadc.jpg,130.439,65.2088,1107.55,3.04436,,,high_1.5,
+8e16210b,main_val,0,,main/8e16210b.jpg,176.285,63.0735,247.313,2.39325,high_1.5,,,
+a041dd05,main_val,I,Không thấy vỉa hè,main/a041dd05.jpg,86.0584,82.811,170.473,2.23166,,,,low_1.5
+ba6ae0ff,main_val,0,,main/ba6ae0ff.jpg,183.688,69.5552,245.704,2.39041,high_1.5,,,
+c38dc461,main_val,I,Không thấy vỉa hè,main/c38dc461.jpg,68.8697,60.5519,149.343,2.17418,,,,low_1.5
+c7521791,main_val,0,,main/c7521791.jpg,109.382,70.1292,170.312,2.23125,,,,low_1.5
+c754a8ff,main_val,0,,main/c754a8ff.jpg,73.375,47.5284,136.264,2.13438,,,,low_1.5
+c8c7fe5e,main_val,0,,main/c8c7fe5e.jpg,122.655,57.098,1512.25,3.17962,,,high_3,high_1.5
+d3397e07,main_val,I,Không thấy vỉa hè,main/d3397e07.jpg,170.049,68.7548,284.376,2.45389,high_1.5,,,
+e190ccc6,main_val,I,Không thấy vỉa hè,main/e190ccc6.jpg,172.26,51.9796,576.421,2.76074,high_1.5,,,
+e3b2eaab,main_val,0,,main/e3b2eaab.jpg,37.8396,32.2335,94.3318,1.97466,,,,low_1.5
+ee16eeec,main_val,I,Ảnh mờ / tối / cháy sáng,main/ee16eeec.jpg,59.6647,56.9477,122.665,2.08872,,,,low_1.5
+f2b60afa,main_val,I,Không thấy vỉa hè,main/f2b60afa.jpg,169.925,71.8578,356.845,2.55248,high_1.5,,,
+f8760c1a,main_val,I,Không thấy vỉa hè,main/f8760c1a.jpg,139.107,87.8103,811.446,2.90926,,high_1.5,,
+fc520a84,main_val,I,,main/fc520a84.jpg,74.5538,60.0166,1203.34,3.08039,,,high_1.5,
+032d1273,main_test,0,,main/032d1273.jpg,191.316,63.8858,523.4,2.71883,high_1.5,,,
+0dc16546,main_test,I,,main/0dc16546.jpg,104.06,61.7129,1086.88,3.03618,,,high_1.5,
+0dc52c11,main_test,I,,main/0dc52c11.jpg,183.963,57.2079,352.48,2.54713,high_1.5,,,
+0ff46e8e,main_test,0,,main/0ff46e8e.jpg,230.054,38.9815,475.137,2.67682,high_3,,,
+20d78c27,main_test,0,,main/20d78c27.jpg,198.097,60.6565,497.994,2.69722,high_1.5,,,
+2c79aec7,main_test,0,,main/2c79aec7.jpg,173.043,59.0632,939.461,2.97288,high_1.5,,,
+2dbd4220,main_test,I,Bị che,main/2dbd4220.jpg,201.61,64.6126,356.968,2.55263,high_1.5,,,
+2e218932,main_test,0,,main/2e218932.jpg,179.975,56.2802,846.103,2.92742,high_1.5,,,
+2e33b10d,main_test,0,,main/2e33b10d.jpg,112.674,69.9745,1216.24,3.08502,,,high_1.5,
+2fdddd38,main_test,0,,main/2fdddd38.jpg,43.1447,29.9782,188.628,2.27561,,low_1.5,,
+377a9426,main_test,I,,main/377a9426.jpg,102.89,64.9502,1096.07,3.03984,,,high_1.5,
+38488cfc,main_test,0,,main/38488cfc.jpg,211.341,54.9743,610.24,2.7855,high_1.5,,,
+3c878ec4,main_test,0,,main/3c878ec4.jpg,169.116,47.5683,864.102,2.93657,high_1.5,,,
+43c27a86,main_test,0,,main/43c27a86.jpg,230.533,35.5285,152.149,2.18227,high_3,,,low_1.5
+4fbdc40d,main_test,0,,main/4fbdc40d.jpg,213.466,45.8198,406.457,2.60901,high_1.5,,,
+56751b98,main_test,0,,main/56751b98.jpg,215.501,52.1858,338.591,2.52968,high_1.5,,,
+6e9b2084,main_test,0,,main/6e9b2084.jpg,171.736,57.2805,461.388,2.66407,high_1.5,,,
+70a54889,main_test,0,,main/70a54889.jpg,215.008,51.823,585.115,2.76724,high_1.5,,,
+7b71d684,main_test,0,,main/7b71d684.jpg,192.456,55.8289,537.97,2.73076,high_1.5,,,
+80da935d,main_test,0,,main/80da935d.jpg,179.308,61.8923,578.314,2.76216,high_1.5,,,
+8195db4e,main_test,0,,main/8195db4e.jpg,180.404,64.9469,617.688,2.79077,high_1.5,,,
+833194c6,main_test,0,,main/833194c6.jpg,185.973,55.2479,637.073,2.80419,high_1.5,,,
+84d5c119,main_test,0,,main/84d5c119.jpg,205.205,61.042,461.284,2.66397,high_1.5,,,
+85681e5c,main_test,0,,main/85681e5c.jpg,56.374,52.1573,148.463,2.17162,,,,low_1.5
+89e5a133,main_test,I,Không thấy vỉa hè,main/89e5a133.jpg,129.193,66.9962,1277.28,3.10629,,,high_1.5,
+8c189375,main_test,I,,main/8c189375.jpg,168.94,68.397,497.529,2.69682,high_1.5,,,
+97f4a8c2,main_test,0,,main/97f4a8c2.jpg,196.206,53.7009,476.488,2.67805,high_1.5,,,
+a03ae43a,main_test,I,,main/a03ae43a.jpg,186.067,52.1878,493.637,2.69341,high_1.5,,,
+a2edca85,main_test,I,,main/a2edca85.jpg,174.041,51.0272,711.544,2.8522,high_1.5,,,
+b11ab23f,main_test,0,,main/b11ab23f.jpg,195.567,64.2133,471.259,2.67326,high_1.5,,,
+b476f215,main_test,1,,main/b476f215.jpg,28.8754,36.1119,398.647,2.60059,low_1.5,,,
+b55a3377,main_test,0,,main/b55a3377.jpg,198.01,58.6932,616.469,2.78991,high_1.5,,,
+b950e563,main_test,0,,main/b950e563.jpg,195.963,55.6629,535.397,2.72868,high_1.5,,,
+ba6b785f,main_test,0,,main/ba6b785f.jpg,175.505,54.1216,361.584,2.55821,high_1.5,,,
+c5f56dd7,main_test,0,,main/c5f56dd7.jpg,194.622,54.2967,543.144,2.73491,high_1.5,,,
+c92a5527,main_test,0,,main/c92a5527.jpg,218.938,39.1,357.483,2.55326,high_3,,,
+d2df8ba8,main_test,I,,main/d2df8ba8.jpg,99.0283,61.9096,1080.05,3.03344,,,high_1.5,
+dc71a73b,main_test,1,,main/dc71a73b.jpg,108.605,64.3653,1050.5,3.0214,,,high_1.5,
+e2f2e83f,main_test,I,,main/e2f2e83f.jpg,221.452,45.5727,445.845,2.64918,high_3,,,
+e442dc1f,main_test,I,Không thấy vỉa hè,main/e442dc1f.jpg,132.071,69.3334,1144.5,3.05862,,,high_1.5,
+e4ee2a11,main_test,0,,main/e4ee2a11.jpg,200.259,51.7298,421.875,2.62518,high_1.5,,,
+e9896c86,main_test,0,,main/e9896c86.jpg,177.292,58.1014,807.519,2.90715,high_1.5,,,
+ea01c1ee,main_test,I,,main/ea01c1ee.jpg,149.263,56.2799,1041.7,3.01774,,,high_1.5,
+f504e4ea,main_test,0,,main/f504e4ea.jpg,230.043,38.8694,387.442,2.58821,high_3,,,
+fc4aef6d,main_test,I,Ảnh mờ / tối / cháy sáng,main/fc4aef6d.jpg,205.422,56.7948,725.691,2.86075,high_1.5,,,
+fd7735d6,main_test,0,,main/fd7735d6.jpg,217.725,42.5169,337.814,2.52868,high_1.5,,,
+0d6a8e4c,pilot,I,,pilot_v2/0d6a8e4c.jpg,233.422,40.9563,315.336,2.49877,high_3,,,
+4920586c,pilot,0,,pilot_v2/4920586c.jpg,137.017,65.7083,1342.85,3.12803,,,high_1.5,
+609b86be,pilot,I,,pilot_v2/609b86be.jpg,236.264,32.8859,309.151,2.49017,high_3,,,
+61cb8d8d,pilot,I,,pilot_v2/61cb8d8d.jpg,88.7318,62.0272,1225.75,3.0884,,,high_1.5,
+d3172b5b,pilot,0,,pilot_v2/d3172b5b.jpg,204.182,54.0749,591.382,2.77187,high_1.5,,,
+0d1ddd29,extra_top_score,0,,train_extra_v1/0d1ddd29.jpg,148.84,76.2981,106.853,2.02879,,,,low_1.5
+0e107c0b,extra_top_score,I,Ảnh mờ / tối / cháy sáng,train_extra_v1/0e107c0b.jpg,210.596,63.7434,572.155,2.75751,high_1.5,,,
+0eec2a1f,extra_top_score,1,,train_extra_v1/0eec2a1f.jpg,71.328,58.1492,141.742,2.1515,,,,low_1.5
+149b1290,extra_top_score,1,,train_extra_v1/149b1290.jpg,76.0758,57.4534,138.053,2.14005,,,,low_1.5
+1b9227bb,extra_top_score,1,,train_extra_v1/1b9227bb.jpg,76.9729,55.3076,110.436,2.04311,,,,low_1.5
+26a0ecd2,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/26a0ecd2.jpg,112.793,54.6736,162.317,2.21036,,,,low_1.5
+2904ff2e,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/2904ff2e.jpg,33.0951,28.6146,91.2488,1.96023,,low_1.5,,low_1.5
+2a9dabb4,extra_top_score,0,,train_extra_v1/2a9dabb4.jpg,206.607,58.4224,374.053,2.57293,high_1.5,,,
+2b8d0e2a,extra_top_score,0,,train_extra_v1/2b8d0e2a.jpg,148.227,69.9219,1064.89,3.0273,,,high_1.5,
+2ff9e60c,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/2ff9e60c.jpg,80.9811,43.3987,146.133,2.16475,,,,low_1.5
+3947b321,extra_top_score,I,Bị che,train_extra_v1/3947b321.jpg,131.398,66.9077,1038.99,3.01661,,,high_1.5,
+3bd0bbad,extra_top_score,0,,train_extra_v1/3bd0bbad.jpg,41.8521,23.9688,100.161,2.0007,,low_1.5,,low_1.5
+3d048bd3,extra_top_score,0,,train_extra_v1/3d048bd3.jpg,115.06,57.031,1842.99,3.26552,,,high_3,high_1.5
+3fb600c3,extra_top_score,1,,train_extra_v1/3fb600c3.jpg,82.9958,59.7375,1242.7,3.09437,,,high_1.5,
+3ffbd207,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/3ffbd207.jpg,105.134,64.6701,1081.48,3.03402,,,high_1.5,
+4229428b,extra_top_score,1,,train_extra_v1/4229428b.jpg,60.2875,38.0555,164.942,2.21733,,,,low_1.5
+43588f15,extra_top_score,I,Ảnh mờ / tối / cháy sáng,train_extra_v1/43588f15.jpg,49.2283,35.2761,118.337,2.07312,,,,low_1.5
+45cf2455,extra_top_score,1,,train_extra_v1/45cf2455.jpg,80.1328,40.3828,92.9352,1.96818,,,,low_1.5
+49e2253b,extra_top_score,1,,train_extra_v1/49e2253b.jpg,124.257,74.3602,1044.36,3.01885,,,high_1.5,
+4aa1841e,extra_top_score,0,,train_extra_v1/4aa1841e.jpg,81.2538,46.1453,103.495,2.01492,,,,low_1.5
+4f860b69,extra_top_score,I,Ảnh mờ / tối / cháy sáng,train_extra_v1/4f860b69.jpg,100.163,72.4795,164.714,2.21673,,,,low_1.5
+57ff3a3d,extra_top_score,1,,train_extra_v1/57ff3a3d.jpg,66.5411,48.8759,111.619,2.04774,,,,low_1.5
+5a299959,extra_top_score,I,Ảnh mờ / tối / cháy sáng,train_extra_v1/5a299959.jpg,194.288,68.8847,709.96,2.85123,high_1.5,,,
+5aede7ee,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/5aede7ee.jpg,40.1729,28.7312,133.133,2.12429,,low_1.5,,low_1.5
+5dc974e1,extra_top_score,1,,train_extra_v1/5dc974e1.jpg,85.3794,87.7576,333.76,2.52343,,high_1.5,,
+5de921eb,extra_top_score,1,,train_extra_v1/5de921eb.jpg,58.8877,46.4444,96.3703,1.98394,,,,low_1.5
+60de96dc,extra_top_score,1,,train_extra_v1/60de96dc.jpg,27.8542,27.5393,149.835,2.17561,low_1.5,low_1.5,,low_1.5
+62648d4a,extra_top_score,I,Bị che,train_extra_v1/62648d4a.jpg,81.5633,57.4057,170.946,2.23286,,,,low_1.5
+63afa583,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/63afa583.jpg,177.303,58.1125,116.355,2.06579,high_1.5,,,low_1.5
+652ffed4,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/652ffed4.jpg,82.1405,53.495,171.074,2.23318,,,,low_1.5
+657e8103,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/657e8103.jpg,126.188,96.6426,226.593,2.35525,,high_1.5,,
+677e1f3e,extra_top_score,1,,train_extra_v1/677e1f3e.jpg,86.8957,62.8902,160.125,2.20446,,,,low_1.5
+6ffc2b12,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/6ffc2b12.jpg,174.738,58.3348,840.604,2.92459,high_1.5,,,
+74872d34,extra_top_score,I,Bị che,train_extra_v1/74872d34.jpg,90.8237,66.5702,1134.4,3.05477,,,high_1.5,
+7c6317e7,extra_top_score,1,,train_extra_v1/7c6317e7.jpg,85.5601,55.0751,1064.76,3.02725,,,high_1.5,
+7d04bf3c,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/7d04bf3c.jpg,44.0255,33.0359,152.875,2.18434,,,,low_1.5
+7effa22f,extra_top_score,1,,train_extra_v1/7effa22f.jpg,143.118,66.5014,1068.93,3.02895,,,high_1.5,
+848d00bf,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/848d00bf.jpg,92.903,49.2071,1055.08,3.02329,,,high_1.5,
+863f9aef,extra_top_score,I,Lý do khác,train_extra_v1/863f9aef.jpg,57.6126,49.2822,161.043,2.20694,,,,low_1.5
+884baa39,extra_top_score,1,,train_extra_v1/884baa39.jpg,88.2354,86.059,128.391,2.10853,,,,low_1.5
+885d8ae4,extra_top_score,0,,train_extra_v1/885d8ae4.jpg,74.1582,54.3676,135.867,2.13311,,,,low_1.5
+8abffecc,extra_top_score,0,,train_extra_v1/8abffecc.jpg,104.413,62.7743,1072.94,3.03058,,,high_1.5,
+8b65c661,extra_top_score,0,,train_extra_v1/8b65c661.jpg,194.297,73.9221,739.806,2.86912,high_1.5,,,
+8cd90109,extra_top_score,1,,train_extra_v1/8cd90109.jpg,58.2631,41.2944,170.202,2.23096,,,,low_1.5
+8e65fa74,extra_top_score,I,Lý do khác,train_extra_v1/8e65fa74.jpg,63.4957,45.1907,111.317,2.04656,,,,low_1.5
+96ea7964,extra_top_score,0,,train_extra_v1/96ea7964.jpg,83.3889,59.6442,149.504,2.17465,,,,low_1.5
+9e22fac0,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/9e22fac0.jpg,154.022,72.9436,1090.8,3.03775,,,high_1.5,
+9f731efd,extra_top_score,1,,train_extra_v1/9f731efd.jpg,119.451,90.2991,279.611,2.44655,,high_1.5,,
+a793d4d0,extra_top_score,0,,train_extra_v1/a793d4d0.jpg,170.289,65.3618,599.766,2.77798,high_1.5,,,
+bc05bfd9,extra_top_score,1,,train_extra_v1/bc05bfd9.jpg,73.7543,71.5697,138.746,2.14222,,,,low_1.5
+c3b75e52,extra_top_score,0,,train_extra_v1/c3b75e52.jpg,152.002,61.5158,1347.17,3.12942,,,high_1.5,
+c61fab26,extra_top_score,I,Ảnh mờ / tối / cháy sáng,train_extra_v1/c61fab26.jpg,32.4944,36.8055,102.131,2.00916,low_1.5,,,low_1.5
+c991ee96,extra_top_score,1,,train_extra_v1/c991ee96.jpg,113.225,67.6054,1068.82,3.0289,,,high_1.5,
+cb034a5f,extra_top_score,I,Bị che,train_extra_v1/cb034a5f.jpg,83.867,54.8107,96.7111,1.98548,,,,low_1.5
+cc42281f,extra_top_score,1,,train_extra_v1/cc42281f.jpg,125.261,72.5301,1100.55,3.04161,,,high_1.5,
+cca34d88,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/cca34d88.jpg,106.928,57.323,1242.25,3.09421,,,high_1.5,
+cd46e33c,extra_top_score,1,,train_extra_v1/cd46e33c.jpg,136.342,61.0964,1196.79,3.07802,,,high_1.5,
+d73837f9,extra_top_score,1,,train_extra_v1/d73837f9.jpg,204.101,57.0191,510.572,2.70806,high_1.5,,,
+d8681b39,extra_top_score,1,,train_extra_v1/d8681b39.jpg,57.1429,55.7991,118.571,2.07398,,,,low_1.5
+d8f32c23,extra_top_score,I,Lý do khác,train_extra_v1/d8f32c23.jpg,43.3033,31.4288,612.844,2.78735,,low_1.5,,
+ddaa524d,extra_top_score,I,Ảnh mờ / tối / cháy sáng,train_extra_v1/ddaa524d.jpg,76.9438,63.707,163.197,2.21271,,,,low_1.5
+dfc274ab,extra_top_score,0,,train_extra_v1/dfc274ab.jpg,61.3522,50.1963,156.96,2.19579,,,,low_1.5
+ef04139c,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/ef04139c.jpg,112.156,94.3828,334.611,2.52454,,high_1.5,,
+f33816f8,extra_top_score,1,,train_extra_v1/f33816f8.jpg,188.123,63.3914,669.499,2.82575,high_1.5,,,
+f9e45c4b,extra_top_score,0,,train_extra_v1/f9e45c4b.jpg,62.3305,44.3026,82.5362,1.91664,,,,low_1.5
+f9f29a80,extra_top_score,0,,train_extra_v1/f9f29a80.jpg,114.799,63.7432,155.164,2.19079,,,,low_1.5
+f9f68b8e,extra_top_score,I,Không thấy vỉa hè,train_extra_v1/f9f68b8e.jpg,97.8403,72.0473,146.452,2.1657,,,,low_1.5
+fae4e7e3,extra_top_score,1,,train_extra_v1/fae4e7e3.jpg,97.4003,69.8266,153.878,2.18718,,,,low_1.5
+0c84da36,extra_random,0,,train_extra_v1/0c84da36.jpg,169.901,53.9955,581.895,2.76484,high_1.5,,,
+0d045cab,extra_random,0,,train_extra_v1/0d045cab.jpg,46.3852,30.2271,241.074,2.38215,,low_1.5,,
+130aee66,extra_random,0,,train_extra_v1/130aee66.jpg,42.4181,29.8939,360.51,2.55692,,low_1.5,,
+18467017,extra_random,0,,train_extra_v1/18467017.jpg,125.432,48.5906,1073.19,3.03068,,,high_1.5,
+188a264e,extra_random,1,,train_extra_v1/188a264e.jpg,204.462,49.1481,339.8,2.53122,high_1.5,,,
+1d1500f7,extra_random,0,,train_extra_v1/1d1500f7.jpg,183.03,52.0836,405.487,2.60798,high_1.5,,,
+39463f26,extra_random,0,,train_extra_v1/39463f26.jpg,74.9775,48.9769,171.277,2.2337,,,,low_1.5
+3cac33b1,extra_random,I,Không thấy vỉa hè,train_extra_v1/3cac33b1.jpg,113.552,56.0139,1178.45,3.07131,,,high_1.5,
+3f7dc312,extra_random,I,Không thấy vỉa hè,train_extra_v1/3f7dc312.jpg,112.036,50.4872,39.7871,1.59974,,,,low_3
+518cdf9b,extra_random,0,,train_extra_v1/518cdf9b.jpg,105.986,59.4865,141.288,2.15011,,,,low_1.5
+52cd839d,extra_random,I,Không thấy vỉa hè,train_extra_v1/52cd839d.jpg,102.79,73.9457,1212.41,3.08365,,,high_1.5,
+573546a1,extra_random,0,,train_extra_v1/573546a1.jpg,93.3177,57.0289,1088.42,3.0368,,,high_1.5,
+5be97e51,extra_random,0,,train_extra_v1/5be97e51.jpg,95.6941,55.5621,134.392,2.12837,,,,low_1.5
+642c3335,extra_random,0,,train_extra_v1/642c3335.jpg,135.727,60.249,1305.53,3.11579,,,high_1.5,
+6bed0efc,extra_random,I,Không thấy vỉa hè,train_extra_v1/6bed0efc.jpg,85.9986,64.4031,167.683,2.22449,,,,low_1.5
+82373552,extra_random,0,,train_extra_v1/82373552.jpg,109.532,66.7324,1049.39,3.02094,,,high_1.5,
+86149fd3,extra_random,0,,train_extra_v1/86149fd3.jpg,194.619,70.0806,729.577,2.86307,high_1.5,,,
+87b7a3ff,extra_random,0,,train_extra_v1/87b7a3ff.jpg,164.731,63.8664,1221.03,3.08673,,,high_1.5,
+8c95ed2e,extra_random,I,Bị che,train_extra_v1/8c95ed2e.jpg,124.505,70.7116,1093.78,3.03893,,,high_1.5,
+8f2b7a38,extra_random,0,,train_extra_v1/8f2b7a38.jpg,83.0264,57.2375,106.446,2.02713,,,,low_1.5
+8fe313ce,extra_random,0,,train_extra_v1/8fe313ce.jpg,186.849,52.9517,614.526,2.78854,high_1.5,,,
+95878bd4,extra_random,0,,train_extra_v1/95878bd4.jpg,172.208,53.4365,560.296,2.74842,high_1.5,,,
+9b7e485d,extra_random,0,,train_extra_v1/9b7e485d.jpg,169.763,58.2199,648.481,2.8119,high_1.5,,,
+adc85106,extra_random,0,,train_extra_v1/adc85106.jpg,125.394,68.3147,1111.15,3.04577,,,high_1.5,
+aff96898,extra_random,0,,train_extra_v1/aff96898.jpg,122.411,56.0978,1149.87,3.06065,,,high_1.5,
+b617db66,extra_random,I,,train_extra_v1/b617db66.jpg,130.994,69.5827,1052.4,3.02218,,,high_1.5,
+d0251cf8,extra_random,I,Ảnh mờ / tối / cháy sáng,train_extra_v1/d0251cf8.jpg,193.723,68.6427,1044.05,3.01872,high_1.5,,high_1.5,
+d09d6706,extra_random,0,,train_extra_v1/d09d6706.jpg,131.809,92.849,504.038,2.70246,,high_1.5,,
+d3e3f8bd,extra_random,I,Không thấy vỉa hè,train_extra_v1/d3e3f8bd.jpg,204.813,50.1497,486.771,2.68732,high_1.5,,,
+d679148b,extra_random,I,Không thấy vỉa hè,train_extra_v1/d679148b.jpg,188.775,65.4555,731.923,2.86447,high_1.5,,,
+e3a70b40,extra_random,I,Không thấy vỉa hè,train_extra_v1/e3a70b40.jpg,220.333,46.4569,444.681,2.64805,high_3,,,
+ef015295,extra_random,I,Không thấy vỉa hè,train_extra_v1/ef015295.jpg,107.837,62.4307,1394.74,3.14449,,,high_1.5,
+f20ded86,extra_random,I,Ảnh mờ / tối / cháy sáng,train_extra_v1/f20ded86.jpg,28.668,32.8553,22.0267,1.34295,low_1.5,,,low_3
+f36a3a0d,extra_random,I,Không thấy vỉa hè,train_extra_v1/f36a3a0d.jpg,85.7234,53.0248,1060.02,3.02531,,,high_1.5,
