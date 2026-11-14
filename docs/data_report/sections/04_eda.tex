@@ -139,7 +139,7 @@ Pilot & 150 & 14/87 = 16,1\% [9,8; 25,2] & [10,0; 18,4] & 42,0\% & 5,2 \\
 
 \begin{itemize}
   \item \textbf{Dữ liệu tự nhiên mất cân bằng mạnh:} trong ảnh dùng được của bộ chính, cứ khoảng 8 ảnh \lab{Còn lối đi} mới có 1 ảnh \lab{Bị chặn} (10,8\%). Tính trên mọi ảnh kể cả \lab{I}, tỉ lệ \lab{Bị chặn} là 6,3\% $[5{,}5;\,7{,}2]$.
-  \item \textbf{Ba tập có tỉ lệ \lab{Bị chặn} tương đương nhau trong sai số} (10,1\% / 14,5\% / 10,2\%; các khoảng chồng lên nhau).
+  \item \textbf{Khoảng tin cậy của tỉ lệ \lab{Bị chặn} ở ba tập chồng lên nhau} (tỉ lệ lần lượt 10,1\% / 14,5\% / 10,2\%). Điều này chưa đủ để kết luận các tỉ lệ tương đương.
   \item \textbf{Test chỉ có 47 ảnh \lab{Bị chặn}, val 35 ảnh.} Khoảng bootstrap theo đường của test rộng gần gấp đôi khoảng Wilson ($[5{,}7;\,18{,}7]$ so với $[7{,}8;\,13{,}4]$): kết quả đánh giá model trên test sẽ có sai số lớn.
   \item \textbf{Ảnh \lab{I} chiếm 32--50\%} tùy tập. Đây là chi phí cố định của nguồn ảnh chụp từ xe.
   \item \textbf{Pilot và tầng \lab{top\_score} không tự nhiên:} tỉ lệ \lab{Bị chặn} của chúng (16,1\% và 52,2\%) là kết quả của cách lấy mẫu, không phải tỉ lệ ngoài đường.
@@ -187,7 +187,7 @@ Pilot & 150 & 14/87 = 16,1\% [9,8; 25,2] & [10,0; 18,4] & 42,0\% & 5,2 \\
 \label{fig:annotators}
 \end{figure}
 
-\textbf{Theo người gán.} Ở ảnh bơm, ảnh được chia ngẫu nhiên nên khác biệt giữa người gán là khác biệt về cách gán: tỉ lệ \lab{Bị chặn} từ 19\% (Loan) tới 43\% (Học). Ở bộ chính, mỗi người gán một phần ảnh khác nhau (hai người gán test, hai người gán val) nên tỉ lệ theo người lẫn với tập, không so sánh trực tiếp được.
+\textbf{Theo người gán.} Ở ảnh bơm, ảnh được chia ngẫu nhiên nên chênh lệch gợi ý khác biệt cách gán, nhưng cần gán cùng một mẫu ảnh để xác nhận: tỉ lệ \lab{Bị chặn} từ 19\% (Loan) tới 43\% (Học). Ở bộ chính, mỗi người gán một phần ảnh khác nhau (hai người gán test, hai người gán val) nên tỉ lệ theo người lẫn với tập, không so sánh trực tiếp được.
 \src{\f{tables/annotator_label_shares.csv}. Hình bên phải dùng nhãn v1 của từng người, trước kiểm tra chéo.}
 
 % ------------------------------------------------------------------------------
@@ -205,7 +205,7 @@ Pilot & 150 & 14/87 = 16,1\% [9,8; 25,2] & [10,0; 18,4] & 42,0\% & 5,2 \\
 
 \begin{itemize}
   \item \textbf{Tương quan.} Cặp duy nhất đáng kể là vĩ độ--kinh độ ($\rho = 0{,}42$ ở bộ chính, 0,43 ở ảnh bơm), do hình dạng khu vực và hướng của các tuyến đường. Mọi cặp còn lại có $|\rho| \le 0{,}14$ ở bộ chính và $\le 0{,}25$ ở ảnh bơm.
-  \item \textbf{Đa cộng tuyến.} Hệ số VIF lớn nhất là 1,27 (vĩ độ, bộ chính); các biến khác dưới 1,1. Không có đa cộng tuyến.
+  \item \textbf{Đa cộng tuyến.} Hệ số VIF lớn nhất là 1,27 (vĩ độ, bộ chính); các biến khác dưới 1,1. Không thấy dấu hiệu đa cộng tuyến đáng kể trong các biến được kiểm tra.
 \end{itemize}
 
 \begin{table}[H]

@@ -42,7 +42,7 @@ Ngày chụp không phải ngày giữ chỗ & Không đạt & 103 ảnh ghi 01/
   \item \textbf{Cách xử lý:} không loại ảnh ngoại lệ nào. Ảnh xấu tới mức không xét được đã được người gán đưa vào \lab{I}; phần còn lại là điều kiện chụp thật mà model phải chịu được.
 \end{itemize}
 
-\textbf{Kiểm tra bộ lọc đêm} (việc còn mở từ trước). Xem lại 58 ảnh $360^\circ$ bị loại của bộ chính và 58 ảnh giữ lại có độ sáng thấp nhất. Quan sát bằng mắt, không phải phép đo: khoảng 48/58 ảnh bị loại đúng là ảnh đêm; 9 ảnh trông là ban ngày dưới tán cây dày và 1 ảnh lúc chạng vạng (độ sáng 68--89). Trong 58 ảnh giữ lại không ảnh nào là ảnh đêm; khoảng 3 ảnh chụp lúc chạng vạng. Bộ lọc vì vậy không để lọt ảnh đêm, và loại nhầm khoảng 10 ảnh ban ngày trên 3.057 ảnh (0,3\%). Kho ảnh bơm (38 ảnh bị loại): \textbf{chưa xem}.
+\textbf{Kiểm tra bộ lọc đêm} (việc còn mở từ trước). Xem lại 58 ảnh $360^\circ$ bị loại của bộ chính và 58 ảnh giữ lại có độ sáng thấp nhất. Quan sát bằng mắt, không phải phép đo: khoảng 48/58 ảnh bị loại đúng là ảnh đêm; 9 ảnh trông là ban ngày dưới tán cây dày và 1 ảnh lúc chạng vạng (độ sáng 68--89). Trong 58 ảnh giữ lại không ảnh nào là ảnh đêm; khoảng 3 ảnh chụp lúc chạng vạng. Trong 58 ảnh giữ lại được kiểm tra chưa thấy ảnh đêm; chưa thể khẳng định cho toàn bộ ảnh giữ lại. Trong số ảnh bị loại có khoảng 9 ảnh ban ngày và 1 ảnh chạng vạng, tương ứng khoảng 0,3\% của 3.057 ảnh đầu vào. Kho ảnh bơm (38 ảnh bị loại): \textbf{chưa xem}.
 \src{\f{tables/image_night_check.csv}; tấm ảnh \f{figures/img_sheet_night_*.jpg} (không đưa lên git).}
 
 \subsubsection*{Trùng lặp và gần trùng}
@@ -137,7 +137,9 @@ Train bộ chính -- val + test & 0,47 & Không phân biệt được \\
 \end{table}
 
 \begin{itemize}
-  \item \textbf{Train của bộ chính và val/test cùng phân phối ảnh} (AUC gần 0,5): cách chia theo đường không tạo ra lệch miền nhìn thấy được. Với chỉ 17 đường, phép đo này không đủ nhạy để bắt lệch nhỏ.
+  \item \textbf{Chưa phát hiện khác biệt miền ảnh bằng bộ phân loại đã dùng} (AUC gần 0,5): kết quả chưa chứng minh hai phân phối giống nhau. Với chỉ 17 đường, phép đo này không đủ nhạy để bắt lệch nhỏ.
   \item \textbf{Ảnh bơm là một miền khác}, kể cả tầng ngẫu nhiên (0,70): chúng đến từ đường nhỏ gần chợ, còn val/test là đường lớn. Tầng \lab{top\_score} còn đồng nhất hơn các nhóm khác (cosine trung bình trong nhóm 0,60 so với 0,49--0,51). Đây là cái giá của việc bơm: thêm 577 ảnh dương nhưng từ một kiểu cảnh hẹp hơn val/test.
   \item Trên hình~\ref{fig:tsne}, ảnh \lab{Bị chặn} và tầng \lab{top\_score} dồn về cùng một vùng, ảnh \lab{I} dồn về một vùng khác. t-SNE chỉ để minh họa, không dùng để kết luận.
 \end{itemize}
+
+\textbf{Trước khi khóa tập:} chốt phương án khoảng cách địa lý, lưu manifest phiên bản cố định và chạy lại thống kê. Không đổi đường test dựa trên số nhãn dương đã xem.

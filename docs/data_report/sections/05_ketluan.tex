@@ -22,9 +22,9 @@ Người gán có nhất quán không? & Cohen $\kappa$ 3 nhãn: test 0,60; val 
 Bộ chọn ảnh có hiệu quả trên đường mới không? & \lab{Bị chặn} trên mọi ảnh: tầng điểm cao 37,9\% [35,4; 40,5], tầng ngẫu nhiên 7,7\% [5,8; 10,1] & 1.400 và 600 ảnh \\
 Có ảnh trùng không? & Không có ảnh trùng tuyệt đối; không có cặp nào dHash $\le 4$ & 5.149 ảnh, mọi cặp \\
 Có rò rỉ giữa các tập không? & Không chung đường, vị trí hay ảnh gốc. 52/1.160 ảnh val/test (4,5\%) cách ảnh train dưới 40 m tại giao lộ & Mọi ảnh, theo tọa độ \\
-Chất lượng ảnh có khác giữa các tập không? & Không đáng kể giữa train, val, test của bộ chính. Ảnh \lab{Bị chặn} tối hơn ảnh \lab{Còn lối đi}: AUC 0,37 [0,32; 0,41] & 2.999 ảnh, 17 đường \\
+Chất lượng ảnh có khác giữa các tập không? & Các chỉ số mô tả nhìn chung gần nhau giữa train, val, test bộ chính. Ảnh \lab{Bị chặn} tối hơn ảnh \lab{Còn lối đi}: AUC 0,37 [0,32; 0,41] & 2.999 ảnh, 17 đường \\
 Ảnh bơm có giống bộ chính không? & Không: bộ phân loại miền đạt AUC 0,95 (tầng điểm cao) và 0,70 (tầng ngẫu nhiên) & 1.839 so với 1.400 và 600 ảnh \\
-Metadata có liên hệ với nhãn không? & Chỉ tuyến đường (Cramér's V 0,18) và loại đường; độ sáng, tọa độ, người chụp, năm chụp thì không & 1.746 ảnh dùng được \\
+Metadata có liên hệ với nhãn không? & Tuyến đường (Cramér's V 0,18); loại đường có V = 0,00 ở bộ chính, liên hệ ở ảnh bơm được trình bày riêng; chưa thấy liên hệ rõ với độ sáng, tọa độ, người chụp và năm chụp & 1.746 ảnh dùng được \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -41,7 +41,7 @@ Metadata có liên hệ với nhãn không? & Chỉ tuyến đường (Cramér's
 \midrule
 Ảnh nhóm tự chụp (ít nhất 100 ảnh theo đề cương) & Chưa có. Toàn bộ dữ liệu là ảnh Mapillary \\
 Rà soát nội dung nhạy cảm trong ảnh & Chưa làm. Chỉ dựa vào phần làm mờ sẵn của Mapillary; trên các tấm ảnh kiểm tra vẫn thấy một số người và biển số còn rõ \\
-Khóa danh sách chia tập & Chưa khóa. Chờ quyết định về đường test (47 ảnh dương) và về 47 ảnh train gần giao lộ với val/test \\
+Khóa danh sách chia tập & Chưa khóa. Giữ đường test đã định; 47 ảnh dương là hạn chế đánh giá. Chờ quyết định về 47 ảnh train gần giao lộ với val/test \\
 Mức nhiễu nhãn của ảnh bơm & Chưa đo được. Mỗi ảnh một người gán; 203 ảnh kiểm tra chéo được chọn vì bị nghi ngờ nên không đại diện. Người gán chênh nhau rõ (19\% tới 43\% \lab{Bị chặn}) \\
 Khoảng tin cậy của $\kappa$ & Chưa đo \\
 1.563 ảnh train của bộ chính chỉ một người gán & Chưa rà lại; phần gán chéo 15\% có $\kappa$ 0,61 \\
@@ -60,7 +60,7 @@ Chuẩn hóa điểm ảnh, tăng cường dữ liệu & Thuộc bước train, 
 \subsection{Hệ quả cho bước xây dựng model}
 
 \begin{itemize}
-  \item \textbf{Đánh giá.} Dùng chỉ số chịu được mất cân bằng (PR-AUC, F1 của lớp \lab{Bị chặn}), và báo cáo khoảng tin cậy lấy lại mẫu theo đường. Với 47 ảnh dương ở test, khác biệt nhỏ giữa các model sẽ không phân biệt được.
+  \item \textbf{Đánh giá.} Dùng chỉ số chịu được mất cân bằng (PR-AUC, F1 của lớp \lab{Bị chặn}), và báo cáo khoảng tin cậy lấy lại mẫu theo đường. Với 47 ảnh dương ở test, khả năng phân biệt các chênh lệch nhỏ giữa model bị hạn chế.
   \item \textbf{Train.} Phân phối nhãn và kiểu cảnh của train (sau khi bơm) khác val/test. Nên chạy thêm một lượt chỉ với phần tự nhiên, và cân nhắc trọng số lớp hoặc lấy mẫu lại.
   \item \textbf{Học tắt.} Kiểm tra xem model có dựa vào độ tối của ảnh hay không.
   \item \textbf{Rò rỉ.} Quyết định xử lý các ảnh train gần giao lộ với val/test trước khi khóa chia tập.

@@ -22,6 +22,7 @@ data/labels/raw/
 
 # Run logs and build output
 logs/
+/tmp/
 docs/proposal/latex/build/
 docs/data_report/build/
 # Internal check sheets hold val/test crops; only the train-only example grids are tracked

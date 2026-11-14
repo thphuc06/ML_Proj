@@ -17,3 +17,5 @@ scikit-learn==1.9.1
 sentencepiece==0.2.3
 protobuf==7.36.2
 matplotlib==3.11.2
+
+PyYAML>=6.0,<7

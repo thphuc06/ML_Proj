@@ -58,7 +58,7 @@ Khu vực nghiên cứu là trung tâm TP.HCM (Quận 1, 3, 5, 10, Phú Nhuận,
 \end{itemize}
 \src{\f{src/analysis/08_side_analysis.py}, \f{src/analysis/09_crop_param_study.py}, \f{src/common.py} (\lab{right\_crop}); \f{docs/collection_log.md} mục 23/10/2026.}
 
-\textbf{Chia tập theo tuyến đường.} Mỗi đường nằm trọn trong một tập, nên model được đánh giá trên đường chưa từng thấy. Bốn đường test nằm ở bốn khu vực khác nhau. Danh sách đường và tập được chốt ngày 23/10/2026, trước khi có nhãn nào của bộ chính; trạng thái hiện tại là \emph{đã chia, chưa khóa}, vì test chỉ có 47 ảnh \lab{Bị chặn} và nhóm chưa quyết định có thêm đường test hay không.
+\textbf{Chia tập theo tuyến đường.} Mỗi đường nằm trọn trong một tập, nên model được đánh giá trên đường chưa từng thấy. Bốn đường test nằm ở bốn khu vực khác nhau. Danh sách đường và tập được xác định ngày 23/10/2026, trước khi có nhãn nào của bộ chính; trạng thái hiện tại là \emph{đã chia, chưa khóa}, do còn chờ quyết định xử lý các ảnh train gần giao lộ với val/test. Giữ các đường test đã định; 47 ảnh \lab{Bị chặn} là hạn chế của độ chính xác đánh giá, không phải tiêu chí đổi tập theo nhãn đã quan sát.
 
 \subsection{Gán nhãn}
 \label{sec:labeling}
@@ -104,7 +104,7 @@ Sau đợt gán đầu, train chỉ có 120 ảnh \lab{Bị chặn} (gồm 14 �
   \item \textbf{Gán nhãn.} Như bộ chính, mỗi ảnh một người; người gán không biết tầng của ảnh.
 \end{enumerate}
 
-Điểm của model \emph{chỉ dùng để chọn ảnh cho người gán, không bao giờ là nhãn}. Vì ảnh bơm được chọn có chủ đích nên phân phối của chúng lệch khỏi tự nhiên~\cite{farquhar2021bias}; tầng ngẫu nhiên 30\% được giữ để đo lại hiệu quả của bộ chọn ảnh trên đường mới, và mọi thống kê trong báo cáo này tách \lab{train\_extra} khỏi bộ chính.
+Điểm của model \emph{chỉ dùng để chọn ảnh cho người gán, không bao giờ là nhãn}. Vì ảnh bơm được chọn có chủ đích nên phân phối của chúng lệch khỏi tự nhiên~\cite{farquhar2021bias}; tầng ngẫu nhiên 30\% được lấy từ phần còn lại sau khi chọn ảnh điểm cao, không phải mẫu ngẫu nhiên vô điều kiện của toàn kho; tầng này được giữ để so sánh hiệu suất thu được nhãn dương trên đường mới, và mọi thống kê trong báo cáo này tách \lab{train\_extra} khỏi bộ chính.
 \src{\f{docs/data_enrichment.md} mục 7--9; \f{src/analysis/21_selector_benchmark.py}, \f{src/analysis/24_street_scan.py}, \f{src/collection/23_collect_train_extra.py}; \f{data/streets/selector_benchmark.csv}.}
 
 \subsection{Công cụ và định dạng lưu trữ}

@@ -49,7 +49,10 @@ python src/eda/28_eda_tabular.py
 python src/eda/29_eda_images.py
 python src/eda/30_eda_duplicates.py
 cd docs/data_report && sh make.sh           # ra data_report.pdf
+sh make.sh en                             # ra data_report_en.pdf
 \end{verbatim}
+
+\textbf{Phạm vi kiểm tra bản sửa.} Lần rà soát biên tập đã đếm lại nhãn và số phép kiểm tra từ CSV, kiểm tra bản PDF biên dịch và bổ sung hướng dẫn tái lập. Chưa chạy lại EDA điểm ảnh hay embedding do máy chưa có kho ảnh. Trước khi tái lập, cài \f{requirements.txt} (có PyYAML), ghi phiên bản Python và danh sách thư viện của môi trường thực sự chạy; ưu tiên bản ảnh trên server hoặc ghi rõ nguồn ảnh dựng lại. Mã \lab{adjudicated\_phuc} là mã nguồn cũ, không xác định người thực hiện; Khải phân xử bộ chính theo xác nhận của nhóm.
 
 \textbf{Việc ai làm.} Ba script EDA do ba tác tử AI (Claude Sonnet) viết theo đề bài của tác tử điều phối (Claude); tác tử điều phối đã tính lại độc lập các số chính (đếm nhãn, khoảng Wilson, thống kê metadata, phép đo ảnh trên 300 ảnh mẫu, mã băm md5, khoảng cách giữa các tập, độ tương đồng embedding) và xem các tấm ảnh kiểm tra trước khi đưa vào báo cáo. Các câu ``quan sát bằng mắt'' là quan sát của AI trên tấm ảnh ghép, không phải nhãn và không phải phép đo. Nhãn của bộ dữ liệu do người gán.
 

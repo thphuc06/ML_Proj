@@ -1,0 +1,46 @@
+% English edition. Compile from docs/data_report with XeLaTeX and BibTeX.
+\documentclass[12pt,a4paper]{article}
+\makeatletter
+\def\input@path{{../proposal/latex/}}
+\makeatother
+\usepackage{fit_hcmus}
+\usepackage{longtable}
+\graphicspath{{../proposal/latex/}{figures_en/}{figures/}}
+\setlength{\emergencystretch}{3em}
+\newcommand{\src}[1]{{\par\noindent\footnotesize\color{fitgray}\textit{Source:} #1\par}}
+\newcommand{\f}[1]{\path{#1}}
+\newcommand{\lab}[1]{\textsf{#1}}
+\newcommand{\cc}{© Mapillary contributors, CC BY-SA 4.0}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcommand{\plot}[3]{\begin{figure}[htbp]\centering\includegraphics[width=#2\textwidth]{#1}\caption{#3}\end{figure}}
+\courseid{CSC14005}
+\coursename{Introduction to Machine Learning}
+\reportsubtitle{DATA REPORT}
+\title{CLASSIFYING SIDEWALK OBSTRUCTION IN HO CHI MINH CITY FROM STREET IMAGES}
+\instructor{Dr. Bùi Tiến Lên}
+\classid{24KHMT02}
+\academicyear{Semester I, academic year 2026--2027}
+\groupid{11}
+\author{Lê Nguyễn Quốc Học -- 24127044\\Bùi Thị Bích Loan -- 24127072\\Nguyễn Hữu Gia Minh -- 24127078\\Nguyễn Lê Hoàng Khải -- 24127408\\Trần Hoàng Phúc -- 24127505}
+\makeatletter
+\fancypagestyle{fancy}{\fancyhf{}\fancyhead[L]{\small\bfseries CSC14005: Introduction to Machine Learning}\fancyhead[R]{\small\bfseries FIT, HCMUS}\fancyfoot[L]{\small\itshape Data report -- Group 11}\fancyfoot[R]{\small Page \thepage/\pageref{LastPage}}\renewcommand{\headrulewidth}{0.6pt}\renewcommand{\footrulewidth}{0.5pt}}
+\renewcommand{\makecoverpage}{\begin{titlepage}\centering
+{\Large\bfseries VIETNAM NATIONAL UNIVERSITY, HO CHI MINH CITY\par}\vspace{8pt}
+{\Large\bfseries UNIVERSITY OF SCIENCE\par}\vspace{6pt}
+{\large FACULTY OF INFORMATION TECHNOLOGY\par}\vspace{20pt}
+\includegraphics[width=3.5cm]{images/logo_hcmus.png}\par\vspace{20pt}
+{\large\@coursename\ (\@courseid)\par}\vspace{12pt}
+{\Large\bfseries\@reportsubtitle\par}\vspace{14pt}
+{\LARGE\bfseries\color{fitprimary}\@title\par}\vspace{22pt}
+Instructor: \@instructor\par Class: \@classid\par\@academicyear\par Group \@groupid\par\vspace{16pt}
+{\normalsize\@author\par}\vfill\end{titlepage}}
+\makeatother
+\begin{document}
+\makecoverpage
+\pagenumbering{roman}
+\tableofcontents
+\newpage\listoftables\newpage\listoffigures
+\clearpage\pagenumbering{arabic}\pagestyle{fancy}\small
+\input{sections_en/report}
+\clearpage\bibliographystyle{unsrt}\bibliography{references}
+\end{document}
