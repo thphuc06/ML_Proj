@@ -4,108 +4,109 @@ A sidewalk can exist but fail to provide a usable walking route when parked vehi
 
 The input is one $640\times640$ image of one side of a sidewalk. Label \lab{0 -- Passable} means a pedestrian can continue along the near sidewalk; \lab{1 -- Blocked} means the pedestrian must step into the roadway. Images with insufficient evidence (the near sidewalk is invisible or occluded, or the image is unusable) receive \lab{I -- Insufficient information} and are excluded from model training and evaluation. They remain in the descriptive statistics because they determine the usable yield of the source.
 
-The research question is which model performs best on \emph{streets absent from training}. Splits therefore contain entire streets, and leakage checks are central to the report. Annotators answer: must a pedestrian step into the roadway to continue along the near sidewalk?
+The research question is which model performs best on \emph{streets absent from training}. Splits therefore contain entire streets, and leakage checks are central to the report. Annotators answer one question per image: must a pedestrian step into the roadway to continue along the near sidewalk?
+
+\textbf{Terminology.} \emph{Usable} images are those labelled 0 or 1; \emph{positives} are images labelled Blocked. The \emph{main component} is the naturally sampled set; the \emph{enrichment set} contains the additional training images selected for the rare class. Team members are referred to by given name: Học (Lê Nguyễn Quốc Học), Loan (Bùi Thị Bích Loan), Minh (Nguyễn Hữu Gia Minh), Khải (Nguyễn Lê Hoàng Khải) and Phúc (Trần Hoàng Phúc).
 
 \subsection{Dataset overview}
-The three collection components have different sampling designs and are reported separately. Only the main component follows the natural distribution of images along the selected streets.
-\begin{table}[H]\centering\caption{Dataset components and final labels (images)}
+The three collection components (Table~\ref{en:overview}) have different sampling designs and are reported separately. Only the main component follows the natural distribution of images along the selected streets.
+\begin{table}[H]\centering\caption{Dataset components and final labels (images)}\label{en:overview}
 \begin{tabularx}{\textwidth}{L r r r r}\toprule
 Component & Images & 0 & 1 & I \\\midrule
 Main, train (10 streets) & 1,839 & 939 & 106 & 794 \\
 Main, validation (3 streets) & 486 & 207 & 35 & 244 \\
 Main, test (4 streets) & 674 & 412 & 47 & 215 \\
 Pilot, train (3 streets) & 150 & 73 & 14 & 63 \\
-Additional train images (75 streets) & 2,000 & 819 & 577 & 604 \\\midrule
+Enrichment set, train (75 streets) & 2,000 & 819 & 577 & 604 \\\midrule
 Total & 5,149 & 2,450 & 779 & 1,920 \\\bottomrule
 \end{tabularx}\end{table}
-\src{\f{data/labels/main_labels_v1.csv}; \f{data/labels/train_extra_labels_v2.csv}.}
-Validation and test contain only main images. Pilot images were sampled by score strata of a trial model; additional images were sampled 70\% by selector score and 30\% randomly from the remainder. Both components enter training only. Validation/test labels are used descriptively, not to tune thresholds or select samples. In the main component, 188/1,746 usable images (10.8\%) are blocked; roughly 40\% of all images lack sufficient information.
+Validation and test contain only main images. Pilot images were sampled by score strata of a trial model; enrichment images were sampled 70\% by selector score and 30\% randomly from the remainder. Both components enter training only. Validation/test labels are used descriptively, not to tune thresholds or select samples. In the main component, 188/1,746 usable images (10.8\%) are blocked; roughly 40\% of all images lack sufficient information.
 
 \section{Data sources and collection methods}
 \subsection{Sources}
-The team constructed its own dataset from source imagery rather than adopting an existing labelled dataset. Vietnamese Sidewalk Violation VQA~\cite{dao2026viahevqa} is related, but lacks the coordinates and capture times needed for street-based splitting; none of its images or labels were used. Panoramas and metadata came from the Mapillary Graph API~\cite{mapillary2024intro}. Streets and contextual points (markets and schools) came from OpenStreetMap~\cite{osm2026} through Overpass API. There was no web scraping, questionnaire or survey. Five members annotated images in Label Studio~\cite{labelstudio2020}.
+The team constructed its own dataset from source imagery rather than adopting an existing labelled dataset. Vietnamese Sidewalk Violation VQA~\cite{dao2026viahevqa} is related, but lacks the coordinates and capture times needed for street-based splitting; none of its images or labels were used. Panoramas and metadata came from the Mapillary Graph API~\cite{mapillary2024intro}. Streets and contextual points (markets and schools) came from OpenStreetMap (OSM)~\cite{osm2026} through the Overpass API. There was no web scraping, questionnaire or survey. Five team members annotated the images in Label Studio~\cite{labelstudio2020}.
 
 Mapillary images are licensed CC BY-SA 4.0: \cc. Existing face and licence-plate blurring was retained. Images are not committed to Git. The team has not yet collected its own photographs, although the proposal planned at least 100.
 
-The study covers central Ho Chi Minh City (the former Districts 1, 3, 5, 10, Phú Nhuận and Bình Thạnh), within $10.745$--$10.815^\circ$ N and $106.650$--$106.725^\circ$ E. The scan on 22 October 2026 found 652,159 panoramas in 1,234 sequences, mainly from \lab{bemaps3\_sg}, \lab{phoenix\_mapping\_front} and \lab{phoenixmap\_front}, timestamped 2016, 2023 and 2024. The 2016 timestamps are questionable, as discussed below.
+The study covers central Ho Chi Minh City (the former Districts 1, 3, 5, 10, Phú Nhuận and Bình Thạnh), within $10.745$--$10.815^\circ$ N and $106.650$--$106.725^\circ$ E. The scan on 22 October 2026 found 652,159 panoramas in 1,234 sequences, mainly from the Mapillary accounts \lab{bemaps3\_sg}, \lab{phoenix\_mapping\_front} and \lab{phoenixmap\_front}, timestamped 2016, 2023 and 2024. The 2016 timestamps are questionable, as discussed below.
 
 \subsection{Collection pipeline}
+Each step below was carried out by a dedicated team script and recorded in the collection log.
 \begin{enumerate}
-\item Retrieve named OSM streets and contextual points: 7,283 street segments and 6,715 points (\f{01_osm_streets.py}).
-\item Scan panorama metadata in $0.001^\circ$ grid cells: 652,159 images; two small corner cells failed (\f{02_fetch_mapillary_meta.py}).
-\item Assign images to streets within 20 m and within $30^\circ$ of the street axis, excluding alleys: 81.3\% can be assigned (\f{03_rank_streets.py}).
-\item Preview 56 streets at 20 positions each; exclude seven canal, bridge or tunnel streets and select 17 (\f{04_street_preview.py}).
-\item Assign entire streets to splits before annotation: 10 train, three validation and four test (\f{configs/streets_v1.yaml}).
-\item Annotate 150 pilot images from three train streets with all five annotators. Fleiss' $\kappa$~\cite{fleiss1971kappa} was 0.57 under guide v0; the guide was rewritten as v1 (\f{10_make_pilot_v2.py}).
-\item Collect main images at positions 25 m apart, at most two images per position on different days, capped at 420 per street, excluding pilot positions. Of 3,057 selected panoramas, reject 58 night images and retain 2,999 (\f{11_collect_main.py}). Subsequent geographic checks identify some nearby pilot/main positions despite this design rule.
+\item Retrieve named OSM streets and contextual points: 7,283 street segments and 6,715 points.
+\item Scan panorama metadata in $0.001^\circ$ grid cells: 652,159 images; two small corner cells failed.
+\item Assign images to streets within 20 m and within $30^\circ$ of the street axis, excluding alleys: 81.3\% can be assigned.
+\item Preview 56 streets at 20 positions each; exclude seven canal, bridge or tunnel streets and select 17.
+\item Assign entire streets to splits before annotation: 10 train, three validation and four test.
+\item Annotate 150 pilot images from three train streets with all five annotators. Fleiss' $\kappa$~\cite{fleiss1971kappa} was 0.57 under guide v0; the guide was rewritten as v1.
+\item Collect main images at positions 25 m apart, at most two images per position on different days, capped at 420 per street, excluding pilot positions. Of 3,057 selected panoramas, reject 58 night images and retain 2,999. Subsequent geographic checks identify some nearby pilot/main positions despite this design rule.
 \item Annotate, measure agreement and adjudicate; obtain final labels for 3,149 main and pilot images.
 \item Add 2,000 train images from 75 new streets, yielding 577 additional blocked images.
 \end{enumerate}
-\src{\f{docs/collection_log.md}; scripts in \f{src/collection/} and \f{src/labeling/}.}
 
-\textbf{Projection and cropping.} Each panorama yields exactly one perspective crop looking to the vehicle's right, $60^\circ$ from travel direction, pitched down $4^\circ$, with $90^\circ$ field of view, $640\times640$ resolution and JPEG quality 90. Exploratory measurements, not labels, motivated these choices. On 1,166 panoramas, a strict automatic measure found the near sidewalk in 38\% of right views and 7\% of left views. Left views mostly showed the road, median or opposite sidewalk; consequently, the left sidewalk on one-way streets is underobserved. The $60^\circ/4^\circ$ setting gave the highest near-sidewalk visibility among six combinations (yaw 60/75/90 degrees and downward pitch 4/10 degrees).
-\src{\f{src/analysis/08_side_analysis.py}; \f{src/analysis/09_crop_param_study.py}; \f{src/common.py}.}
+\textbf{Projection and cropping.} Each panorama yields exactly one perspective crop looking to the vehicle's right, $60^\circ$ from travel direction, pitched down $4^\circ$, with $90^\circ$ field of view, $640\times640$ resolution and JPEG quality 90. Exploratory measurements on 23 October 2026, not labels, motivated these choices. On 1,166 panoramas, a strict automatic measure found the near sidewalk in 38\% of right views and 7\% of left views. Left views mostly showed the road, median or opposite sidewalk; consequently, the left sidewalk on one-way streets is underobserved. The $60^\circ/4^\circ$ setting gave the highest near-sidewalk visibility among six combinations (yaw 60/75/90 degrees and downward pitch 4/10 degrees).
 
-\textbf{Street splits.} Four test streets occupy different areas. Street assignments were determined on 23 October 2026, before main annotation. They are assigned but not yet frozen because train images near validation/test intersections require a decision. Keep the predetermined test streets: the 47 test positives limit evaluation precision and are not a criterion for changing the test set after inspecting its labels.
+\textbf{Street splits.} Four test streets occupy different areas. Street assignments were determined on 23 October 2026, before main annotation. The splits are assigned but not yet frozen, because a decision is still required on train images near validation/test intersections. The predetermined test streets are retained: the 47 test positives limit evaluation precision but are not a criterion for changing the test set after inspecting its labels.
 
 \subsection{Annotation}
-Humans used guide v1 (\f{labeling/guide/annotation_guide_v1_draft.md}, whose wording had been agreed). The decision sequence is:
+Annotators followed guideline v1, whose wording the team had agreed. The decision sequence is:
 \begin{enumerate}
 \item Is the image usable? Blur, darkness or overexposure that prevents judgement leads to I.
 \item Is the near sidewalk visible? A segment of its edge must fall below the line at three-fifths of image height. Road-only scenes, distant sidewalks, intersections, alley entrances or major occlusion lead to I.
 \item Is a continuous path available? If not, choose 1. Moving people and vehicles are not obstacles; only obstacles up to approximately the image midpoint count.
 \end{enumerate}
-Annotators could give one of four reasons for I, six optional obstacle tags, a difficult/uncertain flag and free-text notes. The interface is \f{labeling/label_studio/ls_label_config_v1.xml}.
-\begin{table}[H]\centering\caption{Annotation assignments}
+Annotators could give one of four reasons for I, six optional obstacle tags, a difficult/uncertain flag and free-text notes. The Label Studio interface was configured to follow these three questions.
+Table~\ref{en:assign} shows who annotated which component.
+\begin{table}[H]\centering\caption{Annotation assignments}\label{en:assign}
 \begin{tabularx}{\textwidth}{l r L}\toprule
 Component & Images & Assignment \\\midrule
 Test & 674 & Học and Loan independently annotate every image \\
 Validation & 486 & Minh and Khải independently annotate every image \\
 Main train & 1,839 & One annotator per image; 276 (15\%) independently cross-labelled \\
 Pilot & 150 & Five annotators under v0; all images subsequently reviewed under v1 \\
-Additional train & 2,000 & 400 randomly allocated images per annotator; 203 cross-checked \\\bottomrule
+Enrichment set & 2,000 & 400 randomly allocated images per annotator; 203 cross-checked \\\bottomrule
 \end{tabularx}\end{table}
 Annotators did not see street names, splits, model scores or others' responses. Splits were mixed in each project. The main component has all $5\times887=4,435$ expected annotation records.
-\src{\f{docs/labeling_phase1.md}; assignment CSVs in \f{data/manifest/}.}
 
 \subsection{Enriching training with blocked examples}
 After initial annotation, training had only 120 blocked images, including 14 pilot images. Enrichment targeted the rare class~\cite{attenberg2010search} and entered training only.
 \begin{enumerate}
 \item \textbf{Selector:} logistic regression on DINOv2 ViT-B/14 embeddings~\cite{oquab2023dinov2}, trained on 1,989 train labels (120 positives). Selection used leave-one-street-out comparisons on train labels only. The top 20\% contained 22.0\% blocked images, versus 13.9\% for the previous scorer (difference +8.2 percentage points, 95\% CI [4.3, 11.7]) and 5.8\% under random sampling.
 \item \textbf{Streets:} scan 150 unused streets, 30 images each; rank mean selector scores and take the top 75. Reject names matching validation/test streets, including other segments with the same name.
-\item \textbf{Images:} from 5,035 eligible candidates, select 1,400 highest-scoring images (\lab{top\_score}, score at least 0.61) and 600 random images from the remainder (\lab{random}). Exclude position centres within 40 m of validation/test; individual-image distances are checked separately below.
-\item \textbf{Labels:} one human per image, unaware of its sampling stratum.
+\item \textbf{Images:} from 5,035 eligible candidates, select the 1,400 highest-scoring images (\emph{top-score stratum}, score at least 0.61) and 600 random images from the remainder (\emph{random stratum}). Exclude position centres within 40 m of validation/test; individual-image distances are checked separately below.
+\item \textbf{Labels:} one human per image, as in main train, unaware of its sampling stratum.
 \end{enumerate}
-Scores only select images for humans; they never serve as labels. Targeted selection induces sampling bias~\cite{farquhar2021bias}. The 30\% random remainder stratum measures selector yield on new streets, but is not an unconditional random sample of the full candidate pool. Results always separate enrichment from the main component.
-\src{\f{docs/data_enrichment.md}, sections 7--9; scripts 21, 23 and 24; \f{data/streets/selector_benchmark.csv}.}
+Selector scores were used only to choose images for annotation; they never serve as labels. Targeted selection induces sampling bias~\cite{farquhar2021bias}. The 30\% random stratum measures selector yield on new streets, but is drawn from the remainder after top-score selection and is not an unconditional random sample of the full candidate pool. All results report the enrichment set separately from the main component.
 
 \subsection{Tools and storage formats}
-Overpass API and \lab{shapely} produce OSM JSON; Mapillary, \lab{requests} and \lab{pandas} produce metadata Parquet and 2,048-pixel panorama JPEGs. \lab{py360convert} and Pillow produce crop JPEGs. Manifests are UTF-8 CSV, one row per image. Label Studio runs on AWS with Docker/Caddy; raw exports are JSON and final labels are CSV. Agreement and descriptive statistics use pandas, SciPy and scikit-learn. Torch/Transformers provide DINOv2, CLIP~\cite{radford2021clip} and SegFormer~\cite{xie2021segformer} for exploratory selection measurements; embeddings are NPZ. Street configurations are YAML. EDA outputs are CSV, JSON, PDF and JPEG, generated with pandas, SciPy and Matplotlib.
+Overpass API and shapely produce OSM JSON; Mapillary, requests and pandas produce metadata Parquet and 2,048-pixel panorama JPEGs. py360convert and Pillow produce crop JPEGs. Manifests are UTF-8 CSV, one row per image. Label Studio runs on AWS with Docker/Caddy; raw exports are JSON and final labels are CSV. Agreement and descriptive statistics use pandas, SciPy and scikit-learn. PyTorch/Transformers provide DINOv2, CLIP~\cite{radford2021clip} and SegFormer~\cite{xie2021segformer} for exploratory selection measurements; embeddings are NPZ. Street configurations are YAML. EDA outputs are CSV, JSON, PDF and JPEG, generated with pandas, SciPy and Matplotlib. Where each kind of data is stored is described in Section~\ref{en:storagesec}.
 
+\needspace{0.5\textheight}
 \section{Cleaning and preprocessing}
-Filtering uses rules rather than a model; source data are not overwritten.
-\begin{table}[H]\centering\caption{Cleaning and preprocessing operations}
+Filtering uses rules rather than a model; source data are not overwritten. Table~\ref{en:cleaning} lists each operation and its result.
+\begin{table}[H]\centering\caption{Cleaning and preprocessing operations}\label{en:cleaning}
 \begin{tabularx}{\textwidth}{p{0.23\linewidth} L}\toprule
 Operation & Method and result \\\midrule
 Night images & Filter upper-half panorama brightness around threshold 90 (0--255). Capture hour is unreliable. Reject 58/3,057 main images and 38/5,074 enrichment candidates; one rejected brightness is recorded as exactly 90 after rounding. \\
 Off-street imagery & Require distance at most 20 m and heading within 30 degrees of the street axis; exclude alleys. Assignment yield: 81.3\%. \\
-Unjudgeable images & Humans assign I, retaining records but excluding them from modelling: 1,920/5,149 images. \\
+Unjudgeable images & Annotators assign I, retaining records but excluding them from modelling: 1,920/5,149 images. \\
 Exact duplicates & Use each panorama once and check crop MD5 hashes. \\
-Near duplicates & Sample positions 25 m apart, at most two capture dates per position. Enrichment also checks dHash~\cite{krawetz2013dhash} within positions, rejecting one pair. Main images are assessed in this report. \\
+Near duplicates & Sample positions 25 m apart, at most two capture dates per position. Enrichment candidates are also checked with the difference hash (dHash)~\cite{krawetz2013dhash} within positions, rejecting one pair. Main images are assessed in this report. \\
 Missing values & Images without coordinates or heading cannot be assigned to streets and are excluded earlier. Every annotation requires a primary label. \\
-Transformation & Uniform panorama-to-perspective projection to $640\times640$. Pixel normalization remains a training-stage operation. \\
-Types & Convert Vietnamese Label Studio strings to 0/1/I; replace 64-bit panorama IDs with anonymous eight-character crop IDs. Capture timestamps remain timezone-aware ISO strings. \\
+Transformation & Uniform panorama-to-perspective projection to $640\times640$. Pixel normalisation remains a training-stage operation. \\
+Types & Convert Vietnamese Label Studio strings to 0/1/I; replace 64-bit panorama IDs with anonymous eight-character crop IDs. Capture timestamps remain timezone-aware ISO strings. Applied uniformly to main, pilot and enrichment labels. \\
 Consistency & Collection rejects conflicting street assignments; EDA rechecks keys, splits, streets and coordinates. \\\bottomrule
 \end{tabularx}\end{table}
 Sensitive-content review beyond Mapillary's existing blur and final split freezing remain pending.
-\src{\f{docs/collection_log.md}; collection-status CSV; \f{docs/data_enrichment.md}.}
 
-\section{Data quality assurance}
+\needspace{0.25\textheight}
+\section{Data quality assurance}\label{en:qa}
 \subsection{Criteria}
 Quality criteria are: labels match the operational definition and annotators agree; evaluation retains natural sampling; splits avoid leakage; every image has traceable provenance; images provide sufficient visual evidence; and the rare class has enough examples for meaningful evaluation. Checks combine double annotation, 15\% train cross-labelling, Cohen's $\kappa$~\cite{cohen1960kappa}, adjudication, street-level splitting, geographic and content comparisons, manifest validation, night filtering and class counts with uncertainty intervals. The proposal set an agreement threshold of 0.6.
 
 \subsection{Manual checks: agreement and adjudication}
-\begin{table}[H]\centering\caption{Main-component pairwise agreement}
+Table~\ref{en:kappa} reports pairwise agreement on the main component.
+\begin{table}[H]\centering\caption{Main-component pairwise agreement}\label{en:kappa}
 \begin{tabularx}{\textwidth}{L r r r r}\toprule
 Group & Images & Agreement & 3-label $\kappa$ & 0/1 $\kappa$ \\\midrule
 Test (Học--Loan) & 674 & 79\% & 0.60 & 0.68 \\
@@ -114,30 +115,37 @@ Cross-labelled train (10 pairs) & 276 & 78\% & 0.61 & 0.56 \\\bottomrule
 \end{tabularx}\end{table}
 Binary $\kappa$ uses only images where both annotators chose 0 or 1 (418 test and 211 validation images). All three groups meet the proposal's threshold for the three-label point estimate; pilot Fleiss' $\kappa$ under v0 was 0.57. Confidence intervals for $\kappa$ have not been measured.
 
-Of 1,436 double-labelled images, 303 disagreed: 193 were 0/I, 51 were 1/I and 59 were 0/1. Most disagreement therefore concerned judgeability. \textbf{Khải adjudicated all 303 main images and changed 28 labels (9.2\%); final labels are those Khải approved.} All 28 changed labels matched one of the original annotators. All 150 pilot images were separately reviewed under v1; Phúc changed three proposed labels, and 29 final labels differ from the v0 majority.
+Of 1,436 double-labelled images, 303 disagreed: 193 were 0/I, 51 were 1/I and 59 were 0/1. Most disagreement therefore concerned judgeability.
 
-Additional images have one annotator each, so no inter-annotator $\kappa$ is available for that component. Blocked shares differ (Học 43\%, Loan 19\%); the original image-independent chi-square calculation gives $p=4\times10^{-15}$, but ignores street dependence and is not decisive evidence. Random allocation suggests possible annotation differences, which require a common independently annotated sample to verify. A second member checked 203 images selected from 264 suspected cases: 186 matched (92\%) and 17 changed. This targeted sample does not estimate label noise in all 2,000 images.
-\src{\f{data/labels/main_report/main_report.md}; \f{docs/labeling_phase1.md}; main/pilot adjudication proposals; \f{data/labels/train_extra_cross_check.csv}.}
+\textbf{Adjudication} had two steps. First, an AI assistant (Claude) viewed each image without the annotators' votes and proposed a label with a reason; it then re-examined, with votes shown, the 21 proposals that differed from both votes and revised 10. Second, Khải reviewed all 303 proposals, kept 275 and changed 28 (9.2\%); final labels are those Khải approved. All 28 changed labels matched one of the original annotators. In seven images (three test, two validation, two train), Khải kept a proposal that matched neither vote.
 
-\begin{table}[H]\centering\caption{Final-label provenance}
-\begin{tabularx}{\textwidth}{p{0.31\linewidth} r L}\toprule
-Source code & Images & Meaning \\\midrule
-\lab{agreed} & 1,133 & Main: two annotators agree \\
-\lab{single}, main & 1,563 & One train annotator \\
-\lab{adjudicated\_proposal} & 275 & Main adjudicator retains proposal \\
-\lab{adjudicated\_phuc} & 28 & Legacy CSV code; Khải changes the label \\
-\lab{pilot\_review\_proposal} & 147 & Pilot reviewer retains proposal \\
-\lab{pilot\_review\_phuc} & 3 & Pilot reviewer changes proposal \\
-\lab{single}, enrichment & 1,983 & Includes 186 matching cross-checks \\
-\lab{cross\_check} & 17 & Enrichment label changed after cross-check \\\bottomrule
+\textbf{Adjudication was not fully independent.} The proposal planned independent adjudication, but Khải was one of the two annotators on 123 of the 303 disagreements, including \emph{all 99 validation disagreements} (validation was annotated by Minh and Khải) and 24 train images. On these 123 images the final label matches Khải's vote in 37 (Claude's proposal matched in 32); of the 14 labels Khải changed there, nine moved to Khải's own vote. Validation labels should be read with this limitation.
+
+All 150 pilot images were reviewed under v1 in the same way: Claude proposed and Phúc reviewed, changing three labels. Relative to the v0 votes, 25 final labels differ from the majority label; five further images were tied under v0 and have no majority.
+
+Additional images have one annotator each, so no inter-annotator $\kappa$ is available for that component. Blocked shares before cross-checking differ (Học 43\%, Loan 19\%); a chi-square test on the annotator-by-label table gives $p=4\times10^{-15}$, but assumes independent images, ignores street dependence and is not decisive evidence. Random allocation suggests possible annotation differences, which require a common independently annotated sample to verify. A second member checked 203 images selected from 264 suspected cases: 186 matched (92\%) and 17 changed. This targeted sample does not estimate label noise in all 2,000 images.
+
+Table~\ref{en:provenance} records where each final label comes from.
+\begin{table}[H]\centering\caption{Final-label provenance}\label{en:provenance}
+\begin{tabularx}{\textwidth}{p{0.4\linewidth} r L}\toprule
+Final label comes from & Images & Note \\\midrule
+Two annotators agree & 1,133 & Validation, test and cross-labelled main train \\
+One annotator (main train) & 1,563 & \\
+Adjudication: proposal kept & 275 & Khải keeps Claude's proposal \\
+Adjudication: proposal changed & 28 & Khải changes it; matches one annotator \\
+Pilot review: proposal kept & 147 & Phúc keeps Claude's proposal \\
+Pilot review: proposal changed & 3 & Phúc changes it \\
+One annotator (enrichment) & 1,983 & Includes 186 matching cross-checks \\
+Cross-check (enrichment) & 17 & Label changed after cross-check \\\bottomrule
 \end{tabularx}\end{table}
-The legacy code \lab{adjudicated\_phuc} remains for traceability and script compatibility; it does not identify the adjudicator. The team confirmed Khải performed main adjudication. Correcting attribution changes neither labels nor counts. Pilot review is reported separately.
 
 \subsection{Automated checks}
-Collection scripts reject streets already assigned elsewhere, including validation/test base-name matches. Agreement scripts check annotation completeness, duplicate saves and interface version. EDA checks keys, splits, coordinates, outliers, duplicates, similarity and geographic separation; results appear in Section~\ref{en:quality}.
+Collection rejects streets already assigned elsewhere, including validation/test base-name matches. The interface-update step checks that all five projects use the v1 interface; the agreement step checks annotation completeness and detects duplicate saves. EDA checks keys, splits, coordinates, outliers, duplicates, similarity and geographic separation; results appear in Section~\ref{en:quality}.
 
-\section{Storage and data management}
-\begin{table}[H]\centering\caption{Repository data organization}
+\needspace{0.45\textheight}
+\section{Storage and data management}\label{en:storagesec}
+Table~\ref{en:storage} shows how the data are organised and which files are committed to Git.
+\begin{table}[H]\centering\caption{Repository data organisation}\label{en:storage}
 \begin{tabularx}{\textwidth}{p{0.38\linewidth} L c}\toprule
 Path & Contents & Git \\\midrule
 \f{configs/streets_v1.yaml} & 17 main streets and splits & Yes \\
@@ -152,15 +160,16 @@ Path & Contents & Git \\\midrule
 \f{data/crops/} & Main, pilot and enrichment crops & No \\
 \f{docs/data_report/} & Reports, EDA tables and figures & Yes \\\bottomrule
 \end{tabularx}\end{table}
-The primary key is the eight-character \lab{item}; labels join manifests on this key and image paths are \f{data/crops/<file>}. Images can be reconstructed from panorama IDs and yaw using script 27 or collection scripts. Reconstructed JPEGs differ from server copies: an earlier five-image comparison measured mean differences of 1.35--1.5 grey levels. Label filenames encode versions, older files remain available, original responses remain in Label Studio, and final labels reside in the repository. Tokens and server passwords are in ignored \f{.env} files.
+The primary key is the eight-character image ID; labels join manifests on this key and the manifest records each crop's path. Images can be reconstructed from panorama IDs and crop angle using the team's reconstruction script. Reconstructed JPEGs differ from server copies: an earlier five-image comparison measured mean differences of 1.35--1.5 grey levels. Label filenames encode versions, older files remain available (the pre-cross-check v1 enrichment labels), original responses remain in Label Studio, and final labels reside in the repository. Secrets (the Mapillary token and server password) are kept in local environment-configuration files on the workstation and server and are not committed to Git.
 
-\section{Exploratory data analysis}
+\section{Exploratory data analysis (EDA)}
 \label{en:eda}
-Statistics separate six groups: natural main train/validation/test, pilot, enrichment \lab{top\_score}, and enrichment \lab{random}. Pooled results are explicitly identified. Validation/test labels are descriptive only. Unless stated otherwise, 95\% proportion intervals are Wilson intervals~\cite{wilson1927interval}, assuming independent images; within-street dependence can make these too narrow. Important comparisons also use 1,000 street-cluster bootstrap replicates. Validation has only three streets and test four, so their cluster intervals are exploratory.
+Statistics separate six groups: natural main train/validation/test, pilot, and the top-score and random strata of the enrichment set. Pooled results are explicitly identified. Validation/test labels are descriptive only. Unless stated otherwise, 95\% proportion intervals are Wilson intervals~\cite{wilson1927interval}, assuming independent images; within-street dependence can make these too narrow. Important comparisons also use 1,000 street-cluster bootstrap replicates. Validation has only three streets and test four, so their cluster intervals are exploratory. All numbers and figures come from three team EDA scripts (tabular data, image data, duplicates and leakage); none are entered by hand.
 
 \subsection{Descriptive statistics}
 \subsubsection*{Samples, attributes and missingness}
-\begin{table}[H]\centering\caption{Data-table inventory}
+Table~\ref{en:inventory} gives rows, columns and missing values for each data table.
+\begin{table}[H]\centering\caption{Data-table inventory}\label{en:inventory}
 \begin{tabularx}{\textwidth}{L r r L}\toprule
 Table & Rows & Columns & Missingness \\\midrule
 Main + pilot labels & 3,149 & 8 & 2,114 missing reasons: 1,833 structural for 0/1; 281 I without reason \\
@@ -174,82 +183,109 @@ Enrichment annotation records & 2,000 & 13 & Same conditional design \\\bottomru
 Each image has one label and roughly 20 metadata attributes. Seven numeric attributes cover coordinates, panorama brightness, street distance, travel heading, crop angle and (for enrichment) selector score. Others identify street, split, creator, sequence, capture time, sampling stratum and label provenance. Models take images only; metadata support splitting, provenance and checks.
 
 All retained metadata cells are present because missing coordinates or heading prevent street assignment. The 281 I images without reasons comprise 162 adjudicated images, 63 reviewed pilot images, 55 double-I agreements with different reasons and one singly labelled image. Main-component reason statistics therefore use 1,035/1,253 I images; the primary labels are unaffected.
-\src{\f{tables/inventory_tables.csv}; \f{tables/inventory_columns.csv}.}
 
-\begin{table}[H]\centering\caption{Panorama brightness: numeric descriptive statistics}
+\begin{table}[H]\centering\caption{Panorama brightness: numeric descriptive statistics}\label{en:bright}
 \begin{tabularx}{\textwidth}{L r r r r r r r}\toprule
 Group & n & Mean & Median & Variance & Min & Max & IQR \\\midrule
 Main train & 1,839 & 166.8 & 171.0 & 448.6 & 94 & 231 & 27.0 \\
 Validation & 486 & 154.5 & 158.5 & 468.9 & 91 & 201 & 32.0 \\
 Test & 674 & 169.4 & 171.0 & 564.2 & 91 & 249 & 26.8 \\
 Pilot & 150 & 169.2 & 173.5 & 573.5 & 94 & 236 & 27.0 \\
-Top score & 1,400 & 172.0 & 176.0 & 366.8 & 91 & 239 & 19.0 \\
-Random & 600 & 172.7 & 176.0 & 377.9 & 94 & 238 & 22.3 \\\bottomrule
+Top-score stratum & 1,400 & 172.0 & 176.0 & 366.8 & 91 & 239 & 19.0 \\
+Random stratum & 600 & 172.7 & 176.0 & 377.9 & 94 & 238 & 22.3 \\\bottomrule
 \end{tabularx}\end{table}
-Brightness is the upper-half panorama mean on a 0--255 scale.
-\begin{table}[H]\centering\caption{Distance from capture position to street centreline (m)}
+Brightness is the upper-half panorama mean on a 0--255 scale; IQR denotes the interquartile range (third minus first quartile).
+\begin{table}[H]\centering\caption{Distance from capture position to street centreline (m)}\label{en:dist}
 \begin{tabularx}{\textwidth}{L r r r r r r r}\toprule
 Group & n & Mean & Median & Variance & Min & Max & IQR \\\midrule
 Main train & 1,839 & 3.70 & 3.0 & 9.67 & 0.0 & 20.0 & 3.40 \\
 Validation & 486 & 3.46 & 3.1 & 8.53 & 0.0 & 18.4 & 3.08 \\
 Test & 674 & 3.54 & 2.9 & 9.48 & 0.0 & 19.6 & 3.70 \\
 Pilot & 150 & 3.45 & 2.7 & 7.98 & 0.0 & 17.0 & 3.58 \\
-Top score & 1,400 & 2.87 & 2.2 & 6.81 & 0.0 & 19.9 & 2.70 \\
-Random & 600 & 2.96 & 2.3 & 7.24 & 0.0 & 19.8 & 2.90 \\\bottomrule
+Top-score stratum & 1,400 & 2.87 & 2.2 & 6.81 & 0.0 & 19.9 & 2.70 \\
+Random stratum & 600 & 2.96 & 2.3 & 7.24 & 0.0 & 19.8 & 2.90 \\\bottomrule
 \end{tabularx}\end{table}
-No retained panorama has brightness below the night threshold (minimum 91). Validation is darker (median 158.5 versus 171), possibly reflecting its three streets. Street distance is truncated at 20 m by design; enrichment is closer to centrelines, consistent with 71\% coming from smaller streets. Selector-score medians are 0.80 (range 0.61--1.00) for top-score images and 0.19 (0.00--0.61) for random-remainder images. Annotation time is strongly right-skewed: medians 3.7 s for main records and 4.5 s for enrichment, maximum 77,451 s from tasks left open. Median is the useful summary; pilot timing is not measured here.
-\src{\f{tables/desc_numeric.csv}. This file also includes coordinates, heading, selector scores and annotation time.}
+\begin{table}[H]\centering\caption{Descriptive statistics for the remaining numeric metadata}\label{en:desc2}
+\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{p{0.17\linewidth} r R R R R R R}\toprule
+Group & n & Mean & Median & Variance & Min & Max & IQR \\\midrule
+\multicolumn{8}{l}{\emph{Latitude ($^\circ$ N)}} \\
+Main, pooled & 2,999 & 10.7751 & 10.7757 & $2.7\cdot10^{-4}$ & 10.7501 & 10.8149 & 0.0274 \\
+Enrichment & 2,000 & 10.7812 & 10.7860 & $4.3\cdot10^{-4}$ & 10.7450 & 10.8150 & 0.0359 \\
+\multicolumn{8}{l}{\emph{Longitude ($^\circ$ E)}} \\
+Main, pooled & 2,999 & 106.6792 & 106.6813 & $2.3\cdot10^{-4}$ & 106.6500 & 106.7059 & 0.0285 \\
+Enrichment & 2,000 & 106.6813 & 106.6813 & $3.1\cdot10^{-4}$ & 106.6500 & 106.7234 & 0.0291 \\
+\multicolumn{8}{l}{\emph{Travel heading ($^\circ$, 0 = north)}} \\
+Main, pooled & 2,999 & 166.5 & 164.7 & 10,589.6 & 0.0 & 360.0 & 193.3 \\
+Enrichment & 2,000 & 178.0 & 167.5 & 10,050.7 & 0.1 & 359.6 & 180.3 \\
+\multicolumn{8}{l}{\emph{Selector score (enrichment only, 0--1)}} \\
+Top-score stratum & 1,400 & 0.799 & 0.798 & 0.012 & 0.610 & 0.996 & 0.191 \\
+Random stratum & 600 & 0.231 & 0.188 & 0.032 & 0.001 & 0.607 & 0.286 \\
+\multicolumn{8}{l}{\emph{Annotation time (seconds per annotation record)}} \\
+Main & 4,435 & 51.5 & 3.7 & 2,285,741 & 0.5 & 77,451 & 6.9 \\
+Enrichment & 2,000 & 13.9 & 4.5 & 24,475 & 0.9 & 6,678 & 5.3 \\\bottomrule
+\end{tabularx}
+\note{Crop angle is omitted because it is constant ($60^\circ$ to the right) for every image.}
+\end{table}
+Tables~\ref{en:bright}--\ref{en:desc2} and Figure~\ref{fig:tab_fig4_brightness_dist_boxplots.pdf} describe the numeric attributes. No retained panorama has brightness below the night threshold (minimum 91). Validation images are darker (median 158.5 versus 171), possibly reflecting the characteristics of its three streets. Street distance is truncated at 20 m by design; enrichment images are closer to centrelines, consistent with 71\% of them coming from smaller streets. Coordinates lie within the study area, except two enrichment images less than 4 m outside it (Section~\ref{en:quality}); the enrichment set is more spread out than the main component (latitude IQR 0.0359 versus 0.0274) because it covers 75 streets rather than 17. Travel heading spans the full 0--$360^\circ$ range (IQR about $190^\circ$) without concentrating on one direction; it is used only to assign images to streets and to crop to the vehicle's right. Selector-score medians are 0.80 (range 0.61--1.00) for top-score images and 0.19 (0.00--0.61) for random-stratum images. Annotation time is strongly right-skewed: medians 3.7 s for main records and 4.5 s for enrichment, maximum 77,451 s from tasks left open. The median is therefore the appropriate summary; pilot timing is not measured here.
 
 \subsubsection*{Categorical distributions}
-Two creators, \lab{bemaps3\_sg} and \lab{phoenix\_mapping\_front}, contribute 84\% of main images (1,153 and 1,370 of 2,999) and 98\% of enrichment, limiting device diversity. Main capture years are 2023 (2,303 images), 2024 (660) and 2016 (36). Across components, all 103 images timestamped 2016 belong to \lab{bemaps3\_sg} and have date 1 January 2016, suggesting a placeholder. Capture hour is unreliable and is not used for filtering. The main component has 17 streets with 86--348 images each (median 150); enrichment has 75 with 6--157 (median 21). Hoàng Sa and Trường Sa\#0 contribute 274 enrichment images (14\%).
-\src{\f{tables/cat_distributions.csv}; \f{tables/tabular_numbers.json}.}
+\begin{table}[H]\centering\caption{Images by capture month (Mapillary timestamps)}\label{en:month}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{l rrrrrrrrrrrr r}\toprule
+Month & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & Total \\\midrule
+Main & 299 & 114 & 0 & 552 & 677 & 234 & 0 & 244 & 54 & 321 & 303 & 201 & 2,999 \\
+Enrichment & 146 & 204 & 53 & 93 & 461 & 286 & 0 & 55 & 87 & 96 & 342 & 177 & 2,000 \\\bottomrule
+\end{tabular}\end{table}
+Two creators, \lab{bemaps3\_sg} and \lab{phoenix\_mapping\_front}, contribute 84\% of main images (1,153 and 1,370 of 2,999) and 98\% of enrichment, limiting device diversity (Figure~\ref{fig:tab_fig5_year_creator.pdf}). Main capture years are 2023 (2,303 images), 2024 (660) and 2016 (36). Across components, all 103 images timestamped 2016 belong to \lab{bemaps3\_sg} and have date 1 January 2016, suggesting a placeholder. Images span 10--11 calendar months with none in July (Table~\ref{en:month}); main images concentrate in April--May (41\%), and January includes the placeholder dates. Capture hour spans the whole day but is unreliable: 1,080/2,999 main images (36\%) and 762/2,000 enrichment images (38\%) are stamped between 18:00 and 06:00, yet every retained image passes the night-brightness filter; capture hour is therefore not used for filtering. The main component has 17 streets with 86--348 images each (median 150); enrichment has 75 with 6--157 (median 21). The canal roads Hoàng Sa and Trường Sa\#0 contribute 274 enrichment images (14\%). Both were excluded from the main component because their sidewalk is mostly on one side and pedestrians are few (pipeline step 4), but enrichment ranked streets only by selector score and did not reapply that criterion: they ranked 49th and 56th of 75 and, being long, contribute many images. They enter training only, so validation/test are unaffected, but they add canal-side scenes to training.
 
 \subsection{Label distributions}
-\begin{table}[H]\centering\caption{Blocked proportions among usable images, 95\% intervals, and I shares}
+Figure~\ref{fig:tab_fig1_label_counts_by_group.pdf} and Table~\ref{en:labels} give label counts and proportions by group.
+\begin{table}[H]\centering\caption{Blocked proportions among usable images, 95\% intervals, and I shares}\label{en:labels}
 \begin{tabularx}{\textwidth}{L r L L r}\toprule
 Group & All & Blocked/usable [Wilson] & Street bootstrap & I share \\\midrule
-Main train & 1,839 & 106/1,045: 10.1\% [8.5,12.1] & [7.9,14.1] & 43.2\% \\
-Validation & 486 & 35/242: 14.5\% [10.6,19.5] & [8.2,19.2] & 50.2\% \\
-Test & 674 & 47/459: 10.2\% [7.8,13.4] & [5.7,18.7] & 31.9\% \\
-Main pooled & 2,999 & 188/1,746: 10.8\% [9.4,12.3] & [8.7,13.9] & 41.8\% \\
-Pilot & 150 & 14/87: 16.1\% [9.8,25.2] & [10.0,18.4] & 42.0\% \\
-Top score & 1,400 & 531/1,018: 52.2\% [49.1,55.2] & [47.8,56.6] & 27.3\% \\
-Random & 600 & 46/378: 12.2\% [9.3,15.9] & [8.9,15.3] & 37.0\% \\\bottomrule
+Main train & 1,839 & 106/1,045: 10.1\% [8.5, 12.1] & [7.9, 14.1] & 43.2\% \\
+Validation & 486 & 35/242: 14.5\% [10.6, 19.4] & [8.2, 19.2] & 50.2\% \\
+Test & 674 & 47/459: 10.2\% [7.8, 13.4] & [5.7, 18.7] & 31.9\% \\
+Main pooled & 2,999 & 188/1,746: 10.8\% [9.4, 12.3] & [8.7, 13.9] & 41.8\% \\
+Pilot & 150 & 14/87: 16.1\% [9.8, 25.2] & [10.0, 18.4] & 42.0\% \\
+Top-score stratum & 1,400 & 531/1,018: 52.2\% [49.1, 55.2] & [47.8, 56.6] & 27.3\% \\
+Random stratum & 600 & 46/378: 12.2\% [9.2, 15.9] & [8.9, 15.3] & 37.0\% \\\bottomrule
 \end{tabularx}\end{table}
-Usable images have labels 0 or 1. Main imbalance is about eight passable images per blocked image (0:1 ratio 8.3). The ratios for train/validation/test, pilot, top-score and random are respectively 8.9, 5.9, 8.8, 5.2, 0.9 and 7.2. Across all main images including I, blocked share is 6.3\% [5.5,7.2]. Split intervals overlap, which does not establish equivalent proportions. Test has only 47 positives and validation 35; street bootstrap uncertainty is large. I consumes 32--50\% by split. Pilot and top-score positive rates reflect selection rather than street prevalence. Random-remainder enrichment has a similar observed proportion to main, with overlapping intervals.
+Usable images have labels 0 or 1. Among main usable images, 89.2\% are passable and 10.8\% blocked: about eight passable images per blocked image (0:1 ratio 8.3). Shares of 0 / 1 / I among all images are 52.0 / 6.3 / 41.8\% for main pooled; 51.1 / 5.8 / 43.2\% train; 42.6 / 7.2 / 50.2\% validation; 61.1 / 7.0 / 31.9\% test; 48.7 / 9.3 / 42.0\% pilot; 34.8 / 37.9 / 27.3\% top-score; 55.3 / 7.7 / 37.0\% random; and 47.6 / 15.1 / 37.3\% for the whole dataset. The 0:1 ratios for train/validation/test, pilot, top-score and random are respectively 8.9, 5.9, 8.8, 5.2, 0.9 and 7.2. Across all main images including I, blocked share is 6.3\% [5.5, 7.2]. Split intervals overlap, which does not establish equivalent proportions. Test has only 47 positives and validation 35; street bootstrap uncertainty is large. Label I accounts for 32--50\% of each split. Pilot and top-score positive rates reflect selection rather than street prevalence. The random stratum has a similar observed proportion to main, with overlapping intervals.
 
-After enrichment, training has 2,528 usable images and 697 positives (27.6\%, 0:1 ratio 2.6), versus 1,132 usable images and 120 positives (10.6\%) beforehand. Enrichment supplies 577/697 positives (83\%). This changes training class prevalence relative to validation/test (about 10--15\%); report a natural-data-only training comparison and consider class weighting or resampling.
+After enrichment (Figure~\ref{fig:tab_fig10_train_composition.pdf}), training has 2,528 usable images and 697 positives (27.6\%, 0:1 ratio 2.6), versus 1,132 usable images and 120 positives (10.6\%) beforehand. Enrichment supplies 577/697 positives (83\%). This changes training class prevalence relative to validation/test (about 10--15\%); report a natural-data-only training comparison and consider class weighting or resampling.
 
-Blocked proportions vary by street, from 7/74 on Lê Văn Sỹ to 15/39 on Hải Thượng Lãn Ông. I shares range from 17\% to 83\% (Pasteur, a one-way street). Street association supports street-level splitting.
+Blocked proportions vary by street (Figure~\ref{fig:tab_fig3a_main_street_composition.pdf}), from 4.9\% on Lý Thường Kiệt (10/205) to 38.5\% on Hải Thượng Lãn Ông (15/39). I shares range from 17\% (Lê Văn Sỹ) to 83\% (Pasteur, a one-way street). Among the 25 enrichment streets with at least 20 usable images, blocked shares range from 11.1\% (Bạch Đằng\#0, 4/36) to 76.2\% (Ung Văn Khiêm, 16/21), median 40.0\%; these pool both strata and so reflect the selection design. Street association supports street-level splitting.
 
-Parked motorcycles are the most common obstacle: 123/188 blocked main images (65\%) and 346/577 enrichment images (60\%). Goods/stalls account for 32\% and 37\%, parked cars 4\% and 2\%; multiple tags per image are allowed. Tags are optional: 13 blocked main and six enrichment images have none. Pilot obstacle tags are not measured here. Missing-sidewalk reasons dominate I among images with reasons: 880/1,035 main images (85\%) and 463/597 enrichment images (78\%), followed by occlusion. Blur/darkness/overexposure accounts for 12 and 21 images. Tags are unions from annotation records selecting label 1; stale tags on 0/I records are excluded.
+Figure~\ref{fig:tab_fig7_obstacles_reasons.pdf} shows obstacle tags and I reasons. Parked motorcycles are the most common obstacle: 123/188 blocked main images (65\%) and 346/577 enrichment images (60\%). Goods/stalls account for 32\% and 37\%, parked cars 4\% and 2\%; multiple tags per image are allowed. Tags are optional: 13 blocked main and six enrichment images have none. Pilot obstacle tags are not measured here. Missing-sidewalk reasons dominate I among images with reasons: 880/1,035 main images (85\%) and 463/597 enrichment images (78\%), followed by occlusion. Blur/darkness/overexposure accounts for 12 and 21 images. Tags are unions from annotation records selecting label 1; stale tags on 0/I records are excluded.
 
-Enrichment blocked shares range from 19\% (Loan) to 43\% (Học), suggesting potential annotation differences under random allocation, but requiring a common independently annotated sample for confirmation. Main annotator shares are confounded with split because annotators saw different assigned subsets.
-\src{\f{tables/label_counts_by_group.csv}; \f{tables/train_composition.csv}; \f{tables/labels_by_street.csv}; \f{tables/obstacle_tags.csv}; \f{tables/reasons_I.csv}; \f{tables/annotator_label_shares.csv}.}
+By annotator (Figure~\ref{fig:tab_fig8_annotator_label_shares.pdf}), enrichment blocked shares range from 19\% (Loan) to 43\% (Học), suggesting potential annotation differences under random allocation, but requiring a common independently annotated sample for confirmation. Main annotator shares are confounded with split because annotators saw different assigned subsets.
 
 \subsection{Relationships between attributes}
-Images are model inputs; metadata associations help identify redundancy and possible shortcut risks. Latitude--longitude Spearman correlation is 0.42 in main and 0.43 in enrichment, reflecting the study area's shape and street directions. Other absolute correlations are at most 0.14 and 0.25 respectively. The maximum VIF is 1.27 (main latitude), with other variables below 1.1: no substantial multicollinearity is evident among the variables tested.
-\begin{table}[H]\centering\caption{Association with blocked versus passable labels (usable images)}
+Images are model inputs; metadata associations help identify redundancy and possible shortcut risks. Latitude--longitude Spearman correlation is 0.42 in main and 0.43 in enrichment (Figure~\ref{fig:tab_fig6_spearman_heatmap.pdf}), reflecting the study area's shape and street directions. Other absolute correlations are at most 0.14 and 0.25 respectively. The largest variance inflation factors (VIF) are 1.27 (latitude) and 1.25 (longitude) in main, because these two are correlated; other variables are below 1.1. No substantial multicollinearity is evident among the variables tested. Table~\ref{en:assoc} relates attributes to labels: for numeric attributes by the AUC (area under the ROC curve; 0.5 means no discrimination between the classes), and for categorical attributes by bias-corrected Cramér's V.
+\begin{table}[H]\centering\caption{Association with blocked versus passable labels (usable images)}\label{en:assoc}
 \begin{tabularx}{\textwidth}{L L L}\toprule
 Attribute & Main pooled (1,746) & Enrichment (1,396) \\\midrule
 \multicolumn{3}{l}{Numeric: AUC and street-bootstrap interval (0.5: no discrimination)}\\
-Panorama brightness & 0.53 [0.47,0.59] & 0.49 [0.45,0.53] \\
-Street distance & 0.54 [0.50,0.58] & 0.46 [0.43,0.49] \\
-Latitude & 0.45 [0.37,0.52] & Interval includes 0.5 \\
-Longitude & 0.45 [0.35,0.54] & Interval includes 0.5 \\
-Selector score & Not available & 0.78 [0.75,0.81] \\\midrule
+Panorama brightness & 0.53 [0.47, 0.59] & 0.49 [0.45, 0.53] \\
+Street distance & 0.54 [0.50, 0.58] & 0.46 [0.43, 0.49] \\
+Latitude & 0.45 [0.37, 0.52] & Interval includes 0.5 \\
+Longitude & 0.45 [0.35, 0.54] & Interval includes 0.5 \\
+Selector score & Not available & 0.78 [0.75, 0.81] \\\midrule
 \multicolumn{3}{l}{Categorical: bias-corrected Cramér's V~\cite{bergsma2013cramer} (0: no association)}\\
 Street & 0.18 & 0.29 \\
-Road type & 0.00 (two levels) & 0.14 [0.06,0.24] \\
+Road type & 0.00 (two levels) & 0.14 [0.06, 0.24] \\
 Creator & 0.00 & 0.03 \\
 Capture year & 0.02 & 0.03 \\\bottomrule
-\end{tabularx}\end{table}
-Street is the strongest main metadata association, for blocked (V=0.18) and I (V=0.28). Road type has an association in enrichment: in its random remainder, blocked shares are 34/248 (13.7\%) on tertiary roads, 4/20 (20\%) residential, 3/43 (7.0\%) primary and 5/67 (7.5\%) secondary. Small groups imply wide intervals; main has only large roads. Main brightness, distance and coordinates show weak discrimination; intervals include 0.5, while creator/year effects are small. Selector AUC 0.78 reflects enrichment design and is not a permissible model feature or label. In main train alone, longitude AUC is 0.37 [0.28,0.47], with blocked images farther west; only 10 streets make street composition a plausible explanation rather than a geographic rule. CSV $p$-values assume image independence and can be optimistic; interpretation focuses on effect sizes.
-\src{\f{tables/assoc_numeric.csv}; \f{tables/assoc_categorical.csv}; Spearman and VIF tables.}
+\end{tabularx}
+\note{$p$-values of these tests assume independent images and are optimistic; interpretation focuses on effect sizes.}
+\end{table}
+Street is the strongest main metadata association, for blocked (V=0.18) and I (V=0.28). Road type (OSM classification) has an association in enrichment: in its random stratum, blocked shares are 34/248 (13.7\%) on tertiary roads, 4/20 (20\%) residential, 3/43 (7.0\%) primary and 5/67 (7.5\%) secondary. Small groups imply wide intervals; main has only large roads. Main brightness, distance and coordinates show weak discrimination; intervals include 0.5, while creator/year effects are small. Selector AUC 0.78 reflects enrichment design and is not a permissible model feature or label. In main train alone, longitude AUC is 0.37 [0.28, 0.47], with blocked images farther west; only 10 streets make street composition a plausible explanation rather than a geographic rule.
 
 \subsection{Data quality checks}\label{en:quality}
 \subsubsection*{Validity and consistency}
-Script 28 reports 71 automated checks: 62 pass and nine fail. It changes no data. All 5,149 IDs are unique; label/manifest joins are one-to-one; split/street assignments match configurations; no street or position-group ID spans splits; no panorama is reused; label values, right-side cropping and licence values are valid. Retained panorama brightness has minimum 91. The failures are documented rather than silently corrected:
+The tabular EDA script runs 71 automated checks: 62 pass and nine fail. It changes no data. All 5,149 IDs are unique; label/manifest joins are one-to-one; split/street assignments match configurations; no street or position-group ID spans splits; no panorama is reused; label values, right-side cropping and licence values are valid. Retained panorama brightness has minimum 91. The failures are documented rather than silently corrected:
 \begin{itemize}
 \item Missing reasons for 281 main/pilot I images and seven enrichment I images, largely due to final-review structure.
 \item Stale obstacle tags on 285/4,435 main and 119/2,000 enrichment records labelled 0 or I; obstacle statistics use only label-1 records.
@@ -260,25 +296,22 @@ Script 28 reports 71 automated checks: 62 pass and nine fail. It changes no data
 \item One rejected-night brightness is recorded as exactly 90 after rounding, so the strict check that all rejected values are below 90 fails.
 \end{itemize}
 The missing-reason and stale-tag categories each contribute two failing checks, giving nine failures overall.
-\src{\f{tables/consistency_checks.csv}; \f{tables/bbox_violations.csv}.}
 
 \subsubsection*{Outliers and unusual observations}
 Under the $1.5\times$IQR rule~\cite{tukey1977eda}, main metadata have 81 brightness outliers (63 low, 18 high) and 113 large street distances; enrichment has 113 and 71 respectively. These are distribution tails rather than invalid entries: retained brightness is 91--249 and distance 0--20 m. Among all 5,149 crops, there are 87 luminance outliers (seven low, 80 high), 36 contrast outliers and 115 very-low-sharpness images on the log scale. In total, 308 images violate at least one image-outlier threshold. There are 128 images with more than 20\% overexposed pixels; test has 33 (4.9\%), validation 25 (5.1\%) and main train 36 (2.0\%). Of the 33 test cases, 27 are on Hai Bà Trưng.
 
 Visual contact-sheet observations (not quantitative measurements) suggest the darkest examples mostly show shade, overpasses or overcast conditions; bright examples are overexposed but often still judgeable; blurry examples often show low light or motion. No outliers were removed: unusable cases already receive I, and the remainder reflect real capture conditions.
 
-\textbf{Night-filter review.} The earlier visual review examined all 58 rejected main panoramas and the 58 darkest retained ones. Approximately 48 rejected images were night scenes, nine appeared daytime under dense canopy and one twilight (brightness 68--89). None of the 58 reviewed retained images appeared to be night scenes, although about three were twilight. This does not establish that every retained image is daytime. The nine daytime and one twilight rejections amount to about 0.3\% of all 3,057 inputs. The 38 rejected enrichment images have not been reviewed.
-\src{\f{tables/image_outliers.csv}; \f{tables/image_night_check.csv}; internal contact sheets (not in Git).}
+\textbf{Night-filter review.} The earlier visual review examined all 58 rejected main panoramas and the 58 darkest retained ones. Approximately 48 rejected images were night scenes, nine appeared daytime under dense canopy and one twilight (brightness 68--89). None of the 58 reviewed retained images appeared to be night scenes, although about three were twilight. This does not establish that every retained image is daytime. The nine daytime and one twilight rejections amount to about 0.3\% of all 3,057 inputs. The 38 rejected enrichment images have not been reviewed. The internal contact sheets include validation/test images and are not part of the report.
 
 \subsubsection*{Duplicates and near duplicates}
-No two files share an MD5, no decoded pixel arrays are identical, and no source panorama is repeated among 5,149 images. No pair has 64-bit dHash distance at most four. The nearest cross-split distance is six; visual review found different places with similar bright sky regions. There are 1,709 positions with images from two days (1,363 main, 346 enrichment), always in the same split. Same-position pairs have minimum dHash 12, median 31 (similar to different-street pairs); DINOv2 cosine similarity has median 0.63 and maximum 0.905. Changing vehicles, stalls and lighting support retaining both dates. Neither dHash nor cosine reliably separates the same place from a similar scene; this report therefore does not set a content-based near-duplicate cutoff.
-\src{\f{tables/duplicate_numbers.json}; \f{tables/dup_population_quantiles.csv}; \f{tables/dup_pair_counts_aggregated.csv}.}
+No two files share an MD5, no decoded pixel arrays are identical, and no source panorama is repeated among 5,149 images. No pair has 64-bit dHash distance at most four. The nearest cross-split distance is six; visual review found different places with similar bright sky regions. There are 1,709 positions with images from two days (1,363 main, 346 enrichment), always in the same split. Same-position pairs have minimum dHash 12, median 31 (similar to different-street pairs); DINOv2 cosine similarity has median 0.63 and maximum 0.905. Changing vehicles, stalls and lighting support retaining both dates. Neither dHash nor cosine reliably separates the same place from a similar scene (Figure~\ref{fig:dup_distance_distributions.pdf}); this report therefore does not set a content-based near-duplicate cutoff.
 
 \subsubsection*{Cross-split leakage}
 For each validation/test image, content-based nearest neighbours are searched across main train, pilot and enrichment. Nearest cosine similarity has validation median 0.78, maximum 0.909, and test median 0.79, maximum 0.904. The different-train-street reference has median 0.81 and maximum 0.933. Seven validation/test images have similarity at least 0.90 to train images, but are 778--3,585 m away. Visual review of the 20 highest-scoring pairs found different places with similar scenes.
 
-Street splitting does not prevent intersections between streets from different splits.
-\begin{table}[H]\centering\caption{Validation/test images close to train-side imagery}
+Street splitting does not prevent intersections between streets from different splits (Figure~\ref{fig:dup_map_positions.pdf}). Table~\ref{en:spatial} counts validation/test images near train-side images.
+\begin{table}[H]\centering\caption{Validation/test images close to train-side imagery}\label{en:spatial}
 \begin{tabularx}{\textwidth}{L r r r r r}\toprule
 Pair & Min m & $<15$ m & $<25$ m & $<40$ m & $<100$ m \\\midrule
 Validation (486)--main train & 1.5 & 6 & 6 & 14 & 47 \\
@@ -290,119 +323,113 @@ Test--enrichment & 34.3 & 0 & 0 & 3 & 116 \\\bottomrule
 \end{tabularx}\end{table}
 Overall, 52/1,160 validation/test images (4.5\%) are within 40 m of a train-side image, involving 47 train-side images and 13 intersecting street pairs (for example Hồng Bàng--Nguyễn Trãi, Lý Thường Kiệt--Cách Mạng Tháng Tám, and Hai Bà Trưng--Điện Biên Phủ). The 20 closest pairs (1--14 m) usually face different directions, but some show shared street corners, poles, signs or fences. Content similarity misses these cases: their maximum cosine is only 0.82. One enrichment image is 34.3 m from test: the original 40 m rule applied to 25 m position centres rather than individual images. Of 551 Mapillary sequences, 53 contain both train-side and validation/test imagery; this shares device/capture conditions without necessarily sharing scene content.
 
-\textbf{Proposed action, not yet applied:} remove train-side images within 40 m of validation/test using coordinates alone (at most 47 images), or retain the dataset and additionally report evaluation excluding the 52 nearby validation/test images. Before training, choose and document the geographic policy, save a versioned frozen manifest and rerun affected checks/statistics. Do not replace test streets based on observed positive counts.
-\src{\f{tables/dup_spatial_vt_to_train_side.csv}; \f{tables/dup_spatial_street_pairs_lt40m.csv}.}
+\textbf{Proposed action, not yet applied:} remove train-side images within 40 m of validation/test using coordinates alone (at most 47 images), or retain the dataset and additionally report evaluation excluding the 52 nearby validation/test images. Before training, the team needs to choose and document the geographic policy, save a versioned frozen manifest and rerun the affected checks and statistics. Test streets will not be changed on the basis of observed positive counts.
 
 \subsubsection*{How different is enrichment?}
-A linear domain classifier on DINOv2 embeddings distinguishes image components without using obstruction labels. It uses StandardScaler and balanced logistic regression, five-fold stratified street-grouped cross-validation with three repetitions. The table reports mean fold AUC; fold standard deviations range from 0.02 to 0.08.
-\begin{table}[H]\centering\caption{Domain-classification AUC}
+A linear domain classifier on DINOv2 embeddings distinguishes image components without using obstruction labels. It uses standardised features and balanced logistic regression, five-fold stratified street-grouped cross-validation with three repetitions. Table~\ref{en:domain} reports mean fold AUC; fold standard deviations range from 0.02 to 0.08.
+\begin{table}[H]\centering\caption{Domain-classification AUC}\label{en:domain}
 \begin{tabularx}{\textwidth}{L r}\toprule
 Comparison & AUC \\\midrule
-Main train--top-score enrichment & 0.95 \\
-Main train--random enrichment & 0.70 \\
+Main train--top-score stratum & 0.95 \\
+Main train--random stratum & 0.70 \\
 Enrichment--validation + test & 0.83 \\
 Main train--validation + test & 0.47 \\
 Control: randomly partition main train streets & 0.51 \\\bottomrule
 \end{tabularx}\end{table}
-The classifier did not detect a main-train versus validation/test domain difference; AUC near 0.5 does not prove equal distributions, especially with 17 streets. Enrichment is distinguishable, including the random remainder (0.70): smaller market-adjacent streets differ from larger evaluation streets. Top-score images are also more homogeneous (mean within-group cosine 0.60 versus 0.49--0.51). The extra 577 positives therefore come from a narrower scene range. The t-SNE visualization~\cite{maaten2008tsne} illustrates clustering of blocked/top-score images and I images but is not used as inferential evidence.
-\src{\f{tables/dup_domain_classifier_auc.csv}; \f{tables/duplicate_numbers.json}.}
+The classifier did not detect a main-train versus validation/test domain difference; AUC near 0.5 does not prove equal distributions, especially with 17 streets. The pooled 0.47 also hides unstable separate values: main train versus validation 0.56, versus test 0.36 and versus pilot 0.35 (fold means; fold standard deviation up to 0.12). Values below 0.5 here indicate an unstable measurement with only a few streets per side, not a reversed signal. The enrichment set is distinguishable, including its random stratum (0.70): smaller market-adjacent streets differ from larger evaluation streets. Top-score images are also more homogeneous (mean within-group cosine 0.60 versus 0.49--0.51). The extra 577 positives therefore come from a narrower scene range. The top-score figure of 0.95 is partly inflated: that stratum was selected by logistic regression on the same DINOv2 embeddings the domain classifier uses, so part of the separation comes from the selection itself. The same applies to within-group cosine and the t-SNE plot; the random stratum (0.70) is the fairer measure of scene difference. The t-SNE visualization~\cite{maaten2008tsne} (Figure~\ref{fig:dup_tsne.pdf}) illustrates clustering of blocked/top-score images and I images but is not used as inferential evidence.
 
 \subsection{EDA of image data}
 \subsubsection*{Format and resolution}
-All 5,149 files decode successfully as RGB JPEG, $640\times640$, with estimated JPEG quality 90. Sizes range from 38.5 to 167.7 KB (median 99.3 KB). Resolution is uniform by design; 2,048-pixel source panoramas limit detail in distant objects.
+All 5,149 files decode successfully as RGB JPEG, $640\times640$, with estimated JPEG quality 90. Sizes range from 38.5 to 167.7 KB (median 99.3 KB). Resolution is uniform by design; 2,048-pixel source panoramas limit detail in distant objects. Random training examples appear in Figures~\ref{fig:img_examples_main_train.jpg} and~\ref{fig:img_examples_train_extra.jpg}.
 
 \subsubsection*{Image quality}
 Per-crop measures are mean Rec.601 greyscale luminance (0--255), greyscale standard deviation (contrast), dark-pixel share ($<30$), overexposed-pixel share ($>245$), Laplacian variance (sharpness), and colourfulness~\cite{hasler2003colorfulness}.
-\begin{table}[H]\centering\caption{Image quality: median (IQR)}
+Table~\ref{en:image} and Figures~\ref{fig:img_dist_luminance.pdf} and~\ref{fig:img_dist_sharpness.pdf} summarise these measures by group.
+\begin{table}[H]\centering\caption{Image quality: median (IQR)}\label{en:image}
 \begin{tabularx}{\textwidth}{L r r r r r}\toprule
 Group & n & Luminance & Contrast & Sharpness & Colourfulness \\\midrule
 Main train & 1,839 & 101.9 (31.3) & 59.4 (14.1) & 494 (254) & 25.1 (13.3) \\
 Validation & 486 & 106.7 (36.9) & 62.7 (14.1) & 560 (354) & 26.7 (13.7) \\
 Test & 674 & 104.7 (36.9) & 59.3 (14.2) & 511 (245) & 25.9 (14.0) \\
 Pilot & 150 & 106.6 (38.0) & 59.3 (14.0) & 487 (244) & 24.5 (13.1) \\
-Top score & 1,400 & 91.8 (30.5) & 60.1 (13.7) & 492 (260) & 27.8 (14.3) \\
-Random & 600 & 100.8 (35.2) & 58.1 (12.4) & 497 (268) & 25.7 (13.7) \\\bottomrule
+Top-score stratum & 1,400 & 91.8 (30.5) & 60.1 (13.7) & 492 (260) & 27.8 (14.3) \\
+Random stratum & 600 & 100.8 (35.2) & 58.1 (12.4) & 497 (268) & 25.7 (13.7) \\\bottomrule
 \end{tabularx}\end{table}
-Across all images, luminance ranges 24.3--242.3, contrast 17.4--96.6, sharpness 22--1,881 and colourfulness 4.8--104.3. Natural main splits, pilot and random enrichment have broadly similar descriptive quality: luminance medians 101--107 and sharpness 487--560. Validation has somewhat higher contrast than train (AUC 0.58 [0.54,0.61]).
+Across all images, luminance ranges 24.3--242.3, contrast 17.4--96.6, sharpness 22--1,881 and colourfulness 4.8--104.3. Natural main splits, pilot and the random stratum have broadly similar descriptive quality: luminance medians 101--107 and sharpness 487--560. Validation has somewhat higher contrast than train (AUC 0.58 [0.54, 0.61]).
 
-Blocked main images are darker than passable images: median luminance 90.9 versus 101.6, AUC 0.37 [0.32,0.41] under the 17-street bootstrap, and dark-pixel shares 18\% versus 12\%. Obstacles under awnings or trees are a plausible but unverified explanation. Darkness may become a shortcut, to be checked in model error analysis. Top-score enrichment is darker than main train (91.8 versus 101.9), partly reflecting more positives. I images have higher contrast and overexposure than label 0 (AUC 0.67 and 0.65), consistent with more sky and road. Sharpness does not clearly discriminate labels (AUC 0.46--0.59; intervals include 0.5).
+Blocked main images are darker than passable images: median luminance 90.9 versus 101.6, AUC 0.37 [0.32, 0.41] under the 17-street bootstrap, and dark-pixel shares 18\% versus 12\%. Obstacles under awnings or trees are a plausible but unverified explanation. Darkness may become a shortcut, to be checked in model error analysis. Top-score enrichment is darker than main train (91.8 versus 101.9), partly reflecting more positives. I images have higher contrast and overexposure than label 0 (AUC 0.67 and 0.65), consistent with more sky and road. Sharpness does not discriminate blocked from passable images (AUC 0.46--0.59 in every group; all intervals include 0.5). In comparisons involving I, two intervals exclude 0.5 but the effects are small: validation I versus 1, AUC 0.61 [0.53, 0.71]; top-score I versus 0, AUC 0.46 [0.42, 0.49].
 
-Night-filter panorama brightness correlates weakly with crop luminance: Spearman 0.18 [0.09,0.27] in main, 0.31 for the crop's upper half. They measure different regions, so a panorama-level night filter does not guarantee a bright crop. Of 33 I images citing blur/darkness/overexposure (12 main, 21 enrichment), median sharpness ranks at the 3.5th percentile of main and 13th of enrichment. Brightness mixes dark and overexposed images: 36\% below percentile 10, 18\% above percentile 90. This small sample supports description only.
-\src{\f{tables/image_format_check.csv}; \f{tables/image_summary_stats.csv}; \f{tables/image_effect_sizes.csv}; \f{tables/image_spearman_brightness.csv}; \f{tables/image_reason_blur_dark_summary.csv}.}
+Night-filter panorama brightness correlates weakly with crop luminance: Spearman 0.18 [0.09, 0.27] in main, 0.31 for the crop's upper half. They measure different regions, so a panorama-level night filter does not guarantee a bright crop. Of 33 I images citing blur/darkness/overexposure (12 main, 21 enrichment), median sharpness ranks at the 3.5th percentile of main and 13th of enrichment. Brightness mixes dark and overexposed images: 36\% below percentile 10, 18\% above percentile 90. This small sample supports description only.
 
 \subsection{Figures accompanying the analysis}
 The figures below preserve the original measured plots, numeric annotations and visual encodings. Vector chart labels and captions are translated into English; Vietnamese street and personal names remain unchanged. Image example grids use training images only and retain their original raster annotations. Label meanings are Passable (0), Blocked (1), and Insufficient information (I).
-\plot{tab_fig4_brightness_dist_boxplots.pdf}{0.95}{Panorama brightness and street distance by group.}
-\plot{tab_fig5_year_creator.pdf}{0.95}{Capture year and creator distributions.}
-\plot{tab_fig1_label_counts_by_group.pdf}{0.95}{Label counts by sampling component and split.}
-\plot{tab_fig10_train_composition.pdf}{1}{Usable training-set composition before and after enrichment.}
-\plot{tab_fig3a_main_street_composition.pdf}{1}{Label composition on the 17 main streets, excluding pilot.}
-\plot{tab_fig7_obstacles_reasons.pdf}{0.95}{Obstacle tags on blocked images and reasons for insufficient information.}
-\plot{tab_fig8_annotator_label_shares.pdf}{0.95}{Label shares by annotator; enrichment uses individual v1 responses before cross-checks.}
-\plot{tab_fig6_spearman_heatmap.pdf}{0.95}{Spearman correlations among numeric metadata attributes.}
-\plot{dup_distance_distributions.pdf}{0.92}{Similarity distributions: same position on different days, same street at different positions, and different streets.}
-\plot{dup_map_positions.pdf}{0.8}{Image positions by split; evaluation streets intersect training streets.}
-\plot{dup_tsne.pdf}{1}{DINOv2 embedding t-SNE for 5,149 images, coloured by component and label; descriptive illustration only.}
-\plot{img_examples_main_train.jpg}{1}{Random main-train examples by label. \cc.}
-\plot{img_examples_train_extra.jpg}{1}{Additional train examples by sampling stratum; corner labels identify 0, 1 or I. \cc.}
-\plot{img_dist_luminance.pdf}{1}{Crop luminance by component and label.}
-\plot{img_dist_sharpness.pdf}{1}{Crop sharpness on a log scale, by component and label.}
+\plot{tab_fig4_brightness_dist_boxplots.pdf}{0.95}{Panorama brightness and street distance by group}
+\plot{tab_fig5_year_creator.pdf}{0.95}{Capture year and creator distributions}
+\plot{tab_fig1_label_counts_by_group.pdf}{0.95}{Label counts by sampling component and split}
+\plot{tab_fig10_train_composition.pdf}{1}{Usable training-set composition before and after enrichment}
+\plot{tab_fig3a_main_street_composition.pdf}{1}{Label composition on the 17 main streets, excluding pilot}
+\plot{tab_fig7_obstacles_reasons.pdf}{0.95}{Obstacle tags on blocked images and reasons for insufficient information}
+\plot{tab_fig8_annotator_label_shares.pdf}{0.95}{Label shares by annotator; enrichment uses individual responses before cross-checks}
+\plot{tab_fig6_spearman_heatmap.pdf}{0.95}{Spearman correlations among numeric metadata attributes}
+\plot{dup_distance_distributions.pdf}{0.92}{Similarity distributions: same position on different days, same street at different positions, and different streets}
+\plot{dup_map_positions.pdf}{0.8}{Image positions by split; evaluation streets intersect training streets}
+\plot{dup_tsne.pdf}{1}{DINOv2 embedding t-SNE for 5,149 images, coloured by component and label; descriptive illustration only}
+\plot{img_examples_main_train.jpg}{1}{Random main-train examples by label. \cc}
+\plot{img_examples_train_extra.jpg}{1}{Enrichment-set examples by sampling stratum, six random images per stratum, so label shares in the figure are not representative; corner labels identify 0, 1 or I. \cc}
+\plot{img_dist_luminance.pdf}{1}{Crop luminance by component and label}
+\plot{img_dist_sharpness.pdf}{1}{Crop sharpness on a log scale, by component and label}
 \clearpage
 
 \section{Summary: measured results and remaining work}
 \subsection{What has been measured}
-The dataset contains 5,149 final-labelled images: 3,229 usable (2,450 passable, 779 blocked) and 1,920 I. Natural main prevalence is 10.8\% of usable images (Wilson [9.4,12.3], street bootstrap [8.7,13.9]); validation and test have 35 and 47 positives among 242 and 459 usable images. Enriched training has 697/2,528 positives (27.6\%, Wilson [25.9,29.3]), 83\% supplied by enrichment. Three-label Cohen's $\kappa$ is 0.60/0.64/0.61 for test/validation/cross-labelled train. Selector yield among all sampled images is 37.9\% [35.4,40.5] in top-score and 7.7\% [5.8,10.1] in random remainder (1,400 and 600 images).
+The dataset contains 5,149 final-labelled images: 3,229 usable (2,450 passable, 779 blocked) and 1,920 I. Natural main prevalence is 10.8\% of usable images (Wilson [9.4, 12.3], street bootstrap [8.7, 13.9]); validation and test have 35 and 47 positives among 242 and 459 usable images. Enriched training has 697/2,528 positives (27.6\%, Wilson [25.9, 29.3]), 83\% supplied by enrichment. Three-label Cohen's $\kappa$ is 0.60/0.64/0.61 for test/validation/cross-labelled train; Khải adjudicated the 303 disagreements and changed 28 proposed labels. Selector yield among all sampled images is 37.9\% [35.4, 40.5] in the top-score stratum and 7.7\% [5.8, 10.1] in the random stratum (1,400 and 600 images).
 
-No exact duplicates or dHash distances at most four were found; street, position-group and panorama IDs do not cross splits, but 52 evaluation images lie within 40 m of 47 train-side images. Descriptive image-quality measures are broadly close across main splits; blocked images are darker (AUC 0.37 [0.32,0.41]). Enrichment differs from main train (domain AUC 0.95 top-score, 0.70 random). Street has metadata association V=0.18; main road-type V=0.00, while road-type association in enrichment is reported separately. Other main metadata show little evidence of strong label association.
+No exact duplicates or dHash distances at most four were found; street, position-group and panorama IDs do not cross splits, but 52 evaluation images lie within 40 m of 47 train-side images. Descriptive image-quality measures are broadly close across main splits; blocked images are darker (AUC 0.37 [0.32, 0.41]). The enrichment set differs from main train (domain AUC 0.70 for the random stratum; 0.95 for top-score, partly inflated because it shares embeddings with the selector). Street shows the strongest metadata association with the label (V = 0.18); road type has V = 0.00 in the main component, while its association in the enrichment set is reported separately. Other main metadata show little evidence of strong label association.
 
 \subsection{What has not been measured or completed}
+Table~\ref{en:notdone} lists open items and their implications.
 \begin{longtable}{p{0.35\textwidth} p{0.59\textwidth}}
-\caption{Outstanding work and its implications}\\\toprule
+\caption{Outstanding work and its implications}\label{en:notdone}\\\toprule
 Item & Status and implication \\\midrule\endfirsthead
 \toprule Item & Status and implication \\\midrule\endhead
 At least 100 team photographs planned in the proposal & Not collected; all images currently come from Mapillary. \\
 Sensitive-content review & Not completed beyond Mapillary's blur; internal sheets still show some identifiable people and plates. \\
-Frozen splits & Pending the policy for 47 train-side images near evaluation intersections. Keep predetermined test streets; 47 positives limit evaluation precision. \\
+Frozen splits & Pending the policy for 47 train-side images near evaluation intersections. Predetermined test streets are retained; 47 positives limit evaluation precision. \\
 Enrichment label-noise rate & Not measured. Targeted cross-checks of 203 suspected cases are not representative; individual blocked shares range 19--43\%. \\
+Independent adjudication (as planned) & Not fully achieved. Khải annotated 123 of the 303 disagreements, including all 99 validation disagreements; seven final labels match neither vote. \\
 Confidence intervals for $\kappa$ & Not measured. \\
 1,563 singly labelled main train images & Not re-reviewed; the 15\% cross-labelled subset has $\kappa=0.61$. \\
 Left sidewalks on one-way streets & Underobserved because crops look right; a source limitation. \\
-Unified final-label table & Enrichment and main/pilot remain separate; cross-check cells 263 and 264 await confirmation, retaining original labels. \\
+Unified final-label table & Enrichment and main/pilot labels remain separate; cross-check cells 263 and 264 await confirmation, retaining original labels. \\
 Explanation for darker blocked images & Unverified; assess in model error analysis. \\
 38 rejected enrichment night images & Not visually reviewed; the 58 rejected main images were reviewed. \\
 Reconstructed versus server crops & Only an earlier five-image comparison (1.35--1.5 grey-level difference); 671 validation/test crops in image EDA were reconstructed. \\
 Pilot annotation timing and obstacle tags & Not included in these statistics. \\
-Pixel normalization and augmentation & Training-stage work, not yet performed. \\\bottomrule
+Pixel normalisation and augmentation & Training-stage work, not yet performed. \\\bottomrule
 \end{longtable}
-These are limitations, not claims of completed checks. The report documents a plan rather than changing labels or splits during EDA. Before training, decide and record the geographic exclusion policy, save a fixed manifest and regenerate affected tables. A representative independent enrichment audit, broader reconstruction comparison, sensitive-content review and rejected-enrichment review are still needed; no completion is implied by the editorial corrections.
-\src{\f{docs/unresolved_items.md}; EDA sections above.}
+These are limitations, not claims of completed checks. The report documents a plan rather than changing labels or splits during EDA. Before training, the geographic exclusion policy needs to be decided and recorded, a fixed manifest saved and the affected tables regenerated. A representative independent enrichment audit, broader reconstruction comparison, sensitive-content review and rejected-enrichment review are still needed.
 
 \subsection{Implications for modelling}
-Use imbalance-aware metrics (PR-AUC and blocked-class F1), with street-resampled uncertainty. Only 47 test positives limit the ability to distinguish small performance differences. Compare enriched training with training on the natural component alone; consider class weighting or resampling. Check whether models exploit darkness. Resolve train/evaluation intersection proximity before freezing splits.
+Imbalance-aware metrics are recommended: the area under the precision--recall curve (PR-AUC) and the F1 score of the Blocked class, with street-resampled uncertainty. Only 47 test positives limit the ability to distinguish small performance differences. Training on the enriched set should be compared with training on the natural component alone, and class weighting or resampling should be considered. Model error analysis should check whether models exploit darkness. Train/evaluation intersection proximity should be resolved before the splits are frozen.
 
 \appendix
+\needspace{0.3\textheight}
 \section{Provenance and reproduction}
-Every reported number comes from repository data or a reproducible script. Paths beginning \f{tables/} or \f{figures/} are relative to \f{docs/data_report/}. This English edition translates the corrected Vietnamese report's findings, counts and limitations; file names, legacy source codes and proper names remain unchanged.
-\begin{table}[H]\centering\caption{EDA scripts and outputs}
-\begin{tabularx}{\textwidth}{p{0.39\linewidth} L}\toprule
-Script & Outputs \\\midrule
-\f{src/eda/27_rebuild_missing_crops.py} & Reconstructs missing crops from manifests (671 validation/test crops); reads no labels. \\
-\f{src/eda/28_eda_tabular.py} & Inventory, label distributions, metadata, associations, consistency checks, \f{tab_*.pdf} and \f{tabular_numbers.json}. \\
-\f{src/eda/29_eda_images.py} & Per-image quality statistics, \f{img_*} figures, \f{image_stats.csv} and \f{image_numbers.json}. \\
-\f{src/eda/30_eda_duplicates.py} & Duplicates, geography, similarity, domain comparisons, \f{dup_*} figures and \f{duplicate_numbers.json}. \\\bottomrule
+Every reported number is computed by team scripts from data stored in the repository (Section~\ref{en:storagesec}); none is entered by hand. This English edition translates the Vietnamese report's findings, counts and limitations; proper names remain unchanged. Table~\ref{en:scripts} shows how each group of results was produced.
+\begin{table}[H]\centering\caption{Origin of the reported results}\label{en:scripts}
+\begin{tabularx}{\textwidth}{p{0.36\linewidth} L}\toprule
+Results & Produced by \\\midrule
+Mapillary and OSM counts, street-assignment yield, night rejections & The collection steps; each step's results are recorded in the collection log and collection-status table \\
+Left/right comparison, crop parameters & Two exploratory measurements of near-sidewalk coverage by side and by crop angle \\
+Agreement, adjudication, label provenance & The agreement step, which builds final labels from annotation records and the adjudication table \\
+Selector, street choice, 2,000 enrichment images & The selector comparison (leave one street out), the 150-street scan and the enrichment selection step \\
+Enrichment annotation, cross-checks & The step that compiles enrichment labels from annotation records and the cross-check table \\
+Label, metadata and consistency tables and figures & Tabular EDA script: label counts, intervals, descriptive statistics, associations and 71 consistency checks; reads only label and manifest tables \\
+Image-quality table and figures, example grids & Image EDA script: per-crop luminance, contrast, dark and overexposed shares, sharpness and colourfulness \\
+Duplicate, position, leakage and domain results & Duplicate EDA script: hashes, dHash, DINOv2 embeddings, geographic distances between splits and the domain classifier \\\bottomrule
 \end{tabularx}\end{table}
-Non-EDA sources include the collection log and collection-status CSV (counts and filtering); scripts 08/09 and side-coverage/crop-parameter CSVs (crop decisions); script 19, the main agreement report and labeling-phase log (agreement and adjudication); script 07 and pilot reports; script 21 and selector benchmark; scripts 23/24 and street-scan/enrichment-score CSVs; and script 26, enrichment reports and cross-check CSV (enrichment annotation).
+\textbf{Reproduction.} Images are not in Git. They can be taken from the labelling server or reconstructed from the manifest (panorama ID and crop angle) with the team's reconstruction script, which requires a Mapillary token. Reconstructed crops differ from server copies because of JPEG re-encoding, so the image source should be recorded; the 671 validation/test crops in this report's image EDA were reconstructed. Install the repository's dependency list, record the actual Python and library versions, then run the three EDA scripts in order (tabular, image, duplicates). The tabular script needs only data tables; the other two need the crop store, and the duplicate script preferably runs on a GPU. The report is compiled with XeLaTeX and BibTeX.
 
-Create a virtual environment and install \f{requirements.txt}, including PyYAML. Record the actual Python version and \texttt{pip freeze} used to regenerate results. Image data are absent from Git: prefer server originals, or configure \texttt{MAPILLARY\_TOKEN} and reconstruct with script 27, documenting JPEG differences. Scripts 29/30 require \f{data/crops/}; script 30 requires model downloads and preferably a GPU. Run from the repository root:
-\begin{verbatim}
-python src/eda/27_rebuild_missing_crops.py
-python src/eda/28_eda_tabular.py
-python src/eda/29_eda_images.py
-python src/eda/30_eda_duplicates.py
-cd docs/data_report
-sh make.sh
-sh make.sh en
-\end{verbatim}
-The current editorial review independently recounted primary labels and check totals from CSV, but did not rerun pixel/embedding analysis because local crops were unavailable. The original appendix records that three Claude Sonnet agents wrote EDA scripts under a coordinating Claude agent, which independently rechecked headline counts, Wilson intervals, metadata, image measurements on 300 sampled images, hashes, geographic distances and embeddings and inspected contact sheets. Statements described as visual observations refer to those AI contact-sheet observations, not human labels or quantitative measurements. Dataset labels were assigned by humans; Khải performed main adjudication as confirmed by the team.
+\textbf{Who did what.} Three Claude Sonnet agents wrote the EDA scripts under a coordinating Claude agent, which independently rechecked headline counts, Wilson intervals, metadata, image measurements on 300 sampled images, hashes, geographic distances and embeddings and inspected contact sheets. Statements described as visual observations refer to those AI contact-sheet observations, not human labels or quantitative measurements. Dataset labels were assigned by human annotators and confirmed by human adjudicators: Claude only proposed labels for the 303 main disagreements (reviewed by Khải) and the 150 pilot images (reviewed by Phúc); seven main final labels are proposals that matched neither vote and were kept by the adjudicator (Section~\ref{en:qa}).
 
 Only training images are shown in the public example grids. Internal review contact sheets include validation/test crops and are excluded from both the report and Git. Image attribution: \cc.

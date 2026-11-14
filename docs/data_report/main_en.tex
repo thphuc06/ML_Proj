@@ -5,14 +5,15 @@
 \makeatother
 \usepackage{fit_hcmus}
 \usepackage{longtable}
+\usepackage{needspace}
 \graphicspath{{../proposal/latex/}{figures_en/}{figures/}}
 \setlength{\emergencystretch}{3em}
-\newcommand{\src}[1]{{\par\noindent\footnotesize\color{fitgray}\textit{Source:} #1\par}}
+\newcommand{\note}[1]{{\par\noindent\footnotesize\color{fitgray}\textit{Note:} #1\par}}
 \newcommand{\f}[1]{\path{#1}}
 \newcommand{\lab}[1]{\textsf{#1}}
 \newcommand{\cc}{© Mapillary contributors, CC BY-SA 4.0}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
-\newcommand{\plot}[3]{\begin{figure}[htbp]\centering\includegraphics[width=#2\textwidth]{#1}\caption{#3}\end{figure}}
+\newcommand{\plot}[3]{\begin{figure}[htbp]\centering\includegraphics[width=#2\textwidth]{#1}\caption{#3}\label{fig:#1}\end{figure}}
 \courseid{CSC14005}
 \coursename{Introduction to Machine Learning}
 \reportsubtitle{DATA REPORT}

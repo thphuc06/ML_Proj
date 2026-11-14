@@ -1,59 +1,34 @@
 % ==============================================================================
-% PHỤ LỤC: TRUY NGUỒN SỐ LIỆU
+% PHỤ LỤC: TRUY NGUỒN SỐ LIỆU VÀ TÁI LẬP
 % ==============================================================================
-\section{Truy nguồn số liệu và cách chạy lại}
+\needspace{0.6\textheight}
+\section{Truy nguồn số liệu và cách tái lập}
 \label{sec:trace}
 
-Mọi con số trong báo cáo đến từ một file trong repo hoặc từ một script chạy lại được. Đường dẫn \f{tables/} và \f{figures/} là tương đối so với \f{docs/data_report/}.
+Mọi con số trong báo cáo được tính bằng script của nhóm từ dữ liệu lưu trong repo (mục~\ref{sec:storage}); không có số liệu nào được nhập thủ công. Bảng~\ref{tab:scripts} cho biết mỗi nhóm số liệu được tạo ra ở bước nào.
 
 \begin{table}[H]
 \centering
-\caption{Script sinh số liệu và hình của báo cáo}
+\caption{Nguồn gốc của các nhóm số liệu trong báo cáo}
 \label{tab:scripts}
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.34\linewidth} L}
-\toprule
-\textbf{Script} & \textbf{Sinh ra} \\
-\midrule
-\f{src/eda/27_rebuild_missing_crops.py} & Dựng lại ảnh cắt còn thiếu trên máy từ manifest (671 ảnh val/test). Không đọc nhãn \\
-\f{src/eda/28_eda_tabular.py} & Bảng~\ref{tab:overview}, \ref{tab:label-source}, \ref{tab:inventory}--\ref{tab:assoc}, \ref{tab:checks}; hình \f{tab_*.pdf}; \f{tables/tabular_numbers.json} và các bảng thống kê nhãn, metadata, kiểm tra nhất quán \\
-\f{src/eda/29_eda_images.py} & Bảng~\ref{tab:image}; hình \f{img_*}; \f{tables/image_stats.csv} (mỗi ảnh một dòng), \f{tables/image_numbers.json} \\
-\f{src/eda/30_eda_duplicates.py} & Bảng~\ref{tab:spatial}, \ref{tab:domain}; hình \f{dup_*}; \f{tables/duplicate_numbers.json} \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Nguồn của các số liệu không do script EDA sinh ra}
-\label{tab:othersrc}
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.36\linewidth} L}
 \toprule
-\textbf{Số liệu} & \textbf{Nguồn} \\
+\textbf{Số liệu} & \textbf{Được tạo ra bởi} \\
 \midrule
-Số ảnh Mapillary, số đường OSM, tỉ lệ gắn đường, ảnh đêm bị loại & \f{docs/collection_log.md}; \f{data/manifest/main_v1_collection_status.csv} \\
-So sánh ảnh trái và phải, tham số cắt ảnh & \f{src/analysis/08_side_analysis.py}, \f{09_crop_param_study.py}; \f{data/streets/side_coverage.csv}, \f{crop_param_study.csv} \\
-Đồng thuận, phân xử, nguồn nhãn & \f{src/labeling/19_main_agreement.py}; \f{data/labels/main_report/main_report.md}; \f{docs/labeling_phase1.md} \\
-Pilot & \f{src/labeling/07_pilot_agreement.py}; \f{data/labels/pilot_report/} \\
-So sánh bộ chọn ảnh & \f{src/analysis/21_selector_benchmark.py}; \f{data/streets/selector_benchmark.csv} \\
-Quét đường, kho ảnh bơm, chọn 2.000 ảnh & \f{src/analysis/24_street_scan.py}, \f{src/collection/23_collect_train_extra.py}; \f{data/streets/street_scan_v1.csv}, \f{train_extra_v1_scores.csv} \\
-Kết quả gán ảnh bơm, kiểm tra chéo & \f{src/labeling/26_train_extra_report.py}; \f{data/labels/train_extra_report/report.md}; \f{data/labels/train_extra_cross_check.csv} \\
+Số ảnh Mapillary, số đường OSM, tỉ lệ gắn đường, số ảnh đêm bị loại (mục~\ref{sec:pipeline}) & Các bước thu thập; kết quả của từng bước được ghi vào nhật ký thu thập và bảng trạng thái thu thập \\
+So sánh ảnh bên trái và bên phải, tham số cắt ảnh & Hai phép đo thăm dò về độ phủ vỉa hè theo phía chụp và theo góc cắt \\
+Đồng thuận, phân xử, nguồn nhãn (mục~\ref{sec:qa}) & Bước đo đồng thuận và dựng nhãn cuối từ phiếu gán và bảng phân xử \\
+Bộ chọn ảnh, chọn đường, chọn 2.000 ảnh bổ sung (mục~\ref{sec:enrich}) & Phép so sánh các bộ chọn ảnh (để riêng từng tuyến đường), lượt quét 150 đường và bước chọn ảnh bổ sung \\
+Kết quả gán nhãn ảnh bổ sung, kiểm tra chéo & Bước tổng hợp nhãn ảnh bổ sung từ phiếu gán và bảng kiểm tra chéo \\
+Bảng~\ref{tab:overview}, \ref{tab:label-source}, \ref{tab:inventory}--\ref{tab:assoc}, \ref{tab:checks}; các hình về nhãn và metadata & Script EDA dữ liệu dạng bảng: đếm nhãn, khoảng tin cậy, thống kê mô tả, liên hệ với nhãn và 71 phép kiểm tra nhất quán; script này chỉ đọc bảng nhãn và manifest \\
+Bảng~\ref{tab:image}; các hình về chất lượng ảnh và ảnh ví dụ & Script EDA ảnh: đo từng ảnh cắt (độ sáng, độ tương phản, tỉ lệ điểm ảnh tối và cháy sáng, độ nét, độ sặc sỡ màu) \\
+Bảng~\ref{tab:spatial}, \ref{tab:domain}; các hình về trùng lặp, vị trí và t-SNE & Script EDA trùng lặp và rò rỉ: mã băm, dHash, embedding DINOv2, khoảng cách địa lý giữa các tập, bộ phân loại miền \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\textbf{Chạy lại} (từ thư mục gốc của repo, Python trong \f{.venv}; script 29 và 30 cần ảnh trong \f{data/crops/}, script 30 nên chạy trên GPU):
+\textbf{Tái lập kết quả.} Ảnh không được lưu trong git. Có hai cách lấy ảnh: dùng bản ảnh cắt trên server gán nhãn, hoặc dựng lại từ manifest (mã ảnh gốc và góc quay) bằng script dựng lại ảnh của nhóm, với điều kiện có token Mapillary. Bản dựng lại khác bản trên server do nén JPEG lại, nên cần ghi rõ nguồn ảnh đã dùng; 671 ảnh val/test trong phần EDA ảnh của báo cáo này là bản dựng lại. Tiếp theo, cài đặt các thư viện trong danh sách phụ thuộc của repo, ghi lại phiên bản Python và thư viện thực sự sử dụng, rồi chạy lần lượt ba script EDA (dạng bảng, ảnh, trùng lặp). Script dạng bảng chỉ cần các bảng dữ liệu; hai script còn lại cần kho ảnh cắt, và script trùng lặp nên được chạy trên GPU. Báo cáo được biên dịch bằng XeLaTeX và BibTeX.
 
-\begin{verbatim}
-python src/eda/27_rebuild_missing_crops.py  # can MAPILLARY_TOKEN
-python src/eda/28_eda_tabular.py
-python src/eda/29_eda_images.py
-python src/eda/30_eda_duplicates.py
-cd docs/data_report && sh make.sh           # ra data_report.pdf
-sh make.sh en                             # ra data_report_en.pdf
-\end{verbatim}
+\textbf{Phân công và việc sử dụng công cụ AI.} Ba script EDA do ba tác tử AI (Claude Sonnet) viết theo yêu cầu của một tác tử điều phối (Claude). Tác tử điều phối đã tính lại độc lập các số liệu chính (đếm nhãn, khoảng Wilson, thống kê metadata, phép đo ảnh trên 300 ảnh mẫu, mã băm MD5, khoảng cách giữa các tập, độ tương đồng embedding) và xem các bảng ảnh kiểm tra trước khi đưa kết quả vào báo cáo. Các kết quả kiểm tra trực quan trong báo cáo là quan sát của AI trên các bảng ảnh tổng hợp, không phải nhãn và không phải phép đo. Nhãn của bộ dữ liệu do người gán và người phân xử quyết định: Claude chỉ đề xuất nhãn cho 303 ảnh bất đồng của bộ chính (do Khải duyệt) và 150 ảnh pilot (do Phúc duyệt); 7 nhãn cuối của bộ chính là các đề xuất khác cả hai phiếu và được người phân xử giữ lại (mục~\ref{sec:qa}).
 
-\textbf{Phạm vi kiểm tra bản sửa.} Lần rà soát biên tập đã đếm lại nhãn và số phép kiểm tra từ CSV, kiểm tra bản PDF biên dịch và bổ sung hướng dẫn tái lập. Chưa chạy lại EDA điểm ảnh hay embedding do máy chưa có kho ảnh. Trước khi tái lập, cài \f{requirements.txt} (có PyYAML), ghi phiên bản Python và danh sách thư viện của môi trường thực sự chạy; ưu tiên bản ảnh trên server hoặc ghi rõ nguồn ảnh dựng lại. Mã \lab{adjudicated\_phuc} là mã nguồn cũ, không xác định người thực hiện; Khải phân xử bộ chính theo xác nhận của nhóm.
-
-\textbf{Việc ai làm.} Ba script EDA do ba tác tử AI (Claude Sonnet) viết theo đề bài của tác tử điều phối (Claude); tác tử điều phối đã tính lại độc lập các số chính (đếm nhãn, khoảng Wilson, thống kê metadata, phép đo ảnh trên 300 ảnh mẫu, mã băm md5, khoảng cách giữa các tập, độ tương đồng embedding) và xem các tấm ảnh kiểm tra trước khi đưa vào báo cáo. Các câu ``quan sát bằng mắt'' là quan sát của AI trên tấm ảnh ghép, không phải nhãn và không phải phép đo. Nhãn của bộ dữ liệu do người gán.
-
-\textbf{Ảnh trong báo cáo.} Hình~\ref{fig:examples} và~\ref{fig:examples-extra} chỉ dùng ảnh train. Các tấm ảnh kiểm tra nội bộ (\f{figures/*_sheet_*.jpg}) có ảnh val/test nên không đưa vào báo cáo và không đưa lên git. Ảnh: \cc.
+\textbf{Ảnh minh họa trong báo cáo.} Hình~\ref{fig:examples} và~\ref{fig:examples-extra} chỉ dùng ảnh train. Các bảng ảnh kiểm tra nội bộ có chứa ảnh val/test nên không được đưa vào báo cáo và không được đưa lên git. Nguồn ảnh: \cc.

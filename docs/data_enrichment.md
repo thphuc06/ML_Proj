@@ -1,6 +1,6 @@
 # Bơm thêm ảnh "Bị chặn" cho tập train
 
-Ghi chép ngày 04/11/2026, cập nhật 11/11/2026. **Trạng thái: chưa bơm ảnh nào. Bộ chọn ảnh mới (embedding DINOv2 + logistic) đã đo xong và thay bộ chấm `occ_v2` (mục 7). Đã quét 150 đường để chọn đường (mục 8) và lập danh sách 2.000 ảnh từ 75 đường, chia 400 ảnh cho mỗi người gán (mục 9).** Đã gán xong 12/11 và kiểm tra chéo một phần 14/11: 577 ảnh "Bị chặn" trong 2.000 ảnh (mục 9). Đã gán xong bộ chính, số ảnh "Bị chặn" thật thấp hơn ước tính (xem mục 1). Nhóm quyết định chờ gán xong đợt đầu rồi mới xem xét bơm thêm, và lấy ảnh từ **đường train mới**. Nhật ký kỹ thuật ở [collection_log.md](collection_log.md).
+Ghi chép ngày 04/11/2026, cập nhật 14/11/2026. **Trạng thái: đã bơm 2.000 ảnh từ 75 đường mới vào train, đã gán xong (12/11) và kiểm tra chéo một phần (14/11): 577 ảnh "Bị chặn" (mục 9).** Bộ chọn ảnh mới (embedding DINOv2 + logistic) đã thay bộ chấm `occ_v2` (mục 7); danh sách đường lấy từ lượt quét 150 đường (mục 8). Đã gán xong bộ chính, số ảnh "Bị chặn" thật thấp hơn ước tính (xem mục 1). Nhóm quyết định chờ gán xong đợt đầu rồi mới xem xét bơm thêm, và lấy ảnh từ **đường train mới**. Nhật ký kỹ thuật ở [collection_log.md](collection_log.md).
 
 ## Bàn giao (11/11/2026)
 

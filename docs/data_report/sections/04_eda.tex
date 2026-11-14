@@ -1,15 +1,16 @@
 % ==============================================================================
 % 6. PHÂN TÍCH KHÁM PHÁ DỮ LIỆU (EDA)
 % ==============================================================================
+\needspace{0.3\textheight}
 \section{Phân tích khám phá dữ liệu (EDA)}
 \label{sec:eda}
 
-\textbf{Cách đọc mục này.}
+\textbf{Quy ước phân tích.}
 \begin{itemize}
-  \item Mọi thống kê tách sáu nhóm: bộ chính train / val / test (tự nhiên), pilot, ảnh bơm tầng \lab{top\_score} và tầng \lab{random}. Chỗ nào gộp thì ghi rõ là gộp.
-  \item Nhãn val/test chỉ dùng để mô tả. Không có lựa chọn hay ngưỡng nào trong báo cáo được đặt theo nhãn val/test.
-  \item Khoảng tin cậy 95\% của tỉ lệ là khoảng Wilson~\cite{wilson1927interval}, coi các ảnh là độc lập. Ảnh cùng đường giống nhau nên khoảng thật rộng hơn; ở các so sánh quan trọng báo cáo kèm khoảng \emph{bootstrap theo đường} (lấy lại mẫu cả tuyến đường). Với val (3 đường) và test (4 đường), khoảng bootstrap theo đường chỉ để tham khảo.
-  \item Toàn bộ số liệu sinh từ ba script trong \f{src/eda/}; bảng đầy đủ ở \f{docs/data_report/tables/}. Phụ lục~\ref{sec:trace} ghi nguồn của từng bảng và hình.
+  \item Mọi thống kê được tách theo sáu nhóm: train, val, test của bộ chính (phân phối tự nhiên), pilot, tầng điểm cao và tầng ngẫu nhiên của ảnh bổ sung. Các kết quả gộp nhiều nhóm đều được ghi chú rõ.
+  \item Nhãn val/test chỉ dùng để mô tả. Không có lựa chọn hay ngưỡng nào trong báo cáo được xác định dựa trên nhãn val/test.
+  \item Khoảng tin cậy 95\% của tỉ lệ là khoảng Wilson~\cite{wilson1927interval}, giả định các ảnh độc lập. Do ảnh cùng đường có xu hướng giống nhau, khoảng thực tế rộng hơn; vì vậy các so sánh quan trọng có thêm khoảng \emph{bootstrap theo đường} (lấy mẫu lại theo nguyên tuyến đường), riêng với val (3 đường) và test (4 đường) chỉ có giá trị tham khảo.
+  \item Mọi số liệu và hình trong mục này do ba script EDA của nhóm sinh ra, không nhập thủ công (phụ lục~\ref{sec:trace}).
 \end{itemize}
 
 % ------------------------------------------------------------------------------
@@ -17,6 +18,8 @@
 \label{sec:eda-desc}
 
 \subsubsection*{Số mẫu, số thuộc tính, tỉ lệ thiếu}
+
+Bảng~\ref{tab:inventory} thống kê số dòng, số cột và dữ liệu thiếu của từng bảng dữ liệu.
 
 \begin{table}[H]
 \centering
@@ -26,52 +29,54 @@
 \toprule
 \textbf{Bảng} & \textbf{Dòng} & \textbf{Cột} & \textbf{Dữ liệu thiếu} \\
 \midrule
-Nhãn bộ chính + pilot & 3.149 & 8 & Chỉ cột \lab{reason}: thiếu ở 2.114 dòng. 1.833 dòng là nhãn 0/1 (không có lý do theo thiết kế); \textbf{281 ảnh \lab{I} không có lý do} \\
-Nhãn ảnh bơm & 2.000 & 11 & Chỉ cột \lab{reason}: 1.403 dòng, trong đó 7 ảnh \lab{I} không có lý do \\
+Nhãn bộ chính và pilot & 3.149 & 8 & Chỉ cột lý do: thiếu ở 2.114 dòng, trong đó 1.833 dòng là nhãn 0/1 (không có lý do theo thiết kế) và \textbf{281 ảnh \lab{I} không có lý do} \\
+Nhãn ảnh bổ sung & 2.000 & 11 & Chỉ cột lý do: 1.403 dòng, trong đó 7 ảnh \lab{I} không có lý do \\
 Manifest bộ chính & 2.999 & 21 & Không thiếu ô nào \\
-Manifest pilot & 150 & 21 & Không thiếu ô nào (không có cột \lab{position\_group}) \\
-Manifest ảnh bơm & 2.000 & 25 & Không thiếu ô nào \\
-Từng lượt gán, bộ chính & 4.435 & 13 & \lab{reason}, \lab{obstacles}, \lab{note}: thiếu theo thiết kế (không bắt buộc) \\
-Từng lượt gán, ảnh bơm & 2.000 & 13 & Như trên \\
+Manifest pilot & 150 & 21 & Không thiếu ô nào (không có cột nhóm vị trí) \\
+Manifest ảnh bổ sung & 2.000 & 25 & Không thiếu ô nào \\
+Từng lượt gán, bộ chính & 4.435 & 13 & Lý do, loại vật cản, ghi chú: thiếu theo thiết kế (không bắt buộc) \\
+Từng lượt gán, ảnh bổ sung & 2.000 & 13 & Như trên \\
 \bottomrule
 \end{tabularx}
-\src{\f{tables/inventory_tables.csv}, \f{tables/inventory_columns.csv} (\f{src/eda/28_eda_tabular.py}).}
 \end{table}
 
 \begin{itemize}
-  \item \textbf{Thuộc tính.} Mỗi ảnh có 1 nhãn và khoảng 20 thuộc tính metadata: 7 thuộc tính số (vĩ độ, kinh độ, độ sáng ảnh $360^\circ$, khoảng cách tới tim đường, hướng chạy xe, góc cắt, điểm bộ chọn ảnh với ảnh bơm), còn lại là phân loại hoặc định danh (đường, tập, người chụp, chuỗi ảnh, thời gian chụp, tầng lấy mẫu, nguồn nhãn). Đầu vào của model chỉ là ảnh; metadata dùng để chia tập, truy nguồn và kiểm tra.
-  \item \textbf{Metadata không thiếu ô nào} trên cả 5.149 ảnh. Lý do: ảnh thiếu tọa độ hoặc hướng đi không gắn được vào đường nên không thể được chọn.
-  \item \textbf{281 ảnh \lab{I} của bộ chính và pilot không ghi lý do:} 162 ảnh có nhãn sau phân xử, 63 ảnh pilot (xem lại theo v1, không ghi lý do), 55 ảnh hai người cùng chọn \lab{I} nhưng khác lý do, 1 ảnh gán đơn. Vì vậy thống kê lý do chỉ tính trên 1.035/1.253 ảnh \lab{I} của bộ chính. Nhãn chính không bị ảnh hưởng.
+  \item \textbf{Thuộc tính.} Mỗi ảnh có 1 nhãn và khoảng 20 thuộc tính metadata, gồm 7 thuộc tính số (vĩ độ, kinh độ, độ sáng ảnh $360^\circ$, khoảng cách tới tim đường, hướng di chuyển của xe, góc cắt, và điểm của bộ chọn ảnh đối với ảnh bổ sung); các thuộc tính còn lại là thuộc tính phân loại hoặc định danh (đường, tập, tài khoản chụp, chuỗi ảnh, thời gian chụp, tầng lấy mẫu, nguồn nhãn). Đầu vào của mô hình chỉ là ảnh; metadata được dùng để chia tập, truy nguồn và kiểm tra.
+  \item \textbf{Metadata không thiếu ô nào} trên toàn bộ 5.149 ảnh, vì ảnh thiếu tọa độ hoặc hướng di chuyển không gắn được vào đường nên không thể được chọn.
+  \item \textbf{281 ảnh \lab{I} của bộ chính và pilot không ghi lý do}, gồm 162 ảnh có nhãn sau phân xử, 63 ảnh pilot (được xem lại theo v1 nhưng không ghi lý do), 55 ảnh mà hai người cùng chọn \lab{I} nhưng khác lý do, và 1 ảnh chỉ có một người gán. Vì vậy, thống kê lý do chỉ tính trên 1.035/1.253 ảnh \lab{I} của bộ chính. Nhãn chính không bị ảnh hưởng.
 \end{itemize}
 
 \subsubsection*{Thống kê cơ bản của các biến số}
+
+Bảng~\ref{tab:desc} và hình~\ref{fig:desc} mô tả hai biến số chính theo từng nhóm; bảng~\ref{tab:desc2} mô tả các biến số còn lại.
 
 \begin{table}[H]
 \centering
 \caption{Thống kê mô tả hai biến số chính của metadata, theo nhóm}
 \label{tab:desc}
+\small\setlength{\tabcolsep}{4pt}
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.2\linewidth} r R R R R R R}
 \toprule
-\textbf{Nhóm} & \textbf{n} & \textbf{TB} & \textbf{Trung vị} & \textbf{Phương sai} & \textbf{Min} & \textbf{Max} & \textbf{IQR} \\
+\textbf{Nhóm} & \textbf{n} & \textbf{Trung bình} & \textbf{Trung vị} & \textbf{Phương sai} & \textbf{Nhỏ nhất} & \textbf{Lớn nhất} & \textbf{IQR} \\
 \midrule
 \multicolumn{8}{l}{\emph{Độ sáng ảnh $360^\circ$ (trung bình nửa trên, thang 0--255)}} \\
 Bộ chính, train & 1.839 & 166,8 & 171,0 & 448,6 & 94 & 231 & 27,0 \\
 Bộ chính, val & 486 & 154,5 & 158,5 & 468,9 & 91 & 201 & 32,0 \\
 Bộ chính, test & 674 & 169,4 & 171,0 & 564,2 & 91 & 249 & 26,8 \\
 Pilot & 150 & 169,2 & 173,5 & 573,5 & 94 & 236 & 27,0 \\
-Ảnh bơm, \lab{top\_score} & 1.400 & 172,0 & 176,0 & 366,8 & 91 & 239 & 19,0 \\
-Ảnh bơm, \lab{random} & 600 & 172,7 & 176,0 & 377,9 & 94 & 238 & 22,3 \\
+Ảnh bổ sung, tầng điểm cao & 1.400 & 172,0 & 176,0 & 366,8 & 91 & 239 & 19,0 \\
+Ảnh bổ sung, tầng ngẫu nhiên & 600 & 172,7 & 176,0 & 377,9 & 94 & 238 & 22,3 \\
 \midrule
 \multicolumn{8}{l}{\emph{Khoảng cách từ vị trí chụp tới tim đường (m)}} \\
 Bộ chính, train & 1.839 & 3,70 & 3,0 & 9,67 & 0,0 & 20,0 & 3,40 \\
 Bộ chính, val & 486 & 3,46 & 3,1 & 8,53 & 0,0 & 18,4 & 3,08 \\
 Bộ chính, test & 674 & 3,54 & 2,9 & 9,48 & 0,0 & 19,6 & 3,70 \\
 Pilot & 150 & 3,45 & 2,7 & 7,98 & 0,0 & 17,0 & 3,58 \\
-Ảnh bơm, \lab{top\_score} & 1.400 & 2,87 & 2,2 & 6,81 & 0,0 & 19,9 & 2,70 \\
-Ảnh bơm, \lab{random} & 600 & 2,96 & 2,3 & 7,24 & 0,0 & 19,8 & 2,90 \\
+Ảnh bổ sung, tầng điểm cao & 1.400 & 2,87 & 2,2 & 6,81 & 0,0 & 19,9 & 2,70 \\
+Ảnh bổ sung, tầng ngẫu nhiên & 600 & 2,96 & 2,3 & 7,24 & 0,0 & 19,8 & 2,90 \\
 \bottomrule
 \end{tabularx}
-\src{\f{tables/desc_numeric.csv}. Bảng đầy đủ có thêm vĩ độ, kinh độ, hướng chạy xe, điểm bộ chọn ảnh và thời gian gán.}
+\note{IQR: khoảng tứ phân vị (hiệu giữa tứ phân vị thứ ba và tứ phân vị thứ nhất).}
 \end{table}
 
 \begin{figure}[H]
@@ -81,14 +86,47 @@ Pilot & 150 & 3,45 & 2,7 & 7,98 & 0,0 & 17,0 & 3,58 \\
 \label{fig:desc}
 \end{figure}
 
+\begin{table}[H]
+\centering
+\caption{Thống kê mô tả các biến số còn lại của metadata}
+\label{tab:desc2}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.17\linewidth} r R R R R R R}
+\toprule
+\textbf{Nhóm} & \textbf{n} & \textbf{Trung bình} & \textbf{Trung vị} & \textbf{Phương sai} & \textbf{Nhỏ nhất} & \textbf{Lớn nhất} & \textbf{IQR} \\
+\midrule
+\multicolumn{8}{l}{\emph{Vĩ độ ($^\circ$ Bắc)}} \\
+Bộ chính, gộp & 2.999 & 10,7751 & 10,7757 & $2{,}7\cdot10^{-4}$ & 10,7501 & 10,8149 & 0,0274 \\
+Ảnh bổ sung, gộp & 2.000 & 10,7812 & 10,7860 & $4{,}3\cdot10^{-4}$ & 10,7450 & 10,8150 & 0,0359 \\
+\multicolumn{8}{l}{\emph{Kinh độ ($^\circ$ Đông)}} \\
+Bộ chính, gộp & 2.999 & 106,6792 & 106,6813 & $2{,}3\cdot10^{-4}$ & 106,6500 & 106,7059 & 0,0285 \\
+Ảnh bổ sung, gộp & 2.000 & 106,6813 & 106,6813 & $3{,}1\cdot10^{-4}$ & 106,6500 & 106,7234 & 0,0291 \\
+\multicolumn{8}{l}{\emph{Hướng di chuyển của xe ($^\circ$, 0 = hướng Bắc)}} \\
+Bộ chính, gộp & 2.999 & 166,5 & 164,7 & 10.589,6 & 0,0 & 360,0 & 193,3 \\
+Ảnh bổ sung, gộp & 2.000 & 178,0 & 167,5 & 10.050,7 & 0,1 & 359,6 & 180,3 \\
+\multicolumn{8}{l}{\emph{Điểm của bộ chọn ảnh (chỉ có ở ảnh bổ sung, thang 0--1)}} \\
+Tầng điểm cao & 1.400 & 0,799 & 0,798 & 0,012 & 0,610 & 0,996 & 0,191 \\
+Tầng ngẫu nhiên & 600 & 0,231 & 0,188 & 0,032 & 0,001 & 0,607 & 0,286 \\
+\multicolumn{8}{l}{\emph{Thời gian gán một ảnh (giây, tính theo lượt gán)}} \\
+Bộ chính & 4.435 & 51,5 & 3,7 & 2.285.741 & 0,5 & 77.451 & 6,9 \\
+Ảnh bổ sung & 2.000 & 13,9 & 4,5 & 24.475 & 0,9 & 6.678 & 5,3 \\
+\bottomrule
+\end{tabularx}
+\note{Góc cắt không được đưa vào bảng vì là hằng số ($60^\circ$ về bên phải) với mọi ảnh.}
+\end{table}
+
 \begin{itemize}
-  \item \textbf{Độ sáng.} Không ảnh nào dưới ngưỡng lọc đêm (min 91). Val tối hơn các nhóm khác (trung vị 158,5 so với 171); val chỉ có 3 đường nên đây có thể là đặc điểm của ba đường đó.
-  \item \textbf{Khoảng cách tới tim đường} bị chặn trên ở 20 m theo quy tắc gắn đường. Ảnh bơm gần tim đường hơn (trung vị 2,2 m so với 3,0 m), phù hợp với việc 71\% ảnh bơm đến từ đường nhỏ.
-  \item \textbf{Điểm bộ chọn ảnh} (chỉ ảnh bơm): tầng \lab{top\_score} trung vị 0,80 (0,61--1,00), tầng \lab{random} trung vị 0,19 (0,00--0,61).
-  \item \textbf{Thời gian gán một ảnh} lệch phải rất mạnh: trung vị 3,7 giây (bộ chính, 4.435 lượt) và 4,5 giây (ảnh bơm), nhưng giá trị lớn nhất là 77.451 giây vì có task bị để mở. Chỉ nên dùng trung vị. Thời gian gán của pilot: \textbf{chưa đo} trong báo cáo này.
+  \item \textbf{Độ sáng} (bảng~\ref{tab:desc}, hình~\ref{fig:desc}). Không ảnh nào có độ sáng dưới ngưỡng lọc ảnh đêm (nhỏ nhất là 91). Ảnh tập val tối hơn các nhóm khác (trung vị 158,5 so với 171); do val chỉ có 3 đường, đây có thể là đặc điểm riêng của ba đường này.
+  \item \textbf{Khoảng cách tới tim đường} bị giới hạn trên ở 20 m theo quy tắc gắn đường. Ảnh bổ sung gần tim đường hơn (trung vị 2,2 m so với 3,0 m), phù hợp với việc 71\% ảnh bổ sung đến từ đường nhỏ.
+  \item \textbf{Tọa độ} (bảng~\ref{tab:desc2}) nằm trong khung nghiên cứu, trừ 2 ảnh bổ sung lệch ra ngoài dưới 4 m (mục~\ref{sec:eda-quality}). Ảnh bổ sung phân tán rộng hơn bộ chính (IQR của vĩ độ là 0,0359 so với 0,0274) vì đến từ 75 đường thay vì 17 đường.
+  \item \textbf{Hướng di chuyển của xe} trải đều trên toàn dải 0--$360^\circ$ (IQR xấp xỉ $190^\circ$), không tập trung vào một hướng. Thuộc tính này chỉ được dùng để gắn ảnh vào đường và để cắt ảnh về phía bên phải xe.
+  \item \textbf{Điểm của bộ chọn ảnh} (chỉ có ở ảnh bổ sung): tầng điểm cao có trung vị 0,80 (0,61--1,00), tầng ngẫu nhiên có trung vị 0,19 (0,00--0,61).
+  \item \textbf{Thời gian gán một ảnh} lệch phải rất mạnh: trung vị là 3,7 giây (bộ chính, 4.435 lượt) và 4,5 giây (ảnh bổ sung), trong khi giá trị lớn nhất lên tới 77.451 giây do một số tác vụ bị để mở. Vì vậy, trung vị là thước đo phù hợp hơn trung bình. Thời gian gán của pilot \textbf{chưa được đo} trong báo cáo này.
 \end{itemize}
 
 \subsubsection*{Phân bố theo thuộc tính phân loại}
+
+Hình~\ref{fig:year} và bảng~\ref{tab:month} trình bày phân bố ảnh theo tài khoản chụp, năm chụp và tháng chụp.
 
 \begin{figure}[H]
 \centering
@@ -97,17 +135,34 @@ Pilot & 150 & 3,45 & 2,7 & 7,98 & 0,0 & 17,0 & 3,58 \\
 \label{fig:year}
 \end{figure}
 
+\begin{table}[H]
+\centering
+\caption{Số ảnh theo tháng chụp (theo dấu thời gian của Mapillary)}
+\label{tab:month}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{l rrrrrrrrrrrr r}
+\toprule
+\textbf{Tháng} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & \textbf{Tổng} \\
+\midrule
+Bộ chính & 299 & 114 & 0 & 552 & 677 & 234 & 0 & 244 & 54 & 321 & 303 & 201 & 2.999 \\
+Ảnh bổ sung & 146 & 204 & 53 & 93 & 461 & 286 & 0 & 55 & 87 & 96 & 342 & 177 & 2.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \begin{itemize}
-  \item \textbf{Người chụp.} Hai tài khoản \lab{bemaps3\_sg} và \lab{phoenix\_mapping\_front} chiếm 84\% bộ chính (1.153 và 1.370 trên 2.999 ảnh) và 98\% ảnh bơm. Dữ liệu vì vậy đến từ rất ít loại thiết bị và cách gắn camera.
-  \item \textbf{Năm chụp.} Bộ chính: 2023 có 2.303 ảnh, 2024 có 660 ảnh, 2016 có 36 ảnh. Cả 103 ảnh ghi năm 2016 (của ba phần) đều thuộc \lab{bemaps3\_sg} và đều ghi đúng ngày 01/01/2016; nhiều khả năng đây là ngày giữ chỗ, nên năm 2016 \textbf{không đáng tin}.
-  \item \textbf{Giờ chụp} không dùng được (mục~\ref{sec:cleaning}); biểu đồ giờ ở \f{figures/tab_fig5b_stamped_hour_hist.pdf} chỉ để minh chứng.
-  \item \textbf{Số ảnh mỗi đường.} Bộ chính: 17 đường, 86--348 ảnh, trung vị 150. Ảnh bơm: 75 đường, 6--157 ảnh, trung vị 21. Hai đường ven kênh Hoàng Sa và Trường Sa\#0 chiếm 274 ảnh bơm (14\%).
+  \item \textbf{Tài khoản chụp} (hình~\ref{fig:year}). Hai tài khoản \lab{bemaps3\_sg} và \lab{phoenix\_mapping\_front} chiếm 84\% bộ chính (1.153 và 1.370 trên 2.999 ảnh) và 98\% ảnh bổ sung. Do đó, dữ liệu đến từ rất ít loại thiết bị và cách gắn camera.
+  \item \textbf{Năm chụp.} Ở bộ chính, năm 2023 có 2.303 ảnh, năm 2024 có 660 ảnh và năm 2016 có 36 ảnh. Toàn bộ 103 ảnh ghi năm 2016 (trên cả ba phần dữ liệu) đều thuộc tài khoản \lab{bemaps3\_sg} và cùng ghi ngày 01/01/2016; nhiều khả năng đây là ngày mặc định, nên năm 2016 \textbf{không đáng tin cậy}.
+  \item \textbf{Tháng chụp} (bảng~\ref{tab:month}). Ảnh được chụp trong 10 tháng khác nhau (bộ chính) và 11 tháng khác nhau (ảnh bổ sung), không có ảnh nào vào tháng 7; ảnh bộ chính tập trung vào tháng 4--5 (41\%). Tháng 1 bao gồm cả các ảnh mang ngày mặc định 01/01/2016.
+  \item \textbf{Giờ chụp} trải khắp các khung giờ trong ngày nhưng không đáng tin cậy: ở bộ chính, 1.080/2.999 ảnh (36\%) ghi giờ từ 18 giờ tới trước 6 giờ sáng (ở ảnh bổ sung là 762/2.000, tức 38\%), trong khi mọi ảnh được giữ lại đều vượt ngưỡng độ sáng của bộ lọc ảnh đêm. Vì vậy, giờ chụp không được dùng để lọc ảnh (mục~\ref{sec:cleaning}).
+  \item \textbf{Số ảnh mỗi đường.} Bộ chính có 17 đường, mỗi đường 86--348 ảnh (trung vị 150); ảnh bổ sung có 75 đường, mỗi đường 6--157 ảnh (trung vị 21). Hai đường ven kênh Hoàng Sa và Trường Sa\#0 đóng góp 274 ảnh bổ sung (14\%). Hai đường này từng bị loại khỏi bộ chính vì vỉa hè chủ yếu nằm ở một phía và có ít người đi bộ (bước 4, bảng~\ref{tab:steps}). Tuy nhiên, đợt bổ sung chỉ xếp hạng đường theo điểm của bộ chọn ảnh và không áp dụng lại tiêu chí này: hai đường đứng hạng 49 và 56 trong 75 đường, và do có chiều dài lớn nên đóng góp nhiều ảnh. Hai đường này chỉ thuộc train nên không ảnh hưởng tới val/test, nhưng làm tăng tỉ lệ cảnh ven kênh trong train.
 \end{itemize}
-\src{\f{tables/cat_distributions.csv}, \f{tables/tabular_numbers.json}.}
 
 % ------------------------------------------------------------------------------
 \subsection{Phân tích phân bố nhãn}
 \label{sec:eda-labels}
+
+Mục này xét mức mất cân bằng giữa các lớp, tỉ lệ từng lớp theo nhóm, thành phần nhãn của tập train sau khi bổ sung, và sự khác biệt theo đường, theo loại vật cản và theo người gán.
 
 \begin{figure}[H]
 \centering
@@ -118,83 +173,82 @@ Pilot & 150 & 3,45 & 2,7 & 7,98 & 0,0 & 17,0 & 3,58 \\
 
 \begin{table}[H]
 \centering
-\caption{Tỉ lệ ``Bị chặn'' và ``Không đủ thông tin'' theo nhóm, khoảng tin cậy 95\%}
+\caption{Tỉ lệ \lab{Bị chặn} và \lab{Không đủ thông tin} theo nhóm, khoảng tin cậy 95\%}
 \label{tab:labels}
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.2\linewidth} r >{\raggedright\arraybackslash}p{0.2\linewidth} >{\raggedright\arraybackslash}p{0.14\linewidth} r r}
 \toprule
-\textbf{Nhóm} & \textbf{Ảnh} & \textbf{Bị chặn / dùng được [Wilson]} & \textbf{Bootstrap theo đường} & \textbf{Tỉ lệ I} & \textbf{0 : 1} \\
+\textbf{Nhóm} & \textbf{Ảnh} & \textbf{Bị chặn / hợp lệ [Wilson]} & \textbf{Bootstrap theo đường} & \textbf{Tỉ lệ I} & \textbf{0 : 1} \\
 \midrule
 Bộ chính, train & 1.839 & 106/1.045 = 10,1\% [8,5; 12,1] & [7,9; 14,1] & 43,2\% & 8,9 \\
-Bộ chính, val & 486 & 35/242 = 14,5\% [10,6; 19,5] & [8,2; 19,2] & 50,2\% & 5,9 \\
+Bộ chính, val & 486 & 35/242 = 14,5\% [10,6; 19,4] & [8,2; 19,2] & 50,2\% & 5,9 \\
 Bộ chính, test & 674 & 47/459 = 10,2\% [7,8; 13,4] & [5,7; 18,7] & 31,9\% & 8,8 \\
 \emph{Bộ chính, gộp} & 2.999 & 188/1.746 = 10,8\% [9,4; 12,3] & [8,7; 13,9] & 41,8\% & 8,3 \\
 \midrule
 Pilot & 150 & 14/87 = 16,1\% [9,8; 25,2] & [10,0; 18,4] & 42,0\% & 5,2 \\
-Ảnh bơm, \lab{top\_score} & 1.400 & 531/1.018 = 52,2\% [49,1; 55,2] & [47,8; 56,6] & 27,3\% & 0,9 \\
-Ảnh bơm, \lab{random} & 600 & 46/378 = 12,2\% [9,3; 15,9] & [8,9; 15,3] & 37,0\% & 7,2 \\
+Ảnh bổ sung, tầng điểm cao & 1.400 & 531/1.018 = 52,2\% [49,1; 55,2] & [47,8; 56,6] & 27,3\% & 0,9 \\
+Ảnh bổ sung, tầng ngẫu nhiên & 600 & 46/378 = 12,2\% [9,2; 15,9] & [8,9; 15,3] & 37,0\% & 7,2 \\
 \bottomrule
 \end{tabularx}
-\src{\f{tables/label_counts_by_group.csv}. ``Dùng được'' là ảnh có nhãn 0 hoặc 1. Bootstrap theo đường: 1.000 lần.}
+\note{Ảnh hợp lệ là ảnh có nhãn 0 hoặc 1. Bootstrap theo đường: 1.000 lần lấy mẫu lại.}
 \end{table}
 
 \begin{itemize}
-  \item \textbf{Dữ liệu tự nhiên mất cân bằng mạnh:} trong ảnh dùng được của bộ chính, cứ khoảng 8 ảnh \lab{Còn lối đi} mới có 1 ảnh \lab{Bị chặn} (10,8\%). Tính trên mọi ảnh kể cả \lab{I}, tỉ lệ \lab{Bị chặn} là 6,3\% $[5{,}5;\,7{,}2]$.
-  \item \textbf{Khoảng tin cậy của tỉ lệ \lab{Bị chặn} ở ba tập chồng lên nhau} (tỉ lệ lần lượt 10,1\% / 14,5\% / 10,2\%). Điều này chưa đủ để kết luận các tỉ lệ tương đương.
-  \item \textbf{Test chỉ có 47 ảnh \lab{Bị chặn}, val 35 ảnh.} Khoảng bootstrap theo đường của test rộng gần gấp đôi khoảng Wilson ($[5{,}7;\,18{,}7]$ so với $[7{,}8;\,13{,}4]$): kết quả đánh giá model trên test sẽ có sai số lớn.
-  \item \textbf{Ảnh \lab{I} chiếm 32--50\%} tùy tập. Đây là chi phí cố định của nguồn ảnh chụp từ xe.
-  \item \textbf{Pilot và tầng \lab{top\_score} không tự nhiên:} tỉ lệ \lab{Bị chặn} của chúng (16,1\% và 52,2\%) là kết quả của cách lấy mẫu, không phải tỉ lệ ngoài đường.
-  \item \textbf{Tầng \lab{random} của ảnh bơm (12,2\%)} gần với bộ chính dù lấy từ đường khác; cả hai khoảng chồng lên nhau.
+  \item \textbf{Dữ liệu tự nhiên mất cân bằng mạnh} (hình~\ref{fig:labels}, bảng~\ref{tab:labels}): trong các ảnh hợp lệ của bộ chính, \lab{Còn lối đi} chiếm 89,2\% và \lab{Bị chặn} chiếm 10,8\%, tức cứ khoảng 8 ảnh \lab{Còn lối đi} mới có 1 ảnh \lab{Bị chặn}. Tính trên mọi ảnh, kể cả ảnh \lab{I}, tỉ lệ \lab{Bị chặn} là 6,3\% $[5{,}5;\,7{,}2]$.
+  \item \textbf{Tỉ lệ ba lớp \lab{0} / \lab{1} / \lab{I} trên mọi ảnh:} bộ chính gộp 52,0 / 6,3 / 41,8\%; train 51,1 / 5,8 / 43,2\%; val 42,6 / 7,2 / 50,2\%; test 61,1 / 7,0 / 31,9\%; pilot 48,7 / 9,3 / 42,0\%; tầng điểm cao 34,8 / 37,9 / 27,3\%; tầng ngẫu nhiên 55,3 / 7,7 / 37,0\%. Trên toàn bộ dữ liệu: 47,6 / 15,1 / 37,3\%.
+  \item \textbf{Khoảng tin cậy của tỉ lệ \lab{Bị chặn} ở ba tập chồng lên nhau} (tỉ lệ lần lượt là 10,1\%, 14,5\% và 10,2\%). Tuy nhiên, điều này chưa đủ để kết luận các tỉ lệ là tương đương.
+  \item \textbf{Test chỉ có 47 mẫu dương, val có 35 mẫu dương.} Độ rộng khoảng bootstrap theo đường của test gấp xấp xỉ 2,3 lần độ rộng khoảng Wilson ($[5{,}7;\,18{,}7]$ so với $[7{,}8;\,13{,}4]$, tức 13,0 so với 5,6 điểm phần trăm), nên kết quả đánh giá mô hình trên test sẽ có sai số lớn.
+  \item \textbf{Ảnh \lab{I} chiếm 32--50\%} tùy tập. Đây là hạn chế cố hữu của nguồn ảnh chụp từ xe.
+  \item \textbf{Tỉ lệ ở pilot và tầng điểm cao không phản ánh phân phối tự nhiên:} tỉ lệ \lab{Bị chặn} của hai nhóm này (16,1\% và 52,2\%) là kết quả của cách lấy mẫu, không phải tỉ lệ thực tế ngoài đường.
+  \item \textbf{Tầng ngẫu nhiên của ảnh bổ sung (12,2\%)} có tỉ lệ gần với bộ chính dù được lấy từ các đường khác; hai khoảng tin cậy chồng lên nhau.
 \end{itemize}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{tab_fig10_train_composition.pdf}
-\caption{Thành phần tập train trước và sau khi thêm pilot và ảnh bơm (chỉ ảnh dùng được)}
+\caption{Thành phần tập train trước và sau khi thêm pilot và ảnh bổ sung (chỉ tính ảnh hợp lệ)}
 \label{fig:train}
 \end{figure}
 
-\textbf{Tập train sau khi bơm.} Train hiện có 2.528 ảnh dùng được, 697 ảnh \lab{Bị chặn} (27,6\%, tỉ lệ 0:1 là 2,6), so với 1.132 ảnh và 120 ảnh \lab{Bị chặn} (10,6\%) trước khi bơm. 577 trong 697 ảnh dương (83\%) đến từ ảnh bơm. Hệ quả: phân phối nhãn của train khác val/test (27,6\% so với khoảng 10--15\%), nên khi train cần tính tới độ lệch này, và nên báo cáo thêm kết quả khi chỉ train trên phần tự nhiên.
-\src{\f{tables/train_composition.csv}.}
+\textbf{Tập train sau khi bổ sung} (hình~\ref{fig:train}). Train hiện có 2.528 ảnh hợp lệ, trong đó 697 mẫu dương (27,6\%, tỉ lệ 0:1 là 2,6), so với 1.132 ảnh hợp lệ và 120 mẫu dương (10,6\%) trước khi bổ sung. 577 trong 697 mẫu dương (83\%) đến từ ảnh bổ sung. Hệ quả là phân phối nhãn của train khác với val/test (27,6\% so với khoảng 10--15\%); khi huấn luyện cần tính tới độ lệch này, đồng thời nên báo cáo thêm kết quả khi chỉ huấn luyện trên phần dữ liệu tự nhiên.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{tab_fig3a_main_street_composition.pdf}
-\caption{Thành phần nhãn của 17 đường bộ chính (không gồm pilot)}
+\caption{Thành phần nhãn của 17 đường thuộc bộ chính (không gồm pilot)}
 \label{fig:streets}
 \end{figure}
 
-\textbf{Theo đường.} Tỉ lệ nhãn khác nhau nhiều giữa các đường: tỉ lệ \lab{Bị chặn} trên ảnh dùng được từ 7/74 (Lê Văn Sỹ) tới 15/39 (Hải Thượng Lãn Ông); tỉ lệ \lab{I} từ 17\% tới 83\% (Pasteur, đường một chiều). Tuyến đường là thuộc tính liên hệ mạnh nhất với nhãn (mục~\ref{sec:eda-rel}), nên việc chia tập theo đường là cần thiết để không đánh giá quá lạc quan. Với 75 đường của ảnh bơm, xem \f{figures/tab_fig3b_extra_streets_blocked_share.pdf}.
+\textbf{Theo đường} (hình~\ref{fig:streets}). Tỉ lệ nhãn khác nhau đáng kể giữa các đường: tỉ lệ \lab{Bị chặn} trên ảnh hợp lệ dao động từ 4,9\% (Lý Thường Kiệt, 10/205) tới 38,5\% (Hải Thượng Lãn Ông, 15/39); tỉ lệ \lab{I} dao động từ 17\% (Lê Văn Sỹ) tới 83\% (Pasteur, đường một chiều). Ở ảnh bổ sung, trong 25 đường có ít nhất 20 ảnh hợp lệ, tỉ lệ \lab{Bị chặn} dao động từ 11,1\% (Bạch Đằng\#0, 4/36) tới 76,2\% (Ung Văn Khiêm, 16/21), trung vị 40,0\%; các tỉ lệ này gộp hai tầng nên chịu ảnh hưởng của cách chọn ảnh. Tuyến đường là thuộc tính có mức liên hệ với nhãn mạnh nhất (mục~\ref{sec:eda-rel}), vì vậy việc chia tập theo đường là cần thiết để tránh đánh giá quá lạc quan.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{tab_fig7_obstacles_reasons.pdf}
-\caption{Loại vật cản trên ảnh ``Bị chặn'' và lý do ``Không đủ thông tin'', bộ chính so với ảnh bơm}
+\caption{Loại vật cản trên ảnh \lab{Bị chặn} và lý do gán nhãn \lab{Không đủ thông tin}, bộ chính so với ảnh bổ sung}
 \label{fig:obstacles}
 \end{figure}
 
-\textbf{Đa dạng của vật cản và lý do loại.}
+\textbf{Đa dạng của vật cản và lý do gán nhãn \lab{I}} (hình~\ref{fig:obstacles}).
 \begin{itemize}
-  \item Trên ảnh \lab{Bị chặn}, xe máy đậu là vật cản phổ biến nhất (bộ chính 123/188 ảnh, 65\%; ảnh bơm 346/577, 60\%), sau đó là hàng hóa và quầy hàng (32\% và 37\%). Ô tô đậu hiếm (4\% và 2\%). Một ảnh có thể có nhiều loại. Hai phần có cơ cấu vật cản gần giống nhau.
-  \item Lý do \lab{I} chủ yếu là không thấy vỉa hè (bộ chính 880/1.035 ảnh có ghi lý do, 85\%; ảnh bơm 463/597, 78\%), tiếp theo là bị che. Ảnh mờ, tối hoặc cháy sáng chỉ 12 và 21 ảnh.
-  \item Thẻ vật cản là thông tin phụ, không bắt buộc: 13 ảnh \lab{Bị chặn} của bộ chính và 6 ảnh bơm không có thẻ nào. Thẻ vật cản của pilot: \textbf{chưa đo}.
+  \item Trên ảnh \lab{Bị chặn}, xe máy đậu là loại vật cản phổ biến nhất (bộ chính 123/188 ảnh, 65\%; ảnh bổ sung 346/577 ảnh, 60\%), tiếp theo là hàng hóa và quầy hàng (32\% và 37\%). Ô tô đậu hiếm gặp (4\% và 2\%). Một ảnh có thể có nhiều loại vật cản. Cơ cấu vật cản của hai phần dữ liệu khá tương đồng.
+  \item Lý do gán \lab{I} chủ yếu là không thấy vỉa hè (bộ chính 880/1.035 ảnh có ghi lý do, 85\%; ảnh bổ sung 463/597 ảnh, 78\%), tiếp theo là vỉa hè bị che khuất. Ảnh mờ, tối hoặc cháy sáng chỉ có 12 và 21 ảnh.
+  \item Thẻ vật cản là thông tin phụ, không bắt buộc: 13 ảnh \lab{Bị chặn} của bộ chính và 6 ảnh bổ sung không có thẻ nào. Thẻ vật cản của pilot \textbf{chưa được thống kê}.
 \end{itemize}
-\src{\f{tables/obstacle_tags.csv}, \f{tables/reasons_I.csv}. Thẻ của một ảnh là hợp các thẻ từ những lượt gán nhãn 1 của ảnh đó.}
+\note{Thẻ vật cản của một ảnh là hợp của các thẻ từ những lượt gán nhãn 1 cho ảnh đó.}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{tab_fig8_annotator_label_shares.pdf}
-\caption{Tỉ lệ nhãn theo người gán}
+\caption{Tỉ lệ nhãn theo người gán; phần ảnh bổ sung dùng nhãn của từng người trước kiểm tra chéo}
 \label{fig:annotators}
 \end{figure}
 
-\textbf{Theo người gán.} Ở ảnh bơm, ảnh được chia ngẫu nhiên nên chênh lệch gợi ý khác biệt cách gán, nhưng cần gán cùng một mẫu ảnh để xác nhận: tỉ lệ \lab{Bị chặn} từ 19\% (Loan) tới 43\% (Học). Ở bộ chính, mỗi người gán một phần ảnh khác nhau (hai người gán test, hai người gán val) nên tỉ lệ theo người lẫn với tập, không so sánh trực tiếp được.
-\src{\f{tables/annotator_label_shares.csv}. Hình bên phải dùng nhãn v1 của từng người, trước kiểm tra chéo.}
+\textbf{Theo người gán} (hình~\ref{fig:annotators}). Ở ảnh bổ sung, ảnh được chia ngẫu nhiên cho người gán nên chênh lệch giữa người gán gợi ý sự khác biệt trong cách gán, nhưng cần cho nhiều người cùng gán một mẫu ảnh để xác nhận: tỉ lệ \lab{Bị chặn} dao động từ 19\% (Loan) tới 43\% (Học). Ở bộ chính, mỗi người gán một phần ảnh khác nhau (hai người gán test, hai người gán val), nên tỉ lệ theo người gán bị lẫn với ảnh hưởng của tập và không so sánh trực tiếp được.
 
 % ------------------------------------------------------------------------------
 \subsection{Phân tích mối quan hệ giữa các thuộc tính}
 \label{sec:eda-rel}
 
-Đầu vào của model là ảnh, không phải metadata. Mục này trả lời hai câu hỏi: các thuộc tính metadata có trùng lặp thông tin với nhau không, và có thuộc tính nào liên hệ với nhãn tới mức cần đề phòng model ``học tắt'' không.
+Đầu vào của mô hình là ảnh, không phải metadata. Mục này trả lời hai câu hỏi: các thuộc tính metadata có trùng lặp thông tin với nhau không, và có thuộc tính nào liên hệ với nhãn tới mức cần đề phòng mô hình học lối tắt (shortcut learning) không. Với biến số, mức liên hệ với nhãn được đo bằng AUC (diện tích dưới đường cong ROC; 0,5 nghĩa là không phân biệt được hai lớp); với biến phân loại, mức liên hệ được đo bằng Cramér's V hiệu chỉnh độ chệch.
 
 \begin{figure}[H]
 \centering
@@ -204,43 +258,43 @@ Pilot & 150 & 14/87 = 16,1\% [9,8; 25,2] & [10,0; 18,4] & 42,0\% & 5,2 \\
 \end{figure}
 
 \begin{itemize}
-  \item \textbf{Tương quan.} Cặp duy nhất đáng kể là vĩ độ--kinh độ ($\rho = 0{,}42$ ở bộ chính, 0,43 ở ảnh bơm), do hình dạng khu vực và hướng của các tuyến đường. Mọi cặp còn lại có $|\rho| \le 0{,}14$ ở bộ chính và $\le 0{,}25$ ở ảnh bơm.
-  \item \textbf{Đa cộng tuyến.} Hệ số VIF lớn nhất là 1,27 (vĩ độ, bộ chính); các biến khác dưới 1,1. Không thấy dấu hiệu đa cộng tuyến đáng kể trong các biến được kiểm tra.
+  \item \textbf{Tương quan} (hình~\ref{fig:spearman}). Cặp duy nhất có tương quan đáng kể là vĩ độ--kinh độ ($\rho = 0{,}42$ ở bộ chính, 0,43 ở ảnh bổ sung), do hình dạng khu vực nghiên cứu và hướng của các tuyến đường. Mọi cặp còn lại có $|\rho| \le 0{,}14$ ở bộ chính và $\le 0{,}25$ ở ảnh bổ sung.
+  \item \textbf{Đa cộng tuyến.} Hệ số phóng đại phương sai (VIF) lớn nhất là 1,27 (vĩ độ) và 1,25 (kinh độ) ở bộ chính, do hai biến này tương quan với nhau; các biến khác đều dưới 1,1. Không thấy dấu hiệu đa cộng tuyến đáng kể giữa các biến được kiểm tra.
 \end{itemize}
 
 \begin{table}[H]
 \centering
-\caption{Liên hệ giữa thuộc tính và nhãn ``Bị chặn'' so với ``Còn lối đi'' (ảnh dùng được)}
+\caption{Liên hệ giữa thuộc tính và nhãn \lab{Bị chặn} so với \lab{Còn lối đi} (ảnh hợp lệ)}
 \label{tab:assoc}
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.3\linewidth} L L}
 \toprule
-\textbf{Thuộc tính} & \textbf{Bộ chính, gộp (n = 1.746)} & \textbf{Ảnh bơm (n = 1.396)} \\
+\textbf{Thuộc tính} & \textbf{Bộ chính, gộp (n = 1.746)} & \textbf{Ảnh bổ sung (n = 1.396)} \\
 \midrule
 \multicolumn{3}{l}{\emph{Biến số: AUC (0,5 = không phân biệt), khoảng bootstrap theo đường}} \\
 Độ sáng ảnh $360^\circ$ & 0,53 [0,47; 0,59] & 0,49 [0,45; 0,53] \\
 Khoảng cách tới tim đường & 0,54 [0,50; 0,58] & 0,46 [0,43; 0,49] \\
-Vĩ độ & 0,45 [0,37; 0,52] & khoảng chứa 0,5 \\
-Kinh độ & 0,45 [0,35; 0,54] & khoảng chứa 0,5 \\
-Điểm bộ chọn ảnh & không có & 0,78 [0,75; 0,81] \\
+Vĩ độ & 0,45 [0,37; 0,52] & khoảng tin cậy chứa 0,5 \\
+Kinh độ & 0,45 [0,35; 0,54] & khoảng tin cậy chứa 0,5 \\
+Điểm của bộ chọn ảnh & không có & 0,78 [0,75; 0,81] \\
 \midrule
-\multicolumn{3}{l}{\emph{Biến phân loại: Cramér's V đã hiệu chỉnh~\cite{bergsma2013cramer} (0 = không liên hệ)}} \\
+\multicolumn{3}{l}{\emph{Biến phân loại: Cramér's V hiệu chỉnh độ chệch~\cite{bergsma2013cramer} (0 = không liên hệ)}} \\
 Tuyến đường & 0,18 & 0,29 \\
 Loại đường & 0,00 (chỉ 2 mức) & 0,14 [0,06; 0,24] \\
-Người chụp & 0,00 & 0,03 \\
+Tài khoản chụp & 0,00 & 0,03 \\
 Năm chụp & 0,02 & 0,03 \\
 \bottomrule
 \end{tabularx}
-\src{\f{tables/assoc_numeric.csv}, \f{tables/assoc_categorical.csv}. Các giá trị $p$ trong file tính như thể ảnh độc lập nên quá lạc quan; báo cáo chỉ dùng độ lớn hiệu ứng.}
+\note{Giá trị $p$ của các kiểm định này được tính với giả định ảnh độc lập nên quá lạc quan; báo cáo chỉ dựa vào độ lớn hiệu ứng.}
 \end{table}
 
 \begin{itemize}
-  \item \textbf{Tuyến đường là thuộc tính liên hệ mạnh nhất với nhãn}, cả với \lab{Bị chặn} (V = 0,18) lẫn với \lab{I} (V = 0,28 ở bộ chính). Đây là lý do chính để chia tập theo đường.
-  \item \textbf{Loại đường} có liên hệ ở ảnh bơm: trong tầng ngẫu nhiên, tỉ lệ \lab{Bị chặn} trên ảnh dùng được là 13,7\% ở đường \lab{tertiary} (34/248) và 20\% ở \lab{residential} (4/20), so với 7,0\% ở \lab{primary} (3/43) và 7,5\% ở \lab{secondary} (5/67). Các nhóm nhỏ nên khoảng tin cậy rộng. Bộ chính chỉ có đường lớn nên không kiểm tra được.
-  \item \textbf{Độ sáng, khoảng cách, tọa độ, người chụp, năm chụp} gần như không phân biệt được nhãn: mọi khoảng của bộ chính đều chứa 0,5.
-  \item \textbf{Điểm bộ chọn ảnh} liên hệ mạnh với nhãn ở ảnh bơm (AUC 0,78). Đây là hệ quả của cách chọn, và là lý do điểm này không được dùng làm đặc trưng hay nhãn.
+  \item \textbf{Tuyến đường là thuộc tính có mức liên hệ với nhãn mạnh nhất}, với cả \lab{Bị chặn} (V = 0,18) lẫn \lab{I} (V = 0,28 ở bộ chính). Đây là lý do chính để chia tập theo đường.
+  \item \textbf{Loại đường} (theo phân loại của OSM) có liên hệ với nhãn ở ảnh bổ sung: trong tầng ngẫu nhiên, tỉ lệ \lab{Bị chặn} trên ảnh hợp lệ là 13,7\% ở đường nhánh (tertiary, 34/248) và 20\% ở đường khu dân cư (residential, 4/20), so với 7,0\% ở đường chính (primary, 3/43) và 7,5\% ở đường cấp hai (secondary, 5/67). Do cỡ mẫu các nhóm nhỏ, khoảng tin cậy rộng. Bộ chính chỉ gồm đường lớn nên không kiểm tra được.
+  \item \textbf{Độ sáng, khoảng cách, tọa độ, tài khoản chụp và năm chụp} gần như không phân biệt được nhãn: mọi khoảng tin cậy của bộ chính đều chứa 0,5.
+  \item \textbf{Điểm của bộ chọn ảnh} liên hệ mạnh với nhãn ở ảnh bổ sung (AUC 0,78). Đây là hệ quả của cách chọn ảnh, và cũng là lý do điểm này không được dùng làm đặc trưng hay nhãn.
 \end{itemize}
 
-Riêng trong train của bộ chính, kinh độ có AUC 0,37 $[0{,}28;\,0{,}47]$: ảnh \lab{Bị chặn} nằm lệch về phía tây. Chỉ có 10 đường nên đây nhiều khả năng là khác biệt giữa các đường, không phải quy luật địa lý.
+Riêng trong train của bộ chính, kinh độ có AUC 0,37 $[0{,}28;\,0{,}47]$: ảnh \lab{Bị chặn} lệch về phía tây. Vì train chỉ có 10 đường, đây nhiều khả năng là khác biệt giữa các đường, không phải một quy luật địa lý.
 
 % ------------------------------------------------------------------------------
 \input{sections/04d_chatluong}
@@ -248,6 +302,8 @@ Riêng trong train của bộ chính, kinh độ có AUC 0,37 $[0{,}28;\,0{,}47]
 % ------------------------------------------------------------------------------
 \subsection{EDA cho dữ liệu ảnh}
 \label{sec:eda-image}
+
+Mục này mô tả định dạng, độ phân giải và chất lượng ảnh theo từng nhóm, đồng thời xét mối liên hệ giữa chất lượng ảnh và nhãn. Hình~\ref{fig:examples} và hình~\ref{fig:examples-extra} minh họa ảnh của từng nhãn và từng tầng.
 
 \begin{figure}[H]
 \centering
@@ -259,18 +315,17 @@ Riêng trong train của bộ chính, kinh độ có AUC 0,37 $[0{,}28;\,0{,}47]
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img_examples_train_extra.jpg}
-\caption{Ví dụ ảnh bơm theo tầng lấy mẫu; ô góc trái là nhãn. \cc}
+\caption[Ví dụ ảnh bổ sung theo tầng lấy mẫu]{Ví dụ ảnh bổ sung theo tầng lấy mẫu; mỗi tầng gồm 6 ảnh lấy ngẫu nhiên nên tỉ lệ nhãn trong hình không đại diện cho tầng; ô góc trái ghi nhãn của ảnh. \cc}
 \label{fig:examples-extra}
 \end{figure}
 
 \subsubsection*{Định dạng và độ phân giải}
 
-Cả 5.149 ảnh đều mở được, là JPEG RGB $640\times640$, chất lượng nén ước lượng 90. Dung lượng 38,5--167,7 KB, trung vị 99,3 KB. Độ phân giải đồng nhất theo thiết kế; ảnh gốc là ảnh $360^\circ$ thu nhỏ 2.048 px nên chi tiết nhỏ ở xa bị mất.
-\src{\f{tables/image_format_check.csv} (\f{src/eda/29_eda_images.py}).}
+Toàn bộ 5.149 ảnh đều đọc được, ở định dạng JPEG RGB $640\times640$ điểm ảnh, chất lượng nén ước lượng 90. Dung lượng mỗi ảnh từ 38,5 đến 167,7 KB, trung vị 99,3 KB. Độ phân giải đồng nhất theo thiết kế; do ảnh gốc là ảnh $360^\circ$ đã thu nhỏ còn 2.048 điểm ảnh, các chi tiết nhỏ ở xa bị mất.
 
 \subsubsection*{Chất lượng ảnh}
 
-Các đại lượng đo trên từng ảnh cắt: độ sáng trung bình (xám Rec.601, 0--255), tương phản (độ lệch chuẩn của xám), tỉ lệ điểm ảnh rất tối ($<30$) và cháy sáng ($>245$), độ nét (phương sai của Laplacian), độ sặc sỡ màu~\cite{hasler2003colorfulness}.
+Các đại lượng được đo trên từng ảnh cắt gồm: độ sáng trung bình (thang xám Rec.601, 0--255), độ tương phản (độ lệch chuẩn của thang xám), tỉ lệ điểm ảnh rất tối ($<30$) và cháy sáng ($>245$), độ nét (phương sai của toán tử Laplacian) và độ sặc sỡ màu~\cite{hasler2003colorfulness}.
 
 \begin{table}[H]
 \centering
@@ -284,13 +339,12 @@ Bộ chính, train & 1.839 & 101,9 (31,3) & 59,4 (14,1) & 494 (254) & 25,1 (13,3
 Bộ chính, val & 486 & 106,7 (36,9) & 62,7 (14,1) & 560 (354) & 26,7 (13,7) \\
 Bộ chính, test & 674 & 104,7 (36,9) & 59,3 (14,2) & 511 (245) & 25,9 (14,0) \\
 Pilot & 150 & 106,6 (38,0) & 59,3 (14,0) & 487 (244) & 24,5 (13,1) \\
-Ảnh bơm, \lab{top\_score} & 1.400 & 91,8 (30,5) & 60,1 (13,7) & 492 (260) & 27,8 (14,3) \\
-Ảnh bơm, \lab{random} & 600 & 100,8 (35,2) & 58,1 (12,4) & 497 (268) & 25,7 (13,7) \\
+Ảnh bổ sung, tầng điểm cao & 1.400 & 91,8 (30,5) & 60,1 (13,7) & 492 (260) & 27,8 (14,3) \\
+Ảnh bổ sung, tầng ngẫu nhiên & 600 & 100,8 (35,2) & 58,1 (12,4) & 497 (268) & 25,7 (13,7) \\
 \midrule
-Cả 5.149 ảnh: min -- max & & 24,3 -- 242,3 & 17,4 -- 96,6 & 22 -- 1.881 & 4,8 -- 104,3 \\
+Cả 5.149 ảnh: nhỏ nhất -- lớn nhất & & 24,3 -- 242,3 & 17,4 -- 96,6 & 22 -- 1.881 & 4,8 -- 104,3 \\
 \bottomrule
 \end{tabularx}
-\src{\f{tables/image_summary_stats.csv} (có đủ trung bình, phương sai, min, max, Q1, Q3 cho 12 đại lượng, theo nhóm và nhãn).}
 \end{table}
 
 \begin{figure}[H]
@@ -308,16 +362,14 @@ Cả 5.149 ảnh: min -- max & & 24,3 -- 242,3 & 17,4 -- 96,6 & 22 -- 1.881 & 4,
 \end{figure}
 
 \begin{itemize}
-  \item \textbf{Các nhóm tự nhiên giống nhau về chất lượng ảnh.} Train, val, test, pilot và tầng \lab{random} có trung vị độ sáng 101--107 và độ nét 487--560. Val hơi tương phản hơn train (AUC 0,58 $[0{,}54;\,0{,}61]$).
-  \item \textbf{Ảnh \lab{Bị chặn} tối hơn ảnh \lab{Còn lối đi}.} Ở bộ chính, trung vị độ sáng là 90,9 so với 101,6; AUC 0,37 $[0{,}32;\,0{,}41]$ (bootstrap theo 17 đường); tỉ lệ điểm ảnh rất tối 18\% so với 12\%. Cách giải thích hợp lý là vật cản thường nằm dưới mái hiên và bóng cây, nhưng \textbf{chưa kiểm chứng}. Đây là rủi ro ``học tắt'': model có thể dựa một phần vào độ tối. Nên kiểm tra khi phân tích lỗi của model.
-  \item \textbf{Tầng \lab{top\_score} tối hơn bộ chính} (trung vị 91,8 so với 101,9), một phần vì tầng này có nhiều ảnh \lab{Bị chặn}.
-  \item \textbf{Ảnh \lab{I} tương phản cao hơn và nhiều vùng cháy sáng hơn} ảnh \lab{0} (AUC 0,67 và 0,65 ở bộ chính), phù hợp với việc các ảnh này thường thấy nhiều bầu trời và lòng đường.
-  \item \textbf{Độ nét không phân biệt được nhãn} (AUC 0,46--0,59, mọi khoảng chứa 0,5).
-  \item \textbf{Độ sáng ảnh $360^\circ$ dùng để lọc đêm chỉ liên hệ yếu với độ sáng ảnh cắt} (Spearman 0,18 $[0{,}09;\,0{,}27]$ ở bộ chính; 0,31 nếu chỉ tính nửa trên ảnh cắt), vì hai đại lượng đo hai vùng khác nhau. Bộ lọc đêm vì vậy không bảo đảm ảnh cắt đủ sáng.
+  \item \textbf{Các nhóm tự nhiên có chất lượng ảnh tương đồng} (bảng~\ref{tab:image}, hình~\ref{fig:lum} và~\ref{fig:sharp}). Train, val, test, pilot và tầng ngẫu nhiên có trung vị độ sáng 101--107 và độ nét 487--560. Ảnh val có độ tương phản cao hơn train một chút (AUC 0,58 $[0{,}54;\,0{,}61]$).
+  \item \textbf{Ảnh \lab{Bị chặn} tối hơn ảnh \lab{Còn lối đi}.} Ở bộ chính, trung vị độ sáng là 90,9 so với 101,6; AUC 0,37 $[0{,}32;\,0{,}41]$ (bootstrap theo 17 đường); tỉ lệ điểm ảnh rất tối là 18\% so với 12\%. Một cách giải thích hợp lý là vật cản thường nằm dưới mái hiên và bóng cây, nhưng giả thuyết này \textbf{chưa được kiểm chứng}. Đây là rủi ro học lối tắt: mô hình có thể dựa một phần vào độ tối của ảnh, nên cần kiểm tra khi phân tích lỗi mô hình.
+  \item \textbf{Tầng điểm cao tối hơn bộ chính} (trung vị 91,8 so với 101,9), một phần vì tầng này có nhiều ảnh \lab{Bị chặn}.
+  \item \textbf{Ảnh \lab{I} có độ tương phản cao hơn và nhiều vùng cháy sáng hơn} ảnh \lab{0} (AUC 0,67 và 0,65 ở bộ chính), phù hợp với việc các ảnh này thường chứa nhiều bầu trời và lòng đường.
+  \item \textbf{Độ nét không phân biệt được \lab{Bị chặn} với \lab{Còn lối đi}} (AUC 0,46--0,59 ở mọi nhóm, mọi khoảng tin cậy đều chứa 0,5). Ở các so sánh có nhãn \lab{I}, hai khoảng tin cậy không chứa 0,5 nhưng hiệu ứng nhỏ: ở val, \lab{I} so với \lab{1} có AUC 0,61 $[0{,}53;\,0{,}71]$; ở tầng điểm cao, \lab{I} so với \lab{0} có AUC 0,46 $[0{,}42;\,0{,}49]$.
+  \item \textbf{Độ sáng ảnh $360^\circ$ (dùng để lọc ảnh đêm) chỉ liên hệ yếu với độ sáng ảnh cắt} (Spearman 0,18 $[0{,}09;\,0{,}27]$ ở bộ chính; 0,31 nếu chỉ tính nửa trên ảnh cắt), vì hai đại lượng này đo hai vùng ảnh khác nhau. Do đó, bộ lọc ảnh đêm không bảo đảm ảnh cắt đủ sáng.
 \end{itemize}
-\src{\f{tables/image_effect_sizes.csv}, \f{tables/image_spearman_brightness.csv}.}
 
-\subsubsection*{Lý do ``Ảnh mờ / tối / cháy sáng'' có khớp phép đo không}
+\subsubsection*{Đối chiếu lý do gán nhãn \lab{I} với phép đo chất lượng ảnh}
 
-Có 33 ảnh \lab{I} mang lý do này (bộ chính 12, ảnh bơm 21). Chúng có độ nét thấp rõ rệt: trung vị nằm ở phân vị 3,5 của bộ chính và phân vị 13 của ảnh bơm. Về độ sáng thì lẫn lộn cả ảnh tối và ảnh cháy sáng (36\% nằm dưới phân vị 10, 18\% nằm trên phân vị 90). Mẫu nhỏ nên chỉ là mô tả.
-\src{\f{tables/image_reason_blur_dark_summary.csv}.}
+Có 33 ảnh \lab{I} mang lý do ``Ảnh mờ / tối / cháy sáng'' (bộ chính 12, ảnh bổ sung 21). Các ảnh này có độ nét thấp rõ rệt: trung vị độ nét nằm ở phân vị 3,5 của bộ chính và phân vị 13 của ảnh bổ sung. Về độ sáng, nhóm này gồm cả ảnh tối lẫn ảnh cháy sáng (36\% nằm dưới phân vị 10, 18\% nằm trên phân vị 90). Do cỡ mẫu nhỏ, kết quả này chỉ mang tính mô tả.

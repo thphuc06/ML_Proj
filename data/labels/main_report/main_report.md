@@ -61,7 +61,7 @@ Export: `data/labels/raw/main_export_20261111` (gitignored). Annotations: 4435/4
 | train | 1839 | 98 | 23 | 121 |
 | val | 486 | 16 | 38 | 54 |
 
-## After adjudication (303 items: proposal by eye, 28 changed by Phuc)
+## After adjudication (303 items: proposal by eye, 28 changed by the adjudicator, Khai)
 
 | split   |    0 |   1 |    I |   All |
 |:--------|-----:|----:|-----:|------:|

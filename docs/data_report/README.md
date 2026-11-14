@@ -33,6 +33,8 @@ Trước khi train, chốt cách xử lý ảnh gần giao lộ, lưu manifest c
 - Tiếng Việt: `sh make.sh`, xuất `data_report.pdf`.
 - Tiếng Anh: `sh make.sh en`, xuất `data_report_en.pdf`; nguồn `main_en.tex` và `sections_en/report.tex`.
 
-Bản tiếng Anh giữ số liệu, kết quả và hạn chế của bản tiếng Việt đã sửa. Biểu đồ vector có bản dịch nhãn trong `figures_en/`, giữ nguyên dữ liệu và hình học của biểu đồ. Ảnh ghép ví dụ giữ nguyên chú thích raster; ý nghĩa nhãn được giải thích bằng tiếng Anh. Tên riêng, đường dẫn và mã nguồn dữ liệu giữ nguyên. Để tạo lại biểu đồ tiếng Anh, cài PyMuPDF (`python -m pip install pymupdf`) rồi chạy `python docs/data_report/translate_figures.py` từ gốc repo trước khi build.
+Bản tiếng Anh giữ số liệu, kết quả và hạn chế của bản tiếng Việt. Biểu đồ vector có bản dịch nhãn trong `figures_en/` (số theo kiểu tiếng Anh, 1,839), giữ nguyên dữ liệu và hình học của biểu đồ. Bản tiếng Việt dùng `figures_vi/`: cùng biểu đồ gốc, chỉ thay tên nhóm kiểu mã (`train_extra`, `top_score`, `main`) bằng tên dùng trong báo cáo (ảnh bổ sung, tầng điểm cao, bộ chính; "dùng được" thành "hợp lệ"). Ảnh ghép ví dụ giữ nguyên chú thích raster. Để tạo lại hai bộ hình này, cài PyMuPDF (`python -m pip install pymupdf`) rồi chạy `python docs/data_report/translate_figures.py` từ gốc repo trước khi build (script dùng font Arial của Windows).
+
+Báo cáo không nhắc tới tên file, script hay tên biến, trừ bảng tổ chức thư mục ở mục 5; nguồn của từng số liệu được mô tả ở phụ lục A.
 
 Mã `adjudicated_phuc` là mã cũ trong CSV, được giữ để tương thích; theo xác nhận của nhóm, Khải thực hiện phân xử 303 ảnh bộ chính. Không đổi nhãn hay số đếm khi sửa thông tin này.

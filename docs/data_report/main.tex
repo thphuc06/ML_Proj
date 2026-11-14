@@ -12,9 +12,10 @@
 \makeatother
 \usepackage{fit_hcmus}
 \usepackage{longtable}
+\usepackage{needspace}
 \usepackage{multirow}
 \usepackage{subcaption}
-\graphicspath{{../proposal/latex/}{figures/}}
+\graphicspath{{../proposal/latex/}{figures_vi/}{figures/}}
 \setlength{\emergencystretch}{3em}
 
 % ---------------------------------------------------------------- thông tin
@@ -108,8 +109,8 @@
 \makeatother
 
 % ---------------------------------------------------------------- lệnh riêng của báo cáo
-% \src{...}: nguồn của số liệu (file hoặc script), in nhỏ và xám ngay dưới bảng/hình/đoạn văn.
-\newcommand{\src}[1]{{\par\noindent\footnotesize\color{fitgray}\textit{Nguồn:} #1\par}}
+% \note{...}: ghi chú cách tính, in nhỏ và xám ngay dưới bảng/đoạn văn.
+\newcommand{\note}[1]{{\par\noindent\footnotesize\color{fitgray}\textit{Ghi chú:} #1\par}}
 \newcommand{\f}[1]{\path{#1}}                      % đường dẫn file, cho phép ngắt dòng
 \newcommand{\lab}[1]{\textsf{#1}}                  % tên nhãn, tên cột
 \newcommand{\cc}{© Mapillary contributors, CC BY-SA 4.0}

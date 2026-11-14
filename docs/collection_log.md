@@ -162,17 +162,17 @@ Question: the blocked class may be too small. Can more blocked crops be found fo
 - Claude looked at every item **blind** (only a number on the tile, no votes), 12 per sheet at 490 px with the 3/5 line drawn, and wrote a label and a reason. Then Claude compared the labels with the votes. On 21 items the label differed from both votes, so Claude looked again at 640 px with the votes shown, and changed 10 of them.
 - Result: 0 = 96, 1 = 29, I = 178. 17 items are marked unsure; 11 differ from both votes. Agreement with each annotator's vote on these items: Loan 96/156, Minh 82/119, Phuc 26/43, Hoc 56/165, Khai 32/123. These are hard items by construction, so the rates do not rate the annotators.
 - Most 0/I splits went to I (141 of 193): far sidewalk, intersections, alley mouths and riders next to the camera. When the curb did reach below the 3/5 line and the strip was clear, the item went to 0.
-- These are **proposals, not final labels**. Phuc reviews `sheets/adjudication_proposal_*.jpg` and writes any override in the `phuc` column; `19_main_agreement.py` then uses `phuc` where given, else `proposed`.
+- These are **proposals, not final labels**. Khai (the adjudicator) reviews `sheets/adjudication_proposal_*.jpg` and writes any override in the `phuc` column (legacy column name); `19_main_agreement.py` then uses that column where given, else `proposed`.
 - If every proposal is accepted: blocked train 102 / val 28 / test 44; usable (0/1) 1,042 / 235 / 453; blocked share about 10%. **Test is below the ~60 positives mark** set in `docs/data_enrichment.md`.
 - Train enrichment is postponed (Phuc's decision).
 
 ## 2026-11-11 — Adjudication closed; final labels v1 (`data/labels/main_labels_v1.csv`)
 
-- Phuc reviewed all 303 proposal tiles and overrode 28 (9.2%): I→0 12, 0→1 11, I→1 4, 1→0 1. Every override equals one of the two original votes. Phuc overrode 1 of the 17 items Claude marked unsure. (Tile 12, goods covering the sidewalk, was first set to 0 and then returned to the proposal, 1, under guide v1.)
+- Khai reviewed all 303 proposal tiles and overrode 28 (9.2%): I→0 12, 0→1 11, I→1 4, 1→0 1. Every override equals one of the two original votes. Khai overrode 1 of the 17 items Claude marked unsure. (Tile 12, goods covering the sidewalk, was first set to 0 and then returned to the proposal, 1, under guide v1.)
 - Final labels on the 303 items: 0 = 98, 1 = 43, I = 162.
-- Final table, all 2,999 items: 0 = 1,558, 1 = 188, I = 1,253. Sources: agreed 1,133, single 1,563, adjudicated (proposal kept) 275, adjudicated (Phuc's label) 28.
+- Final table, all 2,999 items: 0 = 1,558, 1 = 188, I = 1,253. Sources: agreed 1,133, single 1,563, adjudicated (proposal kept) 275, adjudicated (adjudicator's label; legacy code `adjudicated_phuc`) 28.
 - Usable (0/1) by split: train 1,045 (106 blocked, 10.1%), val 242 (35, 14.5%), test 459 (47, 10.2%).
-- Phuc was one of the two annotators on 43 of the 303 items; the final label equals Phuc's vote on 27 of them (the blind proposal matched 26).
+- Khai (the adjudicator) was one of the two annotators on 123 of the 303 items, including all 99 val disagreements; the final label equals Khai's vote on 37 of them (the blind proposal matched 32), and 9 of Khai's 14 overrides on these items moved to Khai's own vote. 7 final labels (3 test, 2 val, 2 train) match neither vote.
 - Label Studio keeps each annotator's original votes; final labels live in the repo only. Summary for the report: `docs/labeling_phase1.md`.
 
 ## 2026-11-11 — Pilot items re-reviewed under guide v1 and added to train
@@ -180,7 +180,7 @@ Question: the blocked class may be too small. Can more blocked crops be found fo
 - The 150 pilot items (train streets Pasteur, Lê Văn Sỹ, Phan Đăng Lưu; no position overlap with the main set) had 5 votes each under guide v0. All 150 were reviewed again under guide v1, not only the 35 items with ≤3/5 agreement, because v0 had no 3/5-line rule.
 - Claude looked blind (shuffled order), then compared with the votes; 34 items had 0–1 votes for the proposal and were looked at again at 640 px with votes, and 20 were changed.
 - Phuc reviewed the 5 sheets and changed 3: tile 6 (1→I: curb lies on the 3/5 line), tile 44 (0→1: motorbikes, tree and tables fill the width on the left), tile 123 (I→0).
-- Final pilot labels: 0 = 73, 1 = 14, I = 63. 29 differ from the v0 majority, mostly far sidewalks, intersections and alley mouths that v1 sends to I.
+- Final pilot labels: 0 = 73, 1 = 14, I = 63. 25 differ from the v0 majority label and 5 were tied under v0. The differences are mostly far sidewalks, intersections and alley mouths that v1 sends to I.
 - `data/labels/main_labels_v1.csv` now holds 3,149 items with columns `phase` (main/pilot) and `file`. Usable train 1,132 (120 blocked), val 242 (35), test 459 (47).
 - Pilot items were sampled by PoC score strata, so their blocked share (16%) is not natural; EDA must split by `phase`.
 

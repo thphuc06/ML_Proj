@@ -5,20 +5,22 @@
 
 \subsection{Bài toán học máy}
 
-Vỉa hè có thể tồn tại nhưng không dùng được làm lối đi khi xe đậu, hàng hóa, bàn ghế hoặc rào chắn cắt đứt lối đi liên tục. Đồ án xây dựng một bộ phân loại ảnh để sàng lọc tình trạng này trên ảnh đường phố của TP.HCM.
+Một vỉa hè có thể tồn tại về mặt vật lý nhưng không còn đóng vai trò lối đi bộ khi xe đậu, hàng hóa, bàn ghế hoặc rào chắn làm gián đoạn lối đi liên tục. Đồ án xây dựng một bộ phân loại ảnh nhằm sàng lọc tình trạng này trên ảnh đường phố tại TP.HCM.
 
 \begin{itemize}
-  \item \textbf{Đầu vào:} một ảnh $640\times640$ nhìn một phía vỉa hè, cắt từ ảnh $360^\circ$ chụp trên xe.
-  \item \textbf{Đầu ra:} phân loại nhị phân. \lab{0 -- Còn lối đi}: người đi bộ đi tiếp được dọc vỉa hè gần. \lab{1 -- Bị chặn}: người đi bộ phải bước xuống lòng đường.
-  \item \textbf{Ảnh không đủ bằng chứng} (không thấy vỉa hè gần, bị che, ảnh hỏng) được ghi nhãn riêng \lab{I -- Không đủ thông tin} và loại khỏi model. Nhãn này vẫn được thống kê vì nó quyết định bao nhiêu ảnh dùng được.
-  \item \textbf{Câu hỏi nghiên cứu:} model nào phân loại tốt nhất trên \emph{các tuyến đường không có trong tập train}. Vì vậy dữ liệu được chia theo cả tuyến đường, và mọi kiểm tra trong báo cáo này đều chú ý tới rò rỉ giữa các tập.
+  \item \textbf{Đầu vào:} một ảnh $640\times640$ điểm ảnh nhìn về một phía vỉa hè, được cắt từ ảnh toàn cảnh $360^\circ$ chụp từ xe.
+  \item \textbf{Đầu ra của mô hình:} phân loại nhị phân. \lab{0 -- Còn lối đi}: người đi bộ có thể tiếp tục đi dọc vỉa hè gần. \lab{1 -- Bị chặn}: người đi bộ buộc phải bước xuống lòng đường.
+  \item \textbf{Ảnh không đủ bằng chứng} (không thấy vỉa hè gần, bị che khuất, ảnh hỏng) được gán nhãn riêng \lab{I -- Không đủ thông tin}; nhãn này chỉ dùng ở khâu gán nhãn và các ảnh mang nhãn \lab{I} bị loại khỏi quá trình huấn luyện và đánh giá mô hình. Nhãn \lab{I} vẫn được thống kê vì nó quyết định số ảnh hợp lệ thu được từ nguồn dữ liệu.
+  \item \textbf{Câu hỏi nghiên cứu:} mô hình nào phân loại tốt nhất trên \emph{các tuyến đường không xuất hiện trong tập huấn luyện}. Do đó, dữ liệu được chia theo nguyên tuyến đường, và mọi kiểm tra trong báo cáo đều chú trọng tới rò rỉ dữ liệu giữa các tập.
 \end{itemize}
 
-Câu hỏi mà người gán nhãn trả lời cho mỗi ảnh là: \emph{người đi bộ có phải bước xuống lòng đường để đi tiếp dọc vỉa hè gần không?}
+Với mỗi ảnh, người gán nhãn trả lời câu hỏi: \emph{người đi bộ có phải bước xuống lòng đường để tiếp tục đi dọc vỉa hè gần không?}
 
-\subsection{Bộ dữ liệu trong một bảng}
+\textbf{Quy ước thuật ngữ.} Báo cáo dùng tên viết tắt train, val và test cho tập huấn luyện, tập kiểm định và tập kiểm thử. \emph{Ảnh hợp lệ} là ảnh có nhãn \lab{0} hoặc \lab{1}; \emph{mẫu dương} là ảnh có nhãn \lab{Bị chặn}. \emph{Metadata} (siêu dữ liệu) là các thuộc tính đi kèm mỗi ảnh như tọa độ, thời gian chụp và tài khoản chụp. EDA là viết tắt của phân tích khám phá dữ liệu (exploratory data analysis). Thành viên nhóm được gọi theo tên: Học (Lê Nguyễn Quốc Học), Loan (Bùi Thị Bích Loan), Minh (Nguyễn Hữu Gia Minh), Khải (Nguyễn Lê Hoàng Khải) và Phúc (Trần Hoàng Phúc).
 
-Bộ dữ liệu gồm ba phần, được thu thập theo ba cách lấy mẫu khác nhau. Báo cáo luôn tách ba phần này, vì chỉ phần thứ nhất theo phân phối tự nhiên của ảnh trên đường.
+\subsection{Tổng quan bộ dữ liệu}
+
+Bộ dữ liệu gồm ba phần, được thu thập theo ba cách lấy mẫu khác nhau (bảng~\ref{tab:overview}). Báo cáo luôn trình bày tách riêng ba phần này, vì chỉ phần thứ nhất phản ánh phân phối tự nhiên của ảnh trên các tuyến đường.
 
 \begin{table}[H]
 \centering
@@ -28,21 +30,20 @@ Bộ dữ liệu gồm ba phần, được thu thập theo ba cách lấy mẫu 
 \toprule
 \textbf{Phần} & \textbf{Cách lấy mẫu} & \textbf{Ảnh} & \textbf{0} & \textbf{1} & \textbf{I} \\
 \midrule
-Bộ chính (\lab{main}), train & Tự nhiên: mọi vị trí cách nhau 25 m trên 10 đường & 1.839 & 939 & 106 & 794 \\
+Bộ chính, train & Tự nhiên: mọi vị trí cách nhau 25 m trên 10 đường & 1.839 & 939 & 106 & 794 \\
 Bộ chính, val & Tự nhiên, 3 đường & 486 & 207 & 35 & 244 \\
 Bộ chính, test & Tự nhiên, 4 đường & 674 & 412 & 47 & 215 \\
-Pilot (\lab{pilot}), train & Theo tầng điểm của một model thử, 3 đường train & 150 & 73 & 14 & 63 \\
-Ảnh bơm (\lab{train\_extra}), train & 70\% theo điểm bộ chọn ảnh, 30\% ngẫu nhiên, 75 đường mới & 2.000 & 819 & 577 & 604 \\
+Pilot, train & Theo tầng điểm của một mô hình thử, 3 đường train & 150 & 73 & 14 & 63 \\
+Ảnh bổ sung, train & 70\% theo điểm của bộ chọn ảnh, 30\% ngẫu nhiên, 75 đường mới & 2.000 & 819 & 577 & 604 \\
 \midrule
 \textbf{Tổng} & & \textbf{5.149} & \textbf{2.450} & \textbf{779} & \textbf{1.920} \\
 \bottomrule
 \end{tabularx}
-\src{\f{data/labels/main_labels_v1.csv}, \f{data/labels/train_extra_labels_v2.csv}; đếm lại bằng \f{src/eda/28_eda_tabular.py}.}
 \end{table}
 
-Ba điểm cần nhớ khi đọc phần còn lại:
+Một số lưu ý khi đọc các phần tiếp theo:
 \begin{itemize}
-  \item \textbf{Val và test chỉ gồm ảnh tự nhiên.} Ảnh pilot và ảnh bơm chỉ vào train. Nhãn val/test trong báo cáo này chỉ dùng để thống kê mô tả, không dùng để chọn hay chỉnh bất cứ thứ gì.
-  \item \textbf{Lớp \lab{Bị chặn} hiếm trong ảnh tự nhiên:} 188 trên 1.746 ảnh dùng được của bộ chính (10,8\%). Đây là lý do có đợt bơm ảnh cho train.
-  \item \textbf{Khoảng 40\% ảnh là \lab{Không đủ thông tin}}, do ảnh chụp từ xe thường không thấy rõ vỉa hè gần.
+  \item \textbf{Val và test chỉ gồm ảnh tự nhiên.} Ảnh pilot và ảnh bổ sung chỉ được đưa vào train. Nhãn val/test chỉ dùng để thống kê mô tả, không dùng để lựa chọn hay điều chỉnh bất kỳ thành phần nào.
+  \item \textbf{Lớp \lab{Bị chặn} hiếm trong ảnh tự nhiên:} 188 trên 1.746 ảnh hợp lệ của bộ chính (10,8\%). Đây là lý do nhóm thực hiện đợt bổ sung ảnh cho train.
+  \item \textbf{Khoảng 40\% ảnh mang nhãn \lab{Không đủ thông tin}}, do ảnh chụp từ xe thường không quan sát rõ vỉa hè gần.
 \end{itemize}

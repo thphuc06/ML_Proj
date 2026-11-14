@@ -141,7 +141,7 @@ for sp, d in items.groupby("split"):
     out.append(f"| {sp} | {len(d)} | {(d.label_prov == '1').sum()} | {has1.sum()} | {(d.label_prov == '1').sum() + has1.sum()} |")
 if "label_final" in items:
     n_phuc = (a.phuc.isin(["0", "1", "I"])).sum()
-    out += ["", f"## After adjudication ({len(a)} items: proposal by eye, {n_phuc} changed by Phuc)", "",
+    out += ["", f"## After adjudication ({len(a)} items: proposal by eye, {n_phuc} changed by the adjudicator, Khai)", "",
             pd.crosstab(items.split, items.label_final, margins=True).to_markdown(), "",
             "| split | blocked | usable (0/1) | blocked share of usable |", "|---|---|---|---|"]
     for sp, d in items.groupby("split"):

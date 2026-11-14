@@ -1,40 +1,45 @@
 % ==============================================================================
 % 3. LÀM SẠCH, TIỀN XỬ LÝ, ĐẢM BẢO CHẤT LƯỢNG, LƯU TRỮ
 % ==============================================================================
+\needspace{0.3\textheight}
 \section{Quy trình làm sạch và tiền xử lý dữ liệu}
 \label{sec:cleaning}
 
-Nguyên tắc chung: \emph{chỉ lọc bằng quy tắc, không lọc bằng model}, và không sửa dữ liệu gốc. Mỗi bước dưới đây ghi rõ đã làm gì và loại bao nhiêu.
+Nguyên tắc chung của nhóm là \emph{chỉ lọc dữ liệu bằng quy tắc, không lọc bằng mô hình}, và không chỉnh sửa dữ liệu gốc. Bảng~\ref{tab:cleaning} trình bày từng bước làm sạch, cách thực hiện và số lượng ảnh bị loại.
 
-\begin{table}[H]
-\centering
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.21\linewidth} >{\raggedright\arraybackslash}p{0.44\linewidth} >{\raggedright\arraybackslash}p{0.26\linewidth}}
 \caption{Các bước làm sạch và tiền xử lý, theo khung báo cáo}
-\label{tab:cleaning}
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.21\linewidth} L >{\raggedright\arraybackslash}p{0.26\linewidth}}
+\label{tab:cleaning}\\
 \toprule
-\textbf{Nội dung} & \textbf{Cách làm} & \textbf{Kết quả} \\
+\textbf{Nội dung} & \textbf{Cách thực hiện} & \textbf{Kết quả} \\
 \midrule
-Nhiễu: ảnh đêm & Loại ảnh có độ sáng trung bình nửa trên của ảnh $360^\circ$ dưới 90 (thang 0--255). Không lọc theo giờ chụp: giờ ghi trên Mapillary không đáng tin (ảnh ghi 18--0 giờ vẫn sáng như ban ngày). & Bộ chính: loại 58/3.057. Kho ảnh bơm: loại 38/5.074 \\
-Nhiễu: ảnh không thuộc đường & Chỉ giữ ảnh cách đường $\le 20$ m và đi dọc trục đường ($\le 30^\circ$); bỏ hẻm. & 81,3\% ảnh của khu vực gắn được vào đường \\
-Nhiễu: ảnh không xét được & Không lọc tự động. Người gán ghi nhãn \lab{I} kèm lý do; ảnh \lab{I} bị loại khỏi model nhưng giữ trong bảng nhãn. & 1.920/5.149 ảnh là \lab{I} \\
-Trùng lặp tuyệt đối & Mỗi ảnh $360^\circ$ chỉ dùng một lần; so mã băm md5 của ảnh cắt. & Xem mục~\ref{sec:eda-quality} \\
-Gần trùng & Lấy thưa: một vị trí mỗi 25 m, tối đa 2 ảnh mỗi vị trí và phải khác ngày chụp. Riêng kho ảnh bơm có thêm so dHash~\cite{krawetz2013dhash} giữa hai ngày của cùng vị trí. & Kho ảnh bơm: loại 1 cặp. Bộ chính: đo lần đầu trong báo cáo này (mục~\ref{sec:eda-quality}) \\
-Dữ liệu thiếu & Metadata lấy từ API nên ảnh thiếu tọa độ hoặc hướng đi không gắn được vào đường và đã bị loại ở bước gắn đường. Nhãn: mọi lượt gán đều bắt buộc chọn nhãn. & Xem bảng~\ref{tab:inventory} \\
-Chuẩn hóa, biến đổi & Chiếu ảnh $360^\circ$ về ảnh phối cảnh $640\times640$ với cùng tham số cho mọi ảnh (mục~\ref{sec:pipeline}). Chưa chuẩn hóa giá trị điểm ảnh: việc này thuộc bước train. & Mọi ảnh cùng kích thước và góc nhìn \\
-Chuyển đổi kiểu & Nhãn Label Studio (chuỗi tiếng Việt) $\rightarrow$ mã \lab{0}/\lab{1}/\lab{I}. Mã ảnh $360^\circ$ (số 64 bit) $\rightarrow$ mã ảnh 8 ký tự không lộ nguồn cho người gán. Thời gian chụp giữ dạng chuỗi ISO có múi giờ. & \f{19_main_agreement.py}, \f{26_train_extra_report.py} \\
-Kiểm tra nhất quán & Script thu thập từ chối đường đã có trong tập khác; báo cáo này kiểm lại toàn bộ khóa, tập, đường, tọa độ. & Mục~\ref{sec:eda-quality} \\
+\endfirsthead
+\toprule
+\textbf{Nội dung} & \textbf{Cách thực hiện} & \textbf{Kết quả} \\
+\midrule
+\endhead
+Ảnh chụp ban đêm & Loại ảnh có độ sáng trung bình nửa trên của ảnh $360^\circ$ dưới 90 (thang 0--255). Không lọc theo giờ chụp vì giờ ghi trên Mapillary không đáng tin cậy (nhiều ảnh ghi 18--0 giờ vẫn sáng như ban ngày). & Bộ chính: loại 58/3.057. Kho ứng viên bổ sung: loại 38/5.074 \\
+Ảnh không thuộc tuyến đường & Chỉ giữ ảnh cách đường $\le 20$ m và có hướng di chuyển dọc trục đường ($\le 30^\circ$); loại hẻm. & 81,3\% ảnh trong khu vực gắn được vào đường \\
+Ảnh không đủ thông tin & Không lọc tự động. Người gán đặt nhãn \lab{I} kèm lý do; ảnh \lab{I} bị loại khỏi mô hình nhưng vẫn được giữ trong bảng nhãn. & 1.920/5.149 ảnh mang nhãn \lab{I} \\
+Trùng lặp tuyệt đối & Mỗi ảnh $360^\circ$ chỉ được dùng một lần; so sánh mã băm MD5 của ảnh cắt. & Xem mục~\ref{sec:eda-quality} \\
+Gần trùng & Lấy mẫu thưa: mỗi 25 m một vị trí, tối đa 2 ảnh mỗi vị trí và phải khác ngày chụp. Riêng kho ứng viên bổ sung có thêm bước so sánh mã băm sai phân (dHash)~\cite{krawetz2013dhash} giữa hai ngày chụp của cùng vị trí. & Kho ứng viên bổ sung: loại 1 cặp. Bộ chính: được đánh giá lần đầu trong báo cáo này (mục~\ref{sec:eda-quality}) \\
+Dữ liệu thiếu & Metadata lấy từ API; ảnh thiếu tọa độ hoặc hướng di chuyển không gắn được vào đường nên đã bị loại ở bước gắn đường. Với nhãn, mọi lượt gán đều bắt buộc chọn nhãn chính. & Xem bảng~\ref{tab:inventory} \\
+Chuẩn hóa, biến đổi & Chiếu ảnh $360^\circ$ về ảnh phối cảnh $640\times640$ điểm ảnh với cùng tham số cho mọi ảnh (mục~\ref{sec:pipeline}). Chưa chuẩn hóa giá trị điểm ảnh; bước này thuộc giai đoạn huấn luyện. & Mọi ảnh có cùng kích thước và góc nhìn \\
+Chuyển đổi kiểu dữ liệu & Nhãn Label Studio (chuỗi tiếng Việt) $\rightarrow$ mã \lab{0}/\lab{1}/\lab{I}. Mã ảnh $360^\circ$ (số 64 bit) $\rightarrow$ mã ảnh 8 ký tự không để lộ nguồn cho người gán. Thời gian chụp được giữ dạng chuỗi ISO có múi giờ. & Áp dụng thống nhất cho mọi bảng nhãn của bộ chính, pilot và ảnh bổ sung \\
+Kiểm tra nhất quán & Bước thu thập từ chối các đường đã thuộc tập khác; báo cáo này kiểm tra lại toàn bộ khóa, tập, đường và tọa độ. & Mục~\ref{sec:eda-quality} \\
 \bottomrule
-\end{tabularx}
-\src{\f{docs/collection_log.md}; \f{data/manifest/main_v1_collection_status.csv}; \f{data/streets/train_extra_v1_scores.csv}; \f{docs/data_enrichment.md} mục 9.}
-\end{table}
+\end{longtable}
 
-\textbf{Chưa làm:} rà soát nội dung nhạy cảm trong ảnh (ngoài phần làm mờ sẵn của Mapillary), và khóa danh sách chia tập.
+\textbf{Các việc chưa thực hiện:} rà soát nội dung nhạy cảm trong ảnh (ngoài phần làm mờ sẵn của Mapillary) và khóa danh sách chia tập.
 
 % ------------------------------------------------------------------------------
+\needspace{0.45\textheight}
 \section{Đảm bảo chất lượng dữ liệu}
 \label{sec:qa}
 
 \subsection{Tiêu chí dữ liệu tốt cho bài toán này}
+
+Bảng~\ref{tab:criteria} nêu sáu tiêu chí chất lượng và cách kiểm tra từng tiêu chí.
 
 \begin{table}[H]
 \centering
@@ -44,17 +49,19 @@ Kiểm tra nhất quán & Script thu thập từ chối đường đã có trong
 \toprule
 \textbf{Tiêu chí} & \textbf{Cách kiểm tra} & \textbf{Loại kiểm tra} \\
 \midrule
-Nhãn đúng định nghĩa và nhất quán giữa người gán & Gán đôi val/test, gán chéo 15\% train, Cohen $\kappa$~\cite{cohen1960kappa} với ngưỡng 0,6 đặt trong đề cương; phân xử mọi ảnh bất đồng & Thủ công + tự động \\
-Tập đánh giá theo phân phối tự nhiên & Val/test chỉ gồm ảnh bộ chính; ảnh chọn theo điểm chỉ vào train; ghi tầng lấy mẫu vào manifest & Theo thiết kế \\
-Không rò rỉ giữa các tập & Chia theo đường; bỏ vị trí cách val/test dưới 40 m khi bơm; kiểm tra khoảng cách và ảnh gần trùng giữa các tập (mục~\ref{sec:eda-quality}) & Tự động + xem ảnh \\
-Truy được nguồn gốc & Mỗi ảnh một dòng manifest: mã ảnh gốc, tọa độ, ngày chụp, người chụp, giấy phép, đường, tập, tầng lấy mẫu & Tự động \\
-Ảnh xem được & Bộ lọc đêm; nhãn \lab{I} với lý do; thống kê độ sáng, độ nét (mục~\ref{sec:eda-image}) & Tự động + thủ công \\
-Đủ mẫu của lớp hiếm & Đếm ảnh \lab{Bị chặn} từng tập, kèm khoảng tin cậy (mục~\ref{sec:eda-labels}) & Tự động \\
+Nhãn đúng định nghĩa và nhất quán giữa người gán & Gán đôi val/test, gán chéo 15\% train, Cohen $\kappa$~\cite{cohen1960kappa} với ngưỡng 0,6 đặt ra trong đề cương; phân xử mọi ảnh bất đồng & Thủ công và tự động \\
+Tập đánh giá theo phân phối tự nhiên & Val/test chỉ gồm ảnh bộ chính; ảnh được chọn theo điểm chỉ đưa vào train; ghi tầng lấy mẫu vào manifest & Theo thiết kế \\
+Không rò rỉ giữa các tập & Chia theo đường; loại các vị trí cách val/test dưới 40 m khi bổ sung ảnh; kiểm tra khoảng cách và ảnh gần trùng giữa các tập (mục~\ref{sec:eda-quality}) & Tự động và kiểm tra trực quan \\
+Truy được nguồn gốc & Mỗi ảnh có một dòng trong manifest: mã ảnh gốc, tọa độ, ngày chụp, tài khoản chụp, giấy phép, đường, tập, tầng lấy mẫu & Tự động \\
+Ảnh quan sát được & Bộ lọc ảnh đêm; nhãn \lab{I} kèm lý do; thống kê độ sáng, độ nét (mục~\ref{sec:eda-image}) & Tự động và thủ công \\
+Đủ mẫu của lớp hiếm & Đếm ảnh \lab{Bị chặn} ở từng tập, kèm khoảng tin cậy (mục~\ref{sec:eda-labels}) & Tự động \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \subsection{Kiểm tra thủ công: đồng thuận và phân xử}
+
+Mục này đánh giá mức nhất quán giữa người gán (bảng~\ref{tab:kappa}) và mô tả quy trình phân xử các ảnh bất đồng.
 
 \begin{table}[H]
 \centering
@@ -69,51 +76,51 @@ Val & Minh -- Khải & 486 & 80\% & 0,64 & 0,55 \\
 Train gán chéo & 10 cặp & 276 & 78\% & 0,61 & 0,56 \\
 \bottomrule
 \end{tabularx}
-\src{\f{data/labels/main_report/main_report.md}; \f{src/labeling/19_main_agreement.py}. $\kappa$ chỉ 0/1 tính trên các ảnh cả hai người đều chọn 0 hoặc 1 (test 418 ảnh, val 211 ảnh).}
+\note{$\kappa$ chỉ 0/1 được tính trên các ảnh mà cả hai người đều chọn 0 hoặc 1 (test 418 ảnh, val 211 ảnh).}
 \end{table}
 
 \begin{itemize}
-  \item Cả ba nhóm đạt ngưỡng 0,6 của đề cương; pilot (hướng dẫn v0) chỉ đạt Fleiss $\kappa$ 0,57. Báo cáo không có khoảng tin cậy cho các giá trị $\kappa$ này: \textbf{chưa đo}.
-  \item Trong 1.436 ảnh gán đôi có 303 ảnh bất đồng: 193 ảnh \lab{0}/\lab{I}, 51 ảnh \lab{1}/\lab{I}, 59 ảnh \lab{0}/\lab{1}. Tức phần lớn bất đồng là về việc ảnh có xét được hay không.
-  \item \textbf{Phân xử 303 ảnh.} Khải thực hiện phân xử, duyệt toàn bộ 303 ảnh bất đồng và sửa 28 nhãn (9,2\%). Nhãn cuối là nhãn do Khải chốt. Cả 28 nhãn sửa đều trùng phiếu của một trong hai người gán ban đầu.
-  \item \textbf{Pilot.} Cả 150 ảnh được xem lại theo hướng dẫn v1 bằng cùng cách; Phúc sửa 3 ảnh. 29 ảnh có nhãn cuối khác đa số phiếu v0.
+  \item Cả ba nhóm trong bảng~\ref{tab:kappa} đều đạt ngưỡng 0,6 đặt ra trong đề cương; pilot (theo hướng dẫn v0) chỉ đạt Fleiss $\kappa$ 0,57. Khoảng tin cậy của các giá trị $\kappa$ \textbf{chưa được tính}.
+  \item Trong 1.436 ảnh được gán đôi có 303 ảnh bất đồng: 193 ảnh \lab{0}/\lab{I}, 51 ảnh \lab{1}/\lab{I}, 59 ảnh \lab{0}/\lab{1}. Như vậy phần lớn bất đồng liên quan tới việc ảnh có đủ thông tin để đánh giá hay không.
+  \item \textbf{Phân xử 303 ảnh} được thực hiện qua hai bước. (1) Trợ lý AI Claude (Anthropic) xem từng ảnh mà không thấy phiếu của người gán và đề xuất nhãn kèm lý do; sau đó xem lại riêng 21 ảnh có đề xuất khác cả hai phiếu, lần này có hiển thị phiếu, và sửa 10 ảnh. (2) Khải, người phân xử, duyệt cả 303 đề xuất, giữ nguyên 275 và sửa 28 (9,2\%). Nhãn cuối là nhãn do Khải quyết định. Cả 28 nhãn được sửa đều trùng với phiếu của một trong hai người gán ban đầu.
+  \item \textbf{7 nhãn cuối khác cả hai phiếu.} Ở 7 ảnh, người phân xử giữ đề xuất của Claude dù đề xuất này khác cả hai phiếu: 3 ảnh test, 2 ảnh val và 2 ảnh train (ví dụ: hai phiếu là \lab{0} và \lab{I}, nhãn cuối là \lab{1}).
+  \item \textbf{Phân xử chưa hoàn toàn độc lập.} Đề cương dự kiến người phân xử độc lập, nhưng Khải là một trong hai người gán ở 123/303 ảnh bất đồng, gồm \emph{cả 99 ảnh bất đồng của val} (val do Minh và Khải gán) và 24 ảnh train. Trong 123 ảnh này, nhãn cuối trùng với phiếu của Khải ở 37 ảnh (đề xuất của Claude trùng ở 32 ảnh); trong 14 nhãn Khải sửa, 9 nhãn được đổi về phiếu của chính Khải. Vì vậy, nhãn val cần được diễn giải có tính đến hạn chế này.
+  \item \textbf{Pilot.} Cả 150 ảnh được xem lại theo hướng dẫn v1 theo cùng quy trình: Claude đề xuất, Phúc duyệt và sửa 3 ảnh. So với phiếu v0, 25 ảnh có nhãn cuối khác nhãn đa số; 5 ảnh khác hòa phiếu ở v0 nên không có nhãn đa số.
 \end{itemize}
-\src{\f{docs/labeling_phase1.md} mục 3--5; \f{data/labels/main_report/adjudication_proposal.csv}; \f{data/labels/pilot_report/pilot_adjudication_proposal.csv}.}
 
-\textbf{Ảnh bơm.} Mỗi ảnh một người gán nên không có $\kappa$. Ảnh được chia ngẫu nhiên, nhưng tỉ lệ \lab{Bị chặn} của từng người chênh nhau rõ (Học 0,43, Loan 0,19; kiểm định $\chi^2$ trên bảng người gán $\times$ nhãn, $p = 4\cdot10^{-15}$). Giá trị $p$ này giả định các ảnh độc lập, chưa xét phụ thuộc theo đường, nên chỉ có tính tham khảo. Cần gán cùng một mẫu ảnh độc lập để xác nhận khác biệt giữa người gán. Một thành viên đã kiểm tra chéo độc lập 203 ảnh thuộc danh sách 264 ảnh bị nghi ngờ: trùng nhãn gốc ở 186 ảnh (92\%), đổi 17 nhãn. 203 ảnh này được chọn vì bị nghi ngờ nên \emph{không đại diện} cho 2.000 ảnh; mức nhiễu nhãn của phần bơm vì vậy \textbf{chưa đo được}.
-\src{\f{docs/data_enrichment.md} mục 9; \f{data/labels/train_extra_report/report.md} (tính trên nhãn v1); \f{data/labels/train_extra_cross_check.csv}.}
+\textbf{Ảnh bổ sung.} Mỗi ảnh chỉ có một người gán nên không tính được $\kappa$. Ảnh được chia ngẫu nhiên cho người gán, nhưng tỉ lệ \lab{Bị chặn} của từng người chênh lệch rõ (Học 0,43, Loan 0,19, tính trên nhãn trước kiểm tra chéo; kiểm định $\chi^2$ trên bảng người gán $\times$ nhãn, $p = 4\cdot10^{-15}$). Giá trị $p$ này giả định các ảnh độc lập và chưa xét sự phụ thuộc theo đường, nên chỉ mang tính tham khảo; để xác nhận khác biệt giữa người gán, cần cho nhiều người cùng gán một mẫu ảnh độc lập. Một thành viên đã kiểm tra chéo độc lập 203 ảnh thuộc danh sách 264 ảnh bị nghi ngờ: 186 ảnh (92\%) trùng nhãn gốc và 17 nhãn được đổi. Do 203 ảnh này được chọn vì bị nghi ngờ, chúng \emph{không đại diện} cho 2.000 ảnh; vì vậy mức nhiễu nhãn của ảnh bổ sung \textbf{chưa đo được}.
+
+Bảng~\ref{tab:label-source} tổng hợp nguồn gốc của nhãn cuối.
 
 \begin{table}[H]
 \centering
 \caption{Nguồn của nhãn cuối}
 \label{tab:label-source}
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.3\linewidth} r L}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.4\linewidth} r L}
 \toprule
-\textbf{Nguồn (cột \lab{source})} & \textbf{Ảnh} & \textbf{Ý nghĩa} \\
+\textbf{Nhãn cuối đến từ} & \textbf{Ảnh} & \textbf{Ghi chú} \\
 \midrule
-\lab{agreed} & 1.133 & Bộ chính: hai người gán giống nhau \\
-\lab{single} (bộ chính) & 1.563 & Ảnh train chỉ một người gán \\
-\lab{adjudicated\_proposal} & 275 & Bất đồng; người duyệt giữ nhãn đề xuất \\
-\lab{adjudicated\_phuc} & 28 & Mã nguồn cũ trong CSV; Khải sửa nhãn khi phân xử \\
-\lab{pilot\_review\_proposal} & 147 & Pilot; người duyệt giữ nhãn đề xuất \\
-\lab{pilot\_review\_phuc} & 3 & Pilot; người duyệt sửa \\
-\lab{single} (ảnh bơm) & 1.983 & Nhãn của một người gán (186 ảnh trong đó có kiểm tra chéo và trùng nhãn gốc) \\
-\lab{cross\_check} (ảnh bơm) & 17 & Nhãn đổi theo người kiểm tra chéo \\
+Hai người gán trùng nhau & 1.133 & Val, test và phần train gán chéo của bộ chính \\
+Một người gán (train bộ chính) & 1.563 & \\
+Phân xử: giữ nhãn đề xuất & 275 & Khải giữ nhãn Claude đề xuất \\
+Phân xử: sửa nhãn đề xuất & 28 & Khải sửa; trùng phiếu của một người gán \\
+Xem lại pilot: giữ nhãn đề xuất & 147 & Phúc giữ nhãn Claude đề xuất \\
+Xem lại pilot: sửa nhãn đề xuất & 3 & Phúc sửa \\
+Một người gán (ảnh bổ sung) & 1.983 & 186 ảnh trong đó đã được kiểm tra chéo và trùng nhãn gốc \\
+Kiểm tra chéo (ảnh bổ sung) & 17 & Nhãn được đổi theo người kiểm tra chéo \\
 \bottomrule
 \end{tabularx}
-\src{\f{data/labels/main_labels_v1.csv}, \f{data/labels/train_extra_labels_v2.csv}; đếm lại bằng \f{src/eda/28_eda_tabular.py}.}
 \end{table}
 
 \subsection{Kiểm tra tự động}
 
-Tên mã \lab{adjudicated\_phuc} được giữ để truy nguồn và tương thích với script hiện có; mã này không xác định người thực hiện. Phần phân xử 303 ảnh bộ chính do Khải thực hiện theo xác nhận của nhóm. Việc sửa thông tin người thực hiện không thay đổi nhãn hay số đếm; thông tin xem lại pilot được trình bày riêng.
-
 \begin{itemize}
-  \item Trong pipeline: script thu thập từ chối đường đã thuộc tập khác và đường trùng tên với đường val/test; script đồng thuận kiểm tra đủ số lượt gán, lượt lưu trùng và giao diện đúng phiên bản.
-  \item Trong báo cáo này: kiểm tra khóa, tập, đường, tọa độ, ngoại lệ, ảnh trùng và gần trùng, khoảng cách giữa các tập. Kết quả ở mục~\ref{sec:eda-quality}.
+  \item Trong quy trình thu thập và gán nhãn: bước thu thập từ chối các đường đã thuộc tập khác và các đường trùng tên với đường val/test; bước cập nhật giao diện gán nhãn kiểm tra cả 5 dự án gán nhãn đều dùng đúng giao diện v1; bước đo đồng thuận kiểm tra đủ số lượt gán và phát hiện các lượt lưu trùng.
+  \item Trong báo cáo này: kiểm tra khóa, tập, đường, tọa độ, ngoại lệ, ảnh trùng và gần trùng, khoảng cách giữa các tập; kết quả được trình bày ở mục~\ref{sec:eda-quality}.
 \end{itemize}
 
 % ------------------------------------------------------------------------------
+\needspace{0.5\textheight}
 \section{Lưu trữ và quản lý dữ liệu}
 \label{sec:storage}
 
@@ -126,24 +133,23 @@ Tên mã \lab{adjudicated\_phuc} được giữ để truy nguồn và tương t
 \textbf{Thư mục / file} & \textbf{Nội dung} & \textbf{Trong git} \\
 \midrule
 \f{configs/streets_v1.yaml} & 17 đường của bộ chính và tập của từng đường & Có \\
-\f{configs/streets_train_extra.yaml} & 75 đường của đợt bơm & Có \\
-\f{data/manifest/} & Mỗi ảnh một dòng: nguồn gốc, tọa độ, ngày chụp, đường, tập, tầng lấy mẫu; bảng phân công gán & Có \\
+\f{configs/streets_train_extra.yaml} & 75 đường của đợt bổ sung & Có \\
+\f{data/manifest/} & Mỗi ảnh một dòng: nguồn gốc, tọa độ, ngày chụp, đường, tập, tầng lấy mẫu; bảng phân công gán nhãn & Có \\
 \f{data/labels/main_labels_v1.csv} & Nhãn cuối của bộ chính và pilot (3.149 dòng) & Có \\
-\f{data/labels/train_extra_labels_v2.csv} & Nhãn cuối của ảnh bơm (2.000 dòng) & Có \\
+\f{data/labels/train_extra_labels_v2.csv} & Nhãn cuối của ảnh bổ sung (2.000 dòng) & Có \\
 \f{data/labels/*_report/} & Từng lượt gán, báo cáo đồng thuận, bảng phân xử & Có \\
-\f{data/labels/raw/} & Export gốc của Label Studio (có email tài khoản) & Không \\
-\f{data/streets/} & Bảng xếp hạng đường, điểm bộ chọn ảnh, kết quả phân tích thăm dò & CSV: có \\
+\f{data/labels/raw/} & Bản xuất gốc từ Label Studio (có email tài khoản) & Không \\
+\f{data/streets/} & Bảng xếp hạng đường, điểm của bộ chọn ảnh, kết quả phân tích thăm dò & CSV: có \\
 \f{data/raw/} & OSM, metadata Mapillary, ảnh $360^\circ$, embedding & Không \\
-\f{data/crops/} & Ảnh cắt $640\times640$ theo thư mục \f{main/}, \f{pilot_v2/}, \f{train_extra_v1/} & Không \\
+\f{data/crops/} & Ảnh cắt $640\times640$, tách thư mục cho bộ chính, pilot và ảnh bổ sung & Không \\
 \f{docs/data_report/} & Báo cáo này, hình và bảng số liệu EDA & Có \\
 \bottomrule
 \end{tabularx}
-\src{\f{README.md}, \f{.gitignore}.}
 \end{table}
 
-\begin{itemize}
-  \item \textbf{Khóa chính} là mã ảnh \lab{item} (8 ký tự). Bảng nhãn và manifest ghép với nhau theo khóa này; đường dẫn ảnh là \f{data/crops/<file>}.
-  \item \textbf{Ảnh không vào git} vì dung lượng và giấy phép; ảnh dựng lại được từ manifest (mã ảnh gốc và góc \lab{yaw}) bằng \f{src/eda/27_rebuild_missing_crops.py} hoặc các script thu thập. Ảnh dựng lại khác bản trên server gán nhãn do nén JPEG lại (lệch trung bình 1,35--1,5 mức xám, đo trên 5 ảnh).
-  \item \textbf{Phiên bản.} Bảng nhãn có số phiên bản trong tên file; bản cũ được giữ (\f{train_extra_labels_v1.csv}). Phiếu gốc của từng người vẫn nằm nguyên trên Label Studio; nhãn cuối chỉ nằm trong repo.
-  \item \textbf{Bí mật} (token Mapillary, mật khẩu server) nằm trong \f{.env}, không vào git.
+\begin{itemize}[nosep]
+  \item \textbf{Khóa chính} là mã ảnh 8 ký tự. Bảng nhãn và manifest được ghép với nhau theo khóa này; manifest ghi đường dẫn tới ảnh cắt.
+  \item \textbf{Ảnh không được đưa lên git} (bảng~\ref{tab:storage}) vì dung lượng và giấy phép; ảnh có thể được dựng lại từ manifest (mã ảnh gốc và góc quay) bằng script của nhóm. Ảnh dựng lại khác bản trên server do nén JPEG lại (lệch trung bình 1,35--1,5 mức xám, đo trên 5 ảnh).
+  \item \textbf{Phiên bản.} Tên file bảng nhãn có số phiên bản; bản cũ (v1 của nhãn ảnh bổ sung, trước kiểm tra chéo) được giữ lại. Phiếu gốc của từng người vẫn lưu trên Label Studio; nhãn cuối chỉ lưu trong repo.
+  \item \textbf{Thông tin xác thực} (token Mapillary, mật khẩu server) nằm trong file cấu hình riêng, không đưa lên git.
 \end{itemize}

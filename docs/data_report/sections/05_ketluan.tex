@@ -1,67 +1,75 @@
 % ==============================================================================
-% 7. ĐÃ ĐO GÌ, CHƯA LÀM GÌ
+% 7. TỔNG KẾT VÀ CÁC HẠN CHẾ
 % ==============================================================================
-\section{Tổng kết: đã đo gì, chưa làm gì}
+\section{Tổng kết và các hạn chế}
 \label{sec:summary}
 
-\subsection{Những gì đã đo}
+\subsection{Các kết quả đã đo được}
 
-\begin{table}[H]
-\centering
+Bảng~\ref{tab:measured} tổng hợp các kết quả chính, mỗi kết quả kèm cỡ mẫu và khoảng tin cậy.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3\linewidth} >{\raggedright\arraybackslash}p{0.41\linewidth} >{\raggedright\arraybackslash}p{0.2\linewidth}}
 \caption{Các kết quả chính, kèm cỡ mẫu và khoảng tin cậy}
-\label{tab:measured}
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.3\linewidth} L >{\raggedright\arraybackslash}p{0.2\linewidth}}
+\label{tab:measured}\\
 \toprule
-\textbf{Câu hỏi} & \textbf{Kết quả} & \textbf{Đo trên} \\
+\textbf{Câu hỏi} & \textbf{Kết quả} & \textbf{Phạm vi đo} \\
 \midrule
-Bộ dữ liệu có bao nhiêu ảnh, bao nhiêu dùng được? & 5.149 ảnh có nhãn cuối; 3.229 ảnh dùng được (2.450 \lab{0}, 779 \lab{1}); 1.920 ảnh \lab{I} & Toàn bộ \\
-Lớp \lab{Bị chặn} hiếm tới đâu trong ảnh tự nhiên? & 10,8\% ảnh dùng được [Wilson 9,4; 12,3], [bootstrap theo đường 8,7; 13,9] & 1.746 ảnh dùng được, 17 đường \\
-Test và val có đủ ảnh dương không? & Test 47 ảnh (10,2\% [7,8; 13,4]); val 35 ảnh (14,5\% [10,6; 19,5]) & 459 và 242 ảnh dùng được \\
-Train sau khi bơm? & 697 ảnh \lab{Bị chặn} trên 2.528 ảnh dùng được (27,6\% [25,9; 29,3]); 83\% ảnh dương là ảnh bơm & Train \\
-Người gán có nhất quán không? & Cohen $\kappa$ 3 nhãn: test 0,60; val 0,64; train gán chéo 0,61 & 674, 486, 276 ảnh gán đôi \\
-Bộ chọn ảnh có hiệu quả trên đường mới không? & \lab{Bị chặn} trên mọi ảnh: tầng điểm cao 37,9\% [35,4; 40,5], tầng ngẫu nhiên 7,7\% [5,8; 10,1] & 1.400 và 600 ảnh \\
-Có ảnh trùng không? & Không có ảnh trùng tuyệt đối; không có cặp nào dHash $\le 4$ & 5.149 ảnh, mọi cặp \\
-Có rò rỉ giữa các tập không? & Không chung đường, vị trí hay ảnh gốc. 52/1.160 ảnh val/test (4,5\%) cách ảnh train dưới 40 m tại giao lộ & Mọi ảnh, theo tọa độ \\
-Chất lượng ảnh có khác giữa các tập không? & Các chỉ số mô tả nhìn chung gần nhau giữa train, val, test bộ chính. Ảnh \lab{Bị chặn} tối hơn ảnh \lab{Còn lối đi}: AUC 0,37 [0,32; 0,41] & 2.999 ảnh, 17 đường \\
-Ảnh bơm có giống bộ chính không? & Không: bộ phân loại miền đạt AUC 0,95 (tầng điểm cao) và 0,70 (tầng ngẫu nhiên) & 1.839 so với 1.400 và 600 ảnh \\
-Metadata có liên hệ với nhãn không? & Tuyến đường (Cramér's V 0,18); loại đường có V = 0,00 ở bộ chính, liên hệ ở ảnh bơm được trình bày riêng; chưa thấy liên hệ rõ với độ sáng, tọa độ, người chụp và năm chụp & 1.746 ảnh dùng được \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-\subsection{Những gì chưa đo hoặc chưa làm}
-
-\begin{table}[H]
-\centering
-\caption{Việc chưa làm và ảnh hưởng tới báo cáo}
-\label{tab:notdone}
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.36\linewidth} L}
+\endfirsthead
 \toprule
-\textbf{Việc} & \textbf{Trạng thái và ảnh hưởng} \\
+\textbf{Câu hỏi} & \textbf{Kết quả} & \textbf{Phạm vi đo} \\
 \midrule
-Ảnh nhóm tự chụp (ít nhất 100 ảnh theo đề cương) & Chưa có. Toàn bộ dữ liệu là ảnh Mapillary \\
-Rà soát nội dung nhạy cảm trong ảnh & Chưa làm. Chỉ dựa vào phần làm mờ sẵn của Mapillary; trên các tấm ảnh kiểm tra vẫn thấy một số người và biển số còn rõ \\
-Khóa danh sách chia tập & Chưa khóa. Giữ đường test đã định; 47 ảnh dương là hạn chế đánh giá. Chờ quyết định về 47 ảnh train gần giao lộ với val/test \\
-Mức nhiễu nhãn của ảnh bơm & Chưa đo được. Mỗi ảnh một người gán; 203 ảnh kiểm tra chéo được chọn vì bị nghi ngờ nên không đại diện. Người gán chênh nhau rõ (19\% tới 43\% \lab{Bị chặn}) \\
-Khoảng tin cậy của $\kappa$ & Chưa đo \\
-1.563 ảnh train của bộ chính chỉ một người gán & Chưa rà lại; phần gán chéo 15\% có $\kappa$ 0,61 \\
-Vỉa hè bên trái của đường một chiều & Ít được quan sát vì chỉ lấy ảnh bên phải xe. Giới hạn của nguồn dữ liệu \\
-Ảnh bơm gộp vào bảng nhãn chung & Chưa gộp; hai bảng nhãn để riêng. Hai ô kiểm tra chéo (263, 264) còn chờ xác nhận, đang giữ nhãn gốc \\
-Kiểm chứng vì sao ảnh \lab{Bị chặn} tối hơn & Chưa làm; mới chỉ mô tả. Cần kiểm tra khi phân tích lỗi model \\
-Xem lại ảnh bị bộ lọc đêm loại ở kho ảnh bơm (38 ảnh) & Chưa xem. Bộ chính đã xem (58 ảnh) \\
-So sánh ảnh dựng lại với bản gốc trên server & Chỉ có số đo cũ trên 5 ảnh (lệch 1,35--1,5 mức xám). 671 ảnh val/test dùng trong EDA ảnh là bản dựng lại \\
-Thời gian gán và thẻ vật cản của pilot & Chưa đưa vào thống kê \\
-Chuẩn hóa điểm ảnh, tăng cường dữ liệu & Thuộc bước train, chưa làm \\
+\endhead
+Bộ dữ liệu có bao nhiêu ảnh và bao nhiêu ảnh hợp lệ? & 5.149 ảnh có nhãn cuối; 3.229 ảnh hợp lệ (2.450 ảnh \lab{0}, 779 ảnh \lab{1}); 1.920 ảnh \lab{I} & Toàn bộ dữ liệu \\
+Lớp \lab{Bị chặn} hiếm tới mức nào trong ảnh tự nhiên? & 10,8\% số ảnh hợp lệ [Wilson 9,4; 12,3], [bootstrap theo đường 8,7; 13,9] & 1.746 ảnh hợp lệ, 17 đường \\
+Test và val có đủ mẫu dương không? & Test có 47 ảnh (10,2\% [7,8; 13,4]); val có 35 ảnh (14,5\% [10,6; 19,4]) & 459 và 242 ảnh hợp lệ \\
+Tập train thay đổi thế nào sau khi bổ sung? & 697 ảnh \lab{Bị chặn} trên 2.528 ảnh hợp lệ (27,6\% [25,9; 29,3]); 83\% mẫu dương đến từ ảnh bổ sung & Train \\
+Người gán có nhất quán không? & Cohen $\kappa$ 3 nhãn: test 0,60; val 0,64; train gán chéo 0,61. 303 ảnh bất đồng do Khải phân xử, sửa 28 nhãn đề xuất & 674, 486, 276 ảnh gán đôi \\
+Bộ chọn ảnh có hiệu quả trên đường mới không? & Tỉ lệ \lab{Bị chặn} trên mọi ảnh: tầng điểm cao 37,9\% [35,4; 40,5], tầng ngẫu nhiên 7,7\% [5,8; 10,1] & 1.400 và 600 ảnh \\
+Có ảnh trùng lặp không? & Không có ảnh trùng lặp tuyệt đối; không có cặp nào có dHash $\le 4$ & 5.149 ảnh, mọi cặp \\
+Có rò rỉ giữa các tập không? & Không có đường, vị trí hay ảnh gốc dùng chung. 52/1.160 ảnh val/test (4,5\%) cách ảnh train dưới 40 m tại giao lộ & Mọi ảnh, theo tọa độ \\
+Chất lượng ảnh có khác nhau giữa các tập không? & Các chỉ số mô tả nhìn chung tương đồng giữa train, val và test của bộ chính. Ảnh \lab{Bị chặn} tối hơn ảnh \lab{Còn lối đi}: AUC 0,37 [0,32; 0,41] & 2.999 ảnh, 17 đường \\
+Ảnh bổ sung có giống bộ chính không? & Không: bộ phân loại miền đạt AUC 0,70 ở tầng ngẫu nhiên và 0,95 ở tầng điểm cao (giá trị sau bị ước lượng cao một phần do dùng chung embedding với bộ chọn ảnh) & 1.839 so với 1.400 và 600 ảnh \\
+Metadata có liên hệ với nhãn không? & Tuyến đường có liên hệ (Cramér's V 0,18); loại đường có V = 0,00 ở bộ chính, còn liên hệ ở ảnh bổ sung được trình bày riêng; chưa thấy liên hệ rõ với độ sáng ảnh $360^\circ$, tọa độ, tài khoản chụp và năm chụp & 1.746 ảnh hợp lệ \\
 \bottomrule
-\end{tabularx}
-\src{\f{docs/unresolved_items.md}; mục~\ref{sec:eda} của báo cáo này.}
-\end{table}
+\end{longtable}
 
-\subsection{Hệ quả cho bước xây dựng model}
+\subsection{Các nội dung chưa đo hoặc chưa thực hiện}
+
+Bảng~\ref{tab:notdone} liệt kê các việc còn tồn đọng và ảnh hưởng của từng việc tới các kết luận ở trên.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.36\linewidth} >{\raggedright\arraybackslash}p{0.58\linewidth}}
+\caption{Các việc chưa thực hiện và ảnh hưởng tới báo cáo}
+\label{tab:notdone}\\
+\toprule
+\textbf{Nội dung} & \textbf{Trạng thái và ảnh hưởng} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Nội dung} & \textbf{Trạng thái và ảnh hưởng} \\
+\midrule
+\endhead
+Ảnh nhóm tự chụp (ít nhất 100 ảnh theo đề cương) & Chưa có. Toàn bộ dữ liệu hiện là ảnh Mapillary \\
+Rà soát nội dung nhạy cảm trong ảnh & Chưa thực hiện. Hiện chỉ dựa vào phần làm mờ sẵn của Mapillary; trên các bảng ảnh kiểm tra vẫn thấy một số người và biển số còn rõ \\
+Khóa danh sách chia tập & Chưa khóa. Nhóm giữ nguyên các đường test đã định; việc test chỉ có 47 mẫu dương là một hạn chế của đánh giá. Còn chờ quyết định về 47 ảnh train gần giao lộ với val/test \\
+Mức nhiễu nhãn của ảnh bổ sung & Chưa đo được. Mỗi ảnh chỉ có một người gán; 203 ảnh được kiểm tra chéo được chọn vì bị nghi ngờ nên không đại diện. Tỉ lệ \lab{Bị chặn} giữa người gán chênh lệch rõ (19\% tới 43\%) \\
+Phân xử độc lập (theo đề cương) & Chưa đạt hoàn toàn. Khải là người gán ở 123/303 ảnh bất đồng, gồm cả 99 ảnh bất đồng của val; 7 nhãn cuối khác cả hai phiếu \\
+Khoảng tin cậy của $\kappa$ & Chưa tính \\
+1.563 ảnh train của bộ chính chỉ có một người gán & Chưa được rà soát lại; phần gán chéo 15\% có $\kappa$ 0,61 \\
+Vỉa hè bên trái của đường một chiều & Ít được quan sát vì chỉ cắt ảnh bên phải xe. Đây là giới hạn của nguồn dữ liệu \\
+Gộp ảnh bổ sung vào bảng nhãn chung & Chưa gộp; hai bảng nhãn đang được lưu riêng. Hai ô kiểm tra chéo (263, 264) còn chờ xác nhận và đang giữ nhãn gốc \\
+Giải thích vì sao ảnh \lab{Bị chặn} tối hơn & Chưa kiểm chứng; hiện mới dừng ở mức mô tả. Cần kiểm tra khi phân tích lỗi mô hình \\
+Xem lại các ảnh bị bộ lọc ảnh đêm loại trong kho ứng viên bổ sung (38 ảnh) & Chưa xem lại. Ảnh bị loại của bộ chính (58 ảnh) đã được xem lại \\
+So sánh ảnh dựng lại với bản gốc trên server & Chỉ có kết quả đo cũ trên 5 ảnh (lệch 1,35--1,5 mức xám). 671 ảnh val/test dùng trong EDA ảnh là bản dựng lại \\
+Thời gian gán và thẻ vật cản của pilot & Chưa được đưa vào thống kê \\
+Chuẩn hóa điểm ảnh, tăng cường dữ liệu & Thuộc giai đoạn huấn luyện, chưa thực hiện \\
+\bottomrule
+\end{longtable}
+
+\subsection{Hệ quả đối với bước xây dựng mô hình}
 
 \begin{itemize}
-  \item \textbf{Đánh giá.} Dùng chỉ số chịu được mất cân bằng (PR-AUC, F1 của lớp \lab{Bị chặn}), và báo cáo khoảng tin cậy lấy lại mẫu theo đường. Với 47 ảnh dương ở test, khả năng phân biệt các chênh lệch nhỏ giữa model bị hạn chế.
-  \item \textbf{Train.} Phân phối nhãn và kiểu cảnh của train (sau khi bơm) khác val/test. Nên chạy thêm một lượt chỉ với phần tự nhiên, và cân nhắc trọng số lớp hoặc lấy mẫu lại.
-  \item \textbf{Học tắt.} Kiểm tra xem model có dựa vào độ tối của ảnh hay không.
-  \item \textbf{Rò rỉ.} Quyết định xử lý các ảnh train gần giao lộ với val/test trước khi khóa chia tập.
+  \item \textbf{Đánh giá.} Nên dùng các chỉ số phù hợp với dữ liệu mất cân bằng, như diện tích dưới đường cong Precision--Recall (PR-AUC) và điểm F1 của lớp \lab{Bị chặn}, đồng thời báo cáo khoảng tin cậy bằng cách lấy mẫu lại theo đường. Với 47 mẫu dương ở test, khả năng phân biệt các chênh lệch nhỏ giữa các mô hình bị hạn chế.
+  \item \textbf{Huấn luyện.} Phân phối nhãn và kiểu cảnh của train (sau khi bổ sung) khác với val/test. Nên chạy thêm một lượt huấn luyện chỉ với phần dữ liệu tự nhiên, và cân nhắc dùng trọng số lớp hoặc lấy mẫu lại.
+  \item \textbf{Học lối tắt.} Cần kiểm tra xem mô hình có dựa vào độ tối của ảnh hay không.
+  \item \textbf{Rò rỉ dữ liệu.} Cần quyết định cách xử lý các ảnh train gần giao lộ với val/test trước khi khóa chia tập.
 \end{itemize}
