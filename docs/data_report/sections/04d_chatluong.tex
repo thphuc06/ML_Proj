@@ -35,7 +35,7 @@ Ngày chụp không phải ngày giữ chỗ & Không đạt & 103 ảnh ghi 01/
 \subsubsection*{Ngoại lệ và dữ liệu bất thường}
 
 \begin{itemize}
-  \item \textbf{Metadata.} Theo quy tắc $1{,}5\times$IQR, bộ chính có 81 ảnh ngoại lệ về độ sáng ảnh $360^\circ$ (63 thấp, 18 cao) và 113 ảnh có khoảng cách tới tim đường lớn; ảnh bơm có 113 và 71 ảnh. Đây là đuôi của phân bố lệch, không phải lỗi nhập liệu; mọi giá trị nằm trong miền hợp lệ (độ sáng 91--249, khoảng cách 0--20 m).
+  \item \textbf{Metadata.} Theo quy tắc $1{,}5\times$IQR~\cite{tukey1977eda}, bộ chính có 81 ảnh ngoại lệ về độ sáng ảnh $360^\circ$ (63 thấp, 18 cao) và 113 ảnh có khoảng cách tới tim đường lớn; ảnh bơm có 113 và 71 ảnh. Đây là đuôi của phân bố lệch, không phải lỗi nhập liệu; mọi giá trị nằm trong miền hợp lệ (độ sáng 91--249, khoảng cách 0--20 m).
   \item \textbf{Ảnh cắt.} Trên 5.149 ảnh: 87 ảnh ngoại lệ về độ sáng (7 quá tối, 80 quá sáng), 36 về tương phản, 115 ảnh có độ nét rất thấp (thang log). Tổng cộng 308 ảnh nằm ngoài ít nhất một ngưỡng (\f{tables/image_outliers.csv}).
   \item \textbf{Ảnh cháy sáng} (trên 20\% điểm ảnh bão hòa): 128 ảnh. Tỉ lệ ở test (33 ảnh, 4,9\%) và val (25 ảnh, 5,1\%) cao hơn train (36 ảnh, 2,0\%); 27/33 ảnh của test thuộc đường Hai Bà Trưng.
   \item \textbf{Quan sát bằng mắt trên các tấm ảnh ngoại lệ} (không phải phép đo): ảnh tối nhất phần lớn là bóng râm, gầm cầu vượt, trời âm u, không phải ảnh đêm; ảnh sáng nhất bị phơi sáng quá mức nhưng nhiều ảnh vẫn thấy vỉa hè; ảnh mờ nhất phần lớn là cảnh tối hoặc nhòe do chuyển động.
@@ -112,7 +112,7 @@ Test -- ảnh bơm & 34,3 & 0 & 0 & 3 & 116 \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{dup_tsne.pdf}
-\caption{Hình chiếu t-SNE của embedding DINOv2 cho 5.149 ảnh, tô theo nhóm và theo nhãn (nhãn chỉ để tô màu)}
+\caption[Hình chiếu t-SNE của embedding DINOv2 cho 5.149 ảnh, tô theo nhóm và theo nhãn]{Hình chiếu t-SNE~\cite{maaten2008tsne} của embedding DINOv2 cho 5.149 ảnh, tô theo nhóm và theo nhãn (nhãn chỉ để tô màu)}
 \label{fig:tsne}
 \end{figure}
 

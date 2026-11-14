@@ -14,9 +14,9 @@
 \textbf{Câu hỏi} & \textbf{Trả lời} \\
 \midrule
 Dựa trên dataset có sẵn? & Không. Nhóm tự dựng bộ dữ liệu từ ảnh gốc. Bộ gần nhất là Vietnamese Sidewalk Violation VQA~\cite{dao2026viahevqa}, nhưng bộ đó không có tọa độ và thời gian chụp nên không chia được theo tuyến đường; nhóm không dùng ảnh hay nhãn của bộ đó. \\
-Từ API? & Có. Ảnh $360^\circ$ và metadata lấy qua Mapillary Graph API~\cite{mapillary2024intro}; mạng lưới đường và điểm ngữ cảnh (chợ, trường) lấy từ OpenStreetMap qua Overpass API. \\
+Từ API? & Có. Ảnh $360^\circ$ và metadata lấy qua Mapillary Graph API~\cite{mapillary2024intro}; mạng lưới đường và điểm ngữ cảnh (chợ, trường) lấy từ OpenStreetMap~\cite{osm2026} qua Overpass API. \\
 Web scraping? & Không. \\
-Khảo sát, biểu mẫu? & Không. Nhãn do 5 thành viên nhóm gán trên Label Studio (mục~\ref{sec:labeling}). \\
+Khảo sát, biểu mẫu? & Không. Nhãn do 5 thành viên nhóm gán trên Label Studio~\cite{labelstudio2020} (mục~\ref{sec:labeling}). \\
 Giấy phép & Ảnh Mapillary theo CC BY-SA 4.0, ghi công \cc. Phần làm mờ mặt người và biển số của Mapillary được giữ nguyên. Ảnh không đưa lên git. \\
 Ảnh nhóm tự chụp & \textbf{Chưa có} (đề cương dự kiến ít nhất 100 ảnh). \\
 \bottomrule
@@ -42,7 +42,7 @@ Khu vực nghiên cứu là trung tâm TP.HCM (Quận 1, 3, 5, 10, Phú Nhuận,
 3 & Gắn ảnh vào đường: cách đường $\le 20$ m và hướng đi lệch trục đường $\le 30^\circ$; bỏ hẻm (\f{03_rank_streets.py}) & 81,3\% số ảnh gắn được vào một đường \\
 4 & Xem trước 56 đường, mỗi đường 20 vị trí, để chọn đường (\f{04_street_preview.py}) & Loại 7 đường ven kênh, cầu, đường hầm; chọn 17 đường \\
 5 & Chia 17 đường thành train/val/test \emph{trước khi} gán nhãn (\f{configs/streets_v1.yaml}) & 10 đường train, 3 val, 4 test \\
-6 & Pilot: 150 ảnh trên 3 đường train, 5 người gán cùng một ảnh (\f{10_make_pilot_v2.py}) & Fleiss $\kappa$ 0,57; viết lại hướng dẫn gán (v1) \\
+6 & Pilot: 150 ảnh trên 3 đường train, 5 người gán cùng một ảnh (\f{10_make_pilot_v2.py}) & Fleiss $\kappa$~\cite{fleiss1971kappa} 0,57; viết lại hướng dẫn gán (v1) \\
 7 & Thu thập bộ chính: vị trí cách nhau 25 m, tối đa 2 ảnh mỗi vị trí ở hai ngày khác nhau, trần 420 ảnh mỗi đường, bỏ vị trí của pilot (\f{11_collect_main.py}) & Chọn 3.057 ảnh, loại 58 ảnh đêm, còn 2.999 ảnh \\
 8 & Gán nhãn bộ chính, đo đồng thuận, phân xử (mục~\ref{sec:labeling}) & Nhãn cuối cho 3.149 ảnh \\
 9 & Bơm ảnh cho train từ 75 đường mới (mục~\ref{sec:enrich}) & 2.000 ảnh, 577 ảnh \lab{Bị chặn} \\
@@ -124,7 +124,7 @@ Cắt ảnh & \lab{py360convert}, \lab{Pillow} & JPEG $640\times640$ (\f{data/cr
 Danh sách ảnh (manifest) & \lab{pandas} & CSV UTF-8, mỗi ảnh một dòng (\f{data/manifest/}) \\
 Gán nhãn & Label Studio tự host trên AWS (Docker, Caddy) & Export JSON trên server; bảng nhãn CSV trong repo (\f{data/labels/}) \\
 Đo đồng thuận, thống kê & \lab{pandas}, \lab{scipy}, \lab{scikit-learn} & CSV, Markdown \\
-Bộ chọn ảnh, đo vỉa hè (chỉ để chọn mẫu) & \lab{torch}, \lab{transformers} (DINOv2, CLIP, SegFormer) & Embedding NPZ (\f{data/raw/embeddings/}) \\
+Bộ chọn ảnh, đo vỉa hè (chỉ để chọn mẫu) & \lab{torch}, \lab{transformers} (DINOv2~\cite{oquab2023dinov2}, CLIP~\cite{radford2021clip}, SegFormer~\cite{xie2021segformer}) & Embedding NPZ (\f{data/raw/embeddings/}) \\
 Cấu hình đường và tập & & YAML (\f{configs/}) \\
 EDA của báo cáo này & \lab{pandas}, \lab{scipy}, \lab{matplotlib} & CSV, JSON, PDF, JPEG (\f{docs/data_report/}) \\
 \bottomrule
