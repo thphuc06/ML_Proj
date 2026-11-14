@@ -8,7 +8,7 @@ Bài toán là phân loại nhị phân: với một ảnh chụp một phía v�
 
 ## Tiến độ theo mốc của đề cương
 
-Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuối cho 3.149 ảnh (bộ chính và pilot), trong đó 1.833 ảnh dùng được (202 ảnh "Bị chặn"). Tổng kết ở [docs/labeling_phase1.md](docs/labeling_phase1.md). Đợt bơm ảnh cho train đã gán xong (12/11): 577 ảnh "Bị chặn" trên 2.000 ảnh (sau kiểm tra chéo 14/11), train có 697 ảnh dương. Chưa làm EDA.
+Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuối cho 3.149 ảnh (bộ chính và pilot), trong đó 1.833 ảnh dùng được (202 ảnh "Bị chặn"). Tổng kết ở [docs/labeling_phase1.md](docs/labeling_phase1.md). Đợt bơm ảnh cho train đã gán xong (12/11): 577 ảnh "Bị chặn" trên 2.000 ảnh (sau kiểm tra chéo 14/11), train có 697 ảnh dương. EDA và báo cáo về dữ liệu đã xong (14/11): [docs/data_report/](docs/data_report/).
 
 **Week 3**
 
@@ -28,7 +28,7 @@ Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuố
 | Thu thập ảnh | Xong phần Mapillary: 2.999 ảnh chính, 150 ảnh pilot ([danh sách ảnh](data/manifest/main_v1.csv)). Chưa có ảnh nhóm tự chụp |
 | Gán nhãn | **Đợt 1 xong.** Bộ chính: 5×887 lượt, κ test 0,60, val 0,64, train gán chéo 0,61. 303 ảnh bất đồng đã phân xử, Phúc sửa 28 ảnh. 150 ảnh pilot được xem lại theo guide v1 và đưa vào train. Nhãn cuối ở [main_labels_v1.csv](data/labels/main_labels_v1.csv): train 120/1.132, val 35/242, test 47/459 (Bị chặn / dùng được) |
 | Tiền xử lý | Một phần: đã cắt ảnh, lọc ảnh đêm, loại trùng tuyệt đối. Còn dò gần trùng và rà soát nội dung nhạy cảm |
-| EDA | Chưa làm |
+| EDA | Xong (14/11): [báo cáo về dữ liệu](docs/data_report/data_report.pdf), script ở [src/eda/](src/eda/), số liệu ở [docs/data_report/tables/](docs/data_report/tables/) |
 | Chia tập | Đã chia theo đường ([streets_v1.yaml](configs/streets_v1.yaml)), chưa khóa |
 | Bơm thêm ảnh "Bị chặn" cho train | **Gán xong (12/11):** 2.000 ảnh, 577 "Bị chặn" sau kiểm tra chéo 14/11 (tầng theo điểm 37,9%, tầng ngẫu nhiên 7,7%); train từ 120 lên 697 ảnh dương ([kết quả](docs/data_enrichment.md)). Người gán chênh nhau rõ; một người trong nhóm đã kiểm tra chéo 203 ảnh, 17 nhãn đổi. Bộ chọn ảnh mới (embedding DINOv2 + logistic) đã thay bộ cũ `occ_v2`: trên 1.839 ảnh train, top 20% chứa 22,0% ảnh "Bị chặn" so với 13,9%, hiệu +8,2 điểm % [4,3; 11,7] ([mục 7](docs/data_enrichment.md)). Đã quét 150 đường bằng bộ chọn ảnh để chọn đường ([mục 8](docs/data_enrichment.md)) và lập danh sách **2.000 ảnh từ 75 đường**, mỗi người gán 400 ảnh ([danh sách](data/manifest/train_extra_v1.csv), [phân công](data/manifest/train_extra_v1_assignment.csv), [tấm ảnh mẫu](docs/figures/train_extra_v1_sheet.jpg), [mục 9](docs/data_enrichment.md)). Đã gán trong 5 project `MAIN2_<tên>`. Số ảnh "Bị chặn" thực tế: train 120 (gồm 14 ảnh pilot), val 35, test 47, ít hơn ước tính ([ghi chép](docs/data_enrichment.md)) |
 
@@ -47,13 +47,15 @@ Cập nhật 11/11/2026: **đợt gán nhãn 1 đã xong.** Đã có nhãn cuố
 │   ├── ls_client.py    Kết nối Label Studio
 │   ├── collection/     OSM, metadata Mapillary, xếp hạng đường, thu thập ảnh, chọn ảnh bơm cho train
 │   ├── labeling/       Tạo pilot và project, tính đồng thuận
-│   └── analysis/       Các phân tích thăm dò dẫn tới quyết định dữ liệu
+│   ├── analysis/       Các phân tích thăm dò dẫn tới quyết định dữ liệu
+│   └── eda/            EDA cho báo cáo về dữ liệu (bảng, ảnh, trùng lặp và rò rỉ)
 ├── data/
 │   ├── manifest/       Nguồn gốc từng ảnh, phân công gán nhãn, danh sách ảnh bơm và phân công (train_extra_v1*.csv)
 │   ├── streets/        Bảng xếp hạng và phân tích đường, kết quả so bộ chọn ảnh, quét đường
 │   └── labels/         Báo cáo và nhãn pilot
 ├── docs/
 │   ├── proposal/       Đề cương (PDF và mã LaTeX)
+│   ├── data_report/    Báo cáo về dữ liệu (PDF, mã LaTeX, hình và bảng EDA)
 │   ├── figures/        Ảnh minh họa cho tài liệu
 │   ├── collection_log.md
 │   ├── data_enrichment.md

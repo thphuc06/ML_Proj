@@ -1,0 +1,143 @@
+\subsection{Kiểm tra chất lượng dữ liệu}
+\label{sec:eda-quality}
+
+\subsubsection*{Tính hợp lệ và nhất quán}
+
+Script \f{src/eda/28_eda_tabular.py} chạy 71 phép kiểm tra tự động; 62 đạt, 9 không đạt. Không có dữ liệu nào bị sửa.
+
+\begin{table}[H]
+\centering
+\caption{Kết quả kiểm tra tính hợp lệ và nhất quán}
+\label{tab:checks}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.37\linewidth} c L}
+\toprule
+\textbf{Kiểm tra} & \textbf{Kết quả} & \textbf{Chi tiết và cách xử lý} \\
+\midrule
+Mã ảnh duy nhất trong và giữa ba bảng nhãn & Đạt & 5.149 mã khác nhau \\
+Nhãn ghép 1--1 với manifest & Đạt & Cả ba phần \\
+Tập và đường khớp giữa nhãn, manifest, cấu hình & Đạt & \\
+Không đường nào ở hai tập; không vị trí 25 m nào ở hai tập & Đạt & Ảnh bơm không dùng chung đường với bộ chính \\
+Không ảnh $360^\circ$ nào dùng hai lần & Đạt & Trong và giữa ba phần \\
+Nhãn thuộc \{0, 1, I\}; phía phải; góc $60^\circ$; giấy phép & Đạt & \\
+Mọi ảnh giữ lại có độ sáng trên ngưỡng đêm & Đạt & Min 91. Ảnh bị loại: 27--90. Phép kiểm tra chặt ``ảnh bị loại đều dưới 90'' không đạt vì 1 ảnh của kho ảnh bơm ghi đúng 90 (giá trị đã làm tròn) \\
+\midrule
+Ảnh \lab{I} có ghi lý do & Không đạt & 281 + 7 ảnh, thiếu theo cấu trúc (mục~\ref{sec:eda-desc}). Giữ nguyên \\
+Thẻ vật cản chỉ có khi lượt gán chọn \lab{1} & Không đạt & 285/4.435 lượt (bộ chính) và 119/2.000 lượt (ảnh bơm) có thẻ nhưng nhãn là 0 hoặc I. Thống kê vật cản chỉ dùng lượt chọn \lab{1} \\
+Tọa độ trong khung nghiên cứu & Không đạt & 2 ảnh bơm nằm ngoài khung dưới 4 m (do làm tròn mép khung). Giữ nguyên \\
+Hướng chạy xe trong $[0, 360)$ & Không đạt & 1 ảnh ghi 360,0 (tương đương 0). Vô hại \\
+Ngày chụp không phải ngày giữ chỗ & Không đạt & 103 ảnh ghi 01/01/2016. Không dùng năm chụp để lọc hay chia tập \\
+Ảnh pilot không trùng vị trí ảnh bộ chính & Không đạt & 5 ảnh pilot cách ảnh bộ chính dưới 5 m (gần nhất 2,9 m). Cả hai đều thuộc train nên không phải rò rỉ giữa các tập \\
+\bottomrule
+\end{tabularx}
+\src{\f{tables/consistency_checks.csv}, \f{tables/bbox_violations.csv}.}
+\end{table}
+
+\subsubsection*{Ngoại lệ và dữ liệu bất thường}
+
+\begin{itemize}
+  \item \textbf{Metadata.} Theo quy tắc $1{,}5\times$IQR, bộ chính có 81 ảnh ngoại lệ về độ sáng ảnh $360^\circ$ (63 thấp, 18 cao) và 113 ảnh có khoảng cách tới tim đường lớn; ảnh bơm có 113 và 71 ảnh. Đây là đuôi của phân bố lệch, không phải lỗi nhập liệu; mọi giá trị nằm trong miền hợp lệ (độ sáng 91--249, khoảng cách 0--20 m).
+  \item \textbf{Ảnh cắt.} Trên 5.149 ảnh: 87 ảnh ngoại lệ về độ sáng (7 quá tối, 80 quá sáng), 36 về tương phản, 115 ảnh có độ nét rất thấp (thang log). Tổng cộng 308 ảnh nằm ngoài ít nhất một ngưỡng (\f{tables/image_outliers.csv}).
+  \item \textbf{Ảnh cháy sáng} (trên 20\% điểm ảnh bão hòa): 128 ảnh. Tỉ lệ ở test (33 ảnh, 4,9\%) và val (25 ảnh, 5,1\%) cao hơn train (36 ảnh, 2,0\%); 27/33 ảnh của test thuộc đường Hai Bà Trưng.
+  \item \textbf{Quan sát bằng mắt trên các tấm ảnh ngoại lệ} (không phải phép đo): ảnh tối nhất phần lớn là bóng râm, gầm cầu vượt, trời âm u, không phải ảnh đêm; ảnh sáng nhất bị phơi sáng quá mức nhưng nhiều ảnh vẫn thấy vỉa hè; ảnh mờ nhất phần lớn là cảnh tối hoặc nhòe do chuyển động.
+  \item \textbf{Cách xử lý:} không loại ảnh ngoại lệ nào. Ảnh xấu tới mức không xét được đã được người gán đưa vào \lab{I}; phần còn lại là điều kiện chụp thật mà model phải chịu được.
+\end{itemize}
+
+\textbf{Kiểm tra bộ lọc đêm} (việc còn mở từ trước). Xem lại 58 ảnh $360^\circ$ bị loại của bộ chính và 58 ảnh giữ lại có độ sáng thấp nhất. Quan sát bằng mắt, không phải phép đo: khoảng 48/58 ảnh bị loại đúng là ảnh đêm; 9 ảnh trông là ban ngày dưới tán cây dày và 1 ảnh lúc chạng vạng (độ sáng 68--89). Trong 58 ảnh giữ lại không ảnh nào là ảnh đêm; khoảng 3 ảnh chụp lúc chạng vạng. Bộ lọc vì vậy không để lọt ảnh đêm, và loại nhầm khoảng 10 ảnh ban ngày trên 3.057 ảnh (0,3\%). Kho ảnh bơm (38 ảnh bị loại): \textbf{chưa xem}.
+\src{\f{tables/image_night_check.csv}; tấm ảnh \f{figures/img_sheet_night_*.jpg} (không đưa lên git).}
+
+\subsubsection*{Trùng lặp và gần trùng}
+
+\begin{itemize}
+  \item \textbf{Trùng tuyệt đối: không có.} Không có hai file trùng mã băm md5, không có hai ảnh trùng điểm ảnh sau giải nén, không ảnh $360^\circ$ nào xuất hiện hai lần (n = 5.149).
+  \item \textbf{Bản sao gần như y hệt: không có.} Không cặp ảnh nào có khoảng cách dHash $\le 4$ trên 64 bit. Cặp gần nhất giữa các tập có dHash 6; xem bằng mắt thì là hai nơi khác nhau có cùng mảng trời sáng.
+  \item \textbf{Cùng vị trí, khác ngày.} 1.709 vị trí có hai ảnh chụp ở hai ngày (bộ chính 1.363, ảnh bơm 346), luôn nằm trong cùng một tập. Các cặp này \emph{không} giống nhau về nội dung theo phép đo: dHash nhỏ nhất là 12 (trung vị 31, bằng các cặp khác đường), độ tương đồng cosine của embedding DINOv2 có trung vị 0,63 và lớn nhất 0,905. Hai ngày chụp cho xe cộ, hàng quán và ánh sáng khác nhau, nên giữ cả hai ảnh là hợp lý.
+  \item \textbf{Hệ quả về phương pháp:} cả dHash lẫn cosine đều không tách được ``cùng một nơi'' khỏi ``cảnh tương tự'' (hình~\ref{fig:dupdist}); chỉ khoảng cách địa lý làm được việc này. Báo cáo vì vậy không đặt một ngưỡng gần trùng theo nội dung.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{dup_distance_distributions.pdf}
+\caption{Phân bố độ tương đồng giữa các cặp ảnh: cùng vị trí khác ngày, cùng đường khác vị trí, khác đường}
+\label{fig:dupdist}
+\end{figure}
+\src{\f{tables/duplicate_numbers.json}, \f{tables/dup_population_quantiles.csv}, \f{tables/dup_pair_counts_aggregated.csv} (\f{src/eda/30_eda_duplicates.py}).}
+
+\subsubsection*{Rò rỉ giữa các tập}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{dup_map_positions.pdf}
+\caption{Vị trí mọi ảnh theo tập. Các đường val/test cắt đường train tại giao lộ}
+\label{fig:map}
+\end{figure}
+
+\textbf{Theo nội dung ảnh.} Với mỗi ảnh val/test, tìm ảnh giống nhất ở phía train (bộ chính, pilot, ảnh bơm) theo cosine.
+\begin{itemize}
+  \item Độ tương đồng với ảnh train gần nhất: val trung vị 0,78, lớn nhất 0,909; test trung vị 0,79, lớn nhất 0,904. Phân bố này trùng với mức tham chiếu giữa các đường train với nhau (trung vị 0,81, lớn nhất 0,933), tức ảnh val/test không giống train hơn mức mà hai đường khác nhau vốn giống nhau.
+  \item Có 7 ảnh val/test có cosine $\ge 0{,}90$ với một ảnh train. Cả 7 cặp cách nhau 778--3.585 m. Xem bằng mắt 20 cặp giống nhất: đều là hai nơi khác nhau có cùng kiểu cảnh (dãy nhà phố, người đi xe máy ở tiền cảnh).
+\end{itemize}
+
+\textbf{Theo vị trí địa lý.} Chia theo đường không ngăn được việc đường val/test \emph{cắt} đường train.
+
+\begin{table}[H]
+\centering
+\caption{Số ảnh val/test nằm gần một ảnh phía train}
+\label{tab:spatial}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.3\linewidth} R R R R R}
+\toprule
+\textbf{Cặp} & \textbf{Gần nhất (m)} & \textbf{< 15 m} & \textbf{< 25 m} & \textbf{< 40 m} & \textbf{< 100 m} \\
+\midrule
+Val (486) -- train bộ chính & 1,5 & 6 & 6 & 14 & 47 \\
+Val -- pilot & 17,9 & 0 & 1 & 5 & 17 \\
+Val -- ảnh bơm & 41,6 & 0 & 0 & 0 & 71 \\
+Test (674) -- train bộ chính & 7,1 & 8 & 18 & 34 & 88 \\
+Test -- pilot & 20,9 & 0 & 2 & 4 & 7 \\
+Test -- ảnh bơm & 34,3 & 0 & 0 & 3 & 116 \\
+\bottomrule
+\end{tabularx}
+\src{\f{tables/dup_spatial_vt_to_train_side.csv}, \f{tables/dup_spatial_street_pairs_lt40m.csv}.}
+\end{table}
+
+\begin{itemize}
+  \item \textbf{52 trên 1.160 ảnh val/test (4,5\%) nằm cách một ảnh train dưới 40 m}, ứng với 47 ảnh phía train và 13 cặp đường giao nhau (ví dụ Hồng Bàng -- Nguyễn Trãi, Lý Thường Kiệt -- Cách Mạng Tháng Tám, Hai Bà Trưng -- Điện Biên Phủ).
+  \item Quan sát bằng mắt trên 20 cặp gần nhau nhất (1--14 m): phần lớn nhìn về hai hướng khác nhau, nhưng vài cặp thấy cùng một góc phố (cùng cột điện, biển quảng cáo, hàng rào). Phép đo nội dung không bắt được các cặp này: cosine lớn nhất của chúng chỉ là 0,82.
+  \item \textbf{Ảnh bơm tuân thủ quy tắc 40 m}, trừ 1 ảnh cách ảnh test 34,3 m (quy tắc áp cho tâm của ô 25 m, không cho từng ảnh).
+  \item 53 trên 551 chuỗi ảnh Mapillary chứa ảnh của cả phía train lẫn val/test (cùng một lượt xe chạy qua nhiều đường). Đây không phải rò rỉ nội dung, nhưng nghĩa là cùng thiết bị và điều kiện chụp có mặt ở cả hai phía.
+\end{itemize}
+
+\textbf{Kế hoạch xử lý} (chưa thực hiện, cần nhóm quyết định trước khi khóa chia tập): loại khỏi train các ảnh cách ảnh val/test dưới 40 m, giống quy tắc đã áp cho ảnh bơm. Quy tắc này chỉ dùng tọa độ, không dùng nhãn val/test, và bỏ nhiều nhất 47 ảnh train. Phương án khác là giữ nguyên và báo cáo kết quả test kèm một lượt đánh giá bỏ 52 ảnh gần giao lộ.
+
+\subsubsection*{Ảnh bơm khác bộ chính tới đâu}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{dup_tsne.pdf}
+\caption{Hình chiếu t-SNE của embedding DINOv2 cho 5.149 ảnh, tô theo nhóm và theo nhãn (nhãn chỉ để tô màu)}
+\label{fig:tsne}
+\end{figure}
+
+Một bộ phân loại tuyến tính trên embedding DINOv2, không dùng nhãn, được giao phân biệt hai nhóm ảnh; AUC 0,5 nghĩa là không phân biệt được. Kiểm định chéo tách theo đường.
+
+\begin{table}[H]
+\centering
+\caption{Mức phân biệt được giữa các nhóm ảnh (AUC của bộ phân loại miền)}
+\label{tab:domain}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.5\linewidth} R L}
+\toprule
+\textbf{So sánh} & \textbf{AUC} & \textbf{Cách đọc} \\
+\midrule
+Train bộ chính -- ảnh bơm, tầng \lab{top\_score} & 0,95 & Khác rõ \\
+Train bộ chính -- ảnh bơm, tầng \lab{random} & 0,70 & Khác vừa \\
+Ảnh bơm -- val + test & 0,83 & Khác rõ \\
+Train bộ chính -- val + test & 0,47 & Không phân biệt được \\
+Đối chứng: chia đôi ngẫu nhiên các đường train & 0,51 & Mức nền \\
+\bottomrule
+\end{tabularx}
+\src{\f{tables/dup_domain_classifier_auc.csv}. Trung bình qua các fold; độ lệch chuẩn giữa các fold 0,02--0,08.}
+\end{table}
+
+\begin{itemize}
+  \item \textbf{Train của bộ chính và val/test cùng phân phối ảnh} (AUC gần 0,5): cách chia theo đường không tạo ra lệch miền nhìn thấy được. Với chỉ 17 đường, phép đo này không đủ nhạy để bắt lệch nhỏ.
+  \item \textbf{Ảnh bơm là một miền khác}, kể cả tầng ngẫu nhiên (0,70): chúng đến từ đường nhỏ gần chợ, còn val/test là đường lớn. Tầng \lab{top\_score} còn đồng nhất hơn các nhóm khác (cosine trung bình trong nhóm 0,60 so với 0,49--0,51). Đây là cái giá của việc bơm: thêm 577 ảnh dương nhưng từ một kiểu cảnh hẹp hơn val/test.
+  \item Trên hình~\ref{fig:tsne}, ảnh \lab{Bị chặn} và tầng \lab{top\_score} dồn về cùng một vùng, ảnh \lab{I} dồn về một vùng khác. t-SNE chỉ để minh họa, không dùng để kết luận.
+\end{itemize}

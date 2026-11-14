@@ -1,0 +1,41 @@
+﻿group,reason,n,n_I,share_of_I
+main_train,Không thấy vỉa hè,651,794,0.8198992443324937
+main_train,Bị che,89,794,0.11209068010075567
+main_train,Ảnh mờ / tối / cháy sáng,5,794,0.006297229219143577
+main_train,Lý do khác,4,794,0.005037783375314861
+main_train,(thiếu lý do),45,794,0.05667506297229219
+main_val,Không thấy vỉa hè,131,244,0.5368852459016393
+main_val,Bị che,34,244,0.13934426229508196
+main_val,Ảnh mờ / tối / cháy sáng,6,244,0.02459016393442623
+main_val,Lý do khác,0,244,0.0
+main_val,(thiếu lý do),73,244,0.29918032786885246
+main_test,Không thấy vỉa hè,98,215,0.4558139534883721
+main_test,Bị che,16,215,0.07441860465116279
+main_test,Ảnh mờ / tối / cháy sáng,1,215,0.004651162790697674
+main_test,Lý do khác,0,215,0.0
+main_test,(thiếu lý do),100,215,0.46511627906976744
+pilot,Không thấy vỉa hè,0,63,0.0
+pilot,Bị che,0,63,0.0
+pilot,Ảnh mờ / tối / cháy sáng,0,63,0.0
+pilot,Lý do khác,0,63,0.0
+pilot,(thiếu lý do),63,63,1.0
+extra_top_score,Không thấy vỉa hè,296,382,0.774869109947644
+extra_top_score,Bị che,56,382,0.14659685863874344
+extra_top_score,Ảnh mờ / tối / cháy sáng,18,382,0.04712041884816754
+extra_top_score,Lý do khác,8,382,0.020942408376963352
+extra_top_score,(thiếu lý do),4,382,0.010471204188481676
+extra_random,Không thấy vỉa hè,167,222,0.7522522522522522
+extra_random,Bị che,48,222,0.21621621621621623
+extra_random,Ảnh mờ / tối / cháy sáng,3,222,0.013513513513513514
+extra_random,Lý do khác,1,222,0.0045045045045045045
+extra_random,(thiếu lý do),3,222,0.013513513513513514
+main_all,Không thấy vỉa hè,880,1253,0.7023144453312051
+main_all,Bị che,139,1253,0.11093375897845172
+main_all,Ảnh mờ / tối / cháy sáng,12,1253,0.009577015163607342
+main_all,Lý do khác,4,1253,0.0031923383878691143
+main_all,(thiếu lý do),218,1253,0.1739824421388667
+extra_all,Không thấy vỉa hè,463,604,0.7665562913907285
+extra_all,Bị che,104,604,0.17218543046357615
+extra_all,Ảnh mờ / tối / cháy sáng,21,604,0.0347682119205298
+extra_all,Lý do khác,9,604,0.014900662251655629
+extra_all,(thiếu lý do),7,604,0.011589403973509934

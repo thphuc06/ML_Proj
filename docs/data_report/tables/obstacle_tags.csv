@@ -1,0 +1,62 @@
+﻿group,basis,tag,n_with_tag,denominator,share,n_items_without_any_tag
+main_train,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Xe máy đậu,65,106,0.6132075471698113,9
+main_train,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Hàng hóa / quầy hàng,32,106,0.3018867924528302,9
+main_train,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Bàn ghế quán,9,106,0.08490566037735849,9
+main_train,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Ô tô đậu,4,106,0.03773584905660377,9
+main_train,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Rào chắn / công trình,8,106,0.07547169811320754,9
+main_train,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Khác,8,106,0.07547169811320754,9
+main_train,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,(không có thẻ),9,106,0.08490566037735849,9
+main_val,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Xe máy đậu,26,35,0.7428571428571429,2
+main_val,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Hàng hóa / quầy hàng,10,35,0.2857142857142857,2
+main_val,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Bàn ghế quán,7,35,0.2,2
+main_val,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Ô tô đậu,3,35,0.08571428571428572,2
+main_val,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Rào chắn / công trình,2,35,0.05714285714285714,2
+main_val,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Khác,7,35,0.2,2
+main_val,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,(không có thẻ),2,35,0.05714285714285714,2
+main_test,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Xe máy đậu,32,47,0.6808510638297872,2
+main_test,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Hàng hóa / quầy hàng,19,47,0.40425531914893614,2
+main_test,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Bàn ghế quán,1,47,0.02127659574468085,2
+main_test,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Ô tô đậu,0,47,0.0,2
+main_test,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Rào chắn / công trình,1,47,0.02127659574468085,2
+main_test,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Khác,10,47,0.2127659574468085,2
+main_test,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,(không có thẻ),2,47,0.0425531914893617,2
+main_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Xe máy đậu,123,188,0.6542553191489362,13
+main_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Hàng hóa / quầy hàng,61,188,0.324468085106383,13
+main_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Bàn ghế quán,17,188,0.09042553191489362,13
+main_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Ô tô đậu,7,188,0.03723404255319149,13
+main_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Rào chắn / công trình,11,188,0.05851063829787234,13
+main_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Khác,25,188,0.13297872340425532,13
+main_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,(không có thẻ),13,188,0.06914893617021277,13
+extra_top_score,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Xe máy đậu,326,531,0.6139359698681732,5
+extra_top_score,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Hàng hóa / quầy hàng,204,531,0.384180790960452,5
+extra_top_score,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Bàn ghế quán,42,531,0.07909604519774012,5
+extra_top_score,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Ô tô đậu,11,531,0.02071563088512241,5
+extra_top_score,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Rào chắn / công trình,26,531,0.04896421845574388,5
+extra_top_score,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Khác,57,531,0.10734463276836158,5
+extra_top_score,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,(không có thẻ),5,531,0.009416195856873822,5
+extra_random,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Xe máy đậu,20,46,0.43478260869565216,1
+extra_random,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Hàng hóa / quầy hàng,11,46,0.2391304347826087,1
+extra_random,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Bàn ghế quán,5,46,0.10869565217391304,1
+extra_random,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Ô tô đậu,0,46,0.0,1
+extra_random,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Rào chắn / công trình,10,46,0.21739130434782608,1
+extra_random,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Khác,7,46,0.15217391304347827,1
+extra_random,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,(không có thẻ),1,46,0.021739130434782608,1
+extra_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Xe máy đậu,346,577,0.5996533795493935,6
+extra_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Hàng hóa / quầy hàng,215,577,0.37261698440207974,6
+extra_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Bàn ghế quán,47,577,0.08145580589254767,6
+extra_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Ô tô đậu,11,577,0.019064124783362217,6
+extra_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Rào chắn / công trình,36,577,0.06239168110918544,6
+extra_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,Khác,64,577,0.11091854419410745,6
+extra_all,item: nhãn cuối = 1; thẻ gộp (union) từ các lượt gán 1 của ảnh,(không có thẻ),6,577,0.010398613518197574,6
+main_all,lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Xe máy đậu,202,312,0.6474358974358975,19
+main_all,lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Hàng hóa / quầy hàng,83,312,0.266025641025641,19
+main_all,lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Bàn ghế quán,24,312,0.07692307692307693,19
+main_all,lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Ô tô đậu,15,312,0.04807692307692308,19
+main_all,lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Rào chắn / công trình,13,312,0.041666666666666664,19
+main_all,lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Khác,35,312,0.11217948717948718,19
+extra_all (nhãn v1),lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Xe máy đậu,351,588,0.5969387755102041,3
+extra_all (nhãn v1),lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Hàng hóa / quầy hàng,221,588,0.3758503401360544,3
+extra_all (nhãn v1),lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Bàn ghế quán,49,588,0.08333333333333333,3
+extra_all (nhãn v1),lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Ô tô đậu,11,588,0.01870748299319728,3
+extra_all (nhãn v1),lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Rào chắn / công trình,38,588,0.06462585034013606,3
+extra_all (nhãn v1),lượt gán: mọi lượt có label 1 (nhãn v1 với train_extra),Khác,66,588,0.11224489795918367,3

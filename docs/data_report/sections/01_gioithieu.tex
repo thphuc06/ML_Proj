@@ -1,0 +1,48 @@
+% ==============================================================================
+% 1. GIỚI THIỆU BÀI TOÁN
+% ==============================================================================
+\section{Giới thiệu bài toán}
+
+\subsection{Bài toán học máy}
+
+Vỉa hè có thể tồn tại nhưng không dùng được làm lối đi khi xe đậu, hàng hóa, bàn ghế hoặc rào chắn cắt đứt lối đi liên tục. Đồ án xây dựng một bộ phân loại ảnh để sàng lọc tình trạng này trên ảnh đường phố của TP.HCM.
+
+\begin{itemize}
+  \item \textbf{Đầu vào:} một ảnh $640\times640$ nhìn một phía vỉa hè, cắt từ ảnh $360^\circ$ chụp trên xe.
+  \item \textbf{Đầu ra:} phân loại nhị phân. \lab{0 -- Còn lối đi}: người đi bộ đi tiếp được dọc vỉa hè gần. \lab{1 -- Bị chặn}: người đi bộ phải bước xuống lòng đường.
+  \item \textbf{Ảnh không đủ bằng chứng} (không thấy vỉa hè gần, bị che, ảnh hỏng) được ghi nhãn riêng \lab{I -- Không đủ thông tin} và loại khỏi model. Nhãn này vẫn được thống kê vì nó quyết định bao nhiêu ảnh dùng được.
+  \item \textbf{Câu hỏi nghiên cứu:} model nào phân loại tốt nhất trên \emph{các tuyến đường không có trong tập train}. Vì vậy dữ liệu được chia theo cả tuyến đường, và mọi kiểm tra trong báo cáo này đều chú ý tới rò rỉ giữa các tập.
+\end{itemize}
+
+Câu hỏi mà người gán nhãn trả lời cho mỗi ảnh là: \emph{người đi bộ có phải bước xuống lòng đường để đi tiếp dọc vỉa hè gần không?}
+
+\subsection{Bộ dữ liệu trong một bảng}
+
+Bộ dữ liệu gồm ba phần, được thu thập theo ba cách lấy mẫu khác nhau. Báo cáo luôn tách ba phần này, vì chỉ phần thứ nhất theo phân phối tự nhiên của ảnh trên đường.
+
+\begin{table}[H]
+\centering
+\caption{Ba phần của bộ dữ liệu và nhãn cuối (đơn vị: ảnh)}
+\label{tab:overview}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.27\linewidth}L r r r r}
+\toprule
+\textbf{Phần} & \textbf{Cách lấy mẫu} & \textbf{Ảnh} & \textbf{0} & \textbf{1} & \textbf{I} \\
+\midrule
+Bộ chính (\lab{main}), train & Tự nhiên: mọi vị trí cách nhau 25 m trên 10 đường & 1.839 & 939 & 106 & 794 \\
+Bộ chính, val & Tự nhiên, 3 đường & 486 & 207 & 35 & 244 \\
+Bộ chính, test & Tự nhiên, 4 đường & 674 & 412 & 47 & 215 \\
+Pilot (\lab{pilot}), train & Theo tầng điểm của một model thử, 3 đường train & 150 & 73 & 14 & 63 \\
+Ảnh bơm (\lab{train\_extra}), train & 70\% theo điểm bộ chọn ảnh, 30\% ngẫu nhiên, 75 đường mới & 2.000 & 819 & 577 & 604 \\
+\midrule
+\textbf{Tổng} & & \textbf{5.149} & \textbf{2.450} & \textbf{779} & \textbf{1.920} \\
+\bottomrule
+\end{tabularx}
+\src{\f{data/labels/main_labels_v1.csv}, \f{data/labels/train_extra_labels_v2.csv}; đếm lại bằng \f{src/eda/28_eda_tabular.py}.}
+\end{table}
+
+Ba điểm cần nhớ khi đọc phần còn lại:
+\begin{itemize}
+  \item \textbf{Val và test chỉ gồm ảnh tự nhiên.} Ảnh pilot và ảnh bơm chỉ vào train. Nhãn val/test trong báo cáo này chỉ dùng để thống kê mô tả, không dùng để chọn hay chỉnh bất cứ thứ gì.
+  \item \textbf{Lớp \lab{Bị chặn} hiếm trong ảnh tự nhiên:} 188 trên 1.746 ảnh dùng được của bộ chính (10,8\%). Đây là lý do có đợt bơm ảnh cho train.
+  \item \textbf{Khoảng 40\% ảnh là \lab{Không đủ thông tin}}, do ảnh chụp từ xe thường không thấy rõ vỉa hè gần.
+\end{itemize}

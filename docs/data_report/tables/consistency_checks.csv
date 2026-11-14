@@ -1,0 +1,80 @@
+﻿check,result,violations,detail
+item unique within main_labels_v1 (main+pilot),PASS,0,
+item unique within train_extra_labels_v2,PASS,0,
+item unique across main / pilot / train_extra labels,PASS,0,"5149 ids, 5149 distinct"
+item unique within each manifest and across them,PASS,0,
+labels(main) <-> main_v1.csv: every label row joins exactly one manifest row and vice versa,PASS,0,"labels 2999, manifest 2999, labels-not-in-manifest 0, manifest-not-in-labels 0"
+labels(pilot) <-> pilot_v2.csv: every label row joins exactly one manifest row and vice versa,PASS,0,"labels 150, manifest 150, labels-not-in-manifest 0, manifest-not-in-labels 0"
+labels(extra) <-> train_extra_v1.csv: every label row joins exactly one manifest row and vice versa,PASS,0,"labels 2000, manifest 2000, labels-not-in-manifest 0, manifest-not-in-labels 0"
+split and street_id agree labels vs manifest (main),PASS,0,
+split/street_id agree labels vs configs/streets_v1.yaml (main),PASS,0,streets not in yaml or split differs: []
+split and street_id agree labels vs manifest (pilot),PASS,0,
+split/street_id agree labels vs configs/streets_v1.yaml (pilot),PASS,0,streets not in yaml or split differs: []
+split and street_id agree labels vs manifest (extra),PASS,0,
+split/street_id agree labels vs configs/streets_train_extra.yaml (extra),PASS,0,streets not in yaml or split differs: []
+"streets_v1.yaml has 17 streets (4 test, 3 val, 10 train)",PASS,0,
+"streets_train_extra.yaml has 75 streets, all train",PASS,0,
+no street_id in more than one split (all phases),PASS,0,[]
+no street shared between train_extra and main,PASS,0,[]
+no train_extra street shares a base name with a val/test street,PASS,0,[]
+no position_group shared between splits (main + train_extra),PASS,0,
+no position_group shared between main and train_extra (info),PASS,0,
+position_group duplicates within main / train_extra (info: several panos per 25 m position are allowed),PASS,1709,"main 1363, extra 346"
+"pilot crops vs main crops: none within 5 m (proxy for 'no shared position', pilot has no position_group)",FAIL,5,"min distance 2.86 m, within 25 m: 102 of 150"
+parent_pano_id unique within manifest main,PASS,0,
+parent_pano_id unique within manifest pilot,PASS,0,
+parent_pano_id unique within manifest extra,PASS,0,
+parent_pano_id shared between main and pilot,PASS,0,
+parent_pano_id shared between main and extra,PASS,0,
+parent_pano_id shared between pilot and extra,PASS,0,
+"collection_status: 3,057 panos, ok 2,999 / night 58; ok ids == main manifest parents",PASS,0,"{'ok': 2999, 'night': 58}"
+"candidate pool 5,074 (ok 5,035 / night 38 / near_duplicate 1); train_extra parents subset of pool ok",PASS,0,"{'ok': 5035, 'night': 38, 'near_duplicate': 1}"
+"label values in {0,1,I} (main_labels_v1)",PASS,0,
+"label values in {0,1,I} (train_extra_labels_v2)",PASS,0,
+"label values in {0,1,I} (train_extra label_v1)",PASS,0,
+"label values in {0,1,I} (main annotations)",PASS,0,
+"label values in {0,1,I} (train_extra annotations)",PASS,0,
+"label values in {0,1,I} (main_items label_final)",PASS,0,
+reason present iff label I (main_labels_v1) [structural: adjudicated / pilot-review labels carry no reason],FAIL,281,"I without reason 281, non-I with reason 0; I-without-reason by (phase, source) {('main', 'adjudicated_proposal'): 162, ('main', 'agreed'): 55, ('main', 'single'): 1, ('pilot', 'pilot_review_phuc'): 1, ('pilot', 'pilot_review_proposal'): 62} of I {('main', 'adjudicated_proposal'): 162, ('main', 'agreed'): 419, ('main', 'single'): 672, ('pilot', 'pilot_review_phuc'): 1, ('pilot', 'pilot_review_proposal'): 62}"
+reason present iff label I (train_extra_labels_v2) [structural: adjudicated / pilot-review labels carry no reason],FAIL,7,"I without reason 7, non-I with reason 0; I-without-reason by (phase, source) {('train_extra', 'cross_check'): 4, ('train_extra', 'single'): 3} of I {('train_extra', 'cross_check'): 4, ('train_extra', 'single'): 600}"
+obstacles present only when annotation label = 1 (main annotations) [stale tags after a label change],FAIL,285,annotations with label 0/I but obstacle tags: 285 of 4435; label 1 without tags: 19
+obstacles present only when annotation label = 1 (train_extra annotations) [stale tags after a label change],FAIL,119,annotations with label 0/I but obstacle tags: 119 of 2000; label 1 without tags: 3
+reason values in the 4 known categories,PASS,0,
+label source values known,PASS,0,"{'single': 3546, 'agreed': 1133, 'adjudicated_proposal': 275, 'pilot_review_proposal': 147, 'adjudicated_phuc': 28, 'cross_check': 17, 'pilot_review_phuc': 3}"
+train_extra v2 differs from v1 exactly where source = cross_check (17 labels),PASS,0,changed 17; cross_check rows 17
+main_items.label_final == main_labels_v1.label (main phase),PASS,0,
+train_extra per-annotation label == label_v1 of v2 file,PASS,0,
+side == R and yaw_off_from_travel == 60 (main),PASS,0,
+"yaw in [-180,180], travel_bearing in [0,360) (main)",FAIL,1,
+side == R and yaw_off_from_travel == 60 (pilot),PASS,0,
+"yaw in [-180,180], travel_bearing in [0,360) (pilot)",PASS,0,
+side == R and yaw_off_from_travel == 60 (extra),PASS,0,
+"yaw in [-180,180], travel_bearing in [0,360) (extra)",PASS,0,
+"lat/lon inside study bbox 10.745-10.815 N, 106.650-106.725 E (main)",PASS,0,
+"lat/lon inside study bbox 10.745-10.815 N, 106.650-106.725 E (pilot)",PASS,0,
+"lat/lon inside study bbox 10.745-10.815 N, 106.650-106.725 E (extra)",FAIL,2,
+brightness >= 90 for all kept crops (main),PASS,0,"min 91, max 249"
+licence constant (main),PASS,0,"<ArrowStringArray>
+['CC BY-SA 4.0']
+Length: 1, dtype: str"
+file == '<folder>/<item>.jpg' (main),PASS,0,main
+brightness >= 90 for all kept crops (pilot),PASS,0,"min 94, max 236"
+licence constant (pilot),PASS,0,"<ArrowStringArray>
+['CC BY-SA 4.0']
+Length: 1, dtype: str"
+file == '<folder>/<item>.jpg' (pilot),PASS,0,pilot_v2
+brightness >= 90 for all kept crops (extra),PASS,0,"min 91, max 239"
+licence constant (extra),PASS,0,"<ArrowStringArray>
+['CC BY-SA 4.0']
+Length: 1, dtype: str"
+file == '<folder>/<item>.jpg' (extra),PASS,0,train_extra_v1
+licence identical across the three manifests,PASS,0,"<ArrowStringArray>
+['CC BY-SA 4.0']
+Length: 1, dtype: str"
+brightness manifest == collection_status (main),PASS,0,
+brightness manifest == candidate pool (train_extra),PASS,0,
+"night panos (status 'night') have brightness < 90, kept (ok) panos >= 90",FAIL,1,"night max 90 (1 of 96 night panos have brightness exactly 90, i.e. filter is effectively <= 90); ok min 91"
+highway: street_candidates == train_extra annotations == yaml (75 extra streets),PASS,0,
+"bearing wrap: travel_bearing == 360.0 rows (count, harmless 360 = 0)",PASS,1,item ['809b6a2f']
+"captured_at not a placeholder date (year 2016 / 2016-01-01 stamps) [odd, report only]",FAIL,103,"103 crops stamped 2016, distinct dates 1, creators {'bemaps3_sg': 103}"
+"outliers (1.5 IQR) in brightness / dist_to_street_m: counts only, nothing changed",PASS,783,see outliers_iqr.csv; per-group counts include pooled rows main_all/extra_all (double counting)

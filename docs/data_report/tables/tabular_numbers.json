@@ -1,0 +1,2549 @@
+{
+ "n_rows": {
+  "main_train": 1839,
+  "main_val": 486,
+  "main_test": 674,
+  "pilot": 150,
+  "extra_top_score": 1400,
+  "extra_random": 600,
+  "main_all": 2999,
+  "extra_all": 2000
+ },
+ "inventory": {
+  "tables": {
+   "main_labels_v1": {
+    "rows": 3149,
+    "columns": 8
+   },
+   "train_extra_labels_v2": {
+    "rows": 2000,
+    "columns": 11
+   },
+   "main_v1 (manifest)": {
+    "rows": 2999,
+    "columns": 21
+   },
+   "pilot_v2 (manifest)": {
+    "rows": 150,
+    "columns": 21
+   },
+   "train_extra_v1 (manifest)": {
+    "rows": 2000,
+    "columns": 25
+   },
+   "main_v1_collection_status": {
+    "rows": 3057,
+    "columns": 5
+   },
+   "train_extra_v1_scores (candidate pool)": {
+    "rows": 5074,
+    "columns": 11
+   },
+   "main_report/main_labels (annotations)": {
+    "rows": 4435,
+    "columns": 13
+   },
+   "main_report/main_items": {
+    "rows": 2999,
+    "columns": 17
+   },
+   "train_extra_report/train_extra_labels (annotations)": {
+    "rows": 2000,
+    "columns": 13
+   },
+   "street_candidates_v1": {
+    "rows": 907,
+    "columns": 19
+   },
+   "street_scan_v1": {
+    "rows": 150,
+    "columns": 16
+   }
+  },
+  "columns_with_missing": [
+   {
+    "table": "main_labels_v1",
+    "column": "reason",
+    "n_missing": 2114
+   },
+   {
+    "table": "train_extra_labels_v2",
+    "column": "reason",
+    "n_missing": 1403
+   },
+   {
+    "table": "train_extra_v1_scores (candidate pool)",
+    "column": "score",
+    "n_missing": 39
+   },
+   {
+    "table": "train_extra_v1_scores (candidate pool)",
+    "column": "rank",
+    "n_missing": 39
+   },
+   {
+    "table": "train_extra_v1_scores (candidate pool)",
+    "column": "stratum",
+    "n_missing": 3074
+   },
+   {
+    "table": "main_report/main_labels (annotations)",
+    "column": "reason",
+    "n_missing": 2686
+   },
+   {
+    "table": "main_report/main_labels (annotations)",
+    "column": "obstacles",
+    "n_missing": 3857
+   },
+   {
+    "table": "main_report/main_labels (annotations)",
+    "column": "note",
+    "n_missing": 4434
+   },
+   {
+    "table": "main_report/main_items",
+    "column": "annotator2",
+    "n_missing": 1563
+   },
+   {
+    "table": "main_report/main_items",
+    "column": "label2",
+    "n_missing": 1563
+   },
+   {
+    "table": "main_report/main_items",
+    "column": "reason1",
+    "n_missing": 1813
+   },
+   {
+    "table": "main_report/main_items",
+    "column": "reason2",
+    "n_missing": 2436
+   },
+   {
+    "table": "main_report/main_items",
+    "column": "obstacles1",
+    "n_missing": 2682
+   },
+   {
+    "table": "main_report/main_items",
+    "column": "obstacles2",
+    "n_missing": 2738
+   },
+   {
+    "table": "main_report/main_items",
+    "column": "role2",
+    "n_missing": 1563
+   },
+   {
+    "table": "train_extra_report/train_extra_labels (annotations)",
+    "column": "reason",
+    "n_missing": 1401
+   },
+   {
+    "table": "train_extra_report/train_extra_labels (annotations)",
+    "column": "obstacles",
+    "n_missing": 1296
+   },
+   {
+    "table": "street_candidates_v1",
+    "column": "markets",
+    "n_missing": 676
+   },
+   {
+    "table": "street_candidates_v1",
+    "column": "schools",
+    "n_missing": 325
+   },
+   {
+    "table": "street_scan_v1",
+    "column": "markets",
+    "n_missing": 92
+   }
+  ]
+ },
+ "structural_missing": {
+  "main_labels_v1: label I rows with reason missing": 281,
+  "main_labels_v1: label 0/1 rows with reason present": 0,
+  "train_extra_labels_v2: label I rows with reason missing": 7,
+  "train_extra_labels_v2: label 0/1 rows with reason present": 0,
+  "main annotations: label 1 with obstacles missing": 19,
+  "main annotations: label 0/I with obstacles present": 285,
+  "train_extra annotations: label 1 with obstacles missing": 3,
+  "train_extra annotations: label 0/I with obstacles present": 119,
+  "main_labels_v1: I without reason by (phase, source) / all I": {
+   "main|adjudicated_proposal": "162/162",
+   "main|agreed": "55/419",
+   "main|single": "1/672",
+   "pilot|pilot_review_phuc": "1/1",
+   "pilot|pilot_review_proposal": "62/62"
+  },
+  "train_extra_labels_v2: I without reason by (phase, source) / all I": {
+   "train_extra|cross_check": "4/4",
+   "train_extra|single": "3/600"
+  }
+ },
+ "seconds": {
+  "note": "per annotation, heavy-tailed (a task left open inflates the mean); use median/IQR. Pilot annotations are not in the specified tables: chưa đo",
+  "by_group": {
+   "main_train": {
+    "n": 2115,
+    "p05": 1.0311,
+    "p50": 3.925,
+    "p90": 20.245600000000007,
+    "p99": 187.91242000000017,
+    "max": 77451.111,
+    "n_over_60s": 71,
+    "n_over_600s": 6,
+    "n_over_3600s": 2,
+    "mean_over_median": 13.606494225354236
+   },
+   "main_val": {
+    "n": 972,
+    "p05": 0.94005,
+    "p50": 2.9640000000000004,
+    "p90": 19.5346,
+    "p99": 131.92961999999986,
+    "max": 3131.46,
+    "n_over_60s": 34,
+    "n_over_600s": 2,
+    "n_over_3600s": 0,
+    "mean_over_median": 4.644416468125045
+   },
+   "main_test": {
+    "n": 1348,
+    "p05": 0.85345,
+    "p50": 4.0335,
+    "p90": 22.507599999999982,
+    "p99": 330.90713999999974,
+    "max": 62743.212,
+    "n_over_60s": 76,
+    "n_over_600s": 8,
+    "n_over_3600s": 3,
+    "mean_over_median": 18.739873294099603
+   },
+   "main_all": {
+    "n": 4435,
+    "p05": 0.9497,
+    "p50": 3.701,
+    "p90": 20.899999999999995,
+    "p99": 216.0986199999993,
+    "max": 77451.111,
+    "n_over_60s": 181,
+    "n_over_600s": 16,
+    "n_over_3600s": 5,
+    "mean_over_median": 13.904335797601245
+   },
+   "extra_top_score": {
+    "n": 1400,
+    "p05": 1.5086499999999998,
+    "p50": 5.014,
+    "p90": 16.856700000000018,
+    "p99": 112.18773999999982,
+    "max": 6678.403,
+    "n_over_60s": 33,
+    "n_over_600s": 1,
+    "n_over_3600s": 1,
+    "mean_over_median": 3.099860390905465
+   },
+   "extra_random": {
+    "n": 600,
+    "p05": 1.1676,
+    "p50": 3.169,
+    "p90": 12.045500000000002,
+    "p99": 67.40382999999892,
+    "max": 1664.381,
+    "n_over_60s": 7,
+    "n_over_600s": 1,
+    "n_over_3600s": 0,
+    "mean_over_median": 3.172496581466288
+   },
+   "extra_all": {
+    "n": 2000,
+    "p05": 1.3238,
+    "p50": 4.51,
+    "p90": 14.547900000000002,
+    "p99": 112.18773999999982,
+    "max": 6678.403,
+    "n_over_60s": 40,
+    "n_over_600s": 2,
+    "n_over_3600s": 1,
+    "mean_over_median": 3.08114911308204
+   }
+  }
+ },
+ "desc_numeric": {
+  "brightness|main_train": {
+   "n": 1839,
+   "mean": 166.75584556824361,
+   "median": 171.0,
+   "variance": 448.5774617302183,
+   "std": 21.17964734669155,
+   "min": 94.0,
+   "q1": 155.0,
+   "q3": 182.0,
+   "max": 231.0,
+   "iqr": 27.0
+  },
+  "brightness|main_val": {
+   "n": 486,
+   "mean": 154.4485596707819,
+   "median": 158.5,
+   "variance": 468.9076577149887,
+   "std": 21.65427573748401,
+   "min": 91.0,
+   "q1": 138.0,
+   "q3": 170.0,
+   "max": 201.0,
+   "iqr": 32.0
+  },
+  "brightness|main_test": {
+   "n": 674,
+   "mean": 169.36943620178042,
+   "median": 171.0,
+   "variance": 564.230327467692,
+   "std": 23.7535329470732,
+   "min": 91.0,
+   "q1": 156.25,
+   "q3": 183.0,
+   "max": 249.0,
+   "iqr": 26.75
+  },
+  "brightness|pilot": {
+   "n": 150,
+   "mean": 169.22666666666666,
+   "median": 173.5,
+   "variance": 573.4919015659956,
+   "std": 23.94769094434776,
+   "min": 94.0,
+   "q1": 158.0,
+   "q3": 185.0,
+   "max": 236.0,
+   "iqr": 27.0
+  },
+  "brightness|extra_top_score": {
+   "n": 1400,
+   "mean": 172.0392857142857,
+   "median": 176.0,
+   "variance": 366.8068901255999,
+   "std": 19.152203270788455,
+   "min": 91.0,
+   "q1": 165.0,
+   "q3": 184.0,
+   "max": 239.0,
+   "iqr": 19.0
+  },
+  "brightness|extra_random": {
+   "n": 600,
+   "mean": 172.68333333333334,
+   "median": 176.0,
+   "variance": 377.91291040623264,
+   "std": 19.439982263526698,
+   "min": 94.0,
+   "q1": 162.75,
+   "q3": 185.0,
+   "max": 238.0,
+   "iqr": 22.25
+  },
+  "brightness|main_all": {
+   "n": 2999,
+   "mean": 165.34878292764256,
+   "median": 169.0,
+   "variance": 501.63881689716004,
+   "std": 22.397294856682137,
+   "min": 91.0,
+   "q1": 153.0,
+   "q3": 181.0,
+   "max": 249.0,
+   "iqr": 28.0
+  },
+  "brightness|extra_all": {
+   "n": 2000,
+   "mean": 172.2325,
+   "median": 176.0,
+   "variance": 370.03846298149074,
+   "std": 19.23638383328558,
+   "min": 91.0,
+   "q1": 164.0,
+   "q3": 184.0,
+   "max": 239.0,
+   "iqr": 20.0
+  },
+  "dist_to_street_m|main_train": {
+   "n": 1839,
+   "mean": 3.696954866775422,
+   "median": 3.0,
+   "variance": 9.665007044207803,
+   "std": 3.108859444266949,
+   "min": 0.0,
+   "q1": 1.5,
+   "q3": 4.9,
+   "max": 20.0,
+   "iqr": 3.4000000000000004
+  },
+  "dist_to_street_m|main_val": {
+   "n": 486,
+   "mean": 3.4574074074074077,
+   "median": 3.1,
+   "variance": 8.5343676975945,
+   "std": 2.921364013195634,
+   "min": 0.0,
+   "q1": 1.4,
+   "q3": 4.475,
+   "max": 18.4,
+   "iqr": 3.0749999999999997
+  },
+  "dist_to_street_m|main_test": {
+   "n": 674,
+   "mean": 3.535608308605341,
+   "median": 2.9,
+   "variance": 9.47569896076296,
+   "std": 3.078262328126529,
+   "min": 0.0,
+   "q1": 1.3,
+   "q3": 5.0,
+   "max": 19.6,
+   "iqr": 3.7
+  },
+  "dist_to_street_m|pilot": {
+   "n": 150,
+   "mean": 3.4526666666666674,
+   "median": 2.7,
+   "variance": 7.978214317673379,
+   "std": 2.8245732983361185,
+   "min": 0.0,
+   "q1": 1.4249999999999998,
+   "q3": 5.0,
+   "max": 17.0,
+   "iqr": 3.575
+  },
+  "dist_to_street_m|extra_top_score": {
+   "n": 1400,
+   "mean": 2.870357142857143,
+   "median": 2.2,
+   "variance": 6.812894797304197,
+   "std": 2.6101522555790106,
+   "min": 0.0,
+   "q1": 1.1,
+   "q3": 3.8,
+   "max": 19.9,
+   "iqr": 2.6999999999999997
+  },
+  "dist_to_street_m|extra_random": {
+   "n": 600,
+   "mean": 2.959,
+   "median": 2.3,
+   "variance": 7.238783639398998,
+   "std": 2.690498771491821,
+   "min": 0.0,
+   "q1": 1.1,
+   "q3": 4.0,
+   "max": 19.8,
+   "iqr": 2.9
+  },
+  "dist_to_street_m|main_all": {
+   "n": 2999,
+   "mean": 3.6218739579859953,
+   "median": 3.0,
+   "variance": 9.442670136209511,
+   "std": 3.0728927960814887,
+   "min": 0.0,
+   "q1": 1.5,
+   "q3": 4.9,
+   "max": 20.0,
+   "iqr": 3.4000000000000004
+  },
+  "dist_to_street_m|extra_all": {
+   "n": 2000,
+   "mean": 2.89695,
+   "median": 2.2,
+   "variance": 6.938755075037518,
+   "std": 2.6341516803398997,
+   "min": 0.0,
+   "q1": 1.1,
+   "q3": 3.9,
+   "max": 19.9,
+   "iqr": 2.8
+  },
+  "lat|main_train": {
+   "n": 1839,
+   "mean": 10.774772135056901,
+   "median": 10.774958911977,
+   "variance": 0.00029227163391897946,
+   "std": 0.017095953729434912,
+   "min": 10.750093137925,
+   "q1": 10.757318051557,
+   "q3": 10.787577863767499,
+   "max": 10.813292781499,
+   "iqr": 0.030259812210498893
+  },
+  "lat|main_val": {
+   "n": 486,
+   "mean": 10.770748617022942,
+   "median": 10.772770032082502,
+   "variance": 0.00014875536304789248,
+   "std": 0.0121965307791967,
+   "min": 10.75322933718,
+   "q1": 10.75541422333325,
+   "q3": 10.7799228310845,
+   "max": 10.792281241103,
+   "iqr": 0.0245086077512493
+  },
+  "lat|main_test": {
+   "n": 674,
+   "mean": 10.77920589237397,
+   "median": 10.7795142577545,
+   "variance": 0.0002734071774432374,
+   "std": 0.016535028800798546,
+   "min": 10.752705364715,
+   "q1": 10.764140429955,
+   "q3": 10.789136815808499,
+   "max": 10.814896515762,
+   "iqr": 0.024996385853498282
+  },
+  "lat|pilot": {
+   "n": 150,
+   "mean": 10.791000052634207,
+   "median": 10.791843493964,
+   "variance": 0.00011915927201342164,
+   "std": 0.010916009894344254,
+   "min": 10.768823612951,
+   "q1": 10.7835116888245,
+   "q3": 10.8024250030045,
+   "max": 10.804064481781,
+   "iqr": 0.018913314179998864
+  },
+  "lat|extra_top_score": {
+   "n": 1400,
+   "mean": 10.782027183372909,
+   "median": 10.7870442182825,
+   "variance": 0.00044715012523519217,
+   "std": 0.021145924553804502,
+   "min": 10.745021338819,
+   "q1": 10.762821578035,
+   "q3": 10.80062911414225,
+   "max": 10.815024824106,
+   "iqr": 0.03780753610725007
+  },
+  "lat|extra_random": {
+   "n": 600,
+   "mean": 10.77911399747565,
+   "median": 10.783170037832999,
+   "variance": 0.0003868622856855851,
+   "std": 0.01966881505545225,
+   "min": 10.745044050981,
+   "q1": 10.760597583048,
+   "q3": 10.79528774372375,
+   "max": 10.814954726271,
+   "iqr": 0.03469016067574948
+  },
+  "lat|main_all": {
+   "n": 2999,
+   "mean": 10.77511655742009,
+   "median": 10.775747848002,
+   "variance": 0.00027154977296739435,
+   "std": 0.016478767337619472,
+   "min": 10.750093137925,
+   "q1": 10.759386741614,
+   "q3": 10.7868320181,
+   "max": 10.814896515762,
+   "iqr": 0.02744527648600048
+  },
+  "lat|extra_all": {
+   "n": 2000,
+   "mean": 10.781153227603731,
+   "median": 10.785971656846499,
+   "variance": 0.00043064428624309123,
+   "std": 0.02075197065926731,
+   "min": 10.745021338819,
+   "q1": 10.76218272416325,
+   "q3": 10.798123174186,
+   "max": 10.815024824106,
+   "iqr": 0.035940450022749815
+  },
+  "lon|main_train": {
+   "n": 1839,
+   "mean": 106.68005438196948,
+   "median": 106.68115876402,
+   "variance": 0.00019042939265516163,
+   "std": 0.013799615670559874,
+   "min": 106.65080292047,
+   "q1": 106.668783062975,
+   "q3": 106.691414363405,
+   "max": 106.7057372425,
+   "iqr": 0.022631300430006718
+  },
+  "lon|main_val": {
+   "n": 486,
+   "mean": 106.68050109602608,
+   "median": 106.68573677845,
+   "variance": 0.00024506500027919164,
+   "std": 0.015654552062553295,
+   "min": 106.65000869709,
+   "q1": 106.66286959446501,
+   "q3": 106.69230772637249,
+   "max": 106.70316355152,
+   "iqr": 0.02943813190748301
+  },
+  "lon|main_test": {
+   "n": 674,
+   "mean": 106.67597848151937,
+   "median": 106.67520911371,
+   "variance": 0.00033095272633093786,
+   "std": 0.018192106154344467,
+   "min": 106.65228285713,
+   "q1": 106.65792625003999,
+   "q3": 106.6950387775675,
+   "max": 106.70588185894,
+   "iqr": 0.03711252752751193
+  },
+  "lon|pilot": {
+   "n": 150,
+   "mean": 106.68572316136347,
+   "median": 106.68828261761999,
+   "variance": 0.0001442807342531642,
+   "std": 0.01201169156501965,
+   "min": 106.66078934328,
+   "q1": 106.6769698752625,
+   "q3": 106.695284755835,
+   "max": 106.70338789055,
+   "iqr": 0.018314880572503967
+  },
+  "lon|extra_top_score": {
+   "n": 1400,
+   "mean": 106.68215415845715,
+   "median": 106.68270075729001,
+   "variance": 0.0003238615826606524,
+   "std": 0.017996154663167695,
+   "min": 106.64998777652,
+   "q1": 106.666058681615,
+   "q3": 106.6962733905175,
+   "max": 106.72335240863,
+   "iqr": 0.03021470890250555
+  },
+  "lon|extra_random": {
+   "n": 600,
+   "mean": 106.67937094404657,
+   "median": 106.67750508654,
+   "variance": 0.00027538716008444465,
+   "std": 0.016594793161845815,
+   "min": 106.65021827162,
+   "q1": 106.66524603499249,
+   "q3": 106.6903905202725,
+   "max": 106.72283685353,
+   "iqr": 0.02514448528000912
+  },
+  "lon|main_all": {
+   "n": 2999,
+   "mean": 106.679210749468,
+   "median": 106.68133633167,
+   "variance": 0.0002337413672496543,
+   "std": 0.015288602527688863,
+   "min": 106.65000869709,
+   "q1": 106.663929544655,
+   "q3": 106.69241173745,
+   "max": 106.70588185894,
+   "iqr": 0.02848219279499631
+  },
+  "lon|extra_all": {
+   "n": 2000,
+   "mean": 106.68131919413398,
+   "median": 106.68131499718001,
+   "variance": 0.0003108017517078637,
+   "std": 0.017629570377858436,
+   "min": 106.64998777652,
+   "q1": 106.6657115810475,
+   "q3": 106.69482415691,
+   "max": 106.72335240863,
+   "iqr": 0.029112575862498602
+  },
+  "travel_bearing|main_train": {
+   "n": 1839,
+   "mean": 153.48629690048938,
+   "median": 118.1,
+   "variance": 11344.076895909626,
+   "std": 106.50857663075601,
+   "min": 0.0,
+   "q1": 46.7,
+   "q3": 255.0,
+   "max": 359.8,
+   "iqr": 208.3
+  },
+  "travel_bearing|main_val": {
+   "n": 486,
+   "mean": 191.36172839506173,
+   "median": 222.9,
+   "variance": 4767.755604429172,
+   "std": 69.04893630193858,
+   "min": 25.4,
+   "q1": 204.75,
+   "q3": 225.475,
+   "max": 279.3,
+   "iqr": 20.724999999999994
+  },
+  "travel_bearing|main_test": {
+   "n": 674,
+   "mean": 183.91824925816022,
+   "median": 164.7,
+   "variance": 11543.27281654402,
+   "std": 107.4396240525069,
+   "min": 0.4,
+   "q1": 128.425,
+   "q3": 309.275,
+   "max": 360.0,
+   "iqr": 180.84999999999997
+  },
+  "travel_bearing|pilot": {
+   "n": 150,
+   "mean": 225.42066666666665,
+   "median": 277.85,
+   "variance": 10437.466751230426,
+   "std": 102.16392098598422,
+   "min": 44.3,
+   "q1": 122.375,
+   "q3": 312.5,
+   "max": 343.3,
+   "iqr": 190.125
+  },
+  "travel_bearing|extra_top_score": {
+   "n": 1400,
+   "mean": 181.33142857142857,
+   "median": 169.65,
+   "variance": 9959.917853568875,
+   "std": 99.79938804205602,
+   "min": 0.3,
+   "q1": 90.05,
+   "q3": 268.525,
+   "max": 359.6,
+   "iqr": 178.47499999999997
+  },
+  "travel_bearing|extra_random": {
+   "n": 600,
+   "mean": 170.3011666666667,
+   "median": 159.55,
+   "variance": 10194.03213553144,
+   "std": 100.96549972902348,
+   "min": 0.1,
+   "q1": 80.475,
+   "q3": 259.625,
+   "max": 357.9,
+   "iqr": 179.15
+  },
+  "travel_bearing|main_all": {
+   "n": 2999,
+   "mean": 166.46348782927643,
+   "median": 164.7,
+   "variance": 10589.635674422048,
+   "std": 102.90595548568629,
+   "min": 0.0,
+   "q1": 58.45,
+   "q3": 251.75,
+   "max": 360.0,
+   "iqr": 193.3
+  },
+  "travel_bearing|extra_all": {
+   "n": 2000,
+   "mean": 178.02235000000002,
+   "median": 167.5,
+   "variance": 10050.650490722863,
+   "std": 100.2529325791663,
+   "min": 0.1,
+   "q1": 86.2,
+   "q3": 266.525,
+   "max": 359.6,
+   "iqr": 180.325
+  },
+  "score|extra_top_score": {
+   "n": 1400,
+   "mean": 0.798543,
+   "median": 0.798,
+   "variance": 0.012054338306933523,
+   "std": 0.1097922506688588,
+   "min": 0.6096,
+   "q1": 0.70325,
+   "q3": 0.8940250000000001,
+   "max": 0.9958,
+   "iqr": 0.19077500000000003
+  },
+  "score|extra_random": {
+   "n": 600,
+   "mean": 0.23149766666666666,
+   "median": 0.1881,
+   "variance": 0.03161375986099054,
+   "std": 0.17780258676687058,
+   "min": 0.0014,
+   "q1": 0.0728,
+   "q3": 0.35885,
+   "max": 0.6072,
+   "iqr": 0.28605
+  },
+  "score|extra_all": {
+   "n": 2000,
+   "mean": 0.6284294,
+   "median": 0.71815,
+   "variance": 0.08546655011069534,
+   "std": 0.2923466266449732,
+   "min": 0.0014,
+   "q1": 0.456725,
+   "q3": 0.85665,
+   "max": 0.9958,
+   "iqr": 0.39992500000000003
+  },
+  "seconds_per_annotation|main_train": {
+   "n": 2115,
+   "mean": 53.40548983451537,
+   "median": 3.925,
+   "variance": 2866141.177474442,
+   "std": 1692.9681560721815,
+   "min": 0.532,
+   "q1": 1.9985,
+   "q3": 9.532,
+   "max": 77451.111,
+   "iqr": 7.5335
+  },
+  "seconds_per_annotation|main_val": {
+   "n": 972,
+   "mean": 13.766050411522635,
+   "median": 2.9640000000000004,
+   "variance": 11464.594072476348,
+   "std": 107.07284470152247,
+   "min": 0.584,
+   "q1": 1.6755,
+   "q3": 6.05175,
+   "max": 3131.46,
+   "iqr": 4.376250000000001
+  },
+  "seconds_per_annotation|main_test": {
+   "n": 1348,
+   "mean": 75.58727893175075,
+   "median": 4.0335,
+   "variance": 3016070.159178118,
+   "std": 1736.6836669866273,
+   "min": 0.497,
+   "q1": 2.0365,
+   "q3": 8.1025,
+   "max": 62743.212,
+   "iqr": 6.065999999999999
+  },
+  "seconds_per_annotation|main_all": {
+   "n": 4435,
+   "mean": 51.45994678692221,
+   "median": 3.701,
+   "variance": 2285740.8289013,
+   "std": 1511.8666703454046,
+   "min": 0.497,
+   "q1": 1.9129999999999998,
+   "q3": 8.809,
+   "max": 77451.111,
+   "iqr": 6.895999999999999
+  },
+  "seconds_per_annotation|extra_top_score": {
+   "n": 1400,
+   "mean": 15.542700000000002,
+   "median": 5.014,
+   "variance": 32792.55011287348,
+   "std": 181.08713403462292,
+   "min": 1.033,
+   "q1": 2.831,
+   "q3": 8.17775,
+   "max": 6678.403,
+   "iqr": 5.34675
+  },
+  "seconds_per_annotation|extra_random": {
+   "n": 600,
+   "mean": 10.053641666666667,
+   "median": 3.169,
+   "variance": 5068.435136467377,
+   "std": 71.1929430243432,
+   "min": 0.88,
+   "q1": 1.748,
+   "q3": 6.097250000000001,
+   "max": 1664.381,
+   "iqr": 4.3492500000000005
+  },
+  "seconds_per_annotation|extra_all": {
+   "n": 2000,
+   "mean": 13.8959825,
+   "median": 4.51,
+   "variance": 24474.949852144273,
+   "std": 156.44471819829607,
+   "min": 0.88,
+   "q1": 2.3897500000000003,
+   "q3": 7.663749999999999,
+   "max": 6678.403,
+   "iqr": 5.273999999999999
+  }
+ },
+ "crops_per_street": {
+  "main": {
+   "n": 17,
+   "mean": 176.41176470588235,
+   "median": 150.0,
+   "variance": 7745.007352941176,
+   "std": 88.00572341013496,
+   "min": 86.0,
+   "q1": 98.0,
+   "q3": 253.0,
+   "max": 348.0,
+   "iqr": 155.0,
+   "n_streets": 17
+  },
+  "pilot": {
+   "n": 3,
+   "mean": 50.0,
+   "median": 50.0,
+   "variance": 0.0,
+   "std": 0.0,
+   "min": 50.0,
+   "q1": 50.0,
+   "q3": 50.0,
+   "max": 50.0,
+   "iqr": 0.0,
+   "n_streets": 3
+  },
+  "train_extra": {
+   "n": 75,
+   "mean": 26.666666666666668,
+   "median": 21.0,
+   "variance": 478.9009009009011,
+   "std": 21.883804534424563,
+   "min": 6.0,
+   "q1": 15.0,
+   "q3": 34.0,
+   "max": 157.0,
+   "iqr": 19.0,
+   "n_streets": 75
+  }
+ },
+ "stamped_hour_share_06_18": {
+  "main": 0.6975658552850951,
+  "pilot": 0.9333333333333333,
+  "train_extra": 0.7115
+ },
+ "captured_year_share": {
+  "main_train": {
+   "2016": 0.0196,
+   "2023": 0.7928,
+   "2024": 0.1876
+  },
+  "main_val": {
+   "2023": 0.7449,
+   "2024": 0.2551
+  },
+  "main_test": {
+   "2023": 0.7166,
+   "2024": 0.2834
+  },
+  "pilot": {
+   "2016": 0.1933,
+   "2023": 0.7267,
+   "2024": 0.08
+  },
+  "extra_top_score": {
+   "2016": 0.0179,
+   "2023": 0.7207,
+   "2024": 0.2614
+  },
+  "extra_random": {
+   "2016": 0.0217,
+   "2023": 0.6917,
+   "2024": 0.2867
+  }
+ },
+ "labels_by_group": {
+  "main_train": {
+   "n": 1839,
+   "n0": 939,
+   "n1": 106,
+   "nI": 794,
+   "share0": 0.5106035889070146,
+   "share1": 0.057640021750951606,
+   "shareI": 0.4317563893420337,
+   "usable": 1045,
+   "blocked_share_usable": 0.10143540669856459,
+   "bu_lo": 0.08456594476160652,
+   "bu_hi": 0.12122441278526606,
+   "blocked_share_all": 0.057640021750951606,
+   "ba_lo": 0.047881447400824236,
+   "ba_hi": 0.06924282163902004,
+   "I_share": 0.4317563893420337,
+   "I_lo": 0.4092835009053033,
+   "I_hi": 0.4545137895243223,
+   "imbalance_0_to_1": 8.858490566037736,
+   "bu_cluster_lo": 0.07913016218262879,
+   "bu_cluster_hi": 0.14085554217498297,
+   "n_streets": 10
+  },
+  "main_val": {
+   "n": 486,
+   "n0": 207,
+   "n1": 35,
+   "nI": 244,
+   "share0": 0.42592592592592593,
+   "share1": 0.0720164609053498,
+   "shareI": 0.5020576131687243,
+   "usable": 242,
+   "blocked_share_usable": 0.1446280991735537,
+   "bu_lo": 0.10586502580332693,
+   "bu_hi": 0.19449708225978382,
+   "blocked_share_all": 0.0720164609053498,
+   "ba_lo": 0.05223489463400783,
+   "ba_hi": 0.09851073436699453,
+   "I_share": 0.5020576131687243,
+   "I_lo": 0.4577636113392688,
+   "I_hi": 0.5463193423674572,
+   "imbalance_0_to_1": 5.914285714285715,
+   "bu_cluster_lo": 0.08163265306122448,
+   "bu_cluster_hi": 0.19230769230769232,
+   "n_streets": 3
+  },
+  "main_test": {
+   "n": 674,
+   "n0": 412,
+   "n1": 47,
+   "nI": 215,
+   "share0": 0.6112759643916914,
+   "share1": 0.06973293768545995,
+   "shareI": 0.3189910979228487,
+   "usable": 459,
+   "blocked_share_usable": 0.10239651416122005,
+   "bu_lo": 0.07788050723815218,
+   "bu_hi": 0.13351252369298175,
+   "blocked_share_all": 0.06973293768545995,
+   "ba_lo": 0.05284317521431128,
+   "ba_hi": 0.0914995136954499,
+   "I_share": 0.3189910979228487,
+   "I_lo": 0.2849146382428078,
+   "I_hi": 0.355119182608885,
+   "imbalance_0_to_1": 8.76595744680851,
+   "bu_cluster_lo": 0.05693430656934306,
+   "bu_cluster_hi": 0.18705035971223022,
+   "n_streets": 4
+  },
+  "pilot": {
+   "n": 150,
+   "n0": 73,
+   "n1": 14,
+   "nI": 63,
+   "share0": 0.4866666666666667,
+   "share1": 0.09333333333333334,
+   "shareI": 0.42,
+   "usable": 87,
+   "blocked_share_usable": 0.16091954022988506,
+   "bu_lo": 0.09834644398625851,
+   "bu_hi": 0.2521703710678001,
+   "blocked_share_all": 0.09333333333333334,
+   "ba_lo": 0.05641186747708652,
+   "ba_hi": 0.1505639312756158,
+   "I_share": 0.42,
+   "I_lo": 0.3439800445299174,
+   "I_hi": 0.5000151945689748,
+   "imbalance_0_to_1": 5.214285714285714,
+   "bu_cluster_lo": 0.1,
+   "bu_cluster_hi": 0.18421052631578946,
+   "n_streets": 3
+  },
+  "extra_top_score": {
+   "n": 1400,
+   "n0": 487,
+   "n1": 531,
+   "nI": 382,
+   "share0": 0.34785714285714286,
+   "share1": 0.3792857142857143,
+   "shareI": 0.27285714285714285,
+   "usable": 1018,
+   "blocked_share_usable": 0.5216110019646365,
+   "bu_lo": 0.4909015341129597,
+   "bu_hi": 0.5521579832125364,
+   "blocked_share_all": 0.3792857142857143,
+   "ba_lo": 0.3542323345220691,
+   "ba_hi": 0.40499973696559083,
+   "I_share": 0.27285714285714285,
+   "I_lo": 0.2501698332850941,
+   "I_hi": 0.2967875556680175,
+   "imbalance_0_to_1": 0.9171374764595104,
+   "bu_cluster_lo": 0.4780149466241127,
+   "bu_cluster_hi": 0.565883752603115,
+   "n_streets": 75
+  },
+  "extra_random": {
+   "n": 600,
+   "n0": 332,
+   "n1": 46,
+   "nI": 222,
+   "share0": 0.5533333333333333,
+   "share1": 0.07666666666666666,
+   "shareI": 0.37,
+   "usable": 378,
+   "blocked_share_usable": 0.12169312169312169,
+   "bu_lo": 0.09248729010771717,
+   "bu_hi": 0.15851075268391052,
+   "blocked_share_all": 0.07666666666666666,
+   "ba_lo": 0.05796841836178705,
+   "ba_hi": 0.10075115516314621,
+   "I_share": 0.37,
+   "I_lo": 0.3323095384746026,
+   "I_hi": 0.40934450378895965,
+   "imbalance_0_to_1": 7.217391304347826,
+   "bu_cluster_lo": 0.08938160721959605,
+   "bu_cluster_hi": 0.1529433283010103,
+   "n_streets": 69
+  },
+  "main_all": {
+   "n": 2999,
+   "n0": 1558,
+   "n1": 188,
+   "nI": 1253,
+   "share0": 0.5195065021673891,
+   "share1": 0.06268756252084028,
+   "shareI": 0.41780593531177057,
+   "usable": 1746,
+   "blocked_share_usable": 0.10767468499427263,
+   "bu_lo": 0.09398708645666415,
+   "bu_hi": 0.12308484134912026,
+   "blocked_share_all": 0.06268756252084028,
+   "ba_lo": 0.05455906078312646,
+   "ba_hi": 0.07193494964986831,
+   "I_share": 0.41780593531177057,
+   "I_lo": 0.40027058801314724,
+   "I_hi": 0.43555158016964585,
+   "imbalance_0_to_1": 8.287234042553191,
+   "bu_cluster_lo": 0.08701822916666667,
+   "bu_cluster_hi": 0.13895954283102857,
+   "n_streets": 17
+  },
+  "extra_all": {
+   "n": 2000,
+   "n0": 819,
+   "n1": 577,
+   "nI": 604,
+   "share0": 0.4095,
+   "share1": 0.2885,
+   "shareI": 0.302,
+   "usable": 1396,
+   "blocked_share_usable": 0.413323782234957,
+   "bu_lo": 0.3877644996682041,
+   "bu_hi": 0.4393587802753158,
+   "blocked_share_all": 0.2885,
+   "ba_lo": 0.26906427669859123,
+   "ba_hi": 0.3087466343013786,
+   "I_share": 0.302,
+   "I_lo": 0.28227360669180807,
+   "I_hi": 0.322485544031568,
+   "imbalance_0_to_1": 1.4194107452339688,
+   "bu_cluster_lo": 0.37559405397528656,
+   "bu_cluster_hi": 0.4557156367509415,
+   "n_streets": 75
+  }
+ },
+ "labels_by_group_note": "bu_* = Wilson 95% for blocked/usable; ba_* = Wilson for blocked/all crops; bu_cluster_* = street-cluster bootstrap (B=1000); main_val has 3 streets, main_test 4, pilot 3: cluster interval is only indicative; extra_* are selected by a model score, not natural",
+ "labels_by_split": {
+  "main tự nhiên – train": {
+   "n": 1839,
+   "n0": 939,
+   "n1": 106,
+   "nI": 794,
+   "share0": 0.5106035889070146,
+   "share1": 0.057640021750951606,
+   "shareI": 0.4317563893420337,
+   "usable": 1045,
+   "blocked_share_usable": 0.10143540669856459,
+   "bu_lo": 0.08456594476160652,
+   "bu_hi": 0.12122441278526606,
+   "blocked_share_all": 0.057640021750951606,
+   "ba_lo": 0.047881447400824236,
+   "ba_hi": 0.06924282163902004,
+   "I_share": 0.4317563893420337,
+   "I_lo": 0.4092835009053033,
+   "I_hi": 0.4545137895243223,
+   "imbalance_0_to_1": 8.858490566037736
+  },
+  "pilot – train": {
+   "n": 150,
+   "n0": 73,
+   "n1": 14,
+   "nI": 63,
+   "share0": 0.4866666666666667,
+   "share1": 0.09333333333333334,
+   "shareI": 0.42,
+   "usable": 87,
+   "blocked_share_usable": 0.16091954022988506,
+   "bu_lo": 0.09834644398625851,
+   "bu_hi": 0.2521703710678001,
+   "blocked_share_all": 0.09333333333333334,
+   "ba_lo": 0.05641186747708652,
+   "ba_hi": 0.1505639312756158,
+   "I_share": 0.42,
+   "I_lo": 0.3439800445299174,
+   "I_hi": 0.5000151945689748,
+   "imbalance_0_to_1": 5.214285714285714
+  },
+  "train_extra – train": {
+   "n": 2000,
+   "n0": 819,
+   "n1": 577,
+   "nI": 604,
+   "share0": 0.4095,
+   "share1": 0.2885,
+   "shareI": 0.302,
+   "usable": 1396,
+   "blocked_share_usable": 0.413323782234957,
+   "bu_lo": 0.3877644996682041,
+   "bu_hi": 0.4393587802753158,
+   "blocked_share_all": 0.2885,
+   "ba_lo": 0.26906427669859123,
+   "ba_hi": 0.3087466343013786,
+   "I_share": 0.302,
+   "I_lo": 0.28227360669180807,
+   "I_hi": 0.322485544031568,
+   "imbalance_0_to_1": 1.4194107452339688
+  },
+  "train, TẤT CẢ phase gộp (main+pilot+extra)": {
+   "n": 3989,
+   "n0": 1831,
+   "n1": 697,
+   "nI": 1461,
+   "share0": 0.4590122837803961,
+   "share1": 0.17473050889947356,
+   "shareI": 0.36625720732013034,
+   "usable": 2528,
+   "blocked_share_usable": 0.2757120253164557,
+   "bu_lo": 0.2586424269073993,
+   "bu_hi": 0.29346222954758844,
+   "blocked_share_all": 0.17473050889947356,
+   "ba_lo": 0.16326080783132682,
+   "ba_hi": 0.18682608473303605,
+   "I_share": 0.36625720732013034,
+   "I_lo": 0.35144167628773243,
+   "I_hi": 0.3813300826202349,
+   "imbalance_0_to_1": 2.6269727403156384
+  },
+  "main tự nhiên – val": {
+   "n": 486,
+   "n0": 207,
+   "n1": 35,
+   "nI": 244,
+   "share0": 0.42592592592592593,
+   "share1": 0.0720164609053498,
+   "shareI": 0.5020576131687243,
+   "usable": 242,
+   "blocked_share_usable": 0.1446280991735537,
+   "bu_lo": 0.10586502580332693,
+   "bu_hi": 0.19449708225978382,
+   "blocked_share_all": 0.0720164609053498,
+   "ba_lo": 0.05223489463400783,
+   "ba_hi": 0.09851073436699453,
+   "I_share": 0.5020576131687243,
+   "I_lo": 0.4577636113392688,
+   "I_hi": 0.5463193423674572,
+   "imbalance_0_to_1": 5.914285714285715
+  },
+  "main tự nhiên – test": {
+   "n": 674,
+   "n0": 412,
+   "n1": 47,
+   "nI": 215,
+   "share0": 0.6112759643916914,
+   "share1": 0.06973293768545995,
+   "shareI": 0.3189910979228487,
+   "usable": 459,
+   "blocked_share_usable": 0.10239651416122005,
+   "bu_lo": 0.07788050723815218,
+   "bu_hi": 0.13351252369298175,
+   "blocked_share_all": 0.06973293768545995,
+   "ba_lo": 0.05284317521431128,
+   "ba_hi": 0.0914995136954499,
+   "I_share": 0.3189910979228487,
+   "I_lo": 0.2849146382428078,
+   "I_hi": 0.355119182608885,
+   "imbalance_0_to_1": 8.76595744680851
+  },
+  "main tự nhiên, 3 split gộp": {
+   "n": 2999,
+   "n0": 1558,
+   "n1": 188,
+   "nI": 1253,
+   "share0": 0.5195065021673891,
+   "share1": 0.06268756252084028,
+   "shareI": 0.41780593531177057,
+   "usable": 1746,
+   "blocked_share_usable": 0.10767468499427263,
+   "bu_lo": 0.09398708645666415,
+   "bu_hi": 0.12308484134912026,
+   "blocked_share_all": 0.06268756252084028,
+   "ba_lo": 0.05455906078312646,
+   "ba_hi": 0.07193494964986831,
+   "I_share": 0.41780593531177057,
+   "I_lo": 0.40027058801314724,
+   "I_hi": 0.43555158016964585,
+   "imbalance_0_to_1": 8.287234042553191
+  },
+  "main+pilot (gộp, = tổng nhãn đợt 1)": {
+   "n": 3149,
+   "n0": 1631,
+   "n1": 202,
+   "nI": 1316,
+   "share0": 0.5179422038742458,
+   "share1": 0.06414734836456018,
+   "shareI": 0.417910447761194,
+   "usable": 1833,
+   "blocked_share_usable": 0.11020185488270595,
+   "bu_lo": 0.09667355958293865,
+   "bu_hi": 0.12536055058057013,
+   "blocked_share_all": 0.06414734836456018,
+   "ba_lo": 0.05610948337697325,
+   "ba_hi": 0.07324730926468571,
+   "I_share": 0.417910447761194,
+   "I_lo": 0.40079412507105494,
+   "I_hi": 0.43522680818786585,
+   "imbalance_0_to_1": 8.074257425742575
+  }
+ },
+ "train_composition": {
+  "T1 main train": {
+   "n": 1839,
+   "n0": 939,
+   "n1": 106,
+   "nI": 794,
+   "share0": 0.5106035889070146,
+   "share1": 0.057640021750951606,
+   "shareI": 0.4317563893420337,
+   "usable": 1045,
+   "blocked_share_usable": 0.10143540669856459,
+   "bu_lo": 0.08456594476160652,
+   "bu_hi": 0.12122441278526606,
+   "blocked_share_all": 0.057640021750951606,
+   "ba_lo": 0.047881447400824236,
+   "ba_hi": 0.06924282163902004,
+   "I_share": 0.4317563893420337,
+   "I_lo": 0.4092835009053033,
+   "I_hi": 0.4545137895243223,
+   "imbalance_0_to_1": 8.858490566037736,
+   "blocked_from_main_train": 106,
+   "blocked_from_pilot": 0,
+   "blocked_from_extra_top_score": 0,
+   "blocked_from_extra_random": 0,
+   "share_blocked_from_extra": 0.0
+  },
+  "T2 main train + pilot": {
+   "n": 1989,
+   "n0": 1012,
+   "n1": 120,
+   "nI": 857,
+   "share0": 0.5087983911513323,
+   "share1": 0.06033182503770739,
+   "shareI": 0.4308697838109603,
+   "usable": 1132,
+   "blocked_share_usable": 0.10600706713780919,
+   "bu_lo": 0.08938713390148957,
+   "bu_hi": 0.1252919984079319,
+   "blocked_share_all": 0.06033182503770739,
+   "ba_lo": 0.05069129068110946,
+   "ba_hi": 0.07166739356916323,
+   "I_share": 0.4308697838109603,
+   "I_lo": 0.40926108009407125,
+   "I_hi": 0.452745002335217,
+   "imbalance_0_to_1": 8.433333333333334,
+   "blocked_from_main_train": 106,
+   "blocked_from_pilot": 14,
+   "blocked_from_extra_top_score": 0,
+   "blocked_from_extra_random": 0,
+   "share_blocked_from_extra": 0.0
+  },
+  "T3 main train + extra (top_score + random)": {
+   "n": 3839,
+   "n0": 1758,
+   "n1": 683,
+   "nI": 1398,
+   "share0": 0.4579317530606929,
+   "share1": 0.1779109143005991,
+   "shareI": 0.364157332638708,
+   "usable": 2441,
+   "blocked_share_usable": 0.27980335927898403,
+   "bu_lo": 0.26235193249342814,
+   "bu_hi": 0.29794675431036066,
+   "blocked_share_all": 0.1779109143005991,
+   "ba_lo": 0.1661370343105695,
+   "ba_hi": 0.19032874068944208,
+   "I_share": 0.364157332638708,
+   "I_lo": 0.34907859718606643,
+   "I_hi": 0.3795076556748361,
+   "imbalance_0_to_1": 2.5739385065885796,
+   "blocked_from_main_train": 106,
+   "blocked_from_pilot": 0,
+   "blocked_from_extra_top_score": 531,
+   "blocked_from_extra_random": 46,
+   "share_blocked_from_extra": 0.8448023426061494
+  },
+  "T4 main train + pilot + extra (đủ, train hiện tại)": {
+   "n": 3989,
+   "n0": 1831,
+   "n1": 697,
+   "nI": 1461,
+   "share0": 0.4590122837803961,
+   "share1": 0.17473050889947356,
+   "shareI": 0.36625720732013034,
+   "usable": 2528,
+   "blocked_share_usable": 0.2757120253164557,
+   "bu_lo": 0.2586424269073993,
+   "bu_hi": 0.29346222954758844,
+   "blocked_share_all": 0.17473050889947356,
+   "ba_lo": 0.16326080783132682,
+   "ba_hi": 0.18682608473303605,
+   "I_share": 0.36625720732013034,
+   "I_lo": 0.35144167628773243,
+   "I_hi": 0.3813300826202349,
+   "imbalance_0_to_1": 2.6269727403156384,
+   "blocked_from_main_train": 106,
+   "blocked_from_pilot": 14,
+   "blocked_from_extra_top_score": 531,
+   "blocked_from_extra_random": 46,
+   "share_blocked_from_extra": 0.8278335724533716
+  },
+  "T5 main train + pilot + extra random": {
+   "n": 2589,
+   "n0": 1344,
+   "n1": 166,
+   "nI": 1079,
+   "share0": 0.5191193511008111,
+   "share1": 0.06411741985322518,
+   "shareI": 0.4167632290459637,
+   "usable": 1510,
+   "blocked_share_usable": 0.10993377483443709,
+   "bu_lo": 0.09513513025734513,
+   "bu_hi": 0.12671204988417364,
+   "blocked_share_all": 0.06411741985322518,
+   "ba_lo": 0.055312266366665724,
+   "ba_hi": 0.07421414863189935,
+   "I_share": 0.4167632290459637,
+   "I_lo": 0.3979091621072001,
+   "I_hi": 0.4358639370794997,
+   "imbalance_0_to_1": 8.096385542168674,
+   "blocked_from_main_train": 106,
+   "blocked_from_pilot": 14,
+   "blocked_from_extra_top_score": 0,
+   "blocked_from_extra_random": 46,
+   "share_blocked_from_extra": 0.27710843373493976
+  },
+  "T6 main train + pilot + extra top_score": {
+   "n": 3389,
+   "n0": 1499,
+   "n1": 651,
+   "nI": 1239,
+   "share0": 0.44231336677485983,
+   "share1": 0.19209206255532604,
+   "shareI": 0.3655945706698141,
+   "usable": 2150,
+   "blocked_share_usable": 0.30279069767441863,
+   "bu_lo": 0.28373511491915965,
+   "bu_hi": 0.3225497411331933,
+   "blocked_share_all": 0.19209206255532604,
+   "ba_lo": 0.1791804217069804,
+   "ba_hi": 0.20570094533295996,
+   "I_share": 0.3655945706698141,
+   "I_lo": 0.3495410114061714,
+   "I_hi": 0.3819524842207504,
+   "imbalance_0_to_1": 2.302611367127496,
+   "blocked_from_main_train": 106,
+   "blocked_from_pilot": 14,
+   "blocked_from_extra_top_score": 531,
+   "blocked_from_extra_random": 0,
+   "share_blocked_from_extra": 0.815668202764977
+  }
+ },
+ "train_composition_note": "Wilson intervals treat crops as independent; the composition is not a natural sample for T3-T6 (extra selected by model score)",
+ "reasons_I": {
+  "main_train": {
+   "Không thấy vỉa hè": 651,
+   "Bị che": 89,
+   "Ảnh mờ / tối / cháy sáng": 5,
+   "Lý do khác": 4,
+   "(thiếu lý do)": 45
+  },
+  "main_val": {
+   "Không thấy vỉa hè": 131,
+   "Bị che": 34,
+   "Ảnh mờ / tối / cháy sáng": 6,
+   "Lý do khác": 0,
+   "(thiếu lý do)": 73
+  },
+  "main_test": {
+   "Không thấy vỉa hè": 98,
+   "Bị che": 16,
+   "Ảnh mờ / tối / cháy sáng": 1,
+   "Lý do khác": 0,
+   "(thiếu lý do)": 100
+  },
+  "pilot": {
+   "Không thấy vỉa hè": 0,
+   "Bị che": 0,
+   "Ảnh mờ / tối / cháy sáng": 0,
+   "Lý do khác": 0,
+   "(thiếu lý do)": 63
+  },
+  "extra_top_score": {
+   "Không thấy vỉa hè": 296,
+   "Bị che": 56,
+   "Ảnh mờ / tối / cháy sáng": 18,
+   "Lý do khác": 8,
+   "(thiếu lý do)": 4
+  },
+  "extra_random": {
+   "Không thấy vỉa hè": 167,
+   "Bị che": 48,
+   "Ảnh mờ / tối / cháy sáng": 3,
+   "Lý do khác": 1,
+   "(thiếu lý do)": 3
+  },
+  "main_all": {
+   "Không thấy vỉa hè": 880,
+   "Bị che": 139,
+   "Ảnh mờ / tối / cháy sáng": 12,
+   "Lý do khác": 4,
+   "(thiếu lý do)": 218
+  },
+  "extra_all": {
+   "Không thấy vỉa hè": 463,
+   "Bị che": 104,
+   "Ảnh mờ / tối / cháy sáng": 21,
+   "Lý do khác": 9,
+   "(thiếu lý do)": 7
+  }
+ },
+ "obstacle_tags": {
+  "main_train|Xe máy đậu|item": {
+   "n": 65,
+   "denominator": 106,
+   "share": 0.6132075471698113
+  },
+  "main_train|Hàng hóa / quầy hàng|item": {
+   "n": 32,
+   "denominator": 106,
+   "share": 0.3018867924528302
+  },
+  "main_train|Bàn ghế quán|item": {
+   "n": 9,
+   "denominator": 106,
+   "share": 0.08490566037735849
+  },
+  "main_train|Ô tô đậu|item": {
+   "n": 4,
+   "denominator": 106,
+   "share": 0.03773584905660377
+  },
+  "main_train|Rào chắn / công trình|item": {
+   "n": 8,
+   "denominator": 106,
+   "share": 0.07547169811320754
+  },
+  "main_train|Khác|item": {
+   "n": 8,
+   "denominator": 106,
+   "share": 0.07547169811320754
+  },
+  "main_train|(không có thẻ)|item": {
+   "n": 9,
+   "denominator": 106,
+   "share": 0.08490566037735849
+  },
+  "main_val|Xe máy đậu|item": {
+   "n": 26,
+   "denominator": 35,
+   "share": 0.7428571428571429
+  },
+  "main_val|Hàng hóa / quầy hàng|item": {
+   "n": 10,
+   "denominator": 35,
+   "share": 0.2857142857142857
+  },
+  "main_val|Bàn ghế quán|item": {
+   "n": 7,
+   "denominator": 35,
+   "share": 0.2
+  },
+  "main_val|Ô tô đậu|item": {
+   "n": 3,
+   "denominator": 35,
+   "share": 0.08571428571428572
+  },
+  "main_val|Rào chắn / công trình|item": {
+   "n": 2,
+   "denominator": 35,
+   "share": 0.05714285714285714
+  },
+  "main_val|Khác|item": {
+   "n": 7,
+   "denominator": 35,
+   "share": 0.2
+  },
+  "main_val|(không có thẻ)|item": {
+   "n": 2,
+   "denominator": 35,
+   "share": 0.05714285714285714
+  },
+  "main_test|Xe máy đậu|item": {
+   "n": 32,
+   "denominator": 47,
+   "share": 0.6808510638297872
+  },
+  "main_test|Hàng hóa / quầy hàng|item": {
+   "n": 19,
+   "denominator": 47,
+   "share": 0.40425531914893614
+  },
+  "main_test|Bàn ghế quán|item": {
+   "n": 1,
+   "denominator": 47,
+   "share": 0.02127659574468085
+  },
+  "main_test|Ô tô đậu|item": {
+   "n": 0,
+   "denominator": 47,
+   "share": 0.0
+  },
+  "main_test|Rào chắn / công trình|item": {
+   "n": 1,
+   "denominator": 47,
+   "share": 0.02127659574468085
+  },
+  "main_test|Khác|item": {
+   "n": 10,
+   "denominator": 47,
+   "share": 0.2127659574468085
+  },
+  "main_test|(không có thẻ)|item": {
+   "n": 2,
+   "denominator": 47,
+   "share": 0.0425531914893617
+  },
+  "main_all|Xe máy đậu|item": {
+   "n": 123,
+   "denominator": 188,
+   "share": 0.6542553191489362
+  },
+  "main_all|Hàng hóa / quầy hàng|item": {
+   "n": 61,
+   "denominator": 188,
+   "share": 0.324468085106383
+  },
+  "main_all|Bàn ghế quán|item": {
+   "n": 17,
+   "denominator": 188,
+   "share": 0.09042553191489362
+  },
+  "main_all|Ô tô đậu|item": {
+   "n": 7,
+   "denominator": 188,
+   "share": 0.03723404255319149
+  },
+  "main_all|Rào chắn / công trình|item": {
+   "n": 11,
+   "denominator": 188,
+   "share": 0.05851063829787234
+  },
+  "main_all|Khác|item": {
+   "n": 25,
+   "denominator": 188,
+   "share": 0.13297872340425532
+  },
+  "main_all|(không có thẻ)|item": {
+   "n": 13,
+   "denominator": 188,
+   "share": 0.06914893617021277
+  },
+  "extra_top_score|Xe máy đậu|item": {
+   "n": 326,
+   "denominator": 531,
+   "share": 0.6139359698681732
+  },
+  "extra_top_score|Hàng hóa / quầy hàng|item": {
+   "n": 204,
+   "denominator": 531,
+   "share": 0.384180790960452
+  },
+  "extra_top_score|Bàn ghế quán|item": {
+   "n": 42,
+   "denominator": 531,
+   "share": 0.07909604519774012
+  },
+  "extra_top_score|Ô tô đậu|item": {
+   "n": 11,
+   "denominator": 531,
+   "share": 0.02071563088512241
+  },
+  "extra_top_score|Rào chắn / công trình|item": {
+   "n": 26,
+   "denominator": 531,
+   "share": 0.04896421845574388
+  },
+  "extra_top_score|Khác|item": {
+   "n": 57,
+   "denominator": 531,
+   "share": 0.10734463276836158
+  },
+  "extra_top_score|(không có thẻ)|item": {
+   "n": 5,
+   "denominator": 531,
+   "share": 0.009416195856873822
+  },
+  "extra_random|Xe máy đậu|item": {
+   "n": 20,
+   "denominator": 46,
+   "share": 0.43478260869565216
+  },
+  "extra_random|Hàng hóa / quầy hàng|item": {
+   "n": 11,
+   "denominator": 46,
+   "share": 0.2391304347826087
+  },
+  "extra_random|Bàn ghế quán|item": {
+   "n": 5,
+   "denominator": 46,
+   "share": 0.10869565217391304
+  },
+  "extra_random|Ô tô đậu|item": {
+   "n": 0,
+   "denominator": 46,
+   "share": 0.0
+  },
+  "extra_random|Rào chắn / công trình|item": {
+   "n": 10,
+   "denominator": 46,
+   "share": 0.21739130434782608
+  },
+  "extra_random|Khác|item": {
+   "n": 7,
+   "denominator": 46,
+   "share": 0.15217391304347827
+  },
+  "extra_random|(không có thẻ)|item": {
+   "n": 1,
+   "denominator": 46,
+   "share": 0.021739130434782608
+  },
+  "extra_all|Xe máy đậu|item": {
+   "n": 346,
+   "denominator": 577,
+   "share": 0.5996533795493935
+  },
+  "extra_all|Hàng hóa / quầy hàng|item": {
+   "n": 215,
+   "denominator": 577,
+   "share": 0.37261698440207974
+  },
+  "extra_all|Bàn ghế quán|item": {
+   "n": 47,
+   "denominator": 577,
+   "share": 0.08145580589254767
+  },
+  "extra_all|Ô tô đậu|item": {
+   "n": 11,
+   "denominator": 577,
+   "share": 0.019064124783362217
+  },
+  "extra_all|Rào chắn / công trình|item": {
+   "n": 36,
+   "denominator": 577,
+   "share": 0.06239168110918544
+  },
+  "extra_all|Khác|item": {
+   "n": 64,
+   "denominator": 577,
+   "share": 0.11091854419410745
+  },
+  "extra_all|(không có thẻ)|item": {
+   "n": 6,
+   "denominator": 577,
+   "share": 0.010398613518197574
+  },
+  "main_all|Xe máy đậu|lượt": {
+   "n": 202,
+   "denominator": 312,
+   "share": 0.6474358974358975
+  },
+  "main_all|Hàng hóa / quầy hàng|lượt": {
+   "n": 83,
+   "denominator": 312,
+   "share": 0.266025641025641
+  },
+  "main_all|Bàn ghế quán|lượt": {
+   "n": 24,
+   "denominator": 312,
+   "share": 0.07692307692307693
+  },
+  "main_all|Ô tô đậu|lượt": {
+   "n": 15,
+   "denominator": 312,
+   "share": 0.04807692307692308
+  },
+  "main_all|Rào chắn / công trình|lượt": {
+   "n": 13,
+   "denominator": 312,
+   "share": 0.041666666666666664
+  },
+  "main_all|Khác|lượt": {
+   "n": 35,
+   "denominator": 312,
+   "share": 0.11217948717948718
+  },
+  "extra_all (nhãn v1)|Xe máy đậu|lượt": {
+   "n": 351,
+   "denominator": 588,
+   "share": 0.5969387755102041
+  },
+  "extra_all (nhãn v1)|Hàng hóa / quầy hàng|lượt": {
+   "n": 221,
+   "denominator": 588,
+   "share": 0.3758503401360544
+  },
+  "extra_all (nhãn v1)|Bàn ghế quán|lượt": {
+   "n": 49,
+   "denominator": 588,
+   "share": 0.08333333333333333
+  },
+  "extra_all (nhãn v1)|Ô tô đậu|lượt": {
+   "n": 11,
+   "denominator": 588,
+   "share": 0.01870748299319728
+  },
+  "extra_all (nhãn v1)|Rào chắn / công trình|lượt": {
+   "n": 38,
+   "denominator": 588,
+   "share": 0.06462585034013606
+  },
+  "extra_all (nhãn v1)|Khác|lượt": {
+   "n": 66,
+   "denominator": 588,
+   "share": 0.11224489795918367
+  }
+ },
+ "obstacle_tags_note": "Multi-label: shares do not sum to 1. Main double-labelled items: a tag counts once per item if ANY annotator who labelled it 1 chose it. Pilot: chưa đo (no per-annotation table with tags among the specified inputs).",
+ "annotator_chi2": {
+  "main role=train_single (5 annotators, one per item)": {
+   "chi2": 40.441387869245055,
+   "dof": 8,
+   "p": 2.650730893301764e-06,
+   "n": 1563
+  },
+  "train_extra all (v1 labels)": {
+   "chi2": 85.6222526909127,
+   "dof": 8,
+   "p": 3.586366297185383e-15,
+   "n": 2000
+  },
+  "train_extra random stratum (v1 labels)": {
+   "chi2": 26.136251639003657,
+   "dof": 8,
+   "p": 0.0009953675785698457,
+   "n": 600
+  }
+ },
+ "annotator_note": "Main annotations: each annotator labels a different mix (test: Học+Loan, val: Minh+Khải, train: all 5), so shares per annotator over all roles are confounded by split; role=train_single and train_extra are randomly assigned. train_extra labels are the v1 labels (before cross-check).",
+ "annotator_shares": [
+  {
+   "source": "main",
+   "annotator": "Hoc",
+   "n": 887,
+   "share0": 0.6866,
+   "share1": 0.0992,
+   "shareI": 0.2142,
+   "median_s": 2.065
+  },
+  {
+   "source": "main",
+   "annotator": "Khai",
+   "n": 887,
+   "share0": 0.5242,
+   "share1": 0.0834,
+   "shareI": 0.3923,
+   "median_s": 3.398
+  },
+  {
+   "source": "main",
+   "annotator": "Loan",
+   "n": 887,
+   "share0": 0.5411,
+   "share1": 0.0598,
+   "shareI": 0.3991,
+   "median_s": 5.892
+  },
+  {
+   "source": "main",
+   "annotator": "Minh",
+   "n": 887,
+   "share0": 0.4453,
+   "share1": 0.0507,
+   "shareI": 0.5039,
+   "median_s": 2.345
+  },
+  {
+   "source": "main",
+   "annotator": "Phuc",
+   "n": 887,
+   "share0": 0.4735,
+   "share1": 0.0586,
+   "shareI": 0.4679,
+   "median_s": 7.468
+  },
+  {
+   "source": "train_extra",
+   "annotator": "Hoc",
+   "n": 400,
+   "share0": 0.37,
+   "share1": 0.4325,
+   "shareI": 0.1975,
+   "median_s": 3.805
+  },
+  {
+   "source": "train_extra",
+   "annotator": "Khai",
+   "n": 400,
+   "share0": 0.4525,
+   "share1": 0.3125,
+   "shareI": 0.235,
+   "median_s": 3.9265
+  },
+  {
+   "source": "train_extra",
+   "annotator": "Loan",
+   "n": 400,
+   "share0": 0.46,
+   "share1": 0.19,
+   "shareI": 0.35,
+   "median_s": 6.8305
+  },
+  {
+   "source": "train_extra",
+   "annotator": "Minh",
+   "n": 400,
+   "share0": 0.3775,
+   "share1": 0.2525,
+   "shareI": 0.37,
+   "median_s": 3.7725
+  },
+  {
+   "source": "train_extra",
+   "annotator": "Phuc",
+   "n": 400,
+   "share0": 0.365,
+   "share1": 0.2825,
+   "shareI": 0.3525,
+   "median_s": 3.0755
+  }
+ ],
+ "spearman_top_pairs": {
+  "main_all": [
+   {
+    "a": "lat",
+    "b": "lon",
+    "rho": 0.423
+   },
+   {
+    "a": "lat",
+    "b": "year",
+    "rho": -0.136
+   },
+   {
+    "a": "brightness",
+    "b": "lon",
+    "rho": -0.125
+   },
+   {
+    "a": "brightness",
+    "b": "lat",
+    "rho": 0.097
+   },
+   {
+    "a": "dist_to_street_m",
+    "b": "lat",
+    "rho": 0.089
+   }
+  ],
+  "main_train": [
+   {
+    "a": "lat",
+    "b": "lon",
+    "rho": 0.348
+   },
+   {
+    "a": "lon",
+    "b": "travel_bearing",
+    "rho": -0.218
+   },
+   {
+    "a": "lat",
+    "b": "year",
+    "rho": -0.213
+   },
+   {
+    "a": "brightness",
+    "b": "lon",
+    "rho": -0.194
+   },
+   {
+    "a": "year",
+    "b": "travel_bearing",
+    "rho": 0.138
+   }
+  ],
+  "extra_all": [
+   {
+    "a": "lat",
+    "b": "lon",
+    "rho": 0.432
+   },
+   {
+    "a": "lon",
+    "b": "year",
+    "rho": -0.25
+   },
+   {
+    "a": "brightness",
+    "b": "lat",
+    "rho": -0.104
+   },
+   {
+    "a": "year",
+    "b": "travel_bearing",
+    "rho": 0.094
+   },
+   {
+    "a": "dist_to_street_m",
+    "b": "travel_bearing",
+    "rho": 0.075
+   }
+  ],
+  "extra_top_score": [
+   {
+    "a": "lat",
+    "b": "lon",
+    "rho": 0.427
+   },
+   {
+    "a": "lon",
+    "b": "year",
+    "rho": -0.265
+   },
+   {
+    "a": "dist_to_street_m",
+    "b": "travel_bearing",
+    "rho": 0.117
+   },
+   {
+    "a": "year",
+    "b": "travel_bearing",
+    "rho": 0.11
+   },
+   {
+    "a": "brightness",
+    "b": "lat",
+    "rho": -0.1
+   }
+  ],
+  "extra_random": [
+   {
+    "a": "lat",
+    "b": "lon",
+    "rho": 0.416
+   },
+   {
+    "a": "lon",
+    "b": "year",
+    "rho": -0.215
+   },
+   {
+    "a": "dist_to_street_m",
+    "b": "lat",
+    "rho": 0.13
+   },
+   {
+    "a": "brightness",
+    "b": "lat",
+    "rho": -0.108
+   },
+   {
+    "a": "year",
+    "b": "score",
+    "rho": -0.075
+   }
+  ]
+ },
+ "vif": {
+  "main_all": {
+   "brightness": 1.037,
+   "dist_to_street_m": 1.011,
+   "lat": 1.274,
+   "lon": 1.252,
+   "year": 1.028,
+   "travel_bearing": 1.007
+  },
+  "main_train": {
+   "brightness": 1.07,
+   "dist_to_street_m": 1.023,
+   "lat": 1.246,
+   "lon": 1.235,
+   "year": 1.057,
+   "travel_bearing": 1.018
+  },
+  "extra_all": {
+   "brightness": 1.015,
+   "dist_to_street_m": 1.008,
+   "lat": 1.201,
+   "lon": 1.196,
+   "year": 1.023,
+   "travel_bearing": 1.016,
+   "score": 1.007
+  },
+  "extra_top_score": {
+   "brightness": 1.017,
+   "dist_to_street_m": 1.017,
+   "lat": 1.21,
+   "lon": 1.208,
+   "year": 1.04,
+   "travel_bearing": 1.031,
+   "score": 1.005
+  },
+  "extra_random": {
+   "brightness": 1.014,
+   "dist_to_street_m": 1.029,
+   "lat": 1.189,
+   "lon": 1.164,
+   "year": 1.015,
+   "travel_bearing": 1.007,
+   "score": 1.005
+  }
+ },
+ "vif_note": "travel_bearing is circular (0-360), entered raw as in the Spearman matrix; lat/lon/street are structurally linked (crops lie along streets). VIF > 5 would indicate multicollinearity.",
+ "assoc_numeric_top_effects": [
+  {
+   "subset": "extra_all",
+   "target": "blocked_vs_passable",
+   "variable": "score",
+   "auc_pos_higher": 0.7787,
+   "auc_lo_cluster": 0.7532,
+   "auc_hi_cluster": 0.8063,
+   "n": 1396
+  },
+  {
+   "subset": "main_all",
+   "target": "I_vs_usable",
+   "variable": "lat",
+   "auc_pos_higher": 0.4403,
+   "auc_lo_cluster": 0.3683,
+   "auc_hi_cluster": 0.508,
+   "n": 2999
+  },
+  {
+   "subset": "extra_all",
+   "target": "I_vs_usable",
+   "variable": "brightness",
+   "auc_pos_higher": 0.5583,
+   "auc_lo_cluster": 0.53,
+   "auc_hi_cluster": 0.5888,
+   "n": 2000
+  },
+  {
+   "subset": "main_all",
+   "target": "blocked_vs_passable",
+   "variable": "lon",
+   "auc_pos_higher": 0.447,
+   "auc_lo_cluster": 0.3492,
+   "auc_hi_cluster": 0.5353,
+   "n": 1746
+  },
+  {
+   "subset": "main_all",
+   "target": "blocked_vs_passable",
+   "variable": "lat",
+   "auc_pos_higher": 0.4481,
+   "auc_lo_cluster": 0.3658,
+   "auc_hi_cluster": 0.5177,
+   "n": 1746
+  },
+  {
+   "subset": "main_all",
+   "target": "I_vs_usable",
+   "variable": "brightness",
+   "auc_pos_higher": 0.5508,
+   "auc_lo_cluster": 0.4835,
+   "auc_hi_cluster": 0.6202,
+   "n": 2999
+  }
+ ],
+ "assoc_categorical_top_effects": [
+  {
+   "subset": "main_all",
+   "target": "I_vs_usable",
+   "variable": "month",
+   "cramers_v_bc": 0.1547,
+   "v_lo_cluster": 0.1222,
+   "v_hi_cluster": 0.2949,
+   "n": 2999
+  },
+  {
+   "subset": "extra_all",
+   "target": "blocked_vs_passable",
+   "variable": "highway",
+   "cramers_v_bc": 0.1396,
+   "v_lo_cluster": 0.058,
+   "v_hi_cluster": 0.2347,
+   "n": 1396
+  },
+  {
+   "subset": "extra_all",
+   "target": "I_vs_usable",
+   "variable": "highway",
+   "cramers_v_bc": 0.1154,
+   "v_lo_cluster": 0.0467,
+   "v_hi_cluster": 0.1907,
+   "n": 2000
+  },
+  {
+   "subset": "main_all",
+   "target": "I_vs_usable",
+   "variable": "creator",
+   "cramers_v_bc": 0.0827,
+   "v_lo_cluster": 0.0222,
+   "v_hi_cluster": 0.1873,
+   "n": 2999
+  },
+  {
+   "subset": "main_all",
+   "target": "I_vs_usable",
+   "variable": "year",
+   "cramers_v_bc": 0.0806,
+   "v_lo_cluster": 0.0328,
+   "v_hi_cluster": 0.1376,
+   "n": 2999
+  },
+  {
+   "subset": "main_all",
+   "target": "I_vs_usable",
+   "variable": "highway",
+   "cramers_v_bc": 0.0747,
+   "v_lo_cluster": 0.0,
+   "v_hi_cluster": 0.1933,
+   "n": 2999
+  }
+ ],
+ "assoc_street_v": [
+  {
+   "subset": "main_all",
+   "target": "blocked_vs_passable",
+   "cramers_v_bc": 0.1776
+  },
+  {
+   "subset": "main_all",
+   "target": "I_vs_usable",
+   "cramers_v_bc": 0.283
+  },
+  {
+   "subset": "main_train",
+   "target": "blocked_vs_passable",
+   "cramers_v_bc": 0.1834
+  },
+  {
+   "subset": "main_train",
+   "target": "I_vs_usable",
+   "cramers_v_bc": 0.2787
+  },
+  {
+   "subset": "extra_all",
+   "target": "blocked_vs_passable",
+   "cramers_v_bc": 0.2856
+  },
+  {
+   "subset": "extra_all",
+   "target": "I_vs_usable",
+   "cramers_v_bc": 0.2071
+  },
+  {
+   "subset": "extra_top_score",
+   "target": "blocked_vs_passable",
+   "cramers_v_bc": 0.2974
+  },
+  {
+   "subset": "extra_top_score",
+   "target": "I_vs_usable",
+   "cramers_v_bc": 0.2235
+  },
+  {
+   "subset": "extra_random",
+   "target": "blocked_vs_passable",
+   "cramers_v_bc": 0.2455
+  },
+  {
+   "subset": "extra_random",
+   "target": "I_vs_usable",
+   "cramers_v_bc": 0.1351
+  }
+ ],
+ "assoc_note": "Crops are clustered by street: iid p-values (p_*_optimistic) are too small; use effect sizes and the street-cluster bootstrap intervals (B=1000, resampling streets with replacement). 'reading' is a heuristic: CI of AUC contains 0.5 -> no separation; |2AUC-1|<0.10 -> weak; else signal. Metadata are not model inputs. main_all pools val/test and is descriptive only; main_train is the train-only view.",
+ "pilot_to_main_distance_m": {
+  "min": 2.8615073777770075,
+  "p5": 6.465145020849526,
+  "median": 18.64378873009812,
+  "n_within_5m": 5,
+  "n_within_25m": 102,
+  "note": "pilot_v2 has no position_group; distance to nearest main crop of the same street is the only proxy (not the 25 m position key)"
+ },
+ "night_filter": {
+  "night_max": 90,
+  "n_night_at_90": 1,
+  "n_night": 96,
+  "ok_min": 91
+ },
+ "captured_2016": {
+  "n": 103,
+  "by_creator": {
+   "bemaps3_sg": 103
+  },
+  "by_phase": {
+   "train_extra": 38,
+   "main": 36,
+   "pilot": 29
+  },
+  "distinct_dates": [
+   "2016-01-01"
+  ],
+  "n_distinct_dates": 1
+ },
+ "outliers_iqr": {
+  "brightness|main_train": {
+   "n_below": 46,
+   "n_above": 2,
+   "fence_lo": 114.5,
+   "fence_hi": 222.5,
+   "min": 94.0,
+   "max": 231.0,
+   "n_at_max": 1,
+   "n_at_min": 1
+  },
+  "brightness|main_val": {
+   "n_below": 0,
+   "n_above": 0,
+   "fence_lo": 90.0,
+   "fence_hi": 218.0,
+   "min": 91.0,
+   "max": 201.0,
+   "n_at_max": 1,
+   "n_at_min": 1
+  },
+  "brightness|main_test": {
+   "n_below": 16,
+   "n_above": 16,
+   "fence_lo": 116.125,
+   "fence_hi": 223.125,
+   "min": 91.0,
+   "max": 249.0,
+   "n_at_max": 1,
+   "n_at_min": 2
+  },
+  "brightness|pilot": {
+   "n_below": 6,
+   "n_above": 3,
+   "fence_lo": 117.5,
+   "fence_hi": 225.5,
+   "min": 94.0,
+   "max": 236.0,
+   "n_at_max": 1,
+   "n_at_min": 1
+  },
+  "brightness|extra_top_score": {
+   "n_below": 85,
+   "n_above": 13,
+   "fence_lo": 136.5,
+   "fence_hi": 212.5,
+   "min": 91.0,
+   "max": 239.0,
+   "n_at_max": 1,
+   "n_at_min": 1
+  },
+  "brightness|extra_random": {
+   "n_below": 19,
+   "n_above": 4,
+   "fence_lo": 129.375,
+   "fence_hi": 218.375,
+   "min": 94.0,
+   "max": 238.0,
+   "n_at_max": 1,
+   "n_at_min": 1
+  },
+  "brightness|main_all": {
+   "n_below": 63,
+   "n_above": 18,
+   "fence_lo": 111.0,
+   "fence_hi": 223.0,
+   "min": 91.0,
+   "max": 249.0,
+   "n_at_max": 1,
+   "n_at_min": 3
+  },
+  "brightness|extra_all": {
+   "n_below": 96,
+   "n_above": 17,
+   "fence_lo": 134.0,
+   "fence_hi": 214.0,
+   "min": 91.0,
+   "max": 239.0,
+   "n_at_max": 1,
+   "n_at_min": 1
+  },
+  "dist_to_street_m|main_train": {
+   "n_below": 0,
+   "n_above": 75,
+   "fence_lo": -3.6000000000000005,
+   "fence_hi": 10.0,
+   "min": 0.0,
+   "max": 20.0,
+   "n_at_max": 1,
+   "n_at_min": 19
+  },
+  "dist_to_street_m|main_val": {
+   "n_below": 0,
+   "n_above": 21,
+   "fence_lo": -3.2125,
+   "fence_hi": 9.087499999999999,
+   "min": 0.0,
+   "max": 18.4,
+   "n_at_max": 1,
+   "n_at_min": 8
+  },
+  "dist_to_street_m|main_test": {
+   "n_below": 0,
+   "n_above": 18,
+   "fence_lo": -4.250000000000001,
+   "fence_hi": 10.55,
+   "min": 0.0,
+   "max": 19.6,
+   "n_at_max": 1,
+   "n_at_min": 8
+  },
+  "dist_to_street_m|pilot": {
+   "n_below": 0,
+   "n_above": 4,
+   "fence_lo": -3.937500000000001,
+   "fence_hi": 10.3625,
+   "min": 0.0,
+   "max": 17.0,
+   "n_at_max": 1,
+   "n_at_min": 3
+  },
+  "dist_to_street_m|extra_top_score": {
+   "n_below": 0,
+   "n_above": 53,
+   "fence_lo": -2.9499999999999997,
+   "fence_hi": 7.85,
+   "min": 0.0,
+   "max": 19.9,
+   "n_at_max": 1,
+   "n_at_min": 17
+  },
+  "dist_to_street_m|extra_random": {
+   "n_below": 0,
+   "n_above": 24,
+   "fence_lo": -3.2499999999999996,
+   "fence_hi": 8.35,
+   "min": 0.0,
+   "max": 19.8,
+   "n_at_max": 1,
+   "n_at_min": 6
+  },
+  "dist_to_street_m|main_all": {
+   "n_below": 0,
+   "n_above": 113,
+   "fence_lo": -3.6000000000000005,
+   "fence_hi": 10.0,
+   "min": 0.0,
+   "max": 20.0,
+   "n_at_max": 1,
+   "n_at_min": 35
+  },
+  "dist_to_street_m|extra_all": {
+   "n_below": 0,
+   "n_above": 71,
+   "fence_lo": -3.099999999999999,
+   "fence_hi": 8.1,
+   "min": 0.0,
+   "max": 19.9,
+   "n_at_max": 1,
+   "n_at_min": 23
+  }
+ },
+ "dist_to_street_m": {
+  "max": 20.0,
+  "n_at_max": 1,
+  "n_zero": 61,
+  "note": "max and count at max/0.0 as computed; no interpretation (cause of 0.0 / 20.0 not checked against docs)"
+ },
+ "checks": {
+  "n_checks": 71,
+  "n_fail": 9,
+  "failed": [
+   {
+    "check": "pilot crops vs main crops: none within 5 m (proxy for 'no shared position', pilot has no position_group)",
+    "violations": 5,
+    "detail": "min distance 2.86 m, within 25 m: 102 of 150"
+   },
+   {
+    "check": "reason present iff label I (main_labels_v1) [structural: adjudicated / pilot-review labels carry no reason]",
+    "violations": 281,
+    "detail": "I without reason 281, non-I with reason 0; I-without-reason by (phase, source) {('main', 'adjudicated_proposal'): 162, ('main', 'agreed'): 55, ('main', 'single'): 1, ('pilot', 'pilot_review_phuc'): 1, ('pilot', 'pilot_review_proposal'): 62} of I {('main', 'adjudicated_proposal'): 162, ('main', 'agreed'): 419, ('main', 'single'): 672, ('pilot', 'pilot_review_phuc'): 1, ('pilot', 'pilot_review_proposal'): 62}"
+   },
+   {
+    "check": "reason present iff label I (train_extra_labels_v2) [structural: adjudicated / pilot-review labels carry no reason]",
+    "violations": 7,
+    "detail": "I without reason 7, non-I with reason 0; I-without-reason by (phase, source) {('train_extra', 'cross_check'): 4, ('train_extra', 'single'): 3} of I {('train_extra', 'cross_check'): 4, ('train_extra', 'single'): 600}"
+   },
+   {
+    "check": "obstacles present only when annotation label = 1 (main annotations) [stale tags after a label change]",
+    "violations": 285,
+    "detail": "annotations with label 0/I but obstacle tags: 285 of 4435; label 1 without tags: 19"
+   },
+   {
+    "check": "obstacles present only when annotation label = 1 (train_extra annotations) [stale tags after a label change]",
+    "violations": 119,
+    "detail": "annotations with label 0/I but obstacle tags: 119 of 2000; label 1 without tags: 3"
+   },
+   {
+    "check": "yaw in [-180,180], travel_bearing in [0,360) (main)",
+    "violations": 1,
+    "detail": ""
+   },
+   {
+    "check": "lat/lon inside study bbox 10.745-10.815 N, 106.650-106.725 E (extra)",
+    "violations": 2,
+    "detail": ""
+   },
+   {
+    "check": "night panos (status 'night') have brightness < 90, kept (ok) panos >= 90",
+    "violations": 1,
+    "detail": "night max 90 (1 of 96 night panos have brightness exactly 90, i.e. filter is effectively <= 90); ok min 91"
+   },
+   {
+    "check": "captured_at not a placeholder date (year 2016 / 2016-01-01 stamps) [odd, report only]",
+    "violations": 103,
+    "detail": "103 crops stamped 2016, distinct dates 1, creators {'bemaps3_sg': 103}"
+   }
+  ]
+ },
+ "docs_crosscheck": {
+  "n": 39,
+  "mismatches": []
+ },
+ "meta": {
+  "script": "src/eda/28_eda_tabular.py",
+  "seed": 20261114,
+  "bootstrap_B": 1000,
+  "groups": {
+   "main_train": "Main tự nhiên – train",
+   "main_val": "Main tự nhiên – val",
+   "main_test": "Main tự nhiên – test",
+   "pilot": "Pilot (train)",
+   "extra_top_score": "Train-extra – top_score",
+   "extra_random": "Train-extra – random"
+  },
+  "note": "main_all / extra_all are pooled rows (named as such); val/test are descriptive only"
+ }
+}

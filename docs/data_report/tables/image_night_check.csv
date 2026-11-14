@@ -1,0 +1,117 @@
+﻿set,rank,pano_id,street_id,split,brightness_stored,brightness_recomputed_from_thumb,fetched
+rejected_night,1,7400705850015392,Hồng Bàng,val,27,26.8612,True
+rejected_night,2,1868408783589088,Hồng Bàng,val,31,30.6458,True
+rejected_night,3,1822539634879662,Hồng Bàng,val,34,34.0009,True
+rejected_night,4,741074147873781,Hồng Bàng,val,34,34.1736,True
+rejected_night,5,1807320399737263,Hồng Bàng,val,35,35.0897,True
+rejected_night,6,1136156327693107,Hồng Bàng,val,37,37.4098,True
+rejected_night,7,958584762097784,Hồng Bàng,val,37,36.5002,True
+rejected_night,8,7469659279794895,Hồng Bàng,val,38,38.0108,True
+rejected_night,9,935452081402688,Hồng Bàng,val,38,38.1246,True
+rejected_night,10,7605177189544619,Hồng Bàng,val,39,39.1104,True
+rejected_night,11,247336068401458,Hồng Bàng,val,40,40.3847,True
+rejected_night,12,361440163528982,Hồng Bàng,val,40,39.9511,True
+rejected_night,13,447648554599376,Hồng Bàng,val,40,40.1582,True
+rejected_night,14,966917475094668,Hồng Bàng,val,40,39.743,True
+rejected_night,15,1590485771524224,Hồng Bàng,val,41,41.2638,True
+rejected_night,16,1827084077736695,Hồng Bàng,val,41,40.7747,True
+rejected_night,17,3905715326323425,Hồng Bàng,val,41,41.1867,True
+rejected_night,18,2207115286302059,Hồng Bàng,val,42,41.6228,True
+rejected_night,19,334760015725877,Nguyễn Thị Minh Khai,train,42,41.8093,True
+rejected_night,20,1104415700766878,Hồng Bàng,val,43,43.2649,True
+rejected_night,21,1425897668049536,Hồng Bàng,val,43,42.9148,True
+rejected_night,22,902545705008291,Hồng Bàng,val,43,43.4167,True
+rejected_night,23,1103918210816633,Hồng Bàng,val,44,44.1671,True
+rejected_night,24,1345588046098152,Nguyễn Thị Minh Khai,train,44,44.4743,True
+rejected_night,25,1613895402678724,Hồng Bàng,val,45,45.2797,True
+rejected_night,26,342935628780211,Hồng Bàng,val,46,45.5485,True
+rejected_night,27,381219304896047,Hồng Bàng,val,47,46.7245,True
+rejected_night,28,454287460374461,Hồng Bàng,val,47,47.1251,True
+rejected_night,29,655820029321659,Hải Thượng Lãn Ông,train,47,47.2723,True
+rejected_night,30,400073582982823,Hồng Bàng,val,48,47.6686,True
+rejected_night,31,658066892833260,Hải Thượng Lãn Ông,train,48,48.2289,True
+rejected_night,32,970275244483932,Hồng Bàng,val,48,48.0695,True
+rejected_night,33,599012025667151,Hải Thượng Lãn Ông,train,49,48.9507,True
+rejected_night,34,829712625370466,Nguyễn Thị Minh Khai,train,49,49.4865,True
+rejected_night,35,397767946472825,Hồng Bàng,val,50,49.5664,True
+rejected_night,36,1278242429442918,Hải Thượng Lãn Ông,train,51,51.108,True
+rejected_night,37,319059434529353,Hồng Bàng,val,53,52.8383,True
+rejected_night,38,623897206337400,Hải Thượng Lãn Ông,train,56,56.4685,True
+rejected_night,39,932425618155141,Hải Thượng Lãn Ông,train,56,55.5714,True
+rejected_night,40,823468806288611,Hồng Bàng,val,59,58.9143,True
+rejected_night,41,398029249815935,Hồng Bàng,val,61,60.906,True
+rejected_night,42,655506116420018,Hải Thượng Lãn Ông,train,64,63.9401,True
+rejected_night,43,644779941005100,Lý Thường Kiệt,test,68,68.2628,True
+rejected_night,44,692559242391468,Nguyễn Trãi,train,68,68.3799,True
+rejected_night,45,685461416926642,Hải Thượng Lãn Ông,train,69,68.5015,True
+rejected_night,46,199731452633390,Hải Thượng Lãn Ông,train,72,71.9992,True
+rejected_night,47,1505791456857086,Nguyễn Kiệm#0,train,73,73.439,True
+rejected_night,48,588076936779842,Hải Thượng Lãn Ông,train,73,72.9282,True
+rejected_night,49,224511267132121,Hải Thượng Lãn Ông,train,76,75.6699,True
+rejected_night,50,697975368828032,Nguyễn Trãi,train,77,77.189,True
+rejected_night,51,182680138064351,Hải Thượng Lãn Ông,train,79,79.337,True
+rejected_night,52,575086981443615,Hải Thượng Lãn Ông,train,79,78.785,True
+rejected_night,53,756089669838347,Hồng Bàng,val,80,80.3294,True
+rejected_night,54,725479216213847,Nguyễn Thị Minh Khai,train,84,84.3271,True
+rejected_night,55,1423242434967685,Lê Văn Sỹ,train,86,85.7003,True
+rejected_night,56,570315431949117,Nguyễn Trãi,train,87,87.4915,True
+rejected_night,57,1310667752904683,Nguyễn Trãi,train,89,89.0253,True
+rejected_night,58,1740416006484907,Lê Văn Sỹ,train,89,88.7132,True
+kept_lowest,1,135125733026284,Hai Bà Trưng,test,91,90.8847,True
+kept_lowest,2,1392720944650994,Nguyễn Đình Chiểu#0,val,91,90.917,True
+kept_lowest,3,5982149638548224,Lý Thường Kiệt,test,91,90.7743,True
+kept_lowest,4,997317918009259,Nơ Trang Long,test,92,91.8369,True
+kept_lowest,5,759692316231869,Hồng Bàng,val,93,93.2226,True
+kept_lowest,6,6378935538869094,Nguyễn Trãi,train,94,93.9952,True
+kept_lowest,7,279609048033794,Nguyễn Trãi,train,95,95.3746,True
+kept_lowest,8,894201828403991,Trần Phú,test,95,95.173,True
+kept_lowest,9,295547273250937,Hai Bà Trưng,test,96,95.6853,True
+kept_lowest,10,3675823152688863,Nguyễn Trãi,train,97,97.1306,True
+kept_lowest,11,643251194297123,Lý Thường Kiệt,test,97,97.4506,True
+kept_lowest,12,937718670791868,Nguyễn Trãi,train,97,97.3445,True
+kept_lowest,13,1014429699829082,Phan Đăng Lưu,train,98,97.6465,True
+kept_lowest,14,1184131319507622,Hồng Bàng,val,98,97.6521,True
+kept_lowest,15,1360941394796832,Nguyễn Thị Minh Khai,train,98,97.7722,True
+kept_lowest,16,400028459221225,Nguyễn Thị Minh Khai,train,98,97.9594,True
+kept_lowest,17,455485110216448,Lê Văn Sỹ,train,98,98.2398,True
+kept_lowest,18,614041627332257,Nguyễn Kiệm#0,train,98,98.172,True
+kept_lowest,19,926827985081392,Nguyễn Thị Minh Khai,train,98,97.7128,True
+kept_lowest,20,1112301569728566,Nguyễn Trãi,train,99,99.174,True
+kept_lowest,21,1271274756923320,Nguyễn Trãi,train,99,99.1575,True
+kept_lowest,22,193443587110113,Nguyễn Đình Chiểu#0,val,99,98.6369,True
+kept_lowest,23,408935188136552,Cách Mạng Tháng Tám#0,train,99,99.2782,True
+kept_lowest,24,1281458779237984,Điện Biên Phủ#1,train,100,100.445,True
+kept_lowest,25,2022001344810733,Nguyễn Trãi,train,100,100.101,True
+kept_lowest,26,266271962625659,Pasteur,train,100,100.274,True
+kept_lowest,27,414219558027858,Hồng Bàng,val,100,99.7547,True
+kept_lowest,28,902564624360412,Lý Thường Kiệt,test,100,99.6368,True
+kept_lowest,29,1375807166685265,Nơ Trang Long,test,101,100.586,True
+kept_lowest,30,1601129630408954,Lý Thường Kiệt,test,101,100.791,True
+kept_lowest,31,278989148369665,Nguyễn Đình Chiểu#0,val,103,103.13,True
+kept_lowest,32,335570695733892,Lê Văn Sỹ,train,103,102.679,True
+kept_lowest,33,2070420900024738,Điện Biên Phủ#1,train,104,104.211,True
+kept_lowest,34,567368195533618,Nguyễn Trãi,train,104,103.686,True
+kept_lowest,35,685920447076373,Cách Mạng Tháng Tám#0,train,104,103.727,True
+kept_lowest,36,910104477242210,Nguyễn Đình Chiểu#0,val,104,103.753,True
+kept_lowest,37,1656506151499390,Nguyễn Thị Minh Khai,train,105,105.083,True
+kept_lowest,38,231106493299174,Nguyễn Đình Chiểu#0,val,105,105.392,True
+kept_lowest,39,619202947015432,Nguyễn Trãi,train,105,105.054,True
+kept_lowest,40,662851972347631,Pasteur,train,105,104.83,True
+kept_lowest,41,1051229519446663,Nguyễn Đình Chiểu#0,val,106,105.91,True
+kept_lowest,42,1537917583692565,Điện Biên Phủ#1,train,106,106.045,True
+kept_lowest,43,292254406833685,Nguyễn Trãi,train,106,105.903,True
+kept_lowest,44,801867915184686,Lê Văn Sỹ,train,106,106.444,True
+kept_lowest,45,1346319315915095,Nguyễn Trãi,train,107,107.424,True
+kept_lowest,46,1367281700612344,Lê Văn Sỹ,train,107,107.099,True
+kept_lowest,47,3538432709763801,Nguyễn Đình Chiểu#0,val,107,107.021,True
+kept_lowest,48,355250347017181,Nguyễn Đình Chiểu#0,val,107,107.342,True
+kept_lowest,49,862634315221861,Nguyễn Thị Minh Khai,train,107,106.79,True
+kept_lowest,50,1962482550767069,Nguyễn Đình Chiểu#0,val,108,108.274,True
+kept_lowest,51,279441217863211,Nguyễn Đình Chiểu#0,val,108,108.178,True
+kept_lowest,52,611636850916807,Hai Bà Trưng,test,108,108.01,True
+kept_lowest,53,1360147364585326,Phan Đăng Lưu,train,109,108.626,True
+kept_lowest,54,260332470330727,Nguyễn Đình Chiểu#0,val,109,109.425,True
+kept_lowest,55,327773863679452,Hai Bà Trưng,test,109,108.687,True
+kept_lowest,56,573136768203186,Nguyễn Thị Minh Khai,train,109,108.765,True
+kept_lowest,57,643782680939197,Lý Thường Kiệt,test,109,109.136,True
+kept_lowest,58,772834811083277,Trần Hưng Đạo,train,109,109.078,True

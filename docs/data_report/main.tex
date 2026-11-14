@@ -1,0 +1,152 @@
+% ==============================================================================
+% BÁO CÁO VỀ DỮ LIỆU -- Nhóm 11, CSC14005, FIT HCMUS
+% Biên dịch bằng XeLaTeX: sh make.sh  (hoặc xem README.md trong thư mục này)
+% Dùng lại fit_hcmus.sty và logo của đề cương (../proposal/latex/).
+% ==============================================================================
+\documentclass[12pt,a4paper]{article}
+\usepackage{scrextend}
+\changefontsizes{13pt}
+
+\makeatletter
+\def\input@path{{../proposal/latex/}}
+\makeatother
+\usepackage{fit_hcmus}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{subcaption}
+\graphicspath{{../proposal/latex/}{figures/}}
+\setlength{\emergencystretch}{3em}
+
+% ---------------------------------------------------------------- thông tin
+\courseid{CSC14005}
+\coursename{Nhập môn Học máy}
+\reportsubtitle{BÁO CÁO VỀ DỮ LIỆU}
+\title{PHÂN LOẠI TÌNH TRẠNG CHẶN LỐI ĐI TRÊN VỈA HÈ TP.HCM TỪ ẢNH ĐƯỜNG PHỐ}
+\instructor{TS. Bùi Tiến Lên}
+\classid{24KHMT02}
+\academicyear{Học kỳ I, năm học 2026 - 2027}
+\groupid{11}
+\author{
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{cc}
+        \textbf{Họ và tên} & \textbf{MSSV} \\
+        Lê Nguyễn Quốc Học & 24127044 \\
+        Bùi Thị Bích Loan & 24127072 \\
+        Nguyễn Hữu Gia Minh & 24127078 \\
+        Nguyễn Lê Hoàng Khải & 24127408 \\
+        Trần Hoàng Phúc & 24127505
+    \end{tabular}
+}
+
+% ---------------------------------------------------------------- tiếng Việt cho khung của fit_hcmus.sty
+\makeatletter
+\renewcommand{\tableofcontents}{\fit@listheading{Mục lục}\@starttoc{toc}}
+\renewcommand{\listoftables}{\vspace{14pt}\fit@listheading{Danh sách bảng}\@starttoc{lot}}
+\renewcommand{\listoffigures}{\vspace{14pt}\fit@listheading{Danh sách hình}\@starttoc{lof}}
+\titlecontents{figure}[3.8em]{}{\contentslabel{2.3em}}{}{\titlerule*[0.75em]{.}\contentspage}
+\renewcommand{\refname}{Tài liệu tham khảo}
+\renewcommand{\figurename}{Hình}
+\renewcommand{\tablename}{Bảng}
+\fancypagestyle{fancy}{%
+  \fancyhf{}%
+  \fancyhead[L]{\small\bfseries\color{fitdark}\@courseid: \@coursename}%
+  \fancyhead[R]{\small\bfseries\color{fitprimary}Khoa CNTT, ĐH KHTN TP.HCM}%
+  \fancyfoot[L]{\small\itshape\color{fitgray}Báo cáo về dữ liệu -- Nhóm \@groupid}%
+  \fancyfoot[R]{\small\bfseries\color{fitdark}Trang \thepage/\pageref{LastPage}}%
+  \renewcommand{\headrulewidth}{0.6pt}%
+  \renewcommand{\footrulewidth}{0.5pt}%
+  \renewcommand{\footruleskip}{12.4pt}%
+}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[R]{\raisebox{8pt}[0pt][0pt]{\small\bfseries\color{fitdark}Trang \thepage}}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+\renewcommand{\makecoverpage}{%
+  \begin{titlepage}
+  \setstretch{1.0}%
+  \centering
+  \vspace*{\dimexpr-0.9cm+3bp\relax}
+  \begin{adjustwidth}{-0.5cm}{0.5cm}
+  \centering
+  {\fontsize{13pt}{16pt}\selectfont\bfseries ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\par}
+  \vspace{4.2pt}
+  {\fontsize{14pt}{16pt}\selectfont\bfseries\color{fitprimary} TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN\par}
+  \vspace{1.9pt}
+  {\fontsize{13pt}{16pt}\selectfont\bfseries\color{fitaccent} KHOA CÔNG NGHỆ THÔNG TIN\par}
+  \vspace{8.3pt}
+  {\color{fitaccent}\rule{10.4cm}{1.5pt}\par}
+  \vspace{16.9pt}
+  \includegraphics[width=4.4cm]{images/logo_hcmus.png}\par
+  \vspace{22.8pt}
+  {\fontsize{13pt}{16pt}\selectfont\bfseries MÔN HỌC: \@coursename\ (\@courseid)\par}
+  \vspace{5pt}
+  {\fontsize{14pt}{16pt}\selectfont\bfseries\color{fitdark}\@reportsubtitle\par}
+  \vspace{8.1pt}
+  \begin{tcolorbox}[enhanced,width=\linewidth,arc=5.5pt,boxrule=1.5pt,
+      colframe=fitprimary,colback=white,halign=center,valign=center,
+      top=12pt,bottom=12pt,left=8pt,right=8pt]
+    \fontsize{17pt}{21pt}\selectfont\bfseries\color{fitprimary}\@title
+  \end{tcolorbox}
+  \vspace{-2.1pt}
+  {\fontsize{13pt}{16pt}\selectfont
+   \renewcommand{\arraystretch}{1.7}%
+   \begin{tabular}{@{}l@{\hspace{1.2em}}l@{}}
+     \textbf{Giảng viên:} & \@instructor \\
+     \textbf{Lớp:} & \@classid \\
+     \textbf{Thời gian:} & \@academicyear \\
+     \textbf{Nhóm:} & \@groupid \\
+     \textbf{Sinh viên:} &
+   \end{tabular}\par}
+  \vspace{2pt}
+  {\fontsize{13pt}{16pt}\selectfont\setstretch{1.35}\@author\par}
+  \end{adjustwidth}
+  \vfill
+  \end{titlepage}%
+}
+\makeatother
+
+% ---------------------------------------------------------------- lệnh riêng của báo cáo
+% \src{...}: nguồn của số liệu (file hoặc script), in nhỏ và xám ngay dưới bảng/hình/đoạn văn.
+\newcommand{\src}[1]{{\par\noindent\footnotesize\color{fitgray}\textit{Nguồn:} #1\par}}
+\newcommand{\f}[1]{\path{#1}}                      % đường dẫn file, cho phép ngắt dòng
+\newcommand{\lab}[1]{\textsf{#1}}                  % tên nhãn, tên cột
+\newcommand{\cc}{© Mapillary contributors, CC BY-SA 4.0}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\begin{document}
+
+\makecoverpage
+\pagestyle{plain}
+\pagenumbering{roman}
+\begingroup
+    \setstretch{1.0}
+    \setlength{\parskip}{0pt}
+    \small
+    \tableofcontents
+    \vspace{1.5em}
+    \listoftables
+    \vspace{0.5em}
+    \listoffigures
+\endgroup
+\newpage
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\small
+
+\input{sections/01_gioithieu}
+\input{sections/02_thuthap}
+\input{sections/03_tienxuly_chatluong}
+\input{sections/04_eda}
+\input{sections/05_ketluan}
+
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\appendix
+\input{sections/A_truy_nguon}
+
+\end{document}

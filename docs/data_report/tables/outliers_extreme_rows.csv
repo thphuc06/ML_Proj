@@ -1,0 +1,161 @@
+﻿variable,group,item,street_id,split,label,value,is_outlier,creator,captured_at,parent_pano_id
+brightness,main_train,37942f88,Nguyễn Trãi,train,I,94.0,True,phoenix_mapping_front,2023-08-10 15:15:06.245+07:00,6378935538869094
+brightness,main_train,66e47885,Nguyễn Trãi,train,I,95.0,True,phoenix_mapping_front,2023-08-19 23:08:53.642+07:00,279609048033794
+brightness,main_train,8978bbc7,Nguyễn Trãi,train,0,97.0,True,phoenix_mapping_front,2023-06-15 15:15:34.502+07:00,937718670791868
+brightness,main_train,a97d7a43,Nguyễn Trãi,train,I,97.0,True,phoenix_mapping_front,2023-08-19 23:09:22.296+07:00,3675823152688863
+brightness,main_train,24cd1f4f,Nguyễn Thị Minh Khai,train,0,98.0,True,phoenix_mapping_front,2023-10-06 15:31:44.079+07:00,1360941394796832
+brightness,main_train,2bbda355,Phan Đăng Lưu,train,I,231.0,True,phoenix_mapping_front,2023-05-25 15:26:24.641+07:00,639474977610877
+brightness,main_train,09e6c3f5,Phan Đăng Lưu,train,I,230.0,True,phoenix_mapping_front,2023-05-25 15:26:22.013+07:00,570872924932202
+brightness,main_train,d5760cd8,Cách Mạng Tháng Tám#0,train,I,218.0,False,phoenix_mapping_front,2023-05-04 00:45:10.036+07:00,1278134109808463
+brightness,main_train,e45c1672,Cách Mạng Tháng Tám#0,train,0,213.0,False,phoenix_mapping_front,2023-05-04 00:41:01.830+07:00,1298897217427155
+brightness,main_train,e5f24634,Điện Biên Phủ#1,train,I,213.0,False,bemaps3_sg,2024-12-18 16:12:21.043+07:00,586559430742994
+brightness,main_val,d1f33b66,Nguyễn Đình Chiểu#0,val,I,91.0,False,phoenix_mapping_front,2023-10-11 19:47:38.725+07:00,1392720944650994
+brightness,main_val,7d674dd0,Hồng Bàng,val,0,93.0,False,bemaps3_sg,2024-04-18 00:47:20.906+07:00,759692316231869
+brightness,main_val,1e7996ea,Hồng Bàng,val,0,98.0,False,bemaps3_sg,2024-04-18 00:46:02.661+07:00,1184131319507622
+brightness,main_val,df08497c,Nguyễn Đình Chiểu#0,val,I,99.0,False,phoenix_mapping_front,2023-10-11 19:48:04.710+07:00,193443587110113
+brightness,main_val,1ee2fd87,Hồng Bàng,val,I,100.0,False,bemaps3_sg,2024-04-18 00:45:54.486+07:00,414219558027858
+brightness,main_val,c3c68a0c,Hồng Bàng,val,0,201.0,False,phoenixmap_front,2023-04-30 16:32:44.837+07:00,791127145512844
+brightness,main_val,a7e59643,Nguyễn Đình Chiểu#0,val,I,199.0,False,phoenix_mapping_front,2023-05-31 00:58:22.836+07:00,232596946160362
+brightness,main_val,37b5423a,Hồng Bàng,val,I,196.0,False,bemaps3_sg,2023-12-29 19:08:58.098+07:00,685427817009360
+brightness,main_val,bda76a58,Nguyễn Đình Chiểu#0,val,I,194.0,False,bemaps3_sg,2024-01-13 15:20:32.272+07:00,330432936630408
+brightness,main_val,eba7cf47,Hồng Bàng,val,1,194.0,False,bemaps3_sg,2023-12-29 19:07:38.268+07:00,221006440979999
+brightness,main_test,e980fe0a,Hai Bà Trưng,test,0,91.0,True,phoenix_mapping_front,2023-10-17 23:56:33.817+07:00,135125733026284
+brightness,main_test,f2d974f2,Lý Thường Kiệt,test,0,91.0,True,phoenix_mapping_front,2023-05-02 16:05:21.977+07:00,5982149638548224
+brightness,main_test,7d3aabeb,Nơ Trang Long,test,I,92.0,True,bemaps3_sg,2023-11-22 15:34:07.738+07:00,997317918009259
+brightness,main_test,bf5e9c96,Trần Phú,test,I,95.0,True,phoenix_mapping_front,2023-10-11 15:35:19.720+07:00,894201828403991
+brightness,main_test,1e292335,Hai Bà Trưng,test,1,96.0,True,phoenix_mapping_front,2023-10-17 23:55:05.478+07:00,295547273250937
+brightness,main_test,0ff46e8e,Hai Bà Trưng,test,0,249.0,True,phoenix_mapping_front,2023-05-24 15:36:12.484+07:00,209907928534730
+brightness,main_test,7b71d684,Hai Bà Trưng,test,0,241.0,True,phoenix_mapping_front,2023-05-24 15:35:49.128+07:00,1357855105071393
+brightness,main_test,c92a5527,Hai Bà Trưng,test,0,240.0,True,phoenix_mapping_front,2023-05-24 15:37:32.314+07:00,6213559308756852
+brightness,main_test,e9896c86,Hai Bà Trưng,test,0,240.0,True,phoenix_mapping_front,2023-05-24 15:36:22.536+07:00,947599676490342
+brightness,main_test,2dbd4220,Hai Bà Trưng,test,I,239.0,True,phoenix_mapping_front,2023-05-24 15:36:48.062+07:00,578889784388635
+brightness,pilot,4debcdcf,Pasteur,train,I,94.0,True,phoenix_mapping_front,2023-06-02 15:00:41.487000+07:00,573019014941681
+brightness,pilot,450feb53,Pasteur,train,I,97.0,True,phoenix_mapping_front,2023-06-02 14:21:39.905000+07:00,155356517417990
+brightness,pilot,0d6b50e9,Pasteur,train,I,107.0,True,phoenixmap_front,2023-05-01 15:15:18.011000+07:00,3266548966969696
+brightness,pilot,990ba148,Phan Đăng Lưu,train,1,112.0,True,bemaps3_sg,2023-11-22 18:56:51.136000+07:00,1412300223016611
+brightness,pilot,42e531e0,Pasteur,train,I,112.0,True,phoenixmap_front,2023-05-01 15:15:13.089000+07:00,786223269786650
+brightness,pilot,d3172b5b,Phan Đăng Lưu,train,0,236.0,True,phoenix_mapping_front,2023-05-25 15:18:52.981000+07:00,205888918936873
+brightness,pilot,0d6a8e4c,Phan Đăng Lưu,train,I,235.0,True,phoenix_mapping_front,2023-05-25 15:26:45.078000+07:00,169612805807746
+brightness,pilot,609b86be,Phan Đăng Lưu,train,I,228.0,True,phoenix_mapping_front,2023-05-25 15:26:18.885000+07:00,264848419284780
+brightness,pilot,b0c458b8,Lê Văn Sỹ,train,I,201.0,False,bemaps3_sg,2024-01-06 18:33:11.206000+07:00,350726561085508
+brightness,pilot,efe0e9a3,Phan Đăng Lưu,train,I,201.0,False,bemaps3_sg,2023-11-22 18:40:32.405000+07:00,890798469227013
+brightness,extra_top_score,322da08e,Hoàng Sa,train,1,91.0,True,phoenix_mapping_front,2023-09-26 16:48:43.240000+07:00,335078582250669
+brightness,extra_top_score,ed9b7069,Hoàng Sa,train,0,94.0,True,phoenix_mapping_front,2023-09-26 16:47:40.093000+07:00,224808617260578
+brightness,extra_top_score,22fed5d6,Phan Xích Long,train,0,95.0,True,bemaps3_sg,2023-10-31 12:51:22.215000+07:00,6853230911438204
+brightness,extra_top_score,5aede7ee,Bình Đông,train,I,96.0,True,phoenix_mapping_front,2023-09-26 15:54:04.515000+07:00,3387732358206435
+brightness,extra_top_score,9b948aed,Hoàng Sa,train,0,97.0,True,phoenix_mapping_front,2023-09-26 16:45:09.693000+07:00,272121355728606
+brightness,extra_top_score,2a9dabb4,Lê Văn Duyệt,train,0,239.0,True,phoenix_mapping_front,2023-05-25 15:24:02.290000+07:00,1464781980998595
+brightness,extra_top_score,16dc9826,Xô Viết Nghệ Tĩnh#1,train,1,234.0,True,phoenix_mapping_front,2023-05-04 16:30:27.531000+07:00,1132299508163552
+brightness,extra_top_score,9e22fac0,Xô Viết Nghệ Tĩnh#1,train,I,232.0,True,phoenix_mapping_front,2023-05-04 16:32:10.622000+07:00,196057466605861
+brightness,extra_top_score,ea12c8d1,Xô Viết Nghệ Tĩnh#1,train,0,229.0,True,phoenix_mapping_front,2023-05-04 16:30:24.945000+07:00,3622021214699206
+brightness,extra_top_score,e7d32a56,Xô Viết Nghệ Tĩnh#1,train,0,227.0,True,phoenix_mapping_front,2023-05-04 16:30:20.983000+07:00,761002018759837
+brightness,extra_random,9101b11f,Tôn Thất Thuyết,train,0,94.0,True,phoenix_mapping_front,2023-06-07 20:32:27.264000+07:00,2329780923898277
+brightness,extra_random,ca540036,Hoàng Sa,train,0,102.0,True,phoenix_mapping_front,2023-09-26 16:45:05.355000+07:00,282341588022273
+brightness,extra_random,6ddc1ee9,Trường Sa#0,train,0,106.0,True,bemaps3_sg,2023-12-05 17:55:00.200000+07:00,891669972483673
+brightness,extra_random,98ff1caa,Trường Sa#0,train,I,107.0,True,bemaps3_sg,2023-12-05 18:05:58.994000+07:00,2688939244611286
+brightness,extra_random,069c77d1,Tùng Thiện Vương,train,0,109.0,True,bemaps3_sg,2023-12-20 14:46:17.672000+07:00,770144058286854
+brightness,extra_random,e3a70b40,Lê Văn Duyệt,train,I,238.0,True,phoenix_mapping_front,2023-05-25 15:25:32.672000+07:00,265993242660425
+brightness,extra_random,15886b93,Xô Viết Nghệ Tĩnh#0,train,0,227.0,True,phoenix_mapping_front,2023-05-04 16:11:24.128000+07:00,625540812781378
+brightness,extra_random,86149fd3,Xô Viết Nghệ Tĩnh#0,train,0,226.0,True,phoenix_mapping_front,2023-05-04 16:11:36.432000+07:00,616082020394093
+brightness,extra_random,d3e3f8bd,Hoàng Sa,train,I,221.0,True,phoenix_mapping_front,2023-05-11 22:39:53.467000+07:00,2661689743973549
+brightness,extra_random,d09d6706,Xô Viết Nghệ Tĩnh#1,train,0,215.0,False,phoenix_mapping_front,2023-05-04 16:32:20.882000+07:00,771523831048663
+brightness,main_all,d1f33b66,Nguyễn Đình Chiểu#0,val,I,91.0,True,phoenix_mapping_front,2023-10-11 19:47:38.725+07:00,1392720944650994
+brightness,main_all,e980fe0a,Hai Bà Trưng,test,0,91.0,True,phoenix_mapping_front,2023-10-17 23:56:33.817+07:00,135125733026284
+brightness,main_all,f2d974f2,Lý Thường Kiệt,test,0,91.0,True,phoenix_mapping_front,2023-05-02 16:05:21.977+07:00,5982149638548224
+brightness,main_all,7d3aabeb,Nơ Trang Long,test,I,92.0,True,bemaps3_sg,2023-11-22 15:34:07.738+07:00,997317918009259
+brightness,main_all,7d674dd0,Hồng Bàng,val,0,93.0,True,bemaps3_sg,2024-04-18 00:47:20.906+07:00,759692316231869
+brightness,main_all,0ff46e8e,Hai Bà Trưng,test,0,249.0,True,phoenix_mapping_front,2023-05-24 15:36:12.484+07:00,209907928534730
+brightness,main_all,7b71d684,Hai Bà Trưng,test,0,241.0,True,phoenix_mapping_front,2023-05-24 15:35:49.128+07:00,1357855105071393
+brightness,main_all,c92a5527,Hai Bà Trưng,test,0,240.0,True,phoenix_mapping_front,2023-05-24 15:37:32.314+07:00,6213559308756852
+brightness,main_all,e9896c86,Hai Bà Trưng,test,0,240.0,True,phoenix_mapping_front,2023-05-24 15:36:22.536+07:00,947599676490342
+brightness,main_all,2dbd4220,Hai Bà Trưng,test,I,239.0,True,phoenix_mapping_front,2023-05-24 15:36:48.062+07:00,578889784388635
+brightness,extra_all,322da08e,Hoàng Sa,train,1,91.0,True,phoenix_mapping_front,2023-09-26 16:48:43.240000+07:00,335078582250669
+brightness,extra_all,ed9b7069,Hoàng Sa,train,0,94.0,True,phoenix_mapping_front,2023-09-26 16:47:40.093000+07:00,224808617260578
+brightness,extra_all,9101b11f,Tôn Thất Thuyết,train,0,94.0,True,phoenix_mapping_front,2023-06-07 20:32:27.264000+07:00,2329780923898277
+brightness,extra_all,22fed5d6,Phan Xích Long,train,0,95.0,True,bemaps3_sg,2023-10-31 12:51:22.215000+07:00,6853230911438204
+brightness,extra_all,5aede7ee,Bình Đông,train,I,96.0,True,phoenix_mapping_front,2023-09-26 15:54:04.515000+07:00,3387732358206435
+brightness,extra_all,2a9dabb4,Lê Văn Duyệt,train,0,239.0,True,phoenix_mapping_front,2023-05-25 15:24:02.290000+07:00,1464781980998595
+brightness,extra_all,e3a70b40,Lê Văn Duyệt,train,I,238.0,True,phoenix_mapping_front,2023-05-25 15:25:32.672000+07:00,265993242660425
+brightness,extra_all,16dc9826,Xô Viết Nghệ Tĩnh#1,train,1,234.0,True,phoenix_mapping_front,2023-05-04 16:30:27.531000+07:00,1132299508163552
+brightness,extra_all,9e22fac0,Xô Viết Nghệ Tĩnh#1,train,I,232.0,True,phoenix_mapping_front,2023-05-04 16:32:10.622000+07:00,196057466605861
+brightness,extra_all,ea12c8d1,Xô Viết Nghệ Tĩnh#1,train,0,229.0,True,phoenix_mapping_front,2023-05-04 16:30:24.945000+07:00,3622021214699206
+dist_to_street_m,main_train,0d9a9eda,Trần Hưng Đạo,train,0,0.0,False,phoenixmap_front,2023-04-30 15:29:59.547+07:00,185390271083923
+dist_to_street_m,main_train,107a6c2c,Nguyễn Thị Minh Khai,train,0,0.0,False,bemaps3_sg,2024-01-13 13:02:12.584+07:00,407753901698079
+dist_to_street_m,main_train,1c129812,Lê Văn Sỹ,train,0,0.0,False,bemaps3_sg,2016-01-01 07:19:31.736+07:00,426072223493234
+dist_to_street_m,main_train,26c2b432,Trần Hưng Đạo,train,I,0.0,False,bemaps3_sg,2024-04-18 21:44:06.906+07:00,748927060743529
+dist_to_street_m,main_train,41761453,Trần Hưng Đạo,train,0,0.0,False,phoenixmap_front,2023-04-30 15:31:01.109+07:00,1374538193391829
+dist_to_street_m,main_train,98f270db,Pasteur,train,I,20.0,True,phoenix_mapping_front,2023-06-02 14:21:28.060+07:00,268911522329991
+dist_to_street_m,main_train,61425595,Trần Hưng Đạo,train,I,19.8,True,phoenixmap_front,2023-04-30 16:32:08.601+07:00,798302064960152
+dist_to_street_m,main_train,d5760cd8,Cách Mạng Tháng Tám#0,train,I,19.7,True,phoenix_mapping_front,2023-05-04 00:45:10.036+07:00,1278134109808463
+dist_to_street_m,main_train,d27750ae,Hải Thượng Lãn Ông,train,I,19.4,True,phoenix_mapping_front,2023-08-20 00:13:34.917+07:00,273727835386500
+dist_to_street_m,main_train,d405356d,Cách Mạng Tháng Tám#0,train,I,19.4,True,phoenix_mapping_front,2023-10-11 20:40:08.209+07:00,254077337613566
+dist_to_street_m,main_val,25b7accc,Hồng Bàng,val,1,0.0,False,phoenix_mapping_front,2024-01-30 16:27:30.995+07:00,1503524423542327
+dist_to_street_m,main_val,34179e20,Võ Văn Tần,val,0,0.0,False,bemaps3_sg,2024-05-11 17:35:43.053+07:00,261451153728783
+dist_to_street_m,main_val,4387a2f0,Nguyễn Đình Chiểu#0,val,0,0.0,False,phoenix_mapping_front,2023-05-03 16:25:04.134+07:00,1597836750727252
+dist_to_street_m,main_val,4b76f715,Võ Văn Tần,val,I,0.0,False,bemaps3_sg,2024-05-11 17:36:25.804+07:00,1177327520370562
+dist_to_street_m,main_val,671f8cf5,Võ Văn Tần,val,0,0.0,False,phoenix_mapping_front,2023-05-31 00:57:35.831+07:00,177334311656637
+dist_to_street_m,main_val,6572543e,Võ Văn Tần,val,I,18.4,True,phoenix_mapping_front,2023-05-31 00:47:01.885+07:00,276290354786304
+dist_to_street_m,main_val,3846ec2e,Võ Văn Tần,val,I,17.2,True,phoenix_mapping_front,2023-05-31 00:46:53.502+07:00,1621623421690693
+dist_to_street_m,main_val,39b50370,Nguyễn Đình Chiểu#0,val,0,16.9,True,phoenix_mapping_front,2023-05-03 16:24:49.901+07:00,1436790767109907
+dist_to_street_m,main_val,ddeb53da,Võ Văn Tần,val,I,16.4,True,phoenix_mapping_front,2023-05-31 00:46:49.956+07:00,778233090504014
+dist_to_street_m,main_val,94ad9175,Nguyễn Đình Chiểu#0,val,0,15.6,True,phoenix_mapping_front,2023-05-03 16:24:44.979+07:00,620730189647778
+dist_to_street_m,main_test,17cd9818,Lý Thường Kiệt,test,I,0.0,False,bemaps3_sg,2024-02-15 13:06:17.202+07:00,277642625363112
+dist_to_street_m,main_test,39024ee1,Lý Thường Kiệt,test,I,0.0,False,phoenix_mapping_front,2023-05-02 16:08:20.322+07:00,252786720532354
+dist_to_street_m,main_test,4f8da0c6,Nơ Trang Long,test,0,0.0,False,bemaps3_sg,2024-01-05 17:43:41.190+07:00,724422976077410
+dist_to_street_m,main_test,555f6b1c,Lý Thường Kiệt,test,I,0.0,False,bemaps3_sg,2024-02-03 13:19:55.385+07:00,339281735779620
+dist_to_street_m,main_test,86beae33,Lý Thường Kiệt,test,0,0.0,False,bemaps3_sg,2023-11-19 18:06:24.566+07:00,875942677539719
+dist_to_street_m,main_test,98f0f9ee,Hai Bà Trưng,test,I,19.6,True,bemaps3_sg,2024-05-11 16:01:21.754+07:00,1175214223607227
+dist_to_street_m,main_test,62fc9368,Lý Thường Kiệt,test,I,19.1,True,bemaps3_sg,2024-02-03 13:20:25.081+07:00,872139594668634
+dist_to_street_m,main_test,6a4bc755,Trần Phú,test,1,18.7,True,phoenix_mapping_front,2024-01-30 16:29:51.719+07:00,1093118585266486
+dist_to_street_m,main_test,c8c42243,Lý Thường Kiệt,test,0,18.7,True,bemaps3_sg,2023-11-17 18:47:47.905+07:00,1349628702331305
+dist_to_street_m,main_test,506aaf1a,Hai Bà Trưng,test,I,18.6,True,phoenix_mapping_front,2023-05-25 16:04:58.401+07:00,979881010091257
+dist_to_street_m,pilot,4e67f300,Pasteur,train,I,0.0,False,phoenix_mapping_front,2023-06-02 15:03:31.961000+07:00,783561833262924
+dist_to_street_m,pilot,2aa2bf1f,Pasteur,train,I,0.0,False,phoenixmap_front,2023-05-01 15:20:17.476000+07:00,565678189032251
+dist_to_street_m,pilot,deb834a4,Lê Văn Sỹ,train,I,0.0,False,phoenix_mapping_front,2023-08-17 14:59:17.125000+07:00,3650149321897465
+dist_to_street_m,pilot,d3172b5b,Phan Đăng Lưu,train,0,0.1,False,phoenix_mapping_front,2023-05-25 15:18:52.981000+07:00,205888918936873
+dist_to_street_m,pilot,fb8bf1f2,Pasteur,train,I,0.1,False,phoenix_mapping_front,2023-06-02 15:03:28.832000+07:00,784898543023263
+dist_to_street_m,pilot,8a596c31,Pasteur,train,I,17.0,True,phoenix_mapping_front,2023-06-02 14:21:25.099000+07:00,630773308684119
+dist_to_street_m,pilot,b04c2f9a,Pasteur,train,I,14.2,True,phoenix_mapping_front,2023-06-02 14:21:31.689000+07:00,1314774232767361
+dist_to_street_m,pilot,df503ad7,Pasteur,train,I,12.5,True,theonenetwork,2024-09-01 15:46:46.714000+07:00,1009506040918723
+dist_to_street_m,pilot,66f49fff,Pasteur,train,I,12.1,True,phoenix_mapping_front,2023-06-02 14:20:48.938000+07:00,1298832700726769
+dist_to_street_m,pilot,096e1fe5,Phan Đăng Lưu,train,I,9.5,False,bemaps3_sg,2024-01-05 17:40:02.305000+07:00,895169001931779
+dist_to_street_m,extra_top_score,d64d45b4,Ung Văn Khiêm,train,1,0.0,False,phoenix_mapping_front,2023-05-26 15:48:13.701000+07:00,1431258327650326
+dist_to_street_m,extra_top_score,1ce66e6e,Xóm Chiếu,train,1,0.0,False,phoenix_mapping_front,2023-06-07 20:32:46.826000+07:00,1396935740877608
+dist_to_street_m,extra_top_score,e99764f5,Nguyễn Duy#0,train,1,0.0,False,bemaps3_sg,2023-12-20 17:41:38.410000+07:00,24689245884023034
+dist_to_street_m,extra_top_score,b7b56b8c,Phan Văn Trị#0,train,1,0.0,False,bemaps3_sg,2016-01-01 07:35:17.670000+07:00,447083048173422
+dist_to_street_m,extra_top_score,3754d9e4,Lê Quang Định#0,train,I,0.0,False,bemaps3_sg,2023-10-31 12:50:57.482000+07:00,316179464688308
+dist_to_street_m,extra_top_score,51a5336f,Bùi Thị Xuân#1,train,I,19.9,True,phoenix_mapping_front,2023-05-01 16:02:05.827000+07:00,905934387150281
+dist_to_street_m,extra_top_score,7fbf4507,Trường Sơn#1,train,1,19.7,True,phoenix_mapping_front,2023-10-11 20:22:04.174000+07:00,839102131184586
+dist_to_street_m,extra_top_score,05e56495,Nguyễn Kim,train,I,18.7,True,phoenix_mapping_front,2023-06-03 14:12:14.357000+07:00,920317872364368
+dist_to_street_m,extra_top_score,2904ff2e,Bắc Hải,train,I,18.5,True,bemaps3_sg,2024-01-28 14:00:15.483000+07:00,1665280997342493
+dist_to_street_m,extra_top_score,805d499b,Bùi Đình Tuý#0,train,0,17.6,True,bemaps3_sg,2016-01-01 07:36:32.161000+07:00,2828689523948044
+dist_to_street_m,extra_random,84256745,Hoàng Sa,train,I,0.0,False,phoenix_mapping_front,2023-05-11 22:34:47.536000+07:00,218701520907303
+dist_to_street_m,extra_random,4502649e,Bình Đông,train,0,0.0,False,bemaps3_sg,2023-12-20 14:47:14.979000+07:00,768239251808016
+dist_to_street_m,extra_random,047b232e,Bình Đông,train,I,0.0,False,bemaps3_sg,2024-02-04 23:39:02.476000+07:00,7183479575100630
+dist_to_street_m,extra_random,b62883cb,Đào Duy Từ#0,train,0,0.0,False,phoenix_mapping_front,2023-05-02 23:51:42.565000+07:00,1229952901216727
+dist_to_street_m,extra_random,86a7e6d9,Bắc Hải,train,0,0.0,False,bemaps3_sg,2024-01-21 14:13:42.655000+07:00,757016959200123
+dist_to_street_m,extra_random,3f7dc312,Bành Văn Trân,train,I,19.8,True,bemaps3_sg,2024-01-21 13:03:43.957000+07:00,675371661427010
+dist_to_street_m,extra_random,c5dc54de,Hoàng Sa,train,I,16.7,True,bemaps3_sg,2024-04-28 13:08:18.543000+07:00,1375378893172859
+dist_to_street_m,extra_random,f04b2afc,Xô Viết Nghệ Tĩnh#1,train,I,16.5,True,bemaps3_sg,2024-06-13 14:58:07.809000+07:00,1209991446687281
+dist_to_street_m,extra_random,ed5415fe,Trường Sa#0,train,I,16.0,True,bemaps3_sg,2024-04-29 13:14:22.613000+07:00,1105157707418152
+dist_to_street_m,extra_random,fdd2a6aa,Triệu Quang Phục,train,1,15.5,True,phoenix_mapping_front,2023-06-03 14:13:26.012000+07:00,3539741339639083
+dist_to_street_m,main_all,0d9a9eda,Trần Hưng Đạo,train,0,0.0,False,phoenixmap_front,2023-04-30 15:29:59.547+07:00,185390271083923
+dist_to_street_m,main_all,107a6c2c,Nguyễn Thị Minh Khai,train,0,0.0,False,bemaps3_sg,2024-01-13 13:02:12.584+07:00,407753901698079
+dist_to_street_m,main_all,17cd9818,Lý Thường Kiệt,test,I,0.0,False,bemaps3_sg,2024-02-15 13:06:17.202+07:00,277642625363112
+dist_to_street_m,main_all,1c129812,Lê Văn Sỹ,train,0,0.0,False,bemaps3_sg,2016-01-01 07:19:31.736+07:00,426072223493234
+dist_to_street_m,main_all,25b7accc,Hồng Bàng,val,1,0.0,False,phoenix_mapping_front,2024-01-30 16:27:30.995+07:00,1503524423542327
+dist_to_street_m,main_all,98f270db,Pasteur,train,I,20.0,True,phoenix_mapping_front,2023-06-02 14:21:28.060+07:00,268911522329991
+dist_to_street_m,main_all,61425595,Trần Hưng Đạo,train,I,19.8,True,phoenixmap_front,2023-04-30 16:32:08.601+07:00,798302064960152
+dist_to_street_m,main_all,d5760cd8,Cách Mạng Tháng Tám#0,train,I,19.7,True,phoenix_mapping_front,2023-05-04 00:45:10.036+07:00,1278134109808463
+dist_to_street_m,main_all,98f0f9ee,Hai Bà Trưng,test,I,19.6,True,bemaps3_sg,2024-05-11 16:01:21.754+07:00,1175214223607227
+dist_to_street_m,main_all,d27750ae,Hải Thượng Lãn Ông,train,I,19.4,True,phoenix_mapping_front,2023-08-20 00:13:34.917+07:00,273727835386500
+dist_to_street_m,extra_all,d64d45b4,Ung Văn Khiêm,train,1,0.0,False,phoenix_mapping_front,2023-05-26 15:48:13.701000+07:00,1431258327650326
+dist_to_street_m,extra_all,84256745,Hoàng Sa,train,I,0.0,False,phoenix_mapping_front,2023-05-11 22:34:47.536000+07:00,218701520907303
+dist_to_street_m,extra_all,4502649e,Bình Đông,train,0,0.0,False,bemaps3_sg,2023-12-20 14:47:14.979000+07:00,768239251808016
+dist_to_street_m,extra_all,1ce66e6e,Xóm Chiếu,train,1,0.0,False,phoenix_mapping_front,2023-06-07 20:32:46.826000+07:00,1396935740877608
+dist_to_street_m,extra_all,047b232e,Bình Đông,train,I,0.0,False,bemaps3_sg,2024-02-04 23:39:02.476000+07:00,7183479575100630
+dist_to_street_m,extra_all,51a5336f,Bùi Thị Xuân#1,train,I,19.9,True,phoenix_mapping_front,2023-05-01 16:02:05.827000+07:00,905934387150281
+dist_to_street_m,extra_all,3f7dc312,Bành Văn Trân,train,I,19.8,True,bemaps3_sg,2024-01-21 13:03:43.957000+07:00,675371661427010
+dist_to_street_m,extra_all,7fbf4507,Trường Sơn#1,train,1,19.7,True,phoenix_mapping_front,2023-10-11 20:22:04.174000+07:00,839102131184586
+dist_to_street_m,extra_all,05e56495,Nguyễn Kim,train,I,18.7,True,phoenix_mapping_front,2023-06-03 14:12:14.357000+07:00,920317872364368
+dist_to_street_m,extra_all,2904ff2e,Bắc Hải,train,I,18.5,True,bemaps3_sg,2024-01-28 14:00:15.483000+07:00,1665280997342493
