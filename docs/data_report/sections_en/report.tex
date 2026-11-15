@@ -2,7 +2,7 @@
 \subsection{The Machine Learning Task}
 A sidewalk can exist but fail to provide a usable walking route when parked vehicles, goods, furniture or barriers interrupt its continuity. The project builds an image classifier to screen for this condition in street images from Ho Chi Minh City.
 
-The input is one $640\times640$ image of one side of a sidewalk. Label \lab{0 -- Passable} means a pedestrian can continue along the near sidewalk; \lab{1 -- Blocked} means the pedestrian must step into the roadway. Images with insufficient evidence (the near sidewalk is invisible or occluded, or the image is unusable) receive \lab{I -- Insufficient information} and are excluded from model training and evaluation. They remain in the descriptive statistics because they determine the usable yield of the source.
+The input is one $640\times640$ image of one side of a sidewalk. Label \lab{0 -- Passable} means a pedestrian can continue along the near sidewalk; \lab{1 -- Blocked} means the pedestrian must step into the roadway. Images with insufficient evidence (the near sidewalk is invisible or occluded, or the image is unusable) receive \lab{I -- Insufficient information} and are excluded from training and evaluation of the final obstruction classifier. They remain in the descriptive statistics because they determine the usable yield of the source; the acquisition selector uses them as non-positive examples (Section~2.4).
 
 The research question is which model performs best on \emph{streets absent from training}. Splits therefore contain entire streets, and leakage checks are central to the report. Annotators answer one question per image: must a pedestrian step into the roadway to continue along the near sidewalk?
 
@@ -71,7 +71,7 @@ Annotators did not see street names, splits, model scores or others' responses. 
 \subsection{Enriching the Training Set with Blocked Examples}
 After initial annotation, training had only 120 blocked images, including 14 pilot images. Enrichment targeted the rare class~\cite{attenberg2010search} and entered training only.
 \begin{enumerate}
-\item \textbf{Selector:} logistic regression on DINOv2 ViT-B/14 embeddings~\cite{oquab2023dinov2}, trained on 1,989 train labels (120 positives). Selection used leave-one-street-out comparisons on train labels only. The top 20\% contained 22.0\% blocked images, versus 13.9\% for the previous scorer (difference +8.2 percentage points, 95\% CI [4.3, 11.7]) and 5.8\% under random sampling.
+\item \textbf{Selector:} logistic regression on DINOv2 ViT-B/14 embeddings~\cite{oquab2023dinov2}, fitted on 1,989 main and pilot train labels (120 positives). Its target is Blocked versus Passable or I: it estimates blocked-image yield per image sent for annotation, rather than solving the final 0/1 classification task. Selection used leave-one-street-out comparisons on train labels only; each held-out street's main and pilot images were excluded from fitting. Reported yields use only the 1,839 main train images (106 positives); pilot images support fitting on the remaining streets. The top 20\% contained 22.0\% blocked images, versus 13.9\% for the previous scorer (difference +8.2 percentage points, 95\% CI [4.3, 11.7]) and 5.8\% under random sampling. The difference interval uses 2,000 paired bootstrap resamples of images within each street, conditional on these 10 streets; streets themselves are not resampled.
 \item \textbf{Streets:} scan 150 unused streets, 30 images each; rank mean selector scores and take the top 75. Reject names matching validation/test streets, including other segments with the same name.
 \item \textbf{Images:} from 5,035 eligible candidates, select the 1,400 highest-scoring images (\emph{top-score stratum}, score at least 0.61) and 600 random images from the remainder (\emph{random stratum}). Exclude position centres within 40 m of validation/test; individual-image distances are checked separately below.
 \item \textbf{Labels:} one human per image, as in main train, unaware of its sampling stratum.
@@ -89,7 +89,7 @@ Filtering uses rules rather than a model; source data are not overwritten. Table
 Operation & Method and result \\\midrule
 Night images & Filter upper-half panorama brightness around threshold 90 (0--255). Capture hour is unreliable. Reject 58/3,057 main images and 38/5,074 enrichment candidates; one rejected brightness is recorded as exactly 90 after rounding. \\
 Off-street imagery & Require distance at most 20 m and heading within 30 degrees of the street axis; exclude alleys. Assignment yield: 81.3\%. \\
-Unjudgeable images & Annotators assign I, retaining records but excluding them from modelling: 1,920/5,149 images. \\
+Unjudgeable images & Annotators assign I, retaining records but excluding them from final obstruction-classifier training and evaluation: 1,920/5,149 images. \\
 Exact duplicates & Use each panorama once and check crop MD5 hashes. \\
 Near duplicates & Sample positions 25 m apart, at most two capture dates per position. Enrichment candidates are also checked with the difference hash (dHash)~\cite{krawetz2013dhash} within positions, rejecting one pair. Main images are assessed in this report. \\
 Missing values & Images without coordinates or heading cannot be assigned to streets and are excluded earlier. Every annotation requires a primary label. \\
@@ -113,7 +113,7 @@ Test (Học--Loan) & 674 & 79\% & 0.60 & 0.68 \\
 Validation (Minh--Khải) & 486 & 80\% & 0.64 & 0.55 \\
 Cross-labelled train (10 pairs) & 276 & 78\% & 0.61 & 0.56 \\\bottomrule
 \end{tabularx}\end{table}
-Binary $\kappa$ uses only images where both annotators chose 0 or 1 (418 test and 211 validation images). All three groups meet the proposal's threshold for the three-label point estimate; pilot Fleiss' $\kappa$ under v0 was 0.57. Confidence intervals for $\kappa$ have not been measured.
+Binary $\kappa$ uses only images where both annotators chose 0 or 1 (418 test, 211 validation and 144 cross-labelled train images). Test three-label agreement was $\kappa=0.5975$, which rounds to 0.60 but falls slightly below the proposal's 0.6 threshold. Validation and the pooled cross-labelled train estimate exceed 0.6; the pooled estimate does not mean every train annotator pair meets the threshold. Pilot Fleiss' $\kappa$ under v0 was 0.57. Confidence intervals for $\kappa$ have not been measured.
 
 Of 1,436 double-labelled images, 303 disagreed: 193 were 0/I, 51 were 1/I and 59 were 0/1. Most disagreement therefore concerned judgeability.
 
@@ -316,12 +316,12 @@ Street splitting does not prevent intersections between streets from different s
 Pair & Min m & $<15$ m & $<25$ m & $<40$ m & $<100$ m \\\midrule
 Validation (486)--main train & 1.5 & 6 & 6 & 14 & 47 \\
 Validation--pilot & 17.9 & 0 & 1 & 5 & 17 \\
-Validation--enrichment & 41.6 & 0 & 0 & 0 & 71 \\
+Validation--enrichment & 41.5 & 0 & 0 & 0 & 71 \\
 Test (674)--main train & 7.1 & 8 & 18 & 34 & 88 \\
 Test--pilot & 20.9 & 0 & 2 & 4 & 7 \\
 Test--enrichment & 34.3 & 0 & 0 & 3 & 116 \\\bottomrule
 \end{tabularx}\end{table}
-Overall, 52/1,160 validation/test images (4.5\%) are within 40 m of a train-side image, involving 47 train-side images and 13 intersecting street pairs (for example Hồng Bàng--Nguyễn Trãi, Lý Thường Kiệt--Cách Mạng Tháng Tám, and Hai Bà Trưng--Điện Biên Phủ). The 20 closest pairs (1--14 m) usually face different directions, but some show shared street corners, poles, signs or fences. Content similarity misses these cases: their maximum cosine is only 0.82. One enrichment image is 34.3 m from test: the original 40 m rule applied to 25 m position centres rather than individual images. Of 551 Mapillary sequences, 53 contain both train-side and validation/test imagery; this shares device/capture conditions without necessarily sharing scene content.
+Counts across train-side sources can overlap and should not be added to obtain the overall count. Overall, 52/1,160 validation/test images (4.5\%) are within 40 m of a train-side image, involving 47 train-side images and 10 distinct evaluation-street--training-street pairs (13 rows when main and pilot are counted separately; for example Hồng Bàng--Nguyễn Trãi, Lý Thường Kiệt--Cách Mạng Tháng Tám, and Hai Bà Trưng--Điện Biên Phủ). The 20 closest pairs (1--14 m) usually face different directions, but some show shared street corners, poles, signs or fences. Content similarity misses these cases: their maximum cosine is only 0.82. One enrichment image is 34.3 m from test: the original 40 m rule applied to 25 m position centres rather than individual images. Of 551 Mapillary sequences, 53 contain both train-side and validation/test imagery; this shares device/capture conditions without necessarily sharing scene content.
 
 \textbf{Proposed action, not yet applied:} remove train-side images within 40 m of validation/test using coordinates alone (at most 47 images), or retain the dataset and additionally report evaluation excluding the 52 nearby validation/test images. Before training, the team needs to choose and document the geographic policy, save a versioned frozen manifest and rerun the affected checks and statistics. Test streets will not be changed on the basis of observed positive counts.
 
