@@ -1,7 +1,7 @@
 \subsection{Kiểm tra chất lượng dữ liệu}
 \label{sec:eda-quality}
 
-Mục này trình bày các kiểm tra về tính hợp lệ, ngoại lệ, trùng lặp và rò rỉ giữa các tập. Trong mục này, \emph{kiểm tra trực quan} là quan sát trên các bảng ảnh tổng hợp (contact sheet), không phải phép đo.
+Mục này trình bày các kiểm tra về tính hợp lệ, giá trị ngoại lai, trùng lặp và rò rỉ giữa các tập. Trong mục này, \emph{kiểm tra trực quan} là quan sát của trợ lý AI Claude trên các bảng ảnh tổng hợp (contact sheet); đây không phải nhãn do người gán và không phải phép đo.
 
 \subsubsection*{Tính hợp lệ và nhất quán}
 
@@ -31,19 +31,20 @@ Ngày chụp không phải ngày mặc định & Không đạt & 103 ảnh ghi n
 Ảnh pilot không trùng vị trí với ảnh bộ chính & Không đạt & 5 ảnh pilot cách ảnh bộ chính dưới 5 m (gần nhất 2,9 m). Cả hai phía đều thuộc train nên không gây rò rỉ giữa các tập \\
 \bottomrule
 \end{tabularx}
+\note{Chín phép không đạt gồm: hai phép về lý do của nhãn \lab{I} và hai phép về thẻ vật cản (mỗi loại có một phép cho bộ chính và pilot, một phép cho ảnh bổ sung), bốn phép ở bốn dòng cuối, và phép kiểm tra chặt về ngưỡng 90 nêu ở dòng độ sáng.}
 \end{table}
 
-\subsubsection*{Ngoại lệ và dữ liệu bất thường}
+\subsubsection*{Giá trị ngoại lai và dữ liệu bất thường}
 
 \begin{itemize}
-  \item \textbf{Metadata.} Theo quy tắc $1{,}5\times$IQR~\cite{tukey1977eda}, bộ chính có 81 ảnh ngoại lệ về độ sáng ảnh $360^\circ$ (63 thấp, 18 cao) và 113 ảnh có khoảng cách tới tim đường lớn; ở ảnh bổ sung, các con số tương ứng là 113 và 71 ảnh. Đây là phần đuôi của các phân bố lệch, không phải lỗi nhập liệu; mọi giá trị đều nằm trong miền hợp lệ (độ sáng 91--249, khoảng cách 0--20 m).
-  \item \textbf{Ảnh cắt.} Trên 5.149 ảnh có 87 ảnh ngoại lệ về độ sáng (7 ảnh quá tối, 80 ảnh quá sáng), 36 ảnh ngoại lệ về độ tương phản và 115 ảnh có độ nét rất thấp (trên thang log). Tổng cộng 308 ảnh vượt ít nhất một ngưỡng ngoại lệ.
+  \item \textbf{Metadata.} Theo quy tắc $1{,}5\times$IQR~\cite{tukey1977eda}, bộ chính có 81 ảnh ngoại lai về độ sáng ảnh $360^\circ$ (63 thấp, 18 cao) và 113 ảnh có khoảng cách tới tim đường lớn; ở ảnh bổ sung, các con số tương ứng là 113 và 71 ảnh. Đây là phần đuôi của các phân bố lệch, không phải lỗi nhập liệu; mọi giá trị đều nằm trong miền hợp lệ (độ sáng 91--249, khoảng cách 0--20 m).
+  \item \textbf{Ảnh cắt.} Trên 5.149 ảnh có 87 ảnh ngoại lai về độ sáng ảnh cắt (7 ảnh quá tối, 80 ảnh quá sáng), 36 ảnh ngoại lai về độ tương phản và 115 ảnh có độ nét rất thấp (trên thang log). Tổng cộng 308 ảnh vượt ít nhất một ngưỡng ngoại lai.
   \item \textbf{Ảnh cháy sáng} (trên 20\% điểm ảnh bão hòa): 128 ảnh. Tỉ lệ ở test (33 ảnh, 4,9\%) và val (25 ảnh, 5,1\%) cao hơn ở train (36 ảnh, 2,0\%); 27/33 ảnh cháy sáng của test thuộc đường Hai Bà Trưng.
-  \item \textbf{Kiểm tra trực quan các ảnh ngoại lệ:} ảnh tối nhất phần lớn chụp trong bóng râm, dưới gầm cầu vượt hoặc khi trời âm u, không phải ảnh đêm; ảnh sáng nhất bị phơi sáng quá mức nhưng nhiều ảnh vẫn quan sát được vỉa hè; ảnh mờ nhất phần lớn là cảnh tối hoặc bị nhòe do chuyển động.
-  \item \textbf{Cách xử lý:} không loại ảnh ngoại lệ nào. Các ảnh có chất lượng kém tới mức không đánh giá được đã được người gán xếp vào nhãn \lab{I}; phần còn lại phản ánh điều kiện chụp thực tế mà mô hình cần xử lý được.
+  \item \textbf{Kiểm tra trực quan các ảnh ngoại lai:} ảnh tối nhất phần lớn có vẻ được chụp trong bóng râm, dưới gầm cầu vượt hoặc khi trời âm u, không phải ảnh đêm; ảnh sáng nhất bị phơi sáng quá mức nhưng nhiều ảnh vẫn quan sát được vỉa hè; ảnh mờ nhất phần lớn có vẻ là cảnh tối hoặc bị nhòe do chuyển động.
+  \item \textbf{Cách xử lý:} không loại ảnh ngoại lai nào. Các ảnh có chất lượng kém tới mức không đánh giá được đã được người gán xếp vào nhãn \lab{I}; phần còn lại phản ánh điều kiện chụp thực tế mà mô hình cần xử lý được.
 \end{itemize}
 
-\textbf{Kiểm tra bộ lọc ảnh đêm} (việc còn tồn đọng từ trước). 58 ảnh $360^\circ$ bị loại của bộ chính và 58 ảnh được giữ lại có độ sáng thấp nhất đã được kiểm tra trực quan. Khoảng 48/58 ảnh bị loại đúng là ảnh đêm; 9 ảnh có vẻ được chụp ban ngày dưới tán cây dày và 1 ảnh chụp lúc chạng vạng (độ sáng 68--89). Trong 58 ảnh được giữ lại đã xem, chưa thấy ảnh đêm nào, khoảng 3 ảnh được chụp lúc chạng vạng; kết quả này chưa đủ để khẳng định cho toàn bộ ảnh được giữ lại. Khoảng 10 ảnh bị loại nhầm (9 ảnh ban ngày, 1 ảnh chạng vạng), tương ứng khoảng 0,3\% của 3.057 ảnh đầu vào. 38 ảnh bị loại trong kho ứng viên bổ sung \textbf{chưa được xem lại}.
+\textbf{Kiểm tra bộ lọc ảnh đêm.} 58 ảnh $360^\circ$ bị loại của bộ chính và 58 ảnh được giữ lại có độ sáng thấp nhất đã được kiểm tra trực quan. Khoảng 48/58 ảnh bị loại có vẻ đúng là ảnh đêm; 9 ảnh có vẻ được chụp ban ngày dưới tán cây dày và 1 ảnh chụp lúc chạng vạng (độ sáng 68--89). Trong 58 ảnh được giữ lại đã xem, chưa thấy ảnh đêm nào, khoảng 3 ảnh được chụp lúc chạng vạng; kết quả này chưa đủ để khẳng định cho toàn bộ ảnh được giữ lại. Như vậy, khoảng 10 ảnh có thể đã bị loại nhầm (9 ảnh ban ngày, 1 ảnh chạng vạng), tương ứng khoảng 0,3\% của 3.057 ảnh đầu vào. 38 ảnh bị loại trong kho ứng viên bổ sung \textbf{chưa được xem lại}.
 \note{Các bảng ảnh tổng hợp dùng nội bộ có chứa ảnh val/test nên không được đưa vào báo cáo.}
 
 \subsubsection*{Trùng lặp và gần trùng}
@@ -51,8 +52,8 @@ Ngày chụp không phải ngày mặc định & Không đạt & 103 ảnh ghi n
 \begin{itemize}
   \item \textbf{Trùng lặp tuyệt đối: không có.} Không có hai file nào trùng mã băm MD5, không có hai ảnh nào trùng điểm ảnh sau khi giải nén, và không ảnh $360^\circ$ nào xuất hiện hai lần (n = 5.149).
   \item \textbf{Bản sao gần như y hệt: không có.} Không có cặp ảnh nào có khoảng cách dHash $\le 4$ (mã băm 64 bit). Cặp gần nhất giữa các tập có dHash bằng 6; kiểm tra trực quan cho thấy đây là hai địa điểm khác nhau có cùng một mảng trời sáng.
-  \item \textbf{Cùng vị trí, khác ngày.} Có 1.709 vị trí có hai ảnh chụp ở hai ngày khác nhau (bộ chính 1.363, ảnh bổ sung 346), và hai ảnh của mỗi vị trí luôn thuộc cùng một tập. Theo phép đo, các cặp này \emph{không} giống nhau về nội dung: dHash nhỏ nhất là 12 (trung vị 31, tương đương các cặp ảnh khác đường); độ tương đồng cosine giữa các vector đặc trưng DINOv2 có trung vị 0,63 và lớn nhất 0,905. Do hai ngày chụp có xe cộ, hàng quán và ánh sáng khác nhau, việc giữ cả hai ảnh là hợp lý.
-  \item \textbf{Hệ quả về phương pháp:} cả dHash lẫn độ tương đồng cosine đều không phân biệt được ``cùng một địa điểm'' với ``cảnh tương tự'' (hình~\ref{fig:dupdist}); chỉ khoảng cách địa lý làm được việc này. Vì vậy, báo cáo không đặt ngưỡng gần trùng dựa trên nội dung ảnh.
+  \item \textbf{Cùng vị trí, khác ngày.} Có 1.709 vị trí có hai ảnh chụp ở hai ngày khác nhau (bộ chính 1.363, ảnh bổ sung 346), và hai ảnh của mỗi vị trí luôn thuộc cùng một tập. Theo dHash và độ tương đồng cosine, các cặp này \emph{không} phải bản sao gần trùng: dHash nhỏ nhất là 12 (trung vị 31, tương đương các cặp ảnh khác đường); độ tương đồng cosine giữa các vector đặc trưng DINOv2 có trung vị 0,63 và lớn nhất 0,905. Do hai ngày chụp có xe cộ, hàng quán và ánh sáng khác nhau, việc giữ cả hai ảnh là hợp lý.
+  \item \textbf{Hệ quả về phương pháp:} cả dHash lẫn độ tương đồng cosine đều không phân biệt được ``cùng một địa điểm'' với ``cảnh tương tự'' (hình~\ref{fig:dupdist}). Vì vậy, báo cáo không đặt ngưỡng gần trùng dựa trên nội dung ảnh mà dùng khoảng cách địa lý để xác định hai ảnh có cùng địa điểm hay không.
 \end{itemize}
 
 \begin{figure}[H]
@@ -75,7 +76,7 @@ Rò rỉ giữa các tập được đánh giá theo hai cách: theo nội dung 
 
 \textbf{Theo nội dung ảnh.} Với mỗi ảnh val/test, ảnh giống nhất ở phía train (bộ chính, pilot, ảnh bổ sung) được tìm theo độ tương đồng cosine.
 \begin{itemize}
-  \item Độ tương đồng với ảnh train gần nhất: val có trung vị 0,78, lớn nhất 0,909; test có trung vị 0,79, lớn nhất 0,904. Phân bố này trùng với mức tham chiếu giữa các đường train với nhau (trung vị 0,81, lớn nhất 0,933); nói cách khác, mức tương đồng giữa val/test và train không cao hơn mức tương đồng giữa hai đường train bất kỳ.
+  \item Độ tương đồng với ảnh train gần nhất: val có trung vị 0,78, lớn nhất 0,909; test có trung vị 0,79, lớn nhất 0,904. Phân bố này tương đương mức tham chiếu giữa các đường train với nhau (trung vị 0,81, lớn nhất 0,933); nói cách khác, mức tương đồng giữa val/test và train không cao hơn mức tương đồng giữa hai đường train bất kỳ.
   \item Có 7 ảnh val/test có độ tương đồng cosine $\ge 0{,}90$ với một ảnh train, nhưng cả 7 cặp đều cách nhau 778--3.585 m. Kiểm tra trực quan 20 cặp giống nhau nhất cho thấy đều là hai địa điểm khác nhau có cùng kiểu cảnh (dãy nhà phố, người đi xe máy ở tiền cảnh).
 \end{itemize}
 
@@ -101,7 +102,7 @@ Test -- ảnh bổ sung & 34,3 & 0 & 0 & 3 & 116 \\
 
 Số ảnh theo từng nguồn phía train trong bảng~\ref{tab:spatial} có thể trùng nhau, nên không được cộng dồn để ra con số tổng.
 \begin{itemize}
-  \item \textbf{52 trên 1.160 ảnh val/test (4,5\%) nằm cách một ảnh train dưới 40 m}, liên quan tới 47 ảnh phía train và 10 cặp đường đánh giá -- đường train khác nhau (13 dòng nếu tính riêng từng nguồn bộ chính, pilot và ảnh bổ sung; ví dụ Hồng Bàng -- Nguyễn Trãi, Lý Thường Kiệt -- Cách Mạng Tháng Tám, Hai Bà Trưng -- Điện Biên Phủ).
+  \item \textbf{52 trên 1.160 ảnh val/test (4,5\%) nằm cách một ảnh train dưới 40 m}, liên quan tới 47 ảnh phía train và 10 cặp đường đánh giá -- đường train khác nhau (13 cặp nếu tính riêng từng nguồn: train của bộ chính, pilot và ảnh bổ sung; ví dụ Hồng Bàng -- Nguyễn Trãi, Lý Thường Kiệt -- Cách Mạng Tháng Tám, Hai Bà Trưng -- Điện Biên Phủ).
   \item Kiểm tra trực quan 20 cặp gần nhau nhất (1--14 m): phần lớn nhìn về hai hướng khác nhau, nhưng một số cặp thấy cùng một góc phố (cùng cột điện, biển quảng cáo, hàng rào). Phép đo theo nội dung không phát hiện được các cặp này: độ tương đồng cosine lớn nhất của chúng chỉ là 0,82.
   \item \textbf{Ảnh bổ sung tuân thủ quy tắc 40 m}, trừ 1 ảnh cách ảnh test 34,3 m (do quy tắc được áp dụng cho tâm của ô 25 m, không áp dụng cho từng ảnh).
   \item 53 trên 551 chuỗi ảnh Mapillary chứa ảnh của cả phía train lẫn val/test (cùng một lượt xe chạy qua nhiều đường). Đây không phải rò rỉ nội dung, nhưng cho thấy cùng một thiết bị và điều kiện chụp xuất hiện ở cả hai phía.
@@ -111,7 +112,7 @@ Số ảnh theo từng nguồn phía train trong bảng~\ref{tab:spatial} có th
 
 \subsubsection*{Mức khác biệt giữa ảnh bổ sung và bộ chính}
 
-Một bộ phân loại tuyến tính trên vector đặc trưng DINOv2, không dùng nhãn vật cản, được huấn luyện để phân biệt hai nhóm ảnh; AUC bằng 0,5 nghĩa là không phân biệt được. Việc đánh giá dùng xác thực chéo (cross-validation) chia theo đường. Bảng~\ref{tab:domain} trình bày kết quả; hình~\ref{fig:tsne} minh họa phân bố các vector đặc trưng bằng t-SNE.
+Một bộ phân loại tuyến tính trên vector đặc trưng DINOv2, không dùng nhãn vật cản, được huấn luyện để phân biệt hai nhóm ảnh; AUC bằng 0,5 nghĩa là không phân biệt được. Bộ phân loại này được gọi là \emph{bộ phân loại miền}. Việc đánh giá dùng kiểm định chéo (cross-validation) chia theo đường. Bảng~\ref{tab:domain} trình bày kết quả; hình~\ref{fig:tsne} minh họa phân bố các vector đặc trưng bằng t-SNE.
 
 \begin{figure}[H]
 \centering
@@ -141,8 +142,8 @@ Train bộ chính -- val + test & 0,47 & Không phân biệt được \\
 \begin{itemize}
   \item \textbf{Chưa phát hiện khác biệt miền ảnh giữa train bộ chính và val/test bằng bộ phân loại đã dùng} (AUC gần 0,5); tuy nhiên, kết quả này chưa chứng minh hai phân phối giống nhau. Với chỉ 17 đường, phép đo không đủ nhạy để phát hiện các khác biệt nhỏ.
   \item \textbf{Giá trị gộp 0,47 che khuất các giá trị dao động mạnh khi tách riêng:} train bộ chính so với val là 0,56, so với test là 0,36, so với pilot là 0,35 (trung bình qua các fold; độ lệch chuẩn giữa các fold tới 0,12). AUC dưới 0,5 ở đây không phải tín hiệu ngược chiều mà cho thấy phép đo không ổn định khi mỗi phía chỉ có vài đường.
-  \item \textbf{Ảnh bổ sung thuộc một miền khác}, kể cả tầng ngẫu nhiên (0,70): các ảnh này đến từ những đường nhỏ gần chợ, trong khi val/test là các đường lớn. Tầng điểm cao còn đồng nhất hơn các nhóm khác (độ tương đồng cosine trung bình trong nhóm 0,60 so với 0,49--0,51). Đây là sự đánh đổi của việc bổ sung dữ liệu: có thêm 577 mẫu dương nhưng từ một dải cảnh hẹp hơn val/test.
-  \item \textbf{Giá trị 0,95 của tầng điểm cao bị ước lượng cao một phần}: tầng này được chọn bằng hồi quy logistic trên chính các vector đặc trưng DINOv2 mà bộ phân loại miền sử dụng, nên một phần khả năng phân biệt đến từ chính cách chọn ảnh. Nhận xét này cũng áp dụng cho độ tương đồng cosine trong nhóm và hình t-SNE. Giá trị phản ánh khách quan hơn mức khác biệt về cảnh là của tầng ngẫu nhiên (0,70).
+  \item \textbf{Ảnh bổ sung phân biệt được với train của bộ chính}, kể cả tầng ngẫu nhiên (0,70). Một cách giải thích hợp lý là loại đường: 71\% ảnh bổ sung đến từ đường cấp ba hoặc đường khu dân cư, trong khi mọi đường của bộ chính đều là đường chính hoặc đường cấp hai. Tầng điểm cao còn đồng nhất hơn các nhóm khác (độ tương đồng cosine trung bình trong nhóm 0,60 so với 0,49--0,51). Đây là sự đánh đổi của việc bổ sung dữ liệu: có thêm 577 mẫu dương nhưng từ một dải cảnh hẹp hơn val/test.
+  \item \textbf{Giá trị 0,95 của tầng điểm cao phần nào cao hơn mức khác biệt thực}: tầng này được chọn bằng hồi quy logistic trên chính các vector đặc trưng DINOv2 mà bộ phân loại miền sử dụng, nên một phần khả năng phân biệt đến từ chính cách chọn ảnh. Nhận xét này cũng áp dụng cho độ tương đồng cosine trong nhóm và hình t-SNE. Giá trị phản ánh khách quan hơn mức khác biệt về cảnh là của tầng ngẫu nhiên (0,70).
   \item Trên hình~\ref{fig:tsne}, ảnh \lab{Bị chặn} và ảnh tầng điểm cao tập trung về cùng một vùng, còn ảnh \lab{I} tập trung ở một vùng khác. Hình t-SNE chỉ dùng để minh họa, không dùng để rút ra kết luận.
 \end{itemize}
 

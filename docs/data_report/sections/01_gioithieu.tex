@@ -10,13 +10,13 @@ Một vỉa hè có thể tồn tại về mặt vật lý nhưng không còn đ
 \begin{itemize}
   \item \textbf{Đầu vào:} một ảnh $640\times640$ điểm ảnh nhìn về một phía vỉa hè, được cắt từ ảnh toàn cảnh $360^\circ$ chụp từ xe.
   \item \textbf{Đầu ra của mô hình:} phân loại nhị phân. \lab{0 -- Còn lối đi}: người đi bộ có thể tiếp tục đi dọc vỉa hè gần. \lab{1 -- Bị chặn}: người đi bộ buộc phải bước xuống lòng đường.
-  \item \textbf{Ảnh không đủ bằng chứng} (không thấy vỉa hè gần, bị che khuất, ảnh hỏng) được gán nhãn riêng \lab{I -- Không đủ thông tin}; các ảnh mang nhãn \lab{I} bị loại khỏi quá trình huấn luyện và đánh giá bộ phân loại vật cản cuối cùng. Nhãn \lab{I} vẫn được thống kê vì nó quyết định số ảnh hợp lệ thu được từ nguồn dữ liệu; riêng bộ chọn ảnh dùng để bổ sung dữ liệu coi các ảnh này là mẫu không dương (mục~\ref{sec:enrich}).
+  \item \textbf{Ảnh không đủ bằng chứng} (không thấy vỉa hè gần, bị che khuất, ảnh hỏng) được gán nhãn riêng \lab{I -- Không đủ thông tin}; các ảnh mang nhãn \lab{I} bị loại khỏi quá trình huấn luyện và đánh giá bộ phân loại vật cản cuối cùng. Nhãn \lab{I} vẫn được thống kê vì nó quyết định số ảnh hợp lệ thu được từ nguồn dữ liệu; riêng bộ chọn ảnh dùng để bổ sung dữ liệu coi các ảnh này là mẫu âm (mục~\ref{sec:enrich}).
   \item \textbf{Câu hỏi nghiên cứu:} mô hình nào phân loại tốt nhất trên \emph{các tuyến đường không xuất hiện trong tập huấn luyện}. Do đó, dữ liệu được chia theo nguyên tuyến đường, và mọi kiểm tra trong báo cáo đều chú trọng tới rò rỉ dữ liệu giữa các tập.
 \end{itemize}
 
 Với mỗi ảnh, người gán nhãn trả lời câu hỏi: \emph{người đi bộ có phải bước xuống lòng đường để tiếp tục đi dọc vỉa hè gần không?}
 
-\textbf{Quy ước thuật ngữ.} Báo cáo dùng tên viết tắt train, val và test cho tập huấn luyện, tập kiểm định và tập kiểm thử. \emph{Ảnh hợp lệ} là ảnh có nhãn \lab{0} hoặc \lab{1}; \emph{mẫu dương} là ảnh có nhãn \lab{Bị chặn}. \emph{Metadata} (siêu dữ liệu) là các thuộc tính đi kèm mỗi ảnh như tọa độ, thời gian chụp và tài khoản chụp. EDA là viết tắt của phân tích khám phá dữ liệu (exploratory data analysis). Thành viên nhóm được gọi theo tên: Học (Lê Nguyễn Quốc Học), Loan (Bùi Thị Bích Loan), Minh (Nguyễn Hữu Gia Minh), Khải (Nguyễn Lê Hoàng Khải) và Phúc (Trần Hoàng Phúc).
+\textbf{Quy ước thuật ngữ.} Báo cáo dùng tên viết tắt train, val và test cho tập huấn luyện, tập kiểm định và tập kiểm thử. \emph{Bộ chính} là phần ảnh được lấy mẫu tự nhiên; \emph{pilot} là đợt gán nhãn thử trên 150 ảnh; \emph{ảnh bổ sung} là các ảnh được chọn thêm cho train để tăng số mẫu của lớp hiếm. \emph{Phía train} gồm mọi ảnh đưa vào huấn luyện (train của bộ chính, pilot và ảnh bổ sung). \emph{Ảnh hợp lệ} là ảnh có nhãn \lab{0} hoặc \lab{1}; \emph{mẫu dương} là ảnh có nhãn \lab{Bị chặn}. \emph{Metadata} (siêu dữ liệu) là các thuộc tính đi kèm mỗi ảnh như tọa độ, thời gian chụp và tài khoản chụp. EDA là viết tắt của phân tích khám phá dữ liệu (exploratory data analysis). \emph{Kiểm tra trực quan} là việc trợ lý AI Claude xem các bảng ảnh tổng hợp (contact sheet, nhiều ảnh thu nhỏ ghép trên một tấm); đây không phải nhãn do người gán và không phải phép đo. Thành viên nhóm được gọi theo tên: Học (Lê Nguyễn Quốc Học), Loan (Bùi Thị Bích Loan), Minh (Nguyễn Hữu Gia Minh), Khải (Nguyễn Lê Hoàng Khải) và Phúc (Trần Hoàng Phúc).
 
 \subsection{Tổng quan bộ dữ liệu}
 
@@ -33,7 +33,7 @@ Bộ dữ liệu gồm ba phần, được thu thập theo ba cách lấy mẫu 
 Bộ chính, train & Tự nhiên: mọi vị trí cách nhau 25 m trên 10 đường & 1.839 & 939 & 106 & 794 \\
 Bộ chính, val & Tự nhiên, 3 đường & 486 & 207 & 35 & 244 \\
 Bộ chính, test & Tự nhiên, 4 đường & 674 & 412 & 47 & 215 \\
-Pilot, train & Theo tầng điểm của một mô hình thử, 3 đường train & 150 & 73 & 14 & 63 \\
+Pilot, train & Theo tầng điểm của một mô hình phân loại thử nghiệm ban đầu (chỉ dùng để lấy mẫu), 3 đường train & 150 & 73 & 14 & 63 \\
 Ảnh bổ sung, train & 70\% theo điểm của bộ chọn ảnh, 30\% ngẫu nhiên, 75 đường mới & 2.000 & 819 & 577 & 604 \\
 \midrule
 \textbf{Tổng} & & \textbf{5.149} & \textbf{2.450} & \textbf{779} & \textbf{1.920} \\

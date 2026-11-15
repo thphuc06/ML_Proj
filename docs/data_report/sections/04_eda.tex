@@ -9,7 +9,7 @@
 \begin{itemize}
   \item Mọi thống kê được tách theo sáu nhóm: train, val, test của bộ chính (phân phối tự nhiên), pilot, tầng điểm cao và tầng ngẫu nhiên của ảnh bổ sung. Các kết quả gộp nhiều nhóm đều được ghi chú rõ.
   \item Nhãn val/test chỉ dùng để mô tả. Không có lựa chọn hay ngưỡng nào trong báo cáo được xác định dựa trên nhãn val/test.
-  \item Khoảng tin cậy 95\% của tỉ lệ là khoảng Wilson~\cite{wilson1927interval}, giả định các ảnh độc lập. Do ảnh cùng đường có xu hướng giống nhau, khoảng thực tế rộng hơn; vì vậy các so sánh quan trọng có thêm khoảng \emph{bootstrap theo đường} (lấy mẫu lại theo nguyên tuyến đường), riêng với val (3 đường) và test (4 đường) chỉ có giá trị tham khảo.
+  \item Khoảng tin cậy 95\% của tỉ lệ là khoảng Wilson~\cite{wilson1927interval}, giả định các ảnh độc lập. Do ảnh cùng đường có xu hướng giống nhau, khoảng Wilson có thể quá hẹp. Vì vậy, các so sánh quan trọng có thêm khoảng \emph{bootstrap theo đường} (lấy mẫu lại theo nguyên tuyến đường). Với val (3 đường) và test (4 đường), khoảng bootstrap này chỉ có giá trị tham khảo.
   \item Mọi số liệu và hình trong mục này do ba script EDA của nhóm sinh ra, không nhập thủ công (phụ lục~\ref{sec:trace}).
 \end{itemize}
 
@@ -116,8 +116,8 @@ Bộ chính & 4.435 & 51,5 & 3,7 & 2.285.741 & 0,5 & 77.451 & 6,9 \\
 \end{table}
 
 \begin{itemize}
-  \item \textbf{Độ sáng} (bảng~\ref{tab:desc}, hình~\ref{fig:desc}). Không ảnh nào có độ sáng dưới ngưỡng lọc ảnh đêm (nhỏ nhất là 91). Ảnh tập val tối hơn các nhóm khác (trung vị 158,5 so với 171); do val chỉ có 3 đường, đây có thể là đặc điểm riêng của ba đường này.
-  \item \textbf{Khoảng cách tới tim đường} bị giới hạn trên ở 20 m theo quy tắc gắn đường. Ảnh bổ sung gần tim đường hơn (trung vị 2,2 m so với 3,0 m), phù hợp với việc 71\% ảnh bổ sung đến từ đường nhỏ.
+  \item \textbf{Độ sáng} (bảng~\ref{tab:desc}, hình~\ref{fig:desc}). Không ảnh nào có độ sáng dưới ngưỡng lọc ảnh đêm (nhỏ nhất là 91). Ảnh $360^\circ$ của val tối hơn các nhóm khác (trung vị 158,5 so với 171); do val chỉ có 3 đường, đây có thể là đặc điểm riêng của ba đường này.
+  \item \textbf{Khoảng cách tới tim đường} không vượt quá 20 m theo quy tắc gắn đường. Ảnh bổ sung gần tim đường hơn (trung vị 2,2 m so với 3,0 m), phù hợp với việc 71\% ảnh bổ sung đến từ đường cấp ba hoặc đường khu dân cư, trong khi cả 17 đường của bộ chính đều là đường chính hoặc đường cấp hai.
   \item \textbf{Tọa độ} (bảng~\ref{tab:desc2}) nằm trong khung nghiên cứu, trừ 2 ảnh bổ sung lệch ra ngoài dưới 4 m (mục~\ref{sec:eda-quality}). Ảnh bổ sung phân tán rộng hơn bộ chính (IQR của vĩ độ là 0,0359 so với 0,0274) vì đến từ 75 đường thay vì 17 đường.
   \item \textbf{Hướng di chuyển của xe} trải đều trên toàn dải 0--$360^\circ$ (IQR xấp xỉ $190^\circ$), không tập trung vào một hướng. Thuộc tính này chỉ được dùng để gắn ảnh vào đường và để cắt ảnh về phía bên phải xe.
   \item \textbf{Điểm của bộ chọn ảnh} (chỉ có ở ảnh bổ sung): tầng điểm cao có trung vị 0,80 (0,61--1,00), tầng ngẫu nhiên có trung vị 0,19 (0,00--0,61).
@@ -151,11 +151,11 @@ Bộ chính & 299 & 114 & 0 & 552 & 677 & 234 & 0 & 244 & 54 & 321 & 303 & 201 &
 \end{table}
 
 \begin{itemize}
-  \item \textbf{Tài khoản chụp} (hình~\ref{fig:year}). Hai tài khoản \lab{bemaps3\_sg} và \lab{phoenix\_mapping\_front} chiếm 84\% bộ chính (1.153 và 1.370 trên 2.999 ảnh) và 98\% ảnh bổ sung. Do đó, dữ liệu đến từ rất ít loại thiết bị và cách gắn camera.
+  \item \textbf{Tài khoản chụp} (hình~\ref{fig:year}). Hai tài khoản \lab{bemaps3\_sg} và \lab{phoenix\_mapping\_front} chiếm 84\% bộ chính (1.153 và 1.370 trên 2.999 ảnh) và 98\% ảnh bổ sung. Do đó, nhiều khả năng dữ liệu kém đa dạng về thiết bị và cách gắn camera.
   \item \textbf{Năm chụp.} Ở bộ chính, năm 2023 có 2.303 ảnh, năm 2024 có 660 ảnh và năm 2016 có 36 ảnh. Toàn bộ 103 ảnh ghi năm 2016 (trên cả ba phần dữ liệu) đều thuộc tài khoản \lab{bemaps3\_sg} và cùng ghi ngày 01/01/2016; nhiều khả năng đây là ngày mặc định, nên năm 2016 \textbf{không đáng tin cậy}.
   \item \textbf{Tháng chụp} (bảng~\ref{tab:month}). Ảnh được chụp trong 10 tháng khác nhau (bộ chính) và 11 tháng khác nhau (ảnh bổ sung), không có ảnh nào vào tháng 7; ảnh bộ chính tập trung vào tháng 4--5 (41\%). Tháng 1 bao gồm cả các ảnh mang ngày mặc định 01/01/2016.
   \item \textbf{Giờ chụp} trải khắp các khung giờ trong ngày nhưng không đáng tin cậy: ở bộ chính, 1.080/2.999 ảnh (36\%) ghi giờ từ 18 giờ tới trước 6 giờ sáng (ở ảnh bổ sung là 762/2.000, tức 38\%), trong khi mọi ảnh được giữ lại đều vượt ngưỡng độ sáng của bộ lọc ảnh đêm. Vì vậy, giờ chụp không được dùng để lọc ảnh (mục~\ref{sec:cleaning}).
-  \item \textbf{Số ảnh mỗi đường.} Bộ chính có 17 đường, mỗi đường 86--348 ảnh (trung vị 150); ảnh bổ sung có 75 đường, mỗi đường 6--157 ảnh (trung vị 21). Hai đường ven kênh Hoàng Sa và Trường Sa\#0 đóng góp 274 ảnh bổ sung (14\%). Hai đường này từng bị loại khỏi bộ chính vì vỉa hè chủ yếu nằm ở một phía và có ít người đi bộ (bước 4, bảng~\ref{tab:steps}). Tuy nhiên, đợt bổ sung chỉ xếp hạng đường theo điểm của bộ chọn ảnh và không áp dụng lại tiêu chí này: hai đường đứng hạng 49 và 56 trong 75 đường, và do có chiều dài lớn nên đóng góp nhiều ảnh. Hai đường này chỉ thuộc train nên không ảnh hưởng tới val/test, nhưng làm tăng tỉ lệ cảnh ven kênh trong train.
+  \item \textbf{Số ảnh mỗi đường.} Bộ chính có 17 đường, mỗi đường 86--348 ảnh (trung vị 150); ảnh bổ sung có 75 đường, mỗi đường 6--157 ảnh (trung vị 21). Hai đường ven kênh Hoàng Sa và Trường Sa\#0 đóng góp 274 ảnh bổ sung (14\%); hậu tố \#0, \#1 chỉ một trong các đoạn tách rời của những đường trùng tên trên OSM. Hai đường này từng bị loại khỏi bộ chính vì vỉa hè chủ yếu nằm ở một phía và có ít người đi bộ (bước 4, bảng~\ref{tab:steps}). Tuy nhiên, đợt bổ sung chỉ xếp hạng đường theo điểm của bộ chọn ảnh và không áp dụng lại tiêu chí này: hai đường đứng hạng 49 và 56 trong 75 đường, và do có chiều dài lớn nên đóng góp nhiều ảnh. Hai đường này chỉ thuộc train nên không ảnh hưởng tới val/test, nhưng làm tăng tỉ lệ cảnh ven kênh trong train.
 \end{itemize}
 
 % ------------------------------------------------------------------------------
@@ -196,7 +196,7 @@ Pilot & 150 & 14/87 = 16,1\% [9,8; 25,2] & [10,0; 18,4] & 42,0\% & 5,2 \\
   \item \textbf{Dữ liệu tự nhiên mất cân bằng mạnh} (hình~\ref{fig:labels}, bảng~\ref{tab:labels}): trong các ảnh hợp lệ của bộ chính, \lab{Còn lối đi} chiếm 89,2\% và \lab{Bị chặn} chiếm 10,8\%, tức cứ khoảng 8 ảnh \lab{Còn lối đi} mới có 1 ảnh \lab{Bị chặn}. Tính trên mọi ảnh, kể cả ảnh \lab{I}, tỉ lệ \lab{Bị chặn} là 6,3\% $[5{,}5;\,7{,}2]$.
   \item \textbf{Tỉ lệ ba lớp \lab{0} / \lab{1} / \lab{I} trên mọi ảnh:} bộ chính gộp 52,0 / 6,3 / 41,8\%; train 51,1 / 5,8 / 43,2\%; val 42,6 / 7,2 / 50,2\%; test 61,1 / 7,0 / 31,9\%; pilot 48,7 / 9,3 / 42,0\%; tầng điểm cao 34,8 / 37,9 / 27,3\%; tầng ngẫu nhiên 55,3 / 7,7 / 37,0\%. Trên toàn bộ dữ liệu: 47,6 / 15,1 / 37,3\%.
   \item \textbf{Khoảng tin cậy của tỉ lệ \lab{Bị chặn} ở ba tập chồng lên nhau} (tỉ lệ lần lượt là 10,1\%, 14,5\% và 10,2\%). Tuy nhiên, điều này chưa đủ để kết luận các tỉ lệ là tương đương.
-  \item \textbf{Test chỉ có 47 mẫu dương, val có 35 mẫu dương.} Độ rộng khoảng bootstrap theo đường của test gấp xấp xỉ 2,3 lần độ rộng khoảng Wilson ($[5{,}7;\,18{,}7]$ so với $[7{,}8;\,13{,}4]$, tức 13,0 so với 5,6 điểm phần trăm), nên kết quả đánh giá mô hình trên test sẽ có sai số lớn.
+  \item \textbf{Test chỉ có 47 mẫu dương, val có 35 mẫu dương.} Độ rộng khoảng bootstrap theo đường của test gấp xấp xỉ 2,3 lần độ rộng khoảng Wilson ($[5{,}7;\,18{,}7]$ so với $[7{,}8;\,13{,}4]$, tức 13,0 so với 5,6 điểm phần trăm), nên kết quả đánh giá mô hình trên test nhiều khả năng có độ bất định lớn.
   \item \textbf{Ảnh \lab{I} chiếm 32--50\%} tùy tập. Đây là hạn chế cố hữu của nguồn ảnh chụp từ xe.
   \item \textbf{Tỉ lệ ở pilot và tầng điểm cao không phản ánh phân phối tự nhiên:} tỉ lệ \lab{Bị chặn} của hai nhóm này (16,1\% và 52,2\%) là kết quả của cách lấy mẫu, không phải tỉ lệ thực tế ngoài đường.
   \item \textbf{Tầng ngẫu nhiên của ảnh bổ sung (12,2\%)} có tỉ lệ gần với bộ chính dù được lấy từ các đường khác; hai khoảng tin cậy chồng lên nhau.
@@ -289,8 +289,8 @@ Năm chụp & 0,02 & 0,03 \\
 
 \begin{itemize}
   \item \textbf{Tuyến đường là thuộc tính có mức liên hệ với nhãn mạnh nhất}, với cả \lab{Bị chặn} (V = 0,18) lẫn \lab{I} (V = 0,28 ở bộ chính). Đây là lý do chính để chia tập theo đường.
-  \item \textbf{Loại đường} (theo phân loại của OSM) có liên hệ với nhãn ở ảnh bổ sung: trong tầng ngẫu nhiên, tỉ lệ \lab{Bị chặn} trên ảnh hợp lệ là 13,7\% ở đường nhánh (tertiary, 34/248) và 20\% ở đường khu dân cư (residential, 4/20), so với 7,0\% ở đường chính (primary, 3/43) và 7,5\% ở đường cấp hai (secondary, 5/67). Do cỡ mẫu các nhóm nhỏ, khoảng tin cậy rộng. Bộ chính chỉ gồm đường lớn nên không kiểm tra được.
-  \item \textbf{Độ sáng, khoảng cách, tọa độ, tài khoản chụp và năm chụp} gần như không phân biệt được nhãn: mọi khoảng tin cậy của bộ chính đều chứa 0,5.
+  \item \textbf{Loại đường} (theo phân loại của OSM) có liên hệ với nhãn ở ảnh bổ sung: trong tầng ngẫu nhiên, tỉ lệ \lab{Bị chặn} trên ảnh hợp lệ là 13,7\% ở đường cấp ba (tertiary, 34/248) và 20\% ở đường khu dân cư (residential, 4/20), so với 7,0\% ở đường chính (primary, 3/43) và 7,5\% ở đường cấp hai (secondary, 5/67). Do cỡ mẫu các nhóm nhỏ, khoảng tin cậy rộng. Bộ chính chỉ gồm đường lớn nên không kiểm tra được.
+  \item \textbf{Độ sáng ảnh $360^\circ$, khoảng cách và tọa độ} gần như không phân biệt được nhãn: mọi khoảng tin cậy của bộ chính đều chứa 0,5. Tài khoản chụp và năm chụp có mức liên hệ rất nhỏ (V $\le$ 0,03).
   \item \textbf{Điểm của bộ chọn ảnh} liên hệ mạnh với nhãn ở ảnh bổ sung (AUC 0,78). Đây là hệ quả của cách chọn ảnh, và cũng là lý do điểm này không được dùng làm đặc trưng hay nhãn.
 \end{itemize}
 
@@ -329,7 +329,7 @@ Các đại lượng được đo trên từng ảnh cắt gồm: độ sáng tr
 
 \begin{table}[H]
 \centering
-\caption{Thống kê chất lượng ảnh theo nhóm (trung vị; trong ngoặc là IQR)}
+\caption{Thống kê chất lượng ảnh cắt theo nhóm (trung vị; trong ngoặc là IQR)}
 \label{tab:image}
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.21\linewidth} r R R R R}
 \toprule
@@ -362,8 +362,8 @@ Cả 5.149 ảnh: nhỏ nhất -- lớn nhất & & 24,3 -- 242,3 & 17,4 -- 96,6 
 \end{figure}
 
 \begin{itemize}
-  \item \textbf{Các nhóm tự nhiên có chất lượng ảnh tương đồng} (bảng~\ref{tab:image}, hình~\ref{fig:lum} và~\ref{fig:sharp}). Train, val, test, pilot và tầng ngẫu nhiên có trung vị độ sáng 101--107 và độ nét 487--560. Ảnh val có độ tương phản cao hơn train một chút (AUC 0,58 $[0{,}54;\,0{,}61]$).
-  \item \textbf{Ảnh \lab{Bị chặn} tối hơn ảnh \lab{Còn lối đi}.} Ở bộ chính, trung vị độ sáng là 90,9 so với 101,6; AUC 0,37 $[0{,}32;\,0{,}41]$ (bootstrap theo 17 đường); tỉ lệ điểm ảnh rất tối là 18\% so với 12\%. Một cách giải thích hợp lý là vật cản thường nằm dưới mái hiên và bóng cây, nhưng giả thuyết này \textbf{chưa được kiểm chứng}. Đây là rủi ro học lối tắt: mô hình có thể dựa một phần vào độ tối của ảnh, nên cần kiểm tra khi phân tích lỗi mô hình.
+  \item \textbf{Ba tập của bộ chính, pilot và tầng ngẫu nhiên có chất lượng ảnh nhìn chung tương đồng} (bảng~\ref{tab:image}, hình~\ref{fig:lum} và~\ref{fig:sharp}): trung vị độ sáng ảnh cắt 101--107 và độ nét 487--560. Ảnh val có độ tương phản cao hơn train một chút (AUC 0,58 $[0{,}54;\,0{,}61]$).
+  \item \textbf{Ảnh \lab{Bị chặn} tối hơn ảnh \lab{Còn lối đi}.} Ở bộ chính, trung vị độ sáng ảnh cắt là 90,9 so với 101,6; AUC 0,37 $[0{,}32;\,0{,}41]$ (bootstrap theo 17 đường); tỉ lệ điểm ảnh rất tối là 18\% so với 12\%. Một cách giải thích hợp lý là vật cản thường nằm dưới mái hiên và bóng cây, nhưng giả thuyết này \textbf{chưa được kiểm chứng}. Đây là rủi ro học lối tắt: mô hình có thể dựa một phần vào độ tối của ảnh, nên cần kiểm tra khi phân tích lỗi mô hình.
   \item \textbf{Tầng điểm cao tối hơn bộ chính} (trung vị 91,8 so với 101,9), một phần vì tầng này có nhiều ảnh \lab{Bị chặn}.
   \item \textbf{Ảnh \lab{I} có độ tương phản cao hơn và nhiều vùng cháy sáng hơn} ảnh \lab{0} (AUC 0,67 và 0,65 ở bộ chính), phù hợp với việc các ảnh này thường chứa nhiều bầu trời và lòng đường.
   \item \textbf{Độ nét không phân biệt được \lab{Bị chặn} với \lab{Còn lối đi}} (AUC 0,46--0,59 ở mọi nhóm, mọi khoảng tin cậy đều chứa 0,5). Ở các so sánh có nhãn \lab{I}, hai khoảng tin cậy không chứa 0,5 nhưng hiệu ứng nhỏ: ở val, \lab{I} so với \lab{1} có AUC 0,61 $[0{,}53;\,0{,}71]$; ở tầng điểm cao, \lab{I} so với \lab{0} có AUC 0,46 $[0{,}42;\,0{,}49]$.
@@ -372,4 +372,4 @@ Cả 5.149 ảnh: nhỏ nhất -- lớn nhất & & 24,3 -- 242,3 & 17,4 -- 96,6 
 
 \subsubsection*{Đối chiếu lý do gán nhãn \lab{I} với phép đo chất lượng ảnh}
 
-Có 33 ảnh \lab{I} mang lý do ``Ảnh mờ / tối / cháy sáng'' (bộ chính 12, ảnh bổ sung 21). Các ảnh này có độ nét thấp rõ rệt: trung vị độ nét nằm ở phân vị 3,5 của bộ chính và phân vị 13 của ảnh bổ sung. Về độ sáng, nhóm này gồm cả ảnh tối lẫn ảnh cháy sáng (36\% nằm dưới phân vị 10, 18\% nằm trên phân vị 90). Do cỡ mẫu nhỏ, kết quả này chỉ mang tính mô tả.
+Có 33 ảnh \lab{I} mang lý do ``Ảnh mờ / tối / cháy sáng'' (bộ chính 12, ảnh bổ sung 21). Các ảnh này có độ nét thấp rõ rệt: trung vị độ nét nằm ở bách phân vị thứ 3,5 của bộ chính và thứ 13 của ảnh bổ sung. Về độ sáng, nhóm này gồm cả ảnh tối lẫn ảnh cháy sáng (36\% nằm dưới bách phân vị thứ 10, 18\% nằm trên bách phân vị thứ 90). Do cỡ mẫu nhỏ, kết quả này chỉ mang tính mô tả.

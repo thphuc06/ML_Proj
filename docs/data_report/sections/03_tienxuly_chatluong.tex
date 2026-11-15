@@ -18,7 +18,7 @@ Nguyên tắc chung của nhóm là \emph{chỉ lọc dữ liệu bằng quy t�
 \textbf{Nội dung} & \textbf{Cách thực hiện} & \textbf{Kết quả} \\
 \midrule
 \endhead
-Ảnh chụp ban đêm & Loại ảnh có độ sáng trung bình nửa trên của ảnh $360^\circ$ dưới 90 (thang 0--255). Không lọc theo giờ chụp vì giờ ghi trên Mapillary không đáng tin cậy (nhiều ảnh ghi 18--0 giờ vẫn sáng như ban ngày). & Bộ chính: loại 58/3.057. Kho ứng viên bổ sung: loại 38/5.074 \\
+Ảnh chụp ban đêm & Loại ảnh có độ sáng trung bình nửa trên của ảnh $360^\circ$ dưới 90 (thang 0--255). Không lọc theo giờ chụp vì giờ ghi trên Mapillary không đáng tin cậy (nhiều ảnh ghi giờ chụp ban đêm vẫn sáng như ban ngày). & Bộ chính: loại 58/3.057. Kho ứng viên bổ sung: loại 38/5.074 \\
 Ảnh không thuộc tuyến đường & Chỉ giữ ảnh cách đường $\le 20$ m và có hướng di chuyển dọc trục đường ($\le 30^\circ$); loại hẻm. & 81,3\% ảnh trong khu vực gắn được vào đường \\
 Ảnh không đủ thông tin & Không lọc tự động. Người gán đặt nhãn \lab{I} kèm lý do; ảnh \lab{I} bị loại khỏi quá trình huấn luyện và đánh giá bộ phân loại vật cản cuối cùng nhưng vẫn được giữ trong bảng nhãn. & 1.920/5.149 ảnh mang nhãn \lab{I} \\
 Trùng lặp tuyệt đối & Mỗi ảnh $360^\circ$ chỉ được dùng một lần; so sánh mã băm MD5 của ảnh cắt. & Xem mục~\ref{sec:eda-quality} \\
@@ -84,11 +84,11 @@ Train gán chéo & 10 cặp & 276 & 78\% & 0,61 & 0,56 \\
   \item Trong 1.436 ảnh được gán đôi có 303 ảnh bất đồng: 193 ảnh \lab{0}/\lab{I}, 51 ảnh \lab{1}/\lab{I}, 59 ảnh \lab{0}/\lab{1}. Như vậy phần lớn bất đồng liên quan tới việc ảnh có đủ thông tin để đánh giá hay không.
   \item \textbf{Phân xử 303 ảnh} được thực hiện qua hai bước. (1) Trợ lý AI Claude (Anthropic) xem từng ảnh mà không thấy phiếu của người gán và đề xuất nhãn kèm lý do; sau đó xem lại riêng 21 ảnh có đề xuất khác cả hai phiếu, lần này có hiển thị phiếu, và sửa 10 ảnh. (2) Khải, người phân xử, duyệt cả 303 đề xuất, giữ nguyên 275 và sửa 28 (9,2\%). Nhãn cuối là nhãn do Khải quyết định. Cả 28 nhãn được sửa đều trùng với phiếu của một trong hai người gán ban đầu.
   \item \textbf{7 nhãn cuối khác cả hai phiếu.} Ở 7 ảnh, người phân xử giữ đề xuất của Claude dù đề xuất này khác cả hai phiếu: 3 ảnh test, 2 ảnh val và 2 ảnh train (ví dụ: hai phiếu là \lab{0} và \lab{I}, nhãn cuối là \lab{1}).
-  \item \textbf{Phân xử chưa hoàn toàn độc lập.} Đề cương dự kiến người phân xử độc lập, nhưng Khải là một trong hai người gán ở 123/303 ảnh bất đồng, gồm \emph{cả 99 ảnh bất đồng của val} (val do Minh và Khải gán) và 24 ảnh train. Trong 123 ảnh này, nhãn cuối trùng với phiếu của Khải ở 37 ảnh (đề xuất của Claude trùng ở 32 ảnh); trong 14 nhãn Khải sửa, 9 nhãn được đổi về phiếu của chính Khải. Vì vậy, nhãn val cần được diễn giải có tính đến hạn chế này.
+  \item \textbf{Phân xử chưa hoàn toàn độc lập.} Đề cương dự kiến người phân xử độc lập, nhưng Khải là một trong hai người gán ở 123/303 ảnh bất đồng, gồm \emph{cả 99 ảnh bất đồng của val} (val do Minh và Khải gán) và 24 ảnh train. Trong 123 ảnh này, đề xuất của Claude trùng với phiếu của chính Khải ở 32 ảnh; sau khi Khải duyệt, nhãn cuối trùng với phiếu của Khải ở 37 ảnh. Trong 14 đề xuất Khải sửa, 9 đề xuất được đổi về phiếu của chính Khải. Vì vậy, nhãn val cần được diễn giải có tính đến hạn chế này.
   \item \textbf{Pilot.} Cả 150 ảnh được xem lại theo hướng dẫn v1 theo cùng quy trình: Claude đề xuất, Phúc duyệt và sửa 3 ảnh. So với phiếu v0, 25 ảnh có nhãn cuối khác nhãn đa số; 5 ảnh khác hòa phiếu ở v0 nên không có nhãn đa số.
 \end{itemize}
 
-\textbf{Ảnh bổ sung.} Mỗi ảnh chỉ có một người gán nên không tính được $\kappa$. Ảnh được chia ngẫu nhiên cho người gán, nhưng tỉ lệ \lab{Bị chặn} của từng người chênh lệch rõ (Học 0,43, Loan 0,19, tính trên nhãn trước kiểm tra chéo; kiểm định $\chi^2$ trên bảng người gán $\times$ nhãn, $p = 4\cdot10^{-15}$). Giá trị $p$ này giả định các ảnh độc lập và chưa xét sự phụ thuộc theo đường, nên chỉ mang tính tham khảo; để xác nhận khác biệt giữa người gán, cần cho nhiều người cùng gán một mẫu ảnh độc lập. Một thành viên đã kiểm tra chéo độc lập 203 ảnh thuộc danh sách 264 ảnh bị nghi ngờ: 186 ảnh (92\%) trùng nhãn gốc và 17 nhãn được đổi. Do 203 ảnh này được chọn vì bị nghi ngờ, chúng \emph{không đại diện} cho 2.000 ảnh; vì vậy mức nhiễu nhãn của ảnh bổ sung \textbf{chưa đo được}.
+\textbf{Ảnh bổ sung.} Mỗi ảnh chỉ có một người gán nên không tính được $\kappa$. Ảnh được chia ngẫu nhiên cho người gán, nhưng tỉ lệ \lab{Bị chặn} của từng người chênh lệch rõ (Học 43\%, Loan 19\%, tính trên nhãn trước kiểm tra chéo; kiểm định $\chi^2$ trên bảng người gán $\times$ nhãn, $p = 4\cdot10^{-15}$). Giá trị $p$ này giả định các ảnh độc lập và chưa xét sự phụ thuộc theo đường, nên chỉ mang tính tham khảo; để xác nhận khác biệt giữa người gán, cần cho nhiều người gán độc lập trên cùng một mẫu ảnh. Trợ lý AI Claude đã xem lại và nghi ngờ nhãn của 264 ảnh bổ sung; các đề xuất của Claude không được dùng, nhưng một thành viên thứ hai đã gán lại độc lập 203 trong 264 ảnh này: 186 ảnh (92\%) trùng nhãn gốc và 17 nhãn được đổi. Do 203 ảnh này được chọn vì bị nghi ngờ, chúng \emph{không đại diện} cho 2.000 ảnh; vì vậy mức nhiễu nhãn của ảnh bổ sung \textbf{chưa đo được}.
 
 Bảng~\ref{tab:label-source} tổng hợp nguồn gốc của nhãn cuối.
 
@@ -116,7 +116,7 @@ Kiểm tra chéo (ảnh bổ sung) & 17 & Nhãn được đổi theo người ki
 
 \begin{itemize}
   \item Trong quy trình thu thập và gán nhãn: bước thu thập từ chối các đường đã thuộc tập khác và các đường trùng tên với đường val/test; bước cập nhật giao diện gán nhãn kiểm tra cả 5 dự án gán nhãn đều dùng đúng giao diện v1; bước đo đồng thuận kiểm tra đủ số lượt gán và phát hiện các lượt lưu trùng.
-  \item Trong báo cáo này: kiểm tra khóa, tập, đường, tọa độ, ngoại lệ, ảnh trùng và gần trùng, khoảng cách giữa các tập; kết quả được trình bày ở mục~\ref{sec:eda-quality}.
+  \item Trong báo cáo này: kiểm tra khóa, tập, đường, tọa độ, giá trị ngoại lai, ảnh trùng và gần trùng, khoảng cách giữa các tập; kết quả được trình bày ở mục~\ref{sec:eda-quality}.
 \end{itemize}
 
 % ------------------------------------------------------------------------------
@@ -149,7 +149,7 @@ Kiểm tra chéo (ảnh bổ sung) & 17 & Nhãn được đổi theo người ki
 
 \begin{itemize}[nosep]
   \item \textbf{Khóa chính} là mã ảnh 8 ký tự. Bảng nhãn và manifest được ghép với nhau theo khóa này; manifest ghi đường dẫn tới ảnh cắt.
-  \item \textbf{Ảnh không được đưa lên git} (bảng~\ref{tab:storage}) vì dung lượng và giấy phép; ảnh có thể được dựng lại từ manifest (mã ảnh gốc và góc quay) bằng script của nhóm. Ảnh dựng lại khác bản trên server do nén JPEG lại (lệch trung bình 1,35--1,5 mức xám, đo trên 5 ảnh).
+  \item \textbf{Ảnh không được đưa lên git} (bảng~\ref{tab:storage}) vì dung lượng và giấy phép; ảnh có thể được dựng lại từ manifest (mã ảnh gốc và góc cắt) bằng script của nhóm. Ảnh dựng lại khác bản trên server do nén JPEG lại (lệch trung bình 1,35--1,5 mức xám, đo trên 5 ảnh).
   \item \textbf{Phiên bản.} Tên file bảng nhãn có số phiên bản; bản cũ (v1 của nhãn ảnh bổ sung, trước kiểm tra chéo) được giữ lại. Phiếu gốc của từng người vẫn lưu trên Label Studio; nhãn cuối chỉ lưu trong repo.
   \item \textbf{Thông tin xác thực} (token Mapillary, mật khẩu server) nằm trong file cấu hình riêng, không đưa lên git.
 \end{itemize}
