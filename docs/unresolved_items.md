@@ -1,6 +1,6 @@
 # Danh sách việc chưa giải quyết
 
-Cập nhật 14/11/2026: đợt gán nhãn 1 đã xong, đã có nhãn cuối ([tổng kết](labeling_phase1.md)). Đã bơm 2.000 ảnh cho train (mục 17). Đã có báo cáo dữ liệu và EDA đợt 1 ([data_report.pdf](data_report/data_report.pdf)). Mỗi mục đóng lại khi có bằng chứng tương ứng.
+Cập nhật 14/11/2026: đợt gán nhãn 1 đã xong, đã có nhãn cuối ([tổng kết](labeling_phase1.md)). Đã bơm 2.000 ảnh cho train (mục 17). Đã có báo cáo dữ liệu và EDA đợt 1 (bản chính tiếng Anh [data_report_en.pdf](data_report/data_report_en.pdf), bản tiếng Việt [data_report.pdf](data_report/data_report.pdf)). Mỗi mục đóng lại khi có bằng chứng tương ứng.
 
 ## Đã đóng nhờ đợt gán chính
 

@@ -221,7 +221,7 @@ Question: which streets should train enrichment draw from? Summary and table: `d
 
 - **Check on train first:** over the 10 train streets, the mean leave-one-street-out selector score of a street against its labelled blocked share: Spearman 0.96. The old preview score (`street_preview_v1b.csv`) reaches 0.40 on the same streets.
 - **Scan:** 150 streets with >= 30 positions, not in `streets_v1.yaml`, no val/test street name; 30 random 25 m cells per street, one pano each. 4,500 panos in 871 s, 100 night, 4,400 crops scored by `lr_dinov2_b14_C0.001`.
-- **Result:** street mean scores from 0.02 to 0.67 (median 0.28). The top 20 are mostly small streets near markets (Phạm Hữu Chí#0, Nhật Tảo, Tôn Đản, Thích Quảng Đức, Hoàng Hoa Thám, ...), mean about 0.58. The 10 streets proposed on 2026-11-04 rank 34 to 103, mean 0.32.
+- **Result:** street mean scores from 0.02 to 0.67 (median 0.28). The top 20 are mostly small streets (18 of 20 tertiary or residential; 12 of 20 have a market within 150 m) (Phạm Hữu Chí#0, Nhật Tảo, Tôn Đản, Thích Quảng Đức, Hoàng Hoa Thám, ...), mean about 0.58. The 10 streets proposed on 2026-11-04 rank 34 to 103, mean 0.32.
 - **Limits:** train, val and test streets are all large roads, so the selector is unverified on small streets; ranking 150 streets on 30 crops each makes the top optimistic; the mapping from score to blocked share is a line through 10 points and an extrapolation above 0.43; no human label exists on any scanned street.
 
 ## 2026-11-11 — Train enrichment list: 2,000 crops from 75 streets (`src/collection/23_collect_train_extra.py --all --n 2000`)
