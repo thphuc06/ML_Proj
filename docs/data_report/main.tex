@@ -13,6 +13,7 @@
 \usepackage{fit_hcmus}
 \usepackage{longtable}
 \usepackage{needspace}
+\usepackage{tikz}
 \usepackage{multirow}
 \usepackage{subcaption}
 \graphicspath{{../proposal/latex/}{figures_vi/}{figures/}}
@@ -24,7 +25,7 @@
 \reportsubtitle{BÁO CÁO VỀ DỮ LIỆU}
 \title{PHÂN LOẠI TÌNH TRẠNG CHẶN LỐI ĐI TRÊN VỈA HÈ TP.HCM TỪ ẢNH ĐƯỜNG PHỐ}
 \instructor{TS. Bùi Tiến Lên}
-\classid{24KHMT02}
+\classid{24KHMT2}
 \academicyear{Học kỳ I, năm học 2026 - 2027}
 \groupid{11}
 \author{
@@ -48,19 +49,22 @@
 \renewcommand{\refname}{Tài liệu tham khảo}
 \renewcommand{\figurename}{Hình}
 \renewcommand{\tablename}{Bảng}
+% Section headings without the horizontal rule; list headings (contents, tables, figures) match.
+\titleformat{\section}{\fontsize{15pt}{18pt}\selectfont\bfseries\color{fitprimary}}{\thesection.}{0.6em}{}
+\titlespacing*{\section}{0pt}{13pt}{8pt}
+\renewcommand{\fit@listheading}[1]{{\noindent\fontsize{15pt}{18pt}\selectfont\bfseries\color{fitprimary}#1\par}\vspace{10pt}}
+% Header: tên môn (trái), nhóm (phải); footer: chỉ số trang ở giữa.
 \fancypagestyle{fancy}{%
   \fancyhf{}%
-  \fancyhead[L]{\small\bfseries\color{fitdark}\@courseid: \@coursename}%
-  \fancyhead[R]{\small\bfseries\color{fitprimary}Khoa CNTT, ĐH KHTN TP.HCM}%
-  \fancyfoot[L]{\small\itshape\color{fitgray}Báo cáo về dữ liệu -- Nhóm \@groupid}%
-  \fancyfoot[R]{\small\bfseries\color{fitdark}Trang \thepage/\pageref{LastPage}}%
+  \fancyhead[L]{\small\bfseries\color{fitdark}\@coursename}%
+  \fancyhead[R]{\small\bfseries\color{fitprimary}Nhóm \@groupid}%
+  \fancyfoot[C]{\small\color{fitdark}\thepage}%
   \renewcommand{\headrulewidth}{0.6pt}%
-  \renewcommand{\footrulewidth}{0.5pt}%
-  \renewcommand{\footruleskip}{12.4pt}%
+  \renewcommand{\footrulewidth}{0pt}%
 }
 \fancypagestyle{plain}{%
   \fancyhf{}%
-  \fancyfoot[R]{\raisebox{8pt}[0pt][0pt]{\small\bfseries\color{fitdark}Trang \thepage}}%
+  \fancyfoot[C]{\small\color{fitdark}\thepage}%
   \renewcommand{\headrulewidth}{0pt}%
   \renewcommand{\footrulewidth}{0pt}%
 }
@@ -68,40 +72,50 @@
   \begin{titlepage}
   \setstretch{1.0}%
   \centering
-  \vspace*{\dimexpr-0.9cm+3bp\relax}
+  \vspace*{0.1cm}
   \begin{adjustwidth}{-0.5cm}{0.5cm}
   \centering
-  {\fontsize{13pt}{16pt}\selectfont\bfseries ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\par}
-  \vspace{4.2pt}
-  {\fontsize{14pt}{16pt}\selectfont\bfseries\color{fitprimary} TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN\par}
-  \vspace{1.9pt}
-  {\fontsize{13pt}{16pt}\selectfont\bfseries\color{fitaccent} KHOA CÔNG NGHỆ THÔNG TIN\par}
-  \vspace{8.3pt}
-  {\color{fitaccent}\rule{10.4cm}{1.5pt}\par}
-  \vspace{16.9pt}
-  \includegraphics[width=4.4cm]{images/logo_hcmus.png}\par
-  \vspace{22.8pt}
-  {\fontsize{13pt}{16pt}\selectfont\bfseries MÔN HỌC: \@coursename\ (\@courseid)\par}
-  \vspace{5pt}
-  {\fontsize{14pt}{16pt}\selectfont\bfseries\color{fitdark}\@reportsubtitle\par}
-  \vspace{8.1pt}
-  \begin{tcolorbox}[enhanced,width=\linewidth,arc=5.5pt,boxrule=1.5pt,
-      colframe=fitprimary,colback=white,halign=center,valign=center,
-      top=12pt,bottom=12pt,left=8pt,right=8pt]
-    \fontsize{17pt}{21pt}\selectfont\bfseries\color{fitprimary}\@title
-  \end{tcolorbox}
-  \vspace{-2.1pt}
+  {\fontsize{13pt}{17pt}\selectfont ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\par}
+  \vspace{3pt}
+  {\fontsize{15pt}{19pt}\selectfont\bfseries\color{fitprimary}TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN\par}
+  \vspace{3pt}
+  {\fontsize{13pt}{17pt}\selectfont\bfseries\color{fitaccent}KHOA CÔNG NGHỆ THÔNG TIN\par}
+  \vspace{6pt}
+  {\color{fitaccent}\rule{5.5cm}{1pt}\par}
+  \vspace{0.5cm}
+  \includegraphics[width=5.8cm]{images/logo_hcmus.png}\par
+  \vspace{0.5cm}
+  {\fontsize{14pt}{18pt}\selectfont\bfseries MÔN HỌC: \MakeUppercase{\@coursename}\par}
+  \vspace{0.55cm}
+  {\fontsize{17pt}{21pt}\selectfont\bfseries\color{fitdark}\@reportsubtitle\par}
+  \vspace{0.45cm}
+  {\color{fitprimary}\rule{0.92\linewidth}{1.2pt}\par}
+  \vspace{10pt}
+  {\fontsize{20pt}{27pt}\selectfont\bfseries\color{fitprimary}\@title\par}
+  \vspace{8pt}
+  {\color{fitprimary}\rule{0.92\linewidth}{1.2pt}\par}
+  \vspace{0.6cm}
   {\fontsize{13pt}{16pt}\selectfont
-   \renewcommand{\arraystretch}{1.7}%
+   \renewcommand{\arraystretch}{1.25}%
    \begin{tabular}{@{}l@{\hspace{1.2em}}l@{}}
      \textbf{Giảng viên:} & \@instructor \\
      \textbf{Lớp:} & \@classid \\
-     \textbf{Thời gian:} & \@academicyear \\
      \textbf{Nhóm:} & \@groupid \\
-     \textbf{Sinh viên:} &
    \end{tabular}\par}
-  \vspace{2pt}
-  {\fontsize{13pt}{16pt}\selectfont\setstretch{1.35}\@author\par}
+  \vspace{0.45cm}
+  {\fontsize{12.5pt}{15pt}\selectfont
+   \renewcommand{\arraystretch}{1.12}%
+   \begin{tabular}{@{}l@{\hspace{3em}}c@{}}
+     \toprule
+     \textbf{Họ và tên} & \textbf{MSSV} \\
+     \midrule
+     Lê Nguyễn Quốc Học & 24127044 \\
+     Bùi Thị Bích Loan & 24127072 \\
+     Nguyễn Hữu Gia Minh & 24127078 \\
+     Nguyễn Lê Hoàng Khải & 24127408 \\
+     Trần Hoàng Phúc & 24127505 \\
+     \bottomrule
+   \end{tabular}\par}
   \end{adjustwidth}
   \vfill
   \end{titlepage}%
@@ -120,8 +134,8 @@
 \begin{document}
 
 \makecoverpage
-\pagestyle{plain}
-\pagenumbering{roman}
+\pagestyle{empty}   % mục lục, danh sách bảng và hình: không đánh số trang
+\pagenumbering{gobble}
 \begingroup
     \setstretch{1.0}
     \setlength{\parskip}{0pt}

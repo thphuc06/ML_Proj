@@ -28,7 +28,7 @@ Giấy phép & Ảnh Mapillary theo giấy phép CC BY-SA 4.0, ghi công \cc. Ph
 
 Khu vực nghiên cứu là trung tâm TP.HCM (Quận 1, 3, 5, 10, Phú Nhuận và Bình Thạnh cũ), trong khung tọa độ 10,745--10,815$^\circ$ Bắc, 106,650--106,725$^\circ$ Đông. Trong khung này, Mapillary có 652.159 ảnh $360^\circ$ thuộc 1.234 chuỗi ảnh (quét ngày 22/10/2026), chủ yếu của ba tài khoản \lab{bemaps3\_sg}, \lab{phoenix\_mapping\_front} và \lab{phoenixmap\_front}, chụp trong các năm 2016, 2023 và 2024.
 
-\subsection{Quy trình thu thập từng bước}
+\subsection{Quy trình thu thập dữ liệu}
 \label{sec:pipeline}
 
 Bảng~\ref{tab:steps} liệt kê chín bước thu thập và kết quả của từng bước. Mỗi bước do một script riêng của nhóm thực hiện và được ghi lại trong nhật ký thu thập.
@@ -93,7 +93,7 @@ Pilot & 150 & 5 người gán theo hướng dẫn v0; sau đó cả 150 ảnh đ
 
 Bảng~\ref{tab:assignment} cho biết phân công gán nhãn. Người gán không thấy tên đường, tập dữ liệu, điểm của mô hình hay phiếu của người khác. Ảnh của các tập được trộn lẫn trong cùng một dự án gán nhãn. Bộ chính có tổng cộng $5\times887 = 4.435$ lượt gán, không thiếu lượt nào. Kết quả đồng thuận và phân xử được trình bày ở mục~\ref{sec:qa}.
 
-\subsection{Bổ sung mẫu dương cho train}
+\subsection{Bổ sung mẫu dương cho tập huấn luyện}
 \label{sec:enrich}
 
 Sau đợt gán nhãn đầu tiên, train chỉ có 120 mẫu dương (gồm 14 ảnh pilot). Nhóm bổ sung ảnh \emph{chỉ vào train}, theo hướng chủ động tìm mẫu dương của lớp hiếm~\cite{attenberg2010search}:
