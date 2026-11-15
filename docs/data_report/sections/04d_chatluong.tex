@@ -91,7 +91,7 @@ Rò rỉ giữa các tập được đánh giá theo hai cách: theo nội dung 
 \midrule
 Val (486) -- train bộ chính & 1,5 & 6 & 6 & 14 & 47 \\
 Val -- pilot & 17,9 & 0 & 1 & 5 & 17 \\
-Val -- ảnh bổ sung & 41,6 & 0 & 0 & 0 & 71 \\
+Val -- ảnh bổ sung & 41,5 & 0 & 0 & 0 & 71 \\
 Test (674) -- train bộ chính & 7,1 & 8 & 18 & 34 & 88 \\
 Test -- pilot & 20,9 & 0 & 2 & 4 & 7 \\
 Test -- ảnh bổ sung & 34,3 & 0 & 0 & 3 & 116 \\
@@ -99,8 +99,9 @@ Test -- ảnh bổ sung & 34,3 & 0 & 0 & 3 & 116 \\
 \end{tabularx}
 \end{table}
 
+Số ảnh theo từng nguồn phía train trong bảng~\ref{tab:spatial} có thể trùng nhau, nên không được cộng dồn để ra con số tổng.
 \begin{itemize}
-  \item \textbf{52 trên 1.160 ảnh val/test (4,5\%) nằm cách một ảnh train dưới 40 m}, liên quan tới 47 ảnh phía train và 13 cặp đường giao nhau (ví dụ Hồng Bàng -- Nguyễn Trãi, Lý Thường Kiệt -- Cách Mạng Tháng Tám, Hai Bà Trưng -- Điện Biên Phủ).
+  \item \textbf{52 trên 1.160 ảnh val/test (4,5\%) nằm cách một ảnh train dưới 40 m}, liên quan tới 47 ảnh phía train và 10 cặp đường đánh giá -- đường train khác nhau (13 dòng nếu tính riêng từng nguồn bộ chính, pilot và ảnh bổ sung; ví dụ Hồng Bàng -- Nguyễn Trãi, Lý Thường Kiệt -- Cách Mạng Tháng Tám, Hai Bà Trưng -- Điện Biên Phủ).
   \item Kiểm tra trực quan 20 cặp gần nhau nhất (1--14 m): phần lớn nhìn về hai hướng khác nhau, nhưng một số cặp thấy cùng một góc phố (cùng cột điện, biển quảng cáo, hàng rào). Phép đo theo nội dung không phát hiện được các cặp này: độ tương đồng cosine lớn nhất của chúng chỉ là 0,82.
   \item \textbf{Ảnh bổ sung tuân thủ quy tắc 40 m}, trừ 1 ảnh cách ảnh test 34,3 m (do quy tắc được áp dụng cho tâm của ô 25 m, không áp dụng cho từng ảnh).
   \item 53 trên 551 chuỗi ảnh Mapillary chứa ảnh của cả phía train lẫn val/test (cùng một lượt xe chạy qua nhiều đường). Đây không phải rò rỉ nội dung, nhưng cho thấy cùng một thiết bị và điều kiện chụp xuất hiện ở cả hai phía.

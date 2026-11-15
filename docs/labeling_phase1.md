@@ -6,7 +6,7 @@ Tổng kết ngày 11/11/2026, dùng cho phần dữ liệu của báo cáo. Nh�
 
 - **2.999 ảnh**, chụp từ Mapillary trên 17 tuyến đường. Mỗi ảnh nhìn vỉa hè bên phải xe chụp.
 - **5 người gán**, mỗi người 887 lượt, tổng cộng 4.435 lượt. Không thiếu lượt nào.
-- **Đồng thuận (Cohen κ, 3 nhãn):** test 0,60 · val 0,64 · train gán chéo 0,61. Cả ba đều đạt ngưỡng 0,6 của đề cương. Pilot trước đó chỉ đạt 0,57.
+- **Đồng thuận (Cohen κ, 3 nhãn):** test 0,60 · val 0,64 · train gán chéo 0,61. Test thực tế là 0,5975, làm tròn thành 0,60 nhưng sát dưới ngưỡng 0,6 của đề cương; val và train gán chéo (gộp) vượt ngưỡng. Pilot trước đó chỉ đạt 0,57.
 - **303 ảnh bất đồng** được phân xử. Claude đề xuất nhãn bằng cách xem ảnh, Khải duyệt và sửa 28 ảnh.
 - **150 ảnh pilot** (3 đường train) được xem lại toàn bộ theo guide v1 và đưa vào train. Phúc sửa 3 ảnh.
 - **Kết quả:** 3.149 ảnh có nhãn cuối. 1.833 ảnh dùng được, gồm 1.631 ảnh "Còn lối đi" và 202 ảnh "Bị chặn". 1.316 ảnh "Không đủ thông tin" bị loại khỏi model.

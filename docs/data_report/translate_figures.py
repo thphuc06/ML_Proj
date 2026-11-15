@@ -174,6 +174,7 @@ def relabel(source, target, font, table, english_numbers):
             page.insert_font(fontname="F0", fontbuffer=font.buffer)
             for s, d, text in redo.values():
                 place(page, font, s, d, text, spans)
+    doc.subset_fonts()  # embed only the glyphs used, not the whole Arial file (about 600 KB per figure)
     doc.save(target, garbage=4, deflate=True)
 
 

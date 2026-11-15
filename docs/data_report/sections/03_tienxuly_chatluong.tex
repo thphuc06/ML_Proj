@@ -20,7 +20,7 @@ Nguyên tắc chung của nhóm là \emph{chỉ lọc dữ liệu bằng quy t�
 \endhead
 Ảnh chụp ban đêm & Loại ảnh có độ sáng trung bình nửa trên của ảnh $360^\circ$ dưới 90 (thang 0--255). Không lọc theo giờ chụp vì giờ ghi trên Mapillary không đáng tin cậy (nhiều ảnh ghi 18--0 giờ vẫn sáng như ban ngày). & Bộ chính: loại 58/3.057. Kho ứng viên bổ sung: loại 38/5.074 \\
 Ảnh không thuộc tuyến đường & Chỉ giữ ảnh cách đường $\le 20$ m và có hướng di chuyển dọc trục đường ($\le 30^\circ$); loại hẻm. & 81,3\% ảnh trong khu vực gắn được vào đường \\
-Ảnh không đủ thông tin & Không lọc tự động. Người gán đặt nhãn \lab{I} kèm lý do; ảnh \lab{I} bị loại khỏi mô hình nhưng vẫn được giữ trong bảng nhãn. & 1.920/5.149 ảnh mang nhãn \lab{I} \\
+Ảnh không đủ thông tin & Không lọc tự động. Người gán đặt nhãn \lab{I} kèm lý do; ảnh \lab{I} bị loại khỏi quá trình huấn luyện và đánh giá bộ phân loại vật cản cuối cùng nhưng vẫn được giữ trong bảng nhãn. & 1.920/5.149 ảnh mang nhãn \lab{I} \\
 Trùng lặp tuyệt đối & Mỗi ảnh $360^\circ$ chỉ được dùng một lần; so sánh mã băm MD5 của ảnh cắt. & Xem mục~\ref{sec:eda-quality} \\
 Gần trùng & Lấy mẫu thưa: mỗi 25 m một vị trí, tối đa 2 ảnh mỗi vị trí và phải khác ngày chụp. Riêng kho ứng viên bổ sung có thêm bước so sánh mã băm sai phân (dHash)~\cite{krawetz2013dhash} giữa hai ngày chụp của cùng vị trí. & Kho ứng viên bổ sung: loại 1 cặp. Bộ chính: được đánh giá lần đầu trong báo cáo này (mục~\ref{sec:eda-quality}) \\
 Dữ liệu thiếu & Metadata lấy từ API; ảnh thiếu tọa độ hoặc hướng di chuyển không gắn được vào đường nên đã bị loại ở bước gắn đường. Với nhãn, mọi lượt gán đều bắt buộc chọn nhãn chính. & Xem bảng~\ref{tab:inventory} \\
@@ -76,11 +76,11 @@ Val & Minh -- Khải & 486 & 80\% & 0,64 & 0,55 \\
 Train gán chéo & 10 cặp & 276 & 78\% & 0,61 & 0,56 \\
 \bottomrule
 \end{tabularx}
-\note{$\kappa$ chỉ 0/1 được tính trên các ảnh mà cả hai người đều chọn 0 hoặc 1 (test 418 ảnh, val 211 ảnh).}
+\note{$\kappa$ chỉ 0/1 được tính trên các ảnh mà cả hai người đều chọn 0 hoặc 1 (test 418 ảnh, val 211 ảnh, train gán chéo 144 ảnh).}
 \end{table}
 
 \begin{itemize}
-  \item Cả ba nhóm trong bảng~\ref{tab:kappa} đều đạt ngưỡng 0,6 đặt ra trong đề cương; pilot (theo hướng dẫn v0) chỉ đạt Fleiss $\kappa$ 0,57. Khoảng tin cậy của các giá trị $\kappa$ \textbf{chưa được tính}.
+  \item $\kappa$ 3 nhãn của test là 0,5975, làm tròn thành 0,60 nhưng thấp hơn một chút so với ngưỡng 0,6 đặt ra trong đề cương. Val và ước lượng gộp của phần train gán chéo vượt ngưỡng 0,6; tuy nhiên, ước lượng gộp không có nghĩa là mọi cặp người gán trong train đều đạt ngưỡng. Pilot (theo hướng dẫn v0) chỉ đạt Fleiss $\kappa$ 0,57. Khoảng tin cậy của các giá trị $\kappa$ \textbf{chưa được tính}.
   \item Trong 1.436 ảnh được gán đôi có 303 ảnh bất đồng: 193 ảnh \lab{0}/\lab{I}, 51 ảnh \lab{1}/\lab{I}, 59 ảnh \lab{0}/\lab{1}. Như vậy phần lớn bất đồng liên quan tới việc ảnh có đủ thông tin để đánh giá hay không.
   \item \textbf{Phân xử 303 ảnh} được thực hiện qua hai bước. (1) Trợ lý AI Claude (Anthropic) xem từng ảnh mà không thấy phiếu của người gán và đề xuất nhãn kèm lý do; sau đó xem lại riêng 21 ảnh có đề xuất khác cả hai phiếu, lần này có hiển thị phiếu, và sửa 10 ảnh. (2) Khải, người phân xử, duyệt cả 303 đề xuất, giữ nguyên 275 và sửa 28 (9,2\%). Nhãn cuối là nhãn do Khải quyết định. Cả 28 nhãn được sửa đều trùng với phiếu của một trong hai người gán ban đầu.
   \item \textbf{7 nhãn cuối khác cả hai phiếu.} Ở 7 ảnh, người phân xử giữ đề xuất của Claude dù đề xuất này khác cả hai phiếu: 3 ảnh test, 2 ảnh val và 2 ảnh train (ví dụ: hai phiếu là \lab{0} và \lab{I}, nhãn cuối là \lab{1}).

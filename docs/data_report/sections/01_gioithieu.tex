@@ -10,7 +10,7 @@ Một vỉa hè có thể tồn tại về mặt vật lý nhưng không còn đ
 \begin{itemize}
   \item \textbf{Đầu vào:} một ảnh $640\times640$ điểm ảnh nhìn về một phía vỉa hè, được cắt từ ảnh toàn cảnh $360^\circ$ chụp từ xe.
   \item \textbf{Đầu ra của mô hình:} phân loại nhị phân. \lab{0 -- Còn lối đi}: người đi bộ có thể tiếp tục đi dọc vỉa hè gần. \lab{1 -- Bị chặn}: người đi bộ buộc phải bước xuống lòng đường.
-  \item \textbf{Ảnh không đủ bằng chứng} (không thấy vỉa hè gần, bị che khuất, ảnh hỏng) được gán nhãn riêng \lab{I -- Không đủ thông tin}; nhãn này chỉ dùng ở khâu gán nhãn và các ảnh mang nhãn \lab{I} bị loại khỏi quá trình huấn luyện và đánh giá mô hình. Nhãn \lab{I} vẫn được thống kê vì nó quyết định số ảnh hợp lệ thu được từ nguồn dữ liệu.
+  \item \textbf{Ảnh không đủ bằng chứng} (không thấy vỉa hè gần, bị che khuất, ảnh hỏng) được gán nhãn riêng \lab{I -- Không đủ thông tin}; các ảnh mang nhãn \lab{I} bị loại khỏi quá trình huấn luyện và đánh giá bộ phân loại vật cản cuối cùng. Nhãn \lab{I} vẫn được thống kê vì nó quyết định số ảnh hợp lệ thu được từ nguồn dữ liệu; riêng bộ chọn ảnh dùng để bổ sung dữ liệu coi các ảnh này là mẫu không dương (mục~\ref{sec:enrich}).
   \item \textbf{Câu hỏi nghiên cứu:} mô hình nào phân loại tốt nhất trên \emph{các tuyến đường không xuất hiện trong tập huấn luyện}. Do đó, dữ liệu được chia theo nguyên tuyến đường, và mọi kiểm tra trong báo cáo đều chú trọng tới rò rỉ dữ liệu giữa các tập.
 \end{itemize}
 
