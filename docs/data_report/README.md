@@ -47,4 +47,4 @@ Báo cáo không nhắc tới tên file, script hay tên biến, trừ bảng t�
 - Khác biệt giữa ảnh bổ sung và bộ chính được giải thích bằng loại đường (71% ảnh bổ sung từ đường tertiary hoặc residential; cả 17 đường bộ chính là primary hoặc secondary). Không viết "đường gần chợ": 38/75 đường bổ sung có chợ trong 150 m, nhưng bộ chính là 12/17, nên chợ không phân biệt hai phần.
 - Kết luận dựa trên quan sát trực quan hoặc suy luận viết ở mức "có vẻ", "nhiều khả năng"; chỉ khẳng định điều đã đo.
 
-Mã `adjudicated_phuc` là mã cũ trong CSV, được giữ để tương thích; theo xác nhận của nhóm, Khải thực hiện phân xử 303 ảnh bộ chính. Không đổi nhãn hay số đếm khi sửa thông tin này.
+Khải thực hiện phân xử 303 ảnh bất đồng của bộ chính. Ngày 15/11/2026, cột `phuc` của bảng đề xuất phân xử bộ chính được đổi tên thành `khai` và mã nguồn nhãn `adjudicated_phuc` thành `adjudicated_khai` cho khớp; không nhãn hay số đếm nào thay đổi. Cột `phuc` và mã `pilot_review_phuc` của phần pilot giữ nguyên vì Phúc là người duyệt 150 ảnh pilot.

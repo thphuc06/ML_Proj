@@ -1,4 +1,4 @@
-﻿tile,item,split,street_id,annotator1,label1,annotator2,label2,proposed,phuc,matches,unsure,why,sheet
+﻿tile,item,split,street_id,annotator1,label1,annotator2,label2,proposed,khai,matches,unsure,why,sheet
 0,28135893,test,Nơ Trang Long,Hoc,0,Loan,I,1,0,khác cả hai,False,xe máy đậu và biển quán phủ kín vỉa hè trước quán,adjudication_proposal_01.jpg
 1,456bb807,test,Hai Bà Trưng,Hoc,1,Loan,I,1,,Hoc,False,biển hiệu và xe đậu và quầy nước mía chiếm hết bề ngang,adjudication_proposal_01.jpg
 2,4b75c401,test,Hai Bà Trưng,Hoc,0,Loan,1,1,,Loan,False,biển quảng cáo trên khung bánh xe chắn ngang vỉa hè,adjudication_proposal_01.jpg

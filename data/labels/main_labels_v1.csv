@@ -221,7 +221,7 @@
 13c9e083,main,main/13c9e083.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 13d16c88,main,main/13d16c88.jpg,train,Cách Mạng Tháng Tám#0,1,agreed,
 13ddb8a9,main,main/13ddb8a9.jpg,train,Nguyễn Thị Minh Khai,0,single,
-13edff9b,main,main/13edff9b.jpg,train,Lê Văn Sỹ,1,adjudicated_phuc,
+13edff9b,main,main/13edff9b.jpg,train,Lê Văn Sỹ,1,adjudicated_khai,
 13eef19f,main,main/13eef19f.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 140d1097,main,main/140d1097.jpg,train,Nguyễn Kiệm#0,0,single,
 142073a4,main,main/142073a4.jpg,train,Nguyễn Trãi,0,single,
@@ -436,7 +436,7 @@
 26262c0b,main,main/26262c0b.jpg,test,Lý Thường Kiệt,0,agreed,
 2636b0cd,main,main/2636b0cd.jpg,test,Trần Phú,I,agreed,
 2636ceaa,main,main/2636ceaa.jpg,train,Trần Hưng Đạo,0,single,
-263b4f41,main,main/263b4f41.jpg,val,Hồng Bàng,1,adjudicated_phuc,
+263b4f41,main,main/263b4f41.jpg,val,Hồng Bàng,1,adjudicated_khai,
 26467acf,main,main/26467acf.jpg,train,Nguyễn Thị Minh Khai,I,adjudicated_proposal,
 264cb7a5,main,main/264cb7a5.jpg,train,Cách Mạng Tháng Tám#0,0,adjudicated_proposal,
 26576fd8,main,main/26576fd8.jpg,train,Trần Hưng Đạo,I,adjudicated_proposal,
@@ -457,12 +457,12 @@
 2796704c,main,main/2796704c.jpg,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
 27b7d0de,main,main/27b7d0de.jpg,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
 27e90ab0,main,main/27e90ab0.jpg,train,Cách Mạng Tháng Tám#0,0,single,
-28135893,main,main/28135893.jpg,test,Nơ Trang Long,0,adjudicated_phuc,
+28135893,main,main/28135893.jpg,test,Nơ Trang Long,0,adjudicated_khai,
 2831a61e,main,main/2831a61e.jpg,test,Lý Thường Kiệt,0,adjudicated_proposal,
 283fff89,main,main/283fff89.jpg,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
 285c0d7c,main,main/285c0d7c.jpg,train,Trần Hưng Đạo,0,agreed,
 28808d44,main,main/28808d44.jpg,val,Võ Văn Tần,I,agreed,Không thấy vỉa hè
-2897ff35,main,main/2897ff35.jpg,val,Nguyễn Đình Chiểu#0,1,adjudicated_phuc,
+2897ff35,main,main/2897ff35.jpg,val,Nguyễn Đình Chiểu#0,1,adjudicated_khai,
 2899a9fb,main,main/2899a9fb.jpg,train,Điện Biên Phủ#1,0,single,
 28d5620c,main,main/28d5620c.jpg,train,Pasteur,I,single,Không thấy vỉa hè
 28ed65ef,main,main/28ed65ef.jpg,train,Cách Mạng Tháng Tám#0,0,single,
@@ -619,7 +619,7 @@
 3688b349,main,main/3688b349.jpg,train,Nguyễn Trãi,0,single,
 36a782cb,main,main/36a782cb.jpg,train,Cách Mạng Tháng Tám#0,0,agreed,
 36aa8b96,main,main/36aa8b96.jpg,train,Hải Thượng Lãn Ông,0,single,
-36b09bdd,main,main/36b09bdd.jpg,train,Nguyễn Trãi,1,adjudicated_phuc,
+36b09bdd,main,main/36b09bdd.jpg,train,Nguyễn Trãi,1,adjudicated_khai,
 36b34561,main,main/36b34561.jpg,train,Phan Đăng Lưu,0,agreed,
 36b60244,main,main/36b60244.jpg,train,Nguyễn Trãi,0,single,
 36b78646,main,main/36b78646.jpg,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
@@ -688,7 +688,7 @@
 3acf22ed,main,main/3acf22ed.jpg,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
 3ae8c5f3,main,main/3ae8c5f3.jpg,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
 3b00c8ae,main,main/3b00c8ae.jpg,val,Võ Văn Tần,0,adjudicated_proposal,
-3b0c3471,main,main/3b0c3471.jpg,test,Lý Thường Kiệt,0,adjudicated_phuc,
+3b0c3471,main,main/3b0c3471.jpg,test,Lý Thường Kiệt,0,adjudicated_khai,
 3b3bcaf9,main,main/3b3bcaf9.jpg,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
 3b3ddc5e,main,main/3b3ddc5e.jpg,train,Trần Hưng Đạo,0,single,
 3b4a93f9,main,main/3b4a93f9.jpg,train,Lê Văn Sỹ,0,single,
@@ -738,7 +738,7 @@
 3e795f87,main,main/3e795f87.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 3e8aedff,main,main/3e8aedff.jpg,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
 3e93ff81,main,main/3e93ff81.jpg,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
-3e9f962f,main,main/3e9f962f.jpg,test,Trần Phú,0,adjudicated_phuc,
+3e9f962f,main,main/3e9f962f.jpg,test,Trần Phú,0,adjudicated_khai,
 3eb7f8f8,main,main/3eb7f8f8.jpg,test,Hai Bà Trưng,0,agreed,
 3ec57fff,main,main/3ec57fff.jpg,val,Nguyễn Đình Chiểu#0,0,agreed,
 3ec6a1bc,main,main/3ec6a1bc.jpg,train,Trần Hưng Đạo,0,single,
@@ -804,7 +804,7 @@
 440024a8,main,main/440024a8.jpg,train,Nguyễn Trãi,0,single,
 440aae47,main,main/440aae47.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 4474a58f,main,main/4474a58f.jpg,train,Trần Hưng Đạo,0,single,
-44941d16,main,main/44941d16.jpg,test,Trần Phú,1,adjudicated_phuc,
+44941d16,main,main/44941d16.jpg,test,Trần Phú,1,adjudicated_khai,
 44c2d832,main,main/44c2d832.jpg,train,Lê Văn Sỹ,I,single,Không thấy vỉa hè
 44d3e093,main,main/44d3e093.jpg,train,Trần Hưng Đạo,0,single,
 44e02832,main,main/44e02832.jpg,train,Nguyễn Thị Minh Khai,0,single,
@@ -1002,7 +1002,7 @@
 557117d5,main,main/557117d5.jpg,test,Hai Bà Trưng,0,agreed,
 55900d8c,main,main/55900d8c.jpg,train,Điện Biên Phủ#1,0,single,
 559583a4,main,main/559583a4.jpg,test,Lý Thường Kiệt,0,agreed,
-55b3c389,main,main/55b3c389.jpg,train,Cách Mạng Tháng Tám#0,1,adjudicated_phuc,
+55b3c389,main,main/55b3c389.jpg,train,Cách Mạng Tháng Tám#0,1,adjudicated_khai,
 56057a44,main,main/56057a44.jpg,train,Nguyễn Thị Minh Khai,1,single,
 5627f23f,main,main/5627f23f.jpg,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
 562e6900,main,main/562e6900.jpg,test,Hai Bà Trưng,0,agreed,
@@ -1168,7 +1168,7 @@
 6445f28b,main,main/6445f28b.jpg,test,Hai Bà Trưng,0,agreed,
 64513c33,main,main/64513c33.jpg,train,Điện Biên Phủ#1,0,single,
 64672e39,main,main/64672e39.jpg,train,Lê Văn Sỹ,0,single,
-646e15b7,main,main/646e15b7.jpg,val,Nguyễn Đình Chiểu#0,0,adjudicated_phuc,
+646e15b7,main,main/646e15b7.jpg,val,Nguyễn Đình Chiểu#0,0,adjudicated_khai,
 6470911e,main,main/6470911e.jpg,train,Nguyễn Trãi,0,single,
 647fdae7,main,main/647fdae7.jpg,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
 64a56671,main,main/64a56671.jpg,train,Nguyễn Trãi,I,single,Không thấy vỉa hè
@@ -1239,7 +1239,7 @@
 69812fa5,main,main/69812fa5.jpg,train,Điện Biên Phủ#1,0,single,
 698960b8,main,main/698960b8.jpg,train,Trần Hưng Đạo,0,single,
 69a9be09,main,main/69a9be09.jpg,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
-69ac2a6e,main,main/69ac2a6e.jpg,train,Trần Hưng Đạo,1,adjudicated_phuc,
+69ac2a6e,main,main/69ac2a6e.jpg,train,Trần Hưng Đạo,1,adjudicated_khai,
 69c65adb,main,main/69c65adb.jpg,train,Trần Hưng Đạo,I,single,Ảnh mờ / tối / cháy sáng
 69c94a88,main,main/69c94a88.jpg,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
 69cb9f8a,main,main/69cb9f8a.jpg,test,Lý Thường Kiệt,I,agreed,
@@ -1275,7 +1275,7 @@
 6c5b59c0,main,main/6c5b59c0.jpg,test,Lý Thường Kiệt,I,adjudicated_proposal,
 6c676d56,main,main/6c676d56.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 6c6bd818,main,main/6c6bd818.jpg,test,Hai Bà Trưng,0,agreed,
-6c8ce2e8,main,main/6c8ce2e8.jpg,val,Nguyễn Đình Chiểu#0,1,adjudicated_phuc,
+6c8ce2e8,main,main/6c8ce2e8.jpg,val,Nguyễn Đình Chiểu#0,1,adjudicated_khai,
 6cb5cea9,main,main/6cb5cea9.jpg,train,Cách Mạng Tháng Tám#0,1,single,
 6cbd39eb,main,main/6cbd39eb.jpg,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
 6cc53e20,main,main/6cc53e20.jpg,val,Nguyễn Đình Chiểu#0,0,agreed,
@@ -1422,7 +1422,7 @@
 79d84ee5,main,main/79d84ee5.jpg,train,Pasteur,I,single,Không thấy vỉa hè
 79eac0cf,main,main/79eac0cf.jpg,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
 7a00d8aa,main,main/7a00d8aa.jpg,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
-7a02732b,main,main/7a02732b.jpg,val,Hồng Bàng,0,adjudicated_phuc,
+7a02732b,main,main/7a02732b.jpg,val,Hồng Bàng,0,adjudicated_khai,
 7a064683,main,main/7a064683.jpg,train,Phan Đăng Lưu,0,single,
 7a18b757,main,main/7a18b757.jpg,train,Nguyễn Trãi,0,single,
 7a31c763,main,main/7a31c763.jpg,test,Trần Phú,1,agreed,
@@ -1547,7 +1547,7 @@
 85681e5c,main,main/85681e5c.jpg,test,Nơ Trang Long,0,agreed,
 8571c493,main,main/8571c493.jpg,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
 85a28366,main,main/85a28366.jpg,test,Lý Thường Kiệt,0,agreed,
-85ad0f21,main,main/85ad0f21.jpg,test,Trần Phú,0,adjudicated_phuc,
+85ad0f21,main,main/85ad0f21.jpg,test,Trần Phú,0,adjudicated_khai,
 85c1360c,main,main/85c1360c.jpg,test,Nơ Trang Long,0,agreed,
 85c48d4c,main,main/85c48d4c.jpg,test,Lý Thường Kiệt,1,adjudicated_proposal,
 85e2d3a6,main,main/85e2d3a6.jpg,train,Trần Hưng Đạo,0,single,
@@ -1653,7 +1653,7 @@
 8ddf90f5,main,main/8ddf90f5.jpg,val,Võ Văn Tần,I,adjudicated_proposal,
 8deabf2a,main,main/8deabf2a.jpg,test,Trần Phú,I,agreed,Bị che
 8df0012e,main,main/8df0012e.jpg,train,Pasteur,I,single,Không thấy vỉa hè
-8df2b6a8,main,main/8df2b6a8.jpg,val,Hồng Bàng,1,adjudicated_phuc,
+8df2b6a8,main,main/8df2b6a8.jpg,val,Hồng Bàng,1,adjudicated_khai,
 8dfabb68,main,main/8dfabb68.jpg,train,Nguyễn Thị Minh Khai,0,single,
 8e0b9aa7,main,main/8e0b9aa7.jpg,train,Nguyễn Thị Minh Khai,I,single,Bị che
 8e16210b,main,main/8e16210b.jpg,val,Nguyễn Đình Chiểu#0,0,agreed,
@@ -1748,14 +1748,14 @@
 94fba569,main,main/94fba569.jpg,val,Nguyễn Đình Chiểu#0,1,agreed,
 950346a4,main,main/950346a4.jpg,val,Hồng Bàng,I,adjudicated_proposal,
 953f6d5e,main,main/953f6d5e.jpg,test,Trần Phú,I,agreed,Không thấy vỉa hè
-95580a93,main,main/95580a93.jpg,test,Hai Bà Trưng,1,adjudicated_phuc,
+95580a93,main,main/95580a93.jpg,test,Hai Bà Trưng,1,adjudicated_khai,
 955fc8ff,main,main/955fc8ff.jpg,train,Nguyễn Trãi,I,adjudicated_proposal,
 95793a56,main,main/95793a56.jpg,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
 95a20deb,main,main/95a20deb.jpg,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
 95aa1533,main,main/95aa1533.jpg,train,Cách Mạng Tháng Tám#0,1,single,
 95ae4443,main,main/95ae4443.jpg,train,Trần Hưng Đạo,0,single,
 95bba3b7,main,main/95bba3b7.jpg,test,Trần Phú,I,agreed,
-95ef8a82,main,main/95ef8a82.jpg,test,Lý Thường Kiệt,0,adjudicated_phuc,
+95ef8a82,main,main/95ef8a82.jpg,test,Lý Thường Kiệt,0,adjudicated_khai,
 95f06e6b,main,main/95f06e6b.jpg,train,Cách Mạng Tháng Tám#0,I,agreed,Không thấy vỉa hè
 960e1a65,main,main/960e1a65.jpg,val,Nguyễn Đình Chiểu#0,0,agreed,
 9613d6e1,main,main/9613d6e1.jpg,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
@@ -1786,7 +1786,7 @@
 97c5fcf4,main,main/97c5fcf4.jpg,test,Lý Thường Kiệt,0,agreed,
 97cd86c6,main,main/97cd86c6.jpg,test,Hai Bà Trưng,I,agreed,Không thấy vỉa hè
 97f4a8c2,main,main/97f4a8c2.jpg,test,Hai Bà Trưng,0,agreed,
-97f98b9c,main,main/97f98b9c.jpg,val,Võ Văn Tần,0,adjudicated_phuc,
+97f98b9c,main,main/97f98b9c.jpg,val,Võ Văn Tần,0,adjudicated_khai,
 9833350b,main,main/9833350b.jpg,test,Hai Bà Trưng,0,agreed,
 983674fb,main,main/983674fb.jpg,train,Trần Hưng Đạo,0,single,
 983dc6a3,main,main/983dc6a3.jpg,train,Cách Mạng Tháng Tám#0,0,agreed,
@@ -1904,7 +1904,7 @@ a14ba701,main,main/a14ba701.jpg,train,Trần Hưng Đạo,0,single,
 a19d1bd1,main,main/a19d1bd1.jpg,train,Nguyễn Kiệm#0,I,single,Không thấy vỉa hè
 a1afd055,main,main/a1afd055.jpg,train,Hải Thượng Lãn Ông,0,single,
 a1b0f8b9,main,main/a1b0f8b9.jpg,test,Lý Thường Kiệt,0,agreed,
-a1b4fe9f,main,main/a1b4fe9f.jpg,val,Nguyễn Đình Chiểu#0,0,adjudicated_phuc,
+a1b4fe9f,main,main/a1b4fe9f.jpg,val,Nguyễn Đình Chiểu#0,0,adjudicated_khai,
 a1b924c9,main,main/a1b924c9.jpg,test,Nơ Trang Long,0,agreed,
 a1c1b4b6,main,main/a1c1b4b6.jpg,train,Nguyễn Trãi,0,single,
 a1d4cce0,main,main/a1d4cce0.jpg,train,Trần Hưng Đạo,0,single,
@@ -2060,7 +2060,7 @@ afdf5c0a,main,main/afdf5c0a.jpg,test,Trần Phú,I,adjudicated_proposal,
 b004e363,main,main/b004e363.jpg,test,Hai Bà Trưng,0,agreed,
 b01338dd,main,main/b01338dd.jpg,val,Nguyễn Đình Chiểu#0,0,agreed,
 b017e7c8,main,main/b017e7c8.jpg,train,Nguyễn Trãi,0,agreed,
-b0235644,main,main/b0235644.jpg,val,Võ Văn Tần,1,adjudicated_phuc,
+b0235644,main,main/b0235644.jpg,val,Võ Văn Tần,1,adjudicated_khai,
 b025ddf1,main,main/b025ddf1.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 b02daa0d,main,main/b02daa0d.jpg,test,Trần Phú,0,agreed,
 b044093d,main,main/b044093d.jpg,test,Nơ Trang Long,I,adjudicated_proposal,
@@ -2137,7 +2137,7 @@ b70142ac,main,main/b70142ac.jpg,train,Nguyễn Trãi,0,single,
 b71725ed,main,main/b71725ed.jpg,train,Phan Đăng Lưu,0,agreed,
 b71cde4b,main,main/b71cde4b.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 b71fad20,main,main/b71fad20.jpg,train,Phan Đăng Lưu,0,single,
-b72de87f,main,main/b72de87f.jpg,train,Hải Thượng Lãn Ông,0,adjudicated_phuc,
+b72de87f,main,main/b72de87f.jpg,train,Hải Thượng Lãn Ông,0,adjudicated_khai,
 b7318752,main,main/b7318752.jpg,test,Trần Phú,I,agreed,Không thấy vỉa hè
 b73d801b,main,main/b73d801b.jpg,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
 b75ae447,main,main/b75ae447.jpg,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
@@ -2216,10 +2216,10 @@ bc665def,main,main/bc665def.jpg,train,Nguyễn Trãi,I,agreed,
 bc677a03,main,main/bc677a03.jpg,train,Nguyễn Trãi,I,agreed,
 bc6834b0,main,main/bc6834b0.jpg,test,Nơ Trang Long,0,agreed,
 bc738a59,main,main/bc738a59.jpg,train,Điện Biên Phủ#1,I,single,Không thấy vỉa hè
-bc8f49e5,main,main/bc8f49e5.jpg,test,Hai Bà Trưng,1,adjudicated_phuc,
+bc8f49e5,main,main/bc8f49e5.jpg,test,Hai Bà Trưng,1,adjudicated_khai,
 bc8f78ec,main,main/bc8f78ec.jpg,train,Pasteur,I,single,Không thấy vỉa hè
 bcace6f4,main,main/bcace6f4.jpg,train,Phan Đăng Lưu,I,single,Không thấy vỉa hè
-bcc47994,main,main/bcc47994.jpg,test,Nơ Trang Long,1,adjudicated_phuc,
+bcc47994,main,main/bcc47994.jpg,test,Nơ Trang Long,1,adjudicated_khai,
 bcfd6b0f,main,main/bcfd6b0f.jpg,train,Lê Văn Sỹ,0,single,
 bd95e70e,main,main/bd95e70e.jpg,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
 bda76a58,main,main/bda76a58.jpg,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
@@ -2258,7 +2258,7 @@ c02b041f,main,main/c02b041f.jpg,train,Trần Hưng Đạo,0,single,
 c031d4c8,main,main/c031d4c8.jpg,train,Trần Hưng Đạo,0,single,
 c0332785,main,main/c0332785.jpg,val,Hồng Bàng,I,agreed,Bị che
 c035958a,main,main/c035958a.jpg,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
-c05e5617,main,main/c05e5617.jpg,val,Hồng Bàng,1,adjudicated_phuc,
+c05e5617,main,main/c05e5617.jpg,val,Hồng Bàng,1,adjudicated_khai,
 c06bf03b,main,main/c06bf03b.jpg,val,Hồng Bàng,I,agreed,Không thấy vỉa hè
 c06cb4f7,main,main/c06cb4f7.jpg,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
 c0ad3daa,main,main/c0ad3daa.jpg,train,Trần Hưng Đạo,0,single,
@@ -2506,7 +2506,7 @@ d66bf94c,main,main/d66bf94c.jpg,train,Trần Hưng Đạo,0,single,
 d674a5f5,main,main/d674a5f5.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 d678a2dc,main,main/d678a2dc.jpg,train,Cách Mạng Tháng Tám#0,I,single,Không thấy vỉa hè
 d67e9747,main,main/d67e9747.jpg,train,Cách Mạng Tháng Tám#0,I,agreed,Bị che
-d6893da4,main,main/d6893da4.jpg,test,Trần Phú,0,adjudicated_phuc,
+d6893da4,main,main/d6893da4.jpg,test,Trần Phú,0,adjudicated_khai,
 d6aacda6,main,main/d6aacda6.jpg,train,Cách Mạng Tháng Tám#0,0,single,
 d6b7e707,main,main/d6b7e707.jpg,train,Trần Hưng Đạo,I,single,Không thấy vỉa hè
 d6c9e837,main,main/d6c9e837.jpg,test,Lý Thường Kiệt,I,adjudicated_proposal,
@@ -2661,7 +2661,7 @@ e2dadceb,main,main/e2dadceb.jpg,train,Điện Biên Phủ#1,0,single,
 e2e71528,main,main/e2e71528.jpg,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
 e2f0c014,main,main/e2f0c014.jpg,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
 e2f2e83f,main,main/e2f2e83f.jpg,test,Hai Bà Trưng,I,adjudicated_proposal,
-e2fa8781,main,main/e2fa8781.jpg,val,Nguyễn Đình Chiểu#0,0,adjudicated_phuc,
+e2fa8781,main,main/e2fa8781.jpg,val,Nguyễn Đình Chiểu#0,0,adjudicated_khai,
 e30cbf6a,main,main/e30cbf6a.jpg,train,Nguyễn Thị Minh Khai,0,single,
 e3216d25,main,main/e3216d25.jpg,train,Cách Mạng Tháng Tám#0,0,agreed,
 e32e32b1,main,main/e32e32b1.jpg,val,Nguyễn Đình Chiểu#0,1,adjudicated_proposal,
@@ -2860,7 +2860,7 @@ f45a7eb6,main,main/f45a7eb6.jpg,train,Trần Hưng Đạo,0,single,
 f47ff7d6,main,main/f47ff7d6.jpg,test,Lý Thường Kiệt,0,agreed,
 f488edea,main,main/f488edea.jpg,train,Lê Văn Sỹ,0,single,
 f48c6e84,main,main/f48c6e84.jpg,train,Điện Biên Phủ#1,I,agreed,Không thấy vỉa hè
-f48fc6a1,main,main/f48fc6a1.jpg,val,Võ Văn Tần,1,adjudicated_phuc,
+f48fc6a1,main,main/f48fc6a1.jpg,val,Võ Văn Tần,1,adjudicated_khai,
 f4be3828,main,main/f4be3828.jpg,train,Nguyễn Kiệm#0,0,single,
 f4e5f509,main,main/f4e5f509.jpg,val,Nguyễn Đình Chiểu#0,I,agreed,Không thấy vỉa hè
 f4ea477e,main,main/f4ea477e.jpg,train,Điện Biên Phủ#1,0,single,
@@ -2944,7 +2944,7 @@ fbbf6974,main,main/fbbf6974.jpg,val,Nguyễn Đình Chiểu#0,I,agreed,Không th
 fbdcd75f,main,main/fbdcd75f.jpg,train,Điện Biên Phủ#1,I,single,Bị che
 fbf877fe,main,main/fbf877fe.jpg,train,Trần Hưng Đạo,0,agreed,
 fbf8dad3,main,main/fbf8dad3.jpg,train,Nguyễn Thị Minh Khai,I,single,Không thấy vỉa hè
-fc17cd77,main,main/fc17cd77.jpg,val,Võ Văn Tần,0,adjudicated_phuc,
+fc17cd77,main,main/fc17cd77.jpg,val,Võ Văn Tần,0,adjudicated_khai,
 fc4aef6d,main,main/fc4aef6d.jpg,test,Hai Bà Trưng,I,agreed,Ảnh mờ / tối / cháy sáng
 fc520a84,main,main/fc520a84.jpg,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,
 fc806199,main,main/fc806199.jpg,val,Nguyễn Đình Chiểu#0,I,adjudicated_proposal,

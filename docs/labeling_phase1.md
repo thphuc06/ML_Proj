@@ -90,7 +90,7 @@ Học và Minh có nhiều nhãn bấm dưới 2 giây. Những nhãn này **kh�
 
 1. **Claude xem mù.** Claude xem từng ảnh, 12 ảnh một tấm, có kẻ vạch 3/5. Trên ô ảnh không ghi ai gán gì. Mỗi ảnh được ghi một nhãn kèm lý do.
 2. **So với phiếu.** 21 ảnh có nhãn đề xuất khác cả hai phiếu. Claude xem lại 21 ảnh này ở cỡ lớn, có hiện phiếu, và sửa 10 ảnh.
-3. **Khải duyệt.** Khải xem 11 tấm ảnh ghép, mỗi ô chỉ ghi nhãn đề xuất. Ảnh nào không đồng ý thì Khải ghi nhãn của mình vào cột `phuc` trong [adjudication_proposal.csv](../data/labels/main_report/adjudication_proposal.csv) (tên cột cũ, giữ nguyên để script chạy được; mã nguồn nhãn `adjudicated_phuc` cũng vậy). Nhãn cuối là nhãn của Khải nếu có, còn lại là nhãn đề xuất.
+3. **Khải duyệt.** Khải xem 11 tấm ảnh ghép, mỗi ô chỉ ghi nhãn đề xuất. Ảnh nào không đồng ý thì Khải ghi nhãn của mình vào cột `khai` trong [adjudication_proposal.csv](../data/labels/main_report/adjudication_proposal.csv) (mã nguồn nhãn tương ứng là `adjudicated_khai`; trước 15/11/2026 hai tên này là `phuc` và `adjudicated_phuc`). Nhãn cuối là nhãn của Khải nếu có, còn lại là nhãn đề xuất.
 
 Đề xuất của Claude chỉ là gợi ý cho người phân xử. Mọi nhãn cuối đều đã qua mắt Khải, đúng quy định của đề cương là nhãn do người gán.
 
@@ -153,7 +153,7 @@ File [main_labels_v1.csv](../data/labels/main_labels_v1.csv) có một dòng cho
 | `agreed` | 1.133 | Hai người gán giống nhau |
 | `single` | 1.563 | Ảnh train chỉ một người gán |
 | `adjudicated_proposal` | 275 | Bất đồng; Khải giữ nguyên nhãn đề xuất |
-| `adjudicated_phuc` | 28 | Bất đồng; Khải sửa (tên mã cũ) |
+| `adjudicated_khai` | 28 | Bất đồng; Khải sửa |
 | `pilot_review_proposal` | 147 | Pilot; Phúc giữ nguyên nhãn đề xuất |
 | `pilot_review_phuc` | 3 | Pilot; Phúc sửa |
 

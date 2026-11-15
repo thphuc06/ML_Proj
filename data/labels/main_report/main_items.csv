@@ -221,7 +221,7 @@
 13c9e083,Hoc,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 13d16c88,Phuc,Loan,1,1,,,Xe máy đậu,Xe máy đậu,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,agreed,1,1,agreed
 13ddb8a9,Minh,,0,,,,,,train_single,,train,Nguyễn Thị Minh Khai,single,0,0,single
-13edff9b,Hoc,Minh,0,1,,,,Hàng hóa / quầy hàng,train_cross_2nd,train_cross_1st,train,Lê Văn Sỹ,disagree,?,1,adjudicated_phuc
+13edff9b,Hoc,Minh,0,1,,,,Hàng hóa / quầy hàng,train_cross_2nd,train_cross_1st,train,Lê Văn Sỹ,disagree,?,1,adjudicated_khai
 13eef19f,Hoc,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 140d1097,Minh,,0,,,,,,train_single,,train,Nguyễn Kiệm#0,single,0,0,single
 142073a4,Khai,,0,,,,Xe máy đậu,,train_single,,train,Nguyễn Trãi,single,0,0,single
@@ -436,7 +436,7 @@
 26262c0b,Hoc,Loan,0,0,,,,,test_double,test_double,test,Lý Thường Kiệt,agreed,0,0,agreed
 2636b0cd,Hoc,Loan,I,I,Bị che,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,agreed,I,I,agreed
 2636ceaa,Phuc,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
-263b4f41,Minh,Khai,0,1,,,,Xe máy đậu|Ô tô đậu,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_phuc
+263b4f41,Minh,Khai,0,1,,,,Xe máy đậu|Ô tô đậu,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_khai
 26467acf,Phuc,Minh,0,I,,Không thấy vỉa hè,,,train_cross_2nd,train_cross_1st,train,Nguyễn Thị Minh Khai,disagree,?,I,adjudicated_proposal
 264cb7a5,Phuc,Khai,I,0,Không thấy vỉa hè,,,,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,disagree,?,0,adjudicated_proposal
 26576fd8,Phuc,Minh,0,I,,Không thấy vỉa hè,,,train_cross_2nd,train_cross_1st,train,Trần Hưng Đạo,disagree,?,I,adjudicated_proposal
@@ -457,12 +457,12 @@
 2796704c,Khai,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Thị Minh Khai,single,I,I,single
 27b7d0de,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Trần Hưng Đạo,single,I,I,single
 27e90ab0,Phuc,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
-28135893,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_phuc
+28135893,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,0,adjudicated_khai
 2831a61e,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_proposal
 283fff89,Hoc,Loan,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,agreed,I,I,agreed
 285c0d7c,Phuc,Minh,0,0,,,,,train_cross_1st,train_cross_2nd,train,Trần Hưng Đạo,agreed,0,0,agreed
 28808d44,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Võ Văn Tần,agreed,I,I,agreed
-2897ff35,Minh,Khai,1,0,,,Xe máy đậu,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_phuc
+2897ff35,Minh,Khai,1,0,,,Xe máy đậu,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_khai
 2899a9fb,Phuc,,0,,,,,,train_single,,train,Điện Biên Phủ#1,single,0,0,single
 28d5620c,Minh,,I,,Không thấy vỉa hè,,,,train_single,,train,Pasteur,single,I,I,single
 28ed65ef,Phuc,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
@@ -619,7 +619,7 @@
 3688b349,Phuc,,0,,,,,,train_single,,train,Nguyễn Trãi,single,0,0,single
 36a782cb,Phuc,Hoc,0,0,,,,,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,agreed,0,0,agreed
 36aa8b96,Phuc,,0,,,,,,train_single,,train,Hải Thượng Lãn Ông,single,0,0,single
-36b09bdd,Phuc,Hoc,1,0,,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,1,adjudicated_phuc
+36b09bdd,Phuc,Hoc,1,0,,,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,disagree,?,1,adjudicated_khai
 36b34561,Phuc,Khai,0,0,,,,Xe máy đậu,train_cross_1st,train_cross_2nd,train,Phan Đăng Lưu,agreed,0,0,agreed
 36b60244,Phuc,,0,,,,,,train_single,,train,Nguyễn Trãi,single,0,0,single
 36b78646,Hoc,,I,,Không thấy vỉa hè,,,,train_single,,train,Điện Biên Phủ#1,single,I,I,single
@@ -688,7 +688,7 @@
 3acf22ed,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Kiệm#0,single,I,I,single
 3ae8c5f3,Loan,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Kiệm#0,single,I,I,single
 3b00c8ae,Minh,Khai,I,0,Bị che,,,Ô tô đậu,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_proposal
-3b0c3471,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_phuc
+3b0c3471,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_khai
 3b3bcaf9,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Trần Hưng Đạo,single,I,I,single
 3b3ddc5e,Hoc,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 3b4a93f9,Hoc,,0,,,,,,train_single,,train,Lê Văn Sỹ,single,0,0,single
@@ -738,7 +738,7 @@
 3e795f87,Minh,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 3e8aedff,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Trần Hưng Đạo,single,I,I,single
 3e93ff81,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Hồng Bàng,agreed,I,I,agreed
-3e9f962f,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_phuc
+3e9f962f,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_khai
 3eb7f8f8,Hoc,Loan,0,0,,,,,test_double,test_double,test,Hai Bà Trưng,agreed,0,0,agreed
 3ec57fff,Minh,Khai,0,0,,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,0,0,agreed
 3ec6a1bc,Phuc,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
@@ -804,7 +804,7 @@
 440024a8,Phuc,,0,,,,,,train_single,,train,Nguyễn Trãi,single,0,0,single
 440aae47,Khai,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 4474a58f,Minh,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
-44941d16,Hoc,Loan,0,1,,,,,test_double,test_double,test,Trần Phú,disagree,?,1,adjudicated_phuc
+44941d16,Hoc,Loan,0,1,,,,,test_double,test_double,test,Trần Phú,disagree,?,1,adjudicated_khai
 44c2d832,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Lê Văn Sỹ,single,I,I,single
 44d3e093,Khai,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 44e02832,Khai,,0,,,,Xe máy đậu,,train_single,,train,Nguyễn Thị Minh Khai,single,0,0,single
@@ -1002,7 +1002,7 @@
 557117d5,Hoc,Loan,0,0,,,,,test_double,test_double,test,Hai Bà Trưng,agreed,0,0,agreed
 55900d8c,Khai,,0,,,,Xe máy đậu|Bàn ghế quán,,train_single,,train,Điện Biên Phủ#1,single,0,0,single
 559583a4,Hoc,Loan,0,0,,,,,test_double,test_double,test,Lý Thường Kiệt,agreed,0,0,agreed
-55b3c389,Khai,Minh,1,I,,Bị che,Xe máy đậu|Hàng hóa / quầy hàng,,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,disagree,?,1,adjudicated_phuc
+55b3c389,Khai,Minh,1,I,,Bị che,Xe máy đậu|Hàng hóa / quầy hàng,,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,disagree,?,1,adjudicated_khai
 56057a44,Phuc,,1,,,,Xe máy đậu,,train_single,,train,Nguyễn Thị Minh Khai,single,1,1,single
 5627f23f,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Trãi,single,I,I,single
 562e6900,Hoc,Loan,0,0,,,,,test_double,test_double,test,Hai Bà Trưng,agreed,0,0,agreed
@@ -1168,7 +1168,7 @@
 6445f28b,Hoc,Loan,0,0,,,,,test_double,test_double,test,Hai Bà Trưng,agreed,0,0,agreed
 64513c33,Hoc,,0,,,,,,train_single,,train,Điện Biên Phủ#1,single,0,0,single
 64672e39,Khai,,0,,,,,,train_single,,train,Lê Văn Sỹ,single,0,0,single
-646e15b7,Minh,Khai,I,0,Không thấy vỉa hè,,,Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_phuc
+646e15b7,Minh,Khai,I,0,Không thấy vỉa hè,,,Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_khai
 6470911e,Loan,,0,,,,,,train_single,,train,Nguyễn Trãi,single,0,0,single
 647fdae7,Minh,Loan,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Cách Mạng Tháng Tám#0,agreed,I,I,agreed
 64a56671,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Trãi,single,I,I,single
@@ -1239,7 +1239,7 @@
 69812fa5,Hoc,,0,,,,,,train_single,,train,Điện Biên Phủ#1,single,0,0,single
 698960b8,Minh,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 69a9be09,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Hồng Bàng,agreed,I,I,agreed
-69ac2a6e,Phuc,Hoc,0,1,,,,Xe máy đậu,train_cross_1st,train_cross_2nd,train,Trần Hưng Đạo,disagree,?,1,adjudicated_phuc
+69ac2a6e,Phuc,Hoc,0,1,,,,Xe máy đậu,train_cross_1st,train_cross_2nd,train,Trần Hưng Đạo,disagree,?,1,adjudicated_khai
 69c65adb,Phuc,,I,,Ảnh mờ / tối / cháy sáng,,,,train_single,,train,Trần Hưng Đạo,single,I,I,single
 69c94a88,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Trần Hưng Đạo,single,I,I,single
 69cb9f8a,Hoc,Loan,I,I,Bị che,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,agreed,I,I,agreed
@@ -1275,7 +1275,7 @@
 6c5b59c0,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal
 6c676d56,Hoc,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 6c6bd818,Hoc,Loan,0,0,,,,,test_double,test_double,test,Hai Bà Trưng,agreed,0,0,agreed
-6c8ce2e8,Minh,Khai,I,1,Ảnh mờ / tối / cháy sáng,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_phuc
+6c8ce2e8,Minh,Khai,I,1,Ảnh mờ / tối / cháy sáng,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_khai
 6cb5cea9,Minh,,1,,,,Hàng hóa / quầy hàng,,train_single,,train,Cách Mạng Tháng Tám#0,single,1,1,single
 6cbd39eb,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Thị Minh Khai,single,I,I,single
 6cc53e20,Minh,Khai,0,0,,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,0,0,agreed
@@ -1422,7 +1422,7 @@
 79d84ee5,Khai,,I,,Không thấy vỉa hè,,,,train_single,,train,Pasteur,single,I,I,single
 79eac0cf,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,I,I,agreed
 7a00d8aa,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,I,I,agreed
-7a02732b,Minh,Khai,I,0,Ảnh mờ / tối / cháy sáng,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_phuc
+7a02732b,Minh,Khai,I,0,Ảnh mờ / tối / cháy sáng,,,Xe máy đậu,val_double,val_double,val,Hồng Bàng,disagree,?,0,adjudicated_khai
 7a064683,Khai,,0,,,,Xe máy đậu,,train_single,,train,Phan Đăng Lưu,single,0,0,single
 7a18b757,Loan,,0,,,,,,train_single,,train,Nguyễn Trãi,single,0,0,single
 7a31c763,Hoc,Loan,1,1,,,Xe máy đậu,Xe máy đậu,test_double,test_double,test,Trần Phú,agreed,1,1,agreed
@@ -1547,7 +1547,7 @@
 85681e5c,Hoc,Loan,0,0,,,,Xe máy đậu,test_double,test_double,test,Nơ Trang Long,agreed,0,0,agreed
 8571c493,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Điện Biên Phủ#1,single,I,I,single
 85a28366,Hoc,Loan,0,0,,,,Xe máy đậu,test_double,test_double,test,Lý Thường Kiệt,agreed,0,0,agreed
-85ad0f21,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_phuc
+85ad0f21,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_khai
 85c1360c,Hoc,Loan,0,0,,,,,test_double,test_double,test,Nơ Trang Long,agreed,0,0,agreed
 85c48d4c,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,1,adjudicated_proposal
 85e2d3a6,Loan,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
@@ -1653,7 +1653,7 @@
 8ddf90f5,Minh,Khai,I,0,Ảnh mờ / tối / cháy sáng,,,,val_double,val_double,val,Võ Văn Tần,disagree,?,I,adjudicated_proposal
 8deabf2a,Hoc,Loan,I,I,Bị che,Bị che,,,test_double,test_double,test,Trần Phú,agreed,I,I,agreed
 8df0012e,Khai,,I,,Không thấy vỉa hè,,,,train_single,,train,Pasteur,single,I,I,single
-8df2b6a8,Minh,Khai,0,1,,,,,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_phuc
+8df2b6a8,Minh,Khai,0,1,,,,,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_khai
 8dfabb68,Khai,,0,,,,,,train_single,,train,Nguyễn Thị Minh Khai,single,0,0,single
 8e0b9aa7,Phuc,,I,,Bị che,,,,train_single,,train,Nguyễn Thị Minh Khai,single,I,I,single
 8e16210b,Minh,Khai,0,0,,,,Xe máy đậu|Hàng hóa / quầy hàng,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,0,0,agreed
@@ -1748,14 +1748,14 @@
 94fba569,Minh,Khai,1,1,,,Bàn ghế quán|Khác,Xe máy đậu|Bàn ghế quán,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,1,1,agreed
 950346a4,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Hồng Bàng,disagree,?,I,adjudicated_proposal
 953f6d5e,Hoc,Loan,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,agreed,I,I,agreed
-95580a93,Hoc,Loan,1,I,,Không thấy vỉa hè,Hàng hóa / quầy hàng,,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_phuc
+95580a93,Hoc,Loan,1,I,,Không thấy vỉa hè,Hàng hóa / quầy hàng,,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_khai
 955fc8ff,Khai,Phuc,I,0,Không thấy vỉa hè,,,Ô tô đậu,train_cross_2nd,train_cross_1st,train,Nguyễn Trãi,disagree,?,I,adjudicated_proposal
 95793a56,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Kiệm#0,single,I,I,single
 95a20deb,Minh,,I,,Không thấy vỉa hè,,,,train_single,,train,Trần Hưng Đạo,single,I,I,single
 95aa1533,Minh,,1,,,,Xe máy đậu|Rào chắn / công trình,,train_single,,train,Cách Mạng Tháng Tám#0,single,1,1,single
 95ae4443,Khai,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 95bba3b7,Hoc,Loan,I,I,Bị che,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,agreed,I,I,agreed
-95ef8a82,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_phuc
+95ef8a82,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,0,adjudicated_khai
 95f06e6b,Loan,Minh,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,agreed,I,I,agreed
 960e1a65,Minh,Khai,0,0,,,,Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,0,0,agreed
 9613d6e1,Hoc,Loan,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,agreed,I,I,agreed
@@ -1786,7 +1786,7 @@
 97c5fcf4,Hoc,Loan,0,0,,,,,test_double,test_double,test,Lý Thường Kiệt,agreed,0,0,agreed
 97cd86c6,Hoc,Loan,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,agreed,I,I,agreed
 97f4a8c2,Hoc,Loan,0,0,,,,,test_double,test_double,test,Hai Bà Trưng,agreed,0,0,agreed
-97f98b9c,Minh,Khai,0,I,,Bị che,,,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_phuc
+97f98b9c,Minh,Khai,0,I,,Bị che,,,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_khai
 9833350b,Hoc,Loan,0,0,,,,,test_double,test_double,test,Hai Bà Trưng,agreed,0,0,agreed
 983674fb,Loan,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 983dc6a3,Minh,Phuc,0,0,,,,,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,agreed,0,0,agreed
@@ -1904,7 +1904,7 @@ a14ba701,Khai,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 a19d1bd1,Loan,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Kiệm#0,single,I,I,single
 a1afd055,Minh,,0,,,,,,train_single,,train,Hải Thượng Lãn Ông,single,0,0,single
 a1b0f8b9,Hoc,Loan,0,0,,,,,test_double,test_double,test,Lý Thường Kiệt,agreed,0,0,agreed
-a1b4fe9f,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_phuc
+a1b4fe9f,Minh,Khai,I,0,Không thấy vỉa hè,,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_khai
 a1b924c9,Hoc,Loan,0,0,,,,,test_double,test_double,test,Nơ Trang Long,agreed,0,0,agreed
 a1c1b4b6,Khai,,0,,,,Xe máy đậu,,train_single,,train,Nguyễn Trãi,single,0,0,single
 a1d4cce0,Khai,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
@@ -2060,7 +2060,7 @@ afdf5c0a,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_
 b004e363,Hoc,Loan,0,0,,,,,test_double,test_double,test,Hai Bà Trưng,agreed,0,0,agreed
 b01338dd,Minh,Khai,0,0,,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,0,0,agreed
 b017e7c8,Phuc,Khai,0,0,,,,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,agreed,0,0,agreed
-b0235644,Minh,Khai,0,1,,,,Xe máy đậu|Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_phuc
+b0235644,Minh,Khai,0,1,,,,Xe máy đậu|Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_khai
 b025ddf1,Phuc,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 b02daa0d,Hoc,Loan,0,0,,,,Xe máy đậu,test_double,test_double,test,Trần Phú,agreed,0,0,agreed
 b044093d,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Nơ Trang Long,disagree,?,I,adjudicated_proposal
@@ -2137,7 +2137,7 @@ b70142ac,Hoc,,0,,,,,,train_single,,train,Nguyễn Trãi,single,0,0,single
 b71725ed,Phuc,Hoc,0,0,,,,,train_cross_2nd,train_cross_1st,train,Phan Đăng Lưu,agreed,0,0,agreed
 b71cde4b,Minh,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 b71fad20,Khai,,0,,,,,,train_single,,train,Phan Đăng Lưu,single,0,0,single
-b72de87f,Phuc,Loan,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Hải Thượng Lãn Ông,disagree,?,0,adjudicated_phuc
+b72de87f,Phuc,Loan,0,I,,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Hải Thượng Lãn Ông,disagree,?,0,adjudicated_khai
 b7318752,Hoc,Loan,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,test_double,test_double,test,Trần Phú,agreed,I,I,agreed
 b73d801b,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,I,I,single
 b75ae447,Hoc,,I,,Không thấy vỉa hè,,,,train_single,,train,Điện Biên Phủ#1,single,I,I,single
@@ -2216,10 +2216,10 @@ bc665def,Khai,Hoc,I,I,Không thấy vỉa hè,Bị che,,,train_cross_2nd,train_c
 bc677a03,Phuc,Loan,I,I,Không thấy vỉa hè,Bị che,,,train_cross_1st,train_cross_2nd,train,Nguyễn Trãi,agreed,I,I,agreed
 bc6834b0,Hoc,Loan,0,0,,,,,test_double,test_double,test,Nơ Trang Long,agreed,0,0,agreed
 bc738a59,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Điện Biên Phủ#1,single,I,I,single
-bc8f49e5,Hoc,Loan,0,1,,,,Xe máy đậu,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_phuc
+bc8f49e5,Hoc,Loan,0,1,,,,Xe máy đậu,test_double,test_double,test,Hai Bà Trưng,disagree,?,1,adjudicated_khai
 bc8f78ec,Minh,,I,,Không thấy vỉa hè,,,,train_single,,train,Pasteur,single,I,I,single
 bcace6f4,Khai,,I,,Không thấy vỉa hè,,,,train_single,,train,Phan Đăng Lưu,single,I,I,single
-bcc47994,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Nơ Trang Long,disagree,?,1,adjudicated_phuc
+bcc47994,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Nơ Trang Long,disagree,?,1,adjudicated_khai
 bcfd6b0f,Phuc,,0,,,,,,train_single,,train,Lê Văn Sỹ,single,0,0,single
 bd95e70e,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,I,I,agreed
 bda76a58,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,I,I,agreed
@@ -2258,7 +2258,7 @@ c02b041f,Phuc,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 c031d4c8,Khai,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 c0332785,Minh,Khai,I,I,Bị che,Bị che,,,val_double,val_double,val,Hồng Bàng,agreed,I,I,agreed
 c035958a,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Thị Minh Khai,single,I,I,single
-c05e5617,Minh,Khai,1,I,,Bị che,Xe máy đậu|Bàn ghế quán,,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_phuc
+c05e5617,Minh,Khai,1,I,,Bị che,Xe máy đậu|Bàn ghế quán,,val_double,val_double,val,Hồng Bàng,disagree,?,1,adjudicated_khai
 c06bf03b,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Hồng Bàng,agreed,I,I,agreed
 c06cb4f7,Hoc,,I,,Không thấy vỉa hè,,,,train_single,,train,Trần Hưng Đạo,single,I,I,single
 c0ad3daa,Phuc,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
@@ -2506,7 +2506,7 @@ d66bf94c,Minh,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 d674a5f5,Hoc,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 d678a2dc,Phuc,,I,,Không thấy vỉa hè,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,I,I,single
 d67e9747,Phuc,Loan,I,I,Bị che,Bị che,Ô tô đậu,,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,agreed,I,I,agreed
-d6893da4,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_phuc
+d6893da4,Hoc,Loan,1,0,,,Xe máy đậu,,test_double,test_double,test,Trần Phú,disagree,?,0,adjudicated_khai
 d6aacda6,Minh,,0,,,,,,train_single,,train,Cách Mạng Tháng Tám#0,single,0,0,single
 d6b7e707,Khai,,I,,Không thấy vỉa hè,,,,train_single,,train,Trần Hưng Đạo,single,I,I,single
 d6c9e837,Hoc,Loan,1,I,,Không thấy vỉa hè,Xe máy đậu,,test_double,test_double,test,Lý Thường Kiệt,disagree,?,I,adjudicated_proposal
@@ -2661,7 +2661,7 @@ e2dadceb,Loan,,0,,,,,,train_single,,train,Điện Biên Phủ#1,single,0,0,singl
 e2e71528,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,I,I,agreed
 e2f0c014,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,I,I,agreed
 e2f2e83f,Hoc,Loan,0,I,,Không thấy vỉa hè,,,test_double,test_double,test,Hai Bà Trưng,disagree,?,I,adjudicated_proposal
-e2fa8781,Minh,Khai,0,I,,Bị che,,Xe máy đậu|Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_phuc
+e2fa8781,Minh,Khai,0,I,,Bị che,,Xe máy đậu|Ô tô đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,0,adjudicated_khai
 e30cbf6a,Phuc,,0,,,,,,train_single,,train,Nguyễn Thị Minh Khai,single,0,0,single
 e3216d25,Phuc,Hoc,0,0,,,,,train_cross_2nd,train_cross_1st,train,Cách Mạng Tháng Tám#0,agreed,0,0,agreed
 e32e32b1,Minh,Khai,1,0,,,Xe máy đậu|Bàn ghế quán,Xe máy đậu|Hàng hóa / quầy hàng|Bàn ghế quán,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,1,adjudicated_proposal
@@ -2860,7 +2860,7 @@ f45a7eb6,Khai,,0,,,,,,train_single,,train,Trần Hưng Đạo,single,0,0,single
 f47ff7d6,Hoc,Loan,0,0,,,,,test_double,test_double,test,Lý Thường Kiệt,agreed,0,0,agreed
 f488edea,Loan,,0,,,,,,train_single,,train,Lê Văn Sỹ,single,0,0,single
 f48c6e84,Phuc,Hoc,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,train_cross_1st,train_cross_2nd,train,Điện Biên Phủ#1,agreed,I,I,agreed
-f48fc6a1,Minh,Khai,0,1,,,,Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_phuc
+f48fc6a1,Minh,Khai,0,1,,,,Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,1,adjudicated_khai
 f4be3828,Khai,,0,,,,,,train_single,,train,Nguyễn Kiệm#0,single,0,0,single
 f4e5f509,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,agreed,I,I,agreed
 f4ea477e,Loan,,0,,,,,,train_single,,train,Điện Biên Phủ#1,single,0,0,single
@@ -2944,7 +2944,7 @@ fbbf6974,Minh,Khai,I,I,Không thấy vỉa hè,Không thấy vỉa hè,,,val_dou
 fbdcd75f,Khai,,I,,Bị che,,,,train_single,,train,Điện Biên Phủ#1,single,I,I,single
 fbf877fe,Khai,Loan,0,0,,,Xe máy đậu,,train_cross_1st,train_cross_2nd,train,Trần Hưng Đạo,agreed,0,0,agreed
 fbf8dad3,Minh,,I,,Không thấy vỉa hè,,,,train_single,,train,Nguyễn Thị Minh Khai,single,I,I,single
-fc17cd77,Minh,Khai,0,I,,Bị che,,Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_phuc
+fc17cd77,Minh,Khai,0,I,,Bị che,,Khác,val_double,val_double,val,Võ Văn Tần,disagree,?,0,adjudicated_khai
 fc4aef6d,Hoc,Loan,I,I,Ảnh mờ / tối / cháy sáng,Ảnh mờ / tối / cháy sáng,,,test_double,test_double,test,Hai Bà Trưng,agreed,I,I,agreed
 fc520a84,Minh,Khai,I,0,Không thấy vỉa hè,,,Xe máy đậu,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal
 fc806199,Minh,Khai,0,I,,Ảnh mờ / tối / cháy sáng,,,val_double,val_double,val,Nguyễn Đình Chiểu#0,disagree,?,I,adjudicated_proposal

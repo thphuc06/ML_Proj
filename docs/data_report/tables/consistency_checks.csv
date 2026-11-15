@@ -40,7 +40,7 @@ reason present iff label I (train_extra_labels_v2) [structural: adjudicated / pi
 obstacles present only when annotation label = 1 (main annotations) [stale tags after a label change],FAIL,285,annotations with label 0/I but obstacle tags: 285 of 4435; label 1 without tags: 19
 obstacles present only when annotation label = 1 (train_extra annotations) [stale tags after a label change],FAIL,119,annotations with label 0/I but obstacle tags: 119 of 2000; label 1 without tags: 3
 reason values in the 4 known categories,PASS,0,
-label source values known,PASS,0,"{'single': 3546, 'agreed': 1133, 'adjudicated_proposal': 275, 'pilot_review_proposal': 147, 'adjudicated_phuc': 28, 'cross_check': 17, 'pilot_review_phuc': 3}"
+label source values known,PASS,0,"{'single': 3546, 'agreed': 1133, 'adjudicated_proposal': 275, 'pilot_review_proposal': 147, 'adjudicated_khai': 28, 'cross_check': 17, 'pilot_review_phuc': 3}"
 train_extra v2 differs from v1 exactly where source = cross_check (17 labels),PASS,0,changed 17; cross_check rows 17
 main_items.label_final == main_labels_v1.label (main phase),PASS,0,
 train_extra per-annotation label == label_v1 of v2 file,PASS,0,

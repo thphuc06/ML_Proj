@@ -640,7 +640,7 @@ for nm, ann in [("main annotations", ANN_M), ("train_extra annotations", ANN_X)]
     chk(f"obstacles present only when annotation label = 1 ({nm}) [stale tags after a label change]", v == 0, v,
         f"annotations with label 0/I but obstacle tags: {v} of {len(ann)}; label 1 without tags: {int(((ann.label == '1') & ann.obstacles.isna()).sum())}")
 chk("reason values in the 4 known categories", D.reason.dropna().isin(REASONS).all(), int((~D.reason.dropna().isin(REASONS)).sum()))
-chk("label source values known", D.source.isin(["single", "agreed", "adjudicated_proposal", "pilot_review_proposal", "adjudicated_phuc", "pilot_review_phuc", "cross_check"]).all(), 0, str(D.source.value_counts().to_dict()))
+chk("label source values known", D.source.isin(["single", "agreed", "adjudicated_proposal", "pilot_review_proposal", "adjudicated_khai", "pilot_review_phuc", "cross_check"]).all(), 0, str(D.source.value_counts().to_dict()))
 chg = EXL[EXL.label != EXL.label_v1]
 chk("train_extra v2 differs from v1 exactly where source = cross_check (17 labels)", len(chg) == 17 and (chg.source == "cross_check").all() and (EXL[EXL.source == "cross_check"].label != EXL[EXL.source == "cross_check"].label_v1).all(),
     abs(len(chg) - 17), f"changed {len(chg)}; cross_check rows {(EXL.source == 'cross_check').sum()}")

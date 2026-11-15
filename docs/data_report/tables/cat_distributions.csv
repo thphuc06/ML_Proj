@@ -536,13 +536,13 @@ highway,extra_all,residential,189,0.0945
 label_source,main_train,single,1563,0.8499184339314845
 label_source,main_train,agreed,215,0.11691136487221315
 label_source,main_train,adjudicated_proposal,56,0.030451332245785754
-label_source,main_train,adjudicated_phuc,5,0.0027188689505165853
+label_source,main_train,adjudicated_khai,5,0.0027188689505165853
 label_source,main_val,agreed,387,0.7962962962962963
 label_source,main_val,adjudicated_proposal,86,0.17695473251028807
-label_source,main_val,adjudicated_phuc,13,0.026748971193415638
+label_source,main_val,adjudicated_khai,13,0.026748971193415638
 label_source,main_test,agreed,531,0.787833827893175
 label_source,main_test,adjudicated_proposal,133,0.19732937685459942
-label_source,main_test,adjudicated_phuc,10,0.01483679525222552
+label_source,main_test,adjudicated_khai,10,0.01483679525222552
 label_source,pilot,pilot_review_proposal,147,0.98
 label_source,pilot,pilot_review_phuc,3,0.02
 label_source,extra_top_score,single,1386,0.99
@@ -552,6 +552,6 @@ label_source,extra_random,cross_check,3,0.005
 label_source,main_all,single,1563,0.5211737245748583
 label_source,main_all,agreed,1133,0.3777925975325108
 label_source,main_all,adjudicated_proposal,275,0.0916972324108036
-label_source,main_all,adjudicated_phuc,28,0.009336445481827277
+label_source,main_all,adjudicated_khai,28,0.009336445481827277
 label_source,extra_all,single,1983,0.9915
 label_source,extra_all,cross_check,17,0.0085

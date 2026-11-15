@@ -77,16 +77,16 @@ items = W.reset_index().merge(pd.read_csv(DATA / "manifest" / "main_v1.csv")[["i
 double = items.label2.notna()
 items["status"] = np.where(~double, "single", np.where(items.label1 == items.label2, "agreed", "disagree"))
 items["label_prov"] = np.where(items.status == "disagree", "?", items.label1)
-# adjudication: proposal (Claude, by eye, guide v1) unless Phuc wrote a label in column `phuc`
+# adjudication: proposal (Claude, by eye, guide v1) unless the adjudicator (Khai) wrote a label in column `khai`
 ADJ = REP / "adjudication_proposal.csv"
 if ADJ.exists():
     a = pd.read_csv(ADJ, dtype=str).fillna("")
-    a["final"] = a.phuc.where(a.phuc.isin(["0", "1", "I"]), a.proposed)
+    a["final"] = a.khai.where(a.khai.isin(["0", "1", "I"]), a.proposed)
     items = items.merge(a[["item", "final"]], on="item", how="left")
     items["label_final"] = items.final.fillna(items.label_prov)
     items = items.drop(columns="final")
-    phuc = set(a.item[a.phuc.isin(["0", "1", "I"])])
-    items["source"] = np.select([items.item.isin(phuc), items.status.eq("disagree")], ["adjudicated_phuc", "adjudicated_proposal"],
+    changed = set(a.item[a.khai.isin(["0", "1", "I"])])
+    items["source"] = np.select([items.item.isin(changed), items.status.eq("disagree")], ["adjudicated_khai", "adjudicated_proposal"],
                                 items.status)
 items.to_csv(REP / "main_items.csv", index=False, encoding="utf-8-sig")
 if "label_final" in items and (items.label_final != "?").all():
@@ -140,8 +140,8 @@ for sp, d in items.groupby("split"):
     has1 = d.status.eq("disagree") & (d.label1.eq("1") | d.label2.eq("1"))
     out.append(f"| {sp} | {len(d)} | {(d.label_prov == '1').sum()} | {has1.sum()} | {(d.label_prov == '1').sum() + has1.sum()} |")
 if "label_final" in items:
-    n_phuc = (a.phuc.isin(["0", "1", "I"])).sum()
-    out += ["", f"## After adjudication ({len(a)} items: proposal by eye, {n_phuc} changed by the adjudicator, Khai)", "",
+    n_khai = (a.khai.isin(["0", "1", "I"])).sum()
+    out += ["", f"## After adjudication ({len(a)} items: proposal by eye, {n_khai} changed by the adjudicator, Khai)", "",
             pd.crosstab(items.split, items.label_final, margins=True).to_markdown(), "",
             "| split | blocked | usable (0/1) | blocked share of usable |", "|---|---|---|---|"]
     for sp, d in items.groupby("split"):
